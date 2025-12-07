@@ -36,6 +36,7 @@ namespace Saga
 		public DeploymentGroupOverride dgOverridesAll = null;
 		public Dictionary<Guid, int> highlightLifeTimes = new Dictionary<Guid, int>();
 		public Dictionary<string, SetCountdown> countdownTimers = new Dictionary<string, SetCountdown>();
+		public Dictionary<int, HashSet<string>> usedPoolEffectsThisRound = new Dictionary<int, HashSet<string>>();
 
 		public SagaGameVars()
 		{
@@ -228,6 +229,20 @@ namespace Saga
 
 			container.SetActive( false );
 			Debug.Log( "SetCurrentCountdown()::Timer UI DISABLED" );
+		}
+
+		public bool HasUsedPoolEffectThisRound( int round )
+		{
+			if ( !usedPoolEffectsThisRound.ContainsKey( round ) )
+				return false;
+			return usedPoolEffectsThisRound[round].Count > 0;
+		}
+
+		public void MarkPoolEffectAsUsed( int round, string effectText )
+		{
+			if ( !usedPoolEffectsThisRound.ContainsKey( round ) )
+				usedPoolEffectsThisRound[round] = new HashSet<string>();
+			usedPoolEffectsThisRound[round].Add( effectText );
 		}
 	}
 }
