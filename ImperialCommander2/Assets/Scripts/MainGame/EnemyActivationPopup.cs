@@ -125,6 +125,9 @@ public class EnemyActivationPopup : MonoBehaviour
 			cardDescriptor.rebelName = rebel1;
 		}
 
+		// Determine pool effects before instruction parsing
+		List<string> poolEffects = DeterminePoolEffect( cd );
+
 		//instruction
 		if ( cardDescriptor.hasActivated && cardDescriptor.instructionOption != null )
 		{
@@ -144,6 +147,8 @@ public class EnemyActivationPopup : MonoBehaviour
 				//check for instruction/repositioning override, which are appended to 'instructions' list
 				instructions = GetModifiedInstructions( cd.id, instructions );
 				instructions = GetModifiedRepositioning( cd.id, instructions );
+				instructions = AddPoolEffectsToInstructions( instructions, poolEffects );
+				
 				savedInstruction = new InstructionOption() { instruction = instructions };
 				//rebel1 has been set, now it's safe to parse instructions that use it for targeting
 				ParseInstructions( instructions );
@@ -152,8 +157,9 @@ public class EnemyActivationPopup : MonoBehaviour
 			}
 			else if ( ovrd != null && ovrd.isCustomDeployment )
 			{
-				if ( ovrd.changeInstructions != null )
-					ParseInstructions( ovrd.changeInstructions.theText.Split( '\n' ).ToList() );
+				List<string> instructions = ovrd.changeInstructions.theText.Split( '\n' ).ToList();
+				instructions = AddPoolEffectsToInstructions( instructions, poolEffects );
+				ParseInstructions( instructions );
 			}
 		}
 
@@ -168,9 +174,7 @@ public class EnemyActivationPopup : MonoBehaviour
 		}
 		else
 		{
-			// Determine if we should add a once-per-round pool effect
-			string poolEffect = DeterminePoolEffect( cd );
-			ParseBonusSaga( cd.id, difficulty, poolEffect );
+			ParseBonusSaga( cd.id, difficulty );
 			cardDescriptor.bonusName = bonusNameText.text;
 			cardDescriptor.bonusText = bonusText.text;
 		}
@@ -178,7 +182,7 @@ public class EnemyActivationPopup : MonoBehaviour
 		cardDescriptor.hasActivated = true;
 	}
 
-	void ParseBonusSaga( string id, Difficulty difficulty, string poolEffect = null )
+	void ParseBonusSaga( string id, Difficulty difficulty )
 	{
 		bonusNameText.text = "";
 		bonusText.text = "";
@@ -217,10 +221,10 @@ public class EnemyActivationPopup : MonoBehaviour
 			}
 		}
 		else
-			ParseBonus( id, difficulty, poolEffect );
+			ParseBonus( id, difficulty );
 	}
 
-	void ParseBonus( string id, Difficulty difficulty, string poolEffect = null )
+	void ParseBonus( string id, Difficulty difficulty )
 	{
 		bonusNameText.text = "";
 		bonusText.text = "";
@@ -234,29 +238,10 @@ public class EnemyActivationPopup : MonoBehaviour
 			int[] rnd = GlowEngine.GenerateRandomNumbers( be.effects.Count );
 			string e = be.effects[rnd[0]];
 			
-			// If we have a pool effect, combine them
-			if ( poolEffect != null )
-			{
-				// Combine both effects - pool effect first, then group's normal effect
-				int poolIdx = poolEffect.IndexOf( ':' );
-				string poolName = poolEffect.Substring( 0, poolIdx );
-				string poolText = poolEffect.Substring( poolIdx + 1 ).Trim();
-				
-				int normalIdx = e.IndexOf( ':' );
-				string normalName = e.Substring( 0, normalIdx );
-				string normalText = e.Substring( normalIdx + 1 ).Trim();
-				
-				// Display pool effect name in title, pool effect text + normal bonus text (without normal bonus name)
-				bonusNameText.text = poolName;
-				bonusText.text = ReplaceGlyphs( poolText ) + "\n\n" + ReplaceGlyphs( normalText );
-			}
-			else
-			{
-				// Just show the normal bonus effect
-				int idx = e.IndexOf( ':' );
-				bonusNameText.text = e.Substring( 0, idx );
-				bonusText.text = ReplaceGlyphs( e.Substring( idx + 1 ) ).Trim();
-			}
+			// Just show the normal bonus effect
+			int idx = e.IndexOf( ':' );
+			bonusNameText.text = e.Substring( 0, idx );
+			bonusText.text = ReplaceGlyphs( e.Substring( idx + 1 ) ).Trim();
 		}
 		catch ( Exception ex )
 		{
@@ -277,12 +262,13 @@ public class EnemyActivationPopup : MonoBehaviour
 		}
 	}
 
-	string DeterminePoolEffect( DeploymentCard cd )
+	List<string> DeterminePoolEffect( DeploymentCard cd )
 	{
 		int currentRound = DataStore.sagaSessionData.gameVars.round;
+		List<string> assignedEffects = new List<string>();
 		
 		if ( DataStore.oncePerRoundBonusPool.Count == 0 )
-			return null;
+			return assignedEffects;
 		
 		// Get list of available pool effects (not yet used this round)
 		var usedEffects = DataStore.sagaSessionData.gameVars.usedPoolEffectsThisRound.ContainsKey( currentRound )
@@ -294,9 +280,9 @@ public class EnemyActivationPopup : MonoBehaviour
 			.ToList();
 		
 		if ( availableEffects.Count == 0 )
-			return null; // All pool effects have been used this round
+			return assignedEffects; // All pool effects have been used this round
 		
-		// Get count of non-exhausted groups (including the one currently activating)
+		// Get count of non-exhausted groups (excluding the one currently activating)
 		var dgManager = FindObjectOfType<Saga.DeploymentManager>();
 		int nonExhaustedCount = 0;
 		
@@ -316,37 +302,56 @@ public class EnemyActivationPopup : MonoBehaviour
 			}
 		}
 		
-		// Calculate probability: x/n where x is number of available pool effects, n is number of remaining groups
-		if ( nonExhaustedCount > 0 && availableEffects.Count > 0 )
+		// Add 1 to include the current group that's activating
+		// (GetNonExhaustedGroups excludes the current group since it's already marked as exhausted)
+		int totalGroupsRemaining = nonExhaustedCount + 1;
+		
+		if ( totalGroupsRemaining > 0 && availableEffects.Count > 0 )
 		{
-			bool shouldApply = false;
+			int effectsPerGroup = availableEffects.Count / totalGroupsRemaining;
+			int remainder = availableEffects.Count % totalGroupsRemaining;
 			
-			// If we have at least as many available effects as remaining groups, always apply one
-			if ( availableEffects.Count >= nonExhaustedCount )
-			{
-				shouldApply = true;
-			}
-			else
-			{
-				// Calculate probability percentage: (availableEffects / nonExhaustedCount) * 100
-				int probability = ( availableEffects.Count * 100 ) / nonExhaustedCount;
-				shouldApply = GlowEngine.RandomBool( probability );
-			}
+			Utils.LogWarning( $"DeterminePoolEffect()::Group={cd.name}, AvailableEffects={availableEffects.Count}, NonExhaustedGroups={nonExhaustedCount}, TotalGroupsRemaining={totalGroupsRemaining}, EffectsPerGroup={effectsPerGroup}, Remainder={remainder}" );
 			
-			if ( shouldApply )
+			// Shuffle available effects
+			var shuffledEffects = availableEffects.OrderBy( x => UnityEngine.Random.Range( 0, 1000 ) ).ToList();
+			
+			// Give this group the guaranteed base amount (may be 0)
+			for ( int i = 0; i < effectsPerGroup && i < shuffledEffects.Count; i++ )
 			{
-				// Pick a random effect from the available pool effects
-				int[] poolRnd = GlowEngine.GenerateRandomNumbers( availableEffects.Count );
-				string poolEffect = availableEffects[poolRnd[0]];
-				
+				string effect = shuffledEffects[i];
+				assignedEffects.Add( effect );
+				Utils.LogWarning( $"DeterminePoolEffect()::Assigned guaranteed effect '{effect}' to {cd.name}" );
 				// Mark as used for this round
-				DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, poolEffect );
-				
-				return poolEffect;
+				DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, effect );
 			}
+			
+			// From the remainder, use probability to decide if this group gets one more
+			if ( remainder > 0 && shuffledEffects.Count > effectsPerGroup )
+			{
+				// Probability: remainder / totalGroupsRemaining
+				int probability = ( remainder * 100 ) / totalGroupsRemaining;
+				bool shouldGetExtra = GlowEngine.RandomBool( probability );
+				Utils.LogWarning( $"DeterminePoolEffect()::Remainder check for {cd.name}: remainder={remainder}, probability={probability}%, shouldGetExtra={shouldGetExtra}" );
+				
+				if ( shouldGetExtra )
+				{
+					// Pick a random effect from the remaining effects (after the base amount)
+					int remainingCount = shuffledEffects.Count - effectsPerGroup;
+					int[] remainderRnd = GlowEngine.GenerateRandomNumbers( remainingCount );
+					string extraEffect = shuffledEffects[effectsPerGroup + remainderRnd[0]];
+					
+					assignedEffects.Add( extraEffect );
+					Utils.LogWarning( $"DeterminePoolEffect()::Assigned extra effect '{extraEffect}' to {cd.name}" );
+					// Mark as used for this round
+					DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, extraEffect );
+				}
+			}
+			
+			Utils.LogWarning( $"DeterminePoolEffect()::Total effects assigned to {cd.name}: {assignedEffects.Count}" );
 		}
 		
-		return null;
+		return assignedEffects;
 	}
 
 	void ParseInstructions( List<string> instruction )
@@ -371,6 +376,12 @@ public class EnemyActivationPopup : MonoBehaviour
 			//replace glyphs
 			item = ReplaceGlyphs( item );
 
+			//pool effects (purple/violet text)
+			if ( item.Contains( "{#}" ) )
+			{
+				nt.color = new Color( 0.784f, 0.471f, 1f, 1f );
+				item = item.Replace( "{#}", " \u25A0 " );
+			}
 			//add bullets (light blue text)
 			if ( item.Contains( "{-}" ) )
 			{
@@ -705,6 +716,26 @@ public class EnemyActivationPopup : MonoBehaviour
 		}
 
 		return linesOut;
+	}
+
+	List<string> AddPoolEffectsToInstructions( List<string> instructions, List<string> poolEffects )
+	{
+		if ( poolEffects == null || poolEffects.Count == 0 )
+			return instructions;
+
+		List<string> poolInstructions = new List<string>();
+		foreach ( string poolEffect in poolEffects )
+		{
+			int colonIdx = poolEffect.IndexOf( ':' );
+			if ( colonIdx > 0 )
+			{
+				string poolName = poolEffect.Substring( 0, colonIdx );
+				string poolText = poolEffect.Substring( colonIdx + 1 ).Trim();
+				poolInstructions.Add( $"{{#}} {poolName}: {poolText}" );
+			}
+		}
+
+		return poolInstructions.Concat( instructions ).ToList();
 	}
 
 	public void OnHelpClick()
