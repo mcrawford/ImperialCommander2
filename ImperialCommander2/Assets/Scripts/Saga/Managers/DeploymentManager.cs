@@ -170,6 +170,51 @@ namespace Saga
 			//should have already been removed *IF* it's from DeploymentPopup
 			//otherwise it just got (up/down)graded to/from Elite or it's from the event action
 			DataStore.deploymentHand.Remove( cardDescriptor );
+
+			//ATTACHMENT SYSTEM: Check if any attachments are available and assign to this new deployment (Campaign mode only)
+			if ( RunningCampaign.sagaCampaignGUID != Guid.Empty && DataStore.sagaSessionData.gameVars.availableAttachments.Count > 0 )
+			{
+				// Check each available attachment
+				for ( int i = DataStore.sagaSessionData.gameVars.availableAttachments.Count - 1; i >= 0; i-- )
+				{
+					string attachmentID = DataStore.sagaSessionData.gameVars.availableAttachments[i];
+					var attachment = DataStore.sagaSessionData.gameVars.attachmentDefinitions.FirstOrDefault( a => a.id == attachmentID );
+					
+					if ( attachment != null && AttachmentManager.MeetsRequirements( cardDescriptor, attachment ) )
+					{
+						// Group is eligible - assign the attachment
+						var ovrd = DataStore.sagaSessionData.gameVars.CreateDeploymentOverride( cardDescriptor.id );
+						
+						// Apply modification if present
+						if ( !string.IsNullOrEmpty( attachment.modification ) )
+						{
+							ovrd.modification = attachment.modification;
+							ovrd.showMod = true;
+						}
+						
+						// Apply bonus instruction if present
+						if ( !string.IsNullOrEmpty( attachment.bonusInstruction ) )
+						{
+							var instructionText = "{#} " + attachment.name + ": " + attachment.bonusInstruction;
+							ovrd.SetInstructionOverride( new ChangeInstructions()
+							{
+								instructionType = CustomInstructionType.Top,
+								theText = instructionText
+							} );
+						}
+						
+						// Update tracking
+						DataStore.sagaSessionData.gameVars.activeAttachments[cardDescriptor.id] = attachmentID;
+						DataStore.sagaSessionData.gameVars.availableAttachments.RemoveAt( i );
+						
+						// Re-initialize the prefab to show the changes
+						go.GetComponent<SagaDGPrefab>().Init( cardDescriptor );
+						
+						Utils.LogWarning( $"Attachment '{attachment.name}' assigned to newly deployed {cardDescriptor.name}" );
+						break; // Only one attachment per group
+					}
+				}
+			}
 		}
 
 		/// <summary>
