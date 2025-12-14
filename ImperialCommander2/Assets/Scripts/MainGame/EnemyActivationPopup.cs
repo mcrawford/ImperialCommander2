@@ -311,8 +311,6 @@ public class EnemyActivationPopup : MonoBehaviour
 			int effectsPerGroup = availableEffects.Count / totalGroupsRemaining;
 			int remainder = availableEffects.Count % totalGroupsRemaining;
 			
-			Utils.LogWarning( $"DeterminePoolEffect()::Group={cd.name}, AvailableEffects={availableEffects.Count}, NonExhaustedGroups={nonExhaustedCount}, TotalGroupsRemaining={totalGroupsRemaining}, EffectsPerGroup={effectsPerGroup}, Remainder={remainder}" );
-			
 			// Shuffle available effects
 			var shuffledEffects = availableEffects.OrderBy( x => UnityEngine.Random.Range( 0, 1000 ) ).ToList();
 			
@@ -321,7 +319,6 @@ public class EnemyActivationPopup : MonoBehaviour
 			{
 				string effect = shuffledEffects[i];
 				assignedEffects.Add( effect );
-				Utils.LogWarning( $"DeterminePoolEffect()::Assigned guaranteed effect '{effect}' to {cd.name}" );
 				// Mark as used for this round
 				DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, effect );
 			}
@@ -332,7 +329,6 @@ public class EnemyActivationPopup : MonoBehaviour
 				// Probability: remainder / totalGroupsRemaining
 				int probability = ( remainder * 100 ) / totalGroupsRemaining;
 				bool shouldGetExtra = GlowEngine.RandomBool( probability );
-				Utils.LogWarning( $"DeterminePoolEffect()::Remainder check for {cd.name}: remainder={remainder}, probability={probability}%, shouldGetExtra={shouldGetExtra}" );
 				
 				if ( shouldGetExtra )
 				{
@@ -342,13 +338,10 @@ public class EnemyActivationPopup : MonoBehaviour
 					string extraEffect = shuffledEffects[effectsPerGroup + remainderRnd[0]];
 					
 					assignedEffects.Add( extraEffect );
-					Utils.LogWarning( $"DeterminePoolEffect()::Assigned extra effect '{extraEffect}' to {cd.name}" );
 					// Mark as used for this round
 					DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, extraEffect );
 				}
 			}
-			
-			Utils.LogWarning( $"DeterminePoolEffect()::Total effects assigned to {cd.name}: {assignedEffects.Count}" );
 		}
 		
 		return assignedEffects;

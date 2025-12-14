@@ -2,7 +2,7 @@
   "effects": [
     "MANIFEST AGGRESSION: One figure in this group gains 1 {h}. Spend it on that figure's next attack.",
     "SUPERNATURAL VIGOR: One figure in this group gains +3 Health until the end of the round.",
-    "EMBRACE FEAR: One figure in this group adds 1 to its Move value this activation.",
+    "EMBRACE FEAR: One figure in this group adds 1 to its Move values this activation.",
     "EMBRACE FEAR: At the start of this activation, one Rebel figure tests {J}. If it does not succeed, it suffers 1 {C}."
   ]
 }

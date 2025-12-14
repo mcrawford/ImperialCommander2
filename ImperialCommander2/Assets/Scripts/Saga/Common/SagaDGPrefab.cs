@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -380,6 +381,25 @@ namespace Saga
 		/// </summary>
 		private void ProcessCardDefeated()
 		{
+		//ATTACHMENT SYSTEM: Check if this defeated group has an attachment that needs to transfer (Campaign mode only)
+		if ( RunningCampaign.sagaCampaignGUID != Guid.Empty && DataStore.sagaSessionData.gameVars.activeAttachments.ContainsKey( cardDescriptor.id ) )
+			{
+				string attachmentID = DataStore.sagaSessionData.gameVars.activeAttachments[cardDescriptor.id];
+				DataStore.sagaSessionData.gameVars.activeAttachments.Remove( cardDescriptor.id );
+				DataStore.sagaSessionData.gameVars.availableAttachments.Add( attachmentID );
+				
+				// Clear the modification and instruction override from the defeated group
+				var ovrd = DataStore.sagaSessionData.gameVars.GetDeploymentOverride( cardDescriptor.id );
+				if ( ovrd != null )
+				{
+					ovrd.modification = "";
+					ovrd.showMod = false;
+					ovrd.changeInstructions = null;
+				}
+				
+				Debug.Log( $"Attachment '{attachmentID}' from {cardDescriptor.name} is now available for next deployment" );
+			}
+
 			//add card back to deployment hand ONLY IF:
 			//not custom group DG070
 			//not a villain
@@ -387,13 +407,13 @@ namespace Saga
 
 			//normal, non-overridden cards return to hand
 			bool returnToHand = true;
-			var ovrd = DataStore.sagaSessionData.gameVars.GetDeploymentOverride( cardDescriptor.id );
+			var ovrd2 = DataStore.sagaSessionData.gameVars.GetDeploymentOverride( cardDescriptor.id );
 			//test if it can redeploy
-			if ( ovrd != null && !ovrd.canRedeploy )
+			if ( ovrd2 != null && !ovrd2.canRedeploy )
 			{
-				DataStore.sagaSessionData.CannotRedeployList.Add( ovrd.ID );
+				DataStore.sagaSessionData.CannotRedeployList.Add( ovrd2.ID );
 				//completely reset if it can't redeploy, so it can be manually deployed "clean" later
-				DataStore.sagaSessionData.gameVars.RemoveOverride( ovrd.ID );
+				DataStore.sagaSessionData.gameVars.RemoveOverride( ovrd2.ID );
 				returnToHand = false;
 			}
 
@@ -412,12 +432,12 @@ namespace Saga
 				DataStore.SortManualDeployList();
 			}
 			//finally, reset the group if needed
-			if ( ovrd != null && ovrd.canRedeploy )
+			if ( ovrd2 != null && ovrd2.canRedeploy )
 			{
-				if ( ovrd.useResetOnRedeployment )
-					DataStore.sagaSessionData.gameVars.RemoveOverride( ovrd.ID );
-				else if ( !ovrd.useResetOnRedeployment )
-					ovrd.ResetDP();
+				if ( ovrd2.useResetOnRedeployment )
+					DataStore.sagaSessionData.gameVars.RemoveOverride( ovrd2.ID );
+				else if ( !ovrd2.useResetOnRedeployment )
+					ovrd2.ResetDP();
 			}
 
 			if ( DataStore.deployedEnemies.Count == 0 )

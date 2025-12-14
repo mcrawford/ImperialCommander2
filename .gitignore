@@ -69,3 +69,5 @@ crashlytics-build.properties
 
 # macOS Finder files
 .DS_Store
+
+test.app

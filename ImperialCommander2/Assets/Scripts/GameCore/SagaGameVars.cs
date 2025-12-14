@@ -38,6 +38,11 @@ namespace Saga
 		public Dictionary<string, SetCountdown> countdownTimers = new Dictionary<string, SetCountdown>();
 		public Dictionary<int, HashSet<string>> usedPoolEffectsThisRound = new Dictionary<int, HashSet<string>>();
 
+		//Attachment system tracking
+		public Dictionary<string, string> activeAttachments = new Dictionary<string, string>(); // Maps groupID to attachmentID
+		public List<string> availableAttachments = new List<string>(); // Attachment IDs waiting for deployment
+		public List<Attachment> attachmentDefinitions = new List<Attachment>(); // Loaded attachment data
+
 		public SagaGameVars()
 		{
 
