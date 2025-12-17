@@ -520,6 +520,26 @@ namespace Saga
 			//create deployment hand and manual deploy list
 			DataStore.CreateDeploymentHand( DataStore.sagaSessionData.EarnedVillains, DataStore.sagaSessionData.setupOptions.threatLevel );
 			DataStore.CreateManualDeployment();
+
+			//after setup, add 1 regular Imperial Officer Deployment card to the Imperial's hand
+			// Try DG004 first, fall back to DG005 if DG004 is already in the hand
+			var imperialOfficer = DataStore.GetEnemy( "DG004" );
+			if ( imperialOfficer != null && DataStore.deploymentHand.ContainsCard( imperialOfficer ) )
+			{
+				// DG004 is already in hand, try DG005
+				imperialOfficer = DataStore.GetEnemy( "DG005" );
+			}
+
+			if ( imperialOfficer != null && !DataStore.deploymentHand.ContainsCard( imperialOfficer ) )
+			{
+				// Verify card is available (not deployed, not reserved, etc.)
+				if ( !DataStore.deployedEnemies.ContainsCard( imperialOfficer )
+					&& !DataStore.sagaSessionData.MissionReserved.ContainsCard( imperialOfficer ) )
+				{
+					DataStore.deploymentHand.Add( imperialOfficer );
+					Debug.Log( $"Added regular Imperial Officer ({imperialOfficer.id}) to deployment hand after setup" );
+				}
+			}
 			//deploy heroes
 			for ( int i = 0; i < DataStore.sagaSessionData.MissionHeroes.Count; i++ )
 				dgManager.DeployHeroAlly( DataStore.sagaSessionData.MissionHeroes[i] );
