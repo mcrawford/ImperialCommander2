@@ -404,101 +404,67 @@ namespace Saga
 				//fame button
 				fameButton.interactable = DataStore.sagaSessionData.setupOptions.useAdaptiveDifficulty;
 
-				//ATTACHMENT SYSTEM: Load and assign attachments (Campaign mode only)
-				Utils.LogWarning( $"LoadMission()::ATTACHMENT DEBUG - RunningCampaign.sagaCampaignGUID: {RunningCampaign.sagaCampaignGUID}, IsEmpty: {RunningCampaign.sagaCampaignGUID == Guid.Empty}" );
-				
-				if ( RunningCampaign.sagaCampaignGUID != Guid.Empty )
+				//ATTACHMENT SYSTEM: Load and assign attachments
+				try
 				{
-					Utils.LogWarning( $"LoadMission()::Campaign mode detected - Loading attachments. MissionStarting groups: {DataStore.sagaSessionData.MissionStarting?.Count ?? 0}" );
+					DataStore.sagaSessionData.gameVars.attachmentDefinitions = AttachmentManager.LoadAttachments();
+					Utils.LogWarning( $"LoadMission()::Loaded {DataStore.sagaSessionData.gameVars.attachmentDefinitions?.Count ?? 0} attachment definitions" );
 					
-					try
+					// Initialize available attachments list
+					DataStore.sagaSessionData.gameVars.availableAttachments.Clear();
+					
+					if ( DataStore.sagaSessionData.gameVars.attachmentDefinitions != null && 
+							DataStore.sagaSessionData.gameVars.attachmentDefinitions.Count > 0 )
 					{
-						// Always load attachments in Campaign mode
-						DataStore.sagaSessionData.gameVars.attachmentDefinitions = AttachmentManager.LoadAttachments();
-						Utils.LogWarning( $"LoadMission()::Loaded {DataStore.sagaSessionData.gameVars.attachmentDefinitions?.Count ?? 0} attachment definitions" );
-						
-						// Initialize available attachments list
-						DataStore.sagaSessionData.gameVars.availableAttachments.Clear();
-						
-						if ( DataStore.sagaSessionData.gameVars.attachmentDefinitions != null && 
-						     DataStore.sagaSessionData.gameVars.attachmentDefinitions.Count > 0 )
+						// If there are initial groups, try to assign attachments to them
+						if ( DataStore.sagaSessionData.MissionStarting != null && 
+								DataStore.sagaSessionData.MissionStarting.Count > 0 )
 						{
-							// If there are initial groups, try to assign attachments to them
-							if ( DataStore.sagaSessionData.MissionStarting != null && 
-							     DataStore.sagaSessionData.MissionStarting.Count > 0 )
+							Utils.LogWarning( $"LoadMission()::Processing {DataStore.sagaSessionData.gameVars.attachmentDefinitions.Count} attachments for {DataStore.sagaSessionData.MissionStarting.Count} initial groups" );
+							
+							foreach ( var attachment in DataStore.sagaSessionData.gameVars.attachmentDefinitions )
 							{
-								Utils.LogWarning( $"LoadMission()::Processing {DataStore.sagaSessionData.gameVars.attachmentDefinitions.Count} attachments for {DataStore.sagaSessionData.MissionStarting.Count} initial groups" );
+								Utils.LogWarning( $"LoadMission()::Processing attachment: {attachment.name}" );
 								
-								foreach ( var attachment in DataStore.sagaSessionData.gameVars.attachmentDefinitions )
+								// Filter eligible initial groups
+								var eligibleGroups = AttachmentManager.FilterByRequirements( DataStore.sagaSessionData.MissionStarting, attachment );
+								
+								if ( eligibleGroups.Count > 0 )
 								{
-									Utils.LogWarning( $"LoadMission()::Processing attachment: {attachment.name}" );
+									// Randomly select an eligible group
+									int[] rnd = GlowEngine.GenerateRandomNumbers( eligibleGroups.Count );
+									var targetGroup = eligibleGroups[rnd[0]];
 									
-									// Filter eligible initial groups
-									var eligibleGroups = AttachmentManager.FilterByRequirements( DataStore.sagaSessionData.MissionStarting, attachment );
+									Utils.LogWarning( $"LoadMission()::Selected group {targetGroup.name} (ID: {targetGroup.id}) for attachment {attachment.name}" );
 									
-									if ( eligibleGroups.Count > 0 )
-									{
-										// Randomly select an eligible group
-										var targetGroup = eligibleGroups[UnityEngine.Random.Range( 0, eligibleGroups.Count )];
-										
-										Utils.LogWarning( $"LoadMission()::Selected group {targetGroup.name} (ID: {targetGroup.id}) for attachment {attachment.name}" );
-										
-										// Get or create override for this group
-										var ovrd = DataStore.sagaSessionData.gameVars.CreateDeploymentOverride( targetGroup.id );
-										
-										// Apply modification if present
-										if ( !string.IsNullOrEmpty( attachment.modification ) )
-										{
-											ovrd.modification = attachment.modification;
-											ovrd.showMod = true;
-											Utils.LogWarning( $"LoadMission()::Applied modification '{attachment.modification}' to {targetGroup.name}" );
-										}
-										
-										// Apply bonus instruction if present
-										if ( !string.IsNullOrEmpty( attachment.bonusInstruction ) )
-										{
-											var instructionText = "{#} " + attachment.name + ": " + attachment.bonusInstruction;
-											ovrd.SetInstructionOverride( new ChangeInstructions()
-											{
-												instructionType = CustomInstructionType.Top,
-												theText = instructionText
-											} );
-											Utils.LogWarning( $"LoadMission()::Applied bonus instruction to {targetGroup.name}" );
-										}
-										
-										// Track the attachment
-										DataStore.sagaSessionData.gameVars.activeAttachments[targetGroup.id] = attachment.id;
-										
-										Utils.LogWarning( $"LoadMission()::Attachment '{attachment.name}' assigned to initial group: {targetGroup.name}" );
-									}
-									else
-									{
-										// No eligible initial groups - make available for future deployments
-										DataStore.sagaSessionData.gameVars.availableAttachments.Add( attachment.id );
-										Utils.LogWarning( $"LoadMission()::No eligible initial groups for attachment '{attachment.name}' - added to available attachments" );
-									}
+									// Apply the attachment (no prefab needed for initial groups)
+									AttachmentManager.ApplyAttachment( targetGroup, attachment );
+									
+									Utils.LogWarning( $"LoadMission()::Attachment '{attachment.name}' assigned to initial group: {targetGroup.name}" );
 								}
-							}
-							else
-							{
-								// No initial groups - make all attachments available for future deployments
-								Utils.LogWarning( $"LoadMission()::No initial groups - making all {DataStore.sagaSessionData.gameVars.attachmentDefinitions.Count} attachments available for future deployments" );
-								foreach ( var attachment in DataStore.sagaSessionData.gameVars.attachmentDefinitions )
+								else
 								{
+									// No eligible initial groups - make available for future deployments
 									DataStore.sagaSessionData.gameVars.availableAttachments.Add( attachment.id );
-									Utils.LogWarning( $"LoadMission()::Added attachment '{attachment.name}' to available attachments" );
+									Utils.LogWarning( $"LoadMission()::No eligible initial groups for attachment '{attachment.name}' - added to available attachments" );
 								}
 							}
 						}
-					}
-					catch ( Exception e )
-					{
-						Utils.LogError( $"LoadMission()::ERROR in attachment assignment: {e.Message}\n{e.StackTrace}" );
+						else
+						{
+							// No initial groups - make all attachments available for future deployments
+							Utils.LogWarning( $"LoadMission()::No initial groups - making all {DataStore.sagaSessionData.gameVars.attachmentDefinitions.Count} attachments available for future deployments" );
+							foreach ( var attachment in DataStore.sagaSessionData.gameVars.attachmentDefinitions )
+							{
+								DataStore.sagaSessionData.gameVars.availableAttachments.Add( attachment.id );
+								Utils.LogWarning( $"LoadMission()::Added attachment '{attachment.name}' to available attachments" );
+							}
+						}
 					}
 				}
-				else
+				catch ( Exception e )
 				{
-					Utils.LogWarning( $"LoadMission()::Saga mode (standalone mission) - Attachment system disabled" );
+					Utils.LogError( $"LoadMission()::ERROR in attachment assignment: {e.Message}\n{e.StackTrace}" );
 				}
 
 				return true;

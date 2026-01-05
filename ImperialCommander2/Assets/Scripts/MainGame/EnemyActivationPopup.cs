@@ -292,6 +292,12 @@ public class EnemyActivationPopup : MonoBehaviour
 				item = item.Replace( "{O}", "" );
 				nt.color = new Color( 1, 0.5586207f, 0, 1 );
 			}
+			//purple highlight (abilities/attachments)
+			if ( item.Contains( "{#}" ) )
+			{
+				nt.color = new Color( 0.784f, 0.471f, 1, 1 );
+				item = item.Replace( "{#}", " \u25A0 " );
+			}
 
 			nt.text = item;
 			var rt = go.GetComponent<RectTransform>();

@@ -105,6 +105,52 @@ namespace Saga
 			Utils.LogWarning( $"FilterByRequirements()::Found {eligible.Count} eligible groups" );
 			return eligible;
 		}
+
+		/// <summary>
+		/// Apply an attachment to a deployment group
+		/// </summary>
+		public static void ApplyAttachment( DeploymentCard card, Attachment attachment, GameObject prefab = null )
+		{
+			if ( card == null || attachment == null )
+			{
+				Utils.LogError( "ApplyAttachment()::Card or attachment is null" );
+				return;
+			}
+
+			// Get or create override for this group
+			var ovrd = DataStore.sagaSessionData.gameVars.CreateDeploymentOverride( card.id );
+
+			// Apply modification if present
+			if ( !string.IsNullOrEmpty( attachment.modification ) )
+			{
+				ovrd.modification = attachment.modification;
+				ovrd.showMod = true;
+				Utils.LogWarning( $"ApplyAttachment()::Applied modification '{attachment.modification}' to {card.name}" );
+			}
+
+			// Apply bonus instruction if present
+			if ( !string.IsNullOrEmpty( attachment.bonusInstruction ) )
+			{
+				var instructionText = "{#} " + attachment.name + ": " + attachment.bonusInstruction;
+				ovrd.SetInstructionOverride( new ChangeInstructions()
+				{
+					instructionType = CustomInstructionType.Top,
+					theText = instructionText
+				} );
+				Utils.LogWarning( $"ApplyAttachment()::Applied bonus instruction to {card.name}" );
+			}
+
+			// Track the attachment
+			DataStore.sagaSessionData.gameVars.activeAttachments[card.id] = attachment.id;
+
+			// Re-initialize the prefab to show the changes if provided
+			if ( prefab != null )
+			{
+				prefab.GetComponent<SagaDGPrefab>().Init( card );
+			}
+
+			Utils.LogWarning( $"ApplyAttachment()::Attachment '{attachment.name}' assigned to {card.name}" );
+		}
 	}
 
 	public class AttachmentData

@@ -1,11 +1,11 @@
 {
   "attachments": [
     {
-      "id": "unnatural_abilities",
-      "name": "UNNATURAL ABILITIES",
-      "modification": "+1 {F}\n+1 {G} if size 1",
-      "bonusInstruction": "At the end of this group's activation, one figure in this group gains 1 {h}.",
-      "excludedTraits": ["Creature"]
+      "id": "strike_force",
+      "name": "STRIKE FORCE",
+      "modification": "SF",
+      "bonusInstruction": "While attacking, reroll each red die showing only 1 {H} result, each blue or green die showing no {H} results, and each yellow die showing only the single {B}.",
+      "excludedTraits": []
     }
   ]
 }
