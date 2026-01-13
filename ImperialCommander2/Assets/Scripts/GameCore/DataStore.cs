@@ -46,6 +46,7 @@ public static class DataStore
 	public static List<CardInstruction> importedActivationInstructions;
 	public static List<BonusEffect> bonusEffects;
 	public static List<BonusEffect> importedBonusEffects;
+	public static List<string> oncePerRoundBonusPool;
 	public static List<DeploymentSound> deploymentSounds;
 	public static Dictionary<string, List<MissionPreset>> missionPresets;
 	public static ThumbnailData thumbnailData;
@@ -124,6 +125,7 @@ public static class DataStore
 		importedActivationInstructions = new List<CardInstruction>();
 		bonusEffects = new List<BonusEffect>();
 		importedBonusEffects = new List<BonusEffect>();
+		oncePerRoundBonusPool = new List<string>();
 
 		//load deployment sound lookup
 		deploymentSounds = LoadDeploymentSounds();
@@ -213,6 +215,7 @@ public static class DataStore
 			cardEvents = LoadEvents();
 			activationInstructions = LoadInstructions();
 			bonusEffects = LoadBonusEffects();
+			oncePerRoundBonusPool = LoadOncePerRoundBonusPool();
 			thumbnailData = LoadThumbnailData();
 			//ui
 			uiLanguage = LoadUILanguage();
@@ -321,6 +324,22 @@ public static class DataStore
 			Utils.LogTranslationError( $"LoadTranslatedData() ERROR:\r\nError parsing Bonus Effects\n{e.Message}" );
 			Utils.LogError( $"LoadTranslatedData() ERROR:\r\nError parsing Bonus Effects\n{e.Message}" );
 			throw e;
+		}
+	}
+
+	static List<string> LoadOncePerRoundBonusPool()
+	{
+		try
+		{
+			string json = Resources.Load<TextAsset>( "Languages/" + languageCodeList[languageCode] + "/onceperroundbonuspool" ).text;
+			var data = JsonConvert.DeserializeObject<OncePerRoundBonusPool>( json );
+			return data?.effects ?? new List<string>();
+		}
+		catch
+		{
+			// File doesn't exist or is invalid, return empty list
+			Debug.Log( "LoadOncePerRoundBonusPool()::No once-per-round bonus pool file found, or error loading it" );
+			return new List<string>();
 		}
 	}
 
