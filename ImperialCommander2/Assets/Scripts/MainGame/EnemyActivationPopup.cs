@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -147,6 +147,7 @@ public class EnemyActivationPopup : MonoBehaviour
 				//check for instruction/repositioning override, which are appended to 'instructions' list
 				instructions = GetModifiedInstructions( cd.id, instructions );
 				instructions = GetModifiedRepositioning( cd.id, instructions );
+				instructions = AddGlobalBonusesToInstructions( instructions );
 				instructions = AddPoolEffectsToInstructions( instructions, poolEffects );
 				savedInstruction = new InstructionOption() { instruction = instructions };
 				//rebel1 has been set, now it's safe to parse instructions that use it for targeting
@@ -159,6 +160,7 @@ public class EnemyActivationPopup : MonoBehaviour
 				if ( ovrd.changeInstructions != null )
 				{
 					List<string> instructions = ovrd.changeInstructions.theText.Split( '\n' ).ToList();
+					instructions = AddGlobalBonusesToInstructions( instructions );
 					instructions = AddPoolEffectsToInstructions( instructions, poolEffects );
 					ParseInstructions( instructions );
 				}
@@ -714,6 +716,24 @@ public class EnemyActivationPopup : MonoBehaviour
 		}
 		
 		return assignedEffects;
+	}
+
+	List<string> AddGlobalBonusesToInstructions( List<string> instructions )
+	{
+		if ( DataStore.sagaSessionData?.gameVars?.globalBonusEffects == null || 
+			 DataStore.sagaSessionData.gameVars.globalBonusEffects.Count == 0 )
+			return instructions;
+
+		List<string> globalBonusInstructions = new List<string>();
+		foreach ( var globalBonus in DataStore.sagaSessionData.gameVars.globalBonusEffects )
+		{
+			if ( !string.IsNullOrEmpty( globalBonus.name ) && !string.IsNullOrEmpty( globalBonus.bonusInstruction ) )
+			{
+				globalBonusInstructions.Add( $"{{#}} {globalBonus.name}: {globalBonus.bonusInstruction}" );
+			}
+		}
+
+		return globalBonusInstructions.Concat( instructions ).ToList();
 	}
 
 	List<string> AddPoolEffectsToInstructions( List<string> instructions, List<string> poolEffects )

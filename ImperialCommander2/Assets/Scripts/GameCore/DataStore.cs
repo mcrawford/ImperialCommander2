@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -47,6 +47,7 @@ public static class DataStore
 	public static List<BonusEffect> bonusEffects;
 	public static List<BonusEffect> importedBonusEffects;
 	public static List<string> oncePerRoundBonusPool;
+	public static List<GlobalBonusEffect> globalBonusEffects;
 	public static List<DeploymentSound> deploymentSounds;
 	public static Dictionary<string, List<MissionPreset>> missionPresets;
 	public static ThumbnailData thumbnailData;
@@ -126,6 +127,7 @@ public static class DataStore
 		bonusEffects = new List<BonusEffect>();
 		importedBonusEffects = new List<BonusEffect>();
 		oncePerRoundBonusPool = new List<string>();
+		globalBonusEffects = new List<GlobalBonusEffect>();
 
 		//load deployment sound lookup
 		deploymentSounds = LoadDeploymentSounds();
@@ -216,6 +218,7 @@ public static class DataStore
 			activationInstructions = LoadInstructions();
 			bonusEffects = LoadBonusEffects();
 			oncePerRoundBonusPool = LoadOncePerRoundBonusPool();
+			globalBonusEffects = LoadGlobalBonusEffects();
 			thumbnailData = LoadThumbnailData();
 			//ui
 			uiLanguage = LoadUILanguage();
@@ -340,6 +343,22 @@ public static class DataStore
 			// File doesn't exist or is invalid, return empty list
 			Debug.Log( "LoadOncePerRoundBonusPool()::No once-per-round bonus pool file found, or error loading it" );
 			return new List<string>();
+		}
+	}
+
+	static List<GlobalBonusEffect> LoadGlobalBonusEffects()
+	{
+		try
+		{
+			string json = Resources.Load<TextAsset>( "Languages/" + languageCodeList[languageCode] + "/globalbonuseffects" ).text;
+			var data = JsonConvert.DeserializeObject<GlobalBonusEffectData>( json );
+			return data?.globalBonuses ?? new List<GlobalBonusEffect>();
+		}
+		catch
+		{
+			// File doesn't exist or is invalid, return empty list
+			Debug.Log( "LoadGlobalBonusEffects()::No global bonus effects file found, or error loading it" );
+			return new List<GlobalBonusEffect>();
 		}
 	}
 

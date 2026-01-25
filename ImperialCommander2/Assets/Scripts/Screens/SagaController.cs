@@ -410,6 +410,10 @@ namespace Saga
 					DataStore.sagaSessionData.gameVars.attachmentDefinitions = AttachmentManager.LoadAttachments();
 					Utils.LogWarning( $"LoadMission()::Loaded {DataStore.sagaSessionData.gameVars.attachmentDefinitions?.Count ?? 0} attachment definitions" );
 					
+					//GLOBAL BONUS EFFECTS: Load global bonuses
+					DataStore.sagaSessionData.gameVars.globalBonusEffects = DataStore.globalBonusEffects ?? new List<GlobalBonusEffect>();
+					Utils.LogWarning( $"LoadMission()::Loaded {DataStore.sagaSessionData.gameVars.globalBonusEffects?.Count ?? 0} global bonus effects" );
+					
 					// Initialize available attachments list
 					DataStore.sagaSessionData.gameVars.availableAttachments.Clear();
 					
@@ -428,6 +432,9 @@ namespace Saga
 								
 								// Filter eligible initial groups
 								var eligibleGroups = AttachmentManager.FilterByRequirements( DataStore.sagaSessionData.MissionStarting, attachment );
+								
+								// Exclude groups that already have attachments assigned
+								eligibleGroups = eligibleGroups.Where( g => !DataStore.sagaSessionData.gameVars.activeAttachments.ContainsKey( g.id ) ).ToList();
 								
 								if ( eligibleGroups.Count > 0 )
 								{

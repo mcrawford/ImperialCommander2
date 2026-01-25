@@ -6,6 +6,13 @@
       "modification": "SF",
       "bonusInstruction": "While attacking, reroll each red die showing only 1 {H} result, each blue or green die showing no {H} results, and each yellow die showing only the single {B}.",
       "excludedTraits": []
+    },
+    {
+      "id": "assassins",
+      "name": "ASSASSINS",
+      "modification": "A",
+      "bonusInstruction": "Figures do not block line of sight for your attacks. Once per round, while attacking, reroll each red die showing only 1 {H} result, each blue or green die showing no {H} results, and each yellow die showing only the single {B}.",
+      "excludedTraits": []
     }
   ]
 }
