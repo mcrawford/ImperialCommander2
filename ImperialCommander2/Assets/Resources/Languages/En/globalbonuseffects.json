@@ -1,9 +1,14 @@
 {
   "globalBonuses": [
     {
+      "id": "sharpshooters",
+      "name": "SHARPSHOOTERS",
+      "bonusInstruction": "Apply +1 Accuracy to the attack results."
+    },
+    {
       "id": "find_the_weakness",
       "name": "FIND THE WEAKNESS",
-      "bonusInstruction": "While an Imperial figure is attacking, apply Pierce 1 to the attack results."
+      "bonusInstruction": "Apply Pierce 1 to the attack results."
     }
   ]
 }
