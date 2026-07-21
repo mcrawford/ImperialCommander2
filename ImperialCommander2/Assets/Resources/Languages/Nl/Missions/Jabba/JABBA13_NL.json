@@ -11,74 +11,282 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Cache Attempt 1",
+      "GUID": "289b9324-7075-42ee-88ee-ca00d173dfe3",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elke forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "0cf3040a-4ed3-4de5-b508-fc2e7fb4dff0",
+              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de cache."
+            },
+            {
+              "GUID": "a505c067-813e-4db4-ba9a-03f7f7942c4d",
+              "theText": null
+            }
+          ],
+          "GUID": "bf2b011d-59e9-4703-8139-2edf420a38d3",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Cache Attempt 2",
+      "GUID": "c463a2e1-db0f-4592-ab71-f2a314414f10",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elke forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "108d3745-a738-4697-b8f1-b58daaa17ca9",
+              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de cache."
+            },
+            {
+              "GUID": "d47859de-4902-4670-9bc6-618f907fc8f1",
+              "theText": null
+            }
+          ],
+          "GUID": "f6254bb2-7d53-46cd-a6e8-8a63168991c6",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Cache Attempt 3",
+      "GUID": "fb3c677a-2eb7-4dee-8155-3574004f9a77",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elke forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "0f14f0fd-46fa-4d37-810e-08b54d78531a",
+              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de cache."
+            },
+            {
+              "GUID": "28c51a45-b4c3-459e-bbaa-0e526abcc96c",
+              "theText": null
+            }
+          ],
+          "GUID": "1062c74d-cb4e-4ca1-bdd7-27cb128b80bd",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Cache Attempt 4",
+      "GUID": "b1520301-5edf-47b6-82b3-3b49b95b3048",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elke forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "4b934550-eec7-49e9-a861-0a6e5c5ca400",
+              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de cache."
+            },
+            {
+              "GUID": "c89bb47f-39ef-40fb-9539-58684bf430b3",
+              "theText": null
+            }
+          ],
+          "GUID": "5cb6a483-6b5a-40bb-8d62-d0c462b0ae05",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Cache Attempt 5",
+      "GUID": "4ca30d69-d6f1-484c-a6a4-233250406de4",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elke forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "a6035983-677e-4c9e-ae18-2dd7c23ac3a6",
+              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de cache."
+            },
+            {
+              "GUID": "83ad0990-00f9-48ff-9b58-8dffe26f8d3d",
+              "theText": null
+            }
+          ],
+          "GUID": "5b4dab05-8bfb-4bc0-b0d3-bc8218f214e3",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Cache Success 1",
+      "GUID": "97ccac30-5e6d-455c-a115-91f9ebcefc98",
+      "eventText": "Je slaagt erin de cache te openen en neemt de medische voorraden mee.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate1",
-              "GUID": "f0ddbed1-bf34-424a-91cd-551cab7be835",
-              "theText": "Een oud voorraadkrat.",
+              "entityName": "Cache 1",
+              "GUID": "cd7759c7-03c7-4f46-a0e2-b2a644ddfa52",
+              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
               "buttonList": [
                 {
-                  "GUID": "02ffb80c-8837-49a1-ac89-f58d9f3e854d",
-                  "theText": "{A} Openen"
+                  "GUID": "bf7465cf-3b25-41bc-b970-b564252d8a44",
+                  "theText": "Probeer te claimen"
                 }
               ]
             }
           ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "GUID": "68ab44d6-d1e1-4339-a8cf-22a9657c7ae2",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         }
       ]
     },
     {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Cache Success 2",
+      "GUID": "98b8df38-6df5-4e63-8663-b17d6c091260",
+      "eventText": "Je slaagt erin de cache te openen en neemt de medische voorraden mee.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate2",
-              "GUID": "a7e477f2-6e42-4743-87ea-0e38ac0005e0",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
+              "entityName": "Cache 2",
+              "GUID": "22d7df67-72bf-483d-b755-bdd23b0a0e45",
+              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
+              "buttonList": [
+                {
+                  "GUID": "f69ffc22-6ec1-475d-9d17-a5861a19a1dc",
+                  "theText": "Probeer te claimen"
+                }
+              ]
             }
           ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "GUID": "87cb1e73-3386-4e70-b4e7-1d0b135cbd36",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         }
       ]
     },
     {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Cache Success 3",
+      "GUID": "1e9870ae-5ee3-495c-a93a-9f045b5c4169",
+      "eventText": "Je slaagt erin de cache te openen en neemt de medische voorraden mee.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate3",
-              "GUID": "79c4434d-0072-487b-892c-ffd0cf29f676",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
+              "entityName": "Cache 3",
+              "GUID": "f53afb07-384c-41b5-a478-1a18ee8c39c6",
+              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
+              "buttonList": [
+                {
+                  "GUID": "0ef2c8ab-f81e-4f6d-abfe-1c2f06efe6df",
+                  "theText": "Probeer te claimen"
+                }
+              ]
             }
           ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "GUID": "dbb09101-608a-4b8d-a5de-0b2ed675566a",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Cache Success 4",
+      "GUID": "c3a5a5a3-cead-4811-b15a-882ac10de53a",
+      "eventText": "Je slaagt erin de cache te openen en neemt de medische voorraden mee.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Cache 4",
+              "GUID": "329f4dd7-8012-44f9-9a3f-bc9c18ece053",
+              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
+              "buttonList": [
+                {
+                  "GUID": "7e4d3ea1-d27a-4406-af11-1b03d97423ed",
+                  "theText": "Probeer te claimen"
+                }
+              ]
+            }
+          ],
+          "GUID": "151115dc-a11c-4e0e-b400-8ee8cd25dd0d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Cache Success 5",
+      "GUID": "7f7102ec-ecc2-4145-ab2f-4c2cbf04c994",
+      "eventText": "Je slaagt erin de cache te openen en neemt de medische voorraden mee.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Cache 5",
+              "GUID": "cc0348ed-3f00-4141-bc3c-b6c21e4e1454",
+              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
+              "buttonList": [
+                {
+                  "GUID": "1845f587-5906-4a42-b1ed-817ee39341f0",
+                  "theText": "Probeer te claimen"
+                }
+              ]
+            }
+          ],
+          "GUID": "63d4545e-06e9-419d-954c-d9b5fa5e575e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Je wordt overrompeld door de piraten en gedwongen je terug te trekken. De Rodiaan die Vinto begroette, roept hem na: \"Dezelfde oude Vinto: te zwak om te slagen, te laf om te sterven!\"\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Het kamp is bezaaid met verwoesting en chaos. Vinto staat boven het lichaam van de Rodiaanse kapitein en fluistert tegen zichzelf: \"Het recht heeft gezegevierd.\" Hij laadt de medische voorraden op zijn rug en begint aan de terugreis naar zijn dorp.\n\n{-} De rebellen winnen de missie!\n{-} Vinto Hreeda ontvangt de beloningskaart \"Desperado\".\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "From the Forest",
+      "GUID": "c67ad2e3-9981-45a6-8fa5-010f4d09b3fd",
+      "eventText": "Een grommend beest komt tevoorschijn uit het bos van Rodia.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "089d3dfd-6cb4-46e5-821b-50b88a5b40d4",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG017/Nexu"
         }
       ]
     },
     {
       "eventName": "Mission Briefing",
       "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Je vecht je een weg langs de wachtposten naar het middelpunt van het piratenkamp, waar je de gestolen medische voorraden vindt, maar ook een boel blasters die op je gericht zijn. Een grijze piraat in een lange jas grijnst naar Vinto: “Welkom thuis, vriend.”\n\n{-} Plaats de helden op het blauw gemarkeerde veld.",
+      "eventText": "Je vecht je een weg langs de wachtposten naar het middelpunt van het piratenkamp, waar je de gestolen medische voorraden aantreft, maar ook een boel blasters die op je gericht zijn. Een geharde piraat in een lange jas grijnst naar Vinto: \"Welkom thuis, vriend.\"\n\n{-} Plaats de helden op het blauw gemarkeerde veld.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -134,7 +342,7 @@
           "eventActionType": 21,
           "eaName": "Custom Deployment: Rodian Pirates",
           "repositionInstructions": "",
-          "surges": "{B}: +2 Nauwkeurigheid",
+          "surges": "{B}: +2 nauwkeurigheid",
           "bonuses": "OLD RIVALRY: Als Vinto Hreeda kan worden aangevallen, wordt hij het doelwit van alle aanvallen tijdens deze activering. Voeg in dat geval 1 groene dobbelsteen toe aan de eerste aanval.\r\nSHOT ON THE RUN: Nadat de eerste verplaats-instructie tijdens deze activering is uitgevoerd, lijdt 1 rebellenfiguur binnen 3 velden en in de zichtlijn van de Rodiaanse piraat, 1 {C}.\r\nLONG-RANGE SHOT: De Rodiaanse piraten krijgen +3 nauwkeurigheid.",
           "keywords": "+1 {G}",
           "abilities": "",
@@ -146,7 +354,7 @@
           "eventActionType": 21,
           "eaName": "Custom Deployment: Rodian Pirates",
           "repositionInstructions": "",
-          "surges": "{B}: +2 Nauwkeurigheid",
+          "surges": "{B}: +2 nauwkeurigheid",
           "bonuses": "OLD RIVALRY: Als Vinto Hreeda kan worden aangevallen, wordt hij het doelwit van alle aanvallen tijdens deze activering. Voeg in dat geval 1 groene dobbelsteen toe aan de eerste aanval.\r\nSHOT ON THE RUN: Nadat de eerste verplaats-instructie tijdens deze activering is uitgevoerd, lijdt 1 rebellenfiguur binnen 3 velden en in de zichtlijn van de Rodiaanse piraat, 1 {C}.\r\nLONG-RANGE SHOT: De Rodiaanse piraten krijgen +3 nauwkeurigheid.",
           "keywords": "+1 {G}",
           "abilities": "",
@@ -158,7 +366,7 @@
           "eventActionType": 21,
           "eaName": "Custom Deployment: Rodian Pirates",
           "repositionInstructions": "",
-          "surges": "{B}: +2 Nauwkeurigheid",
+          "surges": "{B}: +2 nauwkeurigheid",
           "bonuses": "OLD RIVALRY: Als Vinto Hreeda kan worden aangevallen, wordt hij het doelwit van alle aanvallen tijdens deze activering. Voeg in dat geval 1 groene dobbelsteen toe aan de eerste aanval.\r\nSHOT ON THE RUN: Nadat de eerste verplaats-instructie tijdens deze activering is uitgevoerd, lijdt 1 rebellenfiguur binnen 3 velden en in de zichtlijn van de Rodiaanse piraat, 1 {C}.\r\nLONG-RANGE SHOT: De Rodiaanse piraten krijgen +3 nauwkeurigheid.",
           "keywords": "+1 {G}",
           "abilities": "",
@@ -277,7 +485,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "{-} Keizerlijke missietokens stellen voorraadcaches voor.\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.\n{-} De missie gaat verder wanneer alle voorraadcaches geclaimd zijn.\n{-} De rebellen verliezen wanneer alle helden gewond zijn.",
+          "tbText": "{-} Keizerlijke missietokens stellen voorraadcaches voor.\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.\n{-} De missie gaat verder wanneer alle voorraadcaches geclaimd zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
           "GUID": "fc3051ad-459d-4ff5-acbd-f804fc0e486a",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -290,7 +498,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Neutrale missietokens stellen Rodiaanse piraten voor. Rodiaanse piraten zijn keizerlijke figuren. Tokens van dezelfde kleur vormen een groep.\r\n{-} Keizerlijke missietokens stellen voorraadcaches voor.\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.\n{-} De missie gaat verder wanneer alle voorraadcaches geclaimd zijn.\n{-} De rebellen verliezen wanneer alle helden gewond zijn.",
+          "theText": "{-} Neutrale missietokens stellen Rodiaanse piraten voor. Rodiaanse piraten zijn keizerlijke figuren. Tokens van dezelfde kleur vormen een groep.\n{-} Keizerlijke missietokens stellen voorraadcaches voor.\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.\n{-} De missie gaat verder wanneer alle voorraadcaches geclaimd zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
           "GUID": "c8a79c25-d292-42d3-b351-d30a72667e3a",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -298,282 +506,80 @@
       ]
     },
     {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Het kamp is bezaaid met lijken en puin. Vinto staat boven het lichaam van de Rodiaanse kapitein en fluistert tegen zichzelf: “Het recht heeft gezegevierd.” Hij laadt de medische voorraden op zijn rug en begint aan de terugreis naar zijn dorp.\r\n\r\n{-} De rebellen winnen de missie!\n{-} Vinto Hreeda ontvangt de beloningskaart “Desperado”.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "f0ddbed1-bf34-424a-91cd-551cab7be835",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "02ffb80c-8837-49a1-ac89-f58d9f3e854d",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "a7e477f2-6e42-4743-87ea-0e38ac0005e0",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "79c4434d-0072-487b-892c-ffd0cf29f676",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Still Tracking",
+      "GUID": "20daf58f-d037-46ee-87cb-9ad3bd3971c6",
+      "eventText": "Meer vijanden volgen het signaal van de volgzender.",
       "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Je wordt overrompeld door de piraten en gedwongen je terug te trekken. De Rodiaan die Vinto begroette, roept hem na: “Dezelfde oude Vinto: te zwak om te slagen, te laf om te sterven!”\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Cache Attempt 1",
-      "GUID": "289b9324-7075-42ee-88ee-ca00d173dfe3",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elk forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "0cf3040a-4ed3-4de5-b508-fc2e7fb4dff0",
-              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Plaats 1 forceertoken op de cache voor elk {B} resultaat die je hebt gekregen."
-            },
-            {
-              "GUID": "a505c067-813e-4db4-ba9a-03f7f7942c4d",
-              "theText": null
-            }
-          ],
-          "GUID": "bf2b011d-59e9-4703-8139-2edf420a38d3",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Success 1",
-      "GUID": "97ccac30-5e6d-455c-a115-91f9ebcefc98",
-      "eventText": "Je slaagt erin de cache te openen en de medische voorraden mee te nemen.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Cache 1",
-              "GUID": "cd7759c7-03c7-4f46-a0e2-b2a644ddfa52",
-              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
-              "buttonList": [
-                {
-                  "GUID": "bf7465cf-3b25-41bc-b970-b564252d8a44",
-                  "theText": "Probeer te claimen"
-                }
-              ]
-            }
-          ],
-          "GUID": "68ab44d6-d1e1-4339-a8cf-22a9657c7ae2",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Attempt 2",
-      "GUID": "c463a2e1-db0f-4592-ab71-f2a314414f10",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elk forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "108d3745-a738-4697-b8f1-b58daaa17ca9",
-              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Plaats 1 forceertoken op de cache voor elk {B} resultaat die je hebt gekregen."
-            },
-            {
-              "GUID": "d47859de-4902-4670-9bc6-618f907fc8f1",
-              "theText": null
-            }
-          ],
-          "GUID": "f6254bb2-7d53-46cd-a6e8-8a63168991c6",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Success 2",
-      "GUID": "98b8df38-6df5-4e63-8663-b17d6c091260",
-      "eventText": "Je slaagt erin de cache te openen en de medische voorraden mee te nemen.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Cache 2",
-              "GUID": "22d7df67-72bf-483d-b755-bdd23b0a0e45",
-              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
-              "buttonList": [
-                {
-                  "GUID": "f69ffc22-6ec1-475d-9d17-a5861a19a1dc",
-                  "theText": "Probeer te claimen"
-                }
-              ]
-            }
-          ],
-          "GUID": "87cb1e73-3386-4e70-b4e7-1d0b135cbd36",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Attempt 3",
-      "GUID": "fb3c677a-2eb7-4dee-8155-3574004f9a77",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elk forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "0f14f0fd-46fa-4d37-810e-08b54d78531a",
-              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Plaats 1 forceertoken op de cache voor elk {B} resultaat die je hebt gekregen."
-            },
-            {
-              "GUID": "28c51a45-b4c3-459e-bbaa-0e526abcc96c",
-              "theText": null
-            }
-          ],
-          "GUID": "1062c74d-cb4e-4ca1-bdd7-27cb128b80bd",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Success 3",
-      "GUID": "1e9870ae-5ee3-495c-a93a-9f045b5c4169",
-      "eventText": "Je slaagt erin de cache te openen en de medische voorraden mee te nemen.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Cache 3",
-              "GUID": "f53afb07-384c-41b5-a478-1a18ee8c39c6",
-              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
-              "buttonList": [
-                {
-                  "GUID": "0ef2c8ab-f81e-4f6d-abfe-1c2f06efe6df",
-                  "theText": "Probeer te claimen"
-                }
-              ]
-            }
-          ],
-          "GUID": "dbb09101-608a-4b8d-a5de-0b2ed675566a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Attempt 4",
-      "GUID": "b1520301-5edf-47b6-82b3-3b49b95b3048",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elk forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "4b934550-eec7-49e9-a861-0a6e5c5ca400",
-              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Plaats 1 forceertoken op de cache voor elk {B} resultaat die je hebt gekregen."
-            },
-            {
-              "GUID": "c89bb47f-39ef-40fb-9539-58684bf430b3",
-              "theText": null
-            }
-          ],
-          "GUID": "5cb6a483-6b5a-40bb-8d62-d0c462b0ae05",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Success 4",
-      "GUID": "c3a5a5a3-cead-4811-b15a-882ac10de53a",
-      "eventText": "Je slaagt erin de cache te openen en de medische voorraden mee te nemen.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Cache 4",
-              "GUID": "329f4dd7-8012-44f9-9a3f-bc9c18ece053",
-              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
-              "buttonList": [
-                {
-                  "GUID": "7e4d3ea1-d27a-4406-af11-1b03d97423ed",
-                  "theText": "Probeer te claimen"
-                }
-              ]
-            }
-          ],
-          "GUID": "151115dc-a11c-4e0e-b400-8ee8cd25dd0d",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Attempt 5",
-      "GUID": "4ca30d69-d6f1-484c-a6a4-233250406de4",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je probeert de afgesloten cache te openen.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elk forceertoken op de cache en leg vervolgens alle forceertokens op de cache af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "a6035983-677e-4c9e-ae18-2dd7c23ac3a6",
-              "theText": "De cache zit nog steeds goed dicht.\n\n{-} Plaats 1 forceertoken op de cache voor elk {B} resultaat die je hebt gekregen."
-            },
-            {
-              "GUID": "83ad0990-00f9-48ff-9b58-8dffe26f8d3d",
-              "theText": null
-            }
-          ],
-          "GUID": "5b4dab05-8bfb-4bc0-b0d3-bc8218f214e3",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Cache Success 5",
-      "GUID": "7f7102ec-ecc2-4145-ab2f-4c2cbf04c994",
-      "eventText": "Je slaagt erin de cache te openen en de medische voorraden mee te nemen.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Cache 5",
-              "GUID": "cc0348ed-3f00-4141-bc3c-b6c21e4e1454",
-              "theText": "Hier ligt een voorraadcache met gestolen medische benodigdheden opgeslagen.\n\n{-} Een rebellenfiguur op of grenzend aan een voorraadcache kan 2 verplaatspunten spenderen om {J} of {I} te testen om te proberen de cache te claimen.",
-              "buttonList": [
-                {
-                  "GUID": "1845f587-5906-4a42-b1ed-817ee39341f0",
-                  "theText": "Probeer te claimen"
-                }
-              ]
-            }
-          ],
-          "GUID": "63d4545e-06e9-419d-954c-d9b5fa5e575e",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "From the Forest",
-      "GUID": "c67ad2e3-9981-45a6-8fa5-010f4d09b3fd",
-      "eventText": "Een grommend beest komt tevoorschijn uit het bos van Rodia.",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "089d3dfd-6cb4-46e5-821b-50b88a5b40d4",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG017/Nexu"
-        }
-      ]
     },
     {
       "eventName": "Tracking Beacon",
       "GUID": "1fb03fc6-1fae-47e5-9d5c-9341d8ec5ad5",
-      "eventText": "Terwijl je de eerste gestolen medische voorraden verzamelt, begint een volgzender in de buurt snel te piepen en om versterking te roepen.",
+      "eventText": "Terwijl je de eerste gestolen medische voorraden verzamelt, begint een nabijgelegen volgzender snel te piepen en roept versterkingen op.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -597,15 +603,9 @@
       ]
     },
     {
-      "eventName": "Still Tracking",
-      "GUID": "20daf58f-d037-46ee-87cb-9ad3bd3971c6",
-      "eventText": "Meer vijanden volgen het signaal van de volgzender.",
-      "eventActions": []
-    },
-    {
       "eventName": "We've Got Company",
       "GUID": "e686e2a2-5aae-438f-8f0e-c57a5c883d0c",
-      "eventText": "Terwijl je de laatste gestolen voorraden verzamelt, zie je dat er meer piraten aan komen rennen om je te verhinderen te ontsnappen. Je beantwoordt het vuur om je vertrek te dekken.",
+      "eventText": "Terwijl je de laatste gestolen voorraden verzamelt, zie je dat er meer piraten aan komen rennen om te voorkomen dat je ontsnapt. Je beantwoordt het vuur om je terugtocht te dekken.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -643,7 +643,7 @@
           "eventActionType": 21,
           "eaName": "Custom Deployment: Rodian Pirates",
           "repositionInstructions": "",
-          "surges": "{B}: +2 Nauwkeurigheid",
+          "surges": "{B}: +2 nauwkeurigheid",
           "bonuses": "OLD RIVALRY: Als Vinto Hreeda kan worden aangevallen, wordt hij het doelwit van alle aanvallen tijdens deze activering. Voeg in dat geval 1 groene dobbelsteen toe aan de eerste aanval.\r\nSHOT ON THE RUN: Nadat de eerste verplaats-instructie tijdens deze activering is uitgevoerd, lijdt 1 rebellenfiguur binnen 3 velden en in de zichtlijn van de Rodiaanse piraat, 1 {C}.\r\nLONG-RANGE SHOT: De Rodiaanse piraten krijgen +3 nauwkeurigheid.",
           "keywords": "+1 {G}",
           "abilities": "",
@@ -655,7 +655,7 @@
           "eventActionType": 21,
           "eaName": "Custom Deployment: Rodian Pirates",
           "repositionInstructions": "",
-          "surges": "{B}: +2 Nauwkeurigheid",
+          "surges": "{B}: +2 nauwkeurigheid",
           "bonuses": "OLD RIVALRY: Als Vinto Hreeda kan worden aangevallen, wordt hij het doelwit van alle aanvallen tijdens deze activering. Voeg in dat geval 1 groene dobbelsteen toe aan de eerste aanval.\r\nSHOT ON THE RUN: Nadat de eerste verplaats-instructie tijdens deze activering is uitgevoerd, lijdt 1 rebellenfiguur binnen 3 velden en in de zichtlijn van de Rodiaanse piraat, 1 {C}.\r\nLONG-RANGE SHOT: De Rodiaanse piraten krijgen +3 nauwkeurigheid.",
           "keywords": "+1 {G}",
           "abilities": "",
@@ -713,7 +713,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Neutrale missietokens stellen Rodiaanse piraten voor. Rodiaanse piraten zijn keizerlijke figuren. Tokens van dezelfde kleur vormen een groep.\n{-} De rebellen winnen wanneer alle Rodiaanse piraten verslagen zijn.\n{-} De rebellen verliezen wanneer alle helden gewond zijn.",
+          "theText": "{-} Neutrale missietokens stellen Rodiaanse piraten voor. Rodiaanse piraten zijn keizerlijke figuren. Tokens van dezelfde kleur vormen een groep.\n{-} De rebellen winnen wanneer alle Rodiaanse piraten verslagen zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
           "GUID": "d9d2063e-f89e-4df0-a550-46c8b86a3da8",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -723,137 +723,14 @@
   ],
   "mapEntities": [
     {
-      "entityName": "Crate1",
-      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "d7a48d54-cf87-4c49-8950-6f2d19f6bebc",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Crate2",
-      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "69362a34-b75d-4ad1-a07e-4c3b5178bb68",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Crate3",
-      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "25e42fb7-5031-4ce0-832e-6fa673616bd5",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 1",
-      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "entityName": "Bonus Pirate Green 1",
+      "GUID": "8d5362a3-0379-40e1-97ac-ba7674bc59bd",
       "mainText": null,
       "buttonList": []
     },
     {
-      "entityName": "DP Green 2",
-      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Weequay 1",
-      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Weequay 2",
-      "GUID": "ba29dced-14c5-4569-81a2-91815b85ce5d",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Officer",
-      "GUID": "f686aa1b-1952-4481-ac52-1a8cb7195a29",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Gammo 1",
-      "GUID": "8eee4594-9ee6-4b14-9f2c-960a7b79cfb5",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Gammo 2",
-      "GUID": "79f3f8a5-2955-40d2-8549-fcc050f0e02d",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Red 1",
-      "GUID": "bffd6252-738d-442c-bdc4-2d7a9c58202a",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Red 2",
-      "GUID": "9af8be3c-1cef-4fbd-b129-876917fbe2ac",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Blue",
-      "GUID": "8c559559-cbb2-4797-9578-55f269c145b0",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Start Pirate Red 1",
-      "GUID": "b1b9a142-2af0-4643-ac66-48291f60b0ba",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Start Pirate Red 2",
-      "GUID": "78b56fb9-241c-48ef-bbd8-18c17485e6bf",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Start Pirate Blue 1",
-      "GUID": "8ba30825-c6a5-4ae8-a58f-f01c3f821af2",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Start Pirate Blue 2",
-      "GUID": "bd1f1f9f-c666-4dec-89bb-c67b6b214145",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Start Pirate Yellow 1",
-      "GUID": "33a86b95-43c9-44d2-aa74-9fab5b085f7b",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Start Pirate Yellow 2",
-      "GUID": "fe0705b2-11a0-49cf-9c2a-f62a3b648072",
+      "entityName": "Bonus Pirate Green 2",
+      "GUID": "91ecaddd-843c-4de0-8de4-8796ed1f2465",
       "mainText": null,
       "buttonList": []
     },
@@ -866,18 +743,6 @@
     {
       "entityName": "Bonus Pirate Yellow 2",
       "GUID": "4a0638dd-b324-4d6d-b0c9-1ea3abd71319",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Bonus Pirate Green 1",
-      "GUID": "8d5362a3-0379-40e1-97ac-ba7674bc59bd",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Bonus Pirate Green 2",
-      "GUID": "91ecaddd-843c-4de0-8de4-8796ed1f2465",
       "mainText": null,
       "buttonList": []
     },
@@ -935,6 +800,141 @@
           "theText": "Probeer te claimen"
         }
       ]
+    },
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "d7a48d54-cf87-4c49-8950-6f2d19f6bebc",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "69362a34-b75d-4ad1-a07e-4c3b5178bb68",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "25e42fb7-5031-4ce0-832e-6fa673616bd5",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Blue",
+      "GUID": "8c559559-cbb2-4797-9578-55f269c145b0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Gammo 1",
+      "GUID": "8eee4594-9ee6-4b14-9f2c-960a7b79cfb5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Gammo 2",
+      "GUID": "79f3f8a5-2955-40d2-8549-fcc050f0e02d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "f686aa1b-1952-4481-ac52-1a8cb7195a29",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "bffd6252-738d-442c-bdc4-2d7a9c58202a",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "9af8be3c-1cef-4fbd-b129-876917fbe2ac",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weequay 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weequay 2",
+      "GUID": "ba29dced-14c5-4569-81a2-91815b85ce5d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Start Pirate Blue 1",
+      "GUID": "8ba30825-c6a5-4ae8-a58f-f01c3f821af2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Start Pirate Blue 2",
+      "GUID": "bd1f1f9f-c666-4dec-89bb-c67b6b214145",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Start Pirate Red 1",
+      "GUID": "b1b9a142-2af0-4643-ac66-48291f60b0ba",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Start Pirate Red 2",
+      "GUID": "78b56fb9-241c-48ef-bbd8-18c17485e6bf",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Start Pirate Yellow 1",
+      "GUID": "33a86b95-43c9-44d2-aa74-9fab5b085f7b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Start Pirate Yellow 2",
+      "GUID": "fe0705b2-11a0-49cf-9c2a-f62a3b648072",
+      "mainText": null,
+      "buttonList": []
     }
   ],
   "initialGroups": [

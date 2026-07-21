@@ -3,7 +3,7 @@
   "missionProperties": {
     "missionName": "Sympathie voor het Verzet",
     "missionDescription": "",
-    "missionInfo": "{-} Neutrale missietokens vertegenwoordigen rekruten. Gezonde helden en stormtroopers kunnen rekruten meenemen. Een figuur kan maar 1 rekruut per keer bij zich hebben.\n{-} Rebellen missietokens vertegenwoordigen uitgangen. Als een held met een rekruut in een veld met een uitgang komt, claimt de held de missietoken van die rekruut door op de uitgang te klikken en “rekruut claimen” te selecteren.\n{-} Aan het begin van elke ronde eist het Keizerrijk elke rekruut op die op dat moment wordt gedragen door een stormtrooper.\n{-} De rebellen winnen als de helden 5 rekruten hebben geclaimd.\n{-} De rebellen verliezen als het Rijk 8 missietokens heeft geclaimd of als alle helden gewond zijn.",
+    "missionInfo": "{-} Neutrale missietokens stellen rekruten voor. Gezonde helden en stormtroopers kunnen rekruten meenemen. Een figuur kan maar 1 rekruut per keer bij zich hebben.\n{-} Rebellen missietokens stellen uitgangen voor. Als een held met een rekruut in een veld met een uitgang komt, claimt de held de missietoken van die rekruut door op de uitgang te klikken en \"rekruut claimen\" te selecteren.\n{-} Aan het begin van elke ronde eist het Keizerrijk elke rekruut op die op dat moment wordt gedragen door een stormtrooper.\n{-} De rebellen winnen wanneer de helden 5 rekruten hebben geclaimd.\n{-} De rebellen verliezen als het Rijk 8 missietokens heeft geclaimd of als alle helden gewond zijn.",
     "campaignName": "Luke Skywalker (Hero of the Rebellion) Figure Pack",
     "startingObjective": "",
     "repositionOverride": "Allemaal behalve stormtroopers: Blokkeer de toegang tot de uitgangen.",
@@ -11,125 +11,9 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate1",
-              "GUID": "d0c9a3ad-f11e-4df3-8e68-d325f8979a07",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "92a1de97-9f92-4bd5-b9be-9e68ad37aa83",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "bb492845-e5dc-4124-9cfe-69b8369fd6cf",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "6385a60a-41dc-40b1-b420-52ce9c1bed20",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 4",
-      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate4",
-              "GUID": "e8595f83-b9ae-4d69-be10-3017081bf801",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "4c52006a-6ccf-4c52-9c47-8b7f977dc4d2",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Dit is niet de manier waarop deze rekruteringsbijeenkomst had moeten gaan. Je weet niet hoe, maar de keizerlijke soldaten wisten ervan.\n\nNu moet je je potentiële nieuwe rekruten uit het gevaar halen voordat ze gevangen worden genomen door stormtroopers, of erger...\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Zet <color=“red”>Luke Skywalker</color> (Hero of the Rebellion) in op het rood gemarkeerde veld. Helden besturen <color=“red”>Luke Skywalker</color> (Hero of the Rebellion) als bondgenoot.\n{-} Plaats 1 neutraal missietoken op elk groen gemarkeerd veld.\n{-} Neutrale missietokens vertegenwoordigen rekruten. Gezonde helden en stormtroopers kunnen rekruten meenemen. Een figuur kan maar 1 rekruut per keer bij zich hebben.\n{-} Rebellen missietokens vertegenwoordigen uitgangen. Als een held met een rekruut in een veld met een uitgang komt, claimt de held de missietoken van die rekruut door op de uitgang te klikken en “rekruut claimen” te selecteren.\n{-} Aan het begin van elke ronde eist het Keizerrijk elke rekruut op die op dat moment wordt gedragen door een stormtrooper.\n{-} De rebellen winnen als de helden 5 rekruten hebben geclaimd.\n{-} De rebellen verliezen als het Rijk 8 missietokens heeft geclaimd of als alle helden gewond zijn.",
-      "eventActions": [
-        {
-          "shortText": "Rekruten gered door de rebellen: (&Rebel Recruits&/5). Rekruten gevangen genomen door het Keizerrijk: (&Imperial Recruits&/8)",
-          "longText": "Rekruten gered door de rebellen: (&Rebel Recruits&/5). Rekruten gevangen genomen door het Keizerrijk: (&Imperial Recruits&/8)",
-          "GUID": "d6bc43a7-4bd9-4a5a-a1fd-ac37f53754f3",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Terwijl je troopers neerschiet, ontmoet je Luke en de anderen. Nu de nieuwe rekruten de wreedheid van het Keizerrijk aan den lijve hebben ondervonden, twijfelt je er niet aan dat ze in de toekomst waardevol zullen blijken te zijn.\n\n{-} De rebellen winnen de missie!\n{-} Rebellen spelers kiezen één held om de beloningskaart “The Ways of the Force” te ontvangen.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Met de groeiende keizerlijke aanwezigheid en de meeste rekruten gevangen genomen, besluiten jij en Luke dat het het beste is om jullie verlies te nemen en weg te glippen.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Rebels claim recruit",
-      "GUID": "88396ce0-764c-43c5-8391-0bdf371898dc",
-      "eventText": "Je helpt de paniekerige rekruut de cantina uit.\n\n{-} De rebellen claimen deze missietoken.",
+      "eventName": "Empire 0 recruits",
+      "GUID": "54a23e88-9f03-480b-a382-7556ce189576",
+      "eventText": "Er werden geen rekruten gevangen genomen door het Rijk.",
       "eventActions": []
     },
     {
@@ -178,12 +62,6 @@
       "eventName": "Empire 8 recruits",
       "GUID": "b31ab1f7-0fd7-4762-b902-2cb328219abc",
       "eventText": "Het Rijk voert de rekruten af, buiten je bereik.\n\n{-} Leg elke keizerlijke figuur die een rekruut draagt af. Het Keizerrijk claimt die rekruut.\n{-} Markeer de figuren als verslagen in de app. Ze tellen niet als verslagen mee voor de vaardigheid doeleinden, maar wel voor de Fame.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Empire 0 recruits",
-      "GUID": "54a23e88-9f03-480b-a382-7556ce189576",
-      "eventText": "Er werden geen rekruten gevangen genomen door het Rijk.",
       "eventActions": []
     },
     {
@@ -239,9 +117,21 @@
       ]
     },
     {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Door de toenemende keizerlijke aanwezigheid en omdat de meeste rekruten al zijn opgepakt, besluiten jij en Luke jullie verlies te nemen en via de achteruitgang te verdwijnen.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Terwijl je je een weg baant door de stormtroopers, ontmoeten jullie Luke en de anderen. Met de wreedheid van het Keizerrijk nu uit eerste hand ervaren, groeit een grimmige vastberadenheid bij je nieuwe rekruten. Je twijfelt er niet aan dat ze zich in de toekomst als waardevol zullen bewijzen.\n\n{-} De rebellen winnen de missie!\n{-} Rebellenspelers kiezen één held die de beloningskaart \"The Ways of the Force\" ontvangt.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
       "eventName": "He's Here",
       "GUID": "e0dfe139-c246-4911-8d26-7b27358ead02",
-      "eventText": "Je hoort een diepe, boze, mechanische stem. “Ik zei toch dat ik dit snel en zonder complicaties wilde afhandelen! Nu moet ik het zelf doen.”\n\nDe imposante gestalte van Darth Vader marcheert de cantina binnen, omringd door de dreigende rode gloed van zijn lichtzwaard.",
+      "eventText": "Je hoort een diepe, boze, mechanische stem. \"Ik zei dat ik dit snel en zonder complicaties wilde afhandelen! Nu moet ik het zelf doen.\"\n\nDe imposante gestalte van Darth Vader marcheert de cantina binnen, omringd door de dreigende rode gloed van zijn lichtzwaard.",
       "eventActions": [
         {
           "enemyName": null,
@@ -255,12 +145,116 @@
       ]
     },
     {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Zo had deze wervingsbijeenkomst niet moeten verlopen. Je weet niet hoe, maar de keizerlijken troepen waren op de hoogte.\n\nNu moet je je potentiële nieuwe rekruten in veiligheid brengen voordat ze door stormtroopers worden gevangengenomen of erger…\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Zet <color=\"red\">Luke Skywalker</color> (Hero of the Rebellion) in op het rood gemarkeerde veld. Helden besturen <color=\"red\">Luke Skywalker</color> (Hero of the Rebellion) als bondgenoot.\n{-} Plaats 1 neutrale missietoken op elk groen gemarkeerde veld.\n{-} Neutrale missietokens stellen rekruten voor. Gezonde helden en stormtroopers kunnen rekruten meenemen. Een figuur kan maar 1 rekruut per keer bij zich hebben.\n{-} Rebellen missietokens stellen uitgangen voor. Als een held met een rekruut in een veld met een uitgang komt, claimt de held de missietoken van die rekruut door op de uitgang te klikken en \"rekruut claimen\" te selecteren.\n{-} Aan het begin van elke ronde eist het Keizerrijk elke rekruut op die op dat moment wordt gedragen door een stormtrooper.\n{-} De rebellen winnen wanneer de helden 5 rekruten hebben geclaimd.\n{-} De rebellen verliezen als het Rijk 8 missietokens heeft geclaimd of als alle helden gewond zijn.",
+      "eventActions": [
+        {
+          "shortText": "Rekruten gered door de rebellen: (&Rebel Recruits&/5). Rekruten gevangen genomen door het Keizerrijk: (&Imperial Recruits&/8)",
+          "longText": "Rekruten gered door de rebellen: (&Rebel Recruits&/5). Rekruten gevangen genomen door het Keizerrijk: (&Imperial Recruits&/8)",
+          "GUID": "d6bc43a7-4bd9-4a5a-a1fd-ac37f53754f3",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "d0c9a3ad-f11e-4df3-8e68-d325f8979a07",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "92a1de97-9f92-4bd5-b9be-9e68ad37aa83",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "bb492845-e5dc-4124-9cfe-69b8369fd6cf",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "6385a60a-41dc-40b1-b420-52ce9c1bed20",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "e8595f83-b9ae-4d69-be10-3017081bf801",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "4c52006a-6ccf-4c52-9c47-8b7f977dc4d2",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
       "eventName": "Rebel Wounded",
       "GUID": "15c8fe21-044b-4206-8985-f425fb8652dd",
       "eventText": "",
       "eventActions": [
         {
-          "mainText": "Terwijl jij je even terugtrekt om je wonden te likken, maakt het Rijk van de gelegenheid gebruik om een paar rekruten gevangen te nemen.\r\n\r\nHoeveel activatie tokens had de gewonde rebel? (Als het een bondgenoot was, klik dan op “1”).",
+          "mainText": "Terwijl je je even terugtrekt om je verwondingen te verzorgen, maakt het Keizerrijk van de gelegenheid gebruik om enkele rekruten op te pakken.\n\nHoeveel activatie tokens had de gewonde rebel? (Als het een bondgenoot was, klik dan op \"1\").",
           "buttonList": [
             {
               "GUID": "611d1c4d-0e5d-43d9-95b7-7829d43a8e9e",
@@ -280,13 +274,19 @@
     {
       "eventName": "Rebel Wounded 1",
       "GUID": "e5e77ce7-2544-46ce-b845-5cde7564bf89",
-      "eventText": "Het Rijk neemt één van je rekruten gevangen.\n\n{-} Het Keizerrijk claimt 1 rekruut die het verst verwijderd is van enige keizerlijke figuren en die momenteel niet gedragen wordt...",
+      "eventText": "Het Rijk neemt één van je rekruten gevangen.\n\n{-} Het Keizerrijk claimt 1 rekruut die het verst verwijderd is van alle keizerlijke figuren en die momenteel niet gedragen wordt...",
       "eventActions": []
     },
     {
       "eventName": "Rebel Wounded 2",
       "GUID": "de35f5f2-ded0-4f88-9228-886ebd0dc9df",
-      "eventText": "Het Rijk neemt twee van je rekruten gevangen.\n\n{-} Het Keizerrijk claimt 2 rekruten die het verst verwijderd zijn van enige keizerlijke figuren en die momenteel niet worden gedragen.",
+      "eventText": "Het Rijk neemt twee van je rekruten gevangen.\n\n{-} Het Keizerrijk claimt 2 rekruten die het verst verwijderd zijn van alle keizerlijke figuren en die momenteel niet worden gedragen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Rebels claim recruit",
+      "GUID": "88396ce0-764c-43c5-8391-0bdf371898dc",
+      "eventText": "Je helpt de paniekerige rekruut de cantina uit.\n\n{-} De rebellen claimen deze missietoken.",
       "eventActions": []
     },
     {
@@ -295,7 +295,7 @@
       "eventText": "",
       "eventActions": [
         {
-          "mainText": "Terwijl jij je even terugtrekt om je wonden te likken, maakt het Rijk van de gelegenheid gebruik om een paar rekruten gevangen te nemen.\r\n\r\nHoeveel activatie tokens had de gewonde rebel? (Als het een bondgenoot was, klik dan op “1”).",
+          "mainText": "Terwijl je je even terugtrekt om je verwondingen te verzorgen, maakt het Keizerrijk van de gelegenheid gebruik om enkele rekruten op te pakken.\n\nHoeveel activatie tokens had de gewonde rebel? (Als het een bondgenoot was, klik dan op \"1\").",
           "buttonList": [
             {
               "GUID": "bdbbf3c7-1cde-4a4e-a284-3ef9fb67a744",
@@ -337,12 +337,6 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
       "entityName": "Crate4",
       "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
       "mainText": "Een oud voorraadkrat.",
@@ -352,6 +346,24 @@
           "theText": "{A} Openen"
         }
       ]
+    },
+    {
+      "entityName": "DP ETrooper 1-1",
+      "GUID": "359184c6-1208-4de1-9e8a-84a4643fc54f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 1-2",
+      "GUID": "8399f4e5-845b-4f88-9605-a77d5c2f4bed",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 1-3",
+      "GUID": "29d2ce82-a723-45d7-bf36-326e0243e74c",
+      "mainText": null,
+      "buttonList": []
     },
     {
       "entityName": "DP Green 1",
@@ -375,12 +387,6 @@
       "entityName": "DP Trooper 1-1",
       "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
       "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Luke Entrance",
-      "GUID": "77f9dcb5-b5f5-4e8f-8795-5db80f54a0a5",
-      "mainText": "Plaats <color=\"red\">Luke Skywalker</color> hier.",
       "buttonList": []
     },
     {
@@ -414,49 +420,21 @@
       "buttonList": []
     },
     {
-      "entityName": "DP ETrooper 1-1",
-      "GUID": "359184c6-1208-4de1-9e8a-84a4643fc54f",
+      "entityName": "DP Vader",
+      "GUID": "e2c79c07-3386-411d-937c-48b9501fde6b",
       "mainText": null,
       "buttonList": []
     },
     {
-      "entityName": "DP ETrooper 1-2",
-      "GUID": "8399f4e5-845b-4f88-9605-a77d5c2f4bed",
-      "mainText": null,
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
-    },
-    {
-      "entityName": "DP ETrooper 1-3",
-      "GUID": "29d2ce82-a723-45d7-bf36-326e0243e74c",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Exit Green 1",
-      "GUID": "dd4f011e-4638-4d0d-b027-8194a82fd48a",
-      "mainText": "Een kleine zijdeur leidt uit de cantina de straten van de stad in.\n\n{-} Als een held met een rekruut dit veld betreedt, claimt hij de missietoken van de rekruut door op de uitgang te klikken en “rekruut claimen” te selecteren.",
-      "buttonList": [
-        {
-          "GUID": "9773cb3d-5beb-446e-8ffe-be6c47542dc0",
-          "theText": "Rekruut claimen"
-        }
-      ]
-    },
-    {
-      "entityName": "Exit Green 2",
-      "GUID": "215d35a3-14c6-4f9e-9b21-22447f4d9ad0",
-      "mainText": "Een kleine zijdeur leidt uit de cantina de straten van de stad in.\n\n{-} Als een held met een rekruut dit veld betreedt, claimt hij de missietoken van de rekruut door op de uitgang te klikken en “rekruut claimen” te selecteren.",
-      "buttonList": [
-        {
-          "GUID": "317eb7d5-8e2a-41a5-a205-ee47e277e7a1",
-          "theText": "Rekruut claimen"
-        }
-      ]
     },
     {
       "entityName": "Exit Blue 1",
       "GUID": "23ebeffd-b789-42b4-9082-64a1b50ac9d8",
-      "mainText": "Een pad leidt naar de woestijn, weg van nieuwsgierige keizerlijke ogen.\n\n{-} Als een held met een rekruut dit veld betreedt, claimt hij de missietoken van de rekruut door op de uitgang te klikken en “rekruut claimen” te selecteren.",
+      "mainText": "Een pad leidt de woestijn in, weg van nieuwsgierige keizerlijke ogen.\n\n{-} Als een held met een rekruut dit veld betreedt, claimt hij de missietoken van de rekruut door op de uitgang te klikken en \"rekruut claimen\" te selecteren.",
       "buttonList": [
         {
           "GUID": "85c97718-5823-45a5-bf31-987bd06f3ccf",
@@ -467,7 +445,7 @@
     {
       "entityName": "Exit Blue 2",
       "GUID": "5d05864b-af0c-4f44-9b8c-c4d2f02574b6",
-      "mainText": "Een pad leidt naar de woestijn, weg van nieuwsgierige keizerlijke ogen.\n\n{-} Als een held met een rekruut dit veld betreedt, claimt hij de missietoken van de rekruut door op de uitgang te klikken en “rekruut claimen” te selecteren.",
+      "mainText": "Een pad leidt de woestijn in, weg van nieuwsgierige keizerlijke ogen.\n\n{-} Als een held met een rekruut dit veld betreedt, claimt hij de missietoken van de rekruut door op de uitgang te klikken en \"rekruut claimen\" te selecteren.",
       "buttonList": [
         {
           "GUID": "efb283b5-d5c3-4303-a598-6b4a970bdb06",
@@ -476,8 +454,54 @@
       ]
     },
     {
+      "entityName": "Exit Green 1",
+      "GUID": "dd4f011e-4638-4d0d-b027-8194a82fd48a",
+      "mainText": "Een kleine zijdeur leidt de cantina uit, de straten van de stad in.\n\n{-} Als een held met een rekruut dit veld betreedt, claimt hij de missietoken van de rekruut door op de uitgang te klikken en \"rekruut claimen\" te selecteren.",
+      "buttonList": [
+        {
+          "GUID": "9773cb3d-5beb-446e-8ffe-be6c47542dc0",
+          "theText": "Rekruut claimen"
+        }
+      ]
+    },
+    {
+      "entityName": "Exit Green 2",
+      "GUID": "215d35a3-14c6-4f9e-9b21-22447f4d9ad0",
+      "mainText": "Een kleine zijdeur leidt de cantina uit, de straten van de stad in.\n\n{-} Als een held met een rekruut dit veld betreedt, claimt hij de missietoken van de rekruut door op de uitgang te klikken en \"rekruut claimen\" te selecteren.",
+      "buttonList": [
+        {
+          "GUID": "317eb7d5-8e2a-41a5-a205-ee47e277e7a1",
+          "theText": "Rekruut claimen"
+        }
+      ]
+    },
+    {
+      "entityName": "Luke Entrance",
+      "GUID": "77f9dcb5-b5f5-4e8f-8795-5db80f54a0a5",
+      "mainText": "Plaats <color=\"red\">Luke Skywalker</color> hier.",
+      "buttonList": []
+    },
+    {
       "entityName": "Recruit 1",
       "GUID": "ad902f44-83d7-4781-b86a-e847e00ce1d6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Recruit 10",
+      "GUID": "678526b2-a86c-4be8-951d-6bcb13bd5bb7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Recruit 11",
+      "GUID": "3e29e2ed-02a6-438b-832d-c29aa701f76f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Recruit 12",
+      "GUID": "4cd30714-ce13-4801-87e6-f697d9be9697",
       "mainText": null,
       "buttonList": []
     },
@@ -526,30 +550,6 @@
     {
       "entityName": "Recruit 9",
       "GUID": "993116ec-7583-4b88-9d28-69fc1a223e1a",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Recruit 10",
-      "GUID": "678526b2-a86c-4be8-951d-6bcb13bd5bb7",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Recruit 11",
-      "GUID": "3e29e2ed-02a6-438b-832d-c29aa701f76f",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Recruit 12",
-      "GUID": "4cd30714-ce13-4801-87e6-f697d9be9697",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Vader",
-      "GUID": "e2c79c07-3386-411d-937c-48b9501fde6b",
       "mainText": null,
       "buttonList": []
     }

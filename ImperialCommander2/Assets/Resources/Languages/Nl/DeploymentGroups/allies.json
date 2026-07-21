@@ -1,737 +1,737 @@
 [
-	{
-		"name": "Luke Skywalker (Hero)",
-		"subname": "HERO OF THE REBELLION",
-		"id": "A001",
-		"ignored": "",
-		"traits": [
-			"Force User"
-		],
-		"keywords": [
-			"+1 {G}"
-		],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Recover 2 {H}",
-			"{B}: +2 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "{A} Saber Strike",
-				"text": "Perform a {P} attack using 1 red and 1 yellow die. This attack gains Pierce 3."
-			},
-			{
-				"name": "Inspiring",
-				"text": "While another friendly figure within 3 spaces is attacking, it may reroll 1 die."
-			}
-		]
-	},
-	{
-		"name": "Rebel Trooper",
-		"subname": "",
-		"id": "A002",
-		"ignored": "",
-		"traits": [
-			"Trooper"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: Pierce 1",
-			"{B}: +1 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "Aim",
-				"text": "If you have not exited your space during this activation, apply +1 {H} and +2 Accuracy to your attack results."
-			}
-		],
-	},
-	{
-		"name": "Rebel Saboteur",
-		"subname": "",
-		"id": "A003",
-		"ignored": "",
-		"traits": [
-			"Spy",
-			"Heavy Weapon"
-		],
-		"keywords": [
-			"+2 Accuracy"
-		],
-		"surges": [
-			"{B}: Pierce 1",
-			"{B}: Stun",
-			"{B}: Blast 1 {H}"
-		],
-		"abilities": [
-			{
-				"name": "Overload",
-				"text": "You can trigger the same {B} ability up to twice per attack."
-			}
-		],
-	},
-	{
-		"name": "Chewbacca",
-		"subname": "LOYAL WOOKIEE",
-		"id": "A004",
-		"ignored": "",
-		"traits": [
-			"Smuggler",
-			"Wookiee",
-			"Guardian"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Stun",
-			"{B}: +2 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "{A} Slam",
-				"text": "Choose 1 adjacent hostile figure and roll 1 red die. That figure suffers {H} equal to the {H} results. Then, if it is a small figure, you may push it 1 space."
-			},
-			{
-				"name": "Protector",
-				"text": "While a friendly figure is defending, and you are adjacent to the targeted space, apply +1 {G} to the defense results. Limit 1 \"Protector\"ability used per attack."
-			}
-		],
-	},
-	{
-		"name": "Han Solo",
-		"subname": "SCOUNDREL",
-		"id": "A005",
-		"ignored": "",
-		"traits": [
-			"Smuggler",
-			"Leader"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: +2 Accuracy, +1 {H}",
-			"{B}: +2 {H}"
-		],
-		"abilities": [
-			{
-				"name": "Return Fire",
-				"text": "After an attack targeting you is resolved, if you did not suffer any {H}, you can interrupt to perform an attack targeting that attacker. Limit once per round."
-			},
-			{
-				"name": "Distracting",
-				"text": "While a friendly figure is defending, and you are adjacent to the targeted space, apply +1 {F} to the defense results."
-			},
-			{
-				"name": "Cunning",
-				"text": "While defending, apply +1 {G} to the defense results for each {F} result."
-			}
-		],
-	},
-	{
-		"name": "C-3PO",
-		"subname": "HUMAN-CYBORG RELATIONS",
-		"id": "A006",
-		"ignored": "",
-		"traits": [
-			"Droid"
-		],
-		"keywords": [],
-		"surges": [],
-		"abilities": [
-			{
-				"name": "{A} Inform",
-				"text": "Choose an adjacent friendly figure. That figure becomes Focused."
-			},
-			{
-				"name": "Cower",
-				"text": "While defending, while adjacent to a friendly figure, you may reroll 1 defense die."
-			},
-			{
-				"name": "Distracting",
-				"text": "While a friendly figure is defending, and you are adjacent to the targeted space, apply +1 {F} to the defense results."
-			},
-			{
-				"name": "Non-Combatant",
-				"text": "You cannot attack."
-			}
-		],
-	},
-	{
-		"name": "R2-D2",
-		"subname": "LOYAL ASTROMECH",
-		"id": "A007",
-		"ignored": "",
-		"traits": [
-			"Droid"
-		],
-		"keywords": [
-			"+2 Accuracy",
-			"+1 {B}"
-		],
-		"surges": [
-			"{B}: Pierce 2",
-			"{B}: Stun ",
-			"{B}: Weaken"
-		],
-		"abilities": [
-			{
-				"name": "{A} Service: ",
-				"text": "You or an adjacent friendly DROID or VEHICLE recovers 1 {H}."
-			},
-			{
-				"name": "Computer Interface Arm",
-				"text": "You can perform {I} tests on objects on which heroes can perform {I} tests(elite figures receive 1 success)."
-			},
-			{
-				"name": "Lucky",
-				"text": "While defending, if you roll a blank result, add +1 {E} to the defense results."
-			}
-		],
-	},
-	{
-		"name": "Leia Organa",
-		"subname": "REBEL COMMANDER",
-		"id": "A008",
-		"ignored": "",
-		"traits": [
-			"Leader",
-			"Spy"
-		],
-		"keywords": [
-			"+1 {F}"
-		],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Recover 2 {H}",
-			"{B}: +3 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "{A} Battlefield Leadership",
-				"text": "Perform an attack, then choose another friendly figure within 3 spaces. That figure may interrupt to perform an attack with the same target."
-			},
-			{
-				"name": "{B} Aggressive Negotiations",
-				"text": "Place 1 strain token on any enemy deployment group. The next time this group activates, discard the token and ignore its Bonus Effect."
-			}
-		],
-	},
-	{
-		"name": "Echo Base Trooper",
-		"subname": "",
-		"id": "A009",
-		"ignored": "",
-		"traits": [
-			"Trooper"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: +1 {H}",
-			"{B}: +2 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "Front Line",
-				"text": "While attacking, if the target is within 3 spaces of you, you may replace 1 blue die in your attack pool with 1 red die."
-			},
-			{
-				"name": "Efficient Travel",
-				"text": "You ignore additional movement point costs for difficult terrain and hostile figures."
-			}
-		],
-	},
-	{
-		"name": "Lando Calrissian",
-		"subname": "CHARMING GAMBLER",
-		"id": "A010",
-		"ignored": "",
-		"traits": [
-			"Leader",
-			"Smuggler"
-		],
-		"keywords": [
-			"+2 Accuracy"
-		],
-		"surges": [
-			"{B}: Hide, Stun",
-			"{B}: +2 {H}"
-		],
-		"abilities": [
-			{
-				"name": "Resourceful",
-				"text": "While attacking or defending, you may reroll 1 of your attack or defense dice."
-			},
-			{
-				"name": "Gambit",
-				"text": "Before you reroll a die, you may replace it with another die of the same type. After rolling, the new die is considered rerolled."
-			}
-		],
-	},
-	{
-		"name": "Luke Skywalker (Jedi)",
-		"subname": "JEDI KNIGHT",
-		"id": "A011",
-		"ignored": "",
-		"traits": [
-			"Force User",
-			"Leader",
-			"Brawler"
-		],
-		"keywords": [
-			"+1 {H}",
-			"+1 {F}"
-		],
-		"surges": [
-			"{B}: +1 {H}",
-			"{B}: Pierce 3"
-		],
-		"abilities": [
-			{
-				"name": "Deflect",
-				"text": "After a {O} attack targeting you or an adjacent friendly figure resolves, a hostile figure of your choice in your line of site suffers 1 {H}."
-			},
-			{
-				"name": "Heroic",
-				"text": "Once during your activation, you may perform an attack without spending an action."
-			}
-		],
-	},
-	{
-		"name": "Alliance Ranger",
-		"subname": "",
-		"id": "A012",
-		"ignored": "",
-		"traits": [
-			"Trooper",
-			"Hunter"
-		],
-		"keywords": [
-			"+1 Accuracy"
-		],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Pierce 1",
-			"{B}: +2 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "Guerilla",
-				"text": "After you resolve an attack, if the defender was defeated, become Hidden."
-			},
-			{
-				"name": "Sniper",
-				"text": "While attacking, if the target space is 5 or more spaces away, you may reroll 1 attack die."
-			}
-		],
-	},
-	{
-		"name": "Ahsoka Tano",
-		"subname": "REBEL INSTIGATOR",
-		"id": "A013",
-		"ignored": "",
-		"traits": [
-			"Force User",
-			"Leader",
-			"Spy"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Pierce 3",
-			"{B}: Gain 1 {h}"
-		],
-		"abilities": [
-			{
-				"name": "{A} Force Leap",
-				"text": "Place your figure in an empty space within 6 spaces."
-			},
-			{
-				"name": "Vigor",
-				"text": "At the start of your activation, you may gain 2 movement points or 1 POWER-{F}."
-			},
-			{
-				"name": "Twin Sabers",
-				"text": "While attacking, you may reroll all attack dice or force the defender to reroll all defense dice."
-			}
-		],
-	},
-	{
-		"name": "Ezra Bridger",
-		"subname": "SPECTRE-6",
-		"id": "A014",
-		"ignored": "",
-		"traits": [
-			"Force User",
-			"Smuggler"
-		],
-		"keywords": [
-			"+1 {G}"
-		],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Pierce 3",
-			"{B}: Recover 2 {H}"
-		],
-		"abilities": [
-			{
-				"name": "Brash",
-				"text": "At the start of each round, move up to 4 spaces."
-			},
-			{
-				"name": "Stronger Together",
-				"text": "While attacking, choose a hero within 3 spaces. For each non-red die in ist {J} pool, you may reroll 1 attack die."
-			}
-		],
-	},
-	{
-		"name": "Kanan Jarrus",
-		"subname": "SPECTRE-1",
-		"id": "A015",
-		"ignored": "",
-		"traits": [
-			"Force User",
-			"Leader"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Pierce 3"
-		],
-		"abilities": [
-			{
-				"name": "Force Vision",
-				"text": "After this activation, instead of having the app decide the next Imperial activation randomly, select an enemy group and manually activate it. This counts as the next Imperial activation."
-			},
-			{
-				"name": "Soresu Defense",
-				"text": "While a friendly figure within 3 spaces is defending, it may reroll 1 defense die. If it does, convert each {E} result to 2 {G} and 1 {F} and, if that figure does not have a {P} weapon or attack type, you suffer 1 {H}."
-			}
-		],
-	},
-	{
-		"name": "Sabine Wren",
-		"subname": "SPECTRE-5",
-		"id": "A016",
-		"ignored": "",
-		"traits": [
-			"Hunter"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: Pierce 2",
-			"{B}: +1 {H}"
-		],
-		"abilities": [
-			{
-				"name": "{A} Evasive Maneuver",
-				"text": "Move up to 2 spaces, then recover 2 {H}."
-			},
-			{
-				"name": "Parting Gift",
-				"text": "Once during your activation, you may choose a space within 2 spaces and roll 1 green die. Each other figure and object on or adjacent to that space suffers {H} equal to the {H} results."
-			}
-		],
-	},
-	{
-		"name": "Zeb Orrelios",
-		"subname": "SPECTRE-4",
-		"id": "A017",
-		"ignored": "",
-		"traits": [
-			"Brawler",
-			"Guardian"
-		],
-		"keywords": [
-			"+3 Accuracy"
-		],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: +2 Accuracy, Recover 1 {H}"
-		],
-		"abilities": [
-			{
-				"name": "Bo-Rifle Staff Strike",
-				"text": "Once during your activation, you may perform a {P} attack using 2 red dice without spending an action."
-			}
-		],
-	},
-	{
-		"name": "Obi-Wan Kenobi",
-		"subname": "JEDI KNIGHT",
-		"id": "A018",
-		"ignored": "",
-		"traits": [
-			"Force User"
-		],
-		"keywords": [
-			"+1 {F}"
-		],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Pierce 3"
-		],
-		"abilities": [
-			{
-				"name": "Use the Force",
-				"text": "While another friendly figure within 3 spaces is performing an attribute test, apply +1 {B} to the results."
-			},
-			{
-				"name": "Mind Trick",
-				"text": "Once during your activation, you may choose up to 2 hostile figures within 4 spaces of you. Push each of those figures 1 space."
-			}
-		],
-	},
-	{
-		"name": "Hera Syndulla",
-		"subname": "SPECTRE-2",
-		"id": "A019",
-		"ignored": "",
-		"traits": [
-			"Leader",
-			"Smuggler"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: +1 {H}",
-			"{B} {B}: Pierce 2"
-		],
-		"abilities": [
-			{
-				"name": "Call the Shots",
-				"text": "While another friendly figure within 3 spaces is attacking, you may apply +2 Accuracy, +1 {H}, or +1 {B} to the attack results. Limit once per round."
-			},
-			{
-				"name": "Smooth Landing",
-				"text": "After deployment, you and each adjacent friendly figure gains 1 movement point."
-			}
-		],
-	},
-	{
-		"name": "C1-10P",
-		"subname": "\"CHOPPER\"",
-		"id": "A020",
-		"ignored": "",
-		"traits": [
-			"Droid"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: Pierce 2",
-			"{B}: Recover 2 {H}"
-		],
-		"abilities": [
-			{
-				"name": "{A} Ram",
-				"text": "Move up to 2 spaces, then choose an adjacent figure. If that figure is hostile, roll 1 green die. It suffers {H} equal to the {H} results. Then, if that figure is small, push it up to 1 space."
-			},
-			{
-				"name": "{B} System Shock",
-				"text": "Use while on or adjacent to a terminal. Choose a figure on or adjacent to any terminal. That figure suffers 2 {H} and 1 {C}."
-			}
-		],
-	},
-	{
-		"name": "Alliance Smuggler",
-		"subname": "",
-		"id": "A021",
-		"ignored": "",
-		"traits": [
-			"Smuggler"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: Stun",
-			"{B}: Pierce 1",
-			"{B}: +2 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "{A} Smuggler's Instincts",
-				"text": "Perform an interact, then move up to 2 spaces."
-			},
-			{
-				"name": "Slippery",
-				"text": "While defending, apply -2 Accuracy to the attack results. After an attack targeting you resolves, gain 2 movement points."
-			}
-		],
-	},
-	{
-		"name": "Alliance Smuggler (Elite)",
-		"subname": "",
-		"id": "A022",
-		"ignored": "",
-		"traits": [
-			"Smuggler"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: Stun",
-			"{B}: Focus",
-			"{B}: Pierce 2",
-			"{B}: +3 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "{A} Improved Smuggler's Instincts",
-				"text": "Perform an interact, then move up to 3 spaces."
-			},
-			{
-				"name": "Slippery",
-				"text": "While defending, apply -2 Accuracy to the attack results. After an attack targeting you resolves, gain 2 movement points."
-			}
-		],
-	},
-	{
-		"name": "Wookiee Warrior",
-		"subname": "",
-		"id": "A023",
-		"ignored": "",
-		"traits": [
-			"Brawler",
-			"Wookiee"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: +1 {H}",
-			"{B}: Bleed",
-			"{B}: Cleave 2 {H}"
-		],
-		"abilities": [
-			{
-				"name": "Fury",
-				"text": "While attacking, if you have suffered 5 or more {H}, apply +1 {B} to the attack results."
-			}
-		],
-	},
-	{
-		"name": "Wookiee Warrior (Elite)",
-		"subname": "",
-		"id": "A024",
-		"ignored": "",
-		"traits": [
-			"Brawler",
-			"Wookiee"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Bleed",
-			"{B}: Cleave 2 {H}"
-		],
-		"abilities": [
-			{
-				"name": "Fury",
-				"text": "While attacking, if you have suffered 5 or more {H}, apply +1 {B} to the attack results."
-			}
-		],
-	},
-	{
-		"name": "Alliance Ranger (Elite)",
-		"subname": "",
-		"id": "A025",
-		"ignored": "",
-		"traits": [
-			"Trooper",
-			"Hunter"
-		],
-		"keywords": [
-			"+1 Accuracy",
-			"Pierce 1"
-		],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Pierce 1",
-			"{B}: +3 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "Guerilla",
-				"text": "After you resolve an attack, if the defender was defeated, become Hidden."
-			},
-			{
-				"name": "Sniper",
-				"text": "While attacking, if the target space is 5 or more spaces away, you may reroll 1 attack die."
-			}
-		],	
-	},
-	{
-		"name": "Echo Base Trooper (Elite)",
-		"id": "A026",
-		"tier": 0,
-		"ignored": "",
-		"traits": [
-			"Trooper",
-			"Hunter"
-		],
-		"keywords": [
-			"+1 Accuracy",
-			"Pierce 1"
-		],
-		"surges": [
-			"{B}: +2 {H}",
-			"{B}: Pierce 1",
-			"{B}: +3 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "Guerilla",
-				"text": "After you resolve an attack, if the defender was defeated, become Hidden."
-			},
-			{
-				"name": "Sniper",
-				"text": "While attacking, if the target space is 5 or more spaces away, you may reroll 1 attack die."
-			}
-		],
-	},
-	{
-		"name": "Rebel Saboteur (Elite)",
-		"subname": "",
-		"id": "A027",
-		"ignored": "",
-		"traits": [
-			"Spy",
-			"Heavy Weapon"
-		],
-		"keywords": [
-			"+3 Accuracy"
-		],
-		"surges": [
-			"{B}: Pierce 2",
-			"{B}: Stun",
-			"{B}: Blast 1 {H}"
-		],
-		"abilities": [
-			{
-				"name": "Overload",
-				"text": "You can trigger the same {B} ability up to twice per attack."
-			},
-			{
-				"name": "Priority Target",
-				"text": "Figures do not block line of sight for this figure's attacks."
-			}
-		],
-	},
-	{
-		"name": "Rebel Trooper (Elite)",
-		"subname": "",
-		"id": "A028",
-		"ignored": "",
-		"traits": [
-			"Trooper"
-		],
-		"keywords": [],
-		"surges": [
-			"{B}: Pierce 2",
-			"{B}: +2 Accuracy"
-		],
-		"abilities": [
-			{
-				"name": "Aim",
-				"text": "If you have not exited your space during this activation, apply +1 {H} and +2 Accuracy to your attack results."
-			},
-			{
-				"name": "{A} {A} Get Into Position",
-				"text": "Gain 4 movement points and become Focused."
-			}
-		],
-	}
+  {
+    "name": "Luke Skywalker (Hero)",
+    "subname": "HERO OF THE REBELLION",
+    "id": "A001",
+    "ignored": "",
+    "traits": [
+      "Force User"
+    ],
+    "keywords": [
+      "+1 {G}"
+    ],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Herstel 2 {H}",
+      "{B}: +2 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Saber Strike",
+        "text": "Voer een {P}-aanval uit met 1 rode en 1 gele dobbelsteen. Deze aanval krijgt Pierce 3."
+      },
+      {
+        "name": "Inspiring",
+        "text": "Terwijl een andere vriendelijke figuur binnen 3 velden een aanval uitvoert, mag deze 1 dobbelsteen opnieuw gooien."
+      }
+    ]
+  },
+  {
+    "name": "Rebel Trooper",
+    "subname": "",
+    "id": "A002",
+    "ignored": "",
+    "traits": [
+      "Trooper"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: Pierce 1",
+      "{B}: +1 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "Aim",
+        "text": "Als je je veld tijdens deze activering niet hebt verlaten, tel dan +1 {H} en +2 nauwkeurigheid bij je aanvalsresultaten op."
+      }
+    ]
+  },
+  {
+    "name": "Rebel Saboteur",
+    "subname": "",
+    "id": "A003",
+    "ignored": "",
+    "traits": [
+      "Spy",
+      "Heavy Weapon"
+    ],
+    "keywords": [
+      "+2 nauwkeurigheid"
+    ],
+    "surges": [
+      "{B}: Pierce 1",
+      "{B}: Verdoven",
+      "{B}: Blast 1 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "Overload",
+        "text": "Je kan dezelfde {B}-vaardigheid tot tweemaal per aanval gebruiken."
+      }
+    ]
+  },
+  {
+    "name": "Chewbacca",
+    "subname": "LOYAL WOOKIEE",
+    "id": "A004",
+    "ignored": "",
+    "traits": [
+      "Smuggler",
+      "Wookiee",
+      "Guardian"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Verdoven",
+      "{B}: +2 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Slam",
+        "text": "Kies 1 aangrenzend vijandelijk figuur en gooi 1 rode dobbelsteen. Dat figuur lijdt {H}, gelijk aan het {H} resultaat. Als het een klein figuur is, mag je het vervolgens 1 veld verplaatsen."
+      },
+      {
+        "name": "Protector",
+        "text": "Terwijl een vriendelijke figuur verdedigt, en jij grenst aan het doelveld, voeg +1 {G} toe aan de verdedigingsresultaten. Limiet: 1 keer per aanval mag de vaardigheid \"Protector\" uitgevoerd worden."
+      }
+    ]
+  },
+  {
+    "name": "Han Solo",
+    "subname": "SCOUNDREL",
+    "id": "A005",
+    "ignored": "",
+    "traits": [
+      "Smuggler",
+      "Leader"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: +2 nauwkeurigheid, +1 {H}",
+      "{B}: +2 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "Return Fire",
+        "text": "Nadat een aanval die jou als doelwit had is afgehandeld, en als je geen {H} hebt opgelopen, mag je onderbreken om een aanval uit te voeren die die aanvaller als doelwit heeft. Limiet: 1 keer per ronde."
+      },
+      {
+        "name": "Distracting",
+        "text": "Terwijl een vriendelijke figuur verdedigt, en jij grenst aan het doelveld, voeg +1 {F} toe aan de verdedigingsresultaten."
+      },
+      {
+        "name": "Cunning",
+        "text": "Tijdens het verdedigen voeg je +1 {G} toe aan de verdedigingsresultaten voor elk {F}-resultaat."
+      }
+    ]
+  },
+  {
+    "name": "C-3PO",
+    "subname": "HUMAN-CYBORG RELATIONS",
+    "id": "A006",
+    "ignored": "",
+    "traits": [
+      "Droid"
+    ],
+    "keywords": [],
+    "surges": [],
+    "abilities": [
+      {
+        "name": "{A} Inform",
+        "text": "Kies een aangrenzend vriendelijke figuur. Dat figuur wordt gefocust."
+      },
+      {
+        "name": "Cower",
+        "text": "Tijdens het verdedigen, terwijl je grenst aan een vriendelijke figuur, mag je 1 verdedigingsdobbelsteen opnieuw gooien."
+      },
+      {
+        "name": "Distracting",
+        "text": "Terwijl een vriendelijke figuur verdedigt, voeg je +1 {F} toe aan de verdedigingsresultaten als je grenst aan het doelveld."
+      },
+      {
+        "name": "Non-Combatant",
+        "text": "Je kunt niet aanvallen."
+      }
+    ]
+  },
+  {
+    "name": "R2-D2",
+    "subname": "LOYAL ASTROMECH",
+    "id": "A007",
+    "ignored": "",
+    "traits": [
+      "Droid"
+    ],
+    "keywords": [
+      "+2 nauwkeurig",
+      "+1 {B}"
+    ],
+    "surges": [
+      "{B}: Pierce 2",
+      "{B}: Verdoven",
+      "{B}: Verzwakken"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Service: ",
+        "text": "Jij of een aangrenzende vriendelijke DROID of VEHICLE herstelt 1 {H}."
+      },
+      {
+        "name": "Computer Interface Arm",
+        "text": "Je kunt {I}-testen uitvoeren op objecten waarop helden {I}-testen kunnen uitvoeren (elitefiguren krijgen 1 succes)."
+      },
+      {
+        "name": "Lucky",
+        "text": "Tijdens het verdedigen, als je een blanco resultaat gooit, voeg je +1 {E} toe aan de verdedigingsresultaten."
+      }
+    ]
+  },
+  {
+    "name": "Leia Organa",
+    "subname": "REBEL COMMANDER",
+    "id": "A008",
+    "ignored": "",
+    "traits": [
+      "Leader",
+      "Spy"
+    ],
+    "keywords": [
+      "+1 {F}"
+    ],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Herstel 2 {H}",
+      "{B}: +3 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Battlefield Leadership",
+        "text": "Voer een aanval uit. Kies vervolgens een andere vriendelijke figuur binnen 3 velden. Dat figuur mag onderbreken om een aanval uit te voeren tegen hetzelfde doelwit."
+      },
+      {
+        "name": "{B} Aggressive Negotiations",
+        "text": "Plaats 1 forceertoken op een vijandelijke inzetgroep. De volgende keer dat deze groep wordt geactiveerd, leg je de token af en negeer je het bonuseffect."
+      }
+    ]
+  },
+  {
+    "name": "Echo Base Trooper",
+    "subname": "",
+    "id": "A009",
+    "ignored": "",
+    "traits": [
+      "Trooper"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: +1 {H}",
+      "{B}: +2 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "Front Line",
+        "text": "Tijdens het aanvallen, als het doelwit zich binnen 3 velden van je bevindt, mag je 1 blauwe dobbelsteen van je aanvalsdobbelstenen vervangen door 1 rode"
+      },
+      {
+        "name": "Efficient Travel",
+        "text": "Je negeert extra verplaatspuntkosten voor moeilijk terrein en vijandige figuren."
+      }
+    ]
+  },
+  {
+    "name": "Lando Calrissian",
+    "subname": "CHARMING GAMBLER",
+    "id": "A010",
+    "ignored": "",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "keywords": [
+      "+2 nauwkeurigheid"
+    ],
+    "surges": [
+      "{B}: Verbergen, verdoven",
+      "{B}: +2 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "Resourceful",
+        "text": "Tijdens het aanvallen en verdedigen mag je 1 van je aanvals- of verdedigdobbelstenen opnieuw gooien."
+      },
+      {
+        "name": "Gambit",
+        "text": "Voordat je een dobbelsteen opnieuw gooit, mag je deze vervangen door een andere dobbelsteen van hetzelfde type. Na het gooien wordt de nieuwe dobbelsteen beschouwd als opnieuw gegooid."
+      }
+    ]
+  },
+  {
+    "name": "Luke Skywalker (Jedi)",
+    "subname": "JEDI KNIGHT",
+    "id": "A011",
+    "ignored": "",
+    "traits": [
+      "Force User",
+      "Leader",
+      "Brawler"
+    ],
+    "keywords": [
+      "+1 {H}",
+      "+1 {F}"
+    ],
+    "surges": [
+      "{B}: +1 {H}",
+      "{B}: Pierce 3"
+    ],
+    "abilities": [
+      {
+        "name": "Deflect",
+        "text": "Nadat een {O}-aanval die jou of een aangrenzende vriendelijke figuur als doelwit heeft is afgehandeld, loopt een vijandige figuur naar keuze binnen jouw zichtlijn 1 {H} op."
+      },
+      {
+        "name": "Heroic",
+        "text": "Eenmaal tijdens je activering mag je een aanval uitvoeren zonder een actie te spenderen."
+      }
+    ]
+  },
+  {
+    "name": "Alliance Ranger",
+    "subname": "",
+    "id": "A012",
+    "ignored": "",
+    "traits": [
+      "Trooper",
+      "Hunter"
+    ],
+    "keywords": [
+      "+1 nauwkeurigheid"
+    ],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Pierce 1",
+      "{B}: +2 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "Guerilla",
+        "text": "Nadat je een aanval hebt afgehandeld en de verdediger is verslagen, word je verborgen."
+      },
+      {
+        "name": "Sniper",
+        "text": "Tijdens het aanvallen, als het doelveld 5 of meer velden ver weg is, mag je 1 aanvalsdobbelsteen opnieuw gooien."
+      }
+    ]
+  },
+  {
+    "name": "Ahsoka Tano",
+    "subname": "REBEL INSTIGATOR",
+    "id": "A013",
+    "ignored": "",
+    "traits": [
+      "Force User",
+      "Leader",
+      "Spy"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Pierce 3",
+      "{B}: Krijg 1 {h}"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Force Leap",
+        "text": "Plaats je figuur op een leeg veld binnen 6 velden."
+      },
+      {
+        "name": "Vigor",
+        "text": "Aan het begin van je activering mag je 2 verplaatspunten of 1 POWER-{F} krijgen."
+      },
+      {
+        "name": "Twin Sabers",
+        "text": "Tijdens het aanvallen mag je alle aanvalsdobbelstenen opnieuw gooien, of de verdediger dwingen alle verdedigingsdobbelstenen opnieuw te gooien."
+      }
+    ]
+  },
+  {
+    "name": "Ezra Bridger",
+    "subname": "SPECTRE-6",
+    "id": "A014",
+    "ignored": "",
+    "traits": [
+      "Force User",
+      "Smuggler"
+    ],
+    "keywords": [
+      "+1 {G}"
+    ],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Pierce 3",
+      "{B}: Herstel 2 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "Brash",
+        "text": "Aan het begin van elke ronde, verplaats tot 4 velden."
+      },
+      {
+        "name": "Stronger Together",
+        "text": "Tijdens het aanvallen kies je een held binnen 3 velden. Voor elke niet-rode dobbelsteen tussen diens {J}-dobbelstenen mag je 1 aanvalsdobbelsteen opnieuw gooien."
+      }
+    ]
+  },
+  {
+    "name": "Kanan Jarrus",
+    "subname": "SPECTRE-1",
+    "id": "A015",
+    "ignored": "",
+    "traits": [
+      "Force User",
+      "Leader"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Pierce 3"
+    ],
+    "abilities": [
+      {
+        "name": "Force Vision",
+        "text": "Na deze activatie kies je, in plaats van de app willekeurig de volgende keizerlijke activatie te laten bepalen, een vijandelijke inzetgroep en activeer je die handmatig. Dit geldt als de volgende keizerlijke activatie."
+      },
+      {
+        "name": "Soresu Defense",
+        "text": "Terwijl een vriendelijk figuur binnen 3 velden verdedigt, mag die 1 verdedigingsdobbelsteen opnieuw gooien. Als die dat doet, verander dan elk {E}-resultaat in 2 {G} en 1 {F}. Heeft die figuur geen {P}-wapen of {P}-aanvalstype, dan lijd jij 1 {H}."
+      }
+    ]
+  },
+  {
+    "name": "Sabine Wren",
+    "subname": "SPECTRE-5",
+    "id": "A016",
+    "ignored": "",
+    "traits": [
+      "Hunter"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: Pierce 2",
+      "{B}: +1 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Evasive Maneuver",
+        "text": "Verplaats tot 2 velden, herstel daarna 2 {H}."
+      },
+      {
+        "name": "Parting Gift",
+        "text": "Eenmaal tijdens je activatie mag je een veld kiezen binnen 2 velden en 1 groene dobbelsteen gooien. Elke andere figuur en elk object op of aangrenzend aan dat veld lijdt {H} gelijk aan het aantal {H}-resultaten."
+      }
+    ]
+  },
+  {
+    "name": "Zeb Orrelios",
+    "subname": "SPECTRE-4",
+    "id": "A017",
+    "ignored": "",
+    "traits": [
+      "Brawler",
+      "Guardian"
+    ],
+    "keywords": [
+      "+3 nauwkeurigheid"
+    ],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: +2 nauwkeurigheid, herstel 1 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "Bo-Rifle Staff Strike",
+        "text": "Eenmaal tijdens je activatie mag je een {P}-aanval uitvoeren met 2 rode dobbelstenen en zonder een actie te spenderen."
+      }
+    ]
+  },
+  {
+    "name": "Obi-Wan Kenobi",
+    "subname": "JEDI KNIGHT",
+    "id": "A018",
+    "ignored": "",
+    "traits": [
+      "Force User"
+    ],
+    "keywords": [
+      "+1 {F}"
+    ],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Pierce 3"
+    ],
+    "abilities": [
+      {
+        "name": "Use the Force",
+        "text": "Terwijl een andere vriendelijk figuur binnen 3 velden een vaardigheidstest uitvoert, tel +1 {B} bij de resultaten op."
+      },
+      {
+        "name": "Mind Trick",
+        "text": "Eenmaal tijdens je activatie mag je tot 2 vijandige figuren binnen 4 velden van je kiezen. Verplaats elk van die figuren 1 veld."
+      }
+    ]
+  },
+  {
+    "name": "Hera Syndulla",
+    "subname": "SPECTRE-2",
+    "id": "A019",
+    "ignored": "",
+    "traits": [
+      "Leader",
+      "Smuggler"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: +1 {H}",
+      "{B} {B}: Pierce 2"
+    ],
+    "abilities": [
+      {
+        "name": "Call the Shots",
+        "text": "Terwijl een andere vriendelijke figuur binnen 3 velden aanvalt, mag je +2 nauwkeurigheid, +1 {H} of +1 {B} toepassen op de aanvalsresultaten. Maximaal één keer per ronde."
+      },
+      {
+        "name": "Smooth Landing",
+        "text": "Na het inzetten krijg jij en elke aangrenzende vriendelijke figuur 1 verplaatspunt."
+      }
+    ]
+  },
+  {
+    "name": "C1-10P",
+    "subname": "\"CHOPPER\"",
+    "id": "A020",
+    "ignored": "",
+    "traits": [
+      "Droid"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: Pierce 2",
+      "{B}: Herstel 2 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Ram",
+        "text": "Verplaats tot 2 velden en kies daarna een aangrenzende figuur. Als die figuur vijandig is, gooi 1 groene dobbelsteen. Die lijdt {H} gelijk aan het aantal {H}-resultaten. Als die figuur klein is, verplaats hem of haar tot 1 veld."
+      },
+      {
+        "name": "{B} System Shock",
+        "text": "Gebruik terwijl je op of aangrenzend aan een terminal bent. Kies een figuur op of aangrenzend aan een terminal. Die figuur lijdt 2 {H} en 1 {C}."
+      }
+    ]
+  },
+  {
+    "name": "Alliance Smuggler",
+    "subname": "",
+    "id": "A021",
+    "ignored": "",
+    "traits": [
+      "Smuggler"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: Verdoven",
+      "{B}: Pierce 1",
+      "{B}: +2 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Smuggler's Instincts",
+        "text": "Voer een interactie uit, verplaats daarna tot 2 velden."
+      },
+      {
+        "name": "Slippery",
+        "text": "Tijdens het verdedigen trek je 2 nauwkeurigheid af van de aanvalsresultaten. Nadat een aanval die jou als doelwit had is afgerond, krijg je 2 verplaatspunten."
+      }
+    ]
+  },
+  {
+    "name": "Alliance Smuggler (Elite)",
+    "subname": "",
+    "id": "A022",
+    "ignored": "",
+    "traits": [
+      "Smuggler"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: Verdoven",
+      "{B}: Focus",
+      "{B}: Pierce 2",
+      "{B}: +3 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "{A} Improved Smuggler's Instincts",
+        "text": "Voer een interactie uit, verplaats daarna tot 3 velden."
+      },
+      {
+        "name": "Slippery",
+        "text": "Tijdens het verdedigen trek je 2 nauwkeurigheid af van de aanvalsresultaten. Nadat een aanval die jou als doelwit had is afgerond, krijg je 2 verplaatspunten."
+      }
+    ]
+  },
+  {
+    "name": "Wookiee Warrior",
+    "subname": "",
+    "id": "A023",
+    "ignored": "",
+    "traits": [
+      "Brawler",
+      "Wookiee"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: +1 {H}",
+      "{B}: Bloeden",
+      "{B}: Cleave 2 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "Fury",
+        "text": "Tijdens het aanvallen, als je 5 of meer {H} hebt opgelopen, tel je +1 {B} bij de aanvalsresultaten op."
+      }
+    ]
+  },
+  {
+    "name": "Wookiee Warrior (Elite)",
+    "subname": "",
+    "id": "A024",
+    "ignored": "",
+    "traits": [
+      "Brawler",
+      "Wookiee"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Bloeden",
+      "{B}: Cleave 2 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "Fury",
+        "text": "Tijdens het aanvallen, als je 5 of meer {H} hebt opgelopen, tel je +1 {B} bij de aanvalsresultaten op."
+      }
+    ]
+  },
+  {
+    "name": "Alliance Ranger (Elite)",
+    "subname": "",
+    "id": "A025",
+    "ignored": "",
+    "traits": [
+      "Trooper",
+      "Hunter"
+    ],
+    "keywords": [
+      "+1 nauwkeurigheid",
+      "Pierce 1"
+    ],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Pierce 1",
+      "{B}: +3 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "Guerilla",
+        "text": "Nadat je een aanval hebt afgehandeld en de verdediger is verslagen, word je verborgen."
+      },
+      {
+        "name": "Sniper",
+        "text": "Tijdens het aanvallen, als het doelveld 5 of meer velden ver weg is, mag je 1 aanvalsdobbelsteen opnieuw gooien."
+      }
+    ]
+  },
+  {
+    "name": "Echo Base Trooper (Elite)",
+    "id": "A026",
+    "tier": 0,
+    "ignored": "",
+    "traits": [
+      "Trooper",
+      "Hunter"
+    ],
+    "keywords": [
+      "+1 nauwkeurigheid",
+      "Pierce 1"
+    ],
+    "surges": [
+      "{B}: +2 {H}",
+      "{B}: Pierce 1",
+      "{B}: +3 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "Guerilla",
+        "text": "Nadat je een aanval hebt afgehandeld en de verdediger is verslagen, word je verborgen."
+      },
+      {
+        "name": "Sniper",
+        "text": "Tijdens het aanvallen, als het doelveld 5 of meer velden ver weg is, mag je 1 aanvalsdobbelsteen opnieuw gooien."
+      }
+    ]
+  },
+  {
+    "name": "Rebel Saboteur (Elite)",
+    "subname": "",
+    "id": "A027",
+    "ignored": "",
+    "traits": [
+      "Spy",
+      "Heavy Weapon"
+    ],
+    "keywords": [
+      "+3 nauwkeurigheid"
+    ],
+    "surges": [
+      "{B}: Pierce 2",
+      "{B}: Verdoven",
+      "{B}: Blast 1 {H}"
+    ],
+    "abilities": [
+      {
+        "name": "Overload",
+        "text": "Je kunt dezelfde {B}-vaardigheid tot tweemaal per aanval gebruiken."
+      },
+      {
+        "name": "Priority Target",
+        "text": "Figuren blokkeren geen zichtlijn voor de aanvallen van deze figuur."
+      }
+    ]
+  },
+  {
+    "name": "Rebel Trooper (Elite)",
+    "subname": "",
+    "id": "A028",
+    "ignored": "",
+    "traits": [
+      "Trooper"
+    ],
+    "keywords": [],
+    "surges": [
+      "{B}: Pierce 2",
+      "{B}: +2 nauwkeurigheid"
+    ],
+    "abilities": [
+      {
+        "name": "Aim",
+        "text": "Als je je veld tijdens deze activering niet hebt verlaten, tel dan +1 {H} en +2 nauwkeurigheid bij je aanvalsresultaten op."
+      },
+      {
+        "name": "{A} {A} Get Into Position",
+        "text": "Krijg 4 verplaatspunten en wordt gefocust."
+      }
+    ]
+  }
 ]

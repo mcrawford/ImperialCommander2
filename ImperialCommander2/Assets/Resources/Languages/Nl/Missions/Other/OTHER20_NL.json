@@ -1,0 +1,698 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Keizerlijke bemoeienissen",
+    "missionDescription": "",
+    "missionInfo": "{-} Een keizerlijke figuur kan de rode terminal activeren wanneer hem dat wordt opgedragen. Klik in dat geval op \"blauwdruk downloaden\" op de terminal.\n{-} De helden moeten de codes voor de luchtsluisbediening vinden. Deze kunnen worden opgehaald bij de blauwe terminal.\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.\n{-} De missie gaat verder wanneer de blauwe terminal gevonden is ({V}) of de blauwdruk gedownload is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+    "campaignName": "Han Solo (Scoundrel) Figure Pack",
+    "startingObjective": "Zoek de terminal met de codes voor de luchtsluis. Zorg ervoor dat de keizerlijke troepen bij de rode terminal wegblijven.",
+    "repositionOverride": "Sta grenzend aan de rode terminal.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Blue Terminal 0-1",
+      "GUID": "7b65f6b7-301c-4816-a396-82bd8fd50d3f",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Blue Terminal",
+              "GUID": "f5310205-b4b2-451b-9529-a20810848f08",
+              "theText": "De keizerlijke computers bevatten de toegangscodes voor de luchtsluis.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "597a5c77-61fd-4815-8f84-3351436b5d05",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Blue Terminal 1-0",
+      "GUID": "7ddb897c-5aae-4794-bec0-869fb0cde2a9",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Blue Terminal",
+              "GUID": "c34d1804-907e-40b5-9f4c-dd832d1ed32b",
+              "theText": "De keizerlijke computers bevatten de toegangscodes voor de luchtsluis.\n\n{-} Een gezonde held kan een interactie uitvoeren op de blauwe terminal ({J} of {I}) om de toegangssleutel voor de luchtsluis op te halen.\n{-} Een keizerlijke figuur die de blauwdruk bij zich heeft, kan een interactie uitvoeren op de blauwe terminal om de blauwdruk te uploaden. Klik in dat geval op \"blauwdruk uploaden\".",
+              "buttonList": [
+                {
+                  "GUID": "1581b5ce-3464-499c-9cf5-896a594291a3",
+                  "theText": "{A} Begin te hacken"
+                },
+                {
+                  "GUID": "e3b227b7-813d-4953-a107-d42251adbeb0",
+                  "theText": "Blauwdruk uploaden"
+                }
+              ]
+            }
+          ],
+          "GUID": "5abe15f2-33fd-4f5d-a233-3e25757f83c3",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Blue Terminal 1-1",
+      "GUID": "ff7ddd36-40c9-4481-baf0-7b58d56e52c2",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Blue Terminal",
+              "GUID": "179173bf-1c3d-4c63-8863-2efa2ac0ec64",
+              "theText": "De keizerlijke computers bevatten de toegangscodes voor de luchtsluis.\n\n{-} Een keizerlijke figuur die de blauwdruk bij zich heeft, kan een interactie uitvoeren op de blauwe terminal om de blauwdruk te uploaden. Klik in dat geval op \"blauwdruk uploaden\".",
+              "buttonList": [
+                {
+                  "GUID": "912c4c71-58d7-4119-b9b8-86acef1d6f32",
+                  "theText": "Blauwdruk uploaden"
+                }
+              ]
+            }
+          ],
+          "GUID": "43c2a0be-85fe-4342-a9ad-897131dba373",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Control Room revealed",
+      "GUID": "8eadb0d6-5047-4a97-be41-8296714dac91",
+      "eventText": "De deur schuift open en onthult een kleine computerruimte vol zoemende terminals.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Data Carrier Aside No",
+      "GUID": "2e348dce-d45e-4be4-be26-06b98c3a877d",
+      "eventText": "De keizerlijke troepen voeren hun inspanningen op.\n\n{-} De keizerlijke figuur die zich het dichtst bij de datakoerier bevindt, wordt <color=\"red\">gefocust</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Data Carrier Aside Yes",
+      "GUID": "dc8e66df-340e-4094-8372-deb2889c5304",
+      "eventText": "Plaats zijn figuur op de blauwdruk. Hij pakt direct de blauwdruk op.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Data Carrier Start of Round",
+      "GUID": "19351f19-b836-433a-b7e6-e93403e73961",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Is de datakoerier apart gezet?",
+          "buttonList": [
+            {
+              "GUID": "4766d6df-9939-4adc-a3d7-010dcbdf1c81",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "aa4747dd-5d1e-4201-9771-a226dfa8103f",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "bfd32196-01cb-42ef-9958-92a81ef92e7c",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Data Carrier Yes",
+      "GUID": "2b04d04d-8888-477d-a966-a511e850f8a0",
+      "eventText": "Beëindig deze activering onmiddellijk zonder instructies uit te voeren.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Data Carrier activates",
+      "GUID": "7a2d3246-3a2f-4734-ad29-1dfb0f536f31",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "De datakoerier wordt geactiveerd.\n\nIs zijn figuur apart gezet?",
+          "buttonList": [
+            {
+              "GUID": "72e59c88-c994-420d-8752-34dc0a957b92",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "6a1a8326-c351-40e0-936a-947e46a1f81d",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "8b55a7f8-fb26-450b-8bc9-989f279e8dc2",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Door 1 Opens",
+      "GUID": "d8c2ecdb-9b41-4855-869c-ddb5c097621a",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "985f99c8-acf8-4a6a-b982-aca3753fff63",
+              "theText": "Op de deur staat \"Controlekamer\".",
+              "buttonList": [
+                {
+                  "GUID": "79170198-42f8-46b3-b5ee-b7573f37eda8",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "79d055cd-cf2f-43f3-80a1-434636ebde91",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Door 2 Opens",
+      "GUID": "166bcd0f-9215-4270-9f04-4a464cfbb52a",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 2",
+              "GUID": "75207717-f935-43b8-8e2c-bfee94c1e24a",
+              "theText": "Op de deur staat \"Controlekamer\".",
+              "buttonList": [
+                {
+                  "GUID": "b6e9dd32-a87d-476e-8610-a606519b4f8b",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "195290d6-5490-4657-9f66-a4884102e8d7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "\"Ik denk dat we het op de moeilijke manier moeten doen,\" zegt Han. Hij glipt terug de cockpit in en ramt de gashendel naar voren. Een metaalachtig gekrijs zwelt aan tot een oorverdovende klap terwijl de Millennium Falcon zich met een ruk losmaakt van het keizerlijke schip. Met brokstukken van het achterste gedeelte in zijn kielzog schiet de Falcon hyperspace in.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Han rent terug naar de besturing terwijl jij de codes intoetst om de luchtsluis te ontkoppelen. \"Oké, doe het!\" De Falcon maakt zich los van de landingsshuttle. Jagers duiken op, maar geen enkele weet een rake treffer te plaatsen voordat jullie hyperspace in schieten.\n\n{-} De rebellen winnen de missie!\n{-} Rebellen-spelers kiezen één held die de beloningskaart \"Quickdraw Holster\" ontvangt.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Keizerlijke jagers en entervaartuigen doken uit het niets op. Voor je het wist, stroomden stormtroopers de <i>Falcon</i> binnen. Nu sta je voor de keuze: het schip verdedigen of vechten om de codes te bemachtigen en te ontsnappen.\n\n{-} Plaats de helden op de blauw gemarkeerde velden, zo gelijkmatig mogelijk verdeeld.\n{-} Plaats <color=\"red\">Han Solo</color> (Scoundrel) op het rood gemarkeerde veld. De helden besturen hem als bondgenoot.\n{-} Een keizerlijke figuur kan de rode terminal activeren wanneer hem dat wordt opgedragen. Klik in dat geval op \"blauwdruk downloaden\" op de terminal.\n{-} De helden moeten de codes voor de luchtsluisbediening vinden. Deze kunnen worden opgehaald bij de blauwe terminal.\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.\n{-} De missie gaat verder wanneer de blauwe terminal gevonden is ({V}) of de blauwdruk gedownload is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Objective 0-1-0",
+      "GUID": "f2dbaad0-6851-4f40-9f1a-16093c97c4e5",
+      "eventText": "",
+      "eventActions": [
+        {
+          "shortText": "Haal de toegangssleutel op. Zorg ervoor dat de keizerlijke troepen bij de rode terminal wegblijven.",
+          "longText": null,
+          "GUID": "d4cab023-2494-4668-b953-9e0bd2733ef1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Een keizerlijke figuur kan de rode terminal activeren wanneer hem dat wordt opgedragen. Klik in dat geval op \"blauwdruk downloaden\" op de terminal.\n{-} Een gezonde held kan een interactie uitvoeren op de blauwe terminal ({J} of {I}) om de toegangssleutel voor de luchtsluis op te halen. \n{-} Als de toegangssleutel gevallen is, kan een gezonde held deze oppakken.\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen\n{-} De missie gaat verder wanneer de toegangssleutel opgehaald is ({V}) of de blauwdruk gedownload is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "0438398a-fb36-4875-b99c-94d5a120b352",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Objective 0-1-1",
+      "GUID": "d8588e3b-f9e4-4449-83ae-248810836271",
+      "eventText": "",
+      "eventActions": [
+        {
+          "shortText": "Koppel de luchtsluis los. Houd de keizerlijke troepen uit de buurt van de rode terminal.",
+          "longText": "",
+          "GUID": "4fad2f6b-3afc-4c49-9683-5afef12cf765",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Een keizerlijke figuur kan de rode terminal activeren wanneer hem dat wordt opgedragen. Klik in dat geval op \"blauwdruk downloaden\" op de terminal.\n{-} De blauwe neutrale missietoken stelt de toegangssleutel voor.\n{-} Als de toegangssleutel gevallen is, kan een gezonde held deze oppakken.\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.\n{-} De missie gaat verder wanneer de blauwdruk gedownload is.\n{-} De rebellen winnen zodra de luchtsluis losgekoppeld is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "02f7d716-48cd-4beb-9f51-c03d20ab77d3",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Objective 1-0-0",
+      "GUID": "0d5f2008-af9d-4b10-a92e-bb3fe3961f4d",
+      "eventText": "",
+      "eventActions": [
+        {
+          "shortText": "Zoek de blauwe terminal. Voorkom dat de keizerlijke troepen de blauwdruk uploaden.",
+          "longText": "",
+          "GUID": "389d742d-abd0-482c-b6f6-2fb1e4747542",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De rode neutrale missietoken stelt de blauwdruk voor.\n{-} Een keizerlijke figuur die de blauwdruk bij zich heeft, kan een interactie uitvoeren op de blauwe terminal om de blauwdruk te uploaden wanneer opgedragen.\n{-} Als de blauwdruk gevallen is, kan een keizerlijke figuur deze oppakken.\n{-} De helden moeten de codes voor de luchtsluisbediening vinden. Deze kunnen worden opgehaald bij de blauwe terminal.\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.\n{-} De missie gaat verder wanneer de blauwe terminal gevonden is ({V}).\n{-} De rebellen verliezen wanneer de blauwdruk geüpload is of alle helden gewond zijn.",
+          "GUID": "725503f8-1484-44fa-8944-95f8acbfd77e",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Objective 1-1-0",
+      "GUID": "7792dc66-6475-4783-8cae-a0e2d991dca5",
+      "eventText": "",
+      "eventActions": [
+        {
+          "shortText": "Haal de toegangssleutel op. Voorkom dat de keizerlijke troepen de blauwdruk uploaden.",
+          "longText": "",
+          "GUID": "aa566004-cd9b-4469-8ea9-4e830124a167",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De rode neutrale missietoken stelt de blauwdruk voor.\n{-} Een keizerlijke figuur die de blauwdruk bij zich heeft, kan een interactie uitvoeren op de blauwe terminal om de blauwdruk te uploaden wanneer opgedragen.\n{-} Als de blauwdruk gevallen is, kan een keizerlijke figuur deze oppakken.\n{-} Een gezonde held kan een interactie uitvoeren op de blauwe terminal ({J} of {I}) om de toegangssleutel voor de luchtsluis op te halen. \n{-} Als de toegangssleutel gevallen is, kan een gezonde held deze oppakken.\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.\n{-} De missie gaat verder wanneer de blauwe terminal gevonden is ({V}).\n{-} De rebellen verliezen wanneer de blauwdruk geüpload is of alle helden gewond zijn.",
+          "GUID": "5c116d52-97de-4b0e-abd4-a4516723ad9f",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Objective 1-1-1",
+      "GUID": "c7444350-0f23-48ad-867c-d54dc4192388",
+      "eventText": "",
+      "eventActions": [
+        {
+          "shortText": "Ontkoppel de luchtsluis. Voorkom dat de keizerlijke troepen de blauwdruk uploaden.",
+          "longText": "",
+          "GUID": "947e481e-b6e7-4f62-bedb-b49f149747a4",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De blauwe neutrale missietoken stelt de toegangssleutel voor.\n{-} Als de toegangssleutel gevallen is, kan een gezonde held deze oppakken.\n{-} De rode neutrale missietoken stelt de blauwdruk voor.\n{-} Een keizerlijke figuur die de blauwdruk bij zich heeft, kan een interactie uitvoeren op de blauwe terminal om de blauwdruk te uploaden wanneer opgedragen.\n{-} Als de blauwdruk gevallen is, kan een keizerlijke figuur deze oppakken.\n{-} De rebellen winnen wanneer de luchtsluis ontkoppeld is.\n{-} De rebellen verliezen wanneer de blauwdruk geüpload is of alle helden gewond zijn.",
+          "GUID": "4fa65cb8-eea0-48de-b0d6-e5bcf322a76e",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "fecaccc8-ebdf-4166-9dc9-f2cda949ce60",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "a790bcfd-b09c-4035-8ca3-0d65dc5dc79d",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "599a089d-37ff-421b-a2f4-16e018f80ffb",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Red Terminal 0-1",
+      "GUID": "2a40df35-344f-4f68-8931-6ab81b4fb535",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Red Terminal",
+              "GUID": "b91d628c-a002-4d2c-b88d-cb6072d999a3",
+              "theText": "De systemen van de <i>Falcon</i> regelen de luchtsluis, maar bevatten ook de blauwdruk van het schip.\n\n{-} Een keizerlijke figuur kan de rode terminal activeren wanneer hem dat wordt opgedragen. Klik in dat geval op \"blauwdruk downloaden\" op de terminal.\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.",
+              "buttonList": [
+                {
+                  "GUID": "abf43671-484e-400a-bc2e-b4a74cd71a26",
+                  "theText": "Blauwdruk downloaden"
+                },
+                {
+                  "GUID": "6a6459c3-21af-4235-9ed9-ce11174a5cc1",
+                  "theText": "{A} Ontkoppel de luchtsluis"
+                }
+              ]
+            }
+          ],
+          "GUID": "cab52a10-764e-4f51-9c2d-0f59d8fd1eb0",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Red Terminal 1-0",
+      "GUID": "7ad35655-754f-4977-a046-4bc002af57d3",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Red Terminal",
+              "GUID": "86eac59a-b56c-43be-a684-d071169dca8d",
+              "theText": "De systemen van de <i>Falcon</i> regelen de luchtsluis.\n\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "08e0a6a0-7b0e-4ac8-9a19-c0ce836e6517",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Red Terminal 1-1",
+      "GUID": "a039882e-1e01-40e6-8362-be1bdbda3abf",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Red Terminal",
+              "GUID": "9fcaf208-4ea2-4449-986f-23bad0f92639",
+              "theText": "De systemen van de <i>Falcon</i> regelen de luchtsluis.\n\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.",
+              "buttonList": [
+                {
+                  "GUID": "dbe502b3-517e-49e0-a3af-4cf0c476436b",
+                  "theText": "{A} Ontkoppel de luchtsluis"
+                }
+              ]
+            }
+          ],
+          "GUID": "98731f50-f0fb-459e-8222-b8e74da91c2a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Schematic retrieved",
+      "GUID": "5d2176b9-c88d-4b46-8e43-366c2e4a622f",
+      "eventText": "Ondanks je inspanningen slagen de keizerlijke troepen erin de systemen van de <i>Falcon</i> te hacken. Ze gooien de datachip naar een atletische officier, die er meteen vandoor gaat.\n\n{-} Plaats een gewone keizerlijke officier. Dit is de datakoerier.",
+      "eventActions": [
+        {
+          "enemyName": "Datakoerier",
+          "customText": "{A} Verplaats 4 richting de blauwe terminal.\n{A} Verplaats 1 om een interactie uit te voeren op de blauwe terminal.\n{A} Verplaats 4 richting de blauwe terminal.\n{A} Verplaats 1 om een interactie uit te voeren op de blauwe terminal.",
+          "modification": null,
+          "repositionInstructions": "Geen",
+          "GUID": "e7d5e046-2f94-4e42-9766-9de90d0fe9d3",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG004/Imperial Officer"
+        },
+        {
+          "tbText": "{-} Als de datakoerier verslagen is, leg zijn figuur dan opzij. (Hij geldt nog steeds als verslagen voor het activeren van vaardigheden.)",
+          "GUID": "900b995c-ea58-4c79-bdcb-2749a3f7038f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Slice Attempt",
+      "GUID": "38313c36-6e95-401e-a5f9-31548a88b081",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "You start slicing into the Star Destroyer's systems.\n\n{-} Test {J} of {I}. Pas +1 {B} toe voor elke forceertoken op de terminal en leg vervolgens alle forceertokens op de terminal af. Vul hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "0ebc3744-92bb-4d4b-9359-28f1da76f07c",
+              "theText": "Je boekt wat vooruitgang, maar de beveiliging houdt je voorlopig nog tegen. Je moet het blijven proberen.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de terminal."
+            }
+          ],
+          "GUID": "47c66ca1-7198-473e-bb1d-b4e0ca19a0ac",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Target Change",
+      "GUID": "2969d33a-8739-4791-a7b4-db45764ef485",
+      "eventText": "",
+      "eventActions": [
+        {
+          "repositionText": "Blokkeer de toegang tot de rode terminal.",
+          "GUID": "4778fdc1-96a4-4359-a9b1-5b3cc024b1ef",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "otherTarget": "de held met de toegangssleutel",
+          "GUID": "34da466d-1db4-403c-8ee7-b6bed4b51536",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        }
+      ]
+    },
+    {
+      "eventName": "Unauthorized Access",
+      "GUID": "ea246802-2f87-467f-8e57-7105535d364d",
+      "eventText": "Er schieten vonken uit de console terwijl je de terminal hackt en de toegangscodes op een schijf kopieert. Zodra je klaar bent, schiet je de console aan stukken en keer je terug naar de Falcon. Rode lampjes knipperen en alarmen loeien wanneer achter je een deur opengaat. Nog meer soldaten stormen de gangen in om je ontsnapping tegen te houden.\n\nJe gaat de strijd aan met je belagers, terwijl Han’s sarcastische stem door je comlink kraakt:\n\n\"Weet je, ik was bang dat dit allemaal een beetje saai zou worden! Misschien kun je de volgende keer een noodsignaal sturen naar de dichtstbijzijnde Star Destroyer! Sterker nog, waarom nodigen we Jabba en zijn handlangers niet uit voor het feestje, nu we toch bezig zijn?\"",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "704ddb9e-4166-41d1-b013-450c0bcb75b6",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG015/Trandoshan Hunter"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Blue Terminal",
+      "GUID": "78ed0b56-4344-4c4c-9a81-d7e16dd816f4",
+      "mainText": "De keizerlijke computers bevatten de toegangscodes voor de luchtsluis.\n\n{-} Een gezonde held kan een interactie uitvoeren op de blauwe terminal ({J} of {I}) om de toegangssleutel voor de luchtsluis op te halen.",
+      "buttonList": [
+        {
+          "GUID": "dea16efb-2c19-46e3-809f-ae531c95b3f1",
+          "theText": "{A} Begin te hacken"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "945018a7-276c-4fd6-b8b9-cf2795fa930a",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "c43af7cf-7d98-4304-8e15-7edaaf58df52",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Data Carrier",
+      "GUID": "41a81ae4-3a64-4722-bdda-83c8c8fb13f6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP EOfficer",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 1",
+      "GUID": "c7f0593b-341f-4800-8cd5-3f953782f3f6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 2",
+      "GUID": "6e2b7678-bf5e-4e30-aefe-337449fa5ef9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 3",
+      "GUID": "71e029e2-a25c-44ac-b1ba-dd74288f1d6e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "f552d367-89ff-4094-a8a1-677c6e3259b1",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "0730bc80-af49-4384-b3db-d2cde4cd8d31",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "c77508be-6212-4c7e-9093-f7ac9e3f77f3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "c444fda2-47a1-4a7d-a35a-1b9e2725b6b0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "2c0433c1-b32e-4d59-bb51-d5da382064c9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door 1",
+      "GUID": "3233e87f-eb6e-42c1-b0f5-4f918a307e44",
+      "mainText": "Op de deur staat \"Controlekamer\".",
+      "buttonList": [
+        {
+          "GUID": "98940286-d349-4da7-919d-80eb6e7b032e",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Door 2",
+      "GUID": "f2db40c4-ecf1-4276-9e2c-93494baba335",
+      "mainText": "Op de deur staat \"Controlekamer\".",
+      "buttonList": [
+        {
+          "GUID": "f5acc592-8604-488b-a203-225432235db3",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance 1",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden op de blauw gemarkeerde velden, zo gelijkmatig mogelijk verdeeld.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance 2",
+      "GUID": "109f6d0b-6d8a-4936-934e-01565a0f4f64",
+      "mainText": "Plaats de helden op de blauw gemarkeerde velden, zo gelijkmatig mogelijk verdeeld.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Han Entrance",
+      "GUID": "3295a173-572e-4c81-9f7f-8766c4c3ef4d",
+      "mainText": "Plaats <color=\"red\">Han Solo</color> (Scoundrel) hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Red Terminal",
+      "GUID": "e6c7fda9-76b6-4044-b66d-bd3d9bf39444",
+      "mainText": "De systemen van de <i>Falcon</i> regelen de luchtsluis, maar bevatten ook de blauwdruk van het schip.\n\n{-} Een keizerlijke figuur kan de rode terminal activeren wanneer hem dat wordt opgedragen. Klik in dat geval op \"blauwdruk downloaden\" op de terminal.\n{-} Een held die de codes bij zich heeft, kan een interactie uitvoeren op de rode terminal om de luchtsluis te ontkoppelen.",
+      "buttonList": [
+        {
+          "GUID": "4d72f380-11c5-426f-a6b1-6530da88c967",
+          "theText": "Blauwdruk downloaden"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Imperial Officer (Elite)",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Stormtrooper",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Stormtrooper (Elite)",
+      "customInstructions": ""
+    }
+  ]
+}

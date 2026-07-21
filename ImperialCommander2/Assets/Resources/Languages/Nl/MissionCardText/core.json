@@ -2,7 +2,7 @@
   {
     "id": "Core1",
     "name": "Een nieuwe dreiging",
-    "descriptionText": "<i>Rebellen ontdekten dat het noodbaken een afleiding was van generaal Weiss, een rijzende ster in het keizerlijke leger.\r\nDoor zijn inspanningen is hij een belangrijk doelwit geworden voor het oppercommando van de rebellen. Agenten zoeken het hele sterrenstelsel af naar informatie over de plannen van deze generaal...</i>",
+    "descriptionText": "<i>Rebellen komen erachter dat het noodsignaal slechts een afleidingsmanoeuvre was, opgezet door generaal Weiss, een opkomende ster binnen het keizerlijke leger.\nZijn acties hebben hem op de radar gezet van het oppercommando van de rebellen. Agenten speuren het sterrenstelsel af naar informatie over zijn plannen…</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -15,7 +15,7 @@
   {
     "id": "Core2",
     "name": "Nasleep",
-    "descriptionText": "<i>OVERWINNING! Met de vernietiging van de Death Star heeft het Verzet hoop gegeven aan een melkwegstelsel in angst. Nu ze hun ultieme wapen hebben verloren, probeert het Keizerrijk zich te herstellen van deze verpletterende nederlaag.\r\nTerwijl de brokstukken van het gevechtsstation neerregenen op de rebellenbasis op Yavin 4, zet het Keizerrijk troepen in om wraak te nemen op de rebellen die op de kleine maan zijn gestationeerd.\r\nNiet lang daarna, wanneer een keizerlijk baken begint uit te zenden vanaf een buitenpost op enige afstand van de rebellenbasis, wordt een klein team van elite-agenten uitgezonden; hun missie: het signaal koste wat het kost het zwijgen op te leggen...</i>",
+    "descriptionText": "<i>OVERWINNING! Met de vernietiging van de Death Star heeft het Verzet hoop gebracht aan een sterrenstelsel dat in angst leeft. Nu hun ultieme wapen verloren is gegaan, probeert het Keizerrijk zich te herstellen van deze verpletterende nederlaag.\nTerwijl de wrakstukken van het gevechtsstation neerregenen op de rebellenbasis op Yavin 4, zet het Keizerrijk een plan in gang om wraak te nemen op de rebellen die op de kleine maan zijn gestationeerd.\nNiet lang daarna begint een keizerlijk baken uit te zenden vanaf een buitenpost op enige afstand van de rebellenbasis. Een klein team elite-agenten wordt eropuit gestuurd met één opdracht: het signaal koste wat kost het zwijgen opleggen...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -28,7 +28,7 @@
   {
     "id": "Core3",
     "name": "Commandostructuur",
-    "descriptionText": "<i>Het Keizerrijk blijft de druk op rebellendoelen opvoeren. Ondanks het verlies van verschillende buitenposten slaagt het Verzet erin om de gevreesde keizerlijke vloot een stap voor te blijven.\nDe rebellen zijn nu in het offensief en staan op het punt een zeer belangrijke installatie onder controle van generaal Weiss te lokaliseren...</i>",
+    "descriptionText": "<i>Het Keizerrijk blijft de druk op doelen van het Verzet opvoeren. Ondanks het verlies van meerdere buitenposten is het Verzet erin geslaagd de gevreesde keizerlijke vloot steeds een stap voor te blijven.\nNu het initiatief bij het Verzet ligt, staan de rebellenstrijdkrachten op het punt een uiterst belangrijke installatie onder controle van generaal Weiss te lokaliseren...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -41,7 +41,7 @@
   {
     "id": "Core4",
     "name": "Het wanhopige uur",
-    "descriptionText": "<i>Rebellenspionnen hebben de locatie van het geheime wapen ontdekt. Als Weiss gestopt moet worden, moet dat nu gebeuren.\nDe rebellenvloot staat klaar om het stelsel binnen te springen en een grootschalige aanval uit te voeren om Weiss te verslaan en dit wapen te vernietigen voordat het volledig operationeel is...</i>",
+    "descriptionText": "<i>Spionnen van het Verzet hebben de locatie van het geheime wapen ontdekt. Als Weiss gestopt moet worden, dan moet dat nu gebeuren.\nDe rebellenvloot staat gereed om naar het stelsel te springen en een grootschalige aanval te lanceren om Weiss te verslaan en dit wapen te vernietigen voordat het volledig operationeel wordt...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -54,7 +54,7 @@
   {
     "id": "Core5",
     "name": "Naar binnen getrokken",
-    "descriptionText": "<i>Hoewel het Rijk nog steeds aan het bijkomen is van de schok van het verlies van de Death Star, begint het zich te herstellen. De keizerlijke vloot heeft zich verspreid en jaagt agressief op rebellen. Overal in de melkweg lopen rebelleninstallaties het gevaar ontdekt te worden...</i>",
+    "descriptionText": "<i>Hoewel het Keizerrijk nog altijd de gevolgen voelt van het verlies van de Death Star, begint het zich te herstellen. De keizerlijke vloot heeft zich over het sterrenstelsel verspreid en jaagt meedogenloos op strijdkrachten van het Verzet. Overal in het sterrenstelsel lopen rebellenfaciliteiten het gevaar ontdekt te worden...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -67,7 +67,7 @@
   {
     "id": "Core6",
     "name": "Op eigen houtje",
-    "descriptionText": "<i>Met zo weinig informatie beschikbaar over het wapenproject is het Verzet gedwongen om informatie te zoeken uit elke bron die ze kunnen vinden.\nHan Solo, een belangrijke bondgenoot van het Verzet, was een aanwijzing aan het volgen toen het contact met hem ergens in Hutt territorium werd verbroken. De verblijfplaats van de smokkelaar is momenteel onbekend...</i>",
+    "descriptionText": "<i>Met zo weinig informatie over het wapenproject is het Verzet gedwongen elke mogelijke informatiebron aan te boren.\nHan Solo, een belangrijke bondgenoot van het Verzet, volgde een spoor toen het contact met hem ergens in Hutt-territorium werd verbroken. Sindsdien is de verblijfplaats van de smokkelaar onbekend...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -80,7 +80,7 @@
   {
     "id": "Core7",
     "name": "Keizerlijke gastvrijheid",
-    "descriptionText": "<i>Er is belangrijke informatie aan het licht gekomen over het gevreesde wapenproject van generaal Weiss, maar de rebellenspion die deze informatie bij zich heeft, is gevangengenomen!\nAgenten staan klaar om een gewaagde reddingsmissie te starten, maar er kan weinig worden gedaan totdat zijn locatie is ontdekt... </i>",
+    "descriptionText": "<i>Cruciale informatie over het gevreesde wapenproject van generaal Weiss is aan het licht gekomen, maar de spion van het Verzet die deze informatie bij zich draagt, is gevangengenomen!\nEen team agenten staat klaar voor een gewaagde reddingsmissie, maar eerst moet zijn verblijfplaats worden achterhaald...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -93,7 +93,7 @@
   {
     "id": "Core8",
     "name": "Inkomend",
-    "descriptionText": "<i>De rebellen analyseren de diagrammen van Weiss' geheime wapenproject terwijl de keizerlijke vloot haar inspanningen opvoert om de rebellen te vinden en te vernietigen. Totdat er meer informatie bekend wordt, kunnen de rebellen alleen maar standhouden tegen de gestaag toenemende keizerlijke macht...</i>",
+    "descriptionText": "<i>Het Verzet analyseert de blauwdrukken van Weiss' geheime wapenproject, terwijl de keizerlijke vloot haar inspanningen opvoert om de strijdkrachten van het Verzet op te sporen en te vernietigen.\nTotdat er meer informatie uit de gegevens kan worden gehaald, rest het Verzet niets anders dan stand te houden tegen de gestaag groeiende macht van het Keizerrijk...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -106,7 +106,7 @@
   {
     "id": "Core9",
     "name": "Laatste stand",
-    "descriptionText": "<i>De ontdekking van Weiss' ware plannen heeft het Verzet in het voordeel gebracht!\nTerwijl de rebellenvloot zich klaarmaakt om de strijd aan te gaan met de keizerlijke troepen boven Ord Mantell, zullen agenten afdalen naar het geheime fort van Weiss. Hun laatste missie is om de generaal te confronteren en hem voor eens en voor altijd te verslaan...</i>",
+    "descriptionText": "<i>De ontdekking van Weiss' ware plannen heeft het Verzet de overhand gegeven!\nTerwijl de rebellenvloot zich gereedmaakt om de strijd aan te gaan met de keizerlijke strijdkrachten boven Ord Mantell, dalen agenten af naar Weiss' geheime vesting. Hun laatste missie is de generaal te confronteren en hem voorgoed verslaan...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -119,7 +119,7 @@
   {
     "id": "Core10",
     "name": "De bron",
-    "descriptionText": "<i>Wrede aanvallen van de keizerlijke armada hebben de rebellen gedwongen zich volledig terug te trekken, op zoek naar een plek om hun troepen te hergroeperen.\nOndertussen probeert het rebellencommando de definitieve blauwdrukken van het verwoestende wapen van de generaal te bemachtigen. Als ze gevonden worden, zouden deze plannen de perfecte kans kunnen zijn om het tij tegen het keizerrijk te keren...</i>",
+    "descriptionText": "<i>Meedogenloze aanvallen van de keizerlijke armada hebben het Verzet gedwongen zich volledig terug te trekken. Wanhopig wordt gezocht naar een veilige plek om de strijdkrachten te hergroeperen.\nOndertussen probeert het rebellencommando de laatste blauwdrukken van het verwoestende wapen van de generaal veilig te stellen. Als deze plannen worden bemachtigd, kunnen ze de perfecte kans bieden om het tij tegen het Keizerrijk te keren...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -132,7 +132,7 @@
   {
     "id": "Core11",
     "name": "Onder beleg",
-    "descriptionText": "<i>Het noodsignaal dekte de ontsnapping van verschillende prominente keizerlijke figuren, waaronder de man die het complot had bedacht, een generaal genaamd Weiss.\nTerwijl rebellenspionnen de melkweg afspeuren op zoek naar informatie over deze man, worden andere pogingen ondernomen om het herstel van het Keizerrijk na de Slag om Yavin te vertragen...</i>",
+    "descriptionText": "<i>Het noodbaken dekte de ontsnapping van verschillende vooraanstaande keizerlijke officieren, onder wie de man achter het plan: een generaal genaamd Weiss.\n\nTerwijl spionnen van het Verzet het sterrenstelsel afspeuren naar aanwijzingen over deze man, gaan andere pogingen om het herstel van het Keizerrijk na de Slag om Yavin te vertragen onverminderd door...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -145,7 +145,7 @@
   {
     "id": "Core12",
     "name": "Een simpele opdracht",
-    "descriptionText": "<i>De bureaucratie in het Rijk heeft geleid tot een constante stroom van voorgestelde en afgebroken projecten. Een formule voor een krachtig vechtstimuleringsmiddel was zo'n project.\nDe basis waar het werd ontwikkeld, is inmiddels verlaten, dus het zou niet moeilijk moeten zijn om informatie over de formule te vinden...</i>",
+    "descriptionText": "<i>De bureaucratie binnen het Keizerrijk heeft geleid tot een voortdurende stroom van voorgestelde en weer afgeschreven projecten. Een formule voor een krachtig gevechtsstimulans was zo'n project.\nDe basis waar de formule werd ontwikkeld is inmiddels verlaten, dus het achterhalen van informatie erover zou niet moeilijk moeten zijn...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -161,8 +161,8 @@
   },
   {
     "id": "Core13",
-    "name": "Guerrillatactiek",
-    "descriptionText": "<i>Op de plek waar een van de eerste veldslagen tussen het Keizerrijk en de rebellen plaatsvond, speelde Fenn Signis met zijn heldhaftige daden een cruciale rol in de bevrijding van Onderon. Nu zoekt het Keizerrijk wraak op de opstandige planeet. Fenn wordt opgeroepen om te helpen de planeet opnieuw te beschermen tegen de invloed van het Keizerrijk.</i>",
+    "name": "Brandhaard",
+    "descriptionText": "<i>Op de plek van een van de eerste veldslagen tussen het Keizerrijk en het Verzet speelden de heldhaftige daden van Fenn Signis een cruciale rol bij de bevrijding van Onderon.\nNu is het Keizerrijk uit op wraak tegen de opstandige wereld. Opnieuw wordt Fenn opgeroepen om de planeet te helpen beschermen tegen keizerlijke invloed.</i>",
     "bonusText": "",
     "heroText": "Fenn Signis",
     "allyText": "",
@@ -177,9 +177,9 @@
   },
   {
     "id": "Core14",
-    "name": "Duistere Obsessie",
-    "descriptionText": "<i>Darth Vader heeft een grote interesse in de verrichtingen van Luke Skywalker. Hij heeft een kans gevonden om Obi-Wan's leerling voor eens en voor altijd gevangen te nemen.</i>",
-    "bonusText": "Nadat de helden een willekeurige andere zijmissie hebben voltooid, leg je deze kaart af en ontvangt het Rijk de vermelde beloning.",
+    "name": "Duistere obsessie",
+    "descriptionText": "<i>Darth Vader heeft grote belangstelling voor de verrichtingen van Luke Skywalker. Nu heeft hij een kans gevonden om Obi-Wans leerling eens en voor altijd gevangen te nemen.</i>",
+    "bonusText": "Nadat de helden een willekeurige andere zijmissie hebben voltooid, leg je deze kaart af en ontvangt het Keizerrijk de vermelde beloning.",
     "heroText": "",
     "allyText": "",
     "villainText": "Darth Vader (Lord of the Sith)",
@@ -194,7 +194,7 @@
   {
     "id": "Core15",
     "name": "Oude vrienden",
-    "descriptionText": "<i>Gideon Argus was een van de oprichters van de legendarische SpecForce-eenheid “Saber Team”. Een mislukte operatie leidde echter tot beschuldigingen van verraad. Gideon verliet de eenheid, niet zeker wie van zijn oude kameraden hij nog kon vertrouwen.\nNu hebben de leden van Saber Team contact opgenomen met hun oude commandant en smeken ze hem om hulp...</i>",
+    "descriptionText": "<i>Gideon Argus was één van de oprichters van de legendarische SpecForce-eenheid \"Saber Team\". Een mislukte operatie leidde echter tot beschuldigingen van verraad. Gideon verliet het team, niet zeker wie van zijn oude kameraden hij nog kon vertrouwen.\nNu hebben de leden van Saber Team contact opgenomen met hun oude commandant en smeken ze om zijn hulp...</i>",
     "bonusText": "",
     "heroText": "Gideon Argus",
     "allyText": "",
@@ -244,7 +244,7 @@
   {
     "id": "Core18",
     "name": "Thuiskomst",
-    "descriptionText": "<i>Luke Skywalker, die betrokken is bij de rekrutering van nieuwe piloten voor het Verzet, heeft al enkele dagen niets meer van zich laten horen.\r\nAls held van het Verzet is Luke een belangrijk doelwit voor zowel de keizerlijke strijdkrachten als premiejagers, en het Oppercommando vreest dat hij in groot gevaar verkeert...</i>",
+    "descriptionText": "<i>Luke Skywalker, die betrokken is bij de rekrutering van nieuwe piloten voor het Verzet, heeft al enkele dagen niets meer van zich laten horen.\r\nAls held van het Verzet is Luke een belangrijk doelwit voor zowel de keizerlijke strijdkrachten als premiejagers en het Oppercommando vreest dat hij in groot gevaar verkeert...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "Luke Skywalker (Hero of the Rebellion)",
@@ -260,7 +260,7 @@
   {
     "id": "Core19",
     "name": "Verschuldigd",
-    "descriptionText": "<i>Een hinderlaag van het Keizerrijk heeft geleid tot de dood van Gaarkhans broer Jirritt. In hetzelfde gevecht werd een andere Wookiee gevangengenomen aan wie Jirritt een levensschuld had beloofd.\r\nOmdat niemand de gevangen Wookiee komt redden, is het aan Gaarkhan om de schuld van zijn broer te vervullen...</i>",
+    "descriptionText": "<i>Bij een keizerlijke hinderlaag is Gaarkhans broer Jirritt om het leven gekomen. Tijdens diezelfde strijd werd een andere Wookiee gevangengenomen, aan wie Jirritt een levensschuld verschuldigd was.\nOmdat niemand de gevangene gaat redden, rust de taak op Gaarkhans schouders om de schuld van zijn broer in te lossen...</i>",
     "bonusText": "",
     "heroText": "Gaarkhan",
     "allyText": "",
@@ -277,7 +277,7 @@
   {
     "id": "Core20",
     "name": "Ongeleid projectiel",
-    "descriptionText": "<i>Voor altijd achtervolgd door zijn grootste mislukking, heeft Mak Eshka'rey nu de kans gekregen om verlossing te vinden. Het garnizoen dat de buitenpost verdedigt die hij destijds niet heeft kunnen saboteren, is tijdelijk vertrokken. Hierdoor heeft Mak de perfecte gelegenheid om de taak af te maken die hij zo lang geleden niet heeft kunnen volbrengen...</i>",
+    "descriptionText": "<i>Achtervolgd door de herinnering aan zijn grootste mislukking heeft Mak Eshka'rey eindelijk een kans gekregen om verlossing te vinden.\nHet garnizoen dat de buitenpost verdedigt die hij niet wist te saboteren, is tijdelijk vertrokken. Dit biedt Mak de perfecte kans om de taak te voltooien die hij zo lang geleden onafgemaakt achterliet...</i>",
     "bonusText": "",
     "heroText": "Mak Eshka'rey",
     "allyText": "",
@@ -294,7 +294,7 @@
   {
     "id": "Core21",
     "name": "Luxe cruise",
-    "descriptionText": "<i>Voor infiltratiedoeleinden probeert de Alliantie schepen te verzamelen die door het Keizerrijk worden gebruikt. Een van die shuttles wordt momenteel gerepareerd en lijkt een gemakkelijke prooi te zijn...</i>",
+    "descriptionText": "<i>Voor gebruik bij infiltratiemissies probeert het Verbond schepen te bemachtigen die door het Keizerrijk worden gebruikt. Eén zo'n shuttle ondergaat momenteel reparaties en lijkt een gemakkelijk doelwit te zijn...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -311,7 +311,7 @@
   {
     "id": "Core22",
     "name": "Sorry voor de rotzooi",
-    "descriptionText": "<i>Het Verzet is veel dank verschuldigd aan de sluwe smokkelaar Han Solo. Han schroomt niet om hen hieraan te herinneren en heeft om steun gevraagd.\nOmdat hij gelijk al heeft laten weten dat de operatie de activiteiten van het Keizerrijk zal verstoren, is het Verzet bereid om aan zijn verzoek te voldoen...</i>",
+    "descriptionText": "<i>Het Verzet staat diep in het krijt bij de sluwe smokkelaar Han Solo. Han is nooit te beroerd om hen daaraan te herinneren en heeft om steun gevraagd.\nAangezien hij al heeft verzekerd dat de operatie de plannen van het Keizerrijk zal dwarsbomen, is het Verzet bereid op zijn verzoek in te gaan...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "Han Solo (Scoundrel)",
@@ -327,7 +327,7 @@
   {
     "id": "Core23",
     "name": "Sympathie voor het Verzet",
-    "descriptionText": "<i>De boodschap van hoop die het Verzet uitdraagt, trekt veel zielen aan. Wie beter dan Luke Skywalker, de man achter de vernietiging van de Death Star, kan het voortouw nemen bij de rekrutering?\nMaar wat hem tot een ideaal inspiratiebeeld maakt, maakt hem ook tot een belangrijk doelwit voor wraakacties van het Keizerrijk...</i>",
+    "descriptionText": "<i>De boodschap van hoop van het Verzet inspireert velen om zich bij hun zaak aan te sluiten. Wie beter dan Luke Skywalker, de man achter de vernietiging van de Death Star, om het voortouw nemen bij de wervingscampagne?\nMaar juist wat hem tot een symbool van hoop maakt, maakt hem ook tot een voornaam doelwit van de wraak voor het Keizerrijk...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "Luke Skywalker (Hero of the Rebellion)",
@@ -343,7 +343,7 @@
   {
     "id": "Core24",
     "name": "Gelegenheidsdoelwit",
-    "descriptionText": "<i>Het Verzet probeert altijd de overhand te krijgen op het Keizerrijk, en sabotage is daarbij een favoriete methode.\nEen paar saboteurs heeft een doelwit op het oog. Hun reputatie is gemengd, maar het lijkt erop dat hun roekeloze en koppige houding ruimschoots wordt gecompenseerd door hun vaardigheid in het uitvoeren van vernielingen...</i>",
+    "descriptionText": "<i>Het Verzet probeert voortdurend overhand op het Keizerrijk te krijgen en sabotage is daarbij een beproefde methode.\nEen tweetal saboteurs heeft al een doelwit uitgekozen. Hun reputatie is op z'n best gezegd, wisselend, maar hun roekeloze koppigheid lijkt ruimschoots te worden geëvenaard door hun uitzonderlijke talent voor sloopwerk...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "Rebel Saboteur",
@@ -360,7 +360,7 @@
   {
     "id": "Core25",
     "name": "Verleiding",
-    "descriptionText": "<i>De nachtmerries over de dood van haar mentor worden steeds intenser voor de jonge balling Diala Passil. Een duistere en corrupte energie leeft voort op de plek waar Jedi-meester Shu Yen sneuvelde. De kwade kracht roept Diala, strekt zich uit over de uitgestrekte melkweg en achtervolgt haar elk moment...</i>",
+    "descriptionText": "<i>De nachtmerries over de dood van haar mentor worden steeds intenser voor de jonge ballinge Diala Passil.\nOp de plek waar Jedi-meester Shu Yen ten val kwam, sluimert nog altijd een duistere, verdorven energie. De kwade kracht roept Diala, reikt over de onmetelijke uitgestrektheid van het sterrenstelsel en achtervolgt haar in elk wakend moment...</i>",
     "bonusText": "",
     "heroText": "Diala Passil",
     "allyText": "",
@@ -376,7 +376,7 @@
   {
     "id": "Core26",
     "name": "De spice klus",
-    "descriptionText": "<i>De schulden van Han Solo zijn een grote zorg geworden voor zijn compagnon. Tegen de wil van Han in heeft Chewbacca een taak op zich genomen waarvan hij hoopt dat deze de aandacht van de Hutts richting Han zal verminderen.\nAls deze taak slaagt, kan het wat credits opleveren en de Hutts afleiden, waardoor Han even rust krijgt, hoe kort dan ook...</i>",
+    "descriptionText": "<i>Han Solo's schulden baren zijn trouwe metgezel steeds meer zorgen. Tegen Han's wensen in heeft Chewbacca een opdracht op zich genomen die, naar hij hoopt, de aandacht van de Hutts van Han zal afleiden.\nAls het plan slaagt, levert het misschien wat credits op en houdt het de Hutts bezig, zodat Han een korte, al is het maar tijdelijke, adempauze krijgt...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "Chewbacca (Loyal Wookiee)",
@@ -393,7 +393,7 @@
   {
     "id": "Core27",
     "name": "Slangennest",
-    "descriptionText": "<i>Het Oppercommando van de rebellen ontving een noodoproep. Een informant met een slechte reputatie, Weyn Jarl, zweert dat hij gevoelige informatie heeft verkregen over troepenbewegingen van het keizerrijk.\r\nJarl heeft in het verleden bewezen onbetrouwbaar te zijn, maar zijn informatie zou nuttig kunnen zijn en zelfs het risico waard kunnen zijn om hem te vertrouwen...</i>",
+    "descriptionText": "<i>Het oppercommando van de rebellen heeft een noodoproep ontvangen. Een informant van twijfelachtige reputatie, Weyn Jarl, beweert gevoelige informatie te hebben verkregen over de verplaatsingen van keizerlijke troepen.\nJarl heeft in het verleden bewezen onbetrouwbaar te zijn, maar zijn informatie zou waardevol kunnen zijn en misschien zelfs het risico waard kunnen zijn om hem te vertrouwen...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -409,7 +409,7 @@
   {
     "id": "Core28",
     "name": "Breekpunt",
-    "descriptionText": "<i>Keizerlijke agenten voeren precisieaanvallen uit om de vitale voorraden van de rebellen te vernietigen. Als ze verzwakt zijn, is hun overgave zo goed als zeker.</i>",
+    "descriptionText": "<i>Keizerlijke agenten voeren gerichte aanvallen uit om de vitale voorraden van de rebellen te vernietigen. Verzwak het Verzet en de overgave is vrijwel verzekerd.</i>",
     "bonusText": "Nadat de helden een willekeurige andere zijmissie hebben voltooid, leg je deze kaart af en ontvangt het Keizerrijk de vermelde beloning. Als de helden deze missie verliezen, verhoog je het dreigingsniveau van de volgende missie met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 50 credits per held uit te geven om dit te voorkomen.",
     "heroText": "",
     "allyText": "",
@@ -425,9 +425,9 @@
   },
   {
     "id": "Core29",
-    "name": "Gevangen genomen",
-    "descriptionText": "<i>De rebellen zijn gevangengenomen toen ze probeerden te ontsnappen uit de belegerde buitenpost en werken al dagenlang aan een ontsnapping uit hun cellen. Het zal echter moeilijk worden om hun uitrusting te vinden en de installatie te verlaten...</i>",
-    "bonusText": "Speel “Gevangen genomen” als een verplichte missie. Als de helden deze missie verliezen, verhoog dan het dreigingsniveau van de volgende missie met 2. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 100 credits per held uit te geven om dit te voorkomen.",
+    "name": "Gevangengenomen",
+    "descriptionText": "<i>Gevangengenomen tijdens hun poging te ontsnappen aan de belegerde buitenpost, proberen de rebellen al dagenlang uit hun cellen te ontsnappen. Hun uitrusting terugvinden en de installatie verlaten zal echter niet eenvoudig zijn...</i>",
+    "bonusText": "Speel \"Gevangengenomen\" als een verplichte missie. Als de helden deze missie verliezen, verhoog dan het dreigingsniveau van de volgende missie met 2. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 100 credits per held uit te geven om dit te voorkomen.",
     "heroText": "",
     "allyText": "",
     "villainText": "",
@@ -439,8 +439,8 @@
   {
     "id": "Core30",
     "name": "In beslag genomen",
-    "descriptionText": "<i>Het schip heeft de juiste vergunning, maar de bemanning staat bekend als sympathisanten van de rebellen. Door hen te ondervragen en de gegevensbestanden van hun schip te doorzoeken, kan belangrijke inlichtingen worden verkregen.\nDit zijn gevaarlijke criminelen die niet mogen worden onderschat. Met een paar subtiele maatregelen kan de informatie misschien worden verkregen zonder direct conflict...</i>",
-    "bonusText": "Speel “In beslag genomen” als een verplichte missie. Als de helden deze missie verliezen, verhoog dan het dreigingsniveau van de volgende missie met 2. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 100 credits per held uit te geven om dit te voorkomen.",
+    "descriptionText": "<i>Het schip beschikt over de juiste autorisatie, maar de bemanning staat bekend als sympathisanten van het Verzet. Een ondervraging en het veiligstellen van de databestanden van het schip zouden waardevolle inlichtingen kunnen opleveren.\nDit zijn gevaarlijke criminelen, die niet onderschat mogen worden. Met de nodige subtiliteit is het wellicht mogelijk de informatie te verkrijgen zonder een direct conflict...</i>",
+    "bonusText": "Speel \"In beslag genomen\" als een verplichte missie. Als de helden deze missie verliezen, verhoog dan het dreigingsniveau van de volgende missie met 2. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 100 credits per held uit te geven om dit te voorkomen.",
     "heroText": "",
     "allyText": "",
     "villainText": "",
@@ -456,7 +456,7 @@
   {
     "id": "Core31",
     "name": "Productiemiddelen",
-    "descriptionText": "<i>Een keizerlijke testfabriek heeft onlangs een doorbraak bereikt. Met steun zouden hun dodelijke innovaties zeer binnenkort in praktijk kunnen worden gebracht.</i>",
+    "descriptionText": "<i>Een keizerlijke testfaciliteit heeft recent een belangrijke doorbraak bereikt. Krijgt het project de nodige steun, dan kunnen hun dodelijke innovaties al zeer binnenkort worden ingezet...</i>",
     "bonusText": "Nadat de helden een willekeurige andere zijmissie hebben voltooid, leg je deze kaart af en ontvangt het Keizerrijk de vermelde beloning. Als de helden deze missie verliezen, verhoog je het dreigingsniveau van de volgende missie met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 50 credits per held uit te geven om dit te voorkomen.",
     "heroText": "",
     "allyText": "",
@@ -473,8 +473,8 @@
   {
     "id": "Core32",
     "name": "Gezocht",
-    "descriptionText": "<i>Rebellenagenten blijken een mes in de zij van het Keizerrijk te zijn. Samenwerken met huurlingen kan onaangenaam zijn, maar een aanzienlijke premie kan hen onder druk zetten.</i>",
-    "bonusText": "Speel “Gezocht” als een verplichte missie. Als de helden deze missie verliezen, verhoog dan het dreigingsniveau van de volgende missie met 2. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 100 credits per held uit te geven om dit te voorkomen.",
+    "descriptionText": "<i>Agenten van het Verzet blijken een doorn in het oog van het Keizerrijk te zijn. Samenwerken met huurlingen is misschien onaangenaam, maar een aanzienlijke premie zou hen flink onder druk kunnen zetten...</i>",
+    "bonusText": "Speel \"Gezocht\" als een verplichte missie. Als de helden deze missie verliezen, verhoog dan het dreigingsniveau van de volgende missie met 2. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 100 credits per held uit te geven om dit te voorkomen.",
     "heroText": "",
     "allyText": "",
     "villainText": "",

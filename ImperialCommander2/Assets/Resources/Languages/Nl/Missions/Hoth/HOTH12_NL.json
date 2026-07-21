@@ -6,111 +6,26 @@
     "missionInfo": "",
     "campaignName": "Return to Hoth",
     "startingObjective": "",
-    "repositionOverride": "Blokkeer toegang tot de deur.",
+    "repositionOverride": "Blokkeer de toegang tot de deur.",
     "additionalMissionInfo": ""
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate1",
-              "GUID": "604a189d-2bc1-4c70-8779-8eb0ca5fc262",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "c453a4a2-1c8c-4574-a1ed-a6adf659d311",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "39dbc682-e362-434f-91e6-cb9df8a90f26",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "d600e7a5-6e56-40e0-a4c7-259ffbcb1271",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Je begeeft je zo snel mogelijk naar het detentiecomplex waar Draylen wordt vastgehouden, wetende dat hij elk moment kan worden geëxecuteerd. Als je door bewakers wordt tegengehouden, stort MHD-19 zich zonder angst in de strijd. Op de een of andere manier kun je zelfs in zijn mechanische ogen zijn vurige verlangen zien om zijn vriend te redden.\r\n\r\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Draylen wordt aan het einde van ronde 3 geëxecuteerd als de deur naar het detentiegebied gesloten is.\n{-} De missie gaat verder als de deur naar het detentiegebied opengaat.\n{-} De rebellen verliezen als Draylen wordt geëxecuteerd.",
-      "eventActions": [
-        {
-          "shortText": "Betreed het detentiegebied.",
-          "longText": null,
-          "GUID": "217ffb66-2109-42f6-bb40-43c06f6840b7",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        },
-        {
-          "theText": "{-} Draylen wordt aan het einde van ronde 3 geëxecuteerd als de deur naar het detentiegebied gesloten is.\n{-} De missie gaat verder als de deur naar het detentiegebied opengaat.\n{-} De rebellen verliezen als Draylen wordt geëxecuteerd.",
-          "GUID": "fb7ec40f-7311-4072-86f5-5fba7aae2e3b",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "“Dee?” zegt een versufte Draylen terwijl hij naar het gezicht van de droid kijkt. “Je bent voor mij gekomen. Ik wist dat je dat zou doen...” Hij valt uitgeput in slaap terwijl MHD-19 plichtsgetrouw zijn verwondingen begint te verzorgen.\r\n\r\n{-} De rebellen winnen de missie!\n{-} MHD-19 ontvangt de beloningskaart “Systems Upgrade”.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
+      "eventName": "Draylen executed",
+      "GUID": "2af32c1f-e279-4bc5-9155-96266a2fb9e0",
+      "eventText": "Terwijl je nog steeds in gevecht bent met de verdedigers van het complex, klinkt er een mededeling over het omroepsysteem van het gebouw. \"Executie wordt voltrokken.\" Een enkel blasterschot weerklinkt.\n\nLater vind je Draylen buiten het complex. Zijn lichaam is achteloos in de sneeuw achtergelaten, terwijl zijn bloed het witte landschap rood kleurt. Zelfs de vaardigheden van MHD-19 blijken niet voldoende om hem te redden.",
       "eventActions": []
     },
     {
       "eventName": "End of Mission - Rebels lose",
       "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "MHD-19 kijkt in de stervende ogen van zijn voormalige bevrijder. “Het is niet jouw schuld, Dee,” zegt hij, voordat hij sterft. De droid is dagenlang ontroostbaar.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
+      "eventText": "MHD-19 kijkt in de stervende ogen van zijn voormalige bevrijder. \"Het is niet jouw schuld, Dee,\" zegt hij, voordat hij wegglijdt. Dagenlang is de droid ontroostbaar.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
     },
     {
-      "eventName": "Draylen executed",
-      "GUID": "2af32c1f-e279-4bc5-9155-96266a2fb9e0",
-      "eventText": "Je bent nog steeds in gevecht met de verdedigers van het complex wanneer je een mededeling hoort door de intercom van het gebouw. “Executie begint.” Er klinkt een enkel blastergeschot.\r\n\r\nLater vind je Draylen buiten het complex. De sneeuw waarin hij achterloos is gedumpt kleurt rood door zijn bloed. Zelfs de vaardigheden van MHD-19 kunnen hem niet redden.",
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "\"Dee?\" zegt een versufte Draylen terwijl hij opkijkt naar het gezicht van de droid. \"Je bent voor me gekomen. Ik wist dat je zou komen...\" Uitgeput valt hij in slaap terwijl MHD-19 plichtsgetrouw zijn verwondingen begint te verzorgen.\n\n{-} De rebellen winnen de missie!\n{-} MHD-19 ontvangt de beloningskaart \"Systems Upgrade\".\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
     },
     {
@@ -156,7 +71,7 @@
     {
       "eventName": "Loyalty Fulfilled",
       "GUID": "6b5deffb-8a13-46f8-9c10-5b4b2160d27c",
-      "eventText": "Eindelijk gaat de deur naar het detentiegebied open. Daarachter ligt een grote kamer waar alles wordt voorbereid voor de executie.",
+      "eventText": "Eindelijk barst de deur naar het detentieblok open. Daarachter ligt een grote ruimte waar alles in gereedheid wordt gebracht voor de executie.",
       "eventActions": [
         {
           "otherTarget": "Draylen",
@@ -175,7 +90,7 @@
             {
               "entityName": "Door 2",
               "GUID": "19a67bb7-c259-4133-9634-41b126a213b3",
-              "theText": "De transparistalen deur leidt naar het detentiegebied.",
+              "theText": "De transparistalen deur leidt naar het detentieblok.",
               "buttonList": [
                 {
                   "GUID": "a07ad75d-fece-47d9-b39e-17b38af60c50",
@@ -195,7 +110,7 @@
           "eaName": "Text Box"
         },
         {
-          "tbText": "Aan de andere kant van de kamer kijkt een uitgeputte Draylen verbaasd op. Hij lijkt kracht te putten uit je binnenkomst, verbreekt zijn boeien en staat wankelend op.",
+          "tbText": "Aan de andere kant van de ruimte kijkt een uitgeputte Draylen verrast op. Bij het zien van jullie lijkt hij nieuwe kracht te vinden. Hij weet zijn boeien te verbreken en krabbelt moeizaam overeind.",
           "GUID": "8124f053-d79e-4a0e-9d74-ca2c89a984b7",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -214,7 +129,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "{-} De rebellen missietoken vertegenwoordigt Draylen. Draylen is een rebellenfiguur (gezondheid: 6 plus het dreigingsniveau, snelheid: 2, verdediging: 1 witte dobbelsteen). Helden besturen Draylen als bondgenoot.\r\n{-} Wanneer een aanval op Draylen wordt uitgevoerd, kan een gezonde held die grenst aan Draylen ervoor kiezen om hem te verdedigen. Als hij dat doet, voeg dan 1 zwarte dobbelsteen toe aan de verdedigingsdobbelstenen. Nadat de aanval is uitgevoerd, lijdt die held {H} gelijk aan de geworpen {G} resultaten.",
+          "tbText": "{-} De rebellen missietoken stelt Draylen voor. Draylen is een rebellenfiguur (gezondheid: 6 plus het dreigingsniveau, snelheid: 2, verdediging: 1 witte dobbelsteen). Helden besturen Draylen als bondgenoot.\n{-} Wanneer een aanval op Draylen wordt ingezet, kan een gezonde held die grenst aan Draylen ervoor kiezen om hem te verdedigen. Als hij dat doet, voeg dan 1 zwarte dobbelsteen toe aan de verdedigingsdobbelstenen. Nadat de aanval is uitgevoerd, lijdt die held {H} gelijk aan de geworpen {G} resultaten.",
           "GUID": "a33751b7-83ff-47bd-830a-973780553080",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -226,7 +141,7 @@
           "repositionInstructions": "",
           "surges": "",
           "bonuses": "",
-          "keywords": "+6 Gezondheid",
+          "keywords": "+6 gezondheid",
           "abilities": "",
           "customText": "",
           "cardName": "Draylen"
@@ -242,7 +157,7 @@
             {
               "entityName": "Evacuation Point",
               "GUID": "4d0445fb-7b6d-4ce6-9406-09a315bbd4cd",
-              "theText": "Je ontsnappingsshuttle wacht direct achter deze heuvel.\n\n{-} Draylen kan via het evacuatiepunt ontsnappen. Als hij dat doet, klik je op “Draylen ontsnapt” om de missie te beëindigen.",
+              "theText": "Direct achter deze heuvel staat jullie ontsnappingsshuttle klaar.\n\n{-} Draylen kan via het evacuatiepunt ontsnappen. Als hij dat doet, klik je op \"Draylen ontsnapt\" om de missie te beëindigen.",
               "buttonList": [
                 {
                   "GUID": "8ab426f8-299b-49cb-8c88-aa9307da1373",
@@ -256,7 +171,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "Je haast je naar voren om Draylen te beschermen.\n\n{-} Draylen kan ontsnappen via het evacuatiepunt (groen gemarkeerd gebied). Als hij dat doet, klik je op de groene markering en selecteer je “Draylen ontsnapt”.\n{-} De rebellen winnen als Draylen ontsnapt.\n{-} De rebellen verliezen als Draylen wordt verslagen.",
+          "tbText": "Je haast je naar voren om Draylen te beschermen.\n\n{-} Draylen kan ontsnappen via het evacuatiepunt (groen gemarkeerd gebied). Als hij dat doet, klik je op de groene markering en selecteer je \"Draylen ontsnapt\".\n{-} De rebellen winnen wanneer Draylen ontsnapt.\n{-} De rebellen verliezen als Draylen wordt verslagen.",
           "GUID": "4dc8c75f-e05a-4976-9dfb-8e029e4ffe83",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -269,10 +184,95 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} De rebellen missietoken vertegenwoordigt Draylen. Draylen is een rebellenfiguur (gezondheid: 6 plus het dreigingsniveau, snelheid: 2, verdediging: 1 witte dobbelsteen). Helden besturen Draylen als bondgenoot.\r\n{-} Wanneer een aanval op Draylen wordt uitgevoerd, kan een gezonde held die grenst aan Draylen ervoor kiezen om hem te verdedigen. Als hij dat doet, voeg dan 1 zwarte dobbelsteen toe aan de verdedigingsdobbelstenen. Nadat de aanval is uitgevoerd, lijdt die held {H} gelijk aan de geworpen {G} resultaten.\r\n{-} Draylen kan ontsnappen via het evacuatiepunt (groen gemarkeerd gebied). Als hij dat doet, klik je op de groene markering en selecteer je “Draylen ontsnapt”.\r\n{-} De rebellen winnen als Draylen ontsnapt.\n{-} De rebellen verliezen als Draylen wordt verslagen.",
+          "theText": "{-} De rebellen missietoken stelt Draylen voor. Draylen is een rebellenfiguur (gezondheid: 6 plus het dreigingsniveau, snelheid: 2, verdediging: 1 witte dobbelsteen). Helden besturen Draylen als bondgenoot.\n{-} Wanneer een aanval op Draylen wordt ingezet, kan een gezonde held die grenst aan Draylen ervoor kiezen om hem te verdedigen. Als hij dat doet, voeg dan 1 zwarte dobbelsteen toe aan de verdedigingsdobbelstenen. Nadat de aanval is uitgevoerd, lijdt die held {H} gelijk aan de geworpen {G} resultaten.\n{-} Draylen kan ontsnappen via het evacuatiepunt (groen gemarkeerd gebied). Als hij dat doet, klik je op de groene markering en selecteer je \"Draylen ontsnapt\".\n{-} De rebellen winnen wanneer Draylen ontsnapt.\n{-} De rebellen verliezen als Draylen wordt verslagen.",
           "GUID": "7753dc06-8b68-4761-821a-d2949b65a0c1",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Je haast je naar het detentiecomplex waar Draylen wordt vastgehouden, wetende dat hij ieder moment geëxecuteerd kan worden. Wanneer bewakers je de weg versperren, stort MHD-19 zich zonder enige angst in de strijd. Op de een of andere manier kun je zelfs in zijn mechanische ogen zijn vurige verlangen zien om zijn vriend te redden.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Draylen wordt aan het einde van ronde 3 geëxecuteerd als de deur naar het detentieblok gesloten is.\n{-} De missie gaat verder wanneer de deur naar het detentieblok opengaat.\n{-} De rebellen verliezen als Draylen wordt geëxecuteerd.",
+      "eventActions": [
+        {
+          "shortText": "Betreed het detentieblok.",
+          "longText": null,
+          "GUID": "217ffb66-2109-42f6-bb40-43c06f6840b7",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Draylen wordt aan het einde van ronde 3 geëxecuteerd als de deur naar het detentieblok gesloten is.\n{-} De missie gaat verder wanneer de deur naar het detentieblok opengaat.\n{-} De rebellen verliezen als Draylen wordt geëxecuteerd.",
+          "GUID": "fb7ec40f-7311-4072-86f5-5fba7aae2e3b",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "604a189d-2bc1-4c70-8779-8eb0ca5fc262",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "c453a4a2-1c8c-4574-a1ed-a6adf659d311",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "39dbc682-e362-434f-91e6-cb9df8a90f26",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "d600e7a5-6e56-40e0-a4c7-259ffbcb1271",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
         }
       ]
     },
@@ -318,9 +318,9 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
+      "entityName": "DP EProbe",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
       "buttonList": []
     },
     {
@@ -336,8 +336,8 @@
       "buttonList": []
     },
     {
-      "entityName": "DP EProbe",
-      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "entityName": "DP Red",
+      "GUID": "a92c7ce7-041f-4941-b38a-9dd2cb4dbea8",
       "mainText": null,
       "buttonList": []
     },
@@ -360,6 +360,12 @@
       "buttonList": []
     },
     {
+      "entityName": "DP Yellow",
+      "GUID": "c3592ca4-f6a3-4d50-9686-28c5a0577eb8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
       "entityName": "Door 1",
       "GUID": "dd1c99d9-5265-449c-90b0-42a4c299ffb3",
       "mainText": "Een stevige deur leidt naar het detentiecomplex.",
@@ -373,7 +379,7 @@
     {
       "entityName": "Door 2",
       "GUID": "0b8c1c73-ed0f-465c-adf4-20d0e2482d30",
-      "mainText": "De transparistalen deur leidt naar het detentiegebied.",
+      "mainText": "De transparistalen deur leidt naar het detentieblok.",
       "buttonList": [
         {
           "GUID": "151d6701-980d-4218-8b95-823004b5fc23",
@@ -382,31 +388,25 @@
       ]
     },
     {
-      "entityName": "DP Yellow",
-      "GUID": "c3592ca4-f6a3-4d50-9686-28c5a0577eb8",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Red",
-      "GUID": "a92c7ce7-041f-4941-b38a-9dd2cb4dbea8",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
       "entityName": "Draylen",
       "GUID": "3d67379d-0ddf-4d4c-b34d-789541cd4f05",
       "mainText": null,
       "buttonList": []
     },
     {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
+    },
+    {
       "entityName": "Evacuation Point",
       "GUID": "f78b99d6-349c-42d7-bda4-da7d176d701a",
-      "mainText": "Je ontsnappingsshuttle wacht direct achter deze heuvel.\n\n{-} Draylen kan via het evacuatiepunt ontsnappen. Als hij dat doet, klik je op “Draylen ontsnapt” om de missie te beëindigen.",
+      "mainText": "Direct achter deze heuvel staat jullie ontsnappingsshuttle klaar.\n\n{-} Draylen kan via het evacuatiepunt ontsnappen. Als hij dat doet, klik je op \"Draylen ontsnapt\" om de missie te beëindigen.",
       "buttonList": [
         {
           "GUID": "47b1bbd1-7e27-4814-9ea4-854316bc5b91",
-          "theText": "Draylen ontsnapt (Einde Missie)"
+          "theText": "Draylen ontsnapt (einde missie)"
         }
       ]
     }

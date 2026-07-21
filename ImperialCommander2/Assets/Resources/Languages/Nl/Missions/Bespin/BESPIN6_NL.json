@@ -6,231 +6,161 @@
     "missionInfo": "",
     "campaignName": "The Bespin Gambit",
     "startingObjective": "",
-    "repositionOverride": "Blokkeer toegang tot de aanwijzingen.",
+    "repositionOverride": "Blokkeer de toegang tot de aanwijzingen.",
     "additionalMissionInfo": ""
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Asset secured",
+      "GUID": "019ad022-271f-4793-8b7e-7fb603d775f9",
+      "eventText": "Je kraakt eindelijk de combinatie, rukt de deur van de kluis open en grijpt de informatie.\n\n{-} Claim de token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate1",
-              "GUID": "cda3482a-4600-4eda-95c6-e85283d33cd0",
-              "theText": "Een oud voorraadkrat.",
+              "entityName": "Safe",
+              "GUID": "00841372-c893-4319-89f3-1e3bc3270aaa",
+              "theText": "De kluis van de Duke wordt beschermd door een dikke explosieveilige deur. Het zal niet eenvoudig zijn om die open te krijgen.",
               "buttonList": [
                 {
-                  "GUID": "e480d21e-aa72-47b4-9022-35eb50780185",
-                  "theText": "{A} Openen"
+                  "GUID": "a0e16632-79c5-467d-9a57-9c655688790d",
+                  "theText": "{A} Probeer de kluis te kraken"
                 }
               ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "ebc624eb-5cfc-4cb2-9542-fb4b1abadeed",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "a97b9a56-df33-452d-b597-1d0f0dbe93b3",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "De blauwdrukken die je hebt ontvangen, kloppen. Alle dure vazen en kostbare artefacten staan precies waar ze horen te staan. Geheimen moeten winstgevend zijn. Het plan is simpel: kraak de kluis, steel de informatie terug en vlucht naar de nabijgelegen shuttle. Helaas is spionage zelden zo eenvoudig.\r\n\r\n{-} Plaats de helden op het blauw gemarkeerde veld.\r\n{-} De deur is vergrendeld. Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals zijn verwijderd.\r\n{-} De missie gaat verder als de deur opengaat.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
-      "eventActions": [
-        {
-          "tbText": "Je weet dat de combinatie van de kluis zo complex is dat de Duke geheugensteuntjes in het gebouw heeft verstopt. Als je die kunt vinden, wordt het kraken van de kluis een stuk eenvoudiger.",
-          "GUID": "64d3dbfe-a76c-48a9-a249-baf1406e4ee5",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "translatedEntityProperties": [
+            },
             {
               "entityName": "Clue 1",
-              "GUID": "76656382-d969-4cc4-b588-5c8de7098642",
+              "GUID": "b50c2ad8-bfd2-4c6b-950b-48bf1802ca12",
               "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn onder de reling van het balkon.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
               "buttonList": [
                 {
-                  "GUID": "3b2d2eb5-20f2-4f6f-94d4-40e61e675c1e",
+                  "GUID": "3f86c192-9e4f-49a3-a092-0ed46e512ddc",
                   "theText": "Zoeken"
                 }
               ]
             },
             {
               "entityName": "Clue 2",
-              "GUID": "907ead02-3259-4f2e-8194-3958b69c1308",
-              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen kunnen zijn in de hoek van de zijkamer.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+              "GUID": "a47916fb-d029-4bf7-a67d-97efb6d7771e",
+              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn in de hoek van de zijkamer.\n\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
               "buttonList": [
                 {
-                  "GUID": "b406af31-81d9-456f-ae2c-7dd084cbf0f3",
+                  "GUID": "681bb56e-4d5b-40cd-8f7a-16ff7b8073fd",
                   "theText": "Zoeken"
                 }
               ]
             },
             {
               "entityName": "Clue 3",
-              "GUID": "f4c58f6a-6dd2-420a-90ce-304a3ff08e65",
+              "GUID": "0885e70d-0e58-46ba-9b1f-02c4d08fa41b",
               "theText": "Een aanwijzing voor de combinatie van de kluis kan achter de stoel verborgen zijn.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
               "buttonList": [
                 {
-                  "GUID": "095da45f-fb1b-4643-9b11-b3d170332bf2",
+                  "GUID": "8a22f5d0-e7a5-4572-9023-48540164cd91",
                   "theText": "Zoeken"
                 }
               ]
             },
             {
               "entityName": "Clue 4",
-              "GUID": "1e87e368-ad0d-46cc-a4a0-8e24b7d869c6",
+              "GUID": "e8a45f67-710c-44bf-a324-9a6d8364d894",
               "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn aan de voet van de muur.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
               "buttonList": [
                 {
-                  "GUID": "f26ccf7b-cf4d-4ce1-8a3c-4e00eca501af",
+                  "GUID": "4944bfcd-22db-4ab3-8ea7-5bc25f97e99a",
                   "theText": "Zoeken"
                 }
               ]
             },
             {
               "entityName": "Clue 5",
-              "GUID": "43326d2f-8bc4-445d-9e20-e98bd8674dc5",
+              "GUID": "da630ddf-57e0-4ad3-bf9d-496eccc148c1",
               "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn in de hoek van de gang.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
               "buttonList": [
                 {
-                  "GUID": "ee47d8e0-ce5a-499f-8e28-97c26647670c",
+                  "GUID": "49b26622-1751-4419-9c14-b478d024c587",
+                  "theText": "Zoeken"
+                }
+              ]
+            },
+            {
+              "entityName": "Clue 6",
+              "GUID": "11a23626-4deb-406e-9ed9-826f7984b030",
+              "theText": "Een aanwijzing voor de combinatie van de kluis kan vlak naast de kluis verborgen zijn.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+              "buttonList": [
+                {
+                  "GUID": "8fe54053-c9eb-482a-9533-ccb1966e3b15",
                   "theText": "Zoeken"
                 }
               ]
             }
           ],
-          "GUID": "f3886df5-a649-437b-9014-c376dbffbd99",
+          "GUID": "95f4b382-9d4c-40bb-b671-658dc6d4a5f7",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "{-} Neutrale missietokens stellen aanwijzingen voor. Hoe meer aanwijzingen de helden verzamelen, hoe gemakkelijker het wordt om de combinatie van de kluis te kraken.\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
-          "GUID": "36174add-7e0e-41f7-a2dc-f5786bc589b0",
+          "tbText": "{-} De keizerlijke missietoken stelt de documenten voor. De figuur die de kluis heeft gekraakt, onderbreekt om de documenten op te pakken.\n{-} Als de documenten vallen, kan een rebellenfiguur ze zonder test oppakken.",
+          "GUID": "ac9f8aa6-102c-467e-95e3-966c44efe389",
           "eventActionType": 16,
           "eaName": "Text Box"
         },
         {
-          "shortText": "Open de deur naar het kantoor. Aanwijzingen gevonden: &Clues found&",
+          "translatedEntityProperties": [
+            {
+              "entityName": "Shuttle",
+              "GUID": "02ad4c06-b165-4f46-be1e-e901cd440875",
+              "theText": "Je shuttle staat klaar om te ontsnappen.\n\n{-} De rebellen winnen aan het begin van de statusfase als een figuur met de documenten zich in de shuttle bevindt.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "195a29fa-fc8a-48af-900d-bedfc1acca4e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Je shuttle staat vlakbij te wachten.\n\n{-} De rebellen winnen aan het begin van de statusfase als een figuur met de documenten zich in de shuttle bevindt.",
+          "GUID": "08098385-4955-4a63-a3f1-ae52ef2dc5fa",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "repositionText": "Blokkeer de toegang tot de shuttle.",
+          "GUID": "66bf3491-c55f-4cc8-b8bb-ea13c25105b1",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Ontsnap!",
           "longText": null,
-          "GUID": "e3246f97-b65b-4810-a0e3-4ee501fd1c03",
+          "GUID": "ade44f6e-3aea-4650-863c-fc654ff8817c",
           "eventActionType": 2,
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Neutrale missietokens stellen aanwijzingen voor. Hoe meer aanwijzingen de helden verzamelen, hoe gemakkelijker het wordt om de combinatie van de kluis te kraken.\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.\r\n{-} De deur is vergrendeld. Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals zijn verwijderd.\r\n{-} De missie gaat verder als de deur opengaat.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
-          "GUID": "3173b3c0-9568-4810-be2c-d5e1953edb7a",
+          "theText": "{-} De keizerlijke missietoken stelt de documenten voor. Als de documenten vallen, kan een rebellenfiguur ze zonder test oppakken.\n{-} De rebellen winnen aan het begin van de statusfase als een figuur met de documenten zich in de shuttle bevindt.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "5eba6ee7-6b04-4078-9fe4-4604027e9e26",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
         }
       ]
     },
     {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Nu de documenten van de Alliantie in je handen zijn, haast je team zich naar de shuttle. De missie is misschien interessanter geworden dan verwacht, maar de overval is uiteindelijk geslaagd. De geheimen en levens van de rebellen zijn vandaag gered.\n\n{-} De rebellen winnen de missie!",
-      "eventActions": [
-        {
-          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne “The Bespin Gambit”?",
-          "buttonList": [
-            {
-              "GUID": "b14d11d8-585a-4995-b736-08a346438ed4",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "626592e8-2bff-4482-8062-d1c56fe26a7a",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "890ba495-9406-40c9-95bc-95fa07603a7c",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Veiligheids- en keizerlijke troepen komen in groten getale opdagen om de geheimen van de Duke te beschermen. Omdat je in de minderheid bent, ben je gedwongen de documenten achter te laten en op de vlucht te slaan. Onderweg, in de shuttle, kijkt het team stilzwijgend naar elkaar. Deze mislukking heeft waarschijnlijk het leven van rebellen gekost.\n\n{-} De rebellen verliezen de missie.",
-      "eventActions": [
-        {
-          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne “The Bespin Gambit”?",
-          "buttonList": [
-            {
-              "GUID": "9a56d500-7452-48e7-a59c-b0b3e5daf242",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "d5640f8a-6936-4198-baa0-6a79b1448b36",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "8a6c9177-e8c5-4197-8f22-823619ef8209",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Campaign Win Yes",
-      "GUID": "af917fbd-9915-436a-b294-4372d700417c",
-      "eventText": "In de shuttle blader je door de teruggevonden inlichtingen, op zoek naar vermeldingen van gestolen keizerlijke codes of een vermiste rebellenagent. Er zijn transcripties en dossiers (waarvan vele erg onnauwkeurig zijn), maar niets over een rebellenspion. \r\n\r\nTerug in de bunker bekijkt Lando de archieven en stopt bij een verzendingsvermelding. “Het heeft niets met de rebellen te maken, maar het lijkt erop dat een van de vertrouwde smokkelaars van de Duke een paar dagen geleden uit Port Town is verdwenen.” Informanten denken dat Trandoshan-slavenhandelaars een tussenstop hebben gemaakt in Cloud City. Het is mogelijk dat ze bij dit mysterie betrokken zijn geraakt.\r\n\r\nJe daalt af naar de louche delen van de stad en houdt je oren open. Terwijl je door een bijzonder donker steegje loopt, wekt een onmiskenbaar gesis je interesse. Terwijl je meeluistert, kom je erachter dat deze Trandoshan de verkoop van slaven regelt en dat de ISB hem toestemming heeft gegeven om een aantal “speciale exemplaren” te vangen. Tot nu toe leek deze aanwijzing twijfelachtig, maar Lando's intuïtie lijkt zijn vruchten af te werpen. Als de deal is gesloten, trekt de slavenhandelaar zich terug naar zijn basis, maar hij is niet langer alleen.\n\n{-} Elke held ontvangt 3 XP.\n{-} Helden ontvangen 300 credits per held.\n{-} De volgende actieve missie is \"Vrijheidsstrijders\".",
-      "eventActions": []
-    },
-    {
       "eventName": "Campaign Defeat Yes",
       "GUID": "6a66d0ea-65a9-452c-a3f1-edc5fac52ed2",
-      "eventText": "Met lege handen keer je terug naar het hoofdkwartier van de guerrillastrijders om verslag uit te brengen over de mislukking. Lando lijkt geïrriteerd als hij je aanspreekt. “Dat was een goede aanwijzing die we zojuist zijn kwijtgeraakt.” Hij loopt een tijdje heen en weer. “Nou, dan blijven we dus zitten met de slechte aanwijzingen.”\r\n\r\n“Een... persoonlijke vriend van mij is ook vermist. Ik heb geprobeerd hem op te sporen, maar heb weinig gevonden. Voordat hij verdween, uitte hij zijn bezorgdheid over ongeoorloofde onderhoudstoegang in Port Town. Ga daarheen, geef een flinke fooi en kijk of we geluk hebben.”\r\n\r\nOp de lagere verdiepingen verklikt een nieuwe sympatiserende barman een slavenhandelaar die achterin zit. Je volgt de Trandoshan als hij vertrekt en op weg naar buiten leg je nog wat extra credits op de bar.\n\n{-} Elke held ontvangt 2 XP.\n{-} Helden ontvangen 300 credits per held.\n{-} De volgende actieve missie is \"Vrijheidsstrijders\".",
+      "eventText": "Met lege handen keer je terug naar het hoofdkwartier van de guerrillastrijders om verslag uit te brengen over de mislukking. Lando oogt onrustig terwijl hij je toespreekt. \"Dat was een veelbelovend spoor die we zojuist zijn kwijtgeraakt.\" Hij ijsbeert een tijdje door de kamer. \"Nou ja, dan blijven alleen de slechte aanwijzingen nog over.\"\n\n\"Een... persoonlijke vriend van me is ook vermist. Ik heb geprobeerd hem op te sporen, maar nauwelijks iets gevonden. Kort voordat hij verdween, sprak hij zijn zorgen uit over ongeautoriseerde onderhoudstoegang in Port Town. Ga daarheen, geef een aantal flinke fooien en kijk of we geluk hebben.\"\n\nIn de lagere niveaus wijst een barkeeper die jullie inmiddels gunstig gezind is een slavenhandelaar aan die achterin zit. Jullie volgen de Trandoshan wanneer hij vertrekt en laten nog wat extra credits achter op de bar.\n\n{-} Elke held ontvangt 2 XP.\n{-} De helden ontvangen 300 credits per held.\n{-} De volgende actieve missie is \"Vrijheidsstrijders\".",
       "eventActions": []
     },
     {
       "eventName": "Campaign No",
       "GUID": "e63594d1-6da1-41e8-a490-07d49aaebcb4",
-      "eventText": "{-} Elke held ontvangt 1 XP.\n{-} Helden ontvangen 100 credits per held.",
+      "eventText": "{-} Elke held ontvangt 1 XP.\n{-} De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign Win Yes",
+      "GUID": "af917fbd-9915-436a-b294-4372d700417c",
+      "eventText": "Aan boord van de shuttle blader je door de buitgemaakte inlichtingen, op zoek naar elke vermelding van gestolen keizerlijke codes of een vermiste rebellenagent. Er zitten transcripties en dossiers tussen, waarvan veel opvallend onnauwkeurig zijn, maar niets dat wijst op een rebellenspion.\n\nTerug in de bunker bestudeert Lando de archieven totdat hij blijft hangen bij een verzendregistratie. \"Het heeft niets met de rebellen te maken, maar blijkbaar is één van de vertrouwde smokkelaars van de Duke een paar dagen geleden verdwenen in Port Town.\" Informanten vermoeden dat Trandoshan-slavenhandelaars een tussenstop hebben gemaakt op Cloud City. Het is mogelijk dat zij op de één of andere manier betrokken zijn geraakt bij dit mysterie.\n\nJe daalt af naar de ruigere delen van de stad en houdt je oren open. Terwijl je langs een bijzonder donker steegje loopt, trekt een onmiskenbaar gesis je aandacht. Door af te luisteren kom je erachter dat deze Trandoshan bezig is met de verkoop van slaven en dat de ISB hem toestemming heeft gegeven om een paar \"speciale exemplaren\" gevangen te nemen. Tot nu toe leek dit spoor twijfelachtig, maar Lando's intuïtie lijkt zijn vruchten af te werpen. Zodra de deal is afgerond, trekt de slavenhandelaar zich terug naar zijn basis. Alleen is hij deze keer niet meer alleen.\n\n{-} Elke held ontvangt 3 XP.\n{-} De helden ontvangen 300 credits per held.\n{-} De volgende actieve missie is \"Vrijheidsstrijders\".",
       "eventActions": []
     },
     {
@@ -302,7 +232,7 @@
             {
               "entityName": "Clue 2",
               "GUID": "6fd99d4b-01ef-4787-9cbc-4c140bb09e96",
-              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen kunnen zijn in de hoek van de zijkamer.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn in de hoek van de zijkamer.\n\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
               "buttonList": [
                 {
                   "GUID": "003e21bf-dba2-46d8-8bf2-e65683fe77cf",
@@ -486,6 +416,36 @@
       ]
     },
     {
+      "eventName": "Crack attempt",
+      "GUID": "bd47a150-b989-470d-8f15-98983978d3f5",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je begint aan de kluisdeur te werken. Je realiseert je meteen dat dit ingewikkeld zal worden.\n\n{-}  Test {J} of {I}. Pas +&Clues found& {B} toe. Pas +1 {B} toe voor elke forceertoken op de kluis en leg vervolgens alle forceertokens op de kluis af. Vul hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "954ef433-2200-482b-ad28-acc7d818a44e",
+              "theText": "De kluisdeur is gewoonweg te ingewikkeld. Je moet blijven proberen.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de kluis."
+            },
+            {
+              "GUID": "9a6d46bb-c3c1-44bf-be35-4ca24ede2be4",
+              "theText": null
+            }
+          ],
+          "GUID": "46cdad9a-8acb-4e74-aa7f-3fb35437a52e",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Davith present",
+      "GUID": "329aef7a-f5e0-4ba8-a4b4-2851c88b5a7b",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
       "eventName": "Discard Terminal 1",
       "GUID": "3d69d007-44be-4bb7-9d4a-970635ac9e71",
       "eventText": "Je schakelt de beveiligingsconsole uit.",
@@ -495,7 +455,7 @@
             {
               "entityName": "Terminal 1",
               "GUID": "621089d6-de33-4ee2-ad91-9eba89773852",
-              "theText": "Een van de twee beveiligingsconsoles die de deur naar het kantoor van de Duke bedienen.\n\n{-} Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals zijn verwijderd.",
+              "theText": "Eén van de twee beveiligingsconsoles die de deur naar het kantoor van de Duke bedienen.\n\n{-} Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals verwijderd zijn.",
               "buttonList": []
             }
           ],
@@ -515,7 +475,7 @@
             {
               "entityName": "Terminal 2",
               "GUID": "83a56d03-2066-46a3-b6b3-54b46ee7e58e",
-              "theText": "Een van de twee beveiligingsconsoles die de deur naar het kantoor van de Duke bedienen.\n\n{-} Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals zijn verwijderd.",
+              "theText": "Eén van de twee beveiligingsconsoles die de deur naar het kantoor van de Duke bedienen.\n\n{-} Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals verwijderd zijn.",
               "buttonList": [
                 {
                   "GUID": "9bfb4d51-aac1-4ec5-b8f8-c64a94c7a73e",
@@ -531,43 +491,50 @@
       ]
     },
     {
-      "eventName": "Face to Face question",
-      "GUID": "c3754b07-5d7c-45cb-a72b-06465749e591",
-      "eventText": "Terwijl de tweede beveiligingsconsole wordt uitgeschakeld, schuift de deur naar het kantoor van de Duke open.",
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Beveiligingspersoneel en keizerlijke troepen stromen toe om de geheimen van de Hertog te beschermen. Zwaar in de minderheid zijn jullie gedwongen de documenten achter te laten om een wanhopige ontsnapping te kunnen maken. Aan boord van de shuttle blijft het stil. Deze mislukking heeft waarschijnlijk rebellenlevens gekost.\n\n{-} De rebellen verliezen de missie.",
       "eventActions": [
         {
-          "translatedEntityProperties": [
+          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne \"The Bespin Gambit\"?",
+          "buttonList": [
             {
-              "entityName": "Office Door",
-              "GUID": "8f4c171c-350c-418a-9139-f62aad4f89c0",
-              "theText": "Een gesloten deur leidt naar het kantoor van de Duke.\r\n\r\n{-} De deur is vergrendeld. De deur gaat open wanneer beide terminals verwijderd zijn.",
-              "buttonList": []
+              "GUID": "9a56d500-7452-48e7-a59c-b0b3e5daf242",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "d5640f8a-6936-4198-baa0-6a79b1448b36",
+              "theText": "Nee"
             }
           ],
-          "GUID": "7318eae9-270b-493b-9065-98a96f09dab6",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
+          "GUID": "8a6c9177-e8c5-4197-8f22-823619ef8209",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
         }
       ]
     },
     {
-      "eventName": "FtF Yes",
-      "GUID": "3f099e0c-e7a2-4206-832f-4dddd9337417",
-      "eventText": "De Duke kijkt op van zijn bureau. “Davith, mijn jongen, wat fijn om je weer te zien. Ik hoop dat je begrijpt dat het nooit persoonlijk bedoeld was om je in het ongewisse te laten. Je was te waardevol voor de organisatie om het risico te lopen je te verliezen.”",
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Nu de documenten van het Verbond zijn veiliggesteld haast je team zich terug naar de shuttle. De missie bleek misschien ingewikkelder dan verwacht, maar uiteindelijk was de overval een succes. Vandaag zijn rebellengeheimen en levens gered.\n\n{-} De rebellen winnen de missie!",
       "eventActions": [
         {
-          "otherTarget": null,
-          "GUID": "eda13a57-327e-4733-8fc6-cbd540f8554e",
-          "eventActionType": 12,
-          "eaName": "Change Priority Target"
+          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne \"The Bespin Gambit\"?",
+          "buttonList": [
+            {
+              "GUID": "b14d11d8-585a-4995-b736-08a346438ed4",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "626592e8-2bff-4482-8062-d1c56fe26a7a",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "890ba495-9406-40c9-95bc-95fa07603a7c",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
         }
       ]
-    },
-    {
-      "eventName": "FtF No",
-      "GUID": "895adf37-2859-4e43-90c0-35948b45e6e0",
-      "eventText": "",
-      "eventActions": []
     },
     {
       "eventName": "Face to Face 2",
@@ -577,7 +544,7 @@
         {
           "enemyName": "De Duke (<color=\"red\">Imperial Officer</color>)",
           "customText": "",
-          "modification": "+*1* Gezondheid",
+          "modification": "+*1* gezondheid",
           "repositionInstructions": "",
           "GUID": "76bae56a-2029-4862-87f3-36fd218ba73a",
           "eventActionType": 6,
@@ -609,7 +576,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Neutrale missietokens stellen aanwijzingen voor. Hoe meer aanwijzingen de helden verzamelen, hoe gemakkelijker het wordt om de combinatie van de kluis te kraken.\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.\r\n{-} Een rebellenfiguur kan een interactie uitvoeren op de kluis ({I} of {J}) om te proberen deze te kraken.\r\n{-} De missie gaat verder wanneer de kluis gekraakt is.\r\n{-} De rebellen verliezen wanneer alle helden gewond zijn.",
+          "theText": "{-} Neutrale missietokens stellen aanwijzingen voor. Hoe meer aanwijzingen de helden verzamelen, hoe gemakkelijker het wordt om de combinatie van de kluis te kraken.\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.\n{-} Een rebellenfiguur kan een interactie uitvoeren op de kluis ({I} of {J}) om te proberen deze te kraken.\n{-} De missie gaat verder wanneer de kluis gekraakt is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
           "GUID": "cbf18449-f00f-4d6a-bc6d-9f6cb175901b",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -617,177 +584,22 @@
       ]
     },
     {
-      "eventName": "Private Security",
-      "GUID": "86ed13e4-d1c7-4061-886c-8ea0f4d0d6b5",
-      "eventText": "Gewaarschuwd door je aankomst bestormen particuliere veiligheidstroepen het complex.",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "deaf1c76-4cef-42d3-ac49-2f10a76dc83b",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG035/Wing Guard (Elite)"
-        }
-      ]
-    },
-    {
-      "eventName": "Crack attempt",
-      "GUID": "bd47a150-b989-470d-8f15-98983978d3f5",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je begint aan de kluisdeur te werken. Je realiseert je meteen dat dit ingewikkeld zal worden.\n\n{-}  Test {J} of {I}. Pas +&Clues found& {B} toe. Pas +1 {B} toe voor elk forceertoken op de kluis en leg vervolgens alle forceertokens op de kluis af. Vul hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "954ef433-2200-482b-ad28-acc7d818a44e",
-              "theText": "De kluisdeur is gewoonweg te complex. Je moet blijven proberen.\r\n\r\n{-} Plaats 1 forceertoken op de kluis voor elke geworpen {B} resultaat."
-            },
-            {
-              "GUID": "9a6d46bb-c3c1-44bf-be35-4ca24ede2be4",
-              "theText": null
-            }
-          ],
-          "GUID": "46cdad9a-8acb-4e74-aa7f-3fb35437a52e",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Asset secured",
-      "GUID": "019ad022-271f-4793-8b7e-7fb603d775f9",
-      "eventText": "Je kraakt eindelijk de combinatie, rukt de deur van de kluis open en pakt de informatie.\n\n{-} Claim de token.",
+      "eventName": "Face to Face question",
+      "GUID": "c3754b07-5d7c-45cb-a72b-06465749e591",
+      "eventText": "Terwijl de tweede beveiligingsconsole wordt uitgeschakeld, schuift de deur naar het kantoor van de Duke open.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Safe",
-              "GUID": "00841372-c893-4319-89f3-1e3bc3270aaa",
-              "theText": "De kluis van de Duke wordt beschermd door een dikke explosieveilige deur. Het zal niet eenvoudig zijn om die te kraken.",
-              "buttonList": [
-                {
-                  "GUID": "a0e16632-79c5-467d-9a57-9c655688790d",
-                  "theText": "{A} Probeer te kraken"
-                }
-              ]
-            },
-            {
-              "entityName": "Clue 1",
-              "GUID": "b50c2ad8-bfd2-4c6b-950b-48bf1802ca12",
-              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn onder de reling van het balkon.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
-              "buttonList": [
-                {
-                  "GUID": "3f86c192-9e4f-49a3-a092-0ed46e512ddc",
-                  "theText": "Zoeken"
-                }
-              ]
-            },
-            {
-              "entityName": "Clue 2",
-              "GUID": "a47916fb-d029-4bf7-a67d-97efb6d7771e",
-              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen kunnen zijn in de hoek van de zijkamer.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
-              "buttonList": [
-                {
-                  "GUID": "681bb56e-4d5b-40cd-8f7a-16ff7b8073fd",
-                  "theText": "Zoeken"
-                }
-              ]
-            },
-            {
-              "entityName": "Clue 3",
-              "GUID": "0885e70d-0e58-46ba-9b1f-02c4d08fa41b",
-              "theText": "Een aanwijzing voor de combinatie van de kluis kan achter de stoel verborgen zijn.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
-              "buttonList": [
-                {
-                  "GUID": "8a22f5d0-e7a5-4572-9023-48540164cd91",
-                  "theText": "Zoeken"
-                }
-              ]
-            },
-            {
-              "entityName": "Clue 4",
-              "GUID": "e8a45f67-710c-44bf-a324-9a6d8364d894",
-              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn aan de voet van de muur.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
-              "buttonList": [
-                {
-                  "GUID": "4944bfcd-22db-4ab3-8ea7-5bc25f97e99a",
-                  "theText": "Zoeken"
-                }
-              ]
-            },
-            {
-              "entityName": "Clue 5",
-              "GUID": "da630ddf-57e0-4ad3-bf9d-496eccc148c1",
-              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn in de hoek van de gang.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
-              "buttonList": [
-                {
-                  "GUID": "49b26622-1751-4419-9c14-b478d024c587",
-                  "theText": "Zoeken"
-                }
-              ]
-            },
-            {
-              "entityName": "Clue 6",
-              "GUID": "11a23626-4deb-406e-9ed9-826f7984b030",
-              "theText": "Een aanwijzing voor de combinatie van de kluis kan vlak naast de kluis verborgen zijn.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
-              "buttonList": [
-                {
-                  "GUID": "8fe54053-c9eb-482a-9533-ccb1966e3b15",
-                  "theText": "Zoeken"
-                }
-              ]
-            }
-          ],
-          "GUID": "95f4b382-9d4c-40bb-b671-658dc6d4a5f7",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "tbText": "{-} De keizerlijke missietoken stelt de documenten voor. De figuur die de kluis heeft gekraakt, onderbreekt om de documenten op te pakken.\n{-} Als de documenten vallen, kan een rebellenfiguur ze zonder test oppakken.",
-          "GUID": "ac9f8aa6-102c-467e-95e3-966c44efe389",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Shuttle",
-              "GUID": "02ad4c06-b165-4f46-be1e-e901cd440875",
-              "theText": "Je shuttle staat klaar om te ontsnappen.\n\n{-} De rebellen winnen aan het begin van de statusfase als een figuur met de documenten zich in de shuttle bevindt.",
+              "entityName": "Office Door",
+              "GUID": "8f4c171c-350c-418a-9139-f62aad4f89c0",
+              "theText": "Een gesloten deur leidt naar het kantoor van de Duke.\r\n\r\n{-} De deur is vergrendeld. De deur gaat open wanneer beide terminals verwijderd zijn.",
               "buttonList": []
             }
           ],
-          "GUID": "195a29fa-fc8a-48af-900d-bedfc1acca4e",
+          "GUID": "7318eae9-270b-493b-9065-98a96f09dab6",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
-        },
-        {
-          "tbText": "Je shuttle staat vlakbij te wachten.\n\n{-} De rebellen winnen aan het begin van de statusfase als een figuur met de documenten zich in de shuttle bevindt.",
-          "GUID": "08098385-4955-4a63-a3f1-ae52ef2dc5fa",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "repositionText": "Blokkeer de toegang tot de shuttle.",
-          "GUID": "66bf3491-c55f-4cc8-b8bb-ea13c25105b1",
-          "eventActionType": 17,
-          "eaName": "Change Reposition Instructions"
-        },
-        {
-          "shortText": "Ontsnap!",
-          "longText": null,
-          "GUID": "ade44f6e-3aea-4650-863c-fc654ff8817c",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        },
-        {
-          "theText": "{-} De keizerlijke missietoken stelt de documenten voor. Als de documenten vallen, kan een rebellenfiguur ze zonder test oppakken.\r\n{-} De rebellen winnen aan het begin van de statusfase als een figuur met de documenten zich in de shuttle bevindt.\r\n{-} De rebellen verliezen wanneer alle helden gewond zijn.",
-          "GUID": "5eba6ee7-6b04-4078-9fe4-4604027e9e26",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
         }
       ]
     },
@@ -815,15 +627,122 @@
       ]
     },
     {
-      "eventName": "Davith present",
-      "GUID": "329aef7a-f5e0-4ba8-a4b4-2851c88b5a7b",
+      "eventName": "FtF No",
+      "GUID": "895adf37-2859-4e43-90c0-35948b45e6e0",
       "eventText": "",
       "eventActions": []
     },
     {
-      "eventName": "Mission Ends Win Davith Yes",
-      "GUID": "803c2192-4832-42e4-b16e-6d445aedbe77",
-      "eventText": "Davith Elso krijgt de beloningskaart “Radiant Holocron”.",
+      "eventName": "FtF Yes",
+      "GUID": "3f099e0c-e7a2-4206-832f-4dddd9337417",
+      "eventText": "De Duke kijkt op van zijn bureau. \"Davith, jongen, wat goed om je weer te zien. Ik hoop dat je begrijpt dat het nooit persoonlijk bedoeld was om je buiten alles te houden. Je was simpelweg te waardevol voor de organisatie om het risico te lopen je te verliezen.\"",
+      "eventActions": [
+        {
+          "otherTarget": null,
+          "GUID": "eda13a57-327e-4733-8fc6-cbd540f8554e",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "De blauwdrukken die jullie hebben ontvangen blijken accuraat te zijn. Elke dure vaas en elk onbetaalbaar kunstvoorwerp staat precies waar het hoort. Geheimen moeten blijkbaar winstgevend zijn. Het plan is eenvoudig: kraak de kluis, steel de informatie terug en ontsnap naar de shuttle in de buurt. Helaas verloopt spionage zelden zo makkelijk.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} De deur is vergrendeld. Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals verwijderd zijn.\n{-} De missie gaat verder wanneer de deur opengaat.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+      "eventActions": [
+        {
+          "tbText": "Je weet dat de combinatie van de kluis zó complex is dat de Hertog geheugensteuntjes ergens in het gebouw heeft verborgen. Als je die kunt vinden, wordt het kraken van de kluis een stuk eenvoudiger.",
+          "GUID": "64d3dbfe-a76c-48a9-a249-baf1406e4ee5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Clue 1",
+              "GUID": "76656382-d969-4cc4-b588-5c8de7098642",
+              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn onder de reling van het balkon.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+              "buttonList": [
+                {
+                  "GUID": "3b2d2eb5-20f2-4f6f-94d4-40e61e675c1e",
+                  "theText": "Zoeken"
+                }
+              ]
+            },
+            {
+              "entityName": "Clue 2",
+              "GUID": "907ead02-3259-4f2e-8194-3958b69c1308",
+              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn in de hoek van de zijkamer.\n\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+              "buttonList": [
+                {
+                  "GUID": "b406af31-81d9-456f-ae2c-7dd084cbf0f3",
+                  "theText": "Zoeken"
+                }
+              ]
+            },
+            {
+              "entityName": "Clue 3",
+              "GUID": "f4c58f6a-6dd2-420a-90ce-304a3ff08e65",
+              "theText": "Een aanwijzing voor de combinatie van de kluis kan achter de stoel verborgen zijn.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+              "buttonList": [
+                {
+                  "GUID": "095da45f-fb1b-4643-9b11-b3d170332bf2",
+                  "theText": "Zoeken"
+                }
+              ]
+            },
+            {
+              "entityName": "Clue 4",
+              "GUID": "1e87e368-ad0d-46cc-a4a0-8e24b7d869c6",
+              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn aan de voet van de muur.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+              "buttonList": [
+                {
+                  "GUID": "f26ccf7b-cf4d-4ce1-8a3c-4e00eca501af",
+                  "theText": "Zoeken"
+                }
+              ]
+            },
+            {
+              "entityName": "Clue 5",
+              "GUID": "43326d2f-8bc4-445d-9e20-e98bd8674dc5",
+              "theText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn in de hoek van de gang.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+              "buttonList": [
+                {
+                  "GUID": "ee47d8e0-ce5a-499f-8e28-97c26647670c",
+                  "theText": "Zoeken"
+                }
+              ]
+            }
+          ],
+          "GUID": "f3886df5-a649-437b-9014-c376dbffbd99",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Neutrale missietokens stellen aanwijzingen voor. Hoe meer aanwijzingen de helden verzamelen, hoe gemakkelijker het wordt om de combinatie van de kluis te kraken.\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+          "GUID": "36174add-7e0e-41f7-a2dc-f5786bc589b0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Open de deur naar het kantoor. Aanwijzingen gevonden: &Clues found&",
+          "longText": null,
+          "GUID": "e3246f97-b65b-4810-a0e3-4ee501fd1c03",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Neutrale missietokens stellen aanwijzingen voor. Hoe meer aanwijzingen de helden verzamelen, hoe gemakkelijker het wordt om de combinatie van de kluis te kraken.\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.\n{-} De deur is vergrendeld. Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals verwijderd zijn.\n{-} De missie gaat verder wanneer de deur opengaat.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "3173b3c0-9568-4810-be2c-d5e1953edb7a",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Ends Defeat",
+      "GUID": "5c8918e4-8a0a-442e-b35f-47ea742b9536",
+      "eventText": "",
       "eventActions": []
     },
     {
@@ -833,105 +752,94 @@
       "eventActions": []
     },
     {
-      "eventName": "Mission Ends Defeat",
-      "GUID": "5c8918e4-8a0a-442e-b35f-47ea742b9536",
-      "eventText": "",
+      "eventName": "Mission Ends Win Davith Yes",
+      "GUID": "803c2192-4832-42e4-b16e-6d445aedbe77",
+      "eventText": "Davith Elso krijgt de beloningskaart \"Radiant Holocron\".",
       "eventActions": []
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "cda3482a-4600-4eda-95c6-e85283d33cd0",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "e480d21e-aa72-47b4-9022-35eb50780185",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "ebc624eb-5cfc-4cb2-9542-fb4b1abadeed",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "a97b9a56-df33-452d-b597-1d0f0dbe93b3",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Private Security",
+      "GUID": "86ed13e4-d1c7-4061-886c-8ea0f4d0d6b5",
+      "eventText": "Gealarmeerd door jullie komst stormen particuliere beveiligingstroepen het complex binnen.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "deaf1c76-4cef-42d3-ac49-2f10a76dc83b",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG035/Wing Guard (Elite)"
+        }
+      ]
     }
   ],
   "mapEntities": [
-    {
-      "entityName": "Crate1",
-      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "0f7876c8-31eb-4177-a95f-853e05870cee",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Crate2",
-      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "d1eb009c-7560-4f83-93b1-4582d96c6aa6",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Crate3",
-      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "a874626a-9413-4699-8203-c49a91428c6a",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 1",
-      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 2",
-      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Probe Droid",
-      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP EProbe Droid",
-      "GUID": "adafa6de-33b8-4881-8818-33e31c1a0dc4",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Wing Guard 1",
-      "GUID": "860dae1d-9957-41c3-8fb4-e7cfaed5d2b1",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Wing Guard 2",
-      "GUID": "6174cf2a-c0e9-4f3a-8c95-e444a30bc5fc",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Wing Guard 3",
-      "GUID": "2950ae1e-4469-4459-b3b2-5a1881a8e800",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Safe",
-      "GUID": "1312084d-c171-4a60-b5b9-c037ae876693",
-      "mainText": "De kluis van de Duke wordt beschermd door een dikke explosieveilige deur. Het zal niet eenvoudig zijn om die te kraken.",
-      "buttonList": [
-        {
-          "GUID": "2a1347d5-ef7d-4ea9-9d65-37e92f8c19b3",
-          "theText": "{A} Probeer te kraken"
-        }
-      ]
-    },
     {
       "entityName": "Clue 1",
       "GUID": "c63c41d1-1514-4421-8440-8419c3d9e496",
@@ -946,7 +854,7 @@
     {
       "entityName": "Clue 2",
       "GUID": "153c01b8-c141-4377-ad2c-9373dc7d5076",
-      "mainText": "Een aanwijzing voor de combinatie van de kluis kan verborgen kunnen zijn in de hoek van de zijkamer.\r\n\r\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
+      "mainText": "Een aanwijzing voor de combinatie van de kluis kan verborgen zijn in de hoek van de zijkamer.\n\n{-} Wanneer een rebellenfiguur een veld betreedt waarin een aanwijzing ligt, test die figuur {J} om naar de aanwijzing te zoeken.",
       "buttonList": [
         {
           "GUID": "a852b5fb-ac55-4d66-af49-c10680e43180",
@@ -999,36 +907,41 @@
       ]
     },
     {
-      "entityName": "Office Door",
-      "GUID": "9d2a3053-5d60-41ea-ad2a-b52f7b3677a7",
-      "mainText": "Een gesloten deur leidt naar het kantoor van de Duke.\r\n\r\n{-} De deur is vergrendeld. De deur gaat open wanneer beide terminals verwijderd zijn.",
-      "buttonList": []
-    },
-    {
-      "entityName": "Terminal 1",
-      "GUID": "dd838382-0ade-4ce5-881d-19b96e37c663",
-      "mainText": "Een van de twee beveiligingsconsoles die de deur naar het kantoor van de Duke bedienen.\n\n{-} Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals zijn verwijderd.",
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
       "buttonList": [
         {
-          "GUID": "e0365b68-0664-450b-be94-81128ec7c74e",
-          "theText": "{A} Verwijderen"
+          "GUID": "0f7876c8-31eb-4177-a95f-853e05870cee",
+          "theText": "{A} Openen"
         }
       ]
     },
     {
-      "entityName": "Terminal 2",
-      "GUID": "a68bbb9b-fd43-4e45-ad8b-035159210e44",
-      "mainText": "Een van de twee beveiligingsconsoles die de deur naar het kantoor van de Duke bedienen.\n\n{-} Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals zijn verwijderd.",
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
       "buttonList": [
         {
-          "GUID": "469d0e7b-cb4b-4dda-86e0-a2f5eee4687e",
-          "theText": "{A} Verwijderen"
+          "GUID": "d1eb009c-7560-4f83-93b1-4582d96c6aa6",
+          "theText": "{A} Openen"
         }
       ]
     },
     {
-      "entityName": "DP Red",
-      "GUID": "bd7e34a5-4341-41d8-bec1-f8bcca39f5c9",
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "a874626a-9413-4699-8203-c49a91428c6a",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP EProbe Droid",
+      "GUID": "adafa6de-33b8-4881-8818-33e31c1a0dc4",
       "mainText": null,
       "buttonList": []
     },
@@ -1039,10 +952,97 @@
       "buttonList": []
     },
     {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "bd7e34a5-4341-41d8-bec1-f8bcca39f5c9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Wing Guard 1",
+      "GUID": "860dae1d-9957-41c3-8fb4-e7cfaed5d2b1",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Wing Guard 2",
+      "GUID": "6174cf2a-c0e9-4f3a-8c95-e444a30bc5fc",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Wing Guard 3",
+      "GUID": "2950ae1e-4469-4459-b3b2-5a1881a8e800",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Office Door",
+      "GUID": "9d2a3053-5d60-41ea-ad2a-b52f7b3677a7",
+      "mainText": "Een gesloten deur leidt naar het kantoor van de Duke.\r\n\r\n{-} De deur is vergrendeld. De deur gaat open wanneer beide terminals verwijderd zijn.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Safe",
+      "GUID": "1312084d-c171-4a60-b5b9-c037ae876693",
+      "mainText": "De kluis van de Duke wordt beschermd door een dikke explosieveilige deur. Het zal niet eenvoudig zijn om die open te krijgen.",
+      "buttonList": [
+        {
+          "GUID": "2a1347d5-ef7d-4ea9-9d65-37e92f8c19b3",
+          "theText": "{A} Probeer de kluis te kraken"
+        }
+      ]
+    },
+    {
       "entityName": "Shuttle",
       "GUID": "0c16754f-bb62-4780-aa07-584a3b45b7a3",
       "mainText": "Je shuttle staat klaar om te ontsnappen.\n\n{-} De rebellen winnen aan het begin van de statusfase als een figuur met de documenten zich in de shuttle bevindt.",
       "buttonList": []
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "dd838382-0ade-4ce5-881d-19b96e37c663",
+      "mainText": "Eén van de twee beveiligingsconsoles die de deur naar het kantoor van de Duke bedienen.\n\n{-} Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals verwijderd zijn.",
+      "buttonList": [
+        {
+          "GUID": "e0365b68-0664-450b-be94-81128ec7c74e",
+          "theText": "{A} Verwijderen"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 2",
+      "GUID": "a68bbb9b-fd43-4e45-ad8b-035159210e44",
+      "mainText": "Eén van de twee beveiligingsconsoles die de deur naar het kantoor van de Duke bedienen.\n\n{-} Een rebellenfiguur kan een interactie uitvoeren op een terminal om die terminal te verwijderen. De deur gaat open als beide terminals verwijderd zijn.",
+      "buttonList": [
+        {
+          "GUID": "469d0e7b-cb4b-4dda-86e0-a2f5eee4687e",
+          "theText": "{A} Verwijderen"
+        }
+      ]
     }
   ],
   "initialGroups": [

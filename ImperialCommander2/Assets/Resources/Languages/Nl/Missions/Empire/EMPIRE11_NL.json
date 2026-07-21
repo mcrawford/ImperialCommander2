@@ -1,0 +1,798 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Op het spoor",
+    "missionDescription": "",
+    "missionInfo": "{-} Plaats 1 rode keizerlijke missietoken op het rood gemarkeerde veld.\n{-} De rode keizerlijke missietoken stelt Zaaryn voor. Zaaryn is een neutraal figuur.\r\n{-} Zaaryn verplaatst zich aan het begin van elke statusfase maximaal 5 velden. Als hij zich vervolgens niet in de zichtlijn van een held bevindt, wordt {D} verhoogd.\r\n{-} De blauwe keizerlijke missietoken stelt de informant voor. De informant is een neutraal figuur. Wanneer Zaaryn grenst aan de informant, legt hij contact.\n{-} De helden die een zichtlijn hebben op de informant kunnen een interactie uitvoeren op de informant om hem te identificeren. Ze hoeven niet aangrenzend te zijn, ze moeten alleen een zichtlijn hebben.\n{-} De missie gaat verder wanneer de informant geïdentificeerd is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+    "campaignName": "Heart of the Empire",
+    "startingObjective": "Identificeer de informant voordat Zaaryn contact legt.",
+    "repositionOverride": "Blokkeer de toegang tot de informant.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Clawdite behind the Counter",
+      "GUID": "e0132f7a-95b1-4f7f-a92e-583d4ef741db",
+      "eventText": "Beide deuren van de kroeg gaan tegelijk open. Je ziet een man van middelbare leeftijd achter de toonbank staan. Plotseling verandert zijn gezicht en haalt hij een blaster tevoorschijn.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Green 4",
+              "GUID": "6823d32d-d7f5-4019-b056-eaf4ed253417",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Door 1",
+              "GUID": "cb34be6f-cd35-40e4-8195-8686bba9dbf0",
+              "theText": "De deur leidt naar een kleine kroeg.\n\n{-} De deur is vergrendeld voor keizerlijke troepen.",
+              "buttonList": [
+                {
+                  "GUID": "97c966ec-b493-4c4d-a9e0-dd8044a42513",
+                  "theText": "{A} Openen"
+                }
+              ]
+            },
+            {
+              "entityName": "Door 2",
+              "GUID": "533588f0-d0d1-4634-9ca7-4445d9a958c7",
+              "theText": "De deur leidt naar een kleine kroeg.\n\n{-} De deur is vergrendeld voor keizerlijke troepen.",
+              "buttonList": [
+                {
+                  "GUID": "941b5121-4c17-4093-8025-106327efcbae",
+                  "theText": "{A} Openen"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Blue",
+              "GUID": "6dfb96df-738b-4b1b-9369-93c9df5704dc",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "e3b5293a-1576-41ca-85bb-e195550e0a89",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "10232461-2ccf-44b5-a0b4-ecf8ad220bbd",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG054/Clawdite Shapeshifter"
+        },
+        {
+          "tbText": "De nepbarman duikt achter de bar en schiet in jouw richting.\n\n{-} De zojuist ingezet Clawdite Shapeshifter onderbreekt om {rebel} aan te vallen.",
+          "GUID": "4bfbf896-aabc-458c-b5b2-8352fbb994bd",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Clawdite in the Crowd",
+      "GUID": "290358a0-4c3d-4bf3-b6b3-9d42837af185",
+      "eventText": "Je vangt een schaduwachtige glimp op van één van je achtervolgers. Wacht eens even... zag ze er een seconde geleden niet heel anders uit?",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "69630901-c48d-435d-af1f-a514c0eb5475",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG053/Clawdite Shapeshifter"
+        }
+      ]
+    },
+    {
+      "eventName": "Contact Made EoR 1",
+      "GUID": "b58ded43-f3ba-41b5-838b-93e158c9a4c5",
+      "eventText": "Je hebt nog steeds niet ontdekt wie Zaaryns informant is. Je moet opschieten.",
+      "eventActions": [
+        {
+          "shortText": "Identificeer de informant voordat Zaaryn de deal sluit. Ronden resterend: 1",
+          "longText": null,
+          "GUID": "d912b795-dd88-44e6-93de-a818bddee9f8",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Contact Made EoR 2",
+      "GUID": "aebb77b6-87ce-4a0a-9574-054d7a395c7b",
+      "eventText": "Zowel Zaaryn als zijn onbekende contactpersoon verdwijnen in de menigte. Je raakt ze kwijt voordat je je kunt bedenken wie je moet volgen.",
+      "eventActions": [
+        {
+          "shortText": "Identificeer de informant voordat Zaaryn de deal sluit. Ronden resterend: 0",
+          "longText": null,
+          "GUID": "ae724142-2541-40d3-9ad5-2665f2b416f9",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "End Mission No",
+      "GUID": "b2047ba4-08cd-4e6a-bcf2-b2ff8996923e",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "End Mission Zaaryn Defeated",
+      "GUID": "d741721b-4898-4ce1-8023-70c15f8a42a3",
+      "eventText": "Omdat Zaaryn verslagen is, ontvangen de helden 25 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End Mission Zaaryn Not Defeated",
+      "GUID": "e64a2624-c104-4e73-a400-69e46f6fa13e",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Een regen van blastervuur jaagt je weg, terwijl je slechts een glimp opvangt van je doelwitten en  hun zakelijke transacties. Je blijft achter met meer vragen dan antwoorden.\r\n\r\n{-} De rebellen verliezen de missie.\n{-} Het dreigingsniveau van de volgende missie (en alleen de volgende missie) wordt met 1 verhoogd. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers besluiten om 50 credits per held uit te geven om dit te voorkomen.\n{-} Elke held ontvangt 2 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "\"Wacht, wacht!\" hijgt de Clawdite terwijl je dichterbij komt. \"Ik ben Zaaryn niet, ik ben alleen zijn dubbelganger!z\" roept hij wanhopig. \"Hij kon zijn superieuren niet laten weten wat hij van plan was, dus heeft hij mij ingehuurd. Ik moest alleen contact leggen en verslag uitbrengen. De echte ontmoeting tussen Zaaryn en Maul vindt pas over een paar dagen op een andere wereld plaats.. Dat is alles wat ik weet!\"\n\nJe deelt deze informatie met je leiders, die geïntrigeerd zijn en geneigd om de aanwijzing te volgen. Tegelijkertijd vertellen ze je over een lokale groep sympathisanten van de Alliantie die contact heeft gezocht en nu een ontmoeting wil om informatie uit te wisselen. Ze laten het aan jou over om prioriteiten te stellen voor de operaties.\r\n\r\n{-} De rebellen winnen de missie!\n{-} De helden ontvangen de beloningskaart \"Intercepted Plans\". (Deze beloningskaart werkt anders wanneer je met <b>Imperial Commander</b> speelt. Raadpleeg het gedeelte <b>Rules Change</b> van de wikidocumentatie voor meer informatie.)\r\n{-} Elke held ontvangt 2 XP. De helden ontvangen 100 credits per held.\n{-} De helden moeten kiezen om Zaaryn te volgen of de sympathisanten te ontmoeten. Als de helden Zaaryn volgen, plaats dan de verhaalmissiekaart \"Verstoring (Disruption)\" in het spel. Als ze de sympathisanten ontmoeten, plaats dan de verhaalmissiekaart \"In een hoek gedreven (Into a Corner)\" in het spel.",
+      "eventActions": [
+        {
+          "mainText": "Is er maar 1 gezonde held?",
+          "buttonList": [
+            {
+              "GUID": "1f68e251-f26f-4f96-b95d-c176f711d377",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "dee20b04-be8b-47b4-b921-0b7aa0d8408b",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "ee1af1b4-23ca-413e-b1e7-b9119207f661",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "EoR Question",
+      "GUID": "8f61289a-4df6-46fc-b9ca-e092b0261ea8",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je kijkt rond op zoek naar je prooi.\r\n\r\nIs Zaaryn in de zichtlijn van een held?",
+          "buttonList": [
+            {
+              "GUID": "bb098119-a6f1-4bff-b2cb-d0e270d39ab7",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "ef9bb092-c73e-4375-adcb-e65cb9dcccb9",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "1b5c2679-648f-46eb-bc01-a83bd3cc95c7",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Figure in the Shadows",
+      "GUID": "475311f9-1de7-4bcf-a08c-14e417e4d93f",
+      "eventText": "Door de duisternis en de sombere schaduwen zie je de contouren van de mysterieuze figuur met wie Zaaryn heeft afgesproken om zijn kennis over de scherf van de bol te verhandelen. In de hand van Zaaryns contact gloeit een draagbare holografische projector op, die een blauwe, flikkerende afbeelding toont van een strenge Dathomiri-man, gehuld in een zwarte mantel, met het gevest van een lichtzwaard aan zijn zijde: de Sith die zich heeft afgekeerd van zijn orde, Maul.\n\nDe informant merkt je op en trekt zich haastig terug uit het gevecht, verdwijnend in de schaduwen van de smerige steegjes van Coruscant. Zijn zaken afgerond, draait Zaaryn zich naar je om en begint hij zijn bewakers bevelen toe te snauwen.\r\n\r\n{-} Verwijder de token die Zaaryn voorstelt van het speelbord en vervang deze door een <color=\"red\">Imperial Officer</color>.\n{-} Zaaryn (de <color=\"red\">Imperial Officer</color>) wordt nu normaal geactiveerd en verhoogt {D} niet langer als hij niet in de zichtlijn van een held staat.\n{-} De missie gaat verder wanneer Zaaryn verslagen is.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Informant",
+              "GUID": "8f8340e5-c7ef-46dc-9e41-dacc4f35ee85",
+              "theText": "Zaaryns informant schuilt ergens in deze hoek. Je moet hem identificeren voordat het te laat is.\n\n{-} Wanneer Zaaryn grenst aan de informant, selecteer dan \"contact leggen\".\n{-} De helden die een zichtlijn hebben op de informant kunnen een interactie op hem uitvoeren om hem te identificeren. Ze hoeven daarvoor niet aangrenzend te zijn.",
+              "buttonList": [
+                {
+                  "GUID": "264b9ce8-3037-401e-8438-db1a3e0d7da7",
+                  "theText": "Contact leggen"
+                },
+                {
+                  "GUID": "f7ee9141-e308-4c3a-a66e-192b448ad871",
+                  "theText": "{A} Probeer te identificeren"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Green 1",
+              "GUID": "7bd087fc-9e20-497f-8191-df3cf5bb3a7a",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "c939c2fb-3255-4e7d-bd9f-d685180d646b",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": "Zaaryn",
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "4ac34783-08f5-4368-b59e-dba2e9de3c53",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "repositionText": "",
+          "GUID": "5c42f7a9-02f0-4a81-81d6-9491aebee819",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Versla Zaaryn.",
+          "longText": null,
+          "GUID": "66308b92-da9c-4b1d-9723-9381b5928bed",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De missie gaat verder wanneer Zaaryn verslagen is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "43c30771-5711-4e34-b998-6fa1b5ab55e8",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Healthy Hero Yes",
+      "GUID": "bfa2fea0-4e45-4728-9387-c764d4a12de6",
+      "eventText": "Het dreigingsniveau van de volgende missie (en alleen de volgende missie) wordt met 1 verhoogd. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers besluiten om 50 credits per held uit te geven om dit te voorkomen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Idenfity attempt",
+      "GUID": "34adebe5-45a2-48fc-8653-c8202c78e59d",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "In overleg met je kameraden probeer je details in de menigte te ontwaren. \n\n{-} Test {I}. Je mag 1 dobbelsteen opnieuw gooien voor elke andere held die zicht heeft op de informant. Vul hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "dbab67a0-f40a-425e-aadd-143bc7561b34",
+              "theText": "Er zijn gewoon te veel mensen. Iedereen zou de informant kunnen zijn. Je moet het blijven proberen."
+            }
+          ],
+          "GUID": "273a81a1-83f5-4d32-a1d2-aa040123f5b0",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Je vindt Zaaryn in de duistere straten van de onderwereld van Coruscant. Hij draagt gewone kleren, waardoor hij nauwelijks te onderscheiden is van de menigte.\r\n\r\nTerwijl je hem volgt, bekruipt je het gevoel dat Zaaryn niet de enige is die wordt achtervolgd. Figuren in de menigte houden je scherp in de gaten. Subtiliteit is van korte duur wanneer een paar keizerlijke oproertroepen plotseling de weg voor je versperren.\r\n\r\n{-} Plaats de helden op het blauw gemarkeerde veld.",
+      "eventActions": [
+        {
+          "tbText": "Zaaryn vertrekt om de informant te ontmoeten.\n\n{-} Plaats 1 rode keizerlijke missietoken op het rood gemarkeerde veld.\n{-} De rode keizerlijke missietoken stelt Zaaryn voor. Zaaryn is een neutraal figuur.\n{-} Zaaryn verplaatst zich aan het begin van elke statusfase maximaal 5 velden. Als hij zich vervolgens niet in de zichtlijn van een held bevindt, wordt {D} verhoogd.",
+          "GUID": "276ce7fc-269a-4fda-840e-b4bd2c3d3992",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Informant",
+              "GUID": "10105675-d42c-4ba6-8c22-abda28aebe24",
+              "theText": "Zaaryns informant schuilt ergens in deze hoek. Je moet hem identificeren voordat het te laat is.\n\n{-} Wanneer Zaaryn grenst aan de informant, selecteer dan \"contact leggen\".\n{-} De helden die een zichtlijn hebben op de informant kunnen een interactie op hem uitvoeren om hem te identificeren. Ze hoeven daarvoor niet aangrenzend te zijn.",
+              "buttonList": [
+                {
+                  "GUID": "3d03a1f1-c17e-4c41-9e87-ec7153f9fee2",
+                  "theText": "Contact leggen"
+                },
+                {
+                  "GUID": "d4246ca9-451d-47b0-921c-dac2cd14c90c",
+                  "theText": "{A} Probeer te identificeren"
+                }
+              ]
+            }
+          ],
+          "GUID": "5c0ffb1c-1d00-47b6-95cf-fbb5c9def7e2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Zaaryns contactpersoon schuilt ergens in de drukke straten.\n\n{-} De blauwe keizerlijke missietoken stelt de informant voor. De informant is een neutraal figuur. Wanneer Zaaryn grenst aan de informant, legt hij contact.\n{-} De helden die een zichtlijn hebben op de informant kunnen een interactie uitvoeren op de informant om hem te identificeren. Ze hoeven niet aangrenzend te zijn, ze moeten alleen een zichtlijn hebben.\n{-} De missie gaat verder wanneer de informant geïdentificeerd is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "7af4ec77-79e9-4093-8f9e-4010d320ee33",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "d100265f-8d4a-44d7-956e-e4c1da6b829b",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "b0abf13d-26b5-464a-955a-b93b89115e96",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "a9cbbc36-c7a3-4bfc-a55d-f3d1a912c033",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "7ba7eff5-f60e-467a-9432-a7a47194b119",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "5b0a3174-e25f-4c4f-b205-9726c12932da",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "64ce5a95-acdd-4120-b571-f0f0c6b996c6",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Door 1",
+      "GUID": "e498ea6c-10c7-4835-9bf0-5a65156c7d87",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "4f09196f-e65f-440f-9f97-6e9f22caa7f4",
+              "theText": "De deur leidt naar een kleine kroeg.\n\n{-} De deur is vergrendeld voor keizerlijke troepen.",
+              "buttonList": [
+                {
+                  "GUID": "4b203781-67ec-4e31-8950-9d7ae755d5a0",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "abe6250e-1684-4b78-a053-083b8c53291c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Door 2",
+      "GUID": "013a0b51-a630-4245-ae97-e52536ba4606",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 2",
+              "GUID": "02b1c0df-821f-4157-9d44-cda750710c85",
+              "theText": "De deur leidt naar een kleine kroeg.\n\n{-} De deur is vergrendeld voor keizerlijke troepen.",
+              "buttonList": [
+                {
+                  "GUID": "8ec73521-6b47-49b5-af6c-259288868f9a",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "3965c83e-0339-492d-a191-4456e5433eb9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Rendezvous",
+      "GUID": "616334c1-eb7b-49d6-958f-5a3c6b0bb843",
+      "eventText": "Zaaryn gaat op in de menigte. Af en toe vang je nog een glimp van hem op, maar je kunt niet zien met wie hij spreekt. Je moet snel handelen als je wilt achterhalen wie zijn contactpersoon is.\r\n\r\n{-} De rebellen hebben twee rondes om de contactpersoon te identificeren.\n{-} Als de twee rondes voorbij zijn, ontsnapt de contactpersoon en is de missie afgelopen.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Informant",
+              "GUID": "500625c5-7eee-4a32-b50b-829be70b32ff",
+              "theText": "Zaaryns informant schuilt ergens in deze hoek. Je moet hem identificeren voordat het te laat is.\n\n{-} Wanneer Zaaryn grenst aan de informant, selecteer dan \"contact leggen\".\n{-} De helden die een zichtlijn hebben op de informant kunnen een interactie op hem uitvoeren om hem te identificeren. Ze hoeven daarvoor niet aangrenzend te zijn.",
+              "buttonList": [
+                {
+                  "GUID": "6b0a6fb8-f6df-4558-a930-7cfc099e6e23",
+                  "theText": "{A} Probeer te identificeren"
+                }
+              ]
+            }
+          ],
+          "GUID": "8aeb1e58-1f3e-4043-8e04-b2d86af7c399",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Identificeer de informant voordat Zaaryn de deal sluit. Ronden resterend: 2",
+          "longText": null,
+          "GUID": "f442ef64-18c5-43a0-b941-5bb72356a1ac",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De helden die een zichtlijn hebben op de informant kunnen een interactie op hem uitvoeren om hem te identificeren. Ze hoeven daarvoor niet aangrenzend te zijn.\r\n{-} De missie gaat verder wanneer de informant geïdentificeerd is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "f5fd7ea7-2db6-4a42-aee3-97ea491a267e",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Story 1",
+      "GUID": "6d0d7fc2-e33a-481e-9c17-6e1cddeffdd9",
+      "eventText": "Het Keizerrijk voert zijn inspanningen op om de achtergrond van de huidige situatie te achterhalen. Een verraderlijke historicus lijkt over veel informatie te beschikken.\n\n{-} Plaats de verhaalmissiekaart \"Dubbelagent (Double Agent)\" in het spel.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Story 2",
+      "GUID": "900437d2-27e1-4c4d-ad82-819d971082e8",
+      "eventText": "De rebellen hebben de plannen van het Keizerrijk lang genoeg gedwarsboomd. Het Keizerrijk voert zijn inspanningen op om hen te stoppen.\n\n{-} Plaats de verhaalmissiekaart \"In een hoek gedreven (Into a Corner)\" in het spel.",
+      "eventActions": []
+    },
+    {
+      "eventName": "True Identity Revealed",
+      "GUID": "5a07e273-0654-40e8-86b5-f176e37fb801",
+      "eventText": "Met een gil wankelt Zaaryn achteruit en begint zijn huid vreemd te rimpelen en verkleuren. Voor je ogen onthult de eens menselijke gestalte zijn ware Clawdite-vorm.\r\n\r\n{-} Vervang Zaaryn door een <color=\"red\">Clawdite Shapeshifter</color>.\n{-} Geef de <color=\"red\">Clawdite Shapeshifter</color> +3 gezondheid.\n{-} De rebellen winnen wanneer de <color=\"red\">Clawdite Shapeshifter</color> verslagen is.",
+      "eventActions": [
+        {
+          "enemyName": "Zaaryns ware gedaante",
+          "customText": "",
+          "modification": "+3 H",
+          "repositionInstructions": "",
+          "GUID": "359f76c0-d74e-4fa4-909e-ca86e490f9ee",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG055/Clawdite Shapeshifter (Elite)"
+        },
+        {
+          "shortText": "Versla Zaaryns ware gedaante.",
+          "longText": null,
+          "GUID": "f0fa6fe0-938e-4b5c-be42-a375c841de2c",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De rebellen winnen wanneer Zaaryns ware gedaante verslagen is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "d017e974-9358-4365-88b9-e9659e3818a3",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Zaaryn Activates Lower",
+      "GUID": "a507ffdc-e298-4dfb-a6aa-34f00d9bccbd",
+      "eventText": "Zaaryn voert de volgende instructies uit:\n\n{-} Deze figuur neemt de onderste route naar de informant en gaat door de deuren.\n{-} Deuren blokkeren de verplaatsing van deze figuur niet.\n{A}: Verplaats je 3 velden in de richting van de informant en verbreek indien mogelijk de zichtlijn naar alle helden. Daarna, als hij buiten de zichtlijn van elke held is, beëindig deze activering.\n{A}: Verplaats 2 velden in de richting van de informant en verbreek indien mogelijk de zichtlijn.\n{-} Als hij grenst aan de informant, klik dan op de informant en selecteer \"contact leggen\".",
+      "eventActions": [
+        {
+          "mainText": "Je kijkt rond op zoek naar je prooi.\r\n\r\nIs Zaaryn in de zichtlijn van een held?",
+          "buttonList": [
+            {
+              "GUID": "b656af12-994b-4979-84dd-9c7513e3ffad",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "c672fa11-f4a5-4aa1-9cb4-d4d74f2e8088",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "272dc622-1de9-4ecb-9b84-1cc011600137",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Zaaryn Activates Upper",
+      "GUID": "7f99544f-7696-4311-9d9d-2d8b4f3550de",
+      "eventText": "Zaaryn voert de volgende instructies uit:\n\n{-} Deze figuur neemt de bovenste, directe route naar de informant.\n{A}: Verplaats je 3 velden in de richting van de informant en verbreek indien mogelijk de zichtlijn naar alle helden. Daarna, als hij buiten de zichtlijn van elke held is, beëindig deze activering.\n{A}: Verplaats 2 velden in de richting van de informant en verbreek indien mogelijk de zichtlijn.\n{-} Als hij grenst aan de informant, klik dan op de informant en selecteer \"contact leggen\".",
+      "eventActions": [
+        {
+          "mainText": "Je kijkt rond op zoek naar je prooi.\r\n\r\nIs Zaaryn in de zichtlijn van een held?",
+          "buttonList": [
+            {
+              "GUID": "d371a351-dc38-41de-befa-c6619690e31d",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "7be18ef0-6efa-42fa-b513-433d1df693c8",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "ed364a83-3919-4c1c-8f08-5a853c8e8bf8",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Zaaryn Decision",
+      "GUID": "98c82aba-e244-4f24-a8b2-1427f24a8342",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Zaaryn Decision Lower",
+      "GUID": "3d7dbf1c-eb46-482e-aac4-8e11d8add20d",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Zaaryn Decision Upper",
+      "GUID": "240aba64-4311-4f8e-9d84-1eaddc28d6d0",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Zaaryn First Instructions",
+      "GUID": "b8241c7b-591a-4a50-9e68-c9e2d9f03f27",
+      "eventText": "Zaaryn voert de volgende instructies uit:\n\n{A}: Verplaats je 3 velden in de richting van de informant en verbreek indien mogelijk de zichtlijn naar alle helden. Daarna, als hij buiten de zichtlijn van elke held is, beëindig deze activering.\n{A}: Verplaats 2 velden in de richting van de informant en verbreek indien mogelijk de zichtlijn.\n{-} Als hij grenst aan de informant, klik dan op de informant en selecteer \"contact leggen\".",
+      "eventActions": [
+        {
+          "mainText": "Je kijkt rond op zoek naar je prooi.\r\n\r\nIs Zaaryn in de zichtlijn van een held?",
+          "buttonList": [
+            {
+              "GUID": "33a5bb18-3435-40fb-9733-2a1d90a226ff",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "40fbe8c4-14f7-40ae-b399-8f9571deb6f2",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "9ed41cd7-e3c6-4869-89e0-8aade7ea33ab",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Zaaryn OOS No",
+      "GUID": "e13814ef-aa0f-44e1-9acb-ad7f56523cac",
+      "eventText": "Zaaryn is verdwenen, je bent hem kwijtgeraakt in de menigte. Kostbare minuten gaan verloren voordat je hem opnieuw ziet opduiken. Je hart bonst als een razende terwijl de spanning van de achtervolging onverbiddelijk op je weegt.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Zaaryn OOS Yes",
+      "GUID": "d7abc8d8-28e3-4704-ab79-016e3daea863",
+      "eventText": "Je slaakt een zucht van opluchting zodra je Zaaryn ziet.",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "9b5fb432-1946-4b0e-a748-9e13455b0623",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "bb0395da-95e2-4919-85f5-0825b5ab9527",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "02eda37d-af7d-4131-a580-c8e814441757",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "e3d351e9-92b5-4610-81d9-2ba1f90ab2fc",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Blue",
+      "GUID": "70d15325-1a47-4680-9777-46453af0385e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 4",
+      "GUID": "2e35c1c1-e257-4195-ae0a-0b94cbd3e374",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP RTrooper 1",
+      "GUID": "972ea44c-1c7f-43e3-9ccf-ec76d4775302",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP RTrooper 2",
+      "GUID": "4307a6b3-d4ed-4443-8de8-a69fe07cd3a3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 1",
+      "GUID": "774ce5d4-af0b-409b-a817-c87868ebf63b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 2",
+      "GUID": "5c7c947a-da56-419c-b1ef-1245525c3612",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door 1",
+      "GUID": "2b83e333-e137-4183-830b-a69df1883ede",
+      "mainText": "De deur leidt naar een kleine kroeg.\n\n{-} De deur is vergrendeld voor keizerlijke troepen.",
+      "buttonList": [
+        {
+          "GUID": "dfcb1e6f-7456-40ee-b052-8190cbe527ef",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Door 2",
+      "GUID": "cf74e5b9-c772-4359-8265-c02b5e280e5a",
+      "mainText": "De deur leidt naar een kleine kroeg.\n\n{-} De deur is vergrendeld voor keizerlijke troepen.",
+      "buttonList": [
+        {
+          "GUID": "545ef094-677d-4af5-84a2-156096d88849",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Informant",
+      "GUID": "576c3ba5-801c-42fb-b32f-14109702c8cc",
+      "mainText": "Zaaryns informant schuilt ergens in deze hoek. Je moet hem identificeren voordat het te laat is.\n\n{-} Wanneer Zaaryn grenst aan de informant, selecteer dan \"contact leggen\".\n{-} De helden die een zichtlijn hebben op de informant kunnen een interactie op hem uitvoeren om hem te identificeren. Ze hoeven daarvoor niet aangrenzend te zijn.",
+      "buttonList": [
+        {
+          "GUID": "f63855f1-5654-4ede-9fbe-3a13c9c1df2f",
+          "theText": "Contact leggen"
+        },
+        {
+          "GUID": "0141f2e4-0325-456f-8a58-15bd86c03b18",
+          "theText": "{A} Probeer te identificeren"
+        }
+      ]
+    },
+    {
+      "entityName": "Zaaryn Entrance",
+      "GUID": "027a8ecb-4ba3-4cb4-9a61-0fa3b3a35edb",
+      "mainText": "{-} Plaats 1 rode keizerlijke missietoken op het rood gemarkeerde veld.\n{-} De rode keizerlijke missietoken stelt Zaaryn voor.",
+      "buttonList": []
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Riot Trooper",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Trandoshan Hunter",
+      "customInstructions": ""
+    }
+  ]
+}

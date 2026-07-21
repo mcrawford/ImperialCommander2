@@ -11,99 +11,119 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Defeat Query Yes",
+      "GUID": "f52f1333-0512-4734-a164-c1942b75b4bd",
+      "eventText": "Omdat er drie of meer spicevaten in de voorraad van de rebellen liggen, krijgen de helden 25 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Steeds meer huurlingen stromen uit de jungle tevoorschijn en uiteindelijk rest je geen andere keuze dan Jabba's lading achter te laten. De buit glipt je uit handen terwijl je je ternauwernood uit de strijd terugtrekt, op weg naar de onvermijdelijke woede van de Hutt.\n\nJabba is ontevreden, maar ook redelijk. Je hebt de hinderlaag overleefd en bewezen dat je nog altijd van nut bent. Zolang zijn gunst het enige is wat je families beschermt, heb je geen andere keuze dan je op de volgende opdracht voor te bereiden.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.\n{-} Leg alle resterende actieve verhaalmissiekaarten af. Leg de verhaalmissiekaarten \"Trofeeënjacht (Trophy Hunting)\" en \"Territoriumoorlog (Turf War)\" in het spel.",
       "eventActions": [
         {
-          "translatedEntityProperties": [
+          "mainText": "Zijn er drie of meer spicevaten in de voorraad van de rebellen?",
+          "buttonList": [
             {
-              "entityName": "Crate1",
-              "GUID": "bdcaad13-1de7-4f1b-b612-96a0402121a9",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "c34fc206-36d1-4444-9ecf-d2c9e2551c50",
-                  "theText": "{A} Openen"
-                }
-              ]
+              "GUID": "c32f688f-7162-4881-aed6-89d8caf70592",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "0b47f870-ed75-42bc-aa69-011e970e16d0",
+              "theText": "Nee"
             }
           ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
+          "GUID": "191caa58-aa1f-4759-a451-6cfb828e49d9",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
         }
       ]
     },
     {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Nog voordat de laadklep is gesloten, stijgt de shuttle op. Je laat Dosha achter, verzorgt onderweg je verwondingen en zet koers terug naar Tatooine.\n\nBij aankomst wacht Jabba je op met een weelderig feestmaal. Voorlopig heb je zijn gunst verdiend. De Hutt weet dat spice waardevol is, maar dat loyaliteit onbetaalbaar is.\n\n{-} De rebellen winnen de missie!  \n{-} Elke held ontvangt 1 XP. De helden ontvangen 200 credits per held.  \n{-} Leg alle resterende actieve verhaalmissiekaarten af. Leg de verhaalmissiekaarten \"Trofeeënjacht (Trophy Hunting)\" en \"Territoriumoorlog (Turf War)\" in het spel.",
+      "eventActions": [
+        {
+          "mainText": "Zijn er drie of meer spicevaten in de voorraad van de spicers?",
+          "buttonList": [
+            {
+              "GUID": "8000d8eb-f4d3-4c5f-b7df-974b309b352f",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "a1943c2f-8bf7-4596-bdb2-05012758e4f9",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "281c5e9a-a0fb-45c9-829b-da7e829de60c",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "EoR 6 Questions",
+      "GUID": "0ea469f4-9d51-4987-963a-edd7335819ac",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Hebben de rebellen meer spicevaten opgeëist dan het Keizerrijk?",
+          "buttonList": [
+            {
+              "GUID": "4313ba85-e1c5-41cb-ad41-8978469ff676",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "72d0a91e-7d08-4086-985f-80918cd865d5",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "3a6f400a-c20c-417d-b766-97c1a8140e67",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Hired Muscle",
+      "GUID": "2b04a781-7960-4388-a1ed-e9925faf647f",
+      "eventText": "\"Daar komen er nog meer,\" waarschuwt je piloot. \"Pak wat je nodig hebt, daarna moeten we vertrekken!\" De motoren loeien. De shuttle staat klaar om elk moment te vertrekken.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate2",
-              "GUID": "e76c7562-20b4-4df1-842d-69bb97ce6f25",
-              "theText": "Een oud voorraadkrat.",
+              "entityName": "DP Red 1",
+              "GUID": "30a1c458-2b44-47c2-83c2-63670dda6e3c",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Red 2",
+              "GUID": "fb6777aa-2fde-4c8f-9059-6fc4f04920e4",
+              "theText": null,
               "buttonList": []
             }
           ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "GUID": "7c9a37c5-1eef-401b-b3d2-549668fc97ff",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
+        },
         {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "bbf6e6a7-eb75-4d58-b8e0-beffebc323d3",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 4",
-      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate4",
-              "GUID": "0245ed1f-eda4-426d-95d3-11cbc2a5a3e2",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "199b9e8f-818c-4743-ac58-5aa7e1cb3e56",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "d28a2d2d-efbb-47e5-b60e-5e2033ef01cb",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG015/Trandoshan Hunter"
         }
       ]
     },
     {
       "eventName": "Mission Briefing",
       "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Je verlaat de skiff bij een pakhuis aan de rand van Mos Eisley. Je ontmoet een bedekte Gotal, die je introductie negeert en je een vat overhandigt. Wanneer je probeert om in het pakket te kijken, slaat hij je hand weg. “Geen vragen,” blaat hij. “Gewoon werken.” Hij wijst naar een stapel soortgelijke vaten en vervolgens naar zijn YV-666 buiten. Het duurt niet lang voordat de vaten zijn geladen en je vertrekt.\n\nAls je een vervallen tempel nadert, zie je verschillende huurlingen die verspreid over de Dosha-jungle zijn gestationeerd.",
+      "eventText": "Je verlaat de skiff bij een pakhuis aan de rand van Mos Eisley. Een Gotal, met een kap over zijn hoofd, wacht je op. Hij negeert je begroeting en drukt je een vat in handen. Zodra je nieuwsgierig een kijkje naar binnen wilt nemen, tikt hij je hand hard weg. \"Geen vragen,\" blaft hij kortaf. \"Aan het werk.\" Hij wijst naar een stapel soortgelijke vaten en vervolgens naar zijn YV-666 die buiten staat. Niet veel later is de lading ingeladen en vertrekken jullie.\n\nBij het naderen van een vervallen tempel zie je tussen het dichte groen van de jungle van Dosha overal huurlingen de wacht houden.",
       "eventActions": [
         {
           "otherTarget": "een rebellenfiguur die een spicevat draagt",
@@ -149,7 +169,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "Tijdens de landing komen twee Gamorreanen uit een stenen tempel tevoorschijn, overleggen met de Gotal en helpen vervolgens de vaten naar binnen te slepen.\r\n\r\n{-} Plaats de helden op het blauw gemarkeerde veld.\r\n{-} Plaats 5 neutrale missietokens op elk van de rood gemarkeerde velden.\r\n{-} Neutrale missietokens stellen spicevaten voor.\r\n{-} Een figuur kan 2 verplaatspunten uitgeven om een spicevat op te pakken zonder een actie te gebruiken. Een figuur kan slechts 1 spicevat dragen.\r\n{-} Wanneer een figuur die een spicevat draagt 3 of meer {H} lijdt, laat die figuur dat spicevat vallen op zijn veld.",
+          "tbText": "Na de landing komen twee Gamorreanen uit een stenen tempel tevoorschijn. Ze overleggen kort met de Gotal en helpen vervolgens de vaten naar binnen te dragen.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Plaats 5 neutrale missietokens op elk van de rood gemarkeerde velden.\n{-} Neutrale missietokens stellen spicevaten voor.\n{-} Een figuur kan 2 verplaatspunten spenderen om een spicevat op te pakken zonder een actie te gebruiken. Een figuur kan slechts 1 spicevat dragen.\n{-} Wanneer een figuur die een spicevat draagt 3 of meer {H} lijdt, laat die figuur dat spicevat vallen op zijn veld.",
           "GUID": "ffce98a6-881b-47eb-adce-1edc78ff1ee4",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -164,14 +184,14 @@
           "eaName": "Deploy: DG039/Gamorrean Guard"
         },
         {
-          "tbText": "“Ah, Kar Ranth, je bent er.” Een rijkelijk geklede man verwelkomt je professioneel, maar niet hartelijk. “Zullen we beginnen?” Kar en de koper inspecteren de lading, terwijl jij en de huurlingen elkaar stilzwijgend gadeslaan.\n\n“Heel goed, Kar. Ik neem de hele partij.”\r\n\r\n“Voor de afgesproken prijs?”\r\n\r\n“Nee.” Een enkel blasterschot raakt je bewaker voordat je je wapens kunt pakken. Meteen komen er twee mannen binnenstormen, die een paar spicevaten grijpen.",
+          "tbText": "\"Ah, Kar Ranth, je bent er.\" Een rijk geklede man heet je op zakelijke wijze welkom, al straalt zijn houding weinig warmte uit. \"Zullen we beginnen?\" Kar en de koper inspecteren de lading, terwijl jij en de huurlingen elkaar zwijgend opnemen.\n\n\"Uitstekend, Kar. Ik neem de hele partij.\"\n\n\"Voor de afgesproken prijs?\"\n\n\"Nee.\" Nog voordat je naar je wapen kunt reiken, klinkt één enkel blasterschot. Je opdrachtgever zakt levenloos in elkaar. Op hetzelfde moment stormen twee mannen naar binnen en grijpen een aantal spicevaten.",
           "GUID": "8c91fe3b-36cc-481e-81c3-4e6093305f27",
           "eventActionType": 16,
           "eaName": "Text Box"
         },
         {
-          "enemyName": "Spice Runner (Imperial Officer)",
-          "customText": "{A} Verplaats 4 naar de voorraad van de Spicer.\r\n{A} Open een aangrenzende deur.\r\n{A} Verplaats 4 naar de voorraad van de Spicer.\r\n{A} Open een aangrenzende deur.\r\n{-} Wanneer een Spice Runner met een spicevat zich op of grenzend aan de voorraad van de spicers bevindt, claimt het Rijk dat spicevat.\r\n{-} Vervolgens wordt die Spice Runner van de kaart verwijderd en apart gelegd.",
+          "enemyName": "Spice runner (Imperial Officer)",
+          "customText": "{A} Verplaats 4 naar de voorraad van de spicer.\n{A} Open een aangrenzende deur.\n{A} Verplaats 4 naar de voorraad van de spicer.\n{A} Open een aangrenzende deur.\n{-} Wanneer een spice runner met een spicevat zich op of grenzend aan de voorraad van de spicers bevindt, claimt het Keizerrijk dat spicevat. Vervolgens wordt die spice runner van het speelbord verwijderd en apart gelegd.",
           "modification": null,
           "repositionInstructions": "",
           "GUID": "041585b8-9c36-4de4-bbaa-6b620c510a12",
@@ -179,8 +199,8 @@
           "eaName": "Deploy: DG004/Imperial Officer"
         },
         {
-          "enemyName": "Spice Runner (Imperial Officer)",
-          "customText": "{A} Verplaats 4 naar de voorraad van de Spicer.\r\n{A} Open een aangrenzende deur.\r\n{A} Verplaats 4 naar de voorraad van de Spicer.\r\n{A} Open een aangrenzende deur.\r\n{-} Wanneer een Spice Runner met een spicevat zich op of grenzend aan de voorraad van de spicers bevindt, claimt het Rijk dat spicevat. Vervolgens wordt die Spice Runner van het bord verwijderd en apart gelegd.",
+          "enemyName": "Spice runner (Imperial Officer)",
+          "customText": "{A} Verplaats 4 naar de voorraad van de spicer.\n{A} Open een aangrenzende deur.\n{A} Verplaats 4 naar de voorraad van de spicer.\n{A} Open een aangrenzende deur.\n{-} Wanneer een spice runner met een spicevat zich op of grenzend aan de voorraad van de spicers bevindt, claimt het Keizerrijk dat spicevat. Vervolgens wordt die spice runner van het speelbord verwijderd en apart gelegd.",
           "modification": null,
           "repositionInstructions": "",
           "GUID": "979c14f5-fb0c-4ba8-a625-622480f068d5",
@@ -188,7 +208,7 @@
           "eaName": "Deploy: DG005/Imperial Officer"
         },
         {
-          "tbText": "{-} Plaats 1 keizerlijke officer op beide stapels spicevaten. Dit zijn de Spice Runners.\n{-} Spice Runners kunnen niet worden verslagen. Wanneer een Spice Runner zou worden verslagen, verwijder je het figuur van het bord en leg je het apart.\n{-} Elke Spice Runner onderbreekt om een spicevat te pakken.",
+          "tbText": "{-} Plaats 1 Imperial Officer op beide stapels spicevaten. Dit zijn de spice runners.\n{-} Spice runners kunnen niet worden verslagen. Wanneer een spice runner zou worden verslagen, verwijder je het figuur van het speelbord en leg je het apart.\n{-} Elke spice runner onderbreekt om een spicevat te pakken.",
           "GUID": "681453de-a5de-4899-8a95-658ebe43807c",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -204,7 +224,7 @@
             {
               "entityName": "Spicer Stockpile",
               "GUID": "930eae69-973f-4777-a565-60856b22b77e",
-              "theText": "De spicers hebben hier een grote kist voor de spicevaten geplaatst.\n\n{-} Wanneer een Spice Runner met een spicevat zich op of grenzend aan de voorraad van de Spicer bevindt, claimt het Rijk dat spicevat. Vervolgens wordt die Spice Runner van het bord verwijderd en apart gelegd.",
+              "theText": "De spicers hebben hier een groot krat voor de spicevaten geplaatst.\n\n{-} Wanneer een spice runner met een spicevat zich op of grenzend aan de voorraad van de spicer bevindt, claimt het Keizerrijk dat spicevat. Vervolgens wordt die spice runner van het speelbord verwijderd en apart gelegd.",
               "buttonList": []
             }
           ],
@@ -213,13 +233,13 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "{-} De keizerlijke missietoken stelt de voorraad van de spicers voor.\r\n{-} Wanneer een Spice Runner met een spicevat zich op of grenzend aan de voorraad van de spicers bevindt, claimt het Rijk dat spicevat. Vervolgens wordt die Spice Runner van het bord verwijderd en apart gelegd.",
+          "tbText": "{-} De keizerlijke missietoken stelt de voorraad van de spicers voor.\n{-} Wanneer een spice runner met een spicevat zich op of grenzend aan de voorraad van de spicer bevindt, claimt het Keizerrijk dat spicevat. Vervolgens wordt die spice runner van het speelbord verwijderd en apart gelegd.",
           "GUID": "b083161f-f5c1-4adb-a541-d71078a6649d",
           "eventActionType": 16,
           "eaName": "Text Box"
         },
         {
-          "tbText": "“We moeten opschieten!”, klinkt de stem van je piloot door je comlink. “Pak alles wat je kunt en laten we hier wegwezen!” De motoren van je shuttle grommen terwijl hij omlaag komt en op je wacht.",
+          "tbText": "\"We moeten opschieten!\" klinkt de stem van je piloot over je comlink. \"Pak wat je kunt en laten we hier wegwezen!\" De motoren van je shuttle loeien op terwijl die neerdaalt om je op te pikken.",
           "GUID": "4a6ce8d2-f5cc-4dc1-a4ea-d2d7229dda5c",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -229,7 +249,7 @@
             {
               "entityName": "Rebel Stockpile",
               "GUID": "776d2d27-a11c-4115-a929-3c14c03e22bb",
-              "theText": "De spicers hebben hier een grote kist voor de spicevaten geplaatst.\n\n{-} Wanneer een rebellenfiguur met een spicevat zich op of grenzend aan de voorraad van de rebellen bevindt, claimen de rebellen dat spicevat.",
+              "theText": "De spicers hebben hier een groot krat voor de spicevaten geplaatst.\n\n{-} Wanneer een rebellenfiguur met een spicevat zich op of grenzend aan de voorraad van de rebellen bevindt, claimen de rebellen dat spicevat.",
               "buttonList": []
             }
           ],
@@ -238,7 +258,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "{-} Het rebellenmissietoken stelt de voorraad van de rebellen voor.\r\n{-} Wanneer een rebellenfiguur met een spicevat zich op of grenzend aan de voorraad van de rebellen bevindt, claimen de rebellen dat spicevat. \r\n{-} De missie eindigt aan het einde van ronde 6. Als de rebellen op dat moment meer spicevaten hebben veroverd dan het Keizerrijk, winnen ze de missie.",
+          "tbText": "{-} De rebellen missietoken stelt de voorraad van de rebellen voor.\n{-} Wanneer een rebellenfiguur met een spicevat zich op of grenzend aan de voorraad van de rebellen bevindt, claimen de rebellen dat spicevat. \n{-} De missie eindigt aan het einde van ronde 6. Als de rebellen op dat moment meer spicevaten hebben veroverd dan het Keizerrijk, winnen ze de missie.",
           "GUID": "27d2a1d9-9757-4cdb-bdbd-388d1c0ec702",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -251,7 +271,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Neutrale missietokens stellen spicevaten voor.\r\n{-} Een figuur kan 2 verplaatspunten uitgeven om een spicevat op te pakken zonder een actie te gebruiken. Een figuur kan slechts 1 spicevat dragen.\r\n{-} Wanneer een figuur die een spicevat draagt 3 of meer {H} lijdt, laat die figuur dat spicevat vallen op zijn veld.\r\n{-} Spice Runners kunnen niet worden verslagen. Wanneer een Spice Runner zou worden verslagen, verwijder je het figuur van het bord en leg je het apart.\r\n{-} De keizerlijke missietoken stelt de voorraad van de spicers voor.\r\n{-} Wanneer een Spice Runner met een spicevat zich op of grenzend aan de voorraad van de spicers bevindt, claimt het Rijk dat spicevat. Vervolgens wordt die Spice Runner van het bord verwijderd en apart gelegd.\r\n{-} Het rebellenmissietoken stelt de voorraad van de rebellen voor.\r\n{-} Wanneer een rebellenfiguur met een spicevat zich op of grenzend aan de voorraad van de rebellen bevindt, claimen de rebellen dat spicevat. \r\n{-} De missie eindigt aan het einde van ronde 6. Als de rebellen op dat moment meer spicevaten hebben veroverd dan het Keizerrijk, winnen ze de missie.",
+          "theText": "{-} Neutrale missietokens stellen spicevaten voor.\n{-} Een figuur kan 2 verplaatspunten spenderen om een spicevat op te pakken zonder een actie te gebruiken. Een figuur kan slechts 1 spicevat dragen.\n{-} Wanneer een figuur die een spicevat draagt 3 of meer {H} lijdt, laat die figuur dat spicevat vallen op zijn veld.\n{-} Spice runners kunnen niet worden verslagen. Wanneer een spice runner zou worden verslagen, verwijder je het figuur van het speelbord en leg je het apart.\n{-} De keizerlijke missietoken stelt de voorraad van de spicers voor.\n{-} Wanneer een spice runner met een spicevat zich op of grenzend aan de voorraad van de spicers bevindt, claimt het Keizerrijk dat spicevat. Vervolgens wordt die spice runner van het bord verwijderd en apart gelegd.\n{-} De rebellen missietoken stelt de voorraad van de rebellen voor.\n{-} Wanneer een rebellenfiguur met een spicevat zich op of grenzend aan de voorraad van de rebellen bevindt, claimen de rebellen dat spicevat. \n{-} De missie eindigt aan het einde van ronde 6. Als de rebellen op dat moment meer spicevaten hebben veroverd dan het Keizerrijk, winnen ze de missie.",
           "GUID": "ca3ceb57-3bf6-48b8-851f-97f1fb2e46fc",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -259,62 +279,106 @@
       ]
     },
     {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "De laaddeur is nog niet eens gesloten op het moment dat de shuttle vertrekt. Je laat Dosha achter, verzorgt je wonden en keert terug naar Tatooine.\r\n\r\nBij je terugkeer trakteert Jabba je op een uitgebreid feestmaal. Voorlopig heb je zijn gratie verdiend. De Hutt weet dat spice weliswaar waardevol is, maar ook dat loyaliteit onbetaalbaar is.  \n\n{-} De rebellen winnen de missie!  \n{-} Elke held ontvangt 1 XP. Helden ontvangen 200 credits per held.  \n{-} Leg alle resterende actieve verhaalmissiekaarten af. Leg de verhaalmissiekaarten “Trofeeënjacht (Trophy Hunting)” en “Territoriumoorlog (Turf War)” in het spel.",
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
-          "mainText": "Zijn er drie of meer spicevaten in de voorraad van de spicers?",
-          "buttonList": [
+          "translatedEntityProperties": [
             {
-              "GUID": "8000d8eb-f4d3-4c5f-b7df-974b309b352f",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "a1943c2f-8bf7-4596-bdb2-05012758e4f9",
-              "theText": "Nee"
+              "entityName": "Crate1",
+              "GUID": "bdcaad13-1de7-4f1b-b612-96a0402121a9",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "c34fc206-36d1-4444-9ecf-d2c9e2551c50",
+                  "theText": "{A} Openen"
+                }
+              ]
             }
           ],
-          "GUID": "281c5e9a-a0fb-45c9-829b-da7e829de60c",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
         }
       ]
     },
     {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Er blijven huurlingen uit de jungle komen en je bent gedwongen om Jabba's lading achter te laten. Het lukt je niet om het grootste deel van de buit veilig te stellen en je trekt je terug om uiteindelijk de teleurstelling van de Hutt onder ogen te zien.\n\nJabba is ontevreden, maar redelijk. Je hebt de hinderlaag overleefd en dankzij je vaardigheden krijg je een tweede kans. Omdat je weet dat de gratie van de Hutt-heer het enige is dat je families beschermt, bereid je je voor op de volgende taak.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.\n{-} Leg alle resterende actieve verhaalmissiekaarten af. Leg de verhaalmissiekaarten “Trofeeënjacht (Trophy Hunting)” en “Territoriumoorlog (Turf War)” in het spel.",
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
-          "mainText": "Zijn er drie of meer spicevaten in de voorraad van de rebellen?",
-          "buttonList": [
+          "translatedEntityProperties": [
             {
-              "GUID": "c32f688f-7162-4881-aed6-89d8caf70592",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "0b47f870-ed75-42bc-aa69-011e970e16d0",
-              "theText": "Nee"
+              "entityName": "Crate2",
+              "GUID": "e76c7562-20b4-4df1-842d-69bb97ce6f25",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
             }
           ],
-          "GUID": "191caa58-aa1f-4759-a451-6cfb828e49d9",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "bbf6e6a7-eb75-4d58-b8e0-beffebc323d3",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "0245ed1f-eda4-426d-95d3-11cbc2a5a3e2",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "199b9e8f-818c-4743-ac58-5aa7e1cb3e56",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
         }
       ]
     },
     {
       "eventName": "Open Door North",
       "GUID": "7c43dfa9-e998-4edc-b99e-cba8e6ee1cc2",
-      "eventText": "De deur gaat open.",
+      "eventText": "De deur wordt opengegooid.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Door North",
               "GUID": "7730c668-b321-4d35-a8fd-bb8d85be71c2",
-              "theText": "Een gammele deur leidt naar buiten uit het hol van de spicers.",
+              "theText": "Een gammele deur leidt naar buiten, weg uit het hol van de spicers.",
               "buttonList": [
                 {
                   "GUID": "340da9d7-0fff-48dd-889c-36bb28055d52",
@@ -332,14 +396,14 @@
     {
       "eventName": "Open Door South",
       "GUID": "79b8edce-36ca-426a-8b39-7d324f9f1689",
-      "eventText": "De deur gaat open.",
+      "eventText": "De deur wordt opengegooid.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Door South",
               "GUID": "f0a0411d-1c70-44df-9cb6-ce6901c62044",
-              "theText": "Een gammele deur leidt naar buiten uit het hol van de spicers.",
+              "theText": "Een gammele deur leidt naar buiten, weg uit het hol van de spicers.",
               "buttonList": [
                 {
                   "GUID": "90a61841-9c32-40a4-a1e9-aae1ac890b4c",
@@ -353,6 +417,18 @@
           "eaName": "Modify Map Entity"
         }
       ]
+    },
+    {
+      "eventName": "Query No",
+      "GUID": "5c05d4c2-12d1-476e-a7a1-699068368d44",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Round 1 Over",
+      "GUID": "017825fc-2fc6-4681-a797-f7f67b378c71",
+      "eventText": "",
+      "eventActions": []
     },
     {
       "eventName": "Spice Runner Activates 1",
@@ -378,12 +454,6 @@
       ]
     },
     {
-      "eventName": "Spice Runner Aside 1",
-      "GUID": "f92c4f73-f77c-4ca5-9363-35c5b2abf619",
-      "eventText": "Beëindig deze activering onmiddellijk, zonder instructies op te lossen.",
-      "eventActions": []
-    },
-    {
       "eventName": "Spice Runner Activates 2",
       "GUID": "c4b10e47-643d-4fe9-8ed1-a32c2a107d4b",
       "eventText": "",
@@ -407,15 +477,27 @@
       ]
     },
     {
+      "eventName": "Spice Runner Aside 1",
+      "GUID": "f92c4f73-f77c-4ca5-9363-35c5b2abf619",
+      "eventText": "Beëindig deze activering onmiddellijk, zonder instructies op te lossen.",
+      "eventActions": []
+    },
+    {
       "eventName": "Spice Runner Aside 2",
       "GUID": "fa7abe6b-7821-462d-baae-8db3fff35b25",
       "eventText": "Beëindig deze activering onmiddellijk, zonder instructies op te lossen.",
       "eventActions": []
     },
     {
+      "eventName": "Start of Each Round",
+      "GUID": "304eaaba-f74d-44e8-8a26-d9956203ad24",
+      "eventText": "Meer runners haasten zich om er met je spice vandoor te gaan.\n\n{-} Plaats 1 spice runner waarvan het figuur opzij is gelegd op of grenzend aan elk niet-opgehaalde spicevat (maximaal 2).\n{-} Elk van de zojuist geplaatste spice runners onderbreekt om een spicevat op te pakken.",
+      "eventActions": []
+    },
+    {
       "eventName": "Unleashed",
       "GUID": "5b6b96b3-df16-476f-8265-34ea57ed4197",
-      "eventText": "Hoewel het gevecht bijdraagt aan de verwoesting van de tempel, hebben beide partijen ervoor gezorgd dat de spice intact blijft. Je weet niet precies hoeveel het waard is, maar met het leven van je families op het spel kun je het je niet veroorloven Jabba boos te maken.\n\nJe hoort blastervuur vanuit de richting van je shuttle. “Je hebt nog meer gezelschap!”, roept de stem van je piloot via de comlink.\r\n\r\nBuiten komt een man uit de jungle tevoorschijn, met een wild beest. Hij schiet de ketting van de nek van de Nexu en het beest springt met ontblote tanden op je af.",
+      "eventText": "Terwijl het gevecht de tempel steeds verder in puin legt, doen beide partijen hun uiterste best om de spice te ontzien. Je weet niet precies hoeveel die waard is, maar nu het leven van je families op het spel staat, kun je het je niet veroorloven Jabba tegen je in het harnas te jagen.\n\nVanuit de richting van je shuttle klinkt blastervuur. \"Jullie krijgen gezelschap!\" roept je piloot over de comlink.\n\nVlak buiten stapt een man uit de jungle tevoorschijn met een woest uitziend Nexu aan een ketting. Met één schot blaast hij de ketting los van zijn hals, waarna het beest met ontblote tanden op je afstormt.",
       "eventActions": [
         {
           "enemyName": null,
@@ -438,91 +520,9 @@
       ]
     },
     {
-      "eventName": "Hired Muscle",
-      "GUID": "2b04a781-7960-4388-a1ed-e9925faf647f",
-      "eventText": "“Er komen er nog meer,” waarschuwt je piloot. “Pak wat je nodig hebt, daarna moeten we vertrekken!” De motoren loeien, de shuttle staat klaar om op elk moment te kunnen vertrekken.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "DP Red 1",
-              "GUID": "30a1c458-2b44-47c2-83c2-63670dda6e3c",
-              "theText": null,
-              "buttonList": []
-            },
-            {
-              "entityName": "DP Red 2",
-              "GUID": "fb6777aa-2fde-4c8f-9059-6fc4f04920e4",
-              "theText": null,
-              "buttonList": []
-            }
-          ],
-          "GUID": "7c9a37c5-1eef-401b-b3d2-549668fc97ff",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "d28a2d2d-efbb-47e5-b60e-5e2033ef01cb",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG015/Trandoshan Hunter"
-        }
-      ]
-    },
-    {
-      "eventName": "EoR 6 Questions",
-      "GUID": "0ea469f4-9d51-4987-963a-edd7335819ac",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Hebben de rebellen meer spicevaten opgeëist dan het Keizerrijk?",
-          "buttonList": [
-            {
-              "GUID": "4313ba85-e1c5-41cb-ad41-8978469ff676",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "72d0a91e-7d08-4086-985f-80918cd865d5",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "3a6f400a-c20c-417d-b766-97c1a8140e67",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Round 1 Over",
-      "GUID": "017825fc-2fc6-4681-a797-f7f67b378c71",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "Start of Each Round",
-      "GUID": "304eaaba-f74d-44e8-8a26-d9956203ad24",
-      "eventText": "Meer runners haasten zich om er met je spice vandoor te gaan.\r\n\r\n{-} Plaats 1 Spice Runner waarvan het figuur opzij is gelegd op of grenzend aan elk niet-opgehaald spicevat (maximaal 2).\r\n{-} Elk van de zojuist geplaatste Spice Runners onderbreekt om een spicevat op te pakken.",
-      "eventActions": []
-    },
-    {
       "eventName": "Win Query Yes",
       "GUID": "cfc44763-bcf9-4f75-84fb-9039c4f449ba",
       "eventText": "Het dreigingsniveau van de volgende missie (en alleen de volgende missie) wordt met 1 verhoogd. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers besluiten om 50 credits per held uit te geven om dit te voorkomen.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Defeat Query Yes",
-      "GUID": "f52f1333-0512-4734-a164-c1942b75b4bd",
-      "eventText": "Omdat er drie of meer spicevaten in de voorraad van de rebellen liggen, krijgen de helden 25 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Query No",
-      "GUID": "5c05d4c2-12d1-476e-a7a1-699068368d44",
-      "eventText": "",
       "eventActions": []
     }
   ],
@@ -561,12 +561,6 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
       "entityName": "Crate4",
       "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
       "mainText": "Een oud voorraadkrat.",
@@ -576,36 +570,6 @@
           "theText": "{A} Openen"
         }
       ]
-    },
-    {
-      "entityName": "DP Green 1",
-      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 2",
-      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 3",
-      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Weequay 1",
-      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Weequay 2",
-      "GUID": "8c396892-cd19-4cbb-a7d9-24e26f071d0c",
-      "mainText": null,
-      "buttonList": []
     },
     {
       "entityName": "DP EWeequay 1",
@@ -632,26 +596,46 @@
       "buttonList": []
     },
     {
-      "entityName": "Door North",
-      "GUID": "4bbaaafd-9523-47c7-8cf8-33d90cdb407c",
-      "mainText": "Een gammele deur leidt naar buiten uit het hol van de spicers.",
-      "buttonList": [
-        {
-          "GUID": "f5c1882b-8c92-4ed0-b8e3-719ba906f4dc",
-          "theText": "{A} Openen"
-        }
-      ]
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
     },
     {
-      "entityName": "Door South",
-      "GUID": "a9f07751-e3c9-4cfb-9407-9c282267e70d",
-      "mainText": "Een gammele deur leidt naar buiten uit het hol van de spicers.",
-      "buttonList": [
-        {
-          "GUID": "b0d99f20-363d-4098-b209-4a41dc11a949",
-          "theText": "{A} Openen"
-        }
-      ]
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "9a7f794f-0295-4026-9a2e-279ba422abca",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "e736e57c-1038-4199-b4f6-2c02ab6089c3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weequay 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weequay 2",
+      "GUID": "8c396892-cd19-4cbb-a7d9-24e26f071d0c",
+      "mainText": null,
+      "buttonList": []
     },
     {
       "entityName": "DP Yellow 1",
@@ -672,27 +656,37 @@
       "buttonList": []
     },
     {
-      "entityName": "DP Red 1",
-      "GUID": "9a7f794f-0295-4026-9a2e-279ba422abca",
-      "mainText": null,
-      "buttonList": []
+      "entityName": "Door North",
+      "GUID": "4bbaaafd-9523-47c7-8cf8-33d90cdb407c",
+      "mainText": "Een gammele deur leidt naar buiten, weg uit het hol van de spicers.",
+      "buttonList": [
+        {
+          "GUID": "f5c1882b-8c92-4ed0-b8e3-719ba906f4dc",
+          "theText": "{A} Openen"
+        }
+      ]
     },
     {
-      "entityName": "DP Red 2",
-      "GUID": "e736e57c-1038-4199-b4f6-2c02ab6089c3",
-      "mainText": null,
-      "buttonList": []
+      "entityName": "Door South",
+      "GUID": "a9f07751-e3c9-4cfb-9407-9c282267e70d",
+      "mainText": "Een gammele deur leidt naar buiten, weg uit het hol van de spicers.",
+      "buttonList": [
+        {
+          "GUID": "b0d99f20-363d-4098-b209-4a41dc11a949",
+          "theText": "{A} Openen"
+        }
+      ]
     },
     {
-      "entityName": "Spicer Stockpile",
-      "GUID": "f8c19cdc-5cc2-4e07-89d8-64d28d32ecda",
-      "mainText": "De spicers hebben hier een grote kist voor de spicevaten geplaatst.\n\n{-} Wanneer een Spice Runner met een spicevat zich op of grenzend aan de voorraad van de Spicer bevindt, claimt het Rijk dat spicevat. Vervolgens wordt die Spice Runner van het bord verwijderd en apart gelegd.",
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
     },
     {
       "entityName": "Rebel Stockpile",
       "GUID": "9d1b6e4f-e553-44ec-bbd5-fd1f1299a49d",
-      "mainText": "Je shuttle wacht hier, met de laaddeur open en de motoren draaiend, klaar om te vertrekken zodra je gereed bent.\r\n\r\n{-} Wanneer een rebellenfiguur met een spicevat zich op of grenzend aan de voorraad van de rebellen bevindt, claimen de rebellen dat spicevat.",
+      "mainText": "Je shuttle wacht hier, met de laaddeur open en de motoren draaiend, klaar om te vertrekken zodra je gereed bent.\n\n{-} Wanneer een rebellenfiguur met een spicevat zich op of grenzend aan de voorraad van de rebellen bevindt, claimen de rebellen dat spicevat.",
       "buttonList": []
     },
     {
@@ -705,6 +699,12 @@
       "entityName": "Spice Highlight 2",
       "GUID": "5eebdedd-8a7d-45d6-8e6f-2648954a9d51",
       "mainText": "Plaats hier 5 neutrale missietokens.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Spicer Stockpile",
+      "GUID": "f8c19cdc-5cc2-4e07-89d8-64d28d32ecda",
+      "mainText": "De spicers hebben hier een groot krat voor de spicevaten geplaatst.\n\n{-} Wanneer een spice runner met een spicevat zich op of grenzend aan de voorraad van de spicer bevindt, claimt het Keizerrijk dat spicevat. Vervolgens wordt die spice runner van het speelbord verwijderd en apart gelegd.",
       "buttonList": []
     }
   ],

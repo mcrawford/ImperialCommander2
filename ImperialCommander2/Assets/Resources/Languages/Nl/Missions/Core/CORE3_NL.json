@@ -3,7 +3,7 @@
   "missionProperties": {
     "missionName": "Commandostructuur",
     "missionDescription": "",
-    "missionInfo": "{-} De <color=\"red\">keizerlijke officier</color> is Weiss. Pas +6 gezondheid toe op Weiss. Pas +1 {G} toe op elk van zijn verdedigingsresultaten.\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} met 2 te verhogen (slechts éénmaal per ronde per terminal).\n{-} De deur is vergrendeld voor rebellenfiguren. Een rebellenfiguur kan een interactie uitvoeren op de deur ({K} of {I}) om hem te openen.\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).\n{-} De rebellen winnen als Weiss verslagen is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+    "missionInfo": "{-} De <color=\"red\">Imperial Officer</color> is Weiss. Pas +6 gezondheid toe op Weiss. Pas +1 {G} toe op elk van zijn verdedigingsresultaten.\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} met 2 te verhogen (slechts éénmaal per ronde per terminal).\n{-} De deur is vergrendeld voor rebellen. Een rebellenfiguur kan een interactie uitvoeren op de deur ({K} of {I}) om hem te openen.\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).\n{-} De rebellen winnen als Weiss verslagen is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
     "campaignName": "Basisspel",
     "startingObjective": "Versla Weiss.",
     "repositionOverride": "Blokkeer de toegang tot Weiss.",
@@ -11,9 +11,168 @@
   },
   "events": [
     {
+      "eventName": "Door attempt",
+      "GUID": "facd9639-c171-4a5e-9a15-2cc1730d0072",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "De deur is vergrendeld.\n\nTest {K} of {I}. Pas +1 {B} toe voor elk forceertoken op de deur en leg daarna alle forceertokens op de deur af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "a4fab422-4333-40d8-b59b-1b5b6c3081c3",
+              "theText": "De deur geeft niet mee. Je moet blijven proberen.\n\n{-} Voor elk {B} symbool, plaats je 1 forceertoken op de deur."
+            }
+          ],
+          "GUID": "d3bdab23-38f3-4a9d-9e8c-96594ea12742",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Door opens",
+      "GUID": "fb3f5dbf-3521-41cf-828e-a35893f1e467",
+      "eventText": "De deur schuift open.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door",
+              "GUID": "235bc3aa-4a26-4c0c-b264-546c1f24309a",
+              "theText": "Generaal Weiss is hoorbaar van achter deze deur. Hij roept bevelen naar zijn soldaten.\n\nDe deur is vergrendeld voor helden. Een held kan een interactie uitvoeren op de deur ({K} of {I}) om te proberen hem te openen.",
+              "buttonList": [
+                {
+                  "GUID": "01767909-8b3c-44b3-b042-193ad51d7051",
+                  "theText": "{A} Probeer de deur te openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "af6a4a2c-5327-442d-bb51-8d184cb811f0",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "\"Achter ze aan!\" beveelt Weiss. \"Laat ze niet ontsnappen!\" Je weet dat de opdracht mislukt is, je activeert de explosieve ladingen die je geplaatst hebt en vertrekt via je vluchtroute.\n\n{-} De rebellen verliezen de missie.\n{-} Plaats de verhaalmissiekaart \"Het wanhopige uur (Desperate Hour)\" in het spel.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.\n{-} Verhoog het dreigingsniveau van de volgende missie (en alleen de volgende missie) met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellen spelers beslissen om 50 credits per held uit te geven om dit te voorkomen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Er is geen wapen. Dat is er ook nooit geweest.\n\nNadat je het gebied hebt veiliggesteld, probeer je de laatste schema's uit de computer van Weiss te halen. Wat je ontdekt zijn geen technische schema's, maar een verzameling strijdplannen, noodscenario’s en de positionering van een omvangrijke keizerlijke vloot. Alles wijst op een voorbereide hinderlaag, wachtend op een aanval van de rebellen op de locatie waar het zogenaamde wapen geproduceerd zou worden.\n\n\"Het was bijna te eenvoudig om jullie om de tuin te leiden,\" merkt Weiss op, zichtbaar onaangedaan, terwijl je hem naar je ontsnappingstunnel begeleidt. \"Jullie blijven altijd zo wanhopig zoeken naar een eindsprint. Het is kinderspel om dat tegen jullie te gebruiken.\"\n\nNet als hij uitgesproken is, galmt een explosie door één van de gesloten deuren. In de chaos weet Weiss zich los te wurmen uit je greep. Hij laat zich op de grond vallen terwijl een regen van blastervuur vanuit de nieuwe doorgang naar binnen schiet.\n\n\"Ik red me wel, ga achter ze aan!\" roept hij terwijl hij de steun van keizerlijke soldaten afwimpelt en in jouw richting wijst.\n\n{-} De rebellen winnen de missie!\n{-} Plaats verhaalmissiekaart \"Laatste stand (Last Stand)\" in het spel.\n{-} Elke held ontvangt 2 XP. Helden ontvangen 100 credits per held.\n{-} Omdat de rebellen Weiss hebben verslagen voordat hij in de AT-ST stapte, krijgen ze 100 extra credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win late",
+      "GUID": "6f73e957-9eaf-4c36-b0bc-255b16b722e3",
+      "eventText": "Er is geen wapen. Dat is er ook nooit geweest.\n\nNadat je het gebied hebt veiliggesteld, probeer je de laatste schema's uit de computer van Weiss te halen. Wat je ontdekt zijn geen technische schema's, maar een verzameling strijdplannen, noodscenario’s en de positionering van een omvangrijke keizerlijke vloot. Alles wijst op een voorbereide hinderlaag, wachtend op een aanval van de rebellen op de locatie waar het zogenaamde wapen geproduceerd zou worden.\n\n\"Het was bijna te eenvoudig om jullie om de tuin te leiden,\" merkt Weiss op, zichtbaar onaangedaan, terwijl je hem naar je ontsnappingstunnel begeleidt. \"Jullie blijven altijd zo wanhopig zoeken naar een eindsprint. Het is kinderspel om dat tegen jullie te gebruiken.\"\n\nNet als hij uitgesproken is, galmt een explosie door één van de gesloten deuren. In de chaos weet Weiss zich los te wurmen uit je greep. Hij laat zich op de grond vallen terwijl een regen van blastervuur vanuit de nieuwe doorgang naar binnen schiet.\n\n\"Ik red me wel, ga achter ze aan!\" roept hij terwijl hij de steun van keizerlijke soldaten afwimpelt en in jouw richting wijst.\n\n{-} De rebellen winnen de missie!\n{-} Plaats verhaalmissiekaart \"Last Stand\" in het spel.\n{-} Elke held ontvangt 2 XP. Helden ontvangen 100 credits per held.\n{-} Omdat de rebellen Weiss hebben verslagen nadat hij in de AT-ST stapte, verhoog je het dreigingsniveau van de volgende missie (en alleen de volgende missie) met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellen spelers beslissen om 50 credits per held uit te geven om dit te voorkomen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Exhaust AT-ST",
+      "GUID": "f13811e3-1ced-4bdd-8e4a-830cd843aa5a",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Increase threat",
+      "GUID": "48dade0e-1454-406e-a2e9-b34b3d8ba4bb",
+      "eventText": "Nog meer alarmen galmen door het gebouw terwijl er versterkingen worden opgeroepen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Invulnerable",
+      "GUID": "afb0c075-09b9-47fd-8152-15f9f954792d",
+      "eventText": "Beschermd door zijn troepen rent Weiss als een razende naar zijn voertuig, grijpt het toegangsluik en verdwijnt naar binnen.\r\n\r\n\"Dit is veel beter,\" klinkt zijn versterkte stem door de immense hangar terwijl de walker met een dreun tot leven komt en zich op jou richt. \"Waar waren we ook alweer gebleven?\"\n\n{-} Verwijder het <color=\"red\">Imperial Officer</color> figuur en zijn inzetkaart. Hij is niet verslagen.\n{-} <color=\"red\">Generaal Weiss</color> herstelt 6 {H}.\n{-} <color=\"red\">Generaal Weiss</color> activeert nu als normaal. Pas +1 {G} toe op elk van zijn verdedigingsresultaten.\n{-} De rebellen winnen als <color=\"red\">Generaal Weiss</color> verslagen is.",
+      "eventActions": [
+        {
+          "shortText": "Versla <color=\"red\">Generaal Weiss</color>",
+          "longText": null,
+          "GUID": "1bf51766-91c3-4120-8624-ce8552640ad4",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} met 2 te verhogen (slechts éénmaal per ronde per terminal).\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).\n{-} De rebellen winnen als Weiss verslagen is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "7ac30986-576b-47ec-b249-bbc0df469d7a",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "newInstructions": "{-} <color=\"red\">Generaal Weiss</color> herstelt 3 {H}.",
+          "GUID": "2a8fea8d-0ed0-4cfd-8c01-a2def635f0c3",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Deploy AT-ST",
+              "GUID": "7a359f7e-2302-4447-9562-9bea233db114",
+              "theText": "Plaats <color=\"red\">General Weiss</color> (inactieve AT-ST) hier.\r\n\r\nWanneer Weiss een interactie uitvoert op de inactieve AT-ST selecteer je \"Weiss betreedt de AT-ST\".",
+              "buttonList": [
+                {
+                  "GUID": "91c00e86-1f4e-46cc-9ba2-8925b1993ace",
+                  "theText": "Weiss betreedt de AT-ST"
+                }
+              ]
+            }
+          ],
+          "GUID": "dcfe7ec6-b766-4d89-bf0b-ab5142f48ac6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Het opperbevel is wanhopig na het verlies van hun ontwikkelingsfaciliteit en willen graag wat terrein herwinnen.\n\nDaarom word je rechtstreeks naar Coruscant gestuurd. Je opdracht is om de definitieve, gedetailleerde schema’s van het wapen te vinden en ze koste wat kost terug te brengen.\n\nHet kost je dagen van infiltratie om Coruscant te bereiken en Weiss’ faciliteit te lokaliseren. Een plan uitvoeren om binnen te komen blijkt al even moeilijk, maar het lukt je gelukkig zonder incidenten. Met explosieven geplaatst om een noodontsnapping te dekken, sluip je door de donkere hoeken van de basis.\n\n\"Generaal Weiss is gearriveerd,\" schalt een bericht door de gangen en dat brengt een nieuw idee en een kans met zich mee.\n\nAls het je lukt de generaal te verslaan en gevangen te nemen, kan hij niet alleen worden ondervraagd, maar zullen zijn plannen zonder zijn leidende hand vrijwel zeker instorten.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} met 2 te verhogen (slechts één keer per ronde per terminal).\n{-} De deur is gesloten voor rebellen. Een rebellenfiguur kan een interactie uitvoeren op de deur ({K} of {I}) om deze te openen.\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).\n{-} De rebellen verliezen als alle helden gewond zijn.",
+      "eventActions": [
+        {
+          "newInstructions": "{-} Voer een interactie uit op een terminal (slechts éénmaal per ronde per terminal).",
+          "GUID": "48e15441-fe9a-4b23-ae21-36e92baf7335",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "repositionText": "Sta grenzend aan een terminal.",
+          "GUID": "c0da6fd0-1e50-43c4-b362-7112d826fef1",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "tbText": "{-} Plaats een <color=\"red\">Imperial Officer</color>. Dit is Weiss.",
+          "GUID": "04719f9e-396f-4ddb-bf5f-e59d7c1fd8a2",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": "Weiss",
+          "customText": "{A} ORDER: Een ander keizerlijke figuur met figuurkosten van 8 of minder die een aanval kan uitvoeren, valt {R1} aan.\n{A} De andere keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>.",
+          "modification": "+6 H, +1 {G}",
+          "repositionInstructions": "",
+          "GUID": "f9fe20c5-414b-465e-a0b7-a7b76499e6d8",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "tbText": "De stem van generaal Weiss klinkt achter een deur vandaan. Hij schreeuwt bevelen.\n\n{-} De <color=\"red\">Imperial Officer</color> is Weiss. Pas +6 gezondheid toe op Weiss. Pas +1 {G} toe op elk van zijn verdedigingsresultaten.\n{-} De rebellen winnen als Weiss verslagen is.",
+          "GUID": "c9b806fa-3b4d-4eea-be90-cb9b83faf6cc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
       "eventName": "Open Crate 1",
       "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -38,7 +197,7 @@
     {
       "eventName": "Open Crate 2",
       "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -58,7 +217,7 @@
     {
       "eventName": "Open Crate 3",
       "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -78,7 +237,7 @@
     {
       "eventName": "Open Crate 4",
       "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -101,301 +260,16 @@
       ]
     },
     {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Het oppercommando is wanhopig na het verlies van hun technische faciliteit en wil terrein terugwinnen.\n\nDaarom word je rechtstreeks naar Coruscant gestuurd. Het is jouw taak om de laatste, gedetailleerde schema's van het wapen te vinden en ze koste wat het kost terug te brengen.\n\nHet vergt dagen van infiltratie voordat je Coruscant kunt bereiken en de faciliteit van Weiss kunt vinden. Het uitvoeren van een plan om binnen te komen is niet eenvoudig, maar gelukkig lukt het je zonder incidenten. Je hebt explosieven neergelegd om een eventuele terugtocht te dekken, met dat in je achterhoofd sluip je door de donkere hoeken van de basis.\n\n\"Generaal Weiss is gearriveerd,\" schalt een bericht door de gangen, dit brengt een nieuwe kans met zich mee.\n\nAls je de generaal zou kunnen verslaan en gevangen zou nemen, zou hij niet alleen ondervraagd kunnen worden, maar zouden de plannen zeker mislukken zonder zijn leiding.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} met 2 te verhogen (slechts éénmaal per ronde per terminal).\n{-} De deur is vergrendeld voor rebellenfiguren. Een rebellenfiguur kan een interactie uitvoeren op de deur ({K} of {I}) om hem te openen.\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).\n{-} De rebellen verliezen als alle helden gewond zijn.",
-      "eventActions": [
-        {
-          "newInstructions": "{-} Voer een interactie uit op een terminal (slechts éénmaal per ronde per terminal).",
-          "GUID": "48e15441-fe9a-4b23-ae21-36e92baf7335",
-          "eventActionType": 11,
-          "eaName": "Change Group Instructions"
-        },
-        {
-          "repositionText": "Sta aangrenzend aan een terminal.",
-          "GUID": "c0da6fd0-1e50-43c4-b362-7112d826fef1",
-          "eventActionType": 17,
-          "eaName": "Change Reposition Instructions"
-        },
-        {
-          "tbText": "{-} Plaats een <color=\"red\">keizerlijke officier</color>. Dit is Weiss.",
-          "GUID": "04719f9e-396f-4ddb-bf5f-e59d7c1fd8a2",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "enemyName": "Weiss",
-          "customText": "{A} ORDER: Een ander keizerlijk figuur met figuurkosten van 8 of minder die een aanval kan uitvoeren, valt {R1} aan.\n{A} De andere keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>.",
-          "modification": "+6 H, +1 {G}",
-          "repositionInstructions": "",
-          "GUID": "f9fe20c5-414b-465e-a0b7-a7b76499e6d8",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
-        },
-        {
-          "tbText": "De stem van generaal Weiss komt achter een deur vandaan en schreeuwt bevelen.\n\n{-} De <color=\"red\">keizerlijke officier</color> is Weiss. Pas +6 gezondheid toe op Weiss. Pas +1 {G} toe op elk van zijn verdedigingsresultaten.\n{-} De rebellen winnen als Weiss verslagen is.",
-          "GUID": "c9b806fa-3b4d-4eea-be90-cb9b83faf6cc",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Er is geen wapen. Dat is er ook nooit geweest.\n\nNadat je het gebied hebt afgesloten, probeer je de laatste schema's uit de computer van Weiss te halen. In plaats daarvan vind je een reeks strijdplannen, noodplannen en de opstelling van een aanzienlijke keizerlijke vloot. Dit alles ligt te wachten op een rebellenaanval op de locatie waar dit zogenaamde wapen gemaakt wordt. Een hinderlaag.\n\n\"Het was bijna te makkelijk om je voor de gek te houden.\" Weiss blijft kalm terwijl je hem naar je ontsnappingstunnel leidt. \"Jullie zijn altijd zo wanhopig om een laatste stand te maken. Het is gemakkelijk om jullie aan te moedigen.\"\n\nEen explosie schiet door een van de verzegelde deuren zodra Weiss klaar is met spreken. Hij maakt van de gelegenheid gebruik om zich uit je greep los te rukken en duikt op de grond terwijl een regen van blastervuur door de nieuwe opening schiet.\n\n\"Ik ben in orde, ga achter ze aan!\" roept hij, hij schudt de hulp van de keizerlijke soldaten van zich af en wijst jou richting op.\n\n{-} De rebellen winnen de missie!\n{-} Plaats verhaalmissiekaart \"Last Stand\" in het spel.\n{-} Elke held ontvangt 2 XP. Helden ontvangen 100 credits per held.\n{-} Omdat de rebellen Weiss versloegen voordat hij de AT-ST inging, ontvangen ze 100 extra credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "\"Achter ze aan!\" beveelt Weiss. \"Laat ze niet ontsnappen!\" Je weet dat de opdracht mislukt is, je activeert de explosieve ladingen die je geplaatst hebt en vertrekt via je vluchtroute.\n\n{-} De rebellen verliezen de missie.\n{-} Plaats de verhaalmissiekaart \"Desperate Hour\" in het spel.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.\n{-} Verhoog het dreigingsniveau van de volgende missie (en alleen de volgende missie) met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellen spelers beslissen om 50 credits per held uit te geven om dit te voorkomen.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels win late",
-      "GUID": "6f73e957-9eaf-4c36-b0bc-255b16b722e3",
-      "eventText": "Er is geen wapen. Dat is er ook nooit geweest.\n\nNadat je het gebied hebt afgesloten, probeer je de laatste schema's uit de computer van Weiss te halen. In plaats daarvan vind je een reeks strijdplannen, noodplannen en de opstelling van een aanzienlijke keizerlijke vloot. Dit alles ligt te wachten op een rebellenaanval op de locatie waar dit zogenaamde wapen gemaakt wordt. Een hinderlaag.\n\n\"Het was bijna te makkelijk om je voor de gek te houden.\" Weiss blijft kalm terwijl je hem naar je ontsnappingstunnel leidt. \"Jullie zijn altijd zo wanhopig om een laatste stand te maken. Het is gemakkelijk om jullie aan te moedigen.\"\n\nEen explosie schiet door een van de verzegelde deuren zodra Weiss klaar is met spreken. Hij maakt van de gelegenheid gebruik om zich uit je greep los te rukken en duikt op de grond terwijl een regen van blastervuur door de nieuwe opening schiet.\n\n\"Ik ben in orde, ga achter ze aan!\" roept hij, hij schudt de hulp van de keizerlijke soldaten van zich af en wijst jou richting op.\n\n{-} De rebellen winnen de missie!\n{-} Plaats verhaalmissiekaart \"Last Stand\" in het spel.\n{-} Elke held ontvangt 2 XP. Helden ontvangen 100 credits per held.\n{-} Omdat de Rebellen Weiss versloegen nadat hij de AT-ST inging, verhoog je het dreigingsniveau van de volgende missie (en alleen de volgende missie) met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellen spelers beslissen om 50 credits per held uit te geven om dit te voorkomen.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Weiss 1-0",
-      "GUID": "519a7432-05a0-4d99-b018-33a69da628b0",
-      "eventText": "",
-      "eventActions": [
-        {
-          "newInstructions": "{A} ORDER: Een ander keizerlijk figuur met figuurkosten van 8 of minder die een aanval kan uitvoeren, valt {R1} aan.\n{Q} Als dit figuur ORDER niet heeft gebruikt, verplaats dan 4 om {R1} aan te vallen. Pas +2 {H} toe op de aanval.\n{Q} Verplaats 2 om {R1} aan te vallen. Pas+2 {H} toe op de aanval.\n{A} Verplaats 4 om aangrenzend aan de andere keizerlijke figuur met de meeste resterende gezondheid te komen.\n{A} Als dit figuur niet aangrenzend is aan een andere keizerlijke figuur, verplaats 5 naar herpositie 6.\n{-} Als dit figuur aangrenzend is aan een andere keizerlijke figuur, herstel 2 {H}. Het aangrenzende niet-<color=\"red\">gefocust</color> keizerlijk figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>.",
-          "GUID": "1f5c93be-e05d-4a1a-b206-05cfacbf64ea",
-          "eventActionType": 11,
-          "eaName": "Change Group Instructions"
-        }
-      ]
-    },
-    {
-      "eventName": "Weiss 1-1",
-      "GUID": "0f344b64-3d04-4977-80aa-97d7e5fea574",
-      "eventText": "",
-      "eventActions": [
-        {
-          "newInstructions": "{Q} Val {R1} aan. Pas +2 {H} toe op de aanval.\n{A} Verplaats 3 voor een interactie met de inactieve AT-ST.\n{A} Verplaats 5 voor een interactie met de inactieve AT-ST.\n{-} COWER: Indien aangrenzend aan een andere keizerlijke figuur, herstel 2 {H}. Het aangrenzende niet-gefocust figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>.",
-          "GUID": "a8699956-1cbd-4481-a1ed-9265b6cf257c",
-          "eventActionType": 11,
-          "eaName": "Change Group Instructions"
-        }
-      ]
-    },
-    {
-      "eventName": "Vulnerable",
-      "GUID": "4c7bf476-c996-4f5f-82dd-a5f89f4d0c3c",
-      "eventText": "De lift arriveert. In een gehurkte positie zit een scout walker, bedekt met geavanceerde wapens. Hij beweegt niet zonder piloot. Een gecodeerd slot met een handlezer hangt bij het luik. Zelfs als je niet in een vuurgevecht zat, weet je niet of je het zou kunnen kraken.\n\n{-} Zet <color=\"red\">General Weiss</color> in op de rood gemarkeerde velden. Dit is de inactieve AT-ST. Pas +1 {G} toe op elk van <color=\"red\">General Weiss</color>' verdedigingsresultaten.\n{-} <color=\"red\">General Weiss</color> (inactieve AT-ST) is een keizerlijk figuur die niet kan bewegen of aanvallen, maar wel kan worden aangevallen.\n{-} Weiss (<color=\"red\" >keizerlijke officier</color>) kan een interactie uitvoeren op de inactieve AT-ST om deze te betreden. Als dat gebeurt, klik je op de rood gemarkeerde velden en selecteer je \"Weiss betreedt de AT-ST\".",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": "+1 {G}",
-          "repositionInstructions": "",
-          "GUID": "092cc3fa-ef93-4e6b-b477-3f6337c7232c",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG073/General Weiss"
-        },
-        {
-          "theText": "{-} De <color=\"red\" >keizerlijke officier</color> is Weiss. Pas +6 gezondheid toe op Weiss. Pas +1 {G} toe op elk van zijn verdedigingsresultaten.\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} met 2 te verhogen (slechts éénmaal per ronde per terminal).\n{-} De deur is vergrendeld voor rebellenfiguren. Een rebellenfiguur kan een interactie uitvoeren op de deur ({K} of {I}) om hem te openen.\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).\n{-} <color=\"red\">General Weiss</color> (inactieve AT-ST) is een keizerlijk figuur die niet kan bewegen of aanvallen, maar wel aangevallen kan worden.\n{-} Weiss (<color=\"red\">keizerlijke officier</color>) kan een interactie uitvoeren op de inactieve AT-ST om deze te betreden. Als dat gebeurt, klik je op de rood gemarkeerde velden en selecteer je \"Weiss betreedt de AT-ST\".\n{-} De rebellen winnen als Weiss is verslagen.\n{-} De rebellen verliezen als alle helden gewond zijn.",
-          "GUID": "bfbf014a-0fcd-45ca-b1a9-e8dca8d955ab",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        },
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Deploy AT-ST",
-              "GUID": "78e06ff9-cb97-495c-a382-43cc824f92fe",
-              "theText": "",
-              "buttonList": [
-                {
-                  "GUID": "c31f03d1-c669-482d-876b-b2e31424396a",
-                  "theText": "Weiss betreedt de AT-ST"
-                }
-              ]
-            }
-          ],
-          "GUID": "ecd53326-661a-4f73-9266-c54388911137",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Vulnerable - Door open",
-      "GUID": "1ac56beb-dd8a-48c7-ae3c-c6fad2c96c9f",
-      "eventText": "De aanblik van zijn walker vult generaal Weiss met vastberadenheid.",
-      "eventActions": [
-        {
-          "mainText": "Heeft Weiss een zichtlijn op een figuur van de rebellen?",
-          "buttonList": [
-            {
-              "GUID": "981f353a-2e7a-4f2b-88fb-1a676532beb4",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "8e454929-5ef2-4b71-8a81-f50127264eb7",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "e0dd975a-de1b-4d3d-ac51-308f48e09d6a",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Vulnerable - DO Yes",
-      "GUID": "21f32927-c287-4fa1-b3bb-f404738cdbb8",
-      "eventText": "Weiss heft zijn blaster op en richt.\r\n\r\n{-} Weiss herstelt 5 {H} en onderbreekt om {rebel} aan te vallen.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Vulnerable - DO No",
-      "GUID": "2d70810d-3e4b-4745-b2aa-8733c334f39c",
-      "eventText": "Weiss rent naar de walker.\r\n\r\n{-} Weiss verplaatst 5 richting de inactieve AT-ST.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Vulnerable - Door closed",
-      "GUID": "620acd1d-9a0e-425f-bae5-f66f19d9979b",
-      "eventText": "De aanblik van zijn walker vult generaal Weiss met vastberadenheid.\r\n\r\n{-} Open de deur.\r\n{-} Weiss verplaatst 3 naar de inactieve AT-ST.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door",
-              "GUID": "61cce0c8-2cfe-4f72-8fac-7c7da4efec22",
-              "theText": "Generaal Weiss' stem klinkt vanachter deze deur en schreeuwt bevelen naar zijn troepen.\n\nDe deur is vergrendeld voor helden. Een held kan een interactie uitvoeren op de deur ({K} of {I}) om te proberen hem te openen.",
-              "buttonList": [
-                {
-                  "GUID": "8809f4d1-e47a-4db5-b2f1-dc15460aab2a",
-                  "theText": "{A} Probeer de deur te openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "60e718d6-4f80-4f00-97b0-5b1fec689445",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Invulnerable",
-      "GUID": "afb0c075-09b9-47fd-8152-15f9f954792d",
-      "eventText": "Gedekt door zijn troepen sprint Weiss als een bezetene naar zijn voertuig, grijpt het toegangsluik en glipt naar binnen. \n\n\"Ja, dit is veel beter.\" Zijn versterkte stem weerklinkt in de grote hangar terwijl de walker opstart en naar je toe draait. \"Waar waren we gebleven?\"\n\n{-} Verwijder het <color=\"red\" >keizerlijke officier</color> figuur en zijn inzetkaart. Hij is niet verslagen.\n{-} <color=\"red\">Generaal Weiss</color> herstelt 6 {H}.\n{-} <color=\"red\">Generaal Weiss</color> activeert nu zoals normaal. Pas +1 {G} toe op elk van zijn verdedigingsresultaten.\n{-} De rebellen winnen als <color=\"red\">Generaal Weiss</color> is verslagen.",
-      "eventActions": [
-        {
-          "shortText": "Versla <color=\"red\">Generaal Weiss</color>",
-          "longText": null,
-          "GUID": "1bf51766-91c3-4120-8624-ce8552640ad4",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        },
-        {
-          "theText": "{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} met 2 te verhogen (slechts éénmaal per ronde per terminal).\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).\n{-} De rebellen winnen als Weiss wordt verslagen.\n{-} De rebellen verliezen als alle helden gewond zijn.",
-          "GUID": "7ac30986-576b-47ec-b249-bbc0df469d7a",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        },
-        {
-          "newInstructions": "{-} <color=\"red\">Generaal Weiss</color> herstelt 3 {H}.",
-          "GUID": "2a8fea8d-0ed0-4cfd-8c01-a2def635f0c3",
-          "eventActionType": 11,
-          "eaName": "Change Group Instructions"
-        },
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Deploy AT-ST",
-              "GUID": "7a359f7e-2302-4447-9562-9bea233db114",
-              "theText": "Plaats <color=\"red\">Generaal Weiss</color> (inactieve AT-ST) hier.\r\n\r\nAls Weiss een interactie uitvoert op de inactieve AT-ST, klik je op \"Weiss betreedt de AT-ST\".",
-              "buttonList": [
-                {
-                  "GUID": "91c00e86-1f4e-46cc-9ba2-8925b1993ace",
-                  "theText": "Weiss betreedt de AT-ST"
-                }
-              ]
-            }
-          ],
-          "GUID": "dcfe7ec6-b766-4d89-bf0b-ab5142f48ac6",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Exhaust AT-ST",
-      "GUID": "f13811e3-1ced-4bdd-8e4a-830cd843aa5a",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "Door opens",
-      "GUID": "fb3f5dbf-3521-41cf-828e-a35893f1e467",
-      "eventText": "De deur schuift open.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door",
-              "GUID": "235bc3aa-4a26-4c0c-b264-546c1f24309a",
-              "theText": "Generaal Weiss' stem klinkt vanachter deze deur en schreeuwt bevelen naar zijn troepen.\n\nDe deur is vergrendeld voor helden. Een held kan een interactie uitvoeren op de deur ({K} of {I}) om te proberen hem te openen.",
-              "buttonList": [
-                {
-                  "GUID": "01767909-8b3c-44b3-b042-193ad51d7051",
-                  "theText": "{A} Probeer de deur te openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "af6a4a2c-5327-442d-bb51-8d184cb811f0",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Door attempt",
-      "GUID": "facd9639-c171-4a5e-9a15-2cc1730d0072",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "De deur zit goed op slot.\n\nTest {K} of {I}. Pas +1 {B} toe voor elk forceertoken op de deur en leg daarna alle forceertokens op de deur af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "a4fab422-4333-40d8-b59b-1b5b6c3081c3",
-              "theText": "De deur weerstaat je pogingen. Je moet blijven proberen.\n\n{-} Voor elk {B} symbool, plaats je 1 forceertoken op de deur."
-            }
-          ],
-          "GUID": "d3bdab23-38f3-4a9d-9e8c-96594ea12742",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Increase threat",
-      "GUID": "48dade0e-1454-406e-a2e9-b34b3d8ba4bb",
-      "eventText": "Er klinken nog meer alarmen door het gebouw, versterkingen worden opgeroepen.",
-      "eventActions": []
-    },
-    {
       "eventName": "Terminal 1 destroyed",
       "GUID": "f664d2ff-ada5-4c10-857d-9b719cfab3d2",
-      "eventText": "Het communicatiestation explodeert in een vonkenregen.",
+      "eventText": "Het communicatiestation explodeert in een regen van vonken.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Terminal 1",
               "GUID": "106aeab4-c7ed-415c-8fd8-8aca7fcccf9b",
-              "theText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
+              "theText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
               "buttonList": [
                 {
                   "GUID": "5d91e075-87b3-488d-9ffe-711523a11c6b",
@@ -417,14 +291,14 @@
     {
       "eventName": "Terminal 2 destroyed",
       "GUID": "8caa26d2-a32b-48b0-b7e3-c5984b508075",
-      "eventText": "Het communicatiestation explodeert in een vonkenregen.",
+      "eventText": "Het communicatiestation explodeert in een regen van vonken.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Terminal 2",
               "GUID": "f144eee4-0fe4-4899-aa19-5312fac10e68",
-              "theText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
+              "theText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
               "buttonList": [
                 {
                   "GUID": "555de41e-2c09-4b69-ae08-e34f591dcf4e",
@@ -446,14 +320,14 @@
     {
       "eventName": "Terminal 3 destroyed",
       "GUID": "7393d794-16a8-4697-b744-3d7b70210268",
-      "eventText": "Het communicatiestation explodeert in een vonkenregen.",
+      "eventText": "Het communicatiestation explodeert in een regen van vonken.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Terminal 3",
               "GUID": "9f230946-7353-40bc-9712-54b7e2f300f4",
-              "theText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
+              "theText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
               "buttonList": [
                 {
                   "GUID": "e49d9437-40f5-40f1-92ba-2cbe996ea257",
@@ -477,6 +351,132 @@
       "GUID": "a9213eec-83ac-41bd-94fd-710c12e05ba5",
       "eventText": "",
       "eventActions": []
+    },
+    {
+      "eventName": "Vulnerable",
+      "GUID": "4c7bf476-c996-4f5f-82dd-a5f89f4d0c3c",
+      "eventText": "De lift arriveert. In de lift staat een gehurkte scout walker, uitgerust met geavanceerde wapensystemen. Het enorme apparaat blijft onbeweeglijk zonder een piloot aan boord. Bij het luik hangt een beveiligd slot met een handlezer. Zelfs zonder het gevaar van een vuurgevecht, twijfel je of het je zou lukken om het slot te hacken.\n\n{-} Zet <color=\"red\">General Weiss</color> in op de rood gemarkeerde velden. Dit is de inactieve AT-ST. Pas +1 {G} toe op elk van <color=\"red\">General Weiss</color>' verdedigingsresultaten.\n{-} <color=\"red\">General Weiss</color> (inactieve AT-ST) is een keizerlijke figuur die niet kan bewegen of aanvallen, maar wel aangevallen kan worden.\n{-} Weiss (<color=\"red\">Imperial Officer</color>) kan een interactie uitvoeren op de inactieve AT-ST om deze te betreden. Als dat gebeurt, klik je op de rood gemarkeerde velden en selecteer je \"Weiss betreedt de AT-ST\".",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": "+1 {G}",
+          "repositionInstructions": "",
+          "GUID": "092cc3fa-ef93-4e6b-b477-3f6337c7232c",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG073/General Weiss"
+        },
+        {
+          "theText": "{-} De <color=\"red\">keizerlijke officier</color> is Weiss. Pas +6 gezondheid toe op Weiss. Pas +1 {G} toe op elk van zijn verdedigingsresultaten.\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} met 2 te verhogen (slechts éénmaal per ronde per terminal).\n{-} De deur is vergrendeld voor rebellen. Een rebellenfiguur kan een interactie uitvoeren op de deur ({K} of {I}) om hem te openen.\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).\n{-} <color=\"red\">General Weiss</color> (inactieve AT-ST) is een keizerlijke figuur die niet kan bewegen of aanvallen, maar wel aangevallen kan worden.\n{-} Weiss (<color=\"red\">Imperial Officer</color>) kan een interactie uitvoeren op de inactieve AT-ST om deze te betreden. Als dat gebeurt, klik je op de rood gemarkeerde velden en selecteer je \"Weiss betreedt de AT-ST\".\n{-} De rebellen winnen als Weiss verslagen is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "bfbf014a-0fcd-45ca-b1a9-e8dca8d955ab",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Deploy AT-ST",
+              "GUID": "78e06ff9-cb97-495c-a382-43cc824f92fe",
+              "theText": "Plaats <color=\"red\">General Weiss</color> (inactieve AT-ST) hier.\r\n\r\nWanneer Weiss een interactie uitvoert op de inactieve AT-ST selecteer je \"Weiss betreedt de AT-ST\".",
+              "buttonList": [
+                {
+                  "GUID": "c31f03d1-c669-482d-876b-b2e31424396a",
+                  "theText": "Weiss betreedt de AT-ST"
+                }
+              ]
+            }
+          ],
+          "GUID": "ecd53326-661a-4f73-9266-c54388911137",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Vulnerable - DO No",
+      "GUID": "2d70810d-3e4b-4745-b2aa-8733c334f39c",
+      "eventText": "Weiss rent naar de walker.\r\n\r\n{-} Weiss verplaatst 5 richting de inactieve AT-ST.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vulnerable - DO Yes",
+      "GUID": "21f32927-c287-4fa1-b3bb-f404738cdbb8",
+      "eventText": "Weiss heft zijn blaster op en richt.\r\n\r\n{-} Weiss herstelt 5 {H} en onderbreekt om {rebel} aan te vallen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vulnerable - Door closed",
+      "GUID": "620acd1d-9a0e-425f-bae5-f66f19d9979b",
+      "eventText": "Bij het zien van zijn walker wordt generaal Weiss vervuld met vastberadenheid.\r\n\r\n{-} Open de deur.\r\n{-} Weiss verplaatst 3 naar de inactieve AT-ST.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door",
+              "GUID": "61cce0c8-2cfe-4f72-8fac-7c7da4efec22",
+              "theText": "Generaal Weiss is hoorbaar vanachter deze deur. Hij roept bevelen naar zijn soldaten.\n\nDe deur is vergrendeld voor helden. Een held kan een interactie uitvoeren op de deur ({K} of {I}) om te proberen hem te openen.",
+              "buttonList": [
+                {
+                  "GUID": "8809f4d1-e47a-4db5-b2f1-dc15460aab2a",
+                  "theText": "{A} Probeer de deur te openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "60e718d6-4f80-4f00-97b0-5b1fec689445",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Vulnerable - Door open",
+      "GUID": "1ac56beb-dd8a-48c7-ae3c-c6fad2c96c9f",
+      "eventText": "Bij het zien van zijn walker wordt generaal Weiss vervuld met vastberadenheid.",
+      "eventActions": [
+        {
+          "mainText": "Heeft Weiss een zichtlijn op een figuur van de rebellen?",
+          "buttonList": [
+            {
+              "GUID": "981f353a-2e7a-4f2b-88fb-1a676532beb4",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "8e454929-5ef2-4b71-8a81-f50127264eb7",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "e0dd975a-de1b-4d3d-ac51-308f48e09d6a",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Weiss 1-0",
+      "GUID": "519a7432-05a0-4d99-b018-33a69da628b0",
+      "eventText": "",
+      "eventActions": [
+        {
+          "newInstructions": "{A} ORDER: Een ander keizerlijke figuur met figuurkosten van 8 of minder die een aanval kan uitvoeren, valt {R1} aan.\n{Q} Als dit figuur ORDER niet heeft gebruikt, verplaats dan 4 om {R1} aan te vallen. Pas +2 {H} toe op de aanval.\n{Q} Verplaats 2 om {R1} aan te vallen. Pas+2 {H} toe op de aanval.\n{A} Verplaats 4 om grenzend aan de andere keizerlijke figuur met de meeste resterende gezondheid te komen.\n{A} Als dit figuur niet grenst aan een andere keizerlijke figuur, verplaats dan 5 naar herpositie 6.\n{-} Als dit figuur grenst aan een andere keizerlijke figuur, herstel dan 2 {H}. Het aangrenzende niet-<color=\"red\">gefocuste</color> keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>.",
+          "GUID": "1f5c93be-e05d-4a1a-b206-05cfacbf64ea",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        }
+      ]
+    },
+    {
+      "eventName": "Weiss 1-1",
+      "GUID": "0f344b64-3d04-4977-80aa-97d7e5fea574",
+      "eventText": "",
+      "eventActions": [
+        {
+          "newInstructions": "{Q} Val {R1} aan. Pas +2 {H} toe op de aanval.\n{A} Verplaats 3 voor een interactie met de inactieve AT-ST.\n{A} Verplaats 5 voor een interactie met de inactieve AT-ST.\n{-} COWER: Indien aangrenzend aan een andere keizerlijke figuur, herstel dan 2 {H}. Het aangrenzende niet-<color=\"red\">gefocuste</color> figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>.",
+          "GUID": "a8699956-1cbd-4481-a1ed-9265b6cf257c",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        }
+      ]
     }
   ],
   "mapEntities": [
@@ -514,12 +514,6 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
       "entityName": "Crate4",
       "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
       "mainText": "Een oud voorraadkrat.",
@@ -529,24 +523,6 @@
           "theText": "{A} Openen"
         }
       ]
-    },
-    {
-      "entityName": "DP Green 1",
-      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 2",
-      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 3",
-      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
-      "mainText": null,
-      "buttonList": []
     },
     {
       "entityName": "DP ETrooper 1",
@@ -563,6 +539,24 @@
     {
       "entityName": "DP ETrooper 3",
       "GUID": "3f832d98-6877-4d0c-adb3-a1b59b0c422c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
       "mainText": null,
       "buttonList": []
     },
@@ -609,9 +603,15 @@
       "buttonList": []
     },
     {
+      "entityName": "DP Weiss",
+      "GUID": "dd3e22eb-527f-432b-b887-f087b8f65907",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
       "entityName": "Deploy AT-ST",
       "GUID": "fefdb8a6-d649-4b2a-b249-9a7b3cc7d074",
-      "mainText": "Plaats <color=\"red\">Generaal Weiss</color> (inactieve AT-ST) hier.\r\n\r\nAls Weiss een interactie uitvoert op de inactieve AT-ST, klik je op \"Weiss betreedt de AT-ST\".",
+      "mainText": "Plaats <color=\"red\">General Weiss</color> (inactieve AT-ST) hier.\r\n\r\nWanneer Weiss een interactie uitvoert op de inactieve AT-ST selecteer je \"Weiss betreedt de AT-ST\".",
       "buttonList": [
         {
           "GUID": "2ddba315-d805-4f6b-9081-45d3108cc4d9",
@@ -622,7 +622,7 @@
     {
       "entityName": "Door",
       "GUID": "64c7eae8-11c4-4909-9516-408f44999d60",
-      "mainText": "Generaal Weiss' stem klinkt vanachter deze deur en schreeuwt bevelen naar zijn troepen.\n\nDe deur is vergrendeld voor helden. Een held kan een interactie uitvoeren op de deur ({K} of {I}) om te proberen hem te openen.",
+      "mainText": "Generaal Weiss is hoorbaar vanachter deze deur. Hij roept bevelen naar zijn soldaten.\n\nDe deur is vergrendeld voor helden. Een held kan een interactie uitvoeren op de deur ({K} of {I}) om te proberen hem te openen.",
       "buttonList": [
         {
           "GUID": "6bf6b896-304d-483e-9bd5-7b1aa04436a3",
@@ -631,9 +631,15 @@
       ]
     },
     {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
+    },
+    {
       "entityName": "Terminal 1",
       "GUID": "b78a226e-2548-47fe-b34c-04995a16d377",
-      "mainText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
+      "mainText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
       "buttonList": [
         {
           "GUID": "e466b7ca-ee07-4eff-bdfe-bcc0dc74d969",
@@ -648,7 +654,7 @@
     {
       "entityName": "Terminal 2",
       "GUID": "f65eef08-27ee-45eb-a279-3fe7dab94f34",
-      "mainText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
+      "mainText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
       "buttonList": [
         {
           "GUID": "0323e45e-3758-4c98-8c92-3de9be8a26af",
@@ -663,7 +669,7 @@
     {
       "entityName": "Terminal 3",
       "GUID": "da1e1588-1591-4938-b709-9c128f253234",
-      "mainText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijk figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
+      "mainText": "Via de communicatieterminal kunnen de keizerlijke soldaten versterkingen oproepen.\n\n{-} Een keizerlijke figuur kan een interactie uitvoeren op een terminal om {D} te verhogen met 2. Als dat gebeurt, klik je op \"verhoog {D}\".\n{-} Een rebellenfiguur kan een terminal aanvallen (gezondheid: 8, verdediging: 1 {G}).",
       "buttonList": [
         {
           "GUID": "80aeabd0-7889-4bf0-afcc-1a472c5da01d",
@@ -674,15 +680,13 @@
           "theText": "Vernietigen"
         }
       ]
-    },
-    {
-      "entityName": "DP Weiss",
-      "GUID": "dd3e22eb-527f-432b-b887-f087b8f65907",
-      "mainText": null,
-      "buttonList": []
     }
   ],
   "initialGroups": [
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    },
     {
       "cardName": "Probe Droid",
       "customInstructions": ""
@@ -697,10 +701,6 @@
     },
     {
       "cardName": "Stormtrooper (Elite)",
-      "customInstructions": ""
-    },
-    {
-      "cardName": "Imperial Officer",
       "customInstructions": ""
     }
   ]

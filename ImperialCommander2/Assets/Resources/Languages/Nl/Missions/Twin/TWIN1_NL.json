@@ -1,9 +1,9 @@
 {
   "languageID": "Dutch (NL)",
   "missionProperties": {
-    "missionName": "Vlucht door de ravijn",
+    "missionName": "Vlucht door de kloof",
     "missionDescription": "",
-    "missionInfo": "{-} Als <color=“red”>R2-D2</color> of <color=“red”>C-3PO</color> aan het verdedigen is en ze niet binnen 4 velden van een held zijn, verwijder dan 1 dobbelsteen van hun verdedigingsworp.\n{-} Keizerlijke missietokens vertegenwoordigen barricades en vallen en zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein. Een held kan een interactie uitvoeren op een token om te proberen het te verwijderen.\n{-} Tusken Raiders op het smalle pad (Twin Shadows tegel 05B) zijn sluipschutters die kunnen richten op figuren op het hele speelbord als ze daartoe opdracht krijgen.\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).\n{-} De missie gaat verder als een figuur van de rebellen het smalle pad beklimt (klik op de groene markering en selecteer “klimmen”.\n{-} De rebellen verliezen wanneer alle helden gewond zijn en <color=“red”>R2-D2</color> en <color=“red”>C-3PO</color> zijn verslagen.",
+    "missionInfo": "{-} Als <color=\"red\">R2-D2</color> of <color=\"red\">C-3PO</color> aan het verdedigen is en ze niet binnen 4 velden van een held zijn, verwijder dan 1 dobbelsteen van hun verdedigingsdobbelstenen.\n{-} Keizerlijke missietokens stellen barricades en vallen voor en zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein. Een held kan een interactie uitvoeren op een token om te proberen deze te verwijderen.\n{-} Tusken Raiders op het smalle pad (Twin Shadows tegel 05B) zijn sluipschutters die kunnen richten op figuren op het hele speelbord als ze daartoe opdracht krijgen.\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).\n{-} De missie gaat verder wanneer een figuur van de rebellen het smalle pad beklimt (klik op de groene markering en selecteer \"klimmen\".\n{-} De rebellen verliezen als alle helden gewond zijn en <color=\"red\">R2-D2</color> en <color=\"red\">C-3PO</color> verslagen zijn.",
     "campaignName": "Twin Shadows",
     "startingObjective": "Beklim het smalle pad.",
     "repositionOverride": "Blokkeer de toegang tot de deur en de terminal.",
@@ -11,9 +11,222 @@
   },
   "events": [
     {
+      "eventName": "C-3PO defeated",
+      "GUID": "a02f3fe2-13fd-475b-aa4b-a8a654ac6b95",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign Defeat Yes",
+      "GUID": "6a66d0ea-65a9-452c-a3f1-edc5fac52ed2",
+      "eventText": "\"Jullie weten jezelf ook altijd in lastige situaties te werken, nietwaar?\" De spottende opmerkingen van je piloot komen via je comlink binnen terwijl hij een gewaagde extractie uitvoert om je uit de vuurlinie te halen.\n\n\"Nog steeds geen nieuwe informatie? Nou, voor zover ik heb kunnen achterhalen zal die Star Destroyer, op basis van enkele van zijn meetwaarden, binnenkort koers zetten naar Sullust. Ik weet het niet zeker, maar ik denk dat ze het misschien op Luke gemunt hebben. Dat was de locatie van zijn laatste missie. Ze moeten hier op verkenning zijn geweest.\"\n\nWetend dat je misschien weinig tijd hebt om de held van het Verzet te redden, smeed je snel een plan om je aan boord van een keizerlijke shuttle te verstoppen en zo de Star Destroyer binnen te sluipen. Je weet niet zeker wat je eenmaal aan boord kunt doen, maar je hoopt dat zich een kans zal voordoen.\n\n{-} Elke held ontvangt 2 XP.\n{-} De helden ontvangen 300 credits per held.\n{-} De helden ontvangen <color=\"red\">R2-D2</color> (Loyal Astromech) en <color=\"red\">C-3PO</color> (Human-Cyborg Relations) als bondgenoten.\n{-} De volgende actieve missie is \"Geïnfiltreerd\".",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign No",
+      "GUID": "e63594d1-6da1-41e8-a490-07d49aaebcb4",
+      "eventText": "{-} Elke held ontvangt 1 XP.\n{-} De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign Win Yes",
+      "GUID": "af917fbd-9915-436a-b294-4372d700417c",
+      "eventText": "Na een briljante extractie uit je infiltratiemissie door je piloot, hergroeperen jullie op je shuttle en plan je je volgende strategie. De buitgemaakte plannen laten zien dat Kayn Somos, de stormtroopercommandant die je eerder bent tegengekomen, een verkenningsmissie leidt om de held van het Verzet, Luke Skywalker, op te sporen. De operatie gebruikt de Star Destroyer in een baan om de planeet als uitvalsbasis en alles wijst erop dat het schip binnenkort zal vertrekken, wat betekent dat ze Luke hebben gevonden. Het is tijd om in te grijpen.\n\nDe plannen bevatten ook de dokcodes van de Star Destroyer. Je piloot vertelt je dat die voldoende zouden moeten zijn om je shuttle langs de turbolasers en in de hoofdhangar van het schip te brengen. Daarna is het aan jullie om een manier te vinden om dat ding te vernietigen en er levend weer uit te komen.\n\n{-} Elke held ontvangt 3 XP.\n{-} De helden ontvangen 300 credits per held.\n{-} De helden ontvangen <color=\"red\">R2-D2</color> (Loyal Astromech) en <color=\"red\">C-3PO</color> (Human-Cyborg Relations) als bondgenoten.\n{-} De volgende actieve missie is \"Vuur in de lucht\".",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Het klimmen en vechten heeft je tot het uiterste van je uithoudingsvermogen gedreven en je ziet je gedwongen om op te geven en terug te keren. Je hoopt dat deze basis bedoeld is voor één van de minder verderfelijke operaties van het Keizerrijk.\n\n{-} De rebellen verliezen de missie.",
+      "eventActions": [
+        {
+          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne \"Twin Shadows\"?",
+          "buttonList": [
+            {
+              "GUID": "1d8e7f1d-959f-4fa5-a174-940952051598",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "ecbe5c7b-cd0d-46d4-a905-131a95911991",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "8a6c9177-e8c5-4197-8f22-823619ef8209",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose Round Limit",
+      "GUID": "cc82e014-6c01-4e9b-8674-00a575d7a794",
+      "eventText": "Het klimmen en vechten heeft je tot het uiterste van je uithoudingsvermogen gedreven en je ziet je gedwongen om op te geven en terug te keren. Je hoopt dat deze basis bedoeld is voor één van de minder verderfelijke operaties van het Keizerrijk.\n\n{-} De rebellen verliezen de missie.",
+      "eventActions": [
+        {
+          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne \"Twin Shadows\"?",
+          "buttonList": [
+            {
+              "GUID": "22594630-87d8-4e92-8c1d-a80a693f9174",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "77b8dba2-b3f4-4aef-a5f3-d4d3fc60a585",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "161ea904-5b7c-4b3a-b565-b5871da81ae4",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Na een slopende klim en hevige gevechten infiltreer je de basis en steel je keizerlijke plannen van de centrale console, in de hoop daarmee alle keizerlijke complotten te dwarsbomen.\n\n{-} De rebellen winnen de missie!\n{-} De helden krijgen de \"Counterparts\" beloningskaart. (Deze beloningskaart werkt anders wanneer je speelt met <b>Imperial Commander</b>. Raadpleeg de <b>Rules Change</b> sectie van de wiki-documentatie voor meer informatie).",
+      "eventActions": [
+        {
+          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne \"Twin Shadows\"?",
+          "buttonList": [
+            {
+              "GUID": "bd74c6b8-03b5-4b99-b098-7c3857cc2bef",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "8c29e961-bf68-4e72-bbd9-c0139dee8bc4",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "890ba495-9406-40c9-95bc-95fa07603a7c",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Green Attempt",
+      "GUID": "542c0da1-3d1d-4ac6-89b9-65a0caabcb9c",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je begint de rotsen weg te halen.\n\n{-} Test {K}. Pas +1 {B} toe voor elk forceertoken op de groene missietokens en leg daarna alle forceertokens op de groene missietokens af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "973ea2cf-cda4-4a17-ab62-9a2e78eea4e8",
+              "theText": "Je boekt enige vooruitgang, maar je bent er nog niet. Je moet het blijven proberen.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de groene missietokens."
+            }
+          ],
+          "GUID": "96bc9c81-e8ad-46cc-9e7f-baf859c68feb",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Green Barricade Removed",
+      "GUID": "c209ae7c-8d30-4cc8-9ecb-9b5f5dcd6442",
+      "eventText": "Het is je gelukt een pad naar voren vrij te maken.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Green Barricade",
+              "GUID": "49d6124c-d86a-434e-a77a-e58c3f95ec6d",
+              "theText": "De Tusken Raiders hebben een rotslawine veroorzaakt. Enorme rotsblokken versperren de weg.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de rotsen om te proberen ze te verwijderen.",
+              "buttonList": [
+                {
+                  "GUID": "6a104a60-888b-42a4-bd3e-a4d0ac0bb106",
+                  "theText": "{A} Verwijderen"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Green 1",
+              "GUID": "44ef3229-c7e6-4e42-beb6-5822a07871bb",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "26b2946d-b711-49a9-be25-53beb72ae812",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Heat of the Suns",
+      "GUID": "299727e4-b187-4222-8aa9-1dbabeff6a99",
+      "eventText": "De hitte van Tatooines dubbele zonnen is meedogenloos. Je voelt je kracht wegglippen.\n\n{-} Elke held test {K}. Elke held die faalt wordt <color=\"red\">verzwakt</color>.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "De rotsen onder je voeten zijn meedogenloos en de hitte van Tatooines dubbele zonnen is ondraaglijk terwijl je je een weg klautert door de Jundland Wastes. Met een klagelijke stem verwoordt C-3PO precies wat je denkt: \"Dit is geen plek voor beschaafde mensen. We zullen hier zeker omkomen.\"\n\nZijn tegenhanger, R2-D2, piept hem iets toe en rolt verder. Je hebt geen andere keuze dan je ongemak te negeren wanneer een blasterschot langs je suist, afgevuurd door de stormtroopers die verderop stelling hebben ingenomen. Terwijl je je klaarmaakt om hen aan te vallen, zie je hoger op de helling een groep Tusken Raiders positie innemen om het vuur op de kloof te openen terwijl je de lange klim voortzet.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.",
+      "eventActions": [
+        {
+          "customName": null,
+          "GUID": "37835dc0-55a3-4171-8531-e13185e04499",
+          "eventActionType": 7,
+          "eaName": "Ally Deployment"
+        },
+        {
+          "customName": null,
+          "GUID": "0f981860-b7b5-4963-ac12-35f079ce575e",
+          "eventActionType": 7,
+          "eaName": "Ally Deployment"
+        },
+        {
+          "tbText": "{-} De helden hebben <color=\"red\">R2-D2</color> en <color=\"red\">C-3PO</color> als bondgenoten.\n{-} Als <color=\"red\">R2-D2</color> of <color=\"red\">C-3PO</color> aan het verdedigen is en ze niet binnen 4 velden van een held zijn, verwijder dan 1 dobbelsteen van hun verdedigingsdobbelstenen.\n{-} Keizerlijke missietokens stellen barricades en vallen voor en zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein. Een held kan een interactie uitvoeren op een token om te proberen deze te verwijderen.\n{-} Tusken Raiders op het smalle pad (Twin Shadows tegel 05B) zijn sluipschutters die kunnen richten op figuren op het hele speelbord als ze daartoe opdracht krijgen.\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).\n{-} De missie gaat verder wanneer een figuur van de rebellen het smalle pad beklimt (klik op de groene markering en selecteer \"klimmen\".\n{-} De rebellen verliezen als alle helden gewond zijn en <color=\"red\">R2-D2</color> en <color=\"red\">C-3PO</color> verslagen zijn.",
+          "GUID": "4ad617c5-a911-4290-be4a-d7a9c79f0eda",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Narrow Path Entered",
+      "GUID": "6095b3ff-c7aa-4f56-855f-c650b8ea2b3d",
+      "eventText": "Zodra je aan de klim begint, grijpen de Tusken Raiders hun gaffi-stokken en stormen ze op je af.\n\n{-} De missie gaat verder wanneer de deur naar het complex vernietigd is.",
+      "eventActions": [
+        {
+          "theText": "{-} Helden hebben <color=\"red\">R2-D2</color> en <color=\"red\">C-3PO</color> als bondgenoten.\n{-} Als <color=\"red\">R2-D2</color> of <color=\"red\">C-3PO</color> aan het verdedigen is en ze niet binnen 4 velden van een held zijn, verwijder dan 1 dobbelsteen van hun verdedigingsdobbelstenen.\n{-} Keizerlijke missietokens stellen barricades en vallen voor en zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein. Een held kan een interactie uitvoeren op een token om te proberen deze te verwijderen.\n{-} Tusken Raiders op het smalle pad (Twin Shadows tegel 05B) zijn sluipschutters die kunnen richten op figuren op het hele speelbord als ze daartoe opdracht krijgen.\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).\n{-} De missie gaat verder wanneer de deur naar het complex vernietigd is.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=\"red\">R2-D2</color> en <color=\"red\">C-3PO</color> verslagen zijn.",
+          "GUID": "268db73d-8bcc-4841-bbf0-359438006dbf",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Ga het complex binnen.",
+          "longText": null,
+          "GUID": "f4e547b5-28c8-4018-a9a3-8b4e12c1b896",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Narrow Path",
+              "GUID": "184cd330-058f-4fb3-8d0a-ca0be4e2003f",
+              "theText": "Een kronkelig, smal pad leidt langs de zijkant van de kloof. Het is een lange en moeilijke klim.\n\n{-} De eerste keer dat een rebellenfiguur het smalle pad betreedt, klik je op \"klimmen\".",
+              "buttonList": [
+                {
+                  "GUID": "7e4b0da1-e739-4b84-9a47-669ac60f6b35",
+                  "theText": "Klimmen"
+                }
+              ]
+            }
+          ],
+          "GUID": "4ba0d02d-9246-4e07-b06c-02ac8db71652",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
       "eventName": "Open Crate 1",
       "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -38,7 +251,7 @@
     {
       "eventName": "Open Crate 2",
       "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -58,7 +271,7 @@
     {
       "eventName": "Open Crate 3",
       "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -76,140 +289,16 @@
       ]
     },
     {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "De rotsen zijn hard onder je voeten en de hitte van de tweelingzon van Tatooine is ondraaglijk terwijl je door de Jundland Wastes klimt. C-3PO imiteert je gevoelens met een droevige stem: “Dit is geen plek voor beschaafde mensen. We zullen hier zeker omkomen.”\n\nZijn tegenhanger, R2-D2, piept naar hem en rolt vooruit. Je wordt gedwongen om je ongemak te negeren als er een laser over je heen schiet, afgevuurd door de stormtroopers die je nu voor je ziet staan. Terwijl je je naar hen toe begeeft, zie je een groep Tuskens boven je, die zich opstellen om de ravijn onder vuur te nemen terwijl je de lange klim maakt.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.",
-      "eventActions": [
-        {
-          "customName": null,
-          "GUID": "37835dc0-55a3-4171-8531-e13185e04499",
-          "eventActionType": 7,
-          "eaName": "Ally Deployment"
-        },
-        {
-          "customName": null,
-          "GUID": "0f981860-b7b5-4963-ac12-35f079ce575e",
-          "eventActionType": 7,
-          "eaName": "Ally Deployment"
-        },
-        {
-          "tbText": "{-} Helden hebben <color=“red”>R2-D2</color> en <color=“red”>C-3PO</color> als bondgenoten.\n{-} Als <color=“red”>R2-D2</color> of <color=“red”>C-3PO</color> aan het verdedigen is en ze niet binnen 4 velden van een held zijn, verwijder dan 1 dobbelsteen van hun verdedigingsworp.\n{-} Keizerlijke missietokens vertegenwoordigen barricades en vallen en zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein. Een held kan een interactie uitvoeren op een token om te proberen het te verwijderen.\n{-} Tusken Raiders op het smalle pad (Twin Shadows tegel 05B) zijn sluipschutters die kunnen richten op figuren op het hele speelbord als ze daartoe opdracht krijgen.\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).\n{-} De missie gaat verder als een figuur van de rebellen het smalle pad beklimt (klik op de groene markering en selecteer “klimmen”.\n{-} De rebellen verliezen wanneer alle helden gewond zijn en <color=“red”>R2-D2</color> en <color=“red”>C-3PO</color> zijn verslagen.",
-          "GUID": "4ad617c5-a911-4290-be4a-d7a9c79f0eda",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Na een slopende klim en zware gevechten infiltreer je de basis en steel je de keizerlijke plannen van de centrale console, waarmee je hopelijk alle keizerlijke complotten verijdelt.\n\n{-} De rebellen winnen de missie!\n{-} Helden krijgen de “Counterparts” belongingskaart. (Deze beloningskaart werkt anders wanneer je speelt met <b>Imperial Commander</b>. Raadpleeg de <b>Rules Change</b> sectie van de wiki documentatie voor meer informatie).",
-      "eventActions": [
-        {
-          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne “Twin Shadows”?",
-          "buttonList": [
-            {
-              "GUID": "bd74c6b8-03b5-4b99-b098-7c3857cc2bef",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "8c29e961-bf68-4e72-bbd9-c0139dee8bc4",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "890ba495-9406-40c9-95bc-95fa07603a7c",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Het klimmen en vechten heeft je tot de grens van je uithoudingsvermogen gedreven. Het lukt je niet om door te zetten en je keert terug. Je hoopt dat deze basis bedoeld is voor één van de minder schadelijke operaties van het Rijk.\n\n{-} De rebellen verliezen de missie.",
-      "eventActions": [
-        {
-          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne “Twin Shadows”?",
-          "buttonList": [
-            {
-              "GUID": "1d8e7f1d-959f-4fa5-a174-940952051598",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "ecbe5c7b-cd0d-46d4-a905-131a95911991",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "8a6c9177-e8c5-4197-8f22-823619ef8209",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Campaign Win Yes",
-      "GUID": "af917fbd-9915-436a-b294-4372d700417c",
-      "eventText": "Nadat je piloot een briljante extractie van je infiltratiemissie heeft uitgevoerd, hergroepeer je in de shuttle en plan je je volgende strategie. De plannen die je hebt gestolen geven aan dat Kayn Somos, de stormtroopercommandant die je bent tegengekomen, een verkenningsmissie leidt om de held van de rebellen, Luke Skywalker, op te jagen. De operatie gebruikt de Star Destroyer, die in een baan om de planeet draait, als basis en zo te zien zal die binnenkort vertrekken, wat betekent dat ze Luke hebben gevonden. De tijd is gekomen om te handelen.\n\nDe plannen bevatten ook de dokcodes van de Star Destroyer. Je piloot vertelt je dat die voldoende moeten zijn om je shuttle langs de turbolasers in de hoofdhangar van het schip te krijgen. Daarna is het aan jou om een manier te vinden om dat ding te vernietigen en er levend uit te komen.\n\n{-} Elke held ontvangt 3 XP.\n{-} Helden ontvangen 300 credits per held.\n{-} Helden ontvangen <color=“red”>R2-D2</color> (Loyal Astromech) en <color=“red”>C-3PO</color> (Human-Cyborg Relations) als bondgenoten.\n{-} De volgende actieve missie is “Vuur in de lucht”.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Campaign Defeat Yes",
-      "GUID": "6a66d0ea-65a9-452c-a3f1-edc5fac52ed2",
-      "eventText": "“Jullie weten wel hoe je jezelf in lastige situaties moet brengen, hè?” De gemene opmerkingen van je piloot komen binnen op je comlink terwijl hij een gewaagde extractie uitvoert om je uit de vuurlinie te halen.\n\n“Dus nog steeds niet meer informatie? Nou, alles wat ik heb kunnen ontdekken is dat, gebaseerd op sommige gegevens, die Star Destroyer binnenkort naar Sullust vliegt. Ik weet het niet zeker, maar ik denk dat ze achter Luke aanzitten. Dat was de locatie van zijn laatste missie. Ze moeten op verkenning zijn geweest.”\n\nWetende dat je misschien weinig tijd hebt om de held van de rebellen te redden, verzin je snel een plan om aan boord van een keizerlijke shuttle te gaan en op de Star Destroyer te sluipen. Je weet niet zeker wat je kunt doen als je eenmaal aan boord bent, maar je hoopt dat een kans\nzich zal voordoen.\n\n{-} Elke held ontvangt 2 XP.\n{-} Helden ontvangen 300 credits per held.\n{-} Helden ontvangen <color=“red”>R2-D2</color> (Loyal Astromech) en <color=“red”>C-3PO</color> (Human-Cyborg Relations) als bondgenoten.\n{-} De volgende actieve missie is “Geïnfiltreerd”.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Campaign No",
-      "GUID": "e63594d1-6da1-41e8-a490-07d49aaebcb4",
-      "eventText": "{-} Elke held ontvangt 1 XP.\n{-} Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose Round Limit",
-      "GUID": "cc82e014-6c01-4e9b-8674-00a575d7a794",
-      "eventText": "Het klimmen en vechten heeft je tot de grens van je uithoudingsvermogen gedreven. Het lukt je niet om door te zetten en je keert terug. Je hoopt dat deze basis bedoeld is voor één van de minder schadelijke operaties van het Rijk.\n\n{-} De rebellen verliezen de missie.",
-      "eventActions": [
-        {
-          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne “Twin Shadows”?",
-          "buttonList": [
-            {
-              "GUID": "22594630-87d8-4e92-8c1d-a80a693f9174",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "77b8dba2-b3f4-4aef-a5f3-d4d3fc60a585",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "161ea904-5b7c-4b3a-b565-b5871da81ae4",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "R2-D2 defeated",
-      "GUID": "fc9ebd58-d346-4f33-b590-597e66ab759b",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "C-3PO defeated",
-      "GUID": "a02f3fe2-13fd-475b-aa4b-a8a654ac6b95",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
       "eventName": "Open Door",
       "GUID": "3daf4a5f-5ca4-40b6-a732-7f7a74903587",
-      "eventText": "Koele lucht stroomt uit het complex met airconditioning zodra de deur opengaat.\n\n{-} Een held kan een interactie uitvoeren op de terminal ({I}) om de plannen te verkrijgen.\n{-} De rebellen winnen als een held de plannen bemachtigt.",
+      "eventText": "De deur schuift open en koele lucht stroomt uit het complex naar buiten.\n\n{-} Een held kan een interactie uitvoeren op de terminal ({I}) om de plannen op te halen.\n{-} De rebellen winnen wanneer een held de plannen bemachtigt.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Door 1",
               "GUID": "dbaf96f9-fef5-4363-aabb-a31a7572fdb4",
-              "theText": "De deur leidt in het keizerlijke complex.\n\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).",
+              "theText": "De deur leidt naar het keizerlijke complex.\n\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).",
               "buttonList": []
             }
           ],
@@ -225,7 +314,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Als <color=“red”>R2-D2</color> of <color=“red”>C-3PO</color> aan het verdedigen is en ze niet binnen 4 velden van een held zijn, verwijder dan 1 dobbelsteen van hun verdedigingsworp.\r\n{-} Een held kan een interactie uitvoeren op de terminal ({I}) om de plannen te krijgen.\n{-} De rebellen winnen als een held de plannen bemachtigt.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=“red”>R2-D2</color> en <color=“red”>C-3PO</color> zijn verslagen.",
+          "theText": "{-} Als <color=\"red\">R2-D2</color> of <color=\"red\">C-3PO</color> aan het verdedigen is en ze niet binnen 4 velden van een held zijn, verwijder dan 1 dobbelsteen van hun verdedigingsdobbelstenen.\n{-} Een held kan een interactie uitvoeren op de terminal ({I}) om de plannen op te halen.\n{-} De rebellen winnen wanneer een held de plannen bemachtigt.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=\"red\">R2-D2</color> en <color=\"red\">C-3PO</color> verslagen zijn.",
           "GUID": "61cba9b9-6332-4443-bdae-557c1e9d0509",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -233,181 +322,10 @@
       ]
     },
     {
-      "eventName": "Narrow Path Entered",
-      "GUID": "6095b3ff-c7aa-4f56-855f-c650b8ea2b3d",
-      "eventText": "Als je aan de klim begint, grijpen de Tusken Raiders hun gaffi-stokken en stormen naar voren om je aan te vallen.\n\n{-} De missie gaat verder als de deur naar het complex vernietigd is.",
-      "eventActions": [
-        {
-          "theText": "{-} Helden hebben <color=“red”>R2-D2</color> en <color=“red”>C-3PO</color> als bondgenoten.\r\n{-} Als <color=“red”>R2-D2</color> of <color=“red”>C-3PO</color> aan het verdedigen is en ze niet binnen 4 velden van een held zijn, verwijder dan 1 dobbelsteen van hun verdedigingsworp.\n{-} Keizerlijke missietokens vertegenwoordigen barricades en vallen en zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein. Een held kan een interactie uitvoeren op een token om te proberen het te verwijderen.\n{-} Tusken Raiders op het smalle pad (Twin Shadows tegel 05B) zijn sluipschutters die kunnen richten op figuren op het hele speelbord als ze daartoe opdracht krijgen.\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).\n{-} De missie gaat verder zodra de deur naar het complex vernietigd is.\n{-} De rebellen verliezen wanneer alle helden gewond zijn en <color=“red”>R2-D2</color> en <color=“red”>C-3PO</color> zijn verslagen.",
-          "GUID": "268db73d-8bcc-4841-bbf0-359438006dbf",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        },
-        {
-          "shortText": "Ga het complex binnen.",
-          "longText": null,
-          "GUID": "f4e547b5-28c8-4018-a9a3-8b4e12c1b896",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        },
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Narrow Path",
-              "GUID": "184cd330-058f-4fb3-8d0a-ca0be4e2003f",
-              "theText": "Een kronkelig, smal pad leidt langs de zijkant van de ravijn. Het is een lange en moeilijke klim.\n\n{-} De eerste keer dat een rebellenfiguur het smalle pad betreedt, klik je op “klimmen”.",
-              "buttonList": [
-                {
-                  "GUID": "7e4b0da1-e739-4b84-9a47-669ac60f6b35",
-                  "theText": "Klimmen"
-                }
-              ]
-            }
-          ],
-          "GUID": "4ba0d02d-9246-4e07-b06c-02ac8db71652",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Slice Attempt",
-      "GUID": "cd191d59-7dad-4c14-9c47-7e0dd92e7c35",
+      "eventName": "R2-D2 defeated",
+      "GUID": "fc9ebd58-d346-4f33-b590-597e66ab759b",
       "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je begint de terminal te hacken.\n\n{-} Test {I}. Pas +1 {B} toe voor elke forceertoken op de terminal en leg dan alle forceertokens op de terminal af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "ca752a8c-2b8d-4be0-8b18-fc19102c0244",
-              "theText": "Het beveiligingssysteem houdt stand. Je moet het blijven proberen.\n\n{-} Plaats 1 forceertoken op de terminal voor elk geworpen {B} symbool."
-            }
-          ],
-          "GUID": "e4c03dbf-00c5-4d1a-8bcb-f5076f424259",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Heat of the Suns",
-      "GUID": "299727e4-b187-4222-8aa9-1dbabeff6a99",
-      "eventText": "De hitte van de tweelingzon van Tatooine is genadeloos. Je voelt je kracht wegglippen.\n\n{-} Elke held test {K}. Elke held die faalt wordt <color=“red”>verzwakt</color>.",
       "eventActions": []
-    },
-    {
-      "eventName": "Yellow Barricade Removed",
-      "GUID": "26dc59a7-333d-4647-8dc2-52cb50c6e229",
-      "eventText": "De poort begeeft het uiteindelijk en schuift open. Tegelijkertijd beginnen de alarmen door de woestijnhitte heen te loeien.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Yellow Barricade 1",
-              "GUID": "c55b4777-006c-42a1-b39a-29289b569803",
-              "theText": "Het Rijk heeft hier een hek neergezet met een ingewikkeld slot.\n\n{-} Een held kan een interactie uitvoeren op het hek om te proberen het slot te openen.",
-              "buttonList": [
-                {
-                  "GUID": "99380c8c-4c08-4cfb-81e8-f4affca71eb6",
-                  "theText": "{A} Saboteer het slot"
-                }
-              ]
-            },
-            {
-              "entityName": "Yellow Barricade 2",
-              "GUID": "74859529-6b01-44b0-b76d-fb1d541d9a16",
-              "theText": "Het Rijk heeft hier een hek neergezet met een ingewikkeld slot.\n\n{-} Een held kan een interactie uitvoeren op het hek om te proberen het slot te openen.",
-              "buttonList": [
-                {
-                  "GUID": "1ef4a3cb-dd67-4906-ae0c-cbf3bbc40723",
-                  "theText": "{A} Saboteer het slot"
-                }
-              ]
-            },
-            {
-              "entityName": "DP Yellow",
-              "GUID": "18645343-6037-4abd-99b5-80db2d2badca",
-              "theText": null,
-              "buttonList": []
-            }
-          ],
-          "GUID": "3a8f0b64-437d-41a5-926a-58d91d60fc7e",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Yellow Attempt",
-      "GUID": "acd6547b-e222-4702-b92e-b661c92881c1",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je probeert het slot van de poort te openen.\n\n{-} Test {I}. Pas +1 {B} toe voor elk forceertoken op de gele missietokens en leg daarna alle forceertokens op de gele missietokens af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "6964be2e-8bd2-4557-86ef-f4810f3d8a81",
-              "theText": "Je boekt wat vooruitgang, maar het slot gaat nog niet open. Je moet blijven proberen.\n\n{-} Plaats 1 forceertoken op de gele missietokens voor elk geworpen {B} symbool."
-            }
-          ],
-          "GUID": "27424fb1-bd9f-4fc6-8aae-48463fc61560",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Green Attempt",
-      "GUID": "542c0da1-3d1d-4ac6-89b9-65a0caabcb9c",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je begint de rotsen weg te halen.\n\n{-} Test {K}. Pas +1 {B} toe voor elk forceertoken op de groene missietokens en leg daarna alle forceertokens op de groene missietokens af. Voer hieronder het aantal successen in.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "973ea2cf-cda4-4a17-ab62-9a2e78eea4e8",
-              "theText": "Je boekt enige vooruitgang, maar je bent er nog niet. Je moet het blijven proberen.\n\n{-} Plaats 1 forceertoken op de groene missietokens voor elk geworpen {B} symbool."
-            }
-          ],
-          "GUID": "96bc9c81-e8ad-46cc-9e7f-baf859c68feb",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Green Barricade Removed",
-      "GUID": "c209ae7c-8d30-4cc8-9ecb-9b5f5dcd6442",
-      "eventText": "Het lukt je eindelijk om een pad naar voren vrij te maken.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Green Barricade",
-              "GUID": "49d6124c-d86a-434e-a77a-e58c3f95ec6d",
-              "theText": "De Tusken Raiders hebben een rotsverschuiving veroorzaakt. Enorme rotsen blokkeren de weg.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de rotsen om te proberen ze te verwijderen.",
-              "buttonList": [
-                {
-                  "GUID": "6a104a60-888b-42a4-bd3e-a4d0ac0bb106",
-                  "theText": "{A} Verwijderen"
-                }
-              ]
-            },
-            {
-              "entityName": "DP Green 1",
-              "GUID": "44ef3229-c7e6-4e42-beb6-5822a07871bb",
-              "theText": null,
-              "buttonList": []
-            }
-          ],
-          "GUID": "26b2946d-b711-49a9-be25-53beb72ae812",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
     },
     {
       "eventName": "Red 1 Attempt",
@@ -415,16 +333,16 @@
       "eventText": "",
       "eventActions": [
         {
-          "mainText": "Je probeert je voorzichtig door de ontstekers heen te worstelen.\n\n{-} Test {J}. Pas +1 {B} toe voor elk forceertoken op het rode missietoken en leg daarna alle forceertokens op de rode missietoken af. Voer hieronder het aantal successen in.",
+          "mainText": "Voorzichtig probeer je je een weg tussen de valmechanismen door te banen.\n\n{-} Test {J}. Pas +1 {B} toe voor elk forceertoken op de rode missietoken en leg daarna alle forceertokens op de rode missietoken af. Voer hieronder het aantal successen in.",
           "failText": "",
           "inputList": [
             {
               "GUID": "f7e382d1-948a-4380-af84-3a39e62cb6ca",
-              "theText": "Een val ontploft vlak bij je en vlijmscherpe scherven vliegen in het rond.\n\n{-} Je lijdt 2 {H} en wordt <color=“red”>bloedend</color>."
+              "theText": "Een val ontploft vlak bij je en vlijmscherpe scherven vliegen in het rond.\n\n{-} Je lijdt 2 {H} en wordt <color=\"red\">bloedend</color>."
             },
             {
               "GUID": "6ca67ab1-3a1e-4970-8462-4c17a9c1aafa",
-              "theText": "Je baant je een veilige weg naar de overkant en maakt de vallen onschadelijk."
+              "theText": "Je bereikt veilig de overkant en schakelt de vallen uit."
             }
           ],
           "GUID": "453a52a9-7e27-43ea-904b-1f65a10712df",
@@ -436,14 +354,14 @@
     {
       "eventName": "Red 1 Removed",
       "GUID": "2ff5ef48-9a4a-4b40-88d5-ef684b983dfd",
-      "eventText": "Terwijl je de basis nadert, komt er een stormtrooper-commandant naar buiten die naar zijn troepen schreeuwt: “Vecht harder, idioten! We kunnen niet toestaan dat dit rebellengespuis alles ongedaan maakt waarvoor we hebben gewerkt!”",
+      "eventText": "Terwijl je de basis nadert, komt er een stormtroopercommandant naar buiten en schreeuwt naar zijn troepen: \"Vecht harder, dwazen! We kunnen niet toestaan dat dit rebellenuitschot alles wat we hebben bereikt ongedaan maakt!\"",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Red Barricade 1",
               "GUID": "57e3a45a-3a03-4f3c-9553-f52c68a87e6f",
-              "theText": "Het Rijk heeft het smalle pad voorzien van mijnen en andere vallen.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de vallen om te proberen ze te verwijderen.",
+              "theText": "Het Rijk heeft het smalle pad met mijnen en andere vallen bezaaid.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de vallen om te proberen ze te verwijderen.",
               "buttonList": [
                 {
                   "GUID": "aac3d39f-e591-49c4-b5e9-5d22d598d0a3",
@@ -485,16 +403,16 @@
       "eventText": "",
       "eventActions": [
         {
-          "mainText": "Je probeert je voorzichtig door de ontstekers heen te worstelen.\n\n{-} Test {J}. Pas +1 {B} toe voor elk forceertoken op het rode missietoken en leg daarna alle forceertokens op de rode missietoken af. Voer hieronder het aantal successen in.",
+          "mainText": "Voorzichtig probeer je je een weg tussen de valmechanismen door te banen.\n\n{-} Test {J}. Pas +1 {B} toe voor elk forceertoken op de rode missietoken en leg daarna alle forceertokens op de rode missietoken af. Voer hieronder het aantal successen in.",
           "failText": "",
           "inputList": [
             {
               "GUID": "1b13b451-d282-4c28-9f92-2801fb06806e",
-              "theText": "Een val ontploft vlak bij je en vlijmscherpe scherven vliegen in het rond.\n\n{-} Je lijdt 2 {H} en wordt <color=“red”>bloedend</color>."
+              "theText": "Een val ontploft vlak bij je en vlijmscherpe scherven vliegen in het rond.\n\n{-} Je lijdt 2 {H} en wordt <color=\"red\">bloedend</color>."
             },
             {
               "GUID": "fad88174-952b-43be-951c-81e24c393fac",
-              "theText": "Je baant je een veilige weg naar de overkant en maakt de vallen onschadelijk."
+              "theText": "Je bereikt veilig de overkant en schakelt de vallen uit."
             }
           ],
           "GUID": "43a0d136-2318-46e0-9ff8-4950f16b6092",
@@ -513,7 +431,7 @@
             {
               "entityName": "Red Barricade 2",
               "GUID": "70d39b82-ca4f-4e94-8795-392d073f99f1",
-              "theText": "Het Rijk heeft het smalle pad voorzien van mijnen en andere vallen.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de vallen om te proberen ze te verwijderen.",
+              "theText": "Het Rijk heeft het smalle pad met mijnen en andere vallen bezaaid.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de vallen om te proberen ze te verwijderen.",
               "buttonList": [
                 {
                   "GUID": "0b00ba43-e951-492c-aad6-a8210c5b63cb",
@@ -523,6 +441,88 @@
             }
           ],
           "GUID": "de36bdbd-56eb-4ff4-be87-21fe52d9503b",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Slice Attempt",
+      "GUID": "cd191d59-7dad-4c14-9c47-7e0dd92e7c35",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je begint de terminal te hacken.\n\n{-} Test {I}. Pas +1 {B} toe voor elke forceertoken op de terminal en leg dan alle forceertokens op de terminal af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "ca752a8c-2b8d-4be0-8b18-fc19102c0244",
+              "theText": "De beveiligingssystemen houden stand. Je moet blijven proberen.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de terminal."
+            }
+          ],
+          "GUID": "e4c03dbf-00c5-4d1a-8bcb-f5076f424259",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Yellow Attempt",
+      "GUID": "acd6547b-e222-4702-b92e-b661c92881c1",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je probeert het slot van de poort te forceren.\n\n{-} Test {I}. Pas +1 {B} toe voor elk forceertoken op de gele missietokens en leg daarna alle forceertokens op de gele missietokens af. Voer hieronder het aantal successen in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "6964be2e-8bd2-4557-86ef-f4810f3d8a81",
+              "theText": "Je boekt wat vooruitgang, maar het slot gaat nog niet open. Je moet blijven proberen.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de gele missietokens."
+            }
+          ],
+          "GUID": "27424fb1-bd9f-4fc6-8aae-48463fc61560",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Yellow Barricade Removed",
+      "GUID": "26dc59a7-333d-4647-8dc2-52cb50c6e229",
+      "eventText": "De poort geeft uiteindelijk mee en schuift open. Tegelijkertijd loeien alarmen door de verzengende woestijnhitte.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Yellow Barricade 1",
+              "GUID": "c55b4777-006c-42a1-b39a-29289b569803",
+              "theText": "Het Keizerrijk heeft hier een hek geplaatst met een ingewikkeld slot.\n\n{-} Een held kan een interactie uitvoeren op het hek om te proberen het slot te forceren.",
+              "buttonList": [
+                {
+                  "GUID": "99380c8c-4c08-4cfb-81e8-f4affca71eb6",
+                  "theText": "{A} Forceer het slot"
+                }
+              ]
+            },
+            {
+              "entityName": "Yellow Barricade 2",
+              "GUID": "74859529-6b01-44b0-b76d-fb1d541d9a16",
+              "theText": "Het Keizerrijk heeft hier een hek geplaatst met een ingewikkeld slot.\n\n{-} Een held kan een interactie uitvoeren op het hek om te proberen het slot te forceren.",
+              "buttonList": [
+                {
+                  "GUID": "1ef4a3cb-dd67-4906-ae0c-cbf3bbc40723",
+                  "theText": "{A} Forceer het slot"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Yellow",
+              "GUID": "18645343-6037-4abd-99b5-80db2d2badca",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "3a8f0b64-437d-41a5-926a-58d91d60fc7e",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         }
@@ -564,9 +564,21 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
+      "entityName": "DP 3PO",
+      "GUID": "88ae215d-c925-4758-a66f-a7f5ac77cc76",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETusken 1",
+      "GUID": "c64deca0-e973-44f4-b85c-8dec42caf319",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETusken 2",
+      "GUID": "0623b2ab-5bd4-411e-93a3-709ae0669b42",
+      "mainText": null,
       "buttonList": []
     },
     {
@@ -588,18 +600,6 @@
       "buttonList": []
     },
     {
-      "entityName": "DP R2-D2",
-      "GUID": "a68aaf34-7548-4f9c-b87b-eb91a95e637b",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP 3PO",
-      "GUID": "88ae215d-c925-4758-a66f-a7f5ac77cc76",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
       "entityName": "DP HTrooper 2",
       "GUID": "92bd617d-f424-4259-9959-860ee748d91d",
       "mainText": null,
@@ -608,6 +608,18 @@
     {
       "entityName": "DP Probe Droid 1",
       "GUID": "f1e88402-ee51-4558-a1c2-d98ce94f2ac8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP R2-D2",
+      "GUID": "a68aaf34-7548-4f9c-b87b-eb91a95e637b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "f2501918-e1f9-4f32-89aa-0036b110941f",
       "mainText": null,
       "buttonList": []
     },
@@ -624,21 +636,15 @@
       "buttonList": []
     },
     {
-      "entityName": "DP ETusken 1",
-      "GUID": "c64deca0-e973-44f4-b85c-8dec42caf319",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP ETusken 2",
-      "GUID": "0623b2ab-5bd4-411e-93a3-709ae0669b42",
+      "entityName": "DP Yellow",
+      "GUID": "17e3c444-37c0-455d-a752-80613721db11",
       "mainText": null,
       "buttonList": []
     },
     {
       "entityName": "Door 1",
       "GUID": "78ddaab1-3664-4f2b-b0a2-f23332f9c12f",
-      "mainText": "De deur leidt in het keizerlijke complex.\n\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).",
+      "mainText": "De deur leidt naar het keizerlijke complex.\n\n{-} De deur is vergrendeld. Een figuur kan de deur aanvallen (gezondheid: *1*, verdediging: 1 {G}).",
       "buttonList": [
         {
           "GUID": "872b5b98-5374-4247-963e-4d959c64746e",
@@ -647,65 +653,15 @@
       ]
     },
     {
-      "entityName": "Narrow Path",
-      "GUID": "d4b69a45-37c8-4848-a698-77d99b609ea6",
-      "mainText": "Een kronkelig, smal pad leidt langs de zijkant van de ravijn. Het is een lange en moeilijke klim.\n\n{-} De eerste keer dat een rebellenfiguur het smalle pad betreedt, klik je op “klimmen”.",
-      "buttonList": [
-        {
-          "GUID": "2ad8ba7e-7ab8-4cf8-bb79-d7e3c8026cad",
-          "theText": "Klimmen"
-        }
-      ]
-    },
-    {
-      "entityName": "Terminal 1",
-      "GUID": "c133c9c6-cdb6-4425-8a1c-96a57a8fb816",
-      "mainText": "Een losse terminal bevat de operationele gegevens.\n\n{-} Een held kan een interactie uitvoeren op de terminal ({I}) om te proberen de plannen te achterhalen.",
-      "buttonList": [
-        {
-          "GUID": "0c1161c8-8048-459b-852f-731b530b1628",
-          "theText": "{A} Hacken"
-        }
-      ]
-    },
-    {
-      "entityName": "Yellow Barricade 1",
-      "GUID": "8797db84-fad6-4efd-83bf-ecc769129664",
-      "mainText": "Het Rijk heeft hier een hek neergezet met een ingewikkeld slot.\n\r\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op het hek om te proberen het slot te openen.",
-      "buttonList": [
-        {
-          "GUID": "7c16c517-1937-4b8b-bf77-19dad67e2270",
-          "theText": "{A} Saboteer het slot"
-        }
-      ]
-    },
-    {
-      "entityName": "Yellow Barricade 2",
-      "GUID": "0aae7804-0de7-4bad-a479-996cd1618ec5",
-      "mainText": "Het Rijk heeft hier een hek neergezet met een ingewikkeld slot.\n\r\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op het hek om te proberen het slot te openen.",
-      "buttonList": [
-        {
-          "GUID": "57e1da51-c71e-426c-b63a-6a5c4c4c3bab",
-          "theText": "{A} Saboteer het slot"
-        }
-      ]
-    },
-    {
-      "entityName": "DP Yellow",
-      "GUID": "17e3c444-37c0-455d-a752-80613721db11",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Red",
-      "GUID": "f2501918-e1f9-4f32-89aa-0036b110941f",
-      "mainText": null,
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
     },
     {
       "entityName": "Green Barricade",
       "GUID": "680b548b-d73f-45df-b8ed-3420a6a6bf21",
-      "mainText": "De Tusken Raiders hebben een rotsverschuiving veroorzaakt. Enorme rotsen blokkeren de weg.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de rotsen om te proberen ze te verwijderen.",
+      "mainText": "De Tusken Raiders hebben een rotslawine veroorzaakt. Enorme rotsblokken versperren de weg.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de rotsen om te proberen ze te verwijderen.",
       "buttonList": [
         {
           "GUID": "123edccc-7bea-426b-b184-11b79b69e6d8",
@@ -714,9 +670,20 @@
       ]
     },
     {
+      "entityName": "Narrow Path",
+      "GUID": "d4b69a45-37c8-4848-a698-77d99b609ea6",
+      "mainText": "Een kronkelig, smal pad leidt langs de zijkant van de ravijn. Het is een lange en moeilijke klim.\n\n{-} De eerste keer dat een rebellenfiguur het smalle pad betreedt, klik je op \"klimmen\".",
+      "buttonList": [
+        {
+          "GUID": "2ad8ba7e-7ab8-4cf8-bb79-d7e3c8026cad",
+          "theText": "Klimmen"
+        }
+      ]
+    },
+    {
       "entityName": "Red Barricade 1",
       "GUID": "07575fd7-76b8-4c39-9efc-ecb61c267043",
-      "mainText": "Het Rijk heeft het smalle pad voorzien van mijnen en andere vallen.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de vallen om te proberen ze te verwijderen.",
+      "mainText": "Het Rijk heeft het smalle pad met mijnen en andere vallen bezaaid.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de vallen om te proberen ze te verwijderen.",
       "buttonList": [
         {
           "GUID": "785599b8-04f2-473a-90bb-fe690c02ae5e",
@@ -727,11 +694,44 @@
     {
       "entityName": "Red Barricade 2",
       "GUID": "3d438bf3-6e55-4faa-b215-fc89351398e1",
-      "mainText": "Het Rijk heeft het smalle pad voorzien van mijnen en andere vallen.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de vallen om te proberen ze te verwijderen.",
+      "mainText": "Het Rijk heeft het smalle pad met mijnen en andere vallen bezaaid.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op de vallen om te proberen ze te verwijderen.",
       "buttonList": [
         {
           "GUID": "b6c0c6a5-db87-4954-ac7a-e1e80743fa5e",
           "theText": "{A} Verwijderen"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "c133c9c6-cdb6-4425-8a1c-96a57a8fb816",
+      "mainText": "Een eenzame terminal bevat de operationele gegevens.\n\n{-} Een held kan een interactie uitvoeren op de terminal ({I}) om te proberen de plannen op te halen.",
+      "buttonList": [
+        {
+          "GUID": "0c1161c8-8048-459b-852f-731b530b1628",
+          "theText": "{A} Hacken"
+        }
+      ]
+    },
+    {
+      "entityName": "Yellow Barricade 1",
+      "GUID": "8797db84-fad6-4efd-83bf-ecc769129664",
+      "mainText": "Het Keizerrijk heeft hier een hek geplaatst met een ingewikkeld slot.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op het hek om te proberen het slot te forceren.",
+      "buttonList": [
+        {
+          "GUID": "7c16c517-1937-4b8b-bf77-19dad67e2270",
+          "theText": "{A} Forceer het slot"
+        }
+      ]
+    },
+    {
+      "entityName": "Yellow Barricade 2",
+      "GUID": "0aae7804-0de7-4bad-a479-996cd1618ec5",
+      "mainText": "Het Keizerrijk heeft hier een hek geplaatst met een ingewikkeld slot.\n\n{-} Keizerlijke missietokens zijn onbegaanbaar terrein. Tusken Raiders beschouwen keizerlijke missietokens als normaal terrein.\n{-} Een held kan een interactie uitvoeren op het hek om te proberen het slot te forceren.",
+      "buttonList": [
+        {
+          "GUID": "57e1da51-c71e-426c-b63a-6a5c4c4c3bab",
+          "theText": "{A} Forceer het slot"
         }
       ]
     }

@@ -25,7 +25,7 @@ public class TitleController : MonoBehaviour
 	public Sound soundController;
 	public NewGameScreen newGameScreen;
 	public TitleText titleText;
-	public GameObject donateButton, docsButton, versionButton, tutorialGoButton, sagaClassicLayoutContainer, campaignContainer;
+	public GameObject donateButton, docsButton, versionButton, tutorialGoButton, sagaClassicLayoutContainer, campaignContainer, newGameButton, newCampaignButton, helpButton, settingsPanel;
 	public VolumeProfile volume;
 	public Button continueButton, campaignContinueButton, campaignLoadButton;
 	public Transform busyIconTF;
@@ -50,6 +50,7 @@ public class TitleController : MonoBehaviour
 	private NetworkStatus networkStatus;
 	private GitHubResponse gitHubResponse = null;
 	private bool skipDropdown = true;
+	private bool isHelpOpen = false;
 
 	void Start()
 	{
@@ -310,19 +311,18 @@ public class TitleController : MonoBehaviour
 	{
 		EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
-		//GlowEngine.FindUnityObject<SettingsScreen>().Show( OnSettingsClose );
-		GlowEngine.FindUnityObject<SettingsPanel>().Show( OnSettingsClose );
+		GlowEngine.FindUnityObject<SettingsPanel>().Show(
+			( SettingsCommand s ) => OnExitAppButton(),
+			BiomeType.Menu,
+			OnSettingsClose );
 	}
 
-	void OnSettingsClose( SettingsCommand s )
+	void OnSettingsClose()
 	{
-#if UNITY_EDITOR
-		// Exits Play mode in the Unity Editor
-		EditorApplication.isPlaying = false;
-#else
-            // Quits the built application
-            Application.Quit();
-#endif
+		if ( sagaToggle.isOn )
+			EventSystem.current.SetSelectedGameObject( newGameButton );
+		else if ( campaignToggle.isOn )
+			EventSystem.current.SetSelectedGameObject( newCampaignButton );
 	}
 
 	public void OnCloseExpansions()
@@ -528,6 +528,27 @@ public class TitleController : MonoBehaviour
 		//pulse scale if network error or wrong version
 		if ( networkStatus == NetworkStatus.Error || networkStatus == NetworkStatus.WrongVersion )
 			busyIconTF.localScale = GlowEngine.SineAnimation( .9f, 1.1f, 15 ).ToVector3();
+
+		//game controller input
+		if ( InputManager.Instance.settingsOpenCloseInput
+			&& !InputManager.Instance.settingsOpen
+			&& !InputManager.Instance.uiAnimationsPlaying
+			&& !isHelpOpen )
+		{
+			OnOptions();
+		}
+
+		//if no UI element is currently selected, select the first button of the active panel so that player can navigate with controller/keyboard
+		//only do this if settings panel and help overlay are not active, otherwise it will override the settings panel's selected button
+		if ( !settingsPanel.activeInHierarchy &&
+			!isHelpOpen &&
+			EventSystem.current.currentSelectedGameObject == null )
+		{
+			if ( sagaToggle.isOn )
+				EventSystem.current.SetSelectedGameObject( newGameButton );
+			else if ( campaignToggle.isOn )
+				EventSystem.current.SetSelectedGameObject( newCampaignButton );
+		}
 	}
 
 	private IEnumerator CheckVersion()
@@ -693,6 +714,7 @@ public class TitleController : MonoBehaviour
 			//check if saved state is valid
 			continueButton.interactable = IsSagaSessionValid( SessionMode.Saga );
 			panelDescriptionText.text = DataStore.uiLanguage.uiCampaign.sagaDescriptionUC;
+			EventSystem.current.SetSelectedGameObject( newGameButton );
 		}
 		else if ( campaignToggle.isOn )
 		{
@@ -703,16 +725,28 @@ public class TitleController : MonoBehaviour
 			campaignContainer.SetActive( true );
 			campaignContinueButton.interactable = IsSagaSessionValid( SessionMode.Campaign );
 			campaignPanelDescriptionText.text = DataStore.uiLanguage.uiCampaign.campaignDescriptionUC;
+			EventSystem.current.SetSelectedGameObject( newCampaignButton );
 		}
 	}
 
 	public void OnHelpClick()
 	{
-		helpPanel.Show();
+		isHelpOpen = true;
+		helpPanel.Show( () =>
+		{
+			EventSystem.current.SetSelectedGameObject( helpButton );
+			isHelpOpen = false;
+		} );
 	}
 
 	public void OnExitAppButton()
 	{
+#if UNITY_EDITOR
+		// Exits Play mode in the Unity Editor
+		EditorApplication.isPlaying = false;
+#else
+		// Quits the built application
 		Application.Quit();
+#endif
 	}
 }

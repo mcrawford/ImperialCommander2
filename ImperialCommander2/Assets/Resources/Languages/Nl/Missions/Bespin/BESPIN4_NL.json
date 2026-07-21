@@ -11,77 +11,151 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Campaign Defeat Yes",
+      "GUID": "6a66d0ea-65a9-452c-a3f1-edc5fac52ed2",
+      "eventText": "Jullie missie is een stuk ingewikkelder geworden en het lukt je maar moeilijk om alle puzzelstukken in elkaar te laten vallen. Waarom vallen Trandoshans burgers lastig met vragen over guerrillastrijders? Hoe komen ze ermee weg, recht onder de neus van de Wing Guard? En waarom zou een premiejager zo berucht als Bossk zich op Cloud City bevinden?\n\nOp het hoofdkwartier merk je hoe moeilijk het wordt om de soldaten gemotiveerd te houden. De publieke steun brokkelt af en nu huurlingen vrij door de straten trekken, zijn de gevaren van een band met het Verzet ineens tastbaar geworden.\n\nGevaarlijk of niet, jullie hebben nog steeds een missie. Geruchten dat Bossk winst haalt uit deze chaos door slaven te verkopen versterken je vastberadenheid alleen maar. Als deze hagedissen een rol willen spelen in dit conflict, dan zullen ze het voelen.\n\n{-} Elke held ontvangt 2 XP.\n{-} De helden ontvangen 300 credits per held.\n{-} De volgende actieve missie is \"Vrijheidsstrijders\".",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign No",
+      "GUID": "e63594d1-6da1-41e8-a490-07d49aaebcb4",
+      "eventText": "{-} Elke held ontvangt 1 XP.\n{-} De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign Win Yes",
+      "GUID": "af917fbd-9915-436a-b294-4372d700417c",
+      "eventText": "De aanwezigheid van de beruchte premiejager Bossk in Cloud City baart je zorgen. Hij neemt geen kleine opdrachten aan, wat betekent dat hij hier is voor iets groots, bijvoorbeeld keizerlijke codes.\n\nDie zorgen nemen af wanneer je terugkeert naar het hoofdkwartier en daar een paar nieuwe gezichten aantreft. Je terughoudendheid tijdens het eerdere gevecht heeft de publieke steun jullie kant op getrokken. De bevolking is de onderdrukking zat en op zijn minst enkelen zijn bereid zich te verzetten.\n\nDe jongen die je eerder van de Trandoshans hebt gered stapt naar voren. \"Bedankt dat jullie me hebben geholpen, maar veel anderen zijn gevangengenomen voordat jullie arriveerden. Als jullie hen kunnen bevrijden, weet ik zeker dat we genoeg steun hebben om een echte opstand te beginnen!\"\n\nDe woorden zijn oprecht, maar de jongen heeft ook een punt. Naarmate de rangen van de guerrillastrijders groeien, nemen ook jullie middelen en kansen om de codes te vinden toe. Zonder aarzelen ga je op weg om de verdwenen burgers op te sporen.\n\n{-} Elke held ontvangt 3 XP.\n{-} De helden ontvangen 300 credits per held.\n{-} De volgende actieve missie is \"Vrijheidsstrijders\".",
+      "eventActions": []
+    },
+    {
+      "eventName": "Close Door East",
+      "GUID": "49197284-30ab-4c35-9933-f13a29eb02f6",
+      "eventText": "De deur slaat dicht.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate1",
-              "GUID": "b82f055b-5d71-4291-8c3f-2c1c8fb5d663",
-              "theText": "Een oud voorraadkrat.",
+              "entityName": "Door East",
+              "GUID": "fdb1d442-b356-4083-af6c-b8ad1ce792a2",
+              "theText": "Een stevige deur leidt naar de beveiligde kamer.",
               "buttonList": [
                 {
-                  "GUID": "38b1323a-78ed-44b6-b22f-fb74d2ab61b1",
+                  "GUID": "acc76d78-a677-43b4-a2aa-3f48cdc18afa",
                   "theText": "{A} Openen"
                 }
               ]
             }
           ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "GUID": "cd1cafac-0ff8-49a6-ad3d-03c701b65040",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         }
       ]
     },
     {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Close Door North",
+      "GUID": "6d6f825e-35c9-47b6-8c5b-c9836246bf3f",
+      "eventText": "De deur slaat dicht.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate2",
-              "GUID": "3f21ac9a-6588-4e40-9879-3fead6127ca0",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
+              "entityName": "Door North",
+              "GUID": "f46d74b5-4faa-4805-ae17-48d1f98e34fd",
+              "theText": "Een stevige deur leidt naar de beveiligde kamer.",
+              "buttonList": [
+                {
+                  "GUID": "0cf42f95-a288-4475-bf17-b348c154fc1d",
+                  "theText": "{A} Openen"
+                }
+              ]
             }
           ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "GUID": "a8787dd7-137d-4661-83e0-0a2f8451594f",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         }
       ]
     },
     {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Close Door West",
+      "GUID": "ed24923f-3082-4155-b085-02eaeca68fec",
+      "eventText": "De deur slaat dicht.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate3",
-              "GUID": "4c17c604-5b46-4746-97bf-fc1c43224792",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
+              "entityName": "Door West",
+              "GUID": "b259c703-acbe-43ed-971c-14f8360dc97b",
+              "theText": "Een stevige deur leidt naar de beveiligde kamer.",
+              "buttonList": [
+                {
+                  "GUID": "7edc5913-7e3c-4d06-b3c7-3e6e76ef2e9f",
+                  "theText": "{A} Openen"
+                }
+              ]
             }
           ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "GUID": "f07a171d-1337-4920-ad13-89dfe1075ff8",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Niet in staat iedereen veilig weg te krijgen, worden jullie gedwongen risico’s te nemen om te ontsnappen. Het is onmogelijk te weten of er burgers gewond zijn geraakt. Morgen zullen de krantenkoppen luiden: \"Guerrillastrijders brengen burgers in gevaar\" en maar weinigen zullen dat verhaal in twijfel trekken.\n\n{-} De rebellen verliezen de missie.",
+      "eventActions": [
+        {
+          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne \"The Bespin Gambit\"?",
+          "buttonList": [
+            {
+              "GUID": "8c41b77a-a7cd-4734-8eb0-56a5b4e971e3",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "5769735f-2fc1-4ed3-a003-e6b278aac956",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "8a6c9177-e8c5-4197-8f22-823619ef8209",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Keizerlijke troepen beuken op de deuren, maar die houden stand. Nu de burgers veilig met hun families zijn herenigd, bieden velen hun excuses aan voor hun wantrouwen. Sommigen zijn zelfs zo geschokt door de minachting van het Keizerrijk dat ze beloven zich bij de guerrillastrijders aan te sluiten.\n\nAls je hier blijft, breng je deze mensen alleen maar opnieuw in gevaar. Je laat achter welke voorraden je kunt missen en leidt de keizerlijke troepen weg, waarna je verdwijnt in Cloud City.\n\n{-} De rebellen winnen de missie!",
+      "eventActions": [
+        {
+          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne \"The Bespin Gambit\"?",
+          "buttonList": [
+            {
+              "GUID": "5d4975f5-9d56-405d-a712-dff72d0b82d9",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "3544ead1-ad18-49e3-8ef4-02df59d9a415",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "890ba495-9406-40c9-95bc-95fa07603a7c",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
         }
       ]
     },
     {
       "eventName": "Mission Briefing",
       "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Nadat je de voorraden hebt afgeleverd, hoor je buiten een jongetje smeken. “Ik weet niet wie de guerrillastrijders leidt... Ik bedoel radicalen!” De twee Trandoshans stellen je tussenkomst niet op prijs. Tegen de tijd dat de Wing Guard arriveert, is het te laat om een gevecht te vermijden.\r\n\r\n{-} Plaats de helden op het blauw gemarkeerde veld.\r\n{-} Deuren zijn vergrendeld voor keizerlijke figuren.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
+      "eventText": "Nadat je de voorraden hebt afgeleverd, hoor je buiten een jongetje smeken. \"Ik weet niet wie de guerrillastrijders leidt... Ik bedoel radicalen!\" De twee Trandoshans stellen je tussenkomst niet op prijs. Tegen de tijd dat de Wing Guard arriveert, valt een gevecht niet meer te voorkomen.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Deuren zijn vergrendeld voor keizerlijke troepen.\n{-} De rebellen verliezen als alle helden gewond zijn.",
       "eventActions": [
         {
-          "tbText": "Gevangen in het kruisvuur raken burgers in paniek. Sommigen gooien zelfs stenen, omdat ze denken dat jij de agressor bent. Of dat nu terecht is of niet, zonder actie kan dit conflict onschuldige levens kosten.",
+          "tbText": "Gevangen in het kruisvuur raken de burgers in paniek. Sommigen gooien zelfs stenen, omdat ze denken dat jij de aanvaller bent. Of ze nu gelijk hebben of niet, zonder ingrijpen kan deze schermutseling onschuldige levens kosten.",
           "GUID": "2eba5ce0-d6a7-4b01-89a7-5da41b179564",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -124,7 +198,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "{-} Neutrale missietokens stellen burgers voor.\n{-} Helden krijgen {A}: Test {J}. Voordat je gooit, kun je maximaal 2{C} inleveren om +1 {B} toe te passen op de geworpen resultaten voor elke {C} die je hebt ingeleverd. Je mag elke burger binnen 3 velden van je een aantal velden verplaatsen dat gelijk is aan je successen.",
+          "tbText": "{-} Neutrale missietokens stellen burgers voor.\n{-} De helden krijgen {A}: Test {J}. Voordat je gooit, kun je maximaal 2{C} lijden om +1 {B} toe te passen op de geworpen resultaten voor elke {C} die je hebt geleden. Je mag elke burger binnen 3 velden van je een aantal velden verplaatsen dat gelijk is aan je successen.",
           "GUID": "ba8257aa-1b0c-4930-b959-086f1344a60f",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -134,7 +208,7 @@
             {
               "entityName": "Panic Token",
               "GUID": "cafe8c65-6cb9-474f-bbfb-b0322f58bd50",
-              "theText": "Dit is het paniekbeheerstoken.\n\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op “verhoog paniek”.\n{-} Aan het einde van elke ronde, voordat je op “ronde beëindigen” klikt, klik je op “activeer paniek”.",
+              "theText": "Dit is het paniekbeheerstoken.\n\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op \"verhoog paniek\".\n{-} Aan het einde van elke ronde, voordat je op \"ronde beëindigen\" klikt, klik je op \"activeer paniek\".",
               "buttonList": [
                 {
                   "GUID": "019f7b44-0e0f-4dfe-af04-d0fc58ada60f",
@@ -156,7 +230,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "Dit is het paniekbeheerstoken.\n\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op de paniekbeheertoken en dan op “verhoog paniek”.\n{-} Aan het einde van elke ronde, voordat je op “ronde beëindigen” klikt, klik je op de paniekbeheertoken en dan op “activeer paniek”.\r\n{-} Als alle burgers zich in de beveiligde kamer bevinden, er geen keizerlijke figuren in de beveiligde kamer zijn en alle deuren gesloten zijn, zijn de burgers veilig. Klik op het paniekbeheerstoken en selecteer “burgers zijn veilig”.\n{-} De helden winnen als de burgers veilig zijn.",
+          "tbText": "Dit is het paniekbeheertoken.\n\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op de paniekbeheertoken en dan op \"verhoog paniek\".\n{-} Aan het einde van elke ronde, voordat je op \"ronde beëindigen\" klikt, klik je op de paniekbeheertoken en dan op \"activeer paniek\".\n{-} Als alle burgers zich in de beveiligde kamer bevinden, er geen keizerlijke figuren in de beveiligde kamer zijn en alle deuren gesloten zijn, zijn de burgers veilig. Klik op het paniekbeheerstoken en selecteer \"burgers zijn veilig\".\n{-} De helden winnen wanneer de burgers veilig zijn.",
           "GUID": "4009ade8-6a4f-4b16-b978-fa981b0e99cc",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -206,7 +280,7 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Deuren zijn vergrendeld voor keizerlijke figuren.\r\n{-} Neutrale missietokens stellen burgers voor.\r\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op de paniekbeheertoken en dan op “verhoog paniek”.\n{-} Aan het einde van elke ronde, voordat je op “ronde beëindigen” klikt, klik je op de paniekbeheertoken en dan op “activeer paniek”.\r\n{-} Helden krijgen {A}: Test {J}. Voordat je gooit, kun je maximaal 2{C} inleveren om +1 {B} toe te passen op de geworpen resultaten voor elke {C} die je hebt ingeleverd. Je mag elke burger binnen 3 velden van je een aantal velden verplaatsen dat gelijk is aan je successen.\r\n{-} Als alle burgers zich in de beveiligde kamer bevinden, er geen keizerlijke figuren in de beveiligde kamer zijn en alle deuren gesloten zijn, zijn de burgers veilig. Klik op het paniekbeheerstoken en selecteer “burgers zijn veilig”.\r\n{-} De helden winnen als de burgers veilig zijn.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "theText": "{-} Deuren zijn vergrendeld voor keizerlijke troepen.\n{-} Neutrale missietokens stellen burgers voor.\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op de paniekbeheertoken en dan op \"verhoog paniek\".\n{-} Aan het einde van elke ronde, voordat je op \"ronde beëindigen\" klikt, klik je op de paniekbeheertoken en dan op \"activeer paniek\".\n{-} De helden krijgen {A}: Test {J}. Voordat je gooit, kun je maximaal 2{C} lijden om +1 {B} toe te passen op de geworpen resultaten voor elke {C} die je hebt geleden. Je mag elke burger binnen 3 velden van je een aantal velden verplaatsen dat gelijk is aan je successen.\n{-} Als alle burgers zich in de beveiligde kamer bevinden, er geen keizerlijke figuren in de beveiligde kamer zijn en alle deuren gesloten zijn, zijn de burgers veilig. Klik op het paniekbeheerstoken en selecteer \"burgers zijn veilig\".\n{-} De helden winnen wanneer de burgers veilig zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
           "GUID": "1517b95c-7b09-494b-93b3-1e6d57701325",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -214,113 +288,89 @@
       ]
     },
     {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "De keizerlijke troepen beuken op de deuren, maar die houden stand. Veilig herenigd met hun families, verontschuldigen veel burgers zich voor hun verwarring. Na getuige te zijn geweest van de minachting die het keizerrijk toonde, beloven enkelen zelfs om zich bij de guerrillastrijders aan te sluiten.\n\nAls je hier blijft, breng je deze mensen alleen maar opnieuw in gevaar. Je laat achter wat je je kunt veroorloven en leidt de keizerlijke troepen weg, waarna je verdwijnt in Cloud City.\n\n{-} De rebellen winnen de missie!",
-      "eventActions": [
-        {
-          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne “The Bespin Gambit”?",
-          "buttonList": [
-            {
-              "GUID": "5d4975f5-9d56-405d-a712-dff72d0b82d9",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "3544ead1-ad18-49e3-8ef4-02df59d9a415",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "890ba495-9406-40c9-95bc-95fa07603a7c",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Omdat je niet iedereen in veiligheid kunt brengen, moet je wat risico's nemen om te ontsnappen. Het is onmogelijk om te weten of er iemand gewond is geraakt.\r\nMorgen zullen de krantenkoppen luiden: “Guerrillastrijders brengen burgers in gevaar”,  en slechts weinigen zullen dat betwisten.\r\n\r\n{-} De rebellen verliezen de missie.",
-      "eventActions": [
-        {
-          "mainText": "Heb je deze missie gespeeld als onderdeel van de minicampagne “The Bespin Gambit”?",
-          "buttonList": [
-            {
-              "GUID": "8c41b77a-a7cd-4734-8eb0-56a5b4e971e3",
-              "theText": "Ja"
-            },
-            {
-              "GUID": "5769735f-2fc1-4ed3-a003-e6b278aac956",
-              "theText": "Nee"
-            }
-          ],
-          "GUID": "8a6c9177-e8c5-4197-8f22-823619ef8209",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Panic reaches 1",
-      "GUID": "47f2f28d-5240-4d0d-88ac-9a3c338bf57f",
-      "eventText": "Paniek bereikt 1, “Paniekgebeurtenissen actief” ingesteld op 1",
+      "eventName": "Mission Ends Defeat",
+      "GUID": "16f5f233-66ff-4fee-b0e7-4f622c641fb6",
+      "eventText": "",
       "eventActions": []
     },
     {
-      "eventName": "Panic reaches 0",
-      "GUID": "067eee70-bab4-49ed-9f56-7c94d08b090f",
-      "eventText": "Paniek bereikt 0, “Paniekgebeurtenissen actief” en “Paniekgebeurtenissen activeren” ingesteld op 0",
+      "eventName": "Mission Ends Win Murne No",
+      "GUID": "9560afc5-6661-48f1-a146-9564e4489c5c",
+      "eventText": "De helden ontvangen 150 credits per held.",
       "eventActions": []
     },
     {
-      "eventName": "Panic Event",
-      "GUID": "af521935-4626-47a7-be3e-30a744e6d096",
-      "eventText": "Paniekgebeurtenis\n\nPaniek -1\nPaniekgebeurtenissen activeren 0\nPaniekgebeurtenissen resetten 1",
+      "eventName": "Mission Ends Win Murne Yes",
+      "GUID": "d874b01b-f209-4b6a-ab29-e61e1026a6ac",
+      "eventText": "Murne Rin krijgt de beloningskaart \"Cam Droid\".",
       "eventActions": []
     },
     {
-      "eventName": "Panic Event Reset",
-      "GUID": "c20d551e-2801-4834-adf1-15d4594cf1a9",
-      "eventText": "Paniekgebeurtenis resetten\n\nPaniekgebeurtenissen activeren ingesteld op 1\nPaniekgebeurtenissen resetten ingesteld op 0",
+      "eventName": "Murne present",
+      "GUID": "08e45092-174d-4c04-beef-e9f291e44605",
+      "eventText": "",
       "eventActions": []
     },
     {
-      "eventName": "Panic Event 1",
-      "GUID": "ef736139-7856-47e5-a582-796f648e38f5",
-      "eventText": "De burgers schreeuwen en rennen in paniek weg.\r\n\r\n{-} Verplaats de 2 burgers die het dichtst bij de beveiligde kamer staan, maar niet op de beveiligde kamer, 1 veld weg van de beveiligde kamer.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Panic Event 2",
-      "GUID": "67dc26c8-84ca-44a5-9f9d-1d45be030aa4",
-      "eventText": "De panikerende menigte duwt en stoot je heen en weer, en vertrapt je bijna.\r\n\r\n{-} Als {rebel} zich binnen 3 velden en in de zichtlijn van een burger bevindt, gooi dan 1 blauwe dobbelsteen. {rebel} lijdt {H} gelijk aan het aantal geworpen {H}. Anders kies je een andere rebel binnen 3 velden en in de zichtlijn van een burger om de {H} te lijden.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Panic Event 3",
-      "GUID": "2dd01325-bac2-44aa-9321-6ae4505af370",
-      "eventText": "De paniekerige kreten weerklinken door Cloud City en alarmeren nog meer vijandelijke troepen om ter plaatse te komen.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Open Door North",
-      "GUID": "8ca5fd08-a31b-4142-8cab-7652a9a8b9aa",
-      "eventText": "De deur schuift open.",
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Door North",
-              "GUID": "640807a2-476c-47ea-9c5e-9932dfcb82dd",
-              "theText": "Een stevige deur leidt naar de beveiligde kamer.",
+              "entityName": "Crate1",
+              "GUID": "b82f055b-5d71-4291-8c3f-2c1c8fb5d663",
+              "theText": "Een oud voorraadkrat.",
               "buttonList": [
                 {
-                  "GUID": "fc3f1fc5-d3d8-4f7f-8dbc-14201f48c494",
+                  "GUID": "38b1323a-78ed-44b6-b22f-fb74d2ab61b1",
                   "theText": "{A} Openen"
                 }
               ]
             }
           ],
-          "GUID": "ea1dcda8-4077-4bef-8031-c9e5c1030816",
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "3f21ac9a-6588-4e40-9879-3fead6127ca0",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "4c17c604-5b46-4746-97bf-fc1c43224792",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         }
@@ -352,6 +402,31 @@
       ]
     },
     {
+      "eventName": "Open Door North",
+      "GUID": "8ca5fd08-a31b-4142-8cab-7652a9a8b9aa",
+      "eventText": "De deur schuift open.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door North",
+              "GUID": "640807a2-476c-47ea-9c5e-9932dfcb82dd",
+              "theText": "Een stevige deur leidt naar de beveiligde kamer.",
+              "buttonList": [
+                {
+                  "GUID": "fc3f1fc5-d3d8-4f7f-8dbc-14201f48c494",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "ea1dcda8-4077-4bef-8031-c9e5c1030816",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
       "eventName": "Open Door West",
       "GUID": "bb3428a7-c6bc-415b-9785-80b3df6f9d68",
       "eventText": "De deur schuift open.",
@@ -377,79 +452,77 @@
       ]
     },
     {
-      "eventName": "Close Door North",
-      "GUID": "6d6f825e-35c9-47b6-8c5b-c9836246bf3f",
-      "eventText": "De deur klapt dicht.",
+      "eventName": "Out-Flanked",
+      "GUID": "34b4e020-58f9-400d-8d16-687f34463177",
+      "eventText": "Een andere deur zwaait open en de intimiderende gestalte van de premiejager Bossk stapt naar binnen, vergezeld door een woedende beveiligingssofficier. \"Daar zijn ze! Houd ze tegen! Waar betalen we jullie eigenlijk voor?\" roept de officier.",
       "eventActions": [
         {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door North",
-              "GUID": "f46d74b5-4faa-4805-ae17-48d1f98e34fd",
-              "theText": "Een stevige deur leidt naar de beveiligde kamer.",
-              "buttonList": [
-                {
-                  "GUID": "0cf42f95-a288-4475-bf17-b348c154fc1d",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "a8787dd7-137d-4661-83e0-0a2f8451594f",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "d0c527b3-4f2b-4047-9c4e-2477a00b00b0",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "5b55c7d4-1705-4feb-b4a1-0c4be0fe42aa",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG080/Bossk"
         }
       ]
     },
     {
-      "eventName": "Close Door East",
-      "GUID": "49197284-30ab-4c35-9933-f13a29eb02f6",
-      "eventText": "De deur klapt dicht.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door East",
-              "GUID": "fdb1d442-b356-4083-af6c-b8ad1ce792a2",
-              "theText": "Een stevige deur leidt naar de beveiligde kamer.",
-              "buttonList": [
-                {
-                  "GUID": "acc76d78-a677-43b4-a2aa-3f48cdc18afa",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "cd1cafac-0ff8-49a6-ad3d-03c701b65040",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
+      "eventName": "Panic Event",
+      "GUID": "af521935-4626-47a7-be3e-30a744e6d096",
+      "eventText": "Paniekgebeurtenis\n\nPaniek -1\nPaniekgebeurtenissen activeren 0\nPaniekgebeurtenissen reset 1",
+      "eventActions": []
     },
     {
-      "eventName": "Close Door West",
-      "GUID": "ed24923f-3082-4155-b085-02eaeca68fec",
-      "eventText": "De deur klapt dicht.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door West",
-              "GUID": "b259c703-acbe-43ed-971c-14f8360dc97b",
-              "theText": "Een stevige deur leidt naar de beveiligde kamer.",
-              "buttonList": [
-                {
-                  "GUID": "7edc5913-7e3c-4d06-b3c7-3e6e76ef2e9f",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "f07a171d-1337-4920-ad13-89dfe1075ff8",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
+      "eventName": "Panic Event 1",
+      "GUID": "ef736139-7856-47e5-a582-796f648e38f5",
+      "eventText": "De burgers schreeuwen en rennen in paniek weg.\r\n\r\n{-} Verplaats de 2 burgers die het dichtst bij de beveiligde kamer staan, maar niet op de beveiligde kamer, 1 veld weg van de beveiligde kamer.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Panic Event 2",
+      "GUID": "67dc26c8-84ca-44a5-9f9d-1d45be030aa4",
+      "eventText": "De paniekerige menigte duwt en verdringt je van alle kanten en dreigt je bijna onder de voet te lopen.\n\n{-} Als {rebel} zich binnen 3 velden en in de zichtlijn van een burger bevindt, gooi dan 1 blauwe dobbelsteen. {rebel} lijdt {H} gelijk aan het aantal geworpen {H}. Anders kies je een andere rebel binnen 3 velden en in de zichtlijn van een burger om de {H} te lijden.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Panic Event 3",
+      "GUID": "2dd01325-bac2-44aa-9321-6ae4505af370",
+      "eventText": "De paniekerige kreten galmen door Cloud City en lokken nog meer vijandelijke troepen naar de plek van het gevecht.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Panic Event Reset",
+      "GUID": "c20d551e-2801-4834-adf1-15d4594cf1a9",
+      "eventText": "Paniekgebeurtenis reset\n\nPaniekgebeurtenissen activeren ingesteld op 1\nPaniekgebeurtenissen reset ingesteld op 0",
+      "eventActions": []
+    },
+    {
+      "eventName": "Panic reaches 0",
+      "GUID": "067eee70-bab4-49ed-9f56-7c94d08b090f",
+      "eventText": "Paniek is 0, \"Paniekgebeurtenissen actief\" en \"Paniekgebeurtenissen activeren\" ingesteld op 0",
+      "eventActions": []
+    },
+    {
+      "eventName": "Panic reaches 1",
+      "GUID": "47f2f28d-5240-4d0d-88ac-9a3c338bf57f",
+      "eventText": "Paniek is 1, \"Paniekgebeurtenissen actief\" ingesteld op 1",
+      "eventActions": []
+    },
+    {
+      "eventName": "Reminder",
+      "GUID": "5e3ee100-b807-4d23-a483-c3b474a3af20",
+      "eventText": "<color=\"red\">Herinnering:</color>\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op de paniekbeheertoken en dan op \"verhoog paniek\".\n{-} Aan het einde van elke ronde, voordat je op \"ronde beëindigen\" klikt, klik je op de paniekbeheertoken en dan op \"activeer paniek\".",
+      "eventActions": []
     },
     {
       "eventName": "Reveal Safe Room",
@@ -495,88 +568,45 @@
           "eaName": "Text Box"
         },
         {
-          "theText": "{-} Deuren zijn vergrendeld voor keizerlijke figuren.\r\n{-} Een held kan een interactie uitvoeren op de terminal om een deur te sluiten.\r\n{-} Neutrale missietokens stellen burgers voor.\r\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op de paniekbeheertoken en dan op “verhoog paniek”.\n{-} Aan het einde van elke ronde, voordat je op “ronde beëindigen” klikt, klik je op de paniekbeheertoken en dan op “activeer paniek”.\r\n{-} Helden krijgen {A}: Test {J}. Voordat je gooit, kun je maximaal 2{C} inleveren om +1 {B} toe te passen op de geworpen resultaten voor elke {C} die je hebt ingeleverd. Je mag elke burger binnen 3 velden van je een aantal velden verplaatsen dat gelijk is aan je successen.\r\n{-} Als alle burgers zich in de beveiligde kamer bevinden, er geen keizerlijke figuren in de beveiligde kamer zijn en alle deuren gesloten zijn, zijn de burgers veilig. Klik op het paniekbeheerstoken en selecteer “burgers zijn veilig”.\r\n{-} De helden winnen als de burgers veilig zijn.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "theText": "{-} Deuren zijn vergrendeld voor keizerlijke troepen.\n{-} Een held kan een interactie uitvoeren op de terminal om een deur te sluiten.\n{-} Neutrale missietokens stellen burgers voor.\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op de paniekbeheertoken en dan op \"verhoog paniek\".\n{-} Aan het einde van elke ronde, voordat je op \"ronde beëindigen\" klikt, klik je op de paniekbeheertoken en dan op \"activeer paniek\".\n{-} Helden krijgen {A}: Test {J}. Voordat je gooit, kun je maximaal 2{C} lijden om +1 {B} toe te passen op de geworpen resultaten voor elke {C} die je hebt geleden. Je mag elke burger binnen 3 velden van je een aantal velden verplaatsen dat gelijk is aan je successen.\n{-} Als alle burgers zich in de beveiligde kamer bevinden, er geen keizerlijke figuren in de beveiligde kamer zijn en alle deuren gesloten zijn, zijn de burgers veilig. Klik op het paniekbeheerstoken en selecteer \"burgers zijn veilig\".\n{-} De helden winnen wanneer de burgers veilig zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
           "GUID": "9ee0aad6-396d-479a-8423-0899c66f379c",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
         }
       ]
-    },
-    {
-      "eventName": "Reminder",
-      "GUID": "5e3ee100-b807-4d23-a483-c3b474a3af20",
-      "eventText": "<color=\"red\">Herinnering:</color>\r\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op de paniekbeheertoken en dan op “verhoog paniek”.\n{-} Aan het einde van elke ronde, voordat je op “ronde beëindigen” klikt, klik je op de paniekbeheertoken en dan op “activeer paniek”.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Out-Flanked",
-      "GUID": "34b4e020-58f9-400d-8d16-687f34463177",
-      "eventText": "Een andere deur zwaait open en de intimiderende figuur van de premiejager Bossk komt binnen, vergezeld door een boze beveiligingssofficier. “Daar zijn ze! Houd ze tegen! Waar betalen we jullie voor?”, roept de officier.",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "d0c527b3-4f2b-4047-9c4e-2477a00b00b0",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
-        },
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "5b55c7d4-1705-4feb-b4a1-0c4be0fe42aa",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG080/Bossk"
-        }
-      ]
-    },
-    {
-      "eventName": "Murne present",
-      "GUID": "08e45092-174d-4c04-beef-e9f291e44605",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "Mission Ends Win Murne Yes",
-      "GUID": "d874b01b-f209-4b6a-ab29-e61e1026a6ac",
-      "eventText": "Murne Rin krijgt de beloningskaart \"Cam Droid\".",
-      "eventActions": []
-    },
-    {
-      "eventName": "Mission Ends Win Murne No",
-      "GUID": "9560afc5-6661-48f1-a146-9564e4489c5c",
-      "eventText": "De helden ontvangen 150 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Mission Ends Defeat",
-      "GUID": "16f5f233-66ff-4fee-b0e7-4f622c641fb6",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "Campaign Win Yes",
-      "GUID": "af917fbd-9915-436a-b294-4372d700417c",
-      "eventText": "De aanwezigheid van de beruchte premiejager Bossk in Cloud City baart je zorgen. Hij neemt geen kleine opdrachten aan, wat betekent dat hij hier is voor iets groots, zoals keizerlijke codes.\n\nJe zorgen verdwijnen als je terugkeert naar het hoofdkwartier en een paar nieuwe gezichten ziet. Je terughoudendheid in het eerdere gevecht heeft de publieke steun naar je toe getrokken. De mensen zijn het misbruik beu en ten minste een paar zijn bereid om in opstand te komen.\r\n\r\nDe jongen die je voor het gevecht van de Trandoshans hebt gered, stapt naar voren. “Bedankt voor je hulp, maar velen zijn gevangengenomen voordat je arriveerde. Als je hen kunt bevrijden, weet ik zeker dat we genoeg steun zullen hebben om een echte opstand te leiden!”\r\n\r\nHet is een mooi gebaar, maar de jongen heeft ook een punt. Naarmate de guerrillatroepen groeien, nemen ook je middelen en je kansen om de codes te vinden toe. Je gaat onmiddellijk op zoek naar de vermiste burgers.\n\n{-} Elke held ontvangt 3 XP.\n{-} Helden ontvangen 300 credits per held.\n{-} De volgende actieve missie is “Vrijheidsstrijders”.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Campaign Defeat Yes",
-      "GUID": "6a66d0ea-65a9-452c-a3f1-edc5fac52ed2",
-      "eventText": "Je missie is ingewikkeld geworden en je hebt moeite om alles op een rijtje te krijgen. Waarom vallen Trandoshans burgers lastig over guerrillastrijders? Hoe kunnen ze daarmee wegkomen in het bijzijn van de Wing Guard? En waarom zou een beruchte premiejager als Bossk in Cloud City zijn?\r\n\r\nOp het hoofdkwartier vind je het moeilijk om de soldaten te overtuigen om te blijven. De steun van het publiek neemt af en nu er vrijelijk huurlingen door de straten lopen, zijn de gevaren van betrokkenheid bij het Verzet tastbaar geworden.\r\n\r\nGevaarlijk of niet, je hebt nog steeds een missie. Geruchten dat Bossk in deze chaos winst maakt door slaven te verkopen, sterken je alleen maar in je besluit. Als deze hagedissen een rol willen spelen in dit conflict, dan zullen ze het voelen.\n\n{-} Elke held ontvangt 2 XP.\n{-} Helden ontvangen 300 credits per held.\n{-} De volgende actieve missie is “Vrijheidsstrijders”.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Campaign No",
-      "GUID": "e63594d1-6da1-41e8-a490-07d49aaebcb4",
-      "eventText": "{-} Elke held ontvangt 1 XP.\n{-} Helden ontvangen 100 credits per held.",
-      "eventActions": []
     }
   ],
   "mapEntities": [
+    {
+      "entityName": "Citizen 1",
+      "GUID": "97641a4a-f701-43b4-ba1c-9bb4c6a45108",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Citizen 2",
+      "GUID": "0b8b56ec-5fd9-4e79-aa27-0269f8fceb10",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Citizen 3",
+      "GUID": "612a9bfa-c035-4844-82c9-6941a8e9cbe3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Citizen 4",
+      "GUID": "e37d3290-80f0-4e5c-8d8b-110797157628",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Citizen 5",
+      "GUID": "6d62aa84-f1cb-457a-b7eb-c4e33e95ed57",
+      "mainText": null,
+      "buttonList": []
+    },
     {
       "entityName": "Crate1",
       "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
@@ -611,9 +641,9 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
+      "entityName": "DP Entrance",
+      "GUID": "7d4298f1-6440-43a9-91b8-a30a9d06cad4",
+      "mainText": null,
       "buttonList": []
     },
     {
@@ -637,6 +667,18 @@
     {
       "entityName": "DP Green 4",
       "GUID": "2e35c1c1-e257-4195-ae0a-0b94cbd3e374",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "c1ead48f-c57c-480e-b862-6a7d4afb19d0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 1",
+      "GUID": "fb4efab0-243f-4635-af4a-964a8d088bc7",
       "mainText": null,
       "buttonList": []
     },
@@ -671,70 +713,6 @@
       "buttonList": []
     },
     {
-      "entityName": "DP Probe Droid 1",
-      "GUID": "fb4efab0-243f-4635-af4a-964a8d088bc7",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Officer",
-      "GUID": "c1ead48f-c57c-480e-b862-6a7d4afb19d0",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Panic Token",
-      "GUID": "0b20f6f8-7d2d-4b5e-a0e2-20115aa2bfce",
-      "mainText": "Dit is het paniekbeheerstoken.\n\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op “verhoog paniek”.\n{-} Aan het einde van elke ronde, voordat je op “ronde beëindigen” klikt, klik je op “activeer paniek”.",
-      "buttonList": [
-        {
-          "GUID": "cd027273-7180-4af9-8aee-edaf57dac150",
-          "theText": "Verhoog paniek"
-        },
-        {
-          "GUID": "a943e70f-37ba-48b7-998e-68f0a3a4cfab",
-          "theText": "Activeer paniek"
-        },
-        {
-          "GUID": "1fec0008-040a-4634-af1b-adfb82cb69c6",
-          "theText": "Burgers zijn veilig (einde missie)"
-        }
-      ]
-    },
-    {
-      "entityName": "Door North",
-      "GUID": "01c44b0a-6c5a-4dbf-8f62-ab03874306bc",
-      "mainText": "Een stevige deur leidt naar de beveiligde kamer.",
-      "buttonList": [
-        {
-          "GUID": "9caf55e9-9c9f-401d-a59a-db98ac5e7afb",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Door East",
-      "GUID": "fb5eeb50-1902-471f-81e6-bbb46630fb40",
-      "mainText": "Een stevige deur leidt naar de beveiligde kamer.",
-      "buttonList": [
-        {
-          "GUID": "503f2562-36de-4460-8399-d364279f07d7",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Door West",
-      "GUID": "ed97f0f2-a509-4c00-9171-b549e09b6615",
-      "mainText": "Een stevige deur leidt naar de beveiligde kamer.",
-      "buttonList": [
-        {
-          "GUID": "34508f61-1a01-42cb-822b-5f69a72ac5dd",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
       "entityName": "Door Control",
       "GUID": "2401bc27-63d9-4393-93a3-d03b166e6ad1",
       "mainText": "Het deurbedieningspaneel bevindt zich in het midden van de vergaderruimte. Het kan worden gebruikt om de deuren van de beveiligde kamer te sluiten.",
@@ -754,40 +732,62 @@
       ]
     },
     {
-      "entityName": "DP Entrance",
-      "GUID": "7d4298f1-6440-43a9-91b8-a30a9d06cad4",
-      "mainText": null,
+      "entityName": "Door East",
+      "GUID": "fb5eeb50-1902-471f-81e6-bbb46630fb40",
+      "mainText": "Een stevige deur leidt naar de beveiligde kamer.",
+      "buttonList": [
+        {
+          "GUID": "503f2562-36de-4460-8399-d364279f07d7",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Door North",
+      "GUID": "01c44b0a-6c5a-4dbf-8f62-ab03874306bc",
+      "mainText": "Een stevige deur leidt naar de beveiligde kamer.",
+      "buttonList": [
+        {
+          "GUID": "9caf55e9-9c9f-401d-a59a-db98ac5e7afb",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Door West",
+      "GUID": "ed97f0f2-a509-4c00-9171-b549e09b6615",
+      "mainText": "Een stevige deur leidt naar de beveiligde kamer.",
+      "buttonList": [
+        {
+          "GUID": "34508f61-1a01-42cb-822b-5f69a72ac5dd",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
     },
     {
-      "entityName": "Citizen 1",
-      "GUID": "97641a4a-f701-43b4-ba1c-9bb4c6a45108",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Citizen 2",
-      "GUID": "0b8b56ec-5fd9-4e79-aa27-0269f8fceb10",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Citizen 3",
-      "GUID": "612a9bfa-c035-4844-82c9-6941a8e9cbe3",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Citizen 4",
-      "GUID": "e37d3290-80f0-4e5c-8d8b-110797157628",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Citizen 5",
-      "GUID": "6d62aa84-f1cb-457a-b7eb-c4e33e95ed57",
-      "mainText": null,
-      "buttonList": []
+      "entityName": "Panic Token",
+      "GUID": "0b20f6f8-7d2d-4b5e-a0e2-20115aa2bfce",
+      "mainText": "Dit is het paniekbeheertoken.\n\n{-} Wanneer een held in de zichtlijn van 1 of meer burgers een aanval start, klik je op \"verhoog paniek\".\n{-} Aan het einde van elke ronde, voordat je op \"ronde beëindigen\" klikt, klik je op \"activeer paniek\".",
+      "buttonList": [
+        {
+          "GUID": "cd027273-7180-4af9-8aee-edaf57dac150",
+          "theText": "Verhoog paniek"
+        },
+        {
+          "GUID": "a943e70f-37ba-48b7-998e-68f0a3a4cfab",
+          "theText": "Activeer paniek"
+        },
+        {
+          "GUID": "1fec0008-040a-4634-af1b-adfb82cb69c6",
+          "theText": "Burgers zijn veilig (einde missie)"
+        }
+      ]
     }
   ],
   "initialGroups": [

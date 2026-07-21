@@ -3,7 +3,7 @@
   "missionProperties": {
     "missionName": "Gelegenheidsdoelwit",
     "missionDescription": "",
-    "missionInfo": "{-} Deuren zijn vergrendeld. Een held kan een interactie uitvoeren op de terminal en proberen deze te hacken om de deur naar de cel te ontgrendelen.\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).\n{-} De missie gaat verder als de deur naar het archief is vernietigd.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+    "missionInfo": "{-} Deuren zijn vergrendeld. Een held kan een interactie uitvoeren op de terminal en proberen deze te hacken om de deur naar de cel te ontgrendelen.\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).\n{-} De missie gaat verder wanneer de deur naar het archief vernietigd is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
     "campaignName": "Basisspel",
     "startingObjective": "",
     "repositionOverride": "Blokkeer de toegang tot de terminal en het archief.",
@@ -11,9 +11,127 @@
   },
   "events": [
     {
+      "eventName": "Data Core",
+      "GUID": "3515adc8-07b2-4e9b-89a6-62f0730a3f55",
+      "eventText": "De deur stort in en achter de smeulende brokstukken ligt het archief. De gloeiende datakern is duidelijk zichtbaar, maar hij is niet onbewaakt.\n\n{-} De neutrale missietoken is de datakern. Een rebellenfiguur kan de datakern aanvallen (gezondheid: 6, verdediging: geen).\n{-} De rebellen winnen wanneer de datakern vernietigd wordt.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Archive Door",
+              "GUID": "1596aa1d-ac54-4daa-b5b3-11212825396d",
+              "theText": "De deur naar het archief is zwaar versterkt. \n\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).",
+              "buttonList": [
+                {
+                  "GUID": "727805d8-3800-48c8-b64c-bd2e91b1a7ef",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "3c5f3671-57df-454f-8f2d-1e756cc3ef06",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "fdfffd91-c780-45fe-9b4e-024ffb8fd466",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG009/Royal Guard"
+        },
+        {
+          "theText": "{-} De Rebel Saboteurs hebben {B}: Pierce 2 in plaats van {B}: Pierce 1.\n{-} Als een Rebel Saboteur wordt verslagen, wordt hij in plaats daarvan uitgeschakeld. Bij activatie krijgt hij slechts 1 actie.\n{-} Als een niet-uitgeschakelde Rebel Saboteur de deur aanvalt, tel dan + 1 {B} op bij de aanvalsresultaten.\n{-} De neutrale missietoken is de datakern. Een rebellenfiguur kan de datakern aanvallen (gezondheid: 6, verdediging: geen).\n{-} De rebellen winnen als de datakern vernietigd wordt.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "c93810a7-7918-4e5a-925d-1959265a0841",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Vernietig de datakern.",
+          "longText": null,
+          "GUID": "d012f16d-cf1b-4dcf-a062-aaec2c759f41",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "tbText": "Eén van de Royal Guards springt naar voren en zwaait met zijn wapen.\n\n{-} De dichtstbijzijnde Royal Guard onderbreekt om 5 te verplaatsen en {rebel} aan te vallen.",
+          "GUID": "65a47f32-d057-4e6b-a79e-ccbc0f5b113b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Keizerlijke troepen komen dichterbij en het lijkt verstandiger om te vertrekken.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Je laat de smeulende resten van de datakern achter in het archief en vertrekt. Kort daarna ontvang je een bericht binnen van de saboteurs. Dankbaar voor de hulp bieden ze hun diensten aan, mocht je die nodig hebben. Hoewel hun methoden onorthodox zijn, ben je blij dat je over zulke bekwame sloopdeskundigen kunt beschikken.\n\n{-} De rebellen winnen de missie!\n{-} Helden ontvangen de Rebel Saboteurs als bondgenoten.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Finish the Job",
+      "GUID": "90c03376-7e2b-46f8-806b-3393e8824e07",
+      "eventText": "Zonder iets te zeggen werpen de agenten een blik omlaag en zien een deel van hun uitrusting in jouw handen. Terwijl ze ernaar reiken, houdt één van hen zijn hoofd vragend schuin. Je knikt, als teken dat er geen reden is waarom de klus niet alsnog kan worden geklaard.\n\n{-} De Rebel Saboteurs hebben {B}: Pierce 2 in plaats van {B}: Pierce 1.\n{-} Als een Rebel Saboteur wordt verslagen, wordt hij in plaats daarvan uitgeschakeld. Bij het activeren krijgt hij slechts 1 actie.\n{-} Als een niet-uitgeschakelde Rebel Saboteur de deur aanvalt, tel dan + 1 {B} op bij de aanvalsresultaten.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Cell Door",
+              "GUID": "f40f192c-820c-4e2c-9630-d8fb2ed3a7cc",
+              "theText": "De deur is vergrendeld. Hij kan alleen ontgrendeld worden door de beveiligingsterminal te hacken.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "34dd213a-5b87-4ea0-8777-7ba6701013c8",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "customName": null,
+          "GUID": "db3ad1bc-0b40-4e1d-b11a-0d759f48c5ea",
+          "eventActionType": 7,
+          "eaName": "Ally Deployment"
+        },
+        {
+          "theText": "{-} Deuren zijn vergrendeld.\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).\n{-} De Rebel Saboteurs hebben {B}: Pierce 2 in plaats van {B}: Pierce 1.\n{-} Als een Rebel Saboteur wordt verslagen, wordt hij in plaats daarvan uitgeschakeld. Bij activatie krijgt hij slechts 1 actie.\n{-} Als een niet-uitgeschakelde Rebel Saboteur de deur aanvalt, tel dan + 1 {B} op bij de aanvalsresultaten.\n{-} De missie gaat verder wanneer de deur naar het archief vernietigd is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "082659ae-298b-4835-80a3-38ced20ac86f",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Vernietig de deur naar het archief.",
+          "longText": null,
+          "GUID": "b8d3baa0-7770-4d9e-a953-9a6c4c75b11b",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Het lijkt erop dat je te laat bent voor je saboteur-bondgenoten. Ze hebben de missie zonder jou geprobeerd en zitten nu weg te kwijnen in een cel.\n\nJe nieuwe missie is om ze te redden, of op zijn minst de klus af te maken. Gelukkig worden ze relatief dicht bij hun oorspronkelijke doel vastgehouden, het dringt tot je door dat dit misschien wel onderdeel van hun plan is.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} De deuren zijn vergrendeld. Een held kan een interactie uitvoeren op de terminal en proberen deze te hacken om de deur naar de cel te openen.\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).\n{-} De missie gaat verder wanneer de deur naar het archief vernietigd is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+      "eventActions": [
+        {
+          "shortText": "Vernietig de deur naar het archief.",
+          "longText": "Vernietig de deur naar het archief, alleen of met de hulp van het gevangen saboteursteam.",
+          "GUID": "5cf15ed2-0a1e-4d5a-91d6-3406f4bd9612",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
       "eventName": "Open Crate 1",
       "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -38,7 +156,7 @@
     {
       "eventName": "Open Crate 2",
       "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -58,7 +176,7 @@
     {
       "eventName": "Open Crate 3",
       "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -78,7 +196,7 @@
     {
       "eventName": "Open Crate 4",
       "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -101,43 +219,17 @@
       ]
     },
     {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Het lijkt erop dat je te laat bent gekomen voor je saboteurscollega's. Ze zijn zo dom geweest om de missie zonder jou uit te voeren en zitten nu weg te rotten in een cel.\n\nJe nieuwe missie is om ze te redden, of op zijn minst de klus af te maken. Gelukkig worden ze relatief dicht bij hun oorspronkelijke doel vastgehouden; je bedenkt je dat dit misschien wel onderdeel van hun plan is.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} De deuren zijn vergrendeld. Een held kan een interactie uitvoeren op de terminal en proberen deze te hacken om de deur naar de cel te openen.\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).\n{-} De missie gaat verder als de deur naar het archief is vernietigd.\n{-} De rebellen verliezen als alle helden gewond zijn.",
-      "eventActions": [
-        {
-          "shortText": "Vernietig de deur naar het archief.",
-          "longText": "Vernietig de deur naar het archief, alleen of met de hulp van het gevangen saboteursteam.",
-          "GUID": "5cf15ed2-0a1e-4d5a-91d6-3406f4bd9612",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Je laat de smeulende resten van de datakern achter in het archief en vertrekt. Kort daarna komt er een bericht binnen van de saboteurs. Ze zijn dankbaar voor de hulp en bieden hun service aan als je die ooit nodig hebt. Hoewel ze onorthodoxe methodes gebruiken, ben je blij dat je capabele saboteurs tot je beschikking hebt.\n\n{-} De rebellen winnen de missie!\n{-} Helden ontvangen de Rebel Saboteurs als bondgenoten.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Keizerlijke troepen komen dichterbij en het lijkt verstandiger om te vertrekken.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
       "eventName": "Slice attempt",
       "GUID": "5c9df892-2214-4db7-8536-ec8cf0d31e7f",
       "eventText": "",
       "eventActions": [
         {
-          "mainText": "Je begint de terminal te hacken.\n\nTest {I}. Pas +1 {B} toe voor elk forceertoken op de terminal en leg daarna alle forceertokens van de terminal af. Voer hieronder het aantal successen in.",
+          "mainText": "Je begint de terminal te hacken.\n\nTest {I}. Pas +1 {B} toe voor elk forceertoken op de terminal en leg daarna alle forceertokens op de terminal af. Voer hieronder het aantal successen in.",
           "failText": "",
           "inputList": [
             {
               "GUID": "34192160-8be7-4d1a-be1b-1c709ac5783a",
-              "theText": "Je boekt wat vooruitgang, maar er is niet makkelijk om de keizerlijke beveiligingsprotocollen te omzeilen.\n\n{-} Plaats 1 forceertoken op de terminal voor elk geworpen {B} symbool."
+              "theText": "Je boekt vooruitgang, maar er is nog veel nodig om de keizerlijke beveiligingsprotocollen te doorbreken.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de terminal."
             }
           ],
           "GUID": "19f548cf-6d17-41e5-b1d4-5319ca70640b",
@@ -181,101 +273,26 @@
           "eaName": "Modify Map Entity"
         }
       ]
-    },
-    {
-      "eventName": "Finish the Job",
-      "GUID": "90c03376-7e2b-46f8-806b-3393e8824e07",
-      "eventText": "Zonder iets te zeggen kijken de agenten naar beneden en zien een deel van hun uitrusting in jouw handen. Terwijl ze het pakken, houdt er eentje zijn hoofd een beetje vragend schuin. Je knikt en zegt dat er geen reden is waarom de klus niet alsnog geklaard kan worden.\n\n{-} De Rebel Saboteurs hebben {B}: Pierce 2 in plaats van {B}: Pierce 1.\n{-} Als een Rebel Saboteur wordt verslagen, wordt hij in plaats daarvan uitgeschakeld. Bij het activeren krijgt hij slechts 1 actie.\n{-} Als een niet-uitgeschakelde Rebel Saboteur de deur aanvalt, tel dan + 1 {B} op bij de aanvalsresultaten.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Cell Door",
-              "GUID": "f40f192c-820c-4e2c-9630-d8fb2ed3a7cc",
-              "theText": "De deur is vergrendeld. Hij kan alleen ontgrendeld worden door de beveiligingsterminal te hacken.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "34dd213a-5b87-4ea0-8777-7ba6701013c8",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "customName": null,
-          "GUID": "db3ad1bc-0b40-4e1d-b11a-0d759f48c5ea",
-          "eventActionType": 7,
-          "eaName": "Ally Deployment"
-        },
-        {
-          "theText": "{-} Deuren zijn vergrendeld.\r\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).\r\n{-} De Rebel Saboteurs hebben {B}: Pierce 2 in plaats van {B}: Pierce 1.\n{-} Als een Rebel Saboteur wordt verslagen, wordt hij in plaats daarvan uitgeschakeld. Bij het activeren krijgt hij slechts 1 actie.\n{-} Als een niet-uitgeschakelde Rebel Saboteur de deur aanvalt, tel dan + 1 {B} op bij de aanvalsresultaten.\r\n{-} De missie gaat verder als de deur naar het archief is vernietigd.\n{-} De rebellen verliezen als alle helden gewond zijn.",
-          "GUID": "082659ae-298b-4835-80a3-38ced20ac86f",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        },
-        {
-          "shortText": "Vernietig de deur naar het archief.",
-          "longText": null,
-          "GUID": "b8d3baa0-7770-4d9e-a953-9a6c4c75b11b",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        }
-      ]
-    },
-    {
-      "eventName": "Data Core",
-      "GUID": "3515adc8-07b2-4e9b-89a6-62f0730a3f55",
-      "eventText": "De deur stort in en achter de smeulende brokstukken ligt het archief. De gloeiende datakern is duidelijk zichtbaar. Maar het is niet onbewaakt.\n\n{-} De neutrale missietoken is de datakern. Een rebellenfiguur kan de datakern aanvallen (gezondheid: 6, verdediging: geen).\n{-} De rebellen winnen als de datakern wordt vernietigd.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Archive Door",
-              "GUID": "1596aa1d-ac54-4daa-b5b3-11212825396d",
-              "theText": "De deur naar het archief is zwaar versterkt. \n\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).",
-              "buttonList": [
-                {
-                  "GUID": "727805d8-3800-48c8-b64c-bd2e91b1a7ef",
-                  "theText": "Vernietigen"
-                }
-              ]
-            }
-          ],
-          "GUID": "3c5f3671-57df-454f-8f2d-1e756cc3ef06",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "fdfffd91-c780-45fe-9b4e-024ffb8fd466",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG009/Royal Guard"
-        },
-        {
-          "theText": "{-} De Rebel Saboteurs hebben {B}: Pierce 2 in plaats van {B}: Pierce 1.\n{-} Als een Rebel Saboteur wordt verslagen, wordt hij in plaats daarvan uitgeschakeld. Bij het activeren krijgt hij slechts 1 actie.\n{-} Als een niet-uitgeschakelde Rebel Saboteur de deur aanvalt, tel dan + 1 {B} op bij de aanvalsresultaten.\r\n{-} De neutrale missietoken is de datakern. Een rebellenfiguur kan de datakern aanvallen (gezondheid: 6, verdediging: geen).\n{-} De rebellen winnen als de datakern wordt vernietigd.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
-          "GUID": "c93810a7-7918-4e5a-925d-1959265a0841",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        },
-        {
-          "shortText": "Vernietig de datakern.",
-          "longText": null,
-          "GUID": "d012f16d-cf1b-4dcf-a062-aaec2c759f41",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        },
-        {
-          "tbText": "Eén van de Royal Guards springt naar voren en zwaait met zijn wapen.\n\n{-} De dichtstbijzijnde Royal Guard onderbreekt om 5 te verplaatsen en {rebel} aan te vallen.",
-          "GUID": "65a47f32-d057-4e6b-a79e-ccbc0f5b113b",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        }
-      ]
     }
   ],
   "mapEntities": [
+    {
+      "entityName": "Archive Door",
+      "GUID": "3779f3aa-1355-4b6d-b1e1-7f492dcf3c76",
+      "mainText": "De deur naar het archief is zwaar versterkt. \n\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).",
+      "buttonList": [
+        {
+          "GUID": "08b9eccd-7553-426a-9fd7-4be49c058fa2",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Cell Door",
+      "GUID": "660d165c-852d-419f-827b-0f589baeb55b",
+      "mainText": "De deur is vergrendeld. De deur kan alleen ontgrendeld worden door de beveiligingsterminal te hacken.",
+      "buttonList": []
+    },
     {
       "entityName": "Crate1",
       "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
@@ -310,12 +327,6 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
       "entityName": "Crate4",
       "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
       "mainText": "Een oud voorraadkrat.",
@@ -325,6 +336,12 @@
           "theText": "{A} Openen"
         }
       ]
+    },
+    {
+      "entityName": "DP Droid",
+      "GUID": "a376fe25-45c7-4022-8061-8cfe0e6fc3ed",
+      "mainText": null,
+      "buttonList": []
     },
     {
       "entityName": "DP Green 1",
@@ -339,8 +356,20 @@
       "buttonList": []
     },
     {
+      "entityName": "DP Officer",
+      "GUID": "0a3528d1-0413-45af-b357-1cfa82a1786e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
       "entityName": "DP Red",
       "GUID": "e0697898-60ef-4da5-bfd3-ce778bfe7c6d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Saboteur",
+      "GUID": "30b672a2-302c-41d9-9a11-068a38e4b6cc",
       "mainText": null,
       "buttonList": []
     },
@@ -363,15 +392,20 @@
       "buttonList": []
     },
     {
-      "entityName": "DP Officer",
-      "GUID": "0a3528d1-0413-45af-b357-1cfa82a1786e",
-      "mainText": null,
-      "buttonList": []
+      "entityName": "Data Core",
+      "GUID": "d524289c-9c57-42dd-8022-1d6551725441",
+      "mainText": "De datakern gloeit met een zacht blauw licht.\n\nEen rebellenfiguur kan de datakern aanvallen (gezondheid: 6, verdediging: Geen).",
+      "buttonList": [
+        {
+          "GUID": "fe95a84f-15b2-47b8-b9f5-21b74e44b4db",
+          "theText": "Vernietigen"
+        }
+      ]
     },
     {
-      "entityName": "DP Saboteur",
-      "GUID": "30b672a2-302c-41d9-9a11-068a38e4b6cc",
-      "mainText": null,
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
     },
     {
@@ -384,53 +418,19 @@
           "theText": "{A} Hacken"
         }
       ]
-    },
-    {
-      "entityName": "Data Core",
-      "GUID": "d524289c-9c57-42dd-8022-1d6551725441",
-      "mainText": "De datakern gloeit met een zacht blauw licht.\n\nEen rebellenfiguur kan de datakern aanvallen (gezondheid: 6, verdediging: Geen).",
-      "buttonList": [
-        {
-          "GUID": "fe95a84f-15b2-47b8-b9f5-21b74e44b4db",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "DP Droid",
-      "GUID": "a376fe25-45c7-4022-8061-8cfe0e6fc3ed",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Archive Door",
-      "GUID": "3779f3aa-1355-4b6d-b1e1-7f492dcf3c76",
-      "mainText": "De deur naar het archief is zwaar versterkt. \n\n{-} Een rebellenfiguur kan de deur naar het archief aanvallen (gezondheid: 8, verdediging: 5 {G}).",
-      "buttonList": [
-        {
-          "GUID": "08b9eccd-7553-426a-9fd7-4be49c058fa2",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "Cell Door",
-      "GUID": "660d165c-852d-419f-827b-0f589baeb55b",
-      "mainText": "De deur is vergrendeld. De deur kan alleen ontgrendeld worden door de beveiligingsterminal te hacken.",
-      "buttonList": []
     }
   ],
   "initialGroups": [
-    {
-      "cardName": "Stormtrooper",
-      "customInstructions": ""
-    },
     {
       "cardName": "Imperial Officer",
       "customInstructions": ""
     },
     {
       "cardName": "Probe Droid",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Stormtrooper",
       "customInstructions": ""
     }
   ]

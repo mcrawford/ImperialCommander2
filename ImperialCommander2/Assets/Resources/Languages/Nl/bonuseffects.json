@@ -10,7 +10,7 @@
   {
     "bonusID": "DG014",
     "effects": [
-      "GRENADE LAUNCHER: Nadat deze figuur een aanval heeft afgerond, gooi je 1 gele dobbelsteen. Elke rebel binnen X velden van het doelwit lijdt 1 {H} voor elk activeringstoken. X is het nauwkeurigheid resultaat.",
+      "GRENADE LAUNCHER: Nadat deze figuur een aanval heeft afgerond, gooi je 1 gele dobbelsteen. Elke rebel binnen X velden van het doelwit lijdt 1 {H} voor elke activeringstoken. X is het nauwkeurigheid resultaat.",
       "THE BIG GUN: Krijgt + 1 {H}."
     ]
   },
@@ -18,7 +18,7 @@
     "bonusID": "DG065",
     "effects": [
       "CHARGE: De eerste keer dat deze figuur aanvalt of Trample gebruikt, voegt hij 1 blauwe dobbelsteen toe aan zijn dobbelstenen.",
-      "CRUSH: Elke rebel die {H} lijdt tijdens deze activatie wordt ook <color=\"red\">Verzwakt</color>."
+      "CRUSH: Elke rebel die {H} lijdt tijdens deze activatie wordt ook <color=\"red\">verzwakt</color>."
     ]
   },
   {
@@ -41,30 +41,30 @@
     "bonusID": "DG056",
     "effects": [
       "PRECISION: Krijgt +1 {B}.",
-      "SONIC IMPLODER: Na de activering van deze figuur mag elke rebel binnen 3 velden {K} een test doen. Elke rebel die niet slaagt wordt <color=\"red\">verzwakt</color>."
+      "SONIC IMPLODER: Na de activering van deze figuur mag elke rebel binnen 3 velden een {K} test doen. Elke rebel die niet slaagt wordt <color=\"red\">verzwakt</color>."
     ]
   },
   {
     "bonusID": "DG057",
     "effects": [
       "PRECISION: Krijgt +1 {B}.",
-      "SONIC IMPLODER: Na de activering van deze figuur mag elke rebel binnen 3 velden {K} een test doen. Elke rebel die niet slaagt wordt <color=\"red\">verzwakt</color>."
+      "SONIC IMPLODER: Na de activering van deze figuur mag elke rebel binnen 3 velden een {K} test doen. Elke rebel die niet slaagt wordt <color=\"red\">verzwakt</color>."
     ]
   },
   {
     "bonusID": "DG058",
     "effects": [
       "PRECISION: Krijgt +1 {B}.",
-      "SONIC IMPLODER: Na de activering van deze figuur mag elke rebel binnen 3 velden {K} een test doen. Elke rebel die niet slaagt wordt <color=\"red\">verzwakt</color>.",
-      "ELITE - SECURITY DETAIL: Aan het begin van deze activering krijgt het keizerlijke figuur met de hoogste figuurkosten die nog geen {g} Krijgt 1 {g}."
+      "SONIC IMPLODER: Na de activering van deze figuur mag elke rebel binnen 3 velden een {K} test doen. Elke rebel die niet slaagt wordt <color=\"red\">verzwakt</color>.",
+      "ELITE - SECURITY DETAIL: Aan het begin van deze activering krijgt het keizerlijke figuur met de hoogste figuurkosten, die nog geen {g} heeft, 1 {g}."
     ]
   },
   {
     "bonusID": "DG059",
     "effects": [
       "PRECISION: Krijgt +1 {B}.",
-      "SONIC IMPLODER: Na de activering van deze figuur mag elke rebel binnen 3 velden {K} een test doen. Elke rebel die niet slaagt wordt <color=\"red\">verzwakt</color>.",
-      "ELITE - SECURITY DETAIL: Aan het begin van deze activering krijgt het keizerlijke figuur met de hoogste figuurkosten die nog geen {g} krijgt 1 {g}."
+      "SONIC IMPLODER: Na de activering van deze figuur mag elke rebel binnen 3 velden een {K} test doen. Elke rebel die niet slaagt wordt <color=\"red\">verzwakt</color>.",
+      "ELITE - SECURITY DETAIL: Aan het begin van deze activering krijgt het keizerlijke figuur met de hoogste figuurkosten, die nog geen {g} heeft, 1 {g}."
     ]
   },
   {
@@ -80,7 +80,7 @@
     "effects": [
       "VETERAN: Krijgt +1 {B} en +2 nauwkeurigheid.",
       "LONG SHOT: Wanneer deze figuur zijn eerste aanval uitvoert, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen.",
-      "ADVANCE: Aan het begin van deze activering, als deze figuur geen zichtlijn heeft naar een rebel, verplaats 1 veld naar de dichtstbijzijnde rebel."
+      "ADVANCE: Aan het begin van deze activering, als deze figuur geen zichtlijn heeft naar een rebel, verplaats hij 1 veld naar de dichtstbijzijnde rebel."
     ]
   },
   {
@@ -88,7 +88,7 @@
     "effects": [
       "VETERAN: Krijgt +1 {H} en +2 nauwkeurigheid.",
       "LONG SHOT: Wanneer deze figuur zijn eerste aanval uitvoert, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen.",
-      "ADVANCE: Aan het begin van deze activering, als deze figuur geen zichtlijn heeft naar een rebel, verplaats 1 veld naar de dichtstbijzijnde rebel."
+      "ADVANCE: Aan het begin van deze activering, als deze figuur geen zichtlijn heeft naar een rebel, verplaats hij 1 veld naar de dichtstbijzijnde rebel."
     ]
   },
   {
@@ -147,7 +147,7 @@
     "bonusID": "DG026",
     "effects": [
       "ACQUIRE TARGET: Aan het begin van de activering van deze groep verplaatst elk van zijn figuren die geen zichtlijn hebben op een rebel 2 velden naar een rebel, en krijgt zo mogelijk een zichtlijn.",
-      "OVERWATCH: Aan het begin van de activering van deze groep mag een rebel in een zichtlijn van een figuur in deze groep {J} testen. Als hij niet slaagt, lijdt hij 1 {H} en wordt <color=\"rood\">Verzwakt</color>."
+      "OVERWATCH: Aan het begin van de activering van deze groep mag een rebel in een zichtlijn van een figuur in deze groep {J} testen. Als hij niet slaagt, lijdt hij 1 {H} en wordt <color=\"rood\">verzwakt</color>."
     ]
   },
   {
@@ -161,37 +161,37 @@
     "bonusID": "DG004",
     "effects": [
       "PRESENCE: De eerste keizerlijke aanval tijdens deze activering krijgt +1 {B}.",
-      "COMMANDER: Deze figuur kan een andere keizerlijke figuur met figuurkosten van 4 of minder, in plaats van 3 of minder, een ORDER geven.",
-      "FIGUREHEAD: Aan het begin van deze activering legt elke keizerlijke figuur binnen 3 velden van deze figuur 1 Harmful conditie af. Elk van die figuren die geen conditie aflegden, herstelt 2 {H}."
+      "COMMANDER: Deze figuur kan een ORDER geven aan een andere keizerlijke figuur met figuurkosten van 4 of minder, in plaats van 3 of minder.",
+      "FIGUREHEAD: Aan het begin van deze activering legt elke keizerlijke figuur binnen 3 velden van deze figuur 1 schadelijke conditie af. Elk van die figuren die geen conditie aflegden, herstellen 2 {H}."
     ]
   },
   {
     "bonusID": "DG005",
     "effects": [
       "PRESENCE: De eerste keizerlijke aanval tijdens deze activering krijgt +1 {B}.",
-      "COMMANDER: Deze figuur kan een andere keizerlijke figuur met figuurkosten van 4 of minder, in plaats van 3 of minder, een ORDER geven.",
-      "FIGUREHEAD: Aan het begin van deze activering legt elke keizerlijke figuur binnen 3 velden van deze figuur 1 Harmful conditie af. Elk van die figuren die geen conditie aflegden, herstelt 2 {H}."
+      "COMMANDER: Deze figuur kan een ORDER geven aan een andere keizerlijke figuur met figuurkosten van 4 of minder, in plaats van 3 of minder.",
+      "FIGUREHEAD: Aan het begin van deze activering legt elke keizerlijke figuur binnen 3 velden van deze figuur 1 schadelijke conditie af. Elk van die figuren die geen conditie aflegden, herstellen 2 {H}."
     ]
   },
   {
     "bonusID": "DG006",
     "effects": [
       "PRESENCE: De eerste keizerlijke aanval tijdens deze activering krijgt +1 {B}.",
-      "COMMANDER: Deze figuur kan een andere keizerlijke figuur met figuurkosten van 8 of minder, in plaats van 6 of minder, een ORDER geven.",
-      "FIGUREHEAD: Aan het begin van deze activering legt elke keizerlijke figuur binnen 3 velden van deze figuur 1 Harmful conditie af. Elk van die figuren die geen conditie aflegden, herstelt 2 {H}."
+      "COMMANDER: Deze figuur kan een ORDER geven aan een andere keizerlijke figuur met figuurkosten van 8 of minder, in plaats van 6 of minder.",
+      "FIGUREHEAD: Aan het begin van deze activering legt elke keizerlijke figuur binnen 3 velden van deze figuur 1 schadelijke conditie af. Elk van die figuren die geen conditie aflegden, herstellen 2 {H}."
     ]
   },
   {
     "bonusID": "DG068",
     "effects": [
-      "CLOSE THE NET: Aan het begin van de activering van deze groep verplaatst elk van zijn <color=\"red\">Hidden</color> figuren 2 naar herpositie 3. Elk van zijn andere figuren wordt <color=\"red\">Hidden</color>.",
+      "CLOSE THE NET: Aan het begin van de activering van deze groep verplaatst elk van zijn <color=\"red\">verborgen</color> figuren 2 naar herpositie 3. Elk van zijn andere figuren wordt <color=\"red\">verborgen</color>.",
       "TAKEDOWN: Elk figuur in deze groep krijgt +1 {B}. Als ze een doelwit aanvallen dat al is aangevallen tijdens de activering van deze groep, hebben ze ook +1 {H}."
     ]
   },
   {
     "bonusID": "DG069",
     "effects": [
-      "CLOSE THE NET: Aan het begin van de activering van deze groep verplaatst elk van zijn <color=\"red\">Hidden</color> figuren 2 naar herpositie 3. Elk van zijn andere figuren wordt <color=\"red\">Hidden</color>.",
+      "CLOSE THE NET: Aan het begin van de activering van deze groep verplaatst elk van zijn <color=\"red\">verborgen</color> figuren 2 naar herpositie 3. Elk van zijn andere figuren wordt <color=\"red\">verborgen</color>.",
       "TAKEDOWN: Elk figuur in deze groep krijgt +1 {B}. Als ze een doelwit aanvallen dat al is aangevallen tijdens de activering van deze groep, hebben ze ook +1 {H}.",
       "EXTREME DETERRENT: Na de aanval moeten de 2 andere rebellen die het dichtst bij het doelwit staan een {J} test doen. Elke rebel die niet slaagt, lijdt 1 {C}."
     ]
@@ -237,32 +237,32 @@
   {
     "bonusID": "DG060",
     "effects": [
-      "NINE LIVES: De aanvallen van deze figuur hebben Recover 2 {H}. ",
+      "NINE LIVES: De aanvallen van deze figuur hebben herstel 2 {H}. ",
       "SCRATCH: Deze groep heeft {B}: Verzwakken.",
-      "SCAREDY-CAT: Na de activering van deze figuur mag de dichtstbijzijnde rebel {J} testen. Als hij niet slaagt, beweegt deze figuur 6 naar herpositie 6 en krijgt 1 {f}."
+      "SCAREDY-CAT: Na de activering van deze figuur mag de dichtstbijzijnde rebel {J} testen. Als hij niet slaagt, verplaatst deze figuur 6 naar herpositie 6 en krijgt 1 {f}."
     ]
   },
   {
     "bonusID": "DG061",
     "effects": [
-      "NINE LIVES: De aanvallen van deze figuur hebben Recover 2 {H}. ",
+      "NINE LIVES: De aanvallen van deze figuur hebben herstel 2 {H}. ",
       "SCRATCH: Deze groep heeft {B}: Verzwakken.",
-      "SCAREDY-CAT: Na de activering van deze figuur mag de dichtstbijzijnde rebel {J} testen. Als hij niet slaagt, beweegt deze figuur 6 naar herpositie 6 en krijgt 1 {f}."
+      "SCAREDY-CAT: Na de activering van deze figuur mag de dichtstbijzijnde rebel {J} testen. Als hij niet slaagt, verplaatst deze figuur 6 naar herpositie 6 en krijgt 1 {f}."
     ]
   },
   {
     "bonusID": "DG017",
     "effects": [
-      "LICK YOUR WOUNDS: Als deze figuur 4 of meer {H} heeft geleden, krijgt de top van zijn activeringslijst: {A}{A} Recover 4 {H}. Verplaats dan 10 naar herpositie 6.",
-      "PROWL THE WILDS: Aan het begin van de activering van deze figuur, als deze figuur zich in een buitenruimte bevindt, krijgt hij +1 {B}.",
+      "LICK YOUR WOUNDS: Als deze figuur 4 of meer {H} heeft geleden, wordt de bovenste regel van zijn activeringslijst: {A}{A} Recover 4 {H}. Verplaats dan 10 naar herpositie 6.",
+      "PROWL THE WILDS: Aan het begin van de activering van deze figuur, als deze figuur zich in een buitenruimte bevindt, krijgt die +1 {B}.",
       "BLOOD FRENZY: Aan het begin van deze activering, als een rebel <color=\"red\">bloedend</color> is, krijgt deze figuur +1 {H}."
     ]
   },
   {
     "bonusID": "DG018",
     "effects": [
-      "LICK YOUR WOUNDS: Als deze figuur 4 of meer {H} heeft geleden, krijgt de top van zijn activeringslijst: {A}{A} Recover 4 {H}. Verplaats dan 10 naar herpositie 6.",
-      "PROWL THE WILDS: Aan het begin van de activering van deze figuur, als deze figuur zich in een buitenruimte bevindt, krijgt hij +1 {B}.",
+      "LICK YOUR WOUNDS: Als deze figuur 4 of meer {H} heeft geleden, wordt de bovenste regel van zijn activeringslijst: {A}{A} Recover 4 {H}. Verplaats dan 10 naar herpositie 6.",
+      "PROWL THE WILDS: Aan het begin van de activering van deze figuur, als deze figuur zich in een buitenruimte bevindt, krijgt die +1 {B}.",
       "BLOOD FRENZY: Aan het begin van deze activering, als een rebel <color=\"red\">bloedend</color> is, krijgt deze figuur +1 {H}."
     ]
   },
@@ -285,10 +285,10 @@
   {
     "bonusID": "DG013",
     "effects": [
-      "SUPERIOR TECHNOLOGY: Gain +1 {B} and +2 nauwkeurigheid.",
+      "SUPERIOR TECHNOLOGY: Krijgt +1 {B} en +2 nauwkeurigheid.",
       "SELF-DESTRUCT: Aan het einde van deze activering, als deze figuur grenst aan een rebel en 3 of meer {H} heeft geleden, gooi je 1 rode dobbelsteen. Elke aangrenzende rebel lijdt {H} gelijk aan het totaal aantal {H} symbolen. Daarna is deze figuur verslagen.",
       "SELF-DESTRUCT: Aan het einde van deze activering, als deze figuur grenst aan een rebel en 5 of meer {H} heeft geleden, gooi je 1 rode dobbelsteen. Elke aangrenzende rebel lijdt {H} gelijk aan het totaal aantal {H} symbolen. Daarna is deze figuur verslagen.",
-      "PROBE: Aan het einde van deze activering lijdt een rebel in een zichtlijn van deze figuur 1 {C}."
+      "PROBE: Aan het einde van deze activering lijdt een rebel in de zichtlijn van deze figuur 1 {C}."
     ]
   },
   {
@@ -304,7 +304,7 @@
     "effects": [
       "CLEAR THE AREA: Na elke aanval van een figuur van deze groep, als het doelwit {H} heeft geleden, duw je het doelwit 1 veld weg van deze figuur.",
       "TELESCOPIC BATONS: Elke figuur in deze groep krijgt Reach.",
-      "DEFENDER: Aan het einde van de activering van deze groep verplaatst elk figuur in deze groep 2 om zoveel mogelijk niet-Guardian keizerlijke figuren aan te raken (minimaal 1). Dan krijgt elk aangrenzend niet-Guardian keizerlijke figuur 1 {g}."
+      "DEFENDER: Aan het einde van de activering van deze groep verplaatst elk figuur in deze groep 2 om grenzend aan zoveel mogelijk niet-Guardian keizerlijke figuren te komen (minimaal 1). Dan krijgt elke aangrenzende niet-Guardian keizerlijke figuur 1 {g}."
     ]
   },
   {
@@ -312,7 +312,7 @@
     "effects": [
       "CLEAR THE AREA: Na elke aanval van een figuur van deze groep, als het doelwit {H} heeft geleden, duw je het doelwit 1 veld weg van deze figuur.",
       "TELESCOPIC BATONS: Elke figuur in deze groep krijgt Reach.",
-      "DEFENDER: Aan het einde van de activering van deze groep verplaatst elk figuur in deze groep 2 om zoveel mogelijk niet-Guardian keizerlijke figuren aan te raken (minimaal 1). Dan krijgt elk aangrenzend niet-Guardian keizerlijke figuur 1 {g}."
+      "DEFENDER: Aan het einde van de activering van deze groep verplaatst elk figuur in deze groep 2 om grenzend aan zoveel mogelijk niet-Guardian keizerlijke figuren te komen (minimaal 1). Dan krijgt elke aangrenzende niet-Guardian keizerlijke figuur 1 {g}."
     ]
   },
   {
@@ -320,22 +320,22 @@
     "effects": [
       "CLEAR THE AREA: Na elke aanval van een figuur van deze groep, als het doelwit {H} heeft geleden, duw je het doelwit 1 veld weg van deze figuur.",
       "TELESCOPIC BATONS: Elke figuur in deze groep krijgt Reach.",
-      "DEFENDER: Aan het einde van de activering van deze groep verplaatst elk figuur in deze groep 2 om zoveel mogelijk niet-Guardian keizerlijke figuren aan te raken (minimaal 1). Dan krijgt elk aangrenzend niet-Guardian keizerlijke figuur 1 {g}.",
-      "DOMINATIE: als je een <color=\"rood\">verzwakt</color> figuur aanvalt, krijgt de aanval verdoven."
+      "DEFENDER: Aan het einde van de activering van deze groep verplaatst elk figuur in deze groep 2 om grenzend aan zoveel mogelijk niet-Guardian keizerlijke figuren te komen (minimaal 1). Dan krijgt elke aangrenzende niet-Guardian keizerlijke figuur 1 {g}.",
+      "DOMINATIE: als je een <color=\"red\">verzwakt</color> figuur aanvalt, krijgt de aanval: verdoven."
     ]
   },
   {
     "bonusID": "DG009",
     "effects": [
       "HARD HITTER: Wanneer de eerste figuur in deze groep een aanval doet, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen.",
-      "ON THE SPOT: Voeg 1 toe aan elke Move waarde tijdens deze activering."
+      "ON THE SPOT: Voeg 1 toe aan elke verplaats waarde tijdens deze activering."
     ]
   },
   {
     "bonusID": "DG010",
     "effects": [
       "HARD HITTER: Wanneer de eerste figuur in deze groep een aanval doet, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen.",
-      "ON THE SPOT: Voeg 1 toe aan elke Move waarde tijdens deze activering."
+      "ON THE SPOT: Voeg 1 toe aan elke verplaats waarde tijdens deze activering."
     ]
   },
   {
@@ -349,23 +349,23 @@
   {
     "bonusID": "DG050",
     "effects": [
-      "SURVIVAL SUBROUTINE: Aan het einde van de activering van elk figuur van deze groep, krijgt dat figuur 1 {f}.",
-      "SENTRY: Aan het einde van de activering van elk figuur van deze groep, krijgt het andere keizerlijke figuur binnen 3 velden met de minste resterende gezondheid 1 {g}."
+      "SURVIVAL SUBROUTINE: Aan het einde van de activering van elke figuur van deze groep, krijgt dat figuur 1 {f}.",
+      "SENTRY: Aan het einde van de activering van elke figuur van deze groep, krijgt het andere keizerlijke figuur binnen 3 velden met de minste resterende gezondheid 1 {g}."
     ]
   },
   {
     "bonusID": "DG051",
     "effects": [
-      "SURVIVAL SUBROUTINE: Aan het einde van de activering van elk figuur van deze groep, krijgt dat figuur 1 {f}.",
-      "SENTRY: Aan het einde van de activering van elk figuur van deze groep, krijgt het andere keizerlijke figuur binnen 3 velden met de minste resterende gezondheid 1 {g}."
+      "SURVIVAL SUBROUTINE: Aan het einde van de activering van elke figuur van deze groep, krijgt dat figuur 1 {f}.",
+      "SENTRY: Aan het einde van de activering van elke figuur van deze groep, krijgt het andere keizerlijke figuur binnen 3 velden met de minste resterende gezondheid 1 {g}."
     ]
   },
   {
     "bonusID": "DG052",
     "effects": [
-      "SURVIVAL SUBROUTINE: Aan het einde van de activering van elk figuur van deze groep, krijgt dat figuur 1 {f}.",
-      "SENTRY: Aan het einde van de activering van elk figuur van deze groep, krijgt het andere keizerlijke figuur binnen 3 velden met de minste resterende gezondheid 1 {g}.",
-      "SUPERCHARGED: Aan het begin van de activering van elk figuur van deze groep, krijgt dat figuur 1 {b}."
+      "SURVIVAL SUBROUTINE: Aan het einde van de activering van elke figuur van deze groep, krijgt dat figuur 1 {f}.",
+      "SENTRY: Aan het einde van de activering van elke figuur van deze groep, krijgt het andere keizerlijke figuur binnen 3 velden met de minste resterende gezondheid 1 {g}.",
+      "SUPERCHARGED: Aan het begin van de activering van elke figuur van deze groep, krijgt dat figuur 1 {b}."
     ]
   },
   {
@@ -387,7 +387,7 @@
   {
     "bonusID": "DG001",
     "effects": [
-      "SQUAD TRAINING: Tijdens een aanval krijgt elk figuur in deze groep Pierce 1. Als het doelwit al is aangevallen tijdens de activering van deze groep, krijgt het in plaats daarvan Pierce 2.",
+      "SQUAD TRAINING: Tijdens een aanval krijgt elke figuur in deze groep Pierce 1. Als het doelwit al is aangevallen tijdens de activering van deze groep, krijgt het in plaats daarvan Pierce 2.",
       "VADER'S FINEST: Wanneer de eerste figuur in deze groep een aanval doet, voeg je 1 groene dobbelsteen toe aan de aanvalsdobbelstenen.",
       "REINFORCE: Na de activering van deze groep, versterk 1 verslagen figuur uit deze groep zo dicht mogelijk bij een andere figuur uit deze groep."
     ]
@@ -395,7 +395,7 @@
   {
     "bonusID": "DG002",
     "effects": [
-      "SQUAD TRAINING: Tijdens een aanval krijgt elk figuur in deze groep Pierce 1. Als het doelwit al is aangevallen tijdens de activering van deze groep, krijgt het in plaats daarvan Pierce 2.",
+      "SQUAD TRAINING: Tijdens een aanval krijgt elke figuur in deze groep Pierce 1. Als het doelwit al is aangevallen tijdens de activering van deze groep, krijgt het in plaats daarvan Pierce 2.",
       "VADER'S FINEST: Wanneer de eerste figuur in deze groep een aanval doet, voeg je 1 groene dobbelsteen toe aan de aanvalsdobbelstenen.",
       "REINFORCE: Na de activering van deze groep, versterk 1 verslagen figuur uit deze groep zo dicht mogelijk bij een andere figuur uit deze groep."
     ]
@@ -403,7 +403,7 @@
   {
     "bonusID": "DG003",
     "effects": [
-      "SQUAD TRAINING: Tijdens een aanval krijgt elk figuur in deze groep Pierce 1. Als het doelwit al is aangevallen tijdens de activering van deze groep, krijgt het in plaats daarvan Pierce 2.",
+      "SQUAD TRAINING: Tijdens een aanval krijgt elke figuur in deze groep Pierce 1. Als het doelwit al is aangevallen tijdens de activering van deze groep, krijgt het in plaats daarvan Pierce 2.",
       "VADER'S FINEST: Wanneer de eerste figuur in deze groep een aanval doet, voeg je 1 groene dobbelsteen toe aan de aanvalsdobbelstenen.",
       "REINFORCE: Na de activering van deze groep, versterk 1 verslagen figuur uit deze groep zo dicht mogelijk bij een andere figuur uit deze groep."
     ]
@@ -413,7 +413,7 @@
     "effects": [
       "LONG SHOT: Wanneer de eerste figuur in deze groep aanvalt, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen.",
       "VETERAN: Elke figuur in deze groep krijgt +1 {B}.",
-      "REGENERATE: Aan het begin van de activering van deze groep legt elk figuur in deze groep alle Harmful aandoeningen af en herstelt 2 {H}."
+      "REGENERATE: Aan het begin van de activering van deze groep legt elke figuur in deze groep alle schadelijke condities af en herstelt 2 {H}."
     ]
   },
   {
@@ -421,7 +421,7 @@
     "effects": [
       "LONG SHOT: Wanneer de eerste figuur in deze groep aanvalt, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen.",
       "VETERAN: Elke figuur in deze groep krijgt +1 {B}.",
-      "REGENERATE: Aan het begin van de activering van deze groep legt elk figuur in deze groep alle Harmful aandoeningen af en herstelt 2 {H}."
+      "REGENERATE: Aan het begin van de activering van deze groep legt elke figuur in deze groep alle schadelijke condities af en herstelt 2 {H}."
     ]
   },
   {
@@ -481,44 +481,44 @@
   {
     "bonusID": "DG042",
     "effects": [
-      "IMPROVED PENETRATION: Elk figuur in deze groep heeft Pierce 1.",
-      "LURK: Aan het einde van de activering van elk figuur van deze groep, wordt dat figuur <color=\"red\">Hidden</color>."
+      "IMPROVED PENETRATION: Elke figuur in deze groep heeft Pierce 1.",
+      "LURK: Aan het einde van de activering van elke figuur van deze groep, wordt dat figuur <color=\"red\">verborgen</color>."
     ]
   },
   {
     "bonusID": "DG043",
     "effects": [
-      "IMPROVED PENETRATION: Elk figuur in deze groep heeft Pierce 1.",
-      "LURK: Aan het einde van de activering van elk figuur van deze groep, wordt dat figuur <color=\"red\">Hidden</color>."
+      "IMPROVED PENETRATION: Elke figuur in deze groep heeft Pierce 1.",
+      "LURK: Aan het einde van de activering van elke figuur van deze groep, wordt dat figuur <color=\"red\">verborgen</color>."
     ]
   },
   {
     "bonusID": "DG044",
     "effects": [
-      "IMPROVED PENETRATION: Elk figuur in deze groep heeft Pierce 1.",
-      "LURK: Aan het einde van de activering van elk figuur van deze groep, wordt dat figuur <color=\"red\">Hidden</color>.",
-      "SNEAK VULNERABILITY: elk figuur in deze groep heeft Pierce 1. Als er een zwarte dobbelsteen tussen de verdedigingsdobbelstenen zit, krijgen ze in plaats daarvan Pierce 2."
+      "IMPROVED PENETRATION: Elke figuur in deze groep heeft Pierce 1.",
+      "LURK: Aan het einde van de activering van elke figuur van deze groep, wordt dat figuur <color=\"red\">verborgen</color>.",
+      "SNEAK VULNERABILITY: elke figuur in deze groep heeft Pierce 1. Als er een zwarte dobbelsteen tussen de verdedigingsdobbelstenen zit, krijgen ze in plaats daarvan Pierce 2."
     ]
   },
   {
     "bonusID": "DG033",
     "effects": [
       "REINFORCE: Versterk na de activering van deze groep 1 verslagen figuur uit deze groep zo dicht mogelijk bij een andere figuur uit deze groep.",
-      "IMPROVED PENETRATION: Elk figuur in deze groep heeft Pierce 1."
+      "IMPROVED PENETRATION: Elke figuur in deze groep heeft Pierce 1."
     ]
   },
   {
     "bonusID": "DG034",
     "effects": [
       "REINFORCE: Versterk na de activering van deze groep 1 verslagen figuur uit deze groep zo dicht mogelijk bij een andere figuur uit deze groep.",
-      "IMPROVED PENETRATION: Elk figuur in deze groep heeft Pierce 1."
+      "IMPROVED PENETRATION: Elke figuur in deze groep heeft Pierce 1."
     ]
   },
   {
     "bonusID": "DG035",
     "effects": [
       "REINFORCE: Versterk na de activering van deze groep 1 verslagen figuur uit deze groep zo dicht mogelijk bij een andere figuur uit deze groep.",
-      "IMPROVED PENETRATION: Elk figuur in deze groep heeft Pierce 1."
+      "IMPROVED PENETRATION: Elke figuur in deze groep heeft Pierce 1."
     ]
   },
   {
@@ -532,24 +532,24 @@
   {
     "bonusID": "DG079",
     "effects": [
-      "IN THE SHADOWS: Wanneer deze figuur aanvalt en hij is <color=\"red\">Hidden</color>, voeg 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen. Anders krijgt de aanval +1 {B}.",
-      "ACTIVATE AGENT: Versterk bij het begin van deze activering een verslagen keizerlijke figuur uit de eerste groep met verslagen figuren zo dicht mogelijk bij een andere figuur uit die groep. Hij wordt <color=\"rood\">Hidden</color>.",
-      "APPREHEND: Aan het begin van deze activering moet de held binnen 2 velden van de meeste keizerlijke figuren {K} testen. Als die held minder successen gooit dan het aantal van die keizerlijke figuren, wordt hij of zij <color=\"rood\">verdoofd</color>."
+      "IN THE SHADOWS: Wanneer deze figuur aanvalt en hij is <color=\"red\">verborgen</color>, voeg 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen. Anders krijgt de aanval +1 {B}.",
+      "ACTIVATE AGENT: Versterk bij het begin van deze activering een verslagen keizerlijke figuur uit de eerste groep met verslagen figuren zo dicht mogelijk bij een andere figuur uit die groep. Hij wordt <color=\"red\">verborgen</color>.",
+      "APPREHEND: Aan het begin van deze activering moet de held, binnen 2 velden van de meeste keizerlijke figuren, {K} testen. Als die held minder successen gooit dan het aantal van die keizerlijke figuren, wordt hij of zij <color=\"red\">verdoofd</color>."
     ]
   },
   {
     "bonusID": "DG076",
     "effects": [
       "FLAMETHROWER: Aan het einde van deze activering lijdt elke rebel binnen 3 velden 1 {C}.",
-      "ROCKET LAUNCHER: Gooi aan het eind van deze activering 1 rode dobbelsteen. Eén rebel binnen 5 velden lijdt {H} gelijk aan de {H} resultaten.",
+      "ROCKET LAUNCHER: Gooi aan het einde van deze activering 1 rode dobbelsteen. Eén rebel binnen 5 velden lijdt {H} gelijk aan de {H} resultaten.",
       "WHIPCORD: Aan het einde van deze activering wordt één rebel binnen 3 velden <color=\"red\">verdoofd</color>."
     ]
   },
   {
     "bonusID": "DG080",
     "effects": [
-      "FIGHT THROUGH PAIN: Aan het begin van deze activering legt deze figuur <color=\"red\">verdoofd</color> en <color=\"red\">bloedend</color> af. Als deze figuur geen aandoening heeft afgelegd, herstelt hij 2 {H}.",
-      "AUTOFIRE: Als een rebel {H} lijdt door \"Indiscriminate Fire\", lijdt hij 1 extra {H}.",
+      "FIGHT THROUGH PAIN: Aan het begin van deze activering legt deze figuur <color=\"red\">verdoofd</color> en <color=\"red\">bloedend</color> af. Als deze figuur geen conditie heeft afgelegd, herstelt hij 2 {H}.",
+      "AUTOFIRE: Als een rebel {H} lijdt door \"Indiscriminate Fire\", lijdt die 1 extra {H}.",
       "EXPERT MARKSMAN: Wanneer deze figuur aanvalt, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelsteen."
     ]
   },
@@ -563,9 +563,9 @@
   {
     "bonusID": "DG082",
     "effects": [
-      "MOUNTED COMMAND: Aan het begin van deze activering wordt elke figuur in de keizerlijke groep met de meeste niet-<color=\"red\">Focused</color> figuren <color=\"red\">Focused</color>.",
+      "MOUNTED COMMAND: Aan het begin van deze activering wordt elke figuur in de keizerlijke groep met de meeste niet-<color=\"red\">gefocuste</color> figuren <color=\"red\">gefocust</color>.",
       "RAM: De eerste keer dat deze figuur een veld betreedt dat grenst aan een rebel, lijdt elke rebel die aan deze figuur grenst 1 {H}.",
-      "DEBILITATING BURNS: Wanneer een rebel {H} lijdt door \"Flamethrower\", wordt deze <color=\"red\">verdoofd</color> tenzij het 1 Beneficial conditie weggooit."
+      "DEBILITATING BURNS: Wanneer een rebel {H} lijdt door \"Flamethrower\", wordt deze <color=\"red\">verdoofd</color> tenzij die 1 gunstige conditie aflegd."
     ]
   },
   {
@@ -580,7 +580,7 @@
     "bonusID": "DG077",
     "effects": [
       "EXPLOIT WEAKNESS: Wanneer deze figuur aanvalt, moet de verdediger 1 dobbelsteen van zijn verdedigingsdobbelstenen verwijderen.",
-      "LINGERING PAIN: Aan het begin van deze activering lijdt elke rebel met een Harmful aandoening 1 {C}. Als geen enkele rebel {C} heeft geleden door dit effect, wordt deze figuur <color=\"rood\">Focused</color>.",
+      "LINGERING PAIN: Aan het begin van deze activering lijdt elke rebel met een schadelijke conditie 1 {C}. Als geen enkele rebel {C} heeft geleden door dit effect, wordt deze figuur <color=\"red\">gefocust</color>.",
       "SET SIGHTS: Krijg +3 nauwkeurigheid. Figuren blokkeren de zichtlijn van deze figuur niet."
     ]
   },
@@ -595,9 +595,9 @@
   {
     "bonusID": "DG078",
     "effects": [
-      "MORTAR: Aan het begin van deze activering mag elke held {K} testen. Als een held zich in een buitenruimte bevindt, mag hij in plaats daarvan {J} testen. Elke held die niet slaagt, wordt <color=\"rood\">verzwakt</color>.",
+      "MORTAR: Aan het begin van deze activering mag elke held {K} testen. Als een held zich in een buitenruimte bevindt, mag hij in plaats daarvan {J} testen. Elke held die niet slaagt, wordt <color=\"red\">verzwakt</color>.",
       "IMPROVED PENETRATION: Krijgt Pierce 1.",
-      "FOCUS: Aan het begin van deze activering wordt deze figuur <color=\"rood\">Focused</color>."
+      "FOCUS: Aan het begin van deze activering wordt deze figuur <color=\"red\">gefocust</color>."
     ]
   },
   {
@@ -615,34 +615,34 @@
     "bonusID": "DG090",
     "effects": [
       "STROKE OF BRILLIANCE: Als deze figuur wordt aangevallen tijdens \"Slow on the Draw\", voegt hij 1 zwarte dobbelsteen toe aan zijn verdedigingsdobbelstenen. Anders, wanneer deze figuur aanvalt, moet de verdediger 1 dobbelsteen van zijn verdedigingsdobbelstenen verwijderen.",
-      "OONTA GOOTA? Aan het begin van deze activering verplaatst deze figuur zich 2 naar de dichtstbijzijnde rebel."
+      "OONTA GOOTA?: Aan het begin van deze activering verplaatst deze figuur 2 naar de dichtstbijzijnde rebel."
     ]
   },
   {
     "bonusID": "DG086",
     "effects": [
-      "ULTERIOR MOTIVE: Aan het begin van deze activering, als er een krat op de kaart staat of als een held een voorraadkaart heeft, wordt deze figuur <color=\"rood\">Focused</color>.",
-      "DOUBLE OR NOTHING: Aan het begin van deze activering, als deze figuur {H} heeft geleden, herstelt hij 2 {H}. Anders wordt hij <color=\"red\">Focused</color>."
+      "ULTERIOR MOTIVE: Aan het begin van deze activering, als er een krat op de kaart staat of als een held een voorraadkaart heeft, wordt deze figuur <color=\"red\">gefocust</color>.",
+      "DOUBLE OR NOTHING: Aan het begin van deze activering, als deze figuur {H} heeft geleden, herstelt hij 2 {H}. Anders wordt hij <color=\"red\">gefocust</color>."
     ]
   },
   {
     "bonusID": "DG071",
     "effects": [
-      "FOCUS ON THE KILL: Leg alle Harmful aandoeningen van dit figuur af, of, als het geen Harmful aandoeningen heeft, wordt het in plaats daarvan <color=\"red\">Focused</color>. Dan verplaatst het 2 naar de dichtstbijzijnde rebel.",
+      "FOCUS ON THE KILL: Leg alle schadelijke condities van dit figuur af, of, als het geen schadelijke condities heeft, wordt het in plaats daarvan <color=\"red\">gefocust</color>. Dan verplaatst die 2 naar de dichtstbijzijnde rebel.",
       "BLAZE OF GLORY: Aan het einde van deze activering verplaatst deze figuur zich 1 om een rebel aan te vallen. Voeg +2 nauwkeurigheid toe aan de aanvalsresultaten. Dan, als deze figuur deze aanval uitvoerde, lijdt hij 3 {H}."
     ]
   },
   {
     "bonusID": "DG081",
     "effects": [
-      "INDENTURED JESTER: Als de metgezel Salacious B. Crumb niet op de kaart staat, plaats hem dan op één van de velden van Jabba the Hutt. Anders telt je 2 op bij de Move waarde van Salacious B. Crumb tijdens deze activering.",
-      "FINANCIAL INCENTIVE: Het keizerlijke figuur met de hoogste figuurkosten die niet is uitgeput, herstelt 2 {H} en wordt <color=\"red\">Focused</color>."
+      "INDENTURED JESTER: Als de metgezel Salacious B. Crumb niet op het speelbord staat, plaats hem dan op één van de velden van Jabba the Hutt. Anders tel je 2 op bij de verplaatswaarde van Salacious B. Crumb tijdens deze activering.",
+      "FINANCIAL INCENTIVE: Het keizerlijke figuur met de hoogste figuurkosten die niet is uitgeput, herstelt 2 {H} en wordt <color=\"red\">gefocust</color>."
     ]
   },
   {
     "bonusID": "DG075",
     "effects": [
-      "INSPIRE THE TROOPS: Aan het begin van deze activering legt elke keizerlijke figuur binnen 3 velden van deze figuur 1 Harmful aandoening af. Elk van die figuren die geen aandoening aflegden, herstelt 1 {H}.",
+      "INSPIRE THE TROOPS: Aan het begin van deze activering legt elke keizerlijke figuur binnen 3 velden van deze figuur 1 schadelijke conditie af. Elk van de figuren die geen conditie aflegden, herstelt 1 {H}.",
       "SUPPORT THE COMMANDER: Aan het begin van deze activering krijgt deze figuur 1 {H} voor elke keizerlijke figuur binnen 3 velden bij hem vandaan."
     ]
   },
@@ -658,7 +658,7 @@
     "bonusID": "DG074",
     "effects": [
       "SECOND WIND: Elke andere keizerlijke figuur binnen 3 velden herstelt 2 {H}.",
-      "PROTECTOR: Als een rebel deze ronde een ander keizerlijke figuur heeft aangevallen, verplaats dan 2 naar die rebel en wordt <color=\"rood\">Focused</color>."
+      "PROTECTOR: Als een rebel deze ronde een andere keizerlijke figuur heeft aangevallen, verplaats dan 2 naar die rebel en wordt <color=\"red\">gefocust</color>."
     ]
   },
   {

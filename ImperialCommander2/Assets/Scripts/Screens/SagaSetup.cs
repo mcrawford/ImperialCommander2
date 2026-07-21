@@ -19,11 +19,12 @@ namespace Saga
 		public GameObject descriptionTextBox;
 		public Text difficultyText;
 		public Transform heroContainer;
-		public Button adaptiveButton, startMissionButton, viewMissionCardButton, campaignTilesButton, allyButton;
+		public Button adaptiveButton, startMissionButton, viewMissionCardButton, campaignTilesButton, allyButton, difficultyButton;
 		public GameObject miniMugPrefab;
-		public Image allyImage;
+		public Image allyImage, allyBackgroundImage;
 		public MWheelHandler threatValue, addtlThreatValue;
 		public TextMeshProUGUI versionText, additionalInfoText;
+		public MWheelHandler threatLevelWheel, addtlThreatWheel;
 		//UI PANELS
 		public SagaAddHeroPanel addHeroPanel;
 		public SagaModifyGroupsPanel modifyGroupsPanel;
@@ -53,6 +54,8 @@ namespace Saga
 		public GameObject textBoxPrefab;
 		public bool isDebugMode = false;
 
+		Color allyDisabledColor = new Color( 0.5283019f, .0828f, 0 );
+		Color allyEnabledColor = new Color( 0, 0.6440244f, 1 );
 		Sound sound;
 		SagaSetupOptions setupOptions { get; set; }
 		bool isFromCampaign = false;
@@ -77,6 +80,12 @@ namespace Saga
 		void Awake()
 		{
 			Debug.Log( "ENTERING SAGA SETUP" );
+			if ( isDebugMode )
+			{
+				//reset app data for testing
+				DataStore.InitData();
+			}
+
 			//Exception handling for any Unity thrown exception, such as from asset management
 			Application.logMessageReceived += LogCallback;
 
@@ -137,6 +146,8 @@ namespace Saga
 
 			faderCG.alpha = 0;
 			faderCG.DOFade( 1, .5f );
+
+			EventSystem.current.SetSelectedGameObject( difficultyButton.gameObject );
 		}
 
 		void bootstrapDEBUG()
@@ -155,6 +166,10 @@ namespace Saga
 			difficultyText.text = DataStore.uiLanguage.uiSetup.normal;
 			//adaptive
 			adaptiveButton.colors = setupOptions.useAdaptiveDifficulty ? greenBlock : redBlock;
+			ColorBlock cb = adaptiveButton.colors;
+			cb.selectedColor = new Color( .6f, .4f, .1f );
+			adaptiveButton.colors = cb;
+
 			//clear hero panel if not loading from campaign
 			if ( heroContainer.childCount > 0 )
 			{
@@ -668,6 +683,9 @@ namespace Saga
 			sound.PlaySound( FX.Click );
 			setupOptions.useAdaptiveDifficulty = !setupOptions.useAdaptiveDifficulty;
 			thisButton.colors = setupOptions.useAdaptiveDifficulty ? greenBlock : redBlock;
+			ColorBlock cb = thisButton.colors;
+			cb.selectedColor = new Color( .6f, .4f, .1f );
+			thisButton.colors = cb;
 		}
 
 		public void OnViewMissionCard()
@@ -811,9 +829,15 @@ namespace Saga
 		{
 			if ( missionPicker.selectedMission != null
 				&& !missionPicker.isBusy )
+			{
 				allyButton.interactable = true;
+				allyBackgroundImage.color = allyEnabledColor;
+			}
 			else
+			{
 				allyButton.interactable = false;
+				allyBackgroundImage.color = allyDisabledColor;
+			}
 
 			if ( DataStore.sagaSessionData.MissionHeroes.Count > 0
 				&& missionPicker.selectedMission != null
@@ -835,6 +859,22 @@ namespace Saga
 			{
 				viewMissionCardButton.interactable = false;
 			}
+
+			//set default selected button
+			if ( EventSystem.current.currentSelectedGameObject == null )
+			{
+				difficultyButton.Select();
+			}
+		}
+
+		public void OnThreatLevelClick()
+		{
+			threatLevelWheel.DoClick();
+		}
+
+		public void OnAdditionalThreatClick()
+		{
+			addtlThreatWheel.DoClick();
 		}
 	}
 }

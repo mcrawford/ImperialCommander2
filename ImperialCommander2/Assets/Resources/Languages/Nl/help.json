@@ -1,412 +1,82 @@
 [
   {
-    "panelHelpID": "EnemyActivation",
-    "helpItems": [
-      {
-        "id": "bonus",
-        "helpText": "Bonus Effects: In each round, an Imperial group gains a random bonus effect that provides benefits. The bonus effect is displayed at the top of the instruction window."
-      },
-      {
-        "id": "card",
-        "helpText": "Deployment Card: The activation window always shows the group's deployment card. Outside of an activation, you can right-click an enemy thumbnail to open its card."
-      },
-      {
-        "id": "tracker",
-        "helpText": "Damage Counter: You can use this to keep track of how much damage each figure within a group has suffered. Click / tap a tracker number to modify its figure ID or damage. You can also hover the mouse over a number and use the scroll wheel up/down to modify the value."
-      },
-      {
-        "id": "instructions",
-        "helpText": "Instructions: When a deployment group is activated, its instructions are displayed. Each figure in the group, one at a time, starting with the figure closest to a Rebel figure, resolves the instructions from top to bottom. Any instructions that the figure cannot resolve are skipped (see “Skipping Instructions” in the online Wiki help). After the figure resolves or skips the last instruction in the list, its activation ends and the next figure in that group activates.\nAn Imperial figure cannot perform more than two actions during its activation. An instruction costs one action for each {A} (action) or {Q} (attack action) icon preceding it. If the figure does not have enough actions remaining for an instruction, that instruction is skipped. Unless stated otherwise, an Imperial figure can never perform more than one {Q} (attack action) per activation."
-      },
-      {
-        "id": "hide",
-        "helpText": "Click / tap the eye icon to temporarily view the map. Click / tap it again to re-open the window."
-      },
-      {
-        "id": "deploymentCost",
-        "helpText": "Deployment Cost: This is the deployment cost of the group. The small number (if any) is the cost for a single figure."
-      },
-      {
-        "id": "mods",
-        "helpText": "Modifications: If any modifications (such as additional damage) are applied to the group, they are displayed here."
-      },
-      {
-        "id": "size",
-        "helpText": "Group Size: This is the group's size."
-      },
-      {
-        "id": "surges",
-        "helpText": "Surge Abilities: If any {B} are rolled during an Imperial figure's attack, the figure spends surges following this list. The figure skips a surge ability if one of the following is true:\n\n{-}It has already used that ability during this attack.\n{-}The ability costs more {B} than it has remaining.\n{-}The ability would have no effect (e.g., increasing accuracy when the attack already has enough accuracy or attempting to inflict a condition when the attack currently deals no damage).\n\n Then, if the figure has any {B} remaining, it repeats this process, starting from the top of the list again. If the figure cannot resolve any surge abilities, the remaining {B} have no effect.\n\nSurge abilities added through bonus effects (at the top of the instruction window) are always priority 1."
-      },
-      {
-        "id": "abilities",
-        "helpText": "Group Abilities: The deployment group's abilities are listed here. This section also tells you which abilities from the printed deployment card should be ignored."
-      },
-      {
-        "id": "health",
-        "helpText": "Health: The health of a figure in this group."
-      },
-      {
-        "id": "speed",
-        "helpText": "Speed: The group's speed. You usually will not need this value - the instructions tell you how far a figure can move."
-      },
-      {
-        "id": "defense",
-        "helpText": "Defense: Click / tap the defense icon to open the dice roller and automatically roll the assigned dice."
-      },
-      {
-        "id": "attack",
-        "helpText": "Attack: Click / tap the attack icon to open the dice roller and automatically roll the assigned dice."
-      },
-      {
-        "id": "colorBlip",
-        "helpText": "The colored circle shows the color assigned to the group."
-      }
-    ]
-  },
-  {
-    "panelHelpID": "DiceRoller",
-    "helpItems": [
-      {
-        "id": "dicePanel",
-        "helpText": "These are the dice rolls. Click / tap a die to remove it."
-      },
-      {
-        "id": "dicePool",
-        "helpText": "Click / tap to add a die."
-      },
-      {
-        "id": "mods",
-        "helpText": "If any modifications (such as additional damage) are applied to the group, they are displayed here."
-      },
-      {
-        "id": "card",
-        "helpText": "The deployment card of the group is displayed here."
-      },
-      {
-        "id": "hideRoller",
-        "helpText": "Click / tap to toggle the Dice Roller visibility so you can see the Enemy Activation Instructions underneath."
-      }
-    ]
-  },
-  {
-    "panelHelpID": "MainGame",
-    "helpItems": [
-      {
-        "id": "heroPanel",
-        "helpText": "The Rebel heroes as well as any deployed allies are shown here. Withdrawn heroes / allies are dimmed. You can use the activation icons to track activations.\n\nClick / tap a group to display options to Wound (Heroes only) or Defeat the group. The colored circle shows whether the hero is healthy (green) or wounded (red)."
-      },
-      {
-        "id": "objective",
-        "helpText": "The current objective you need to fulfill.\t"
-      },
-      {
-        "id": "enemyPanel",
-        "helpText": "This is the enemy deployment list, showing you all currently deployed enemy groups. Exhausted groups are greyed out. Click / tap the colored circle at the top left to assign a color to the group. Click / tap a group to display options to Exhaust or Defeat the group. Exhaustion can be toggled if you wish to reactivate a group. Right-click / double tap a group to display the deployment card.\n\nThe green circles indicate the number of figures left in a group. Click / tap these circles to remove them one by one. When the last figure is removed, the whole group is defeated."
-      },
-      {
-        "id": "map",
-        "helpText": "This is the main map screen where you interact with the mission and any map entities. Any time a window is opened, you can use the Eye icon in the lower left to temporarily open the map."
-      },
-      {
-        "id": "imperialActivation",
-        "helpText": "Trigger the next Imperial activation."
-      },
-      {
-        "id": "medpacs",
-        "helpText": "An overview over your medpacs. You can open a window to keep track of your medpacs and read the rules changes."
-      },
-      {
-        "id": "missionDashboard",
-        "helpText": "Open the Mission Dashboard panel.\n\nThe Mission Dashboard has several purposes. First, it displays the Mission Overview, containing Mission updates and special instructions.\n\nSecond, it displays the Fame and Awards. Fame and Awards gives you the amount of Fame and the number of Awards you have won so far in the mission (only relevant when using Adaptive Difficulty).\n\nFinally, the Dashboard contains a Log that saves all prompts and text messages from the Mission. You can use it to re-read information you have already closed."
-      },
-      {
-        "id": "imperialMenu",
-        "helpText": "Open the Imperial Menu."
-      },
-      {
-        "id": "settings",
-        "helpText": "Open the screen to display settings and to exit the mission."
-      },
-      {
-        "id": "round",
-        "helpText": "The current round number."
-      },
-      {
-        "id": "endRound",
-        "helpText": "End the current round and initiate the Status Phase. This is only possible when all Imperial groups have been activated."
-      }
-    ]
-  },
-  {
-    "panelHelpID": "Setup",
-    "helpItems": [
-      {
-        "id": "missionCard",
-        "helpText": "Shows the Mission details and description."
-      },
-      {
-        "id": "difficulty",
-        "helpText": "Click / tap to change the Mission difficulty."
-      },
-      {
-        "id": "adaptiveDifficulty",
-        "helpText": "Choose whether or not to use Adaptive Difficulty. Adaptive Difficulty reimburses some threat to the Empire when you defeat a group, making the game more challenging."
-      },
-      {
-        "id": "threat",
-        "helpText": "Set the threat level.\n\nClick / tap the number to display a value adjuster, or hover the mouse over the number and scroll the mouse wheel up/down to adjust the value."
-      },
-      {
-        "id": "additionalThreat",
-        "helpText": "If you want to start the mission with additional threat, set it here.\n\nClick / tap the number to display a value adjuster, or hover the mouse over the number and scroll the mouse wheel up/down to adjust the value."
-      },
-      {
-        "id": "ignored",
-        "helpText": "Select ignored groups. Ignored groups will never be added to the deployment hand at the beginning of a Mission. Use this, for example, to avoid having Tusken Raiders spawn on snow maps (this is already pre-set in most Missions). Figures with a green border are selected, i.e. added to the ignored list."
-      },
-      {
-        "id": "villains",
-        "helpText": "If the Empire has any Earned Villains in your Campaign, select those Villains here."
-      },
-      {
-        "id": "allies",
-        "helpText": "Select which Ally to bring with you. Some Allies might be banned for a specific Mission. Those are shown with a red outline, but can still be manually selected. Threat is added automatically when manually selecting an Ally."
-      },
-      {
-        "id": "heroes",
-        "helpText": "Select which Heroes to use in the Mission."
-      },
-      {
-        "id": "folder",
-        "helpText": "Click the folder icon to return to the previous folder."
-      },
-      {
-        "id": "missionPanel",
-        "helpText": "Select which Mission to play."
-      },
-      {
-        "id": "tiles",
-        "helpText": "This opens a list of tiles used in the Mission so you can prepare them in advance."
-      },
-      {
-        "id": "mode",
-        "helpText": "Switch between Official Missions (made by the Imperial Commander team and included in the app) and custom user-made Missions."
-      },
-      {
-        "id": "start",
-        "helpText": "Once you're ready, click / tap to start the Mission."
-      }
-    ]
-  },
-  {
     "panelHelpID": "Campaign",
     "helpItems": [
       {
-        "id": "campaignName",
-        "helpText": "Click / tap to change the custom name of the Campaign."
-      },
-      {
-        "id": "currentCampaign",
-        "helpText": "The Campaign currently chosen."
-      },
-      {
-        "id": "info",
-        "helpText": "This displays the Campaign information, for example special rules for the Campaign and general Campaign setup."
-      },
-      {
-        "id": "log",
-        "helpText": "Opens the Campaign log, a place to put notes for the Campaign."
-      },
-      {
-        "id": "exit",
-        "helpText": "Return to the start screen."
-      },
-      {
-        "id": "missionLayout",
-        "helpText": "This is the Campaign Mission structure. On the left side, you see which mission type to play next."
-      },
-      {
-        "id": "missionName",
-        "helpText": "The name of the Mission. If no Mission is pre-selected, click / tap this button to select a Mission."
-      },
-      {
-        "id": "threat",
-        "helpText": "The Threat Level of the Mission. Note - You can still change the Threat Level in the Mission Setup screen."
-      },
-      {
-        "id": "setup",
-        "helpText": "Click / tap to open the Mission Setup screen."
-      },
-      {
-        "id": "tier",
-        "helpText": "This shows you from which item decks to draw cards for the Rebel Upgrade Stage. Click / tap to change color to indicate the Rebel Upgrade Stage has been resolved."
-      },
-      {
-        "id": "imperialMission",
-        "helpText": "The Imperial Mission icon. When the Rebel Upgrade Stage of this mission has been resolved, click / tap the Imperial Mission icon. The app then tells you whether to draw an Imperial Mission (Empire symbol) or not (Rebel symbol)."
-      },
-      {
-        "id": "tracking",
-        "helpText": "You can keep track of Credits here, as well as Fame and Awards (only relevant when playing with Adaptive Difficulty).\n\nClick / tap the number to display a value adjuster, or hover the mouse over the number and scroll the mouse wheel up/down to adjust the value."
-      },
-      {
-        "id": "heroAdd",
-        "helpText": "Click / tap to add a Hero to the Mission."
-      },
-      {
-        "id": "heroIcon",
-        "helpText": "Click / tap a portrait to remove the hero."
-      },
-      {
-        "id": "xp",
-        "helpText": "Use the XP slot to track XP per hero.\n\nClick / tap the number to display a value adjuster, or hover the mouse over the number and scroll the mouse wheel up/down to adjust the value."
-      },
-      {
-        "id": "stats",
-        "helpText": "The Hero Class cards and items assigned to the hero. Click / tap an entry to remove it."
-      },
-      {
         "id": "addItem",
-        "helpText": "Click / tap to assign an item to the Hero. Only items available in the Inventory can be assigend."
+        "helpText": "Klik / tik om een item aan de held toe te wijzen. Alleen items die beschikbaar zijn in de inventaris kunnen worden toegewezen."
       },
       {
         "id": "addSkill",
-        "helpText": "Click / tap to add a Hero Class card to the Hero."
+        "helpText": "Klik / tik om een heldenklassekaart aan de held toe te wijzen."
+      },
+      {
+        "id": "campaignName",
+        "helpText": "Klik / tik om de custom naam van de campagne te veranderen."
+      },
+      {
+        "id": "currentCampaign",
+        "helpText": "De momenteel gekozen campagne."
+      },
+      {
+        "id": "exit",
+        "helpText": "Terug naar het startscherm."
+      },
+      {
+        "id": "heroAdd",
+        "helpText": "Klik / tik om een held aan de missie toe te wijzen."
+      },
+      {
+        "id": "heroIcon",
+        "helpText": "Klik / tik op een thumbnail om die held te verwijderen."
+      },
+      {
+        "id": "imperialMission",
+        "helpText": "Het pictogram voor de Keizerlijke Missies. Nadat de  Rebel Upgrade-fase voor deze missie is afgehandeld, klik / tik je op het pictogram van de Keizerlijke Missies. De app laat vervolgens zien of je een Keizerlijke Missie moet trekken (symbool van het Keizerrijk) of niet (symbool van het Verzet)."
+      },
+      {
+        "id": "info",
+        "helpText": "Hier wordt de campagne-informatie weergegeven, zoals speciale regels voor de campagne en de algemene campagneopstelling."
       },
       {
         "id": "inventory",
-        "helpText": "The Campaign Inventory shows the items, rewards, Villains, and Allies gained during the Campaign. Click / tap the + icon to add an entry. In the bottom left of the add window, you can select between various types of items and rewards. Click / tap an entry to remove it."
-      }
-    ]
-  },
-  {
-    "panelHelpID": "Title",
-    "helpItems": [
-      {
-        "id": "tutorials",
-        "helpText": "<b>Imperial Commander</b> features three tutorials aimed at players who have never played Imperial Assault before. These tutorials explain how to play the game and use the app.\n\nSelect the tutorial from the dropdown menu."
+        "helpText": "De campagne-inventaris toont de voorwerpen, beloningen, schurken en bondgenoten die tijdens de campagne zijn verkregen. Klik / tik op het +-icoon om een item toe te voegen. Linksonder in het toevoegvenster kun je kiezen uit verschillende soorten voorwerpen en beloningen. Klik / tik op een item om het te verwijderen."
       },
       {
-        "id": "tutorialStart",
-        "helpText": "Click / tap to display a window showing information about the selected tutorial, along with a button to start that tutorial's Mission."
+        "id": "log",
+        "helpText": "Opent het campagnelogboek, waar je notities voor de campagne kunt bijhouden."
       },
       {
-        "id": "language",
-        "helpText": "Select your preferred language the app will use."
+        "id": "missionLayout",
+        "helpText": "Dit is de missiestructuur van de campagne. Aan de linkerkant zie je welk type missie je als volgende moet spelen."
       },
       {
-        "id": "expansions",
-        "helpText": "Click / tap this button to open or hide the Expansion menu, where you can select which Expansions you own and wish to play with. You can also import custom groups in this menu."
+        "id": "missionName",
+        "helpText": "De naam van de missie. Als er nog geen missie is geselecteerd, klik / tik je op deze knop om een missie te kiezen.\n"
       },
       {
-        "id": "options",
-        "helpText": "Open the Options menu or close the app."
+        "id": "setup",
+        "helpText": "Klik / tik om het scherm voor de missieopstelling te openen."
       },
       {
-        "id": "mode",
-        "helpText": "Click / tap Campaign or Choose Mission to choose your game mode.\r\n\r\n<color=yellow>\"Campaign\" Mode</color> uses a campaign manager to guide you through a full campaign using the expansion of your choice (or a fully custom campaign). It sets up the proper mission list, and allows mission customization where allowed, including adding and removing Forced missions. Campaign mode acts as a \"virtual campaign log\" that allows you to keep track of XP, credits and rewards, your heroes, their skills and items, general items you've purchased, earned villains, and allies. All of these can be added and removed from the campaign as you see fit. The campaign is auto-saved.\n\n<color=yellow>Choose Mission</color> is meant to be used to play one-off missions, or for groups who want to play campaigns with the printed campaign log."
+        "id": "stats",
+        "helpText": "De heldenklassekaarten en voorwerpen die aan de held zijn toegewezen. Klik / tik op een item om het te verwijderen."
       },
       {
-        "id": "menu",
-        "helpText": "This is the main menu. You can start a new Campaign or Mission here, load an existing Campaign, or continue from a saved Mission in progress.\n\n<b>Imperial Commander</b> automatically saves the game state after each round, after all deployments have been resolved. Click / tap Continue to load the saved game state."
+        "id": "threat",
+        "helpText": "Het dreigingsniveau van de missie. Let op: je kunt het dreigingsniveau nog steeds aanpassen in het missie-opstelscherm."
       },
       {
-        "id": "wiki",
-        "helpText": "Click / tap here to open the wiki documentation in your web browser."
+        "id": "tier",
+        "helpText": "Hier zie je uit welke itemdecks kaarten worden getrokken voor de Rebel Upgrade-fase. Klik / tik om de kleur te veranderen om aan te geven dat de Rebel Upgrade-fase is afgerond."
       },
       {
-        "id": "donate",
-        "helpText": "If you want to support the app, click / tap here to open the PayPal website in your web browser."
+        "id": "tracking",
+        "helpText": "Hier kun je de credits bijhouden, evenals roem en onderscheidingen (alleen relevant bij het spelen met adaptieve moeilijkheid).\n\nKlik / tik op het getal om een aanpassingsveld te tonen, of beweeg de muis over het getal en gebruik het scrollwiel om de waarde te verhogen of te verlagen."
       },
       {
-        "id": "version",
-        "helpText": "The app checks if you're running the latest version, so you don't have to check the repository for updates.\n\n<color=yellow>Yellow, spinning</color> = checking for update\n<color=yellow>Yellow, pulsing</color> = update available\n<color=red>Red, pulsing</color> = network error\n<color=green>Green</color> = up to date.\n\nClicking this button will display a window that lists the latest version changelog, along with a button that launches the project's GitHub website where you can download the latest version."
-      }
-    ]
-  },
-  {
-    "panelHelpID": "Settings",
-    "helpItems": [
-      {
-        "id": "audio",
-        "helpText": "Settings for Music, Sound Effects, and Ambient sound."
-      },
-      {
-        "id": "visuals",
-        "helpText": "Settings for Visual Effects and the camera view."
-      },
-      {
-        "id": "interface",
-        "helpText": "Settings for UI elements."
-      },
-      {
-        "id": "colors",
-        "helpText": "Settings for Enemy Groups default colors."
-      },
-      {
-        "id": "music",
-        "helpText": "Toggle the Music on or off. You can also adjust the volume of the Music.\n\nClick / tap the number to display a value adjuster, or hover the mouse over the number and scroll the mouse wheel up/down to adjust the value."
-      },
-      {
-        "id": "soundEffects",
-        "helpText": "Toggle the Sound Effects on or off. You can also adjust the volume of Sound Effects.\n\nClick / tap the number to display a value adjuster, or hover the mouse over the number and scroll the mouse wheel up/down to adjust the value."
-      },
-      {
-        "id": "ambient",
-        "helpText": "Toggle the Ambient sounds on or off. You can also adjust the volume of the Ambient sounds.\n\nClick / tap the number to display a value adjuster, or hover the mouse over the number and scroll the mouse wheel up/down to adjust the value."
-      },
-      {
-        "id": "quickClose",
-        "helpText": "With this option enabled, you can click / tap outside of most windows to quickly close them without having to click / tap on the actual Close, Continue, or OK buttons."
-      },
-      {
-        "id": "zoom",
-        "helpText": "With this option enabled, camera Zoom buttons are displayed in the Main Game."
-      },
-      {
-        "id": "bloom",
-        "helpText": "Toggles a bloom effect in the UI."
-      },
-      {
-        "id": "vignette",
-        "helpText": "Toggles a vignette (darkens the corners of the screen) effect in the UI."
-      },
-      {
-        "id": "view",
-        "helpText": "With this option enabled, the camera is locked into a top-down viewpoint in the Main Game instead of an isometric viewpoint."
-      },
-      {
-        "id": "roundLimitOn",
-        "helpText": "Normal behavior, where some missions end if you take too long. Missions that have a Round Limit show the limit in red next to the current round number.\n\nExample: 2 / <color=red>4</color>"
-      },
-      {
-        "id": "roundLimitOff",
-        "helpText": "The Round Limit is disabled and missions can be played for as long as you want."
-      },
-      {
-        "id": "roundLimitDangerous",
-        "helpText": "Once the Round Limit is reached, the mission becomes more difficult instead of ending. Threat gain at the end of a round doubles and the deployment modifier increases by an additional 2 each round. The Round Limit will be displayed in orange.\n\nExample: 2 / <color=orange>4</color>"
-      },
-      {
-        "id": "skipWarp",
-        "helpText": "Skip the hyperspace intro animation when starting or continuing a Mission."
-      },
-      {
-        "id": "colorRegular",
-        "helpText": "Default colors for Regular groups. (The color on the left will be the most frequently used.)"
-      },
-      {
-        "id": "colorSingleElite",
-        "helpText": "Default color for Elite groups."
-      },
-      {
-        "id": "colorDualElite",
-        "helpText": "Default colors for Elite groups. (The color on the right is only used with elite Death Troopers.)"
-      },
-      {
-        "id": "colorVillain",
-        "helpText": "Default color for Villains."
+        "id": "xp",
+        "helpText": "Gebruik het XP-slot om XP per held bij te houden.\n\nKlik / tik op het getal om een aanpassingsveld te tonen, of beweeg de muis over het getal en gebruik het scrollwiel om de waarde te verhogen of te verlagen."
       }
     ]
   },
@@ -414,44 +84,134 @@
     "panelHelpID": "DeploymentCard",
     "helpItems": [
       {
-        "id": "deploymentCost",
-        "helpText": "Deployment Cost: This is the deployment cost of the group. The small number (if any) is the cost for a single figure."
-      },
-      {
-        "id": "mods",
-        "helpText": "Modifications: If any modifications (such as additional damage) are applied to the group, they are displayed here."
-      },
-      {
-        "id": "size",
-        "helpText": "Group Size: This is the group's size."
-      },
-      {
-        "id": "surges",
-        "helpText": "Surge Abilities: If any {B} are rolled during an Imperial figure's attack, the figure spends surges following this list. The figure skips a surge ability if one of the following is true:\n\n{-}It has already used that ability during this attack.\n{-}The ability costs more than it has remaining.\n{-}The ability would have no effect (e.g., increasing accuracy when the attack already has enough accuracy or attempting to inflict a condition when the attack currently deals no damage).\n\n Then, if the figure has any remaining, it repeats this process, starting from the top of the list again. If the figure cannot resolve any surge abilities, the remaining {B} have no effect.\n\nSurge abilities added through bonus effects (at the top of the instruction window) are always priority 1."
-      },
-      {
         "id": "abilities",
-        "helpText": "Group Abilities: The deployment group's abilities are listed here. This section also tells you which abilities from the printed deployment card should be ignored."
-      },
-      {
-        "id": "health",
-        "helpText": "Health: The health of a figure in this group."
-      },
-      {
-        "id": "speed",
-        "helpText": "Speed: The group's speed. You usually will not need this value - the instructions tell you how far a figure can move."
-      },
-      {
-        "id": "defense",
-        "helpText": "Defense: Click / tap the defense icon to open the dice roller and automatically roll the assigned dice."
+        "helpText": "Groepsvaardigheden: hier worden de vaardigheden van de inzetgroep weergegeven. In deze sectie staat ook welke vaardigheden van de gedrukte inzetkaart genegeerd moeten worden."
       },
       {
         "id": "attack",
-        "helpText": "Attack: Click / tap the attack icon to open the dice roller and automatically roll the assigned dice."
+        "helpText": "Aanval: klik / tik op het aanvalsicoon om de dobbelsteenroller te openen en automatisch de toegewezen dobbelstenen te gooien."
+      },
+      {
+        "id": "defense",
+        "helpText": "Verdediging: klik / tik op het verdedigingsicoon om de dobbelsteenroller te openen en automatisch de toegewezen dobbelstenen te gooien."
+      },
+      {
+        "id": "deploymentCost",
+        "helpText": "Inzetkosten: dit zijn de inzetkosten van de groep. Het kleine getal (indien aanwezig) is de kosten voor één figuur."
+      },
+      {
+        "id": "health",
+        "helpText": "Gezondheid: de gezondheid van een figuur in deze groep."
+      },
+      {
+        "id": "mods",
+        "helpText": "Aanpassingen: als er aanpassingen (zoals extra schade) op de groep van toepassing zijn, worden die hier weergegeven."
+      },
+      {
+        "id": "size",
+        "helpText": "Groepsgrootte: dit is de grootte van de groep."
+      },
+      {
+        "id": "speed",
+        "helpText": "Snelheid: de snelheid van de groep. Je hebt deze waarde meestal niet nodig. De instructies geven aan hoe ver een figuur kan verplaatsen."
+      },
+      {
+        "id": "surges",
+        "helpText": "Surgevaardigheden: als er tijdens een aanval van een keizerlijke figuur {B} worden gegooid, besteedt die figuur surges volgens de volgende lijst. Het figuur slaat een surgevaardigheid over als één van de volgende voorwaarden van toepassing is:\n\n{-} Het figuur heeft die vaardigheid al gebruikt tijdens deze aanval.\n{-} De vaardigheid kost meer dan er nog beschikbaar is.\n{-} De vaardigheid geen effect zou hebben (bijvoorbeeld nauwkeurigheid verhogen terwijl de aanval al voldoende nauwkeurigheid heeft, of proberen een conditie toe te passen terwijl de aanval momenteel geen schade doet).\n\nDaarna, als het figuur nog {B} over heeft, herhaalt die dit proces en begint opnieuw bovenaan de lijst. Als het figuur geen surgevaardigheden kan uitvoeren, hebben de resterende {B} geen effect.\n\nSurgevaardigheden die worden toegevoegd via bonuseffecten (bovenaan het instructievenster) hebben altijd prioriteit 1."
       },
       {
         "id": "tracker",
-        "helpText": "Damage Counter: You can use this to keep track of how much damage each figure within a group has suffered. Click / tap a tracker number to modify its figure ID or damage. You can also hover the mouse over a number and use the scroll wheel up/down to modify the value."
+        "helpText": "Schadeteller: hiermee kun je bijhouden hoeveel schade elke figuur binnen een groep heeft opgelopen. Klik / tik op een tellergetal om de figuur-ID of schade aan te passen. Je kunt ook met de muis over een getal bewegen en het scrollwiel gebruiken om de waarde te verhogen of te verlagen."
+      }
+    ]
+  },
+  {
+    "panelHelpID": "DiceRoller",
+    "helpItems": [
+      {
+        "id": "card",
+        "helpText": "De inzetkaart van de groep wordt hier weergegeven."
+      },
+      {
+        "id": "dicePanel",
+        "helpText": "Dit zijn de dobbelsteenworpen. Klik / tik op een dobbelsteen om deze te verwijderen."
+      },
+      {
+        "id": "dicePool",
+        "helpText": "Klik / tik om een dobbelsteen toe te voegen."
+      },
+      {
+        "id": "hideRoller",
+        "helpText": "Klik / tik om de zichtbaarheid van de dobbelsteenroller in of uit te schakelen, zodat je de vijandelijke activatie-instructies eronder kunt zien."
+      },
+      {
+        "id": "mods",
+        "helpText": "Als er aanpassingen (zoals extra schade) op de groep van toepassing zijn, worden die hier weergegeven."
+      }
+    ]
+  },
+  {
+    "panelHelpID": "EnemyActivation",
+    "helpItems": [
+      {
+        "id": "abilities",
+        "helpText": "Groepsvaardigheden: hier worden de vaardigheden van de inzetgroep weergegeven. In deze sectie staat ook welke vaardigheden van de gedrukte inzetkaart genegeerd moeten worden."
+      },
+      {
+        "id": "attack",
+        "helpText": "Aanval: klik / tik op het aanvalsicoon om de dobbelsteenroller te openen en automatisch de toegewezen dobbelstenen te gooien."
+      },
+      {
+        "id": "bonus",
+        "helpText": "Bonuseffecten: in elke ronde krijgt een keizerlijke groep een willekeurig bonuseffect dat voordelen biedt. Het bonuseffect wordt bovenaan het instructievenster weergegeven."
+      },
+      {
+        "id": "card",
+        "helpText": "Inzetkaart: tijdens een activatie wordt altijd de inzetkaart van de groep weergegeven. Buiten een activatie kun je met de rechtermuisknop op een vijandthumbnail klikken om de inzetkaart te openen."
+      },
+      {
+        "id": "colorBlip",
+        "helpText": "De gekleurde cirkel geeft de kleur weer die aan de groep is toegewezen."
+      },
+      {
+        "id": "defense",
+        "helpText": "Verdediging: klik / tik op het verdedigingsicoon om de dobbelsteenroller te openen en automatisch de toegewezen dobbelstenen te gooien."
+      },
+      {
+        "id": "deploymentCost",
+        "helpText": "Inzetkosten: dit zijn de inzetkosten van de groep. Het kleine getal (indien aanwezig) is de kosten voor één figuur."
+      },
+      {
+        "id": "health",
+        "helpText": "Gezondheid: de gezondheid van een figuur in deze groep."
+      },
+      {
+        "id": "hide",
+        "helpText": "Klik / tik op het oogicoon om het speelbord tijdelijk weer te geven. Klik / tik er opnieuw op om het venster weer te openen."
+      },
+      {
+        "id": "instructions",
+        "helpText": "Instructies: Wanneer een inzetgroep wordt geactiveerd, worden de instructies voor die groep weergegeven. Elke figuur in de groep voert, één voor één, beginnend met het figuur die het dichtst bij een rebellenfiguur staat, de instructies van boven naar beneden uit. Instructies die het figuur niet kan uitvoeren, worden overgeslagen (zie \"Skipping Instructions\" in de online wiki). Nadat het figuur de laatste instructie in de lijst heeft uitgevoerd of overgeslagen, eindigt de activatie en activeert het volgende figuur in die groep.\nEen keizerlijke figuur kan tijdens de activatie niet meer dan twee acties uitvoeren. Een instructie kost één actie voor elk {A} (actie) of {Q} (aanvalsactie) icoon dat eraan voorafgaat. Als het figuur niet genoeg acties over heeft om een instructie uit te voeren, wordt die instructie overgeslagen. Tenzij anders vermeld, kan een keizerlijke figuur tijdens een activatie nooit meer dan één {Q} (aanvalsactie) uitvoeren."
+      },
+      {
+        "id": "mods",
+        "helpText": "Aanpassingen: als er aanpassingen (zoals extra schade) op de groep van toepassing zijn, worden die hier weergegeven."
+      },
+      {
+        "id": "size",
+        "helpText": "Groepsgrootte: dit is de grootte van de groep."
+      },
+      {
+        "id": "speed",
+        "helpText": "Snelheid: de snelheid van de groep. Je hebt deze waarde meestal niet nodig. De instructies geven aan hoe ver een figuur kan verplaatsen."
+      },
+      {
+        "id": "surges",
+        "helpText": "Surgevaardigheden: als er tijdens een aanval van een keizerlijke figuur {B} worden gegooid, besteedt die figuur surges volgens de volgende lijst. Het figuur slaat een surgevaardigheid over als één van de volgende voorwaarden van toepassing is:\n\n{-} Het figuur heeft die vaardigheid al gebruikt tijdens deze aanval.\n{-} De vaardigheid kost meer dan er nog beschikbaar is.\n{-} De vaardigheid geen effect zou hebben (bijvoorbeeld nauwkeurigheid verhogen terwijl de aanval al voldoende nauwkeurigheid heeft, of proberen een conditie toe te passen terwijl de aanval momenteel geen schade doet).\n\nDaarna, als het figuur nog {B} over heeft, herhaalt die dit proces en begint opnieuw bovenaan de lijst. Als het figuur geen surgevaardigheden kan uitvoeren, hebben de resterende {B} geen effect.\n\nSurgevaardigheden die worden toegevoegd via bonuseffecten (bovenaan het instructievenster) hebben altijd prioriteit 1."
+      },
+      {
+        "id": "tracker",
+        "helpText": "Schadeteller: hiermee kun je bijhouden hoeveel schade elke figuur binnen een groep heeft opgelopen. Klik / tik op een tellergetal om de figuur-ID of schade aan te passen. Je kunt ook met de muis over een getal bewegen en het scrollwiel gebruiken om de waarde te verhogen of te verlagen."
       }
     ]
   },
@@ -459,29 +219,16 @@
     "panelHelpID": "EnemyVillainSelection",
     "helpItems": [
       {
-        "id": "enemyExpansion",
-        "helpText": "Click / tap here to show the groups that belong to the respective expansion. Groups from figure packs are grouped under the Imperial logo."
+        "id": "enemyCustom",
+        "helpText": "Klik / tik hier om aangepaste (geïmporteerde) groepen weer te geven."
       },
       {
-        "id": "enemyCustom",
-        "helpText": "Click / tap here to show custom (imported) groups."
+        "id": "enemyExpansion",
+        "helpText": "Klik / tik hier om de groepen uit de betreffende uitbreiding weer te geven. Groepen uit figure packs zijn gegroepeerd onder het Keizerrijk-logo."
       },
       {
         "id": "enemySelection",
-        "helpText": "Click / tap groups to select or deselect them. Selected groups have a green border. Elite groups are shaded red."
-      }
-    ]
-  },
-  {
-    "panelHelpID": "HeroAllySelection",
-    "helpItems": [
-      {
-        "id": "heroCustom",
-        "helpText": "Click / tap here to show custom (imported) heroes."
-      },
-      {
-        "id": "heroSelection",
-        "helpText": "Click / tap a thumbnail to select or deselect them."
+        "helpText": "Klik / tik op groepen om ze te selecteren of de selectie ongedaan te maken. Geselecteerde groepen hebben een groene rand. Elitegroepen zijn rood gemarkeerd."
       }
     ]
   },
@@ -490,28 +237,20 @@
     "helpItems": [
       {
         "id": "figurePackInfo",
-        "helpText": "Click / tap a figure pack to select / deselect it. Selected figure packs are shaded green.\n\n<b>Please note:</b> Only figure packs that add non-unique enemies are listed here. Villains and allies can simply be selected during mission setup."
+        "helpText": "Klik / tik op een figure pack om het te selecteren of de selectie ongedaan te maken. Geselecteerde figure packs zijn groen gemarkeerd.\n\n<b>Let op:</b> Alleen figure packs die niet-unieke vijanden toevoegen, worden hier weergegeven. Schurken en bondgenoten kunnen eenvoudig tijdens de missieopstelling worden geselecteerd."
       }
     ]
   },
   {
-    "panelHelpID": "ImportGroups",
+    "panelHelpID": "HeroAllySelection",
     "helpItems": [
       {
-        "id": "activateGroups",
-        "helpText": "Click / tap a group to select / deselect it.\n\nAll groups activated here are available to be added to open groups, just like official groups. They follow all the same rules as official groups and can be added to the Ignored groups if you don’t want to use them for a mission."
+        "id": "heroCustom",
+        "helpText": "Klik / tik hier om aangepaste (geïmporteerde) helden weer te geven."
       },
       {
-        "id": "selectAll",
-        "helpText": "Click / tap here to select all groups."
-      },
-      {
-        "id": "selectNone",
-        "helpText": "Click / tap here to deselect all groups."
-      },
-      {
-        "id": "ToggleFaction",
-        "helpText": "Click / tap here to toggle between Imperial/Mercenary and Rebel groups."
+        "id": "heroSelection",
+        "helpText": "Klik / tik op een thumbnail om deze te selecteren of de selectie ongedaan te maken."
       }
     ]
   },
@@ -519,32 +258,301 @@
     "panelHelpID": "ImperialMenu",
     "helpItems": [
       {
-        "id": "showGroups",
-        "helpText": "Click / tap the panel to reveal the cards currently in the deployment hand."
-      },
-      {
-        "id": "modifyThreat",
-        "helpText": "Click / tap to increase or decrease the current threat."
-      },
-      {
-        "id": "pauseDeployment",
-        "helpText": "Click / tap to pause or unpause deployment."
-      },
-      {
-        "id": "pauseThreat",
-        "helpText": "Click / tap to pause or unpause threat gain."
-      },
-      {
-        "id": "optionalDeployment",
-        "helpText": "Click / tap have the app immediately perform an optional deployment."
-      },
-      {
         "id": "currentThreat",
-        "helpText": "This is the current threat value."
+        "helpText": "Dit is de huidige dreigingswaarde."
       },
       {
         "id": "deploymentModifier",
-        "helpText": "This is the Deployment Modifier. The higher the modifier, the higher the chance for a more dangerous deployment event. It changes each round depending on the deployment event."
+        "helpText": "Dit is de inzetmodifier. Hoe hoger de modifier, hoe groter de kans op een gevaarlijkere inzetgebeurtenis. Deze verandert elke ronde afhankelijk van de inzetgebeurtenis."
+      },
+      {
+        "id": "modifyThreat",
+        "helpText": "Klik / tik om de huidige dreiging te verhogen of te verlagen."
+      },
+      {
+        "id": "optionalDeployment",
+        "helpText": "Klik / tik om de app direct een optionele inzet te laten uitvoeren."
+      },
+      {
+        "id": "pauseDeployment",
+        "helpText": "Klik / tik om de inzet te pauzeren of te hervatten."
+      },
+      {
+        "id": "pauseThreat",
+        "helpText": "Klik / tik om de dreigingsopbouw te pauzeren of te hervatten."
+      },
+      {
+        "id": "showGroups",
+        "helpText": "Klik / tik op het paneel om de kaarten in de huidige inzethand te tonen."
+      }
+    ]
+  },
+  {
+    "panelHelpID": "ImportGroups",
+    "helpItems": [
+      {
+        "id": "ToggleFaction",
+        "helpText": "Klik / tik hier om te schakelen tussen keizerlijke/huurlinggroepen en rebellen groepen."
+      },
+      {
+        "id": "activateGroups",
+        "helpText": "Klik / tik op een groep om deze te selecteren of de selectie ongedaan te maken.\n\nAlle groepen die hier zijn geactiveerd, kunnen worden toegevoegd aan open groepen, net als officiële groepen. Ze volgen dezelfde regels als officiële groepen en kunnen aan de genegeerde groepen worden toegevoegd als je ze niet voor een missie wilt gebruiken."
+      },
+      {
+        "id": "selectAll",
+        "helpText": "Klik / tik hier om alle groepen te selecteren."
+      },
+      {
+        "id": "selectNone",
+        "helpText": "Klik / tik hier om alle groepen te deselecteren."
+      }
+    ]
+  },
+  {
+    "panelHelpID": "MainGame",
+    "helpItems": [
+      {
+        "id": "endRound",
+        "helpText": "Beëindig de huidige ronde en start de statusfase. Dit is alleen mogelijk wanneer alle keizerlijke groepen geactiveerd zijn."
+      },
+      {
+        "id": "enemyPanel",
+        "helpText": "Dit is de vijandelijke inzetlijst, waarin alle momenteel ingezette vijandelijke groepen worden weergegeven. Uitgeputte groepen zijn grijs gemarkeerd. Klik / tik op de gekleurde cirkel linksboven om een kleur aan de groep toe te wijzen. Klik / tik op een groep om opties te tonen om de groep uit te putten of te verslaan. Uitputting kan worden omgeschakeld als je een groep opnieuw wilt activeren. Klik met de rechtermuisknop / dubbeltik op een groep om de inzetkaart te tonen.\n\nDe groene cirkels geven het aantal figuren in een groep aan dat nog over is. Klik / tik op deze cirkels om ze één voor één te verwijderen. Wanneer de laatste figuur verwijderd is, wordt de hele groep verslagen."
+      },
+      {
+        "id": "heroPanel",
+        "helpText": "De rebellenhelden en alle ingezette bondgenoten worden hier weergegeven. Teruggetrokken helden / bondgenoten zijn gedimd. Je kunt de activatie-iconen gebruiken om activaties bij te houden.\n\nKlik / tik op een groep om opties te tonen om de held te verwonden (alleen helden) of de groep te verslaan. De gekleurde cirkel geeft aan of de held gezond is (groen) of gewond (rood)."
+      },
+      {
+        "id": "imperialActivation",
+        "helpText": "Activeer de volgende keizerlijke activatie."
+      },
+      {
+        "id": "imperialMenu",
+        "helpText": "Open het keizerlijke menu."
+      },
+      {
+        "id": "map",
+        "helpText": "Dit is het hoofdscherm met het speelbord waar je de missie en alle speelbordobjecten beheert. Wanneer er een venster geopend is, kun je het oogicoon linksonder gebruiken om het speelbord tijdelijk te openen."
+      },
+      {
+        "id": "medpacs",
+        "helpText": "Een overzicht van je medpacs. Je kunt een venster openen om je medpacs bij te houden en de regelwijzigingen te lezen."
+      },
+      {
+        "id": "missionDashboard",
+        "helpText": "Open het missie-dashboardpaneel.\n\nHet missie-dashboard heeft meerdere functies. Ten eerste toont het het missie-overzicht met missie-updates en speciale instructies.\n\nTen tweede toont het roem en onderscheidingen. Roem en onderscheidingen geven aan hoeveel roem je hebt en hoeveel onderscheidingen je tot nu toe in de missie hebt behaald (alleen relevant bij adaptieve moeilijkheid).\n\nTot slot bevat het dashboard een logboek waarin alle meldingen en tekstberichten van de missie worden opgeslagen. Je kunt dit gebruiken om eerder getoonde informatie opnieuw te bekijken."
+      },
+      {
+        "id": "objective",
+        "helpText": "Het huidige doel die je moet voltooien."
+      },
+      {
+        "id": "round",
+        "helpText": "Het huidige rondenummer."
+      },
+      {
+        "id": "settings",
+        "helpText": "Open het scherm om instellingen te bekijken en de missie te verlaten."
+      }
+    ]
+  },
+  {
+    "panelHelpID": "Settings",
+    "helpItems": [
+      {
+        "id": "ambient",
+        "helpText": "Schakel omgevingsgeluiden in of uit. Je kunt ook het volume van de omgevingsgeluiden aanpassen.\n\nKlik / tik op het getal om een aanpassingsveld te tonen, of beweeg de muis over het getal en gebruik het scrollwiel om de waarde te verhogen of te verlagen."
+      },
+      {
+        "id": "audio",
+        "helpText": "Instellingen voor muziek, geluidseffecten en omgevingsgeluiden."
+      },
+      {
+        "id": "bloom",
+        "helpText": "Schakelt een bloom-effect in de UI in of uit."
+      },
+      {
+        "id": "colorDualElite",
+        "helpText": "Standaardkleuren voor elitegroepen. (De kleur aan de rechterkant wordt alleen gebruikt bij elite Death Troopers.)"
+      },
+      {
+        "id": "colorRegular",
+        "helpText": "Standaardkleuren voor standaardgroepen. (De kleur aan de linkerkant wordt het meest gebruikt.)"
+      },
+      {
+        "id": "colorSingleElite",
+        "helpText": "Standaardkleur voor elitegroepen."
+      },
+      {
+        "id": "colorVillain",
+        "helpText": "Standaardkleur voor schurken."
+      },
+      {
+        "id": "colors",
+        "helpText": "Instellingen voor standaardkleuren van vijandelijke groepen."
+      },
+      {
+        "id": "interface",
+        "helpText": "Instellingen voor UI-elementen."
+      },
+      {
+        "id": "mapPanel",
+        "helpText": "Aangepaste toetsenbordcommando’s toewijzen."
+      },
+      {
+        "id": "mapper",
+        "helpText": "Instellingen voor aangepaste toetsenbordcommando’s."
+      },
+      {
+        "id": "music",
+        "helpText": "Schakel de muziek in of uit. Je kunt ook het volume van de muziek aanpassen.\n\nKlik / tik op het getal om een aanpassingsveld te tonen, of beweeg de muis over het getal en gebruik het scrollwiel om de waarde te verhogen of te verlagen."
+      },
+      {
+        "id": "quickClose",
+        "helpText": "Wanneer deze optie is ingeschakeld, kun je buiten de meeste vensters klikken / tikken om ze snel te sluiten, zonder op de knoppen sluiten, doorgaan of OK te hoeven klikken / tikken."
+      },
+      {
+        "id": "roundLimitDangerous",
+        "helpText": "Zodra de rondelimiet bereikt is, wordt de missie moeilijker in plaats van beëindigd. De dreigingsopbouw aan het einde van een ronde verdubbelt en de inzetmodifier neemt elke ronde met nog eens 2 toe. De rondelimiet wordt in oranje weergegeven.\n\nVoorbeeld: 2 / <color=orange>4</color>"
+      },
+      {
+        "id": "roundLimitOff",
+        "helpText": "De rondelimiet is uitgeschakeld en missies kunnen zo lang worden gespeeld als je wilt."
+      },
+      {
+        "id": "roundLimitOn",
+        "helpText": "Normaal gedrag, waarbij sommige missies eindigen als je er te lang over doet. Missies met een rondelimiet tonen de limiet in rood naast het huidige rondennummer.\n\nVoorbeeld: 2 / <color=red>4</color>"
+      },
+      {
+        "id": "skipWarp",
+        "helpText": "Sla de hyperspace-intro-animatie over bij het starten of voortzetten van een missie."
+      },
+      {
+        "id": "soundEffects",
+        "helpText": "Schakel de geluidseffecten in of uit. Je kunt ook het volume van de geluidseffecten aanpassen.\n\nKlik / tik op het getal om een aanpassingsveld te tonen, of beweeg de muis over het getal en gebruik het scrollwiel om de waarde te verhogen of te verlagen."
+      },
+      {
+        "id": "view",
+        "helpText": "Wanneer deze optie is ingeschakeld, wordt de camera in het hoofdscherm vastgezet in een bovenaanzicht in plaats van een isometrisch aanzicht."
+      },
+      {
+        "id": "vignette",
+        "helpText": "Schakelt een vignet-effect in de UI in of uit (verdonkert de hoeken van het scherm)."
+      },
+      {
+        "id": "visuals",
+        "helpText": "Instellingen voor visuele effecten en de cameraweergave."
+      },
+      {
+        "id": "zoom",
+        "helpText": "Wanneer deze optie is ingeschakeld, worden zoomknoppen voor de camera weergegeven in het hoofdscherm."
+      }
+    ]
+  },
+  {
+    "panelHelpID": "Setup",
+    "helpItems": [
+      {
+        "id": "adaptiveDifficulty",
+        "helpText": "Kies of je adaptieve moeilijkheid wilt gebruiken. Adaptieve moeilijkheid geeft het Rijk een deel van de dreiging terug wanneer je een groep verslaat, waardoor het spel uitdagender wordt."
+      },
+      {
+        "id": "additionalThreat",
+        "helpText": "Als je de missie wilt starten met extra dreiging, stel dit hier in.\n\nKlik / tik op het getal om een aanpassingsveld te tonen, of beweeg de muis over het getal en gebruik het scrollwiel om de waarde te verhogen of te verlagen."
+      },
+      {
+        "id": "allies",
+        "helpText": "Selecteer welke bondgenoot je meeneemt. Sommige bondgenoten kunnen voor een specifieke missie verboden zijn. Deze worden met een rode rand weergegeven, maar kunnen nog steeds handmatig worden geselecteerd. Dreiging wordt automatisch toegevoegd wanneer je handmatig een bondgenoot selecteert."
+      },
+      {
+        "id": "difficulty",
+        "helpText": "Klik / tik om de moeilijkheid van de missie te wijzigen."
+      },
+      {
+        "id": "folder",
+        "helpText": "Klik op het map-icoon om terug te keren naar de vorige map."
+      },
+      {
+        "id": "heroes",
+        "helpText": "Selecteer welke helden je in de missie wilt gebruiken."
+      },
+      {
+        "id": "ignored",
+        "helpText": "Selecteer genegeerde groepen. Genegeerde groepen worden nooit toegevoegd aan de inzethand aan het begin van een missie. Gebruik dit bijvoorbeeld om te voorkomen dat Tusken Raiders op sneeuwkaarten verschijnen (dit is al vooraf ingesteld in de meeste missies). Figuren met een groene rand zijn geselecteerd, d.w.z. toegevoegd aan de genegeerde lijst."
+      },
+      {
+        "id": "missionCard",
+        "helpText": "Toont de missiegegevens en beschrijving."
+      },
+      {
+        "id": "missionPanel",
+        "helpText": "Selecteer welke missie je wilt spelen."
+      },
+      {
+        "id": "mode",
+        "helpText": "Schakel tussen officiële missies (gemaakt door het Imperial Commander-team en inbegrepen in de app) en aangepaste, door gebruikers gemaakte missies."
+      },
+      {
+        "id": "start",
+        "helpText": "Wanneer je klaar bent, klik / tik om de missie te starten."
+      },
+      {
+        "id": "threat",
+        "helpText": "Stel het dreigingsniveau in.\n\nKlik / tik op het getal om een aanpassingsveld te tonen, of beweeg de muis over het getal en gebruik het scrollwiel om de waarde te verhogen of te verlagen."
+      },
+      {
+        "id": "tiles",
+        "helpText": "Dit opent een lijst met tegels die in de missie worden gebruikt, zodat je ze vooraf kunt klaarleggen."
+      },
+      {
+        "id": "villains",
+        "helpText": "Als het Keizerrijk in jouw campagne verdiende schurken heeft, selecteer die schurken hier."
+      }
+    ]
+  },
+  {
+    "panelHelpID": "Title",
+    "helpItems": [
+      {
+        "id": "donate",
+        "helpText": "Als je de app wilt ondersteunen, klik / tik hier om de PayPal-website in je webbrowser te openen."
+      },
+      {
+        "id": "expansions",
+        "helpText": "Klik / tik op deze knop om het uitbreidingenmenu te openen of te verbergen, waar je kunt selecteren welke uitbreidingen je bezit en wilt gebruiken. Je kunt hier ook aangepaste groepen importeren."
+      },
+      {
+        "id": "language",
+        "helpText": "Selecteer de gewenste taal die de app gebruikt."
+      },
+      {
+        "id": "menu",
+        "helpText": "Dit is het hoofdmenu. Hier kun je een nieuwe campagne of missie starten, een bestaande campagne laden of doorgaan met een opgeslagen lopende missie.\n\n<b>Imperial Commander</b> slaat de spelstatus automatisch op na elke ronde, nadat alle inzetten zijn afgehandeld. Klik / tik op doorgaan om de opgeslagen spelstatus te laden."
+      },
+      {
+        "id": "mode",
+        "helpText": "Klik / tik op campagne of kies missie om je spelmodus te selecteren.\n\n<color=yellow>\"Campagne\"-modus</color> gebruikt een campagnemanager om je door een volledige campagne te begeleiden met de uitbreiding van jouw keuze (of een volledig aangepaste campagne). Het stelt de juiste missielijst in en maakt missies aanpasbaar waar toegestaan, inclusief het toevoegen en verwijderen van geforceerde missies. Campagnemodus fungeert als een \"virtueel campagne-logboek\" waarmee je XP, credits en beloningen, je helden, hun vaardigheden en items, algemene gekochte items, verdiende schurken en bondgenoten kunt bijhouden. Al deze elementen kunnen naar wens worden toegevoegd en verwijderd uit de campagne. De campagne wordt automatisch opgeslagen.\n\n<color=yellow>\"Kies missie\"</color> is bedoeld voor losse missies, of voor groepen die campagnes willen spelen met het gedrukte campagne-logboek."
+      },
+      {
+        "id": "options",
+        "helpText": "Open het optiesmenu of sluit de app."
+      },
+      {
+        "id": "tutorialStart",
+        "helpText": "Klik / tik om een venster te tonen met informatie over de geselecteerde tutorial, samen met een knop om de missie van die tutorial te starten."
+      },
+      {
+        "id": "tutorials",
+        "helpText": "<b>Imperial Commander</b> bevat drie tutorials voor spelers die nog nooit Imperial Assault hebben gespeeld. Deze tutorials leggen uit hoe je het spel en de app gebruikt.\n\nSelecteer de tutorial via het keuzemenu."
+      },
+      {
+        "id": "version",
+        "helpText": "De app controleert of je de nieuwste versie gebruikt, zodat je niet zelf de repository hoeft te controleren op updates.\n\n<color=yellow>Geel, draaiend</color> = controleert op updates\n<color=yellow>Geel, pulserend</color> = update beschikbaar\n<color=red>Rood, pulserend</color> = netwerkfout\n<color=green>Groen</color> = up-to-date\n\nDoor op deze knop te klikken wordt een venster geopend met de changelog van de nieuwste versie, samen met een knop die de GitHub-website van het project opent waar je de nieuwste versie kunt downloaden."
+      },
+      {
+        "id": "wiki",
+        "helpText": "Klik / tik hier om de wikidocumentatie in je webbrowser te openen."
       }
     ]
   }

@@ -3,7 +3,7 @@
   "missionProperties": {
     "missionName": "Sorry voor de rotzooi",
     "missionDescription": "",
-    "missionInfo": "{-} De deur is vergrendeld voor alle figuren behalve <color=“red”>Han Solo</color>.\n{-} De missie gaat verder als de deur naar de garage wordt geopend.\n{-} De rebellen verliezen wanneer <color=“red”>Han Solo</color> wordt verslagen.",
+    "missionInfo": "{-} De deur is vergrendeld voor alle figuren behalve <color=\"red\">Han Solo</color>.\n{-} De missie gaat verder wanneer de deur naar de garage geopend wordt.\n{-} De rebellen verliezen als <color=\"red\">Han Solo</color> verslagen is.",
     "campaignName": "Basisspel",
     "startingObjective": "Open de deur naar de garage",
     "repositionOverride": "Blokkeer de toegang tot de garage.",
@@ -11,124 +11,34 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate1",
-              "GUID": "24a8fb61-1dae-433a-8d28-cea121df0af3",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "a350b540-7731-4b9c-b3ad-591d99721fb0",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "3742f1e4-811c-4c6f-84b1-592bf18e3c6c",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "39f3ccfd-d095-4890-8ea0-e0f8cd8c4b34",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 4",
-      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate4",
-              "GUID": "1955de84-da02-4f39-aebc-6f8a89c9bc58",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "42a6745f-9b48-4847-b1ca-3b69205a1540",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "“Je bent net op tijd,” merkt Han Solo op als je aankomt. “Ik heb iets gehoord over een keizerlijke officier die hier aan een soort operatie werkt.”\n\n“Luister, ik heb de plek verkend. Het is behoorlijk goed beveiligd,” zegt hij, terwijl hij je naar voren gebaart en een klein metalen fiche omhoog houdt, \"Maar de bewakers zijn gewoon zó slordig met hun sleutelkaarten.\" Han Solo grijnst.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Zet <color=“red”>Han Solo</color> (Scoundrel) in op het rood gemarkeerde veld.\n{-} De deur is vergrendeld voor alle figuren behalve <color=“red”>Han Solo</color>.\n{-} De missie gaat verder als de deur naar de garage wordt geopend.\n{-} De rebellen verliezen wanneer <color=“red”>Han Solo</color> wordt verslagen.",
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Han duikt weg terwijl een salvo blastervuur sissend over hem heen schiet. \"Huh,\" zegt hij terwijl hij terugvuurt. \"Had niet gedacht dat het er zóveel zouden zijn.\"\n\nDe keizerlijke troepen blijven oprukken, al snel trek je je terug, niet opgewassen tegen hun overweldigende aantallen.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
     },
     {
       "eventName": "End of Mission - Rebels win",
       "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "“Geen wrok tegen Nar Shadaa”, zegt Han sarcastisch. Hij draait zich glimlachend naar jullie om. “Bedankt jongens, ik sta bij jullie in het krijt. Als je ooit in de problemen komt, kan ik je misschien een wederdienst bewijzen.”\n\n{-} De rebellen winnen de missie!\n{-} De helden krijgen <color=“red”>Han Solo</color> (Scoundrel) als bondgenoot.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
+      "eventText": "\"Geen wrok tegenover Nar Shaddaa,\" zegt Han sarcastisch. Hij draait zich naar jullie om en glimlacht. \"Bedankt, jongens. Ik sta bij jullie in het krijt. Als jullie ooit in de problemen zitten, kan ik de gunst misschien terugbetalen.\"\n\n{-} De rebellen winnen de missie!\n{-} De helden krijgen <color=\"red\">Han Solo</color> (Scoundrel) als bondgenoot.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
     },
     {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Han duikt weg als een salvo van blaster vuur rakelings over hem heen schiet. “Huh,” zegt hij terwijl hij terugvuurt. “Ik had niet gedacht dat het er zoveel zouden zijn.”\n\nDe keizerlijke troepen blijven oprukken; het duurt niet lang voordat je je terugtrekt, niet in staat om hun grote aantallen te weerstaan.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "\"Jullie zijn precies op tijd,\" merkt Han Solo op wanneer je arriveert. \"Ik heb iets gehoord over een keizerlijke officier die hier één of andere operatie runt.\"\n\n\"Luister, ik heb de plek verkend. Alles zit potdicht,\" zegt hij terwijl hij je wenkt en een kleine metalen pas omhooghoudt, \"maar die bewakers gaan wel héél slordig om met hun keycards.\" Hij grijnst.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Zet <color=\"red\">Han Solo</color> (Scoundrel) in op het rood gemarkeerde veld.\n{-} De deur is vergrendeld voor alle figuren behalve <color=\"red\">Han Solo</color>.\n{-} De missie gaat verder wanneer de deur naar de garage geopend wordt.\n{-} De rebellen verliezen wanneer <color=\"red\">Han Solo</color> verslagen is.",
       "eventActions": []
     },
     {
       "eventName": "Old Friends",
       "GUID": "fbf51831-db56-4661-b09b-8f2da94a76f7",
-      "eventText": "De deur schuift open en de officier kijkt gealarmeerd op. “Han? Wat doe jij hier?” \n\nHan glimlacht. “Hé daar, Gerrin. Ik hoorde dat je een militaire aanstelling hebt gekocht. Ik kom je even feliciteren.” Hij heft zijn blaster.\n\n{-} Zet een <color=\"red\">imperial officer</color> in. Dit is Gerrin.\n{-} Geef Gerrin extra gezondheid gelijk aan twee keer het dreigingsniveau.",
+      "eventText": "De deur schuift open en de officier kijkt verschrikt op. \"Han? Wat doe jij hier?\"\n\nHan glimlacht. \"Hé, Gerrin. Ik hoorde dat je jezelf een militaire rang hebt gekocht. Ik ben hier om je te feliciteren.\" Hij heft zijn blaster.\n\n{-} Zet een <color=\"red\">Imperial Officer</color> in. Dit is Gerrin.\n{-} Geef Gerrin extra gezondheid gelijk aan twee keer het bedreigingsniveau.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Garage Door",
               "GUID": "5b4b5933-d05b-4388-b60d-714b63871714",
-              "theText": "Deze deur leidt naar de garage.\n\nDe deur is vergrendeld voor alle figuren behalve <color=“red”>Han Solo</color>.",
+              "theText": "Deze deur leidt naar de garage.\n\nDe deur is vergrendeld voor alle figuren behalve <color=\"red\">Han Solo</color>.",
               "buttonList": [
                 {
                   "GUID": "1fe48a79-bb69-4291-878f-d43fac1e777a",
@@ -180,7 +90,7 @@
     {
       "eventName": "Old Friends 1",
       "GUID": "90b0550a-a95f-48e2-a87d-9a70a08e9bf7",
-      "eventText": "Gerrin kijkt afkeurend en opent dan het vuur met een uitdrukking van woede op zijn gezicht.\n\n{-} Gerrin wordt <color=“red”>Focused</color>. Dan onderbreekt hij en verplaatst 3 om <color=“red”>Han Solo</color> aan te vallen.",
+      "eventText": "Gerrin grijnst verbeten en opent het vuur, woede op zijn gezicht.\n\n{-} Gerrin wordt <color=\"red\">gefocust</color>. Dan onderbreekt hij en verplaatst 3 om <color=\"red\">Han Solo</color> aan te vallen.",
       "eventActions": []
     },
     {
@@ -200,9 +110,99 @@
       ]
     },
     {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "24a8fb61-1dae-433a-8d28-cea121df0af3",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "a350b540-7731-4b9c-b3ad-591d99721fb0",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "3742f1e4-811c-4c6f-84b1-592bf18e3c6c",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "39f3ccfd-d095-4890-8ea0-e0f8cd8c4b34",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "1955de84-da02-4f39-aebc-6f8a89c9bc58",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "42a6745f-9b48-4847-b1ca-3b69205a1540",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
       "eventName": "Regulars",
       "GUID": "fcb2df56-1d64-41af-a038-557c063e462d",
-      "eventText": "Een deur achterin de cantina gaat open en gevaarlijke premiejagers stormen naar binnen met hun wapens op Han Solo gericht.",
+      "eventText": "Een deur achter in de cantina zwaait open en grommende premiejagers stormen naar binnen, met hun wapens op Han Solo gericht.",
       "eventActions": [
         {
           "enemyName": null,
@@ -251,12 +251,6 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
       "entityName": "Crate4",
       "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
       "mainText": "Een oud voorraadkrat.",
@@ -268,9 +262,15 @@
       ]
     },
     {
-      "entityName": "Han Entrance",
-      "GUID": "6c2e34a6-281e-4da9-a6d9-166bbb93ca6e",
-      "mainText": "Plaats Han hier.",
+      "entityName": "DP  Red",
+      "GUID": "981e94f7-b03c-4748-94c2-eb610128b5d9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP  Yellow",
+      "GUID": "120c6816-a674-42d3-8391-5e76a80c4573",
+      "mainText": null,
       "buttonList": []
     },
     {
@@ -282,6 +282,18 @@
     {
       "entityName": "DP Green 2",
       "GUID": "74b5297f-d7fa-4441-a631-b2fb4a053083",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "5ee714c7-a0fe-4521-bf50-b1fc59ac3510",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando",
+      "GUID": "c903d3e4-cd49-4dba-8bad-47f702fc475d",
       "mainText": null,
       "buttonList": []
     },
@@ -304,27 +316,15 @@
       "buttonList": []
     },
     {
-      "entityName": "DP Trando",
-      "GUID": "c903d3e4-cd49-4dba-8bad-47f702fc475d",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP  Yellow",
-      "GUID": "120c6816-a674-42d3-8391-5e76a80c4573",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP  Red",
-      "GUID": "981e94f7-b03c-4748-94c2-eb610128b5d9",
-      "mainText": null,
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
     },
     {
       "entityName": "Garage Door",
       "GUID": "68eb6643-9df0-483a-bb84-87ded987096b",
-      "mainText": "Deze deur leidt naar de garage.\n\nDe deur is vergrendeld voor alle figuren behalve <color=“red”>Han Solo</color>.",
+      "mainText": "Deze deur leidt naar de garage.\n\nDe deur is vergrendeld voor alle figuren behalve <color=\"red\">Han Solo</color>.",
       "buttonList": [
         {
           "GUID": "efc828e9-7b7a-49da-8b25-15e4d269975e",
@@ -333,19 +333,19 @@
       ]
     },
     {
-      "entityName": "DP Probe Droid",
-      "GUID": "5ee714c7-a0fe-4521-bf50-b1fc59ac3510",
-      "mainText": null,
+      "entityName": "Han Entrance",
+      "GUID": "6c2e34a6-281e-4da9-a6d9-166bbb93ca6e",
+      "mainText": "Plaats Han hier.",
       "buttonList": []
     }
   ],
   "initialGroups": [
     {
-      "cardName": "Stormtrooper",
+      "cardName": "Probe Droid (Elite)",
       "customInstructions": ""
     },
     {
-      "cardName": "Probe Droid (Elite)",
+      "cardName": "Stormtrooper",
       "customInstructions": ""
     }
   ]

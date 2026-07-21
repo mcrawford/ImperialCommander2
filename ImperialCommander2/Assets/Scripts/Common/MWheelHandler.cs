@@ -77,6 +77,15 @@ public class MWheelHandler : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 		}
 	}
 
+	public void DoClick()
+	{
+		if ( disableInteractions )
+			return;
+
+		if ( valueAdjuster != null )
+			valueAdjuster.Show( wheelValue, this );
+	}
+
 	public void OnAdd()
 	{
 		wheelValue = Mathf.Min( maxValue, wheelValue + stepValue );

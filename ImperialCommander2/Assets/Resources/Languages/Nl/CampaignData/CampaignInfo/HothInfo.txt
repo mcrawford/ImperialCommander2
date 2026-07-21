@@ -1,16 +1,16 @@
-<b>RETURN TO HOTH SPECIAL RULES</b>
-{-} The Time Period for the <i>Return to Hoth</i> campaign is 5.
-{-} Shuffle the four Threat Mission cards and place them in a deck near the Side Mission deck.
-{-} When creating the Side Mission deck, choose only two green Side Mission cards and include only two random gray Side Mission cards.
-{-} If you just resolved the introductory mission, shuffle the Side Mission deck and draw two cards. Then, draw two cards from the Threat Mission deck. Those four cards are now active missions.
-{-} Threat missions function similarly to side missions, except that they give the Empire access to Bane Reward cards as long as they are active missions. When choosing side missions during the campaign, the heroes may choose to resolve a threat mission instead of another side mission to remove the Bane Reward card and gain Boon Reward cards.
-{-} Remove the Bane Reward card <b>Constant Advantage</b>. When this card comes up during the campaign, replace it with a different randomly drawn Bane Reward card.
+<b>SPECIALE SPELREGELS RETURN TO HOTH</b>
+{-} De tijdsperiode voor de campagne <i>Return to Hoth</i> is 5.
+{-} Schud de vier dreigingsmissiekaarten en leg ze als een deck naast het zijmissiedeck.
+{-} Kies bij het samenstellen van het zijmissiedeck slechts twee groene zijmissiekaarten en voeg slechts twee willekeurige grijze zijmissiekaarten toe.
+{-} Als je zojuist de introductiemissie hebt voltooid, schud dan het zijmissiedeck en trek twee kaarten. Trek vervolgens twee kaarten van het dreigingsmissiedeck. Deze vier kaarten vormen nu de actieve missies.
+{-} Dreigingsmissies werken op dezelfde manier als zijmissies, met dien verstande dat ze het Keizerrijk toegang geven tot nadeelkaarten (Bane) zolang ze actieve missies zijn. Wanneer de helden tijdens de campagne een zijmissie kiezen, mogen ze in plaats daarvan een dreigingsmissie voltooien om de nadeelkaart te verwijderen en voordeelkaarten (Boon) te ontvangen.
+{-} Verwijder de nadeelkaart <b>Constant Advantage</b>. Wanneer deze kaart tijdens de campagne wordt getrokken, vervang je die door een andere willekeurig getrokken nadeelkaart.
 
-<b>GENERAL SETUP</b>
-{-} Set aside the dice, Condition cards, and the damage, strain, and condition tokens.
-{-} Remove the card "Troop Data" from the Supply card deck and return it to the game box, then shuffle the Supply deck.
-{-} Set aside the Deployment cards, gray figures, map tiles, doors, and the objective, terminal, and crate tokens.
-{-} Each player selects a hero to play (at least two if playing single-player) and gathers the Hero sheet, figure, Hero Class deck, and starting items that correspond to that hero. 
-{-} For a two-hero game, each hero also takes a "Legendary" Reward card. For a three-hero game, each hero takes a "Heroic" Reward card.
-{-} Create the Side Mission deck by shuffling together the following cards: Each red Side Mission card (personal missions) corresponding to the selected heroes, two green cards (ally missions) of the players' choice, two random gray cards (general side missions).
-{-} Gather all Side Mission and Forced Mission Agenda cards. Shuffle them together to form the Imperial mission deck.
+<b>ALGEMENE VOORBEREIDING</b>
+{-} Leg de dobbelstenen, conditiekaarten en de schade-, forceer- en conditietokens apart.
+{-} Verwijder de voorraadkaart "Troop Data" uit het voorraaddeck en leg deze terug in de speldoos. Schud daarna het voorraaddeck.
+{-} Leg de inzetkaarten, grijze figuren, terreintegels, deuren en de missie-, terminal- en krattokens apart.
+{-} Elke speler kiest een held om mee te spelen (minimaal twee helden bij een solospel) en neemt het heldenblad, het figuur, het heldenklassedeck en de startuitrusting van die held.
+{-} Bij een spel met twee helden neemt elke held ook een "Legendary" beloningskaart. Bij een spel met drie helden neemt elke held een "Heroic" beloningskaart.
+{-} Stel de stapel zijmissies samen door de volgende kaarten te schudden: alle rode zijmissiekaarten (persoonlijke missies) die horen bij de gekozen helden, twee groene kaarten (bondgenootmissies) naar keuze van de spelers en twee willekeurige grijze kaarten (algemene zijmissies).
+{-} Verzamel alle zijmissie- en gefoceerde missie agendakaarten. Schud deze samen tot de keizerlijke missiestapel.

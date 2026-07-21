@@ -6,14 +6,17 @@ using UnityEngine.Rendering;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Linq;
 
 public class SettingsPanel : MonoBehaviour
 {
 	public CanvasGroup cg;
 	public Image fader, regularEnemyButton1, regularEnemyButton2, eliteEnemySingleButton, eliteEnemyButton1, eliteEnemyButton2, villainButton, cancelFader;
 	public Toggle musicToggle, soundToggle, ambientToggle, closeWindowToggle, zoomToggle, skipWarpIntroToggle, roundLimitToggleOn, roundLimitToggleOff, roundLimitToggleDangerous, bloomToggle, vignetteToggle, viewToggle;
+	public Button eliteSingleButton, eliteDualButton;
 	public Sound sound;
-	public GameObject returnButton, eliteSelectionSingle, eliteSelectionDual;
+	public GameObject returnButton, eliteSelectionSingle, eliteSelectionDual, regularSelection;
 	public VolumeProfile volume;
 	public SettingsPanelLanguageController languageController;
 	public GameObject audioPanel, gfxPanel, uiPanel, colorPanel, mapperPanel;
@@ -27,6 +30,8 @@ public class SettingsPanel : MonoBehaviour
 	public HelpPanel mapHelpPanel;
 	public Text keyValue, mapActivateImperials, mapToggleCamView, mapToggleMapVisibility, mapNavForward, mapNavBack, mapNavLeft, mapNavRight, mapNavCW, mapNavCCW;
 	public ScrollRect mapperScrollRect;
+	public GameObject audioTabButton, uiTabButton, videoTabButton, colorTabButton, mapperTabButton;
+	public List<Toggle> tabButtons;
 
 	Action<SettingsCommand> quitAction;
 	Action callbackAction;
@@ -36,6 +41,8 @@ public class SettingsPanel : MonoBehaviour
 
 	public void Show( Action<SettingsCommand> onQuit, BiomeType btype = BiomeType.Menu, Action callback = null )
 	{
+		EventSystem.current.SetSelectedGameObject( tabButtons[0].gameObject );
+		InputManager.Instance.uiAnimationsPlaying = true;
 		quitAction = onQuit;
 		biomeType = btype;
 		callbackAction = callback;
@@ -48,7 +55,11 @@ public class SettingsPanel : MonoBehaviour
 		fader.DOFade( .95f, .5f );
 		cg.DOFade( 1, .5f );
 		transform.GetChild( 1 ).localScale = new Vector3( .85f, .85f, .85f );
-		transform.GetChild( 1 ).DOScale( 1, .5f ).SetEase( Ease.OutExpo );
+		transform.GetChild( 1 ).DOScale( 1, .5f ).SetEase( Ease.OutExpo ).OnComplete( () =>
+		{
+			InputManager.Instance.settingsOpen = true;
+			InputManager.Instance.uiAnimationsPlaying = false;
+		} );
 
 		musicWheelHandler.ResetWheeler( PlayerPrefs.GetInt( "musicVolume" ) );
 		ambientWheelHandler.ResetWheeler( PlayerPrefs.GetInt( "ambientVolume" ) );
@@ -138,11 +149,15 @@ public class SettingsPanel : MonoBehaviour
 
 		fader.DOFade( 0, .5f ).OnComplete( () =>
 		{
+			InputManager.Instance.settingsOpen = false;
+			InputManager.Instance.uiAnimationsPlaying = false;
 			gameObject.SetActive( false );
 			callbackAction?.Invoke();
 		} );
 		cg.DOFade( 0, .2f );
 		transform.GetChild( 1 ).DOScale( .85f, .5f ).SetEase( Ease.OutExpo );
+
+		InputManager.Instance.uiAnimationsPlaying = true;
 	}
 
 	public void OnQuit()
@@ -164,7 +179,12 @@ public class SettingsPanel : MonoBehaviour
 			quitAction?.Invoke( SettingsCommand.ReturnTitles );
 		} );
 		cg.DOFade( 0, .2f );
-		transform.GetChild( 1 ).DOScale( .85f, .5f ).SetEase( Ease.OutExpo );
+		transform.GetChild( 1 ).DOScale( .85f, .5f ).SetEase( Ease.OutExpo ).OnComplete( () =>
+		{
+			InputManager.Instance.settingsOpen = false;
+			InputManager.Instance.uiAnimationsPlaying = false;
+		} );
+		InputManager.Instance.uiAnimationsPlaying = true;
 	}
 
 	public void OnHelpClick()
@@ -208,6 +228,7 @@ public class SettingsPanel : MonoBehaviour
 		if ( toggleBusy )
 			return;
 
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
 		EventSystem.current.SetSelectedGameObject( null );
 		sound.PlaySound( FX.Click );
 		//audio
@@ -278,6 +299,7 @@ public class SettingsPanel : MonoBehaviour
 				c.CameraViewToggle( t.isOn ? CameraView.TopDown : CameraView.Normal );
 			}
 		}
+		EventSystem.current.SetSelectedGameObject( lastSelected );
 	}
 
 	public void OnAudioTab()
@@ -316,11 +338,13 @@ public class SettingsPanel : MonoBehaviour
 		{
 			eliteSelectionSingle.SetActive( false );
 			eliteSelectionDual.SetActive( true );
+			regularSelection.GetComponent<Button>().navigation = new Navigation() { mode = Navigation.Mode.Explicit, selectOnDown = eliteDualButton };
 		}
 		else
 		{
 			eliteSelectionSingle.SetActive( true );
 			eliteSelectionDual.SetActive( false );
+			regularSelection.GetComponent<Button>().navigation = new Navigation() { mode = Navigation.Mode.Explicit, selectOnDown = eliteSingleButton };
 		}
 		colorPanel.SetActive( true );
 		mapperPanel.SetActive( false );
@@ -338,7 +362,7 @@ public class SettingsPanel : MonoBehaviour
 
 	public void ToggleColor( Image i )
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		//EventSystem.current.SetSelectedGameObject( null );
 		sound.PlaySound( FX.Click );
 
 		int colorIndex = ColorToIndex( i.color );
@@ -395,33 +419,130 @@ public class SettingsPanel : MonoBehaviour
 
 	private void Update()
 	{
-		if ( !awaitInput )
-			return;
-
-		if ( Input.GetKeyDown( KeyCode.Escape ) )
+		//if we're waiting for input, check if any key was pressed this frame and if so, set that key as the new value for this input command and save it to PlayerPrefs. Also if Escape is pressed, exit awaitInput mode without changing the key mapping.
+		if ( awaitInput )
 		{
-			awaitInput = false;
-			cancelFader.gameObject.SetActive( false );
-			return;
-		}
-
-		//determine which key was just pressed on this frame and store it in a variable, but not mouse or joystick buttons
-		if ( Input.anyKeyDown )
-		{
-			foreach ( KeyCode kcode in Enum.GetValues( typeof( KeyCode ) ) )
+			if ( Input.GetKeyDown( KeyCode.Escape ) )
 			{
-				if ( Input.GetKeyDown( kcode ) && !kcode.ToString().Contains( "Mouse" ) )
+				awaitInput = false;
+				cancelFader.gameObject.SetActive( false );
+				return;
+			}
+
+			//determine which key was just pressed on this frame and store it in a variable, but not mouse or joystick buttons
+			if ( Input.anyKeyDown )
+			{
+				foreach ( KeyCode kcode in Enum.GetValues( typeof( KeyCode ) ) )
 				{
-					KeyCode pressedKey = kcode;
-					//Debug.Log( "Key pressed: " + pressedKey );
-					keyValue.text = pressedKey.ToString();
-					cancelFader.gameObject.SetActive( false );
-					PlayerPrefs.SetString( inputCommand, pressedKey.ToString() );
-					PlayerPrefs.Save();
-					//Debug.Log( "SET: " + inputCommand );
-					break;
+					if ( Input.GetKeyDown( kcode ) && !kcode.ToString().Contains( "Mouse" ) )
+					{
+						KeyCode pressedKey = kcode;
+						//Debug.Log( "Key pressed: " + pressedKey );
+						keyValue.text = pressedKey.ToString();
+						cancelFader.gameObject.SetActive( false );
+						PlayerPrefs.SetString( inputCommand, pressedKey.ToString() );
+						PlayerPrefs.Save();
+						//Debug.Log( "SET: " + inputCommand );
+						break;
+					}
 				}
 			}
 		}
+		else//continue normal input processing
+		{
+			//set default selected button
+			if ( EventSystem.current.currentSelectedGameObject == null )
+			{
+				tabButtons.First( x => x.isOn ).Select();
+			}
+
+			if ( InputManager.Instance.settingsOpenCloseInput
+				&& InputManager.Instance.settingsOpen
+				&& !InputManager.Instance.uiAnimationsPlaying )
+			{
+				OnOK();
+			}
+
+		}
+	}
+
+	public void OnMusicClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		musicToggle.isOn = !musicToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnSoundClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		soundToggle.isOn = !soundToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnAmbientClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		ambientToggle.isOn = !ambientToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnQuickWindowClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		closeWindowToggle.isOn = !closeWindowToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnZoomButtonsClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		zoomToggle.isOn = !zoomToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnSkipWarpClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		skipWarpIntroToggle.isOn = !skipWarpIntroToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnBloomClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		bloomToggle.isOn = !bloomToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnVignetteClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		vignetteToggle.isOn = !vignetteToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnTopDownClick()
+	{
+		var lastSelected = EventSystem.current.currentSelectedGameObject;
+		viewToggle.isOn = !viewToggle.isOn;
+		EventSystem.current.SetSelectedGameObject( lastSelected );
+	}
+
+	public void OnEliteSingleColorClick()
+	{
+		if ( PlayerPrefs.GetString( "Lothal" ) == "true" )
+		{
+			ToggleColor( eliteEnemyButton1 );
+		}
+		else
+		{
+			ToggleColor( eliteEnemySingleButton );
+		}
+	}
+
+	public void OnVillainColorClick()
+	{
+		ToggleColor( villainButton );
 	}
 }

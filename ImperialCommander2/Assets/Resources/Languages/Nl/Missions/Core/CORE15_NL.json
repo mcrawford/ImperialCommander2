@@ -1,9 +1,9 @@
 {
   "languageID": "Dutch (NL)",
   "missionProperties": {
-    "missionName": "Oude Vrienden",
+    "missionName": "Oude vrienden",
     "missionDescription": "",
-    "missionInfo": "{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} Zet de Rebel Trooper figuren niet in op het speelbord. Ze zijn verborgen in de schuilplaatsen.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
+    "missionInfo": "{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} Zet de Rebel Trooper figuren niet in op het speelbord. Ze zijn verborgen in de schuilplaatsen.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
     "campaignName": "Basisspel",
     "startingObjective": "Onderzoek de schuilplaatsen om Gideons oude kameraden te vinden.",
     "repositionOverride": "Blokkeer de toegang tot de missietokens.",
@@ -11,197 +11,201 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate1",
-              "GUID": "728d53e2-da11-44cf-8ce0-79ed97b653a7",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "9532993f-958c-4b51-ba6e-d2f31af3aaec",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "a586462b-0d67-4423-8078-3c10a27ecfce",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "fd968311-975a-43b9-bf30-e8bdb2ecd76f",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 4",
-      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate4",
-              "GUID": "81a48498-6d36-495f-a48d-932df52bf3f0",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "18c79555-dbc8-4b41-b392-5807c614ca91",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "De geruchten over een verrader blijken waar te zijn. Je arriveert in het stelsel en wordt gelijk aangevallen, ternauwernood kun je ontsnappen aan de keizerlijke jagers. Je wordt veilig afgezet bij het rendez-vouspunt.\n\nKeizerlijke troepen krioelen door het hele gebied; er zijn geen tekenen van Gideons voormalige kameraden.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\r\n{-} Neutrale opdrachttokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} Zet de Rebel Trooper figuren niet in op het speelbord. Ze zijn verborgen in de schuilplaatsen.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 Rebel Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Gideon rouwt om het verlies van zijn kameraden terwijl jullie vertrekken. Hij wrijft over zijn been; je herinnert je dat het een oude wond is. Tijdens de terugreis zegt Gideon geen woord meer.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
     },
     {
       "eventName": "End of Mission - Rebels win",
       "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "De reünie tussen Gideon en zijn kameraden begint met ongemakkelijke excuses. Daarna echter beginnen de drank en de verhalen te stromen en worden oude vriendschappen hersteld.\n\nIn de loop van de lange avond worden veel van Gideons heldendaden onthuld: meer informatie dan je wilde weten over je metgezel.\n\n{-} De rebellen winnen de missie!\n{-} Gideon ontvangt de Beloningskaart “Fearless Leader”.\n{-} Helden ontvangen Rebel Troopers als bondgenoten.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
+      "eventText": "De hereniging tussen Gideon en zijn kameraden begint met wat ongemakkelijke excuses. Daarna beginnen de drank en de verhalen te vloeien en worden oude vriendschappen hersteld.\n\nIn de loop van de lange avond komen veel van Gideons avonturen aan het licht, meer dan je ooit had willen weten over je metgezel.\n\n{-} De rebellen winnen de missie!\n{-} Gideon ontvangt de beloningskaart “Fearless Leader”.\n{-} Helden ontvangen Rebel Troopers als bondgenoten.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
     },
     {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Gideon rouwt om het verlies van zijn kameraden terwijl jullie vertrekken. Hij wrijft over zijn been; je herinnert je dat het een oude wond is. Gedurende de terugreis zegt Gideon geen woord meer.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
+      "eventName": "Get to the choppa!",
+      "GUID": "1b098111-1df7-425f-bd99-0efa7e4e2dbf",
+      "eventText": "Je hebt alle oude kameraden van Gideon gevonden. Het enige dat nu rest is hun aftocht dekken.",
+      "eventActions": [
+        {
+          "repositionText": "Blokkeer de uitgang.",
+          "GUID": "5c326f98-8139-4914-916c-e260536cb1e2",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Help Gideons oude kameraden ontsnappen.",
+          "longText": null,
+          "GUID": "635a92c2-7df7-41b2-b7b9-c01e4d5124bc",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Trooper Rebel kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
+          "GUID": "b3c15f0b-7abc-47bb-b1b0-644ccd9c650f",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Imperial Hiding 1",
+      "GUID": "ebb1046c-9706-4764-89b6-d2038bfee431",
+      "eventText": "Een Zabrak met het insigne van een veldarts strompelt uit zijn schuilplaats, verschroeid door blastervuur.\n\n{-} Vervang de missietoken voor 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Dit figuur lijdt {H} gelijk aan het dreigingsniveau en is <color=\"red\">verdoofd</color>.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 1",
+              "GUID": "1404205b-39c1-4d41-8623-42899a6f143e",
+              "theText": "Dit lijkt een goede schuilplaats te zijn.",
+              "buttonList": [
+                {
+                  "GUID": "fcac5c5a-c9be-4216-ba11-37a23a2c22fc",
+                  "theText": "{A} Onderzoeken"
+                }
+              ]
+            }
+          ],
+          "GUID": "5f04230f-258b-48ce-a28f-572f8ac0a11a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
+          "GUID": "1023dd21-d80e-4f3e-92af-e510d463d06d",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Zoek de overgebleven Troopers en help ze ontsnappen.",
+          "longText": null,
+          "GUID": "ebf315f3-d8ee-4f9a-93c9-00037bbc98db",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Imperial Hiding 2",
+      "GUID": "c5dd4fe4-a9b4-4399-9869-f6383b629e0d",
+      "eventText": "Keizerlijke troepen openen het vuur op de takken van een hoge boom. Kort daarna valt er een grauwe menselijke vrouw naar beneden en komt met een smak neer op de grond.\n\n{-} Vervang de missietoken voor 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Dit figuur lijdt {H} gelijk aan het dreigingsniveau en is <color=\"red\">verdoofd</color>.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 2",
+              "GUID": "100c6c17-d0f3-4b19-9e80-8c3cb0524f28",
+              "theText": "Dit lijkt een goede schuilplaats te zijn.",
+              "buttonList": [
+                {
+                  "GUID": "eb870049-79f1-4c75-ae52-01164cc9e9cc",
+                  "theText": "{A} Onderzoeken"
+                }
+              ]
+            }
+          ],
+          "GUID": "45e42653-1ea6-4e33-ad32-ccaac8feff7b",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
+          "GUID": "eb030565-cccb-4f84-8686-2a04c93ec716",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Zoek de overgebleven Troopers en help ze ontsnappen.",
+          "longText": null,
+          "GUID": "7cc533a0-8cc6-457a-921d-2902a27a48ad",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Imperial Hiding 3",
+      "GUID": "d4ac892d-8b6f-442a-8243-bdf3b2ee4949",
+      "eventText": "Een gehavende Devaroniaan zit gebukt achter een grote rots en wisselt schoten uit met keizerlijke soldaten. Plotseling valt er een granaat naast hem neer en duikt hij weg.\n\n{-} Vervang de missietoken voor 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Dit figuur lijdt {H} gelijk aan het dreigingsniveau en is <color=\"red\">verdoofd</color>.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 3",
+              "GUID": "170423a3-8958-46cc-8cd2-6a8c639e28b4",
+              "theText": "Dit lijkt een goede schuilplaats te zijn.",
+              "buttonList": [
+                {
+                  "GUID": "d36f42c3-df1c-4ad4-adac-2ebd250dacb3",
+                  "theText": "{A} Onderzoeken"
+                }
+              ]
+            }
+          ],
+          "GUID": "f9f214c5-57a1-4fd1-b6e7-c498dbcc042c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
+          "GUID": "feec604a-cb49-4257-b0c0-7a38a3b521e1",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Zoek de overgebleven Troopers en help ze ontsnappen.",
+          "longText": null,
+          "GUID": "b9e0dc89-439d-4945-8066-1c6cb0e470ff",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Imperial Hiding 4",
+      "GUID": "b95ddc0d-4219-455a-8c9f-99efc70e29f3",
+      "eventText": "Keizerlijke troepen omsingelen een menselijke man, die onmiddellijk zijn handen opsteekt. Net wanneer het lijkt alsof hij zal worden neergeschoten, toont hij echter een keizerlijk insigne. Blijkbaar waren de geruchten over een verrader juist.\n\n{-} Vervang de missietoken voor een <color=\"red\">Imperial Officer</color>.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 4",
+              "GUID": "e568b737-7cc2-4536-98e8-78753de86a6b",
+              "theText": "Dit lijkt een goede schuilplaats te zijn.",
+              "buttonList": [
+                {
+                  "GUID": "4fd2f496-8607-4c9b-a460-77b8aaa5fe60",
+                  "theText": "{A} Onderzoeken"
+                }
+              ]
+            }
+          ],
+          "GUID": "0025dc6c-e2c0-49b6-8b98-b9269f175521",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "7789675e-298e-49b2-a38b-f43ec987fb21",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "Imperial Search",
+      "GUID": "f070ba38-5f2d-41b9-9bbc-b63dfb976638",
+      "eventText": "Keizerlijke zoekteams zwermen over de open plek en kammen systematisch alle schuilplaatsen uit.\n\nKies één van de overgebleven schuilplaatsen, klik erop en klik vervolgens op \"keizerlijke overval\".",
       "eventActions": []
-    },
-    {
-      "eventName": "Search Hiding Place 1",
-      "GUID": "c843ba4e-cb53-4c59-a69a-275a7aa237c2",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je begint te zoeken naar sporen van Gideons kameraden.\n\nTest {J} en voer het aantal successen in. Pas +1 {B} toe op de test voor elke forceertoken op de schuilplaats.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "e1d23fff-6fb6-41ad-839b-20e7d63142b0",
-              "theText": "Je wordt al snel afgeleid door keizerlijk blastervuur. Je moet blijven zoeken.\n\n{-} Plaats 1 forceertoken op de token voor elk geworpen {B} symbool."
-            }
-          ],
-          "GUID": "ed6b5ab9-0016-47ab-8c6e-ab5351be8d2c",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Search Hiding Place 2",
-      "GUID": "9d229193-7db2-45b6-93c4-9fe4743e4634",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je begint te zoeken naar sporen van Gideons kameraden.\n\nTest {J} en voer het aantal successen in. Pas +1 {B} toe op de test voor elke forceertoken op de schuilplaats.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "5f9dd077-9106-4966-ad5a-1dabb3bd827d",
-              "theText": "Je wordt al snel afgeleid door keizerlijk blastervuur. Je moet blijven zoeken.\n\n{-} Plaats 1 forceertoken op de token voor elk geworpen {B} symbool."
-            }
-          ],
-          "GUID": "ed2b2130-255c-41d4-bed1-592390ed0b30",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Search Hiding Place 3",
-      "GUID": "369b557e-44fe-4648-94cd-49e03dc0887e",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je begint te zoeken naar sporen van Gideons kameraden.\n\nTest {J} en voer het aantal successen in. Pas +1 {B} toe op de test voor elke forceertoken op de schuilplaats.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "9ea29eec-9d1d-43d6-921c-3b17188a2907",
-              "theText": "Je wordt al snel afgeleid door keizerlijk blastervuur. Je moet blijven zoeken.\n\n{-} Plaats 1 forceertoken op de token voor elk geworpen {B} symbool."
-            }
-          ],
-          "GUID": "cb1448aa-360d-41b1-a699-a5f995e50f6b",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Search Hiding Place 4",
-      "GUID": "2606468b-19cc-4560-938e-c2dbc1f7bc53",
-      "eventText": "",
-      "eventActions": [
-        {
-          "mainText": "Je begint te zoeken naar sporen van Gideons kameraden.\n\nTest {J} en voer het aantal successen in. Pas +1 {B} toe op de test voor elke forceertoken op de schuilplaats.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "a2e87085-a37f-4b51-a819-93953efea485",
-              "theText": "Je wordt al snel afgeleid door keizerlijk blastervuur. Je moet blijven zoeken.\n\n{-} Plaats 1 forceertoken op de token voor elk geworpen {B} symbool."
-            }
-          ],
-          "GUID": "9b5b5176-83c4-4955-ba53-e1c1dcc21f56",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
     },
     {
       "eventName": "Meet the Medic 1",
       "GUID": "dcd3ca79-11bb-4f7e-8661-519e475769df",
-      "eventText": "Je bent nog maar net aan het zoeken of een Zabrak met de insignes van een veldarts verschijnt vanachter een boom en komt naar je toe, duidelijk opgelucht.\n\n“Goed u te zien, commandant”, zegt de Zabrak. “Hier, laat me je wonden verzorgen.”\n\nHij begint je op te lappen.\n\n{-} Vervang de missietoken met 1 Rebel Trooper figuur. \n{-} Een held binnen 3 velden van de Rebel Trooper krijgt 5 {H}.\n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.",
+      "eventText": "Je bent nog maar net aan het zoeken wanneer een Zabrak met de insignes van een gevechtsmedicus achter een boom vandaan komt en op je afloopt, zichtbaar opgelucht.\n\n\"Goed je te zien, commandant,\" zegt de Zabrak. \"Hier, laat me je verwondingen verzorgen.\"\n\nHij begint je op te lappen.\n\n{-} Vervang de missietoken voor 1 Rebel Trooper figuur. \n{-} Een held binnen 3 velden van de Rebel Trooper krijgt 5 {H}.\n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -222,7 +226,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "theText": "{-} Neutrale missietokens vertegenwoordigen schuilplaatsen. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer dan de ingang en klik op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
+          "theText": "{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
           "GUID": "25c82b75-d952-4022-bdd0-ac1effa1dce7",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -235,7 +239,7 @@
           "eaName": "Change Objective"
         },
         {
-          "tbText": "De vreugde van de reünie wordt ruw onderbroken als meer keizerlijke troepen zich naar de open plek haasten.",
+          "tbText": "De vreugde van de hereniging wordt abrupt onderbroken wanneer meer keizerlijke troepen op de open plek afstormen.",
           "GUID": "922fe56a-f32b-4b5e-8d0e-2ee722ce3ca8",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -254,7 +258,7 @@
     {
       "eventName": "Meet the Scout 2",
       "GUID": "4b8f8350-63ba-4dab-88e0-890ce8413c4f",
-      "eventText": "Je bent al een tijdje aan het zoeken wanneer een grauwe menselijke vrouw in camouflage grimmig grijnzend uit een boom springt. “Dat werd tijd, commandant”, gromt ze. “Dat was bijna te laat.”\n\nZe wijst in de richting van een nabijgelegen heuvel. “Voorzichtig, het krioelt hier van de troepen. Dit is een uitstekende vuurpositie.”\n\n{-} Vervang de missietoken door 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} De actieve held, indien aanwezig, mag onderbreken om een verplaatsing of een aanval uit te voeren.",
+      "eventText": "Je bent al een tijdje aan het zoeken wanneer een grauwe menselijke vrouw in camouflage grimmig grijnzend uit een boom springt. \"Dat werd tijd, commandant,\" gromt ze. \"Dat was bijna te laat.\"\n\nZe wijst naar een nabijgelegen verhoging. \"Voorzichtig, het krioelt hier van de troepen. Dit is een uitstekende vuurpositie.\"\n\n{-} Vervang de missietoken voor 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} De actieve held, indien aanwezig, mag onderbreken om een verplaatsing of een aanval uit te voeren.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -275,7 +279,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "theText": "{-} Neutrale missietokens vertegenwoordigen schuilplaatsen. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer dan de ingang en klik op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
+          "theText": "{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
           "GUID": "c54fefc5-b895-4030-b8f2-3808e3b10b7d",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -288,7 +292,7 @@
           "eaName": "Change Objective"
         },
         {
-          "tbText": "De verkenner pauzeert plotseling en luistert. “Problemen in aantocht, commandant”, zegt ze. Plotseling klinkt er een uitbarsting van geruis en de verkenner duikt in dekking terwijl er een Probe Droid verschijnt die op haar schiet.",
+          "tbText": "De verkenner blijft plotseling staan en luistert. \"Problemen in aantocht, commandant,\" zegt ze. Plotseling klinkt er een uitbarsting van ruis en de verkenner duikt weg terwijl er een Probe Droid verschijnt en het vuur opent.",
           "GUID": "f71ff7ab-177c-4fdb-80dc-d705dee1ce5d",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -307,7 +311,7 @@
     {
       "eventName": "Meet the Sergeant 3",
       "GUID": "d76ced82-901d-41ca-af49-85bed562b2fc",
-      "eventText": "Na een paar tellen zoeken zie je een Devaroniaan met littekens naast een paar Stormtrooperlichamen staan, leunend op een blaster. “Ik dacht dat je ons vergeten was, commandant”, zegt hij. “Je hebt wel lef- KIJK UIT!”\n\nDe Devaroniër richt zijn geweer en schiet op iemand achter je.\n\n{-} Vervang de missietoken door 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} De Rebel Trooper wordt <color=“red”>gefocust</color>. Daarna mag hij een aanval uitvoeren.",
+      "eventText": "Na een paar tellen zoeken zie je een Devaroniaan die naast een paar stormtrooperlichamen staat, leunend op een blastergeweer. \"Ik dacht dat je ons vergeten was, commandant,\" zegt hij. \"Je hebt wel lef om- KIJK UIT!\"\n\nDe Devaroniaan rukt zijn geweer omhoog en vuurt op iemand achter je.\n\n{-} Vervang de missietoken voor 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} De Rebel Trooper wordt <color=\"red\">gefocust</color>. Daarna mag hij een aanval uitvoeren.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -328,7 +332,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "theText": "{-} Neutrale missietokens vertegenwoordigen schuilplaatsen. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer dan de ingang en klik op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
+          "theText": "{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
           "GUID": "3877b607-d4ee-42a9-bc15-c107561df8ee",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -351,7 +355,7 @@
     {
       "eventName": "Meet the Traitor 4",
       "GUID": "cf293a1d-d5aa-45b0-8c46-f023c2fd00d0",
-      "eventText": "Je bent opgelucht wanneer je Gideons voormalige rechterhand levend aantreft, maar de menselijke man lijkt in een keizerlijke comlink te praten. Als hij je opmerkt, pauzeert hij en haalt vervolgens zijn schouders op.\n\n“Jammer, commandant”, zegt hij terwijl hij een blaster op je richt. “Ik mocht je wel, weet je?”\n\n{-} Vervang de missietoken door een <color=“red”>Imperial Officer</color>.",
+      "eventText": "Je bent opgelucht wanneer je Gideons voormalige rechterhand levend aantreft, maar de menselijke man blijkt in een keizerlijke comlink te praten. Zodra hij je opmerkt, pauzeert hij en haalt vervolgens zijn schouders op.\n\n\"Zonde, commandant,\" zegt hij terwijl hij een blaster op je richt. \"Ik mocht je eigenlijk wel, weet je?\"\n\n{-} Vervang de missietoken voor een <color=\"red\">Imperial Officer</color>.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -381,10 +385,186 @@
           "eaName": "Deploy: DG006/Imperial Officer (Elite)"
         },
         {
-          "tbText": "De verrader schiet in jouw richting.\n\n{-} De keizerlijke Officier verplaatst 3 om {rebel} aan te vallen.",
+          "tbText": "De verrader schiet in jouw richting.\n\n{-} De <color=\"red\">Imperial Officer</color> verplaatst 3 om {rebel} aan te vallen.",
           "GUID": "06f4887e-3014-4c66-bdc9-3ed3015443fe",
           "eventActionType": 16,
           "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "De geruchten over een verrader blijken waar te zijn. Je arriveert in het stelsel en wordt gelijk aangevallen, ternauwernood kun je ontsnappen aan de keizerlijke jagers. Je wordt veilig afgezet bij het rendez-vouspunt.\n\nKeizerlijke troepen krioelen door het hele gebied; er zijn geen tekenen van Gideons voormalige kameraden.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Neutrale missietokens stellen schuilplaatsen voor. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} Zet de Rebel Trooper figuren niet in op het speelbord. Ze zijn verborgen in de schuilplaatsen.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer je de ingang en klik je op \"Troopers ontsnappen\" om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag voor de rebellen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "728d53e2-da11-44cf-8ce0-79ed97b653a7",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "9532993f-958c-4b51-ba6e-d2f31af3aaec",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "a586462b-0d67-4423-8078-3c10a27ecfce",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "fd968311-975a-43b9-bf30-e8bdb2ecd76f",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "81a48498-6d36-495f-a48d-932df52bf3f0",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "18c79555-dbc8-4b41-b392-5807c614ca91",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Search Hiding Place 1",
+      "GUID": "c843ba4e-cb53-4c59-a69a-275a7aa237c2",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je begint te zoeken naar sporen van Gideons kameraden.\n\nTest {J} en voer het aantal successen in. Pas +1 {B} toe voor elke forceertoken op de terminal.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "e1d23fff-6fb6-41ad-839b-20e7d63142b0",
+              "theText": "Je wordt al snel afgeleid door keizerlijk blastervuur. Je moet blijven zoeken.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de token."
+            }
+          ],
+          "GUID": "ed6b5ab9-0016-47ab-8c6e-ab5351be8d2c",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Search Hiding Place 2",
+      "GUID": "9d229193-7db2-45b6-93c4-9fe4743e4634",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je begint te zoeken naar sporen van Gideons kameraden.\n\nTest {J} en voer het aantal successen in. Pas +1 {B} toe voor elke forceertoken op de terminal.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "5f9dd077-9106-4966-ad5a-1dabb3bd827d",
+              "theText": "Je wordt al snel afgeleid door keizerlijk blastervuur. Je moet blijven zoeken.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de token."
+            }
+          ],
+          "GUID": "ed2b2130-255c-41d4-bed1-592390ed0b30",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Search Hiding Place 3",
+      "GUID": "369b557e-44fe-4648-94cd-49e03dc0887e",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je begint te zoeken naar sporen van Gideons kameraden.\n\nTest {J} en voer het aantal successen in. Pas +1 {B} toe voor elke forceertoken op de terminal.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "9ea29eec-9d1d-43d6-921c-3b17188a2907",
+              "theText": "Je wordt al snel afgeleid door keizerlijk blastervuur. Je moet blijven zoeken.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de token."
+            }
+          ],
+          "GUID": "cb1448aa-360d-41b1-a699-a5f995e50f6b",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Search Hiding Place 4",
+      "GUID": "2606468b-19cc-4560-938e-c2dbc1f7bc53",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je begint te zoeken naar sporen van Gideons kameraden.\n\nTest {J} en voer het aantal successen in. Pas +1 {B} toe voor elke forceertoken op de terminal.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "a2e87085-a37f-4b51-a819-93953efea485",
+              "theText": "Je wordt al snel afgeleid door keizerlijk blastervuur. Je moet blijven zoeken.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op de token."
+            }
+          ],
+          "GUID": "9b5b5176-83c4-4955-ba53-e1c1dcc21f56",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
         }
       ]
     },
@@ -461,186 +641,6 @@
           "eaName": "Modify Map Entity"
         }
       ]
-    },
-    {
-      "eventName": "Get to the choppa!",
-      "GUID": "1b098111-1df7-425f-bd99-0efa7e4e2dbf",
-      "eventText": "Je hebt alle oude kameraden van Gideon gevonden. Het enige dat nu rest is hun aftocht dekken.",
-      "eventActions": [
-        {
-          "repositionText": "Blokkeer de uitgang.",
-          "GUID": "5c326f98-8139-4914-916c-e260536cb1e2",
-          "eventActionType": 17,
-          "eaName": "Change Reposition Instructions"
-        },
-        {
-          "shortText": "Help Gideons oude kameraden met ontsnappen.",
-          "longText": null,
-          "GUID": "635a92c2-7df7-41b2-b7b9-c01e4d5124bc",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        },
-        {
-          "theText": "{-} Geef elke Rebel Trooperextra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Trooper Rebel kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer dan de ingang en klik op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
-          "GUID": "b3c15f0b-7abc-47bb-b1b0-644ccd9c650f",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        }
-      ]
-    },
-    {
-      "eventName": "Imperial Search",
-      "GUID": "f070ba38-5f2d-41b9-9bbc-b63dfb976638",
-      "eventText": "Keizerlijke zoekteams zwermen over de open plek en kammen systematisch de schuilplaatsen uit.\n\nKies een van de overgebleven schuilplaatsen, klik erop en klik op “keizerlijke overval”.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Imperial Hiding 1",
-      "GUID": "ebb1046c-9706-4764-89b6-d2038bfee431",
-      "eventText": "Een Zabrak met het insigne van een veldarts strompelt uit zijn schuilplaats, verschroeid door blastervuur.\n\n{-} Vervang de missietoken door 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Dit figuur lijdt {H} gelijk aan het dreigingsniveau en is <color=“red”>verdoofd</color>.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Hiding Place 1",
-              "GUID": "1404205b-39c1-4d41-8623-42899a6f143e",
-              "theText": "Dit lijkt een goede schuilplaats te zijn.",
-              "buttonList": [
-                {
-                  "GUID": "fcac5c5a-c9be-4216-ba11-37a23a2c22fc",
-                  "theText": "{A} Onderzoeken"
-                }
-              ]
-            }
-          ],
-          "GUID": "5f04230f-258b-48ce-a28f-572f8ac0a11a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "theText": "{-} Neutrale missietokens vertegenwoordigen schuilplaatsen. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer dan de ingang en klik op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
-          "GUID": "1023dd21-d80e-4f3e-92af-e510d463d06d",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        },
-        {
-          "shortText": "Zoek de overgebleven Troopers en help ze ontsnappen.",
-          "longText": null,
-          "GUID": "ebf315f3-d8ee-4f9a-93c9-00037bbc98db",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        }
-      ]
-    },
-    {
-      "eventName": "Imperial Hiding 2",
-      "GUID": "c5dd4fe4-a9b4-4399-9869-f6383b629e0d",
-      "eventText": "Keizerlijke troepen schieten in de takken van een hoge boom. Kort daarna valt er een grauwe menselijke vrouw naar beneden en komt met een smak neer op de grond.\n\n{-} Vervang de missietoken door 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Deze figuur lijdt {H} gelijk aan het dreigingsniveau en is <color=“red”>verdoofd</color>.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Hiding Place 2",
-              "GUID": "100c6c17-d0f3-4b19-9e80-8c3cb0524f28",
-              "theText": "Dit lijkt een goede schuilplaats te zijn.",
-              "buttonList": [
-                {
-                  "GUID": "eb870049-79f1-4c75-ae52-01164cc9e9cc",
-                  "theText": "{A} Onderzoeken"
-                }
-              ]
-            }
-          ],
-          "GUID": "45e42653-1ea6-4e33-ad32-ccaac8feff7b",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "theText": "{-} Neutrale missietokens vertegenwoordigen schuilplaatsen. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer dan de ingang en klik op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
-          "GUID": "eb030565-cccb-4f84-8686-2a04c93ec716",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        },
-        {
-          "shortText": "Zoek de overgebleven Troopers en help ze ontsnappen.",
-          "longText": null,
-          "GUID": "7cc533a0-8cc6-457a-921d-2902a27a48ad",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        }
-      ]
-    },
-    {
-      "eventName": "Imperial Hiding 3",
-      "GUID": "d4ac892d-8b6f-442a-8243-bdf3b2ee4949",
-      "eventText": "Een Devaroniër duikt achter een grote rots, terwijl hij op de keizerlijke soldaten schiet. Plotseling valt er een granaat naast hem en duikt hij in dekking.\n\n{-} Vervang de missietoken door 1 Rebel Trooper figuur. \n{-} Geef de Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. De Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Deze figuur lijdt {H} gelijk aan het dreigingsniveau en is <color=“red”>verdoofd</color>.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Hiding Place 3",
-              "GUID": "170423a3-8958-46cc-8cd2-6a8c639e28b4",
-              "theText": "Dit lijkt een goede schuilplaats te zijn.",
-              "buttonList": [
-                {
-                  "GUID": "d36f42c3-df1c-4ad4-adac-2ebd250dacb3",
-                  "theText": "{A} Onderzoeken"
-                }
-              ]
-            }
-          ],
-          "GUID": "f9f214c5-57a1-4fd1-b6e7-c498dbcc042c",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "theText": "{-} Neutrale missietokens vertegenwoordigen schuilplaatsen. Een held kan een interactie uitvoeren op een missietoken om de schuilplaats te onderzoeken.\n{-} De Rebel Troopers zijn verborgen in de schuilplaatsen.\n{-} Geef elke Rebel Trooper extra gezondheid gelijk aan het dreigingsniveau. Een Rebel Trooper kan niet meer dan 1 actie gebruiken om een verplaatsing uit te voeren tijdens elke activering.\n{-} Een Rebel Trooper kan door de ingang ontsnappen.\n{-} Als 2 Rebel Troopers door de ingang zijn ontsnapt, selecteer dan de ingang en klik op “Troopers ontsnappen” om de missie te beëindigen met een overwinning voor de rebellen.\n{-} De rebellen verliezen wanneer 2 Rebel Troopers zijn verslagen of wanneer alle helden gewond zijn. Als 2 rebellen Troopers zijn verslagen, selecteer dan de ingang en klik op “Troopers verslagen” om de missie te beëindigen met een rebellen nederlaag.",
-          "GUID": "feec604a-cb49-4257-b0c0-7a38a3b521e1",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        },
-        {
-          "shortText": "Zoek de overgebleven Troopers en help ze ontsnappen.",
-          "longText": null,
-          "GUID": "b9e0dc89-439d-4945-8066-1c6cb0e470ff",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        }
-      ]
-    },
-    {
-      "eventName": "Imperial Hiding 4",
-      "GUID": "b95ddc0d-4219-455a-8c9f-99efc70e29f3",
-      "eventText": "Keizerlijke troepen omsingelen een menselijke man, die onmiddellijk zijn handen opheft. Maar net als het erop lijkt dat hij neergeschoten gaat worden, laat hij een keizerlijke badge zien. Blijkbaar waren de geruchten over een verrader juist.\n\n{-} Vervang de missietoken door een <color=“red”>keizerlijke officier</color>.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Hiding Place 4",
-              "GUID": "e568b737-7cc2-4536-98e8-78753de86a6b",
-              "theText": "Dit lijkt een goede schuilplaats te zijn.",
-              "buttonList": [
-                {
-                  "GUID": "4fd2f496-8607-4c9b-a460-77b8aaa5fe60",
-                  "theText": "{A} Onderzoeken"
-                }
-              ]
-            }
-          ],
-          "GUID": "0025dc6c-e2c0-49b6-8b98-b9269f175521",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "7789675e-298e-49b2-a38b-f43ec987fb21",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
-        }
-      ]
     }
   ],
   "mapEntities": [
@@ -678,9 +678,62 @@
       ]
     },
     {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "98d2b4ec-07ed-4e66-8b85-a9a0b27932eb",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "19568099-1fa8-422a-a94b-f6ff47cc5e65",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "1e5e7440-d668-4f2a-ab3e-b62e708703f4",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "7c36006e-e1ed-472e-919d-6796bc41aa63",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "0cd6d319-cfce-49b8-8f4e-852e559da560",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "726d09c8-062a-4e25-8310-c7626bf66a5e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "2a34198f-30d1-4d66-bb1c-330532fad52b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "9891ac89-ae97-48c6-97b7-76ac697c81e2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
       "entityName": "Entrance",
       "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.\n\nRebel Troopers kunnen door de ingang ontsnappen. Als 2 Rebel Troopers zijn ontsnapt, klik dan op “Troopers ontsnappen” hieronder om de missie te winnen voor de rebellen.\n\nAls 2 Rebel Troopers zijn verslagen, klik dan op “Troopers verslagen” om de missie te beëindigen met een nederlaag.",
+      "mainText": "Plaats de helden hier.\n\nRebel Troopers kunnen door de ingang ontsnappen. Als 2 Rebel Troopers zijn ontsnapt, klik je op \"Troopers ontsnappen\" hieronder om de missie te winnen voor de rebellen.\n\nAls 2 Rebel Troopers zijn verslagen, klik dan op \"Troopers verslagen\" om de missie te beëindigen met een nederlaag.",
       "buttonList": [
         {
           "GUID": "7b541f4e-43e5-42a1-9a19-b605fc8144e0",
@@ -689,17 +742,6 @@
         {
           "GUID": "6ff4be5a-4d42-4ebb-bd95-cdd456d142cf",
           "theText": "Troopers verslagen"
-        }
-      ]
-    },
-    {
-      "entityName": "Crate4",
-      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "98d2b4ec-07ed-4e66-8b85-a9a0b27932eb",
-          "theText": "{A} Openen"
         }
       ]
     },
@@ -746,57 +788,15 @@
           "theText": "{A} Onderzoeken"
         }
       ]
-    },
-    {
-      "entityName": "DP Green 1",
-      "GUID": "19568099-1fa8-422a-a94b-f6ff47cc5e65",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 2",
-      "GUID": "1e5e7440-d668-4f2a-ab3e-b62e708703f4",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 3",
-      "GUID": "7c36006e-e1ed-472e-919d-6796bc41aa63",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Trooper 1",
-      "GUID": "726d09c8-062a-4e25-8310-c7626bf66a5e",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Trooper 2",
-      "GUID": "2a34198f-30d1-4d66-bb1c-330532fad52b",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Trooper 3",
-      "GUID": "9891ac89-ae97-48c6-97b7-76ac697c81e2",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Officer",
-      "GUID": "0cd6d319-cfce-49b8-8f4e-852e559da560",
-      "mainText": null,
-      "buttonList": []
     }
   ],
   "initialGroups": [
     {
-      "cardName": "Stormtrooper",
+      "cardName": "Imperial Officer",
       "customInstructions": ""
     },
     {
-      "cardName": "Imperial Officer",
+      "cardName": "Stormtrooper",
       "customInstructions": ""
     }
   ]

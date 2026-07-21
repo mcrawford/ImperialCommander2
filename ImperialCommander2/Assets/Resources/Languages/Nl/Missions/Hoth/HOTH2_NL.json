@@ -11,491 +11,50 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Bomb Option 1",
+      "GUID": "49effb87-3fe0-4523-81aa-0d01a1ff8967",
+      "eventText": "Een mechanisch pulserend geluid klinkt zodra een Viper Probe Droid over de heuvel zweeft en zich bij de andere keizerlijke troepen voegt.",
       "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate1",
-              "GUID": "77299bbc-56fb-40f2-ae6c-30c98e78c18e",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "5830c971-21b5-4a8e-a5c1-9c9fe6397f80",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "38cd2bc1-0881-4a48-8c07-cd44c9ba089d",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "49a017ae-dd08-4b6f-9625-ca929318433d",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 4",
-      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate4",
-              "GUID": "050bfd3f-c361-4b12-8ef4-8bb2315057e1",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "a8e6cb8b-1e42-4e8e-a1f2-7eb77f8ec96b",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Een noodoproep heeft je teruggebracht naar de nederzetting, die onder keizerlijke bezetting staat terwijl soldaten de huizen plunderen. \n\n{-} Plaats de helden op het blauw gemarkeerde veld.",
-      "eventActions": [
-        {
-          "tbText": "Een controlepost ligt voor het gebied dat je wilt betreden en keizerlijke troepen houden de wacht.",
-          "GUID": "8f43d816-4109-4630-8d0f-02a2c6abdcfa",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
         {
           "enemyName": null,
           "customText": "",
           "modification": null,
           "repositionInstructions": "",
-          "GUID": "559bbd15-6f45-487e-a9af-d3e4a31a6b9f",
+          "GUID": "d2365ded-5316-4e6a-876b-99733c1e42cc",
           "eventActionType": 6,
-          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
-        },
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "61474230-942e-4576-81fa-8c2b35c7f751",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG023/Snowtrooper"
-        },
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Barricade 1",
-              "GUID": "c1e15be0-05ea-4a1c-a67b-68324e095928",
-              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-              "buttonList": [
-                {
-                  "GUID": "0ffcfbec-1a42-45e1-8ca5-3285909fa1b2",
-                  "theText": "Vernietigen"
-                }
-              ]
-            },
-            {
-              "entityName": "Barricade 2",
-              "GUID": "4936d5d3-b058-4f99-8068-c96e71417951",
-              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-              "buttonList": [
-                {
-                  "GUID": "01912c41-3e2a-4918-9d36-bd1ea5225597",
-                  "theText": "Vernietigen"
-                }
-              ]
-            },
-            {
-              "entityName": "Barricade 3",
-              "GUID": "75931e12-51fe-4e31-99a2-100a9655d745",
-              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-              "buttonList": [
-                {
-                  "GUID": "05b2269c-0c80-4bd4-8336-b5fd879659e5",
-                  "theText": "Vernietigen"
-                }
-              ]
-            },
-            {
-              "entityName": "Barricade 4",
-              "GUID": "e1765b9f-781f-4244-8765-36fbd9dc10b7",
-              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-              "buttonList": [
-                {
-                  "GUID": "d20a8b1e-b77d-4579-9077-8c5f196bb187",
-                  "theText": "Vernietigen"
-                }
-              ]
-            }
-          ],
-          "GUID": "1ad80b3c-55d4-480e-957e-da1b00c1606c",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "tbText": "{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-          "GUID": "16967d9f-3605-4db3-980e-9c530ba5801d",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "tbText": "Het lawaai van het gevecht heeft de lokale fauna gealarmeerd. Een enorm, witharig wezen nadert en brult dreigend.",
-          "GUID": "8e2e379d-3cfd-4fbb-afb6-650e4abe1c9f",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "678d3b5e-5ce8-4815-a203-89039eae4963",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG028/Wampa"
-        },
-        {
-          "tbText": "Vanuit Haven kun je hulpgeroep horen terwijl de keizerlijke troepen door de nederzetting marcheren.\n\n{-} Deuren zijn vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.\n{-} Rebellen missietokens stellen vluchtelingen voor. Een vluchteling kan worden aangevallen (gezondheid: 3, verdediging: 1 witte dobbelsteen). Geef elke vluchteling +1 gezondheid als er een voordeelkaart in het speelgebied van de held ligt. Als een vluchteling verslagen is, klik je op de vluchteling en selecteer je “Vluchteling verslagen”.\n{-} Als er een gezonde rebellenfiguur op of naast een vluchteling staat wanneer die wordt aangevallen, pas dan +1 {G} toe op de verdedigingsresultaten en de helden mogen de verdedigingsdobbelsteen van de vluchteling opnieuw rollen.",
-          "GUID": "bac73bfa-20f3-4e58-951a-cdf3fc4c11ef",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "tbText": "Je heft je wapens en stormt naar voren om de kolonisten te beschermen die je zo lang onderdak hebben gegeven.\n\n{-} Zolang de barricade intact is, zal het Rijk aan het einde van elke ronde vluchtelingen neerschieten.\n{-} De missie gaat verder als de barricade is vernietigd.\n{-} De rebellen verliezen als alle vluchtelingen zijn verslagen.",
-          "GUID": "aad4c024-b09e-4f1b-97b0-ac04ad92f1c5",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "shortText": "Vernietig de barricade.",
-          "longText": null,
-          "GUID": "6ef9285d-6259-4e37-bf80-46404df54232",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        },
-        {
-          "theText": "{-} Deuren zijn vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.\r\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.\n{-} Rebellen missietokens stellen vluchtelingen voor. Een vluchteling kan worden aangevallen (gezondheid: 3, verdediging: 1 witte dobbelsteen). Geef elke vluchteling +1 gezondheid als er een voordeelkaart in het speelgebied van de held ligt. Als een vluchteling verslagen is, klik je op de vluchteling en selecteer je “Vluchteling verslagen”.\n{-} Als er een gezonde rebellenfiguur op of naast een vluchteling staat wanneer die wordt aangevallen, pas dan +1 {G} toe op de verdedigingsresultaten en de helden mogen de verdedigingsdobbelsteen van de vluchteling opnieuw rollen.\r\n{-} Zolang de barricade intact is, zal het Rijk aan het einde van elke ronde vluchtelingen neerschieten.\n{-} De missie gaat verder als de barricade is vernietigd.\n{-} De rebellen verliezen als alle vluchtelingen zijn verslagen.",
-          "GUID": "ba6a0edc-642d-4c7b-bd5c-a023f46a2acb",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
+          "eaName": "Deploy: DG013/Probe Droid (Elite)"
         }
       ]
     },
     {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "“Terugtrekken!” roepen de keizerlijke troepen naar elkaar nadat ze hun kameraden en hun commandant zien vallen.\n\n{-} De rebellen winnen de missie!\n{-} Elke held ontvangt 2 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": [
-        {
-          "tbText": "Na het gevecht vind je Benex die zijn gewonde burgers verzorgt. “Dit is jouw schuld,” zegt hij met opeengeklemde kaken. “We riskeren ons leven om je onderdak te bieden en je kunt niet eens hier zijn om te helpen als ze...” hij stopt en laat zijn hoofd zakken.\n\nEr volgt een somber gesprek en hij verontschuldigt zich zelfs omdat hij jou de schuld geeft. Er is echter een gevoel van aanhoudende vijandigheid, terwijl jullie de volgende uren besteden aan het bespreken van de volgende stap.\n\n{-} Plaats verhaalmissiekaart “Return to Echo Base” in het spel.",
-          "GUID": "f4e0b98a-48f9-4cb4-83f0-f777adf425ec",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        }
-      ]
+      "eventName": "Bomb Option 2",
+      "GUID": "b2c48b94-c1c2-4356-bf49-17523ef9edc3",
+      "eventText": "“Bukken!” hoor je een keizerlijke commandant schreeuwen terwijl er een kleine granaat in jullie midden landt. Je klautert weg terwijl een oorverdovende sonische ontploffing je op de grond drukt.\n\n{-} Elke held lijdt 1 {C} voor elke activeringstoken dat hij heeft en wordt <color=“red”>verzwakt</color>.",
+      "eventActions": []
     },
     {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Je slaagt er uiteindelijk in om de keizerlijke troepen te verdrijven, maar de nederzetting en haar inwoners lijden zware verliezen. In de nasleep loop je door de verwoesting en vraag je je af hoe lang het zal duren voordat het Keizerrijk terugkeert om zijn taak af te maken.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": [
-        {
-          "tbText": "Na het gevecht vind je Benex die zijn gewonde burgers verzorgt. “Dit is jouw schuld,” zegt hij met opeengeklemde kaken. “We riskeren ons leven om je onderdak te bieden en je kunt niet eens hier zijn om te helpen als ze...” hij stopt en laat zijn hoofd zakken.\n\nEr volgt een somber gesprek en hij verontschuldigt zich zelfs omdat hij jou de schuld geeft. Er is echter een gevoel van aanhoudende vijandigheid, terwijl jullie de volgende uren besteden aan het bespreken van de volgende stap.\n\n{-} Plaats verhaalmissiekaart “Return to Echo Base” in het spel.",
-          "GUID": "680d8734-c4b9-48eb-bd15-edeefbc1f947",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        }
-      ]
+      "eventName": "Bomb Option 3",
+      "GUID": "484fa867-a0c9-431f-8c4c-73294e9664d9",
+      "eventText": "Een granaat landt precies op jouw positie en ontploft, scherven en andere fragmenten vliegen alle kanten op.\n\n{-} Kies het veld binnen 2 velden van de meeste rebellenfiguren en gooi 1 rode dobbelsteen. Elk rebellenfiguur binnen 2 velden van dat veld lijdt {H} gelijk aan de {H} resultaten.",
+      "eventActions": []
     },
     {
-      "eventName": "Open Door Storehouse",
-      "GUID": "93ebe10a-5961-40be-9f83-7e45a3308d65",
-      "eventText": "De deur van het pakhuis bezwijkt onder de keizerlijke aanvallen en onthult het met planken beklede interieur.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door Storehouse",
-              "GUID": "80f56883-85ea-4590-aa1f-eadcf18a418c",
-              "theText": "Een stevige deur leidt naar het pakhuis van Haven.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).",
-              "buttonList": [
-                {
-                  "GUID": "c28b0cbd-69d2-4bfd-9ebd-6a707c5b1b89",
-                  "theText": "Vernietigen"
-                }
-              ]
-            }
-          ],
-          "GUID": "fa04f291-d14f-40f8-9906-e54661d1d015",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
+      "eventName": "Bombardment 3",
+      "GUID": "0efe0aed-9b59-4465-9191-cc4f97042ce9",
+      "eventText": "",
+      "eventActions": []
     },
     {
-      "eventName": "Open Door Workshop",
-      "GUID": "a12f75bc-352b-4a51-92b3-3d85ea1f8a57",
-      "eventText": "De deur naar de werkplaats bezwijkt onder de keizerlijke aanvallen. De binnenkant ligt bezaaid met droidonderdelen, gereedschap en werkbanken.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door Workshop",
-              "GUID": "0a48fd67-7442-4095-97d5-1f7f66464be4",
-              "theText": "Achter de roestige deur ligt Haven's droid werkplaats.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).",
-              "buttonList": [
-                {
-                  "GUID": "d88f36a6-4d9c-4cb4-b83d-491d093582d1",
-                  "theText": "Vernietigen"
-                }
-              ]
-            }
-          ],
-          "GUID": "4d1af6fe-394f-483f-adf8-b4abd8cbb04f",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
+      "eventName": "Bombardment 5",
+      "GUID": "a5962ff7-cbe9-4aef-8cc5-10cefbdf6455",
+      "eventText": "",
+      "eventActions": []
     },
     {
-      "eventName": "Open Door Control Room",
-      "GUID": "eef23d60-101b-407b-a11a-38cd2ad7a25e",
-      "eventText": "De deur naar de controlekamer bezwijkt onder de keizerlijke aanvallen. Monitoren en datastations besturen de verschillende systemen van Haven, nu liggen ze open en bloot voor het Keizerrijk.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door Control Room",
-              "GUID": "017f57bf-0a46-43cd-a23e-5d038d1ecc37",
-              "theText": "De deur naar de controlekamer van Haven is onlangs vernieuwd, maar is niet lang bestand tegen de Keizerlijke troepen.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).",
-              "buttonList": [
-                {
-                  "GUID": "a03ca16b-651d-42cd-a5f0-61cb1d997a88",
-                  "theText": "Vernietigen"
-                }
-              ]
-            }
-          ],
-          "GUID": "7c5fb110-bff5-4d57-82a0-5b803cfd37da",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Door Clinic",
-      "GUID": "4df97115-66c9-48bc-a1f0-fc307f0f5ea5",
-      "eventText": "De deur van de kliniek bezwijkt onder de keizerlijke aanvallen. Bactatanks en bedden worden verlicht door de schemerige noodverlichting.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door Clinic",
-              "GUID": "6b664e3d-b715-4d75-8e73-94bd34d19bfa",
-              "theText": "De kleine kliniek van Haven wordt beschermd door een deur gemaakt van oud ruimteschipafval.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan de deur aanvallen (gezondheid: 5, verdediging: geen).",
-              "buttonList": [
-                {
-                  "GUID": "b3ab78e8-44b8-4211-9c05-c9f2e3788973",
-                  "theText": "Vernietigen"
-                }
-              ]
-            }
-          ],
-          "GUID": "4822cca9-5af8-4e55-9acc-51b91fd38d5f",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "The Raid",
-      "GUID": "170275cc-168a-4f90-ac73-33c2399274a2",
-      "eventText": "Onder jouw aanvallen bezwijken de barricades van de controlepost uiteindelijk, waardoor de weg naar Haven open ligt.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Barricade 1",
-              "GUID": "b38ff437-76db-4652-b3c4-ea2bcb80ead8",
-              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-              "buttonList": [
-                {
-                  "GUID": "2ffa1efa-d7d5-4774-ba54-3bb53d1a7063",
-                  "theText": "Vernietigen"
-                }
-              ]
-            },
-            {
-              "entityName": "Barricade 2",
-              "GUID": "a3d19c0d-eb76-46d5-9c23-a06b2a7511df",
-              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-              "buttonList": [
-                {
-                  "GUID": "ad1569f6-2e37-48cf-969b-996a9a54092a",
-                  "theText": "Vernietigen"
-                }
-              ]
-            },
-            {
-              "entityName": "Barricade 3",
-              "GUID": "8f6290a0-7e8c-43bc-b4ce-fe7e68277151",
-              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-              "buttonList": [
-                {
-                  "GUID": "9973c8cc-ff4e-4101-bc6c-270d1d319192",
-                  "theText": "Vernietigen"
-                }
-              ]
-            },
-            {
-              "entityName": "Barricade 4",
-              "GUID": "af5168d7-05a2-461d-90f8-c92e73b0c9fd",
-              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
-              "buttonList": [
-                {
-                  "GUID": "8775df78-495e-4ba7-b5cd-fea3e32d4808",
-                  "theText": "Vernietigen"
-                }
-              ]
-            },
-            {
-              "entityName": "DP Red",
-              "GUID": "76a437cd-1fd7-478a-bfe6-1663f5ef4fc9",
-              "theText": null,
-              "buttonList": []
-            },
-            {
-              "entityName": "DP Red 2",
-              "GUID": "15b128b3-c396-44af-b4e8-2bb166fa826d",
-              "theText": null,
-              "buttonList": []
-            },
-            {
-              "entityName": "DP Green 1",
-              "GUID": "debdd0f0-3d86-4de4-92c7-b0938faedad2",
-              "theText": null,
-              "buttonList": []
-            },
-            {
-              "entityName": "DP Green 2",
-              "GUID": "78b3a07f-2b88-458e-856d-e569f03a453a",
-              "theText": null,
-              "buttonList": []
-            }
-          ],
-          "GUID": "2f928dba-46c9-47dc-93e7-63c546db6d29",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        },
-        {
-          "repositionText": "Alle andere figuren: Blokkeer de toegang tot de vluchtelingen.",
-          "GUID": "3d2716a5-491d-40fd-aa9c-d2fd863b4bfe",
-          "eventActionType": 17,
-          "eaName": "Change Reposition Instructions"
-        },
-        {
-          "tbText": "Terwijl je je een weg door het puin vecht, zie je eindelijk de leider van de keizerlijke troepen. Commandant Jann staat vlak naast een geschutsopstelling.",
-          "GUID": "1427312d-d016-4d77-9bc2-204520392b13",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "542067ce-8aef-49f2-a33b-d579ffc18ab9",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG007/E-Web Engineer"
-        },
-        {
-          "enemyName": "Commander Jann (Imperial Officer)",
-          "customText": "{-} Keizerlijke figuren zullen een deur aanvallen als dat de kortste directe weg naar hun doel is.\n{A} ORDER: Een ander keizerlijk figuur met een figuurkosten van 6 of minder die een aanval kan uitvoeren, valt {rebel} aan.\n{Q} Als deze figuur ORDER niet heeft gebruikt, verplaats 3 om {rebel} aan te vallen.\n{Q} Verplaats 1 om {rebel} aan te vallen.\n{A} Verplaats 4 om angrenzend aan een bevriende TROOPER of GUARDIAN te komen.\n{-} COWER: Indien aangrenzend aan een ander keizerlijk figuur, herstel 2 {H}. De aangrenzende niet-<color=\"red\">gefocuste</color> figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>.\n{-} Deze figuur activeert twee keer. Nadat deze figuur de instructielijst heeft beëindigd, begin je opnieuw vanaf het begin van de lijst. Beperkt tot één keer per activering.",
-          "modification": "+10 Gezondheid",
-          "repositionInstructions": "",
-          "GUID": "fbfa68d7-d325-40ea-b8ba-38486caf9cb3",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG004/Imperial Officer"
-        },
-        {
-          "otherTarget": "de dichtstbijzijnde vluchteling",
-          "GUID": "068bca4a-baa3-486d-b916-a28d87047712",
-          "eventActionType": 12,
-          "eaName": "Change Priority Target"
-        },
-        {
-          "newInstructions": "{-} Keizerlijke figuren zullen een deur aanvallen als dat de kortste directe weg naar hun doel is.",
-          "GUID": "16dce7d9-9440-432a-b77c-b16af74ee74c",
-          "eventActionType": 11,
-          "eaName": "Change Group Instructions"
-        },
-        {
-          "tbText": "{-} Als een aanval op Commandant Jann wordt uitgeroepen, als er een aangrenzende bevriende TROOPER of GUARDIAN is die het doelwit van die aanval kan worden, wordt die figuur het doelwit van de aanval.\n{-} Commandant Jann activeert twee keer, de tweede keer direct na de eerste keer.\n{-} De rebellen winnen als commandant Jann verslagen is.",
-          "GUID": "9a9cf366-5034-422f-9878-6774abd13ab9",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        },
-        {
-          "shortText": "Verdedig de vluchtelingen (vluchtelingen over: &Refugees left&/8).",
-          "longText": null,
-          "GUID": "c1d5b58e-6821-4494-90dc-70eab9017eb3",
-          "eventActionType": 2,
-          "eaName": "Change Objective"
-        },
-        {
-          "theText": "{-} Deuren zijn vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.\r\n{-} Rebellen missietokens stellen vluchtelingen voor. Een vluchteling kan worden aangevallen (gezondheid: 3, verdediging: 1 witte dobbelsteen). Geef elke vluchteling +1 gezondheid als er een voordeelkaart in het speelgebied van de held ligt. Als een vluchteling verslagen is, klik je op de vluchteling en selecteer je “Vluchteling verslagen”.\n{-} Als er een gezonde rebellenfiguur op of naast een vluchteling staat wanneer die wordt aangevallen, pas dan +1 {G} toe op de verdedigingsresultaten en de helden mogen de verdedigingsdobbelsteen van de vluchteling opnieuw rollen.\r\n{-} Als een aanval op Commandant Jann wordt uitgeroepen, als er een aangrenzende bevriende TROOPER of GUARDIAN is die het doelwit van die aanval kan worden, wordt die figuur het doelwit van de aanval.\n{-} Commandant Jann activeert twee keer, de tweede keer direct na de eerste keer.\n{-} De rebellen winnen als commandant Jann verslagen is.\r\n{-} De rebellen verliezen als alle vluchtelingen verslagen zijn.",
-          "GUID": "00834bbe-cb34-4040-ab79-c18a9064a30a",
-          "eventActionType": 1,
-          "eaName": "Change Mission Info"
-        }
-      ]
+      "eventName": "Bombardment 7",
+      "GUID": "eb8cba9d-2a38-4102-b8d5-f5c9a7b345d9",
+      "eventText": "",
+      "eventActions": []
     },
     {
       "eventName": "Defeat Refugee 1",
@@ -698,61 +257,9 @@
       ]
     },
     {
-      "eventName": "End of Round Onslaught",
-      "GUID": "c03cc8a7-05b7-4bb2-b757-c8ca4d5f7f2b",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "Bombardment 3",
-      "GUID": "0efe0aed-9b59-4465-9191-cc4f97042ce9",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "Bombardment 5",
-      "GUID": "a5962ff7-cbe9-4aef-8cc5-10cefbdf6455",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "Bombardment 7",
-      "GUID": "eb8cba9d-2a38-4102-b8d5-f5c9a7b345d9",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "Bomb Option 1",
-      "GUID": "49effb87-3fe0-4523-81aa-0d01a1ff8967",
-      "eventText": "Een mechanisch pulserend geluid klinkt zodra een Viper Probe Droid over de heuvel zweeft en zich bij de andere keizerlijke troepen voegt.",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "d2365ded-5316-4e6a-876b-99733c1e42cc",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG013/Probe Droid (Elite)"
-        }
-      ]
-    },
-    {
-      "eventName": "Bomb Option 2",
-      "GUID": "b2c48b94-c1c2-4356-bf49-17523ef9edc3",
-      "eventText": "“Bukken!” hoor je een keizerlijke commandant schreeuwen terwijl er een kleine granaat in jullie midden landt. Je klautert weg terwijl een oorverdovende sonische ontploffing je op de grond drukt.\n\n{-} Elke held lijdt 1 {C} voor elke activeringstoken dat hij heeft en wordt <color=“red”>verzwakt</color>.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Bomb Option 3",
-      "GUID": "484fa867-a0c9-431f-8c4c-73294e9664d9",
-      "eventText": "Een granaat landt precies op jouw positie en ontploft, scherven en andere fragmenten vliegen alle kanten op.\n\n{-} Kies het veld binnen 2 velden van de meeste rebellenfiguren en gooi 1 rode dobbelsteen. Elk rebellenfiguur binnen 2 velden van dat veld lijdt {H} gelijk aan de {H} resultaten.",
-      "eventActions": []
-    },
-    {
-      "eventName": "No additional credits",
-      "GUID": "95196f17-a62d-4b4a-9752-a59576a822f7",
-      "eventText": "",
+      "eventName": "End Mission Credits No",
+      "GUID": "9c13c492-2e34-45a5-8c57-bb1470f0a920",
+      "eventText": "Omdat de barricade niet is vernietigd voor het einde van ronde 3, stijgt het dreigingsniveau van de volgende missie (en alleen de volgende missie) met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers beslissen om 50 credits per held uit te geven om dit te voorkomen.",
       "eventActions": []
     },
     {
@@ -762,155 +269,506 @@
       "eventActions": []
     },
     {
-      "eventName": "End Mission Credits No",
-      "GUID": "9c13c492-2e34-45a5-8c57-bb1470f0a920",
-      "eventText": "Omdat de barricade niet is vernietigd voor het einde van ronde 3, stijgt het dreigingsniveau van de volgende missie (en alleen de volgende missie) met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers beslissen om 50 credits per held uit te geven om dit te voorkomen.",
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Je slaagt er uiteindelijk in om de keizerlijke troepen te verdrijven, maar de nederzetting en haar inwoners lijden zware verliezen. In de nasleep loop je door de verwoesting en vraag je je af hoe lang het zal duren voordat het Keizerrijk terugkeert om zijn taak af te maken.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
+      "eventActions": [
+        {
+          "tbText": "Na het gevecht vind je Benex die zijn gewonde burgers verzorgt. “Dit is jouw schuld,” zegt hij met opeengeklemde kaken. “We riskeren ons leven om je onderdak te bieden en je kunt niet eens hier zijn om te helpen als ze...” hij stopt en laat zijn hoofd zakken.\n\nEr volgt een somber gesprek en hij verontschuldigt zich zelfs omdat hij jou de schuld geeft. Er is echter een gevoel van aanhoudende vijandigheid, terwijl jullie de volgende uren besteden aan het bespreken van de volgende stap.\n\n{-} Plaats verhaalmissiekaart “Return to Echo Base” in het spel.",
+          "GUID": "680d8734-c4b9-48eb-bd15-edeefbc1f947",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "“Terugtrekken!” roepen de keizerlijke troepen naar elkaar nadat ze hun kameraden en hun commandant zien vallen.\n\n{-} De rebellen winnen de missie!\n{-} Elke held ontvangt 2 XP. Helden ontvangen 100 credits per held.",
+      "eventActions": [
+        {
+          "tbText": "Na het gevecht vind je Benex die zijn gewonde burgers verzorgt. “Dit is jouw schuld,” zegt hij met opeengeklemde kaken. “We riskeren ons leven om je onderdak te bieden en je kunt niet eens hier zijn om te helpen als ze...” hij stopt en laat zijn hoofd zakken.\n\nEr volgt een somber gesprek en hij verontschuldigt zich zelfs omdat hij jou de schuld geeft. Er is echter een gevoel van aanhoudende vijandigheid, terwijl jullie de volgende uren besteden aan het bespreken van de volgende stap.\n\n{-} Plaats verhaalmissiekaart “Return to Echo Base” in het spel.",
+          "GUID": "f4e0b98a-48f9-4cb4-83f0-f777adf425ec",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Round Onslaught",
+      "GUID": "c03cc8a7-05b7-4bb2-b757-c8ca4d5f7f2b",
+      "eventText": "",
       "eventActions": []
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Een noodoproep heeft je teruggebracht naar de nederzetting, die onder keizerlijke bezetting staat terwijl soldaten de huizen plunderen. \n\n{-} Plaats de helden op het blauw gemarkeerde veld.",
+      "eventActions": [
+        {
+          "tbText": "Een controlepost ligt voor het gebied dat je wilt betreden en keizerlijke troepen houden de wacht.",
+          "GUID": "8f43d816-4109-4630-8d0f-02a2c6abdcfa",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "559bbd15-6f45-487e-a9af-d3e4a31a6b9f",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "61474230-942e-4576-81fa-8c2b35c7f751",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG023/Snowtrooper"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Barricade 1",
+              "GUID": "c1e15be0-05ea-4a1c-a67b-68324e095928",
+              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+              "buttonList": [
+                {
+                  "GUID": "0ffcfbec-1a42-45e1-8ca5-3285909fa1b2",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Barricade 2",
+              "GUID": "4936d5d3-b058-4f99-8068-c96e71417951",
+              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+              "buttonList": [
+                {
+                  "GUID": "01912c41-3e2a-4918-9d36-bd1ea5225597",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Barricade 3",
+              "GUID": "75931e12-51fe-4e31-99a2-100a9655d745",
+              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+              "buttonList": [
+                {
+                  "GUID": "05b2269c-0c80-4bd4-8336-b5fd879659e5",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Barricade 4",
+              "GUID": "e1765b9f-781f-4244-8765-36fbd9dc10b7",
+              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+              "buttonList": [
+                {
+                  "GUID": "d20a8b1e-b77d-4579-9077-8c5f196bb187",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "1ad80b3c-55d4-480e-957e-da1b00c1606c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+          "GUID": "16967d9f-3605-4db3-980e-9c530ba5801d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Het lawaai van het gevecht heeft de lokale fauna gealarmeerd. Een enorm, witharig wezen nadert en brult dreigend.",
+          "GUID": "8e2e379d-3cfd-4fbb-afb6-650e4abe1c9f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "678d3b5e-5ce8-4815-a203-89039eae4963",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG028/Wampa"
+        },
+        {
+          "tbText": "Vanuit Haven kun je hulpgeroep horen terwijl de keizerlijke troepen door de nederzetting marcheren.\n\n{-} Deuren zijn vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.\n{-} Rebellen missietokens stellen vluchtelingen voor. Een vluchteling kan worden aangevallen (gezondheid: 3, verdediging: 1 witte dobbelsteen). Geef elke vluchteling +1 gezondheid als er een voordeelkaart in het speelgebied van de held ligt. Als een vluchteling verslagen is, klik je op de vluchteling en selecteer je “Vluchteling verslagen”.\n{-} Als er een gezonde rebellenfiguur op of naast een vluchteling staat wanneer die wordt aangevallen, pas dan +1 {G} toe op de verdedigingsresultaten en de helden mogen de verdedigingsdobbelsteen van de vluchteling opnieuw rollen.",
+          "GUID": "bac73bfa-20f3-4e58-951a-cdf3fc4c11ef",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je heft je wapens en stormt naar voren om de kolonisten te beschermen die je zo lang onderdak hebben gegeven.\n\n{-} Zolang de barricade intact is, zal het Rijk aan het einde van elke ronde vluchtelingen neerschieten.\n{-} De missie gaat verder als de barricade is vernietigd.\n{-} De rebellen verliezen als alle vluchtelingen zijn verslagen.",
+          "GUID": "aad4c024-b09e-4f1b-97b0-ac04ad92f1c5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Vernietig de barricade.",
+          "longText": null,
+          "GUID": "6ef9285d-6259-4e37-bf80-46404df54232",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Deuren zijn vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.\r\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.\n{-} Rebellen missietokens stellen vluchtelingen voor. Een vluchteling kan worden aangevallen (gezondheid: 3, verdediging: 1 witte dobbelsteen). Geef elke vluchteling +1 gezondheid als er een voordeelkaart in het speelgebied van de held ligt. Als een vluchteling verslagen is, klik je op de vluchteling en selecteer je “Vluchteling verslagen”.\n{-} Als er een gezonde rebellenfiguur op of naast een vluchteling staat wanneer die wordt aangevallen, pas dan +1 {G} toe op de verdedigingsresultaten en de helden mogen de verdedigingsdobbelsteen van de vluchteling opnieuw rollen.\r\n{-} Zolang de barricade intact is, zal het Rijk aan het einde van elke ronde vluchtelingen neerschieten.\n{-} De missie gaat verder als de barricade is vernietigd.\n{-} De rebellen verliezen als alle vluchtelingen zijn verslagen.",
+          "GUID": "ba6a0edc-642d-4c7b-bd5c-a023f46a2acb",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "No additional credits",
+      "GUID": "95196f17-a62d-4b4a-9752-a59576a822f7",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "77299bbc-56fb-40f2-ae6c-30c98e78c18e",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "5830c971-21b5-4a8e-a5c1-9c9fe6397f80",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "38cd2bc1-0881-4a48-8c07-cd44c9ba089d",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "49a017ae-dd08-4b6f-9625-ca929318433d",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "050bfd3f-c361-4b12-8ef4-8bb2315057e1",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "a8e6cb8b-1e42-4e8e-a1f2-7eb77f8ec96b",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Door Clinic",
+      "GUID": "4df97115-66c9-48bc-a1f0-fc307f0f5ea5",
+      "eventText": "De deur van de kliniek bezwijkt onder de keizerlijke aanvallen. Bactatanks en bedden worden verlicht door de schemerige noodverlichting.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door Clinic",
+              "GUID": "6b664e3d-b715-4d75-8e73-94bd34d19bfa",
+              "theText": "De kleine kliniek van Haven wordt beschermd door een deur gemaakt van oud ruimteschipafval.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan de deur aanvallen (gezondheid: 5, verdediging: geen).",
+              "buttonList": [
+                {
+                  "GUID": "b3ab78e8-44b8-4211-9c05-c9f2e3788973",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "4822cca9-5af8-4e55-9acc-51b91fd38d5f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Door Control Room",
+      "GUID": "eef23d60-101b-407b-a11a-38cd2ad7a25e",
+      "eventText": "De deur naar de controlekamer bezwijkt onder de keizerlijke aanvallen. Monitoren en datastations besturen de verschillende systemen van Haven, nu liggen ze open en bloot voor het Keizerrijk.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door Control Room",
+              "GUID": "017f57bf-0a46-43cd-a23e-5d038d1ecc37",
+              "theText": "De deur naar de controlekamer van Haven is onlangs vernieuwd, maar is niet lang bestand tegen de Keizerlijke troepen.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).",
+              "buttonList": [
+                {
+                  "GUID": "a03ca16b-651d-42cd-a5f0-61cb1d997a88",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "7c5fb110-bff5-4d57-82a0-5b803cfd37da",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Door Storehouse",
+      "GUID": "93ebe10a-5961-40be-9f83-7e45a3308d65",
+      "eventText": "De deur van het pakhuis bezwijkt onder de keizerlijke aanvallen en onthult het met planken beklede interieur.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door Storehouse",
+              "GUID": "80f56883-85ea-4590-aa1f-eadcf18a418c",
+              "theText": "Een stevige deur leidt naar het pakhuis van Haven.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).",
+              "buttonList": [
+                {
+                  "GUID": "c28b0cbd-69d2-4bfd-9ebd-6a707c5b1b89",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "fa04f291-d14f-40f8-9906-e54661d1d015",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Door Workshop",
+      "GUID": "a12f75bc-352b-4a51-92b3-3d85ea1f8a57",
+      "eventText": "De deur naar de werkplaats bezwijkt onder de keizerlijke aanvallen. De binnenkant ligt bezaaid met droidonderdelen, gereedschap en werkbanken.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door Workshop",
+              "GUID": "0a48fd67-7442-4095-97d5-1f7f66464be4",
+              "theText": "Achter de roestige deur ligt Haven's droid werkplaats.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).",
+              "buttonList": [
+                {
+                  "GUID": "d88f36a6-4d9c-4cb4-b83d-491d093582d1",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "4d1af6fe-394f-483f-adf8-b4abd8cbb04f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "The Raid",
+      "GUID": "170275cc-168a-4f90-ac73-33c2399274a2",
+      "eventText": "Onder jouw aanvallen bezwijken de barricades van de controlepost uiteindelijk, waardoor de weg naar Haven open ligt.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Barricade 1",
+              "GUID": "b38ff437-76db-4652-b3c4-ea2bcb80ead8",
+              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+              "buttonList": [
+                {
+                  "GUID": "2ffa1efa-d7d5-4774-ba54-3bb53d1a7063",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Barricade 2",
+              "GUID": "a3d19c0d-eb76-46d5-9c23-a06b2a7511df",
+              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+              "buttonList": [
+                {
+                  "GUID": "ad1569f6-2e37-48cf-969b-996a9a54092a",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Barricade 3",
+              "GUID": "8f6290a0-7e8c-43bc-b4ce-fe7e68277151",
+              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+              "buttonList": [
+                {
+                  "GUID": "9973c8cc-ff4e-4101-bc6c-270d1d319192",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Barricade 4",
+              "GUID": "af5168d7-05a2-461d-90f8-c92e73b0c9fd",
+              "theText": "De keizerlijke troepen hebben een controlepost opgericht om eventuele helpers uit de nederzetting te houden.\n\n{-} De 4 neutrale missietokens stellen één barricade voor. Een rebellenfiguur kan de barricade aanvallen (gezondheid: 8, verdediging: 1 {G}). De barricade is geblokkeerd terrein.",
+              "buttonList": [
+                {
+                  "GUID": "8775df78-495e-4ba7-b5cd-fea3e32d4808",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Red",
+              "GUID": "76a437cd-1fd7-478a-bfe6-1663f5ef4fc9",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Red 2",
+              "GUID": "15b128b3-c396-44af-b4e8-2bb166fa826d",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 1",
+              "GUID": "debdd0f0-3d86-4de4-92c7-b0938faedad2",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 2",
+              "GUID": "78b3a07f-2b88-458e-856d-e569f03a453a",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "2f928dba-46c9-47dc-93e7-63c546db6d29",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Alle andere figuren: Blokkeer de toegang tot de vluchtelingen.",
+          "GUID": "3d2716a5-491d-40fd-aa9c-d2fd863b4bfe",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "tbText": "Terwijl je je een weg door het puin vecht, zie je eindelijk de leider van de keizerlijke troepen. Commandant Jann staat vlak naast een geschutsopstelling.",
+          "GUID": "1427312d-d016-4d77-9bc2-204520392b13",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "542067ce-8aef-49f2-a33b-d579ffc18ab9",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG007/E-Web Engineer"
+        },
+        {
+          "enemyName": "Commander Jann (Imperial Officer)",
+          "customText": "{-} Keizerlijke figuren zullen een deur aanvallen als dat de kortste directe weg naar hun doel is.\n{A} ORDER: Een ander keizerlijk figuur met een figuurkosten van 6 of minder die een aanval kan uitvoeren, valt {rebel} aan.\n{Q} Als deze figuur ORDER niet heeft gebruikt, verplaats 3 om {rebel} aan te vallen.\n{Q} Verplaats 1 om {rebel} aan te vallen.\n{A} Verplaats 4 om angrenzend aan een bevriende TROOPER of GUARDIAN te komen.\n{-} COWER: Indien aangrenzend aan een ander keizerlijk figuur, herstel 2 {H}. De aangrenzende niet-<color=\"red\">gefocuste</color> figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>.\n{-} Deze figuur activeert twee keer. Nadat deze figuur de instructielijst heeft beëindigd, begin je opnieuw vanaf het begin van de lijst. Beperkt tot één keer per activering.",
+          "modification": "+10 Gezondheid",
+          "repositionInstructions": "",
+          "GUID": "fbfa68d7-d325-40ea-b8ba-38486caf9cb3",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG004/Imperial Officer"
+        },
+        {
+          "otherTarget": "de dichtstbijzijnde vluchteling",
+          "GUID": "068bca4a-baa3-486d-b916-a28d87047712",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
+          "newInstructions": "{-} Keizerlijke figuren zullen een deur aanvallen als dat de kortste directe weg naar hun doel is.",
+          "GUID": "16dce7d9-9440-432a-b77c-b16af74ee74c",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "tbText": "{-} Als een aanval op Commandant Jann wordt uitgeroepen, als er een aangrenzende bevriende TROOPER of GUARDIAN is die het doelwit van die aanval kan worden, wordt die figuur het doelwit van de aanval.\n{-} Commandant Jann activeert twee keer, de tweede keer direct na de eerste keer.\n{-} De rebellen winnen als commandant Jann verslagen is.",
+          "GUID": "9a9cf366-5034-422f-9878-6774abd13ab9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Verdedig de vluchtelingen (vluchtelingen over: &Refugees left&/8).",
+          "longText": null,
+          "GUID": "c1d5b58e-6821-4494-90dc-70eab9017eb3",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Deuren zijn vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.\r\n{-} Rebellen missietokens stellen vluchtelingen voor. Een vluchteling kan worden aangevallen (gezondheid: 3, verdediging: 1 witte dobbelsteen). Geef elke vluchteling +1 gezondheid als er een voordeelkaart in het speelgebied van de held ligt. Als een vluchteling verslagen is, klik je op de vluchteling en selecteer je “Vluchteling verslagen”.\n{-} Als er een gezonde rebellenfiguur op of naast een vluchteling staat wanneer die wordt aangevallen, pas dan +1 {G} toe op de verdedigingsresultaten en de helden mogen de verdedigingsdobbelsteen van de vluchteling opnieuw rollen.\r\n{-} Als een aanval op Commandant Jann wordt uitgeroepen, als er een aangrenzende bevriende TROOPER of GUARDIAN is die het doelwit van die aanval kan worden, wordt die figuur het doelwit van de aanval.\n{-} Commandant Jann activeert twee keer, de tweede keer direct na de eerste keer.\n{-} De rebellen winnen als commandant Jann verslagen is.\r\n{-} De rebellen verliezen als alle vluchtelingen verslagen zijn.",
+          "GUID": "00834bbe-cb34-4040-ab79-c18a9064a30a",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
     }
   ],
   "mapEntities": [
-    {
-      "entityName": "Crate1",
-      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "544fff94-2066-4704-a73b-fe7a99654012",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Crate2",
-      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "950c3980-b6b1-4b47-b3df-62084fd03101",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Crate3",
-      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "18a6c15e-f20f-4bf3-8e7d-cd6693fbef7b",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
-      "entityName": "Crate4",
-      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
-      "mainText": "Een oud voorraadkrat.",
-      "buttonList": [
-        {
-          "GUID": "dcafcec7-19b0-4c14-a48f-272b12aa9533",
-          "theText": "{A} Openen"
-        }
-      ]
-    },
-    {
-      "entityName": "DP Green 1",
-      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Green 2",
-      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP EOfficer",
-      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP STrooper 1",
-      "GUID": "fe639c51-3e47-4301-8b95-19f6ce213ffc",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP STrooper 2",
-      "GUID": "5bed9070-6895-43bf-9dee-9eb1394f7364",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP STrooper 3",
-      "GUID": "174bc040-e121-4fe1-9961-02459c9735c3",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Wampa",
-      "GUID": "c832469e-777b-4af6-bd44-c8d4c9f753b7",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Door Storehouse",
-      "GUID": "fc54b861-5039-4878-b647-672f04679214",
-      "mainText": "Een stevige deur leidt naar het pakhuis van Haven.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\r\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.",
-      "buttonList": [
-        {
-          "GUID": "a0f8a2b1-633f-41f8-9f97-09979d3ffad1",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "Door Workshop",
-      "GUID": "c36b9dcb-a688-4027-989f-76ba48db83ae",
-      "mainText": "Achter de roestige deur ligt Haven's droid werkplaats.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\r\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.",
-      "buttonList": [
-        {
-          "GUID": "b3aa6bcd-8c3a-4027-bbc6-cb16c1a2ec05",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "Door Control Room",
-      "GUID": "27be102f-e0d8-410a-9d43-22516b5e120d",
-      "mainText": "De deur naar de controlekamer van Haven is onlangs vernieuwd, maar is niet lang bestand tegen de Keizerlijke troepen.\r\n\r\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\r\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.",
-      "buttonList": [
-        {
-          "GUID": "29910a84-0234-4339-80e3-eaef5354bc32",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "Door Clinic",
-      "GUID": "52172669-5b37-4eb1-a922-3c59fce480f9",
-      "mainText": "De kleine kliniek van Haven wordt beschermd door een deur gemaakt van oud ruimteschipafval.\r\n\r\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\r\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.",
-      "buttonList": [
-        {
-          "GUID": "be0a3083-c777-4507-bbf0-7b8aef850a09",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "DP Red",
-      "GUID": "a4d0023d-6f4d-437a-8054-4bc021de8028",
-      "mainText": null,
-      "buttonList": []
-    },
     {
       "entityName": "Barricade 1",
       "GUID": "949fd1bf-7e2b-4578-972d-2ea50a597006",
@@ -954,6 +812,154 @@
           "theText": "Vernietigen"
         }
       ]
+    },
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "544fff94-2066-4704-a73b-fe7a99654012",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "950c3980-b6b1-4b47-b3df-62084fd03101",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "18a6c15e-f20f-4bf3-8e7d-cd6693fbef7b",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "dcafcec7-19b0-4c14-a48f-272b12aa9533",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP EOfficer",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "a4d0023d-6f4d-437a-8054-4bc021de8028",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "f4aa3585-3662-4c0a-8d81-e0dc17bf883d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP STrooper 1",
+      "GUID": "fe639c51-3e47-4301-8b95-19f6ce213ffc",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP STrooper 2",
+      "GUID": "5bed9070-6895-43bf-9dee-9eb1394f7364",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP STrooper 3",
+      "GUID": "174bc040-e121-4fe1-9961-02459c9735c3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Wampa",
+      "GUID": "c832469e-777b-4af6-bd44-c8d4c9f753b7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Door Clinic",
+      "GUID": "52172669-5b37-4eb1-a922-3c59fce480f9",
+      "mainText": "De kleine kliniek van Haven wordt beschermd door een deur gemaakt van oud ruimteschipafval.\r\n\r\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\r\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.",
+      "buttonList": [
+        {
+          "GUID": "be0a3083-c777-4507-bbf0-7b8aef850a09",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Door Control Room",
+      "GUID": "27be102f-e0d8-410a-9d43-22516b5e120d",
+      "mainText": "De deur naar de controlekamer van Haven is onlangs vernieuwd, maar is niet lang bestand tegen de Keizerlijke troepen.\r\n\r\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\r\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.",
+      "buttonList": [
+        {
+          "GUID": "29910a84-0234-4339-80e3-eaef5354bc32",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Door Storehouse",
+      "GUID": "fc54b861-5039-4878-b647-672f04679214",
+      "mainText": "Een stevige deur leidt naar het pakhuis van Haven.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\r\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.",
+      "buttonList": [
+        {
+          "GUID": "a0f8a2b1-633f-41f8-9f97-09979d3ffad1",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Door Workshop",
+      "GUID": "c36b9dcb-a688-4027-989f-76ba48db83ae",
+      "mainText": "Achter de roestige deur ligt Haven's droid werkplaats.\n\n{-} De deur is vergrendeld. Een keizerlijk figuur kan een deur aanvallen (gezondheid: 5, verdediging: geen).\r\n{-} Een deur grenzend aan een rebellenfiguur blokkeert zijn verplaatsing, zichtlijn, nabijheid of tellen van velden niet.",
+      "buttonList": [
+        {
+          "GUID": "b3aa6bcd-8c3a-4027-bbc6-cb16c1a2ec05",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
     },
     {
       "entityName": "Refugee 1",
@@ -1042,12 +1048,6 @@
           "theText": "Vluchteling verslagen"
         }
       ]
-    },
-    {
-      "entityName": "DP Red 2",
-      "GUID": "f4aa3585-3662-4c0a-8d81-e0dc17bf883d",
-      "mainText": null,
-      "buttonList": []
     }
   ],
   "initialGroups": []

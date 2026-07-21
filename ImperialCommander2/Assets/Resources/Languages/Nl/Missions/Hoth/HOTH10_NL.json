@@ -11,99 +11,62 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate1",
-              "GUID": "0cc54a17-5570-4cfd-b50a-45e10cb98dcc",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "36ff5ad5-854b-42a3-8ff6-a2f9b2cae248",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
+      "eventName": "Activation Tokens 1",
+      "GUID": "a84a61d0-8d8a-486e-b597-85ff4eb61d8b",
+      "eventText": "",
+      "eventActions": []
     },
     {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "9563ab9d-b5d3-4e39-8d9b-81e32096fedc",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
+      "eventName": "Activation Tokens 2",
+      "GUID": "f3fcc24a-60d6-4f79-a1ba-6409a15bdc6b",
+      "eventText": "",
+      "eventActions": []
     },
     {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "5346dec5-8922-44a8-b117-c8efa036d8a1",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Met een zware dreun sluit de deur van de keizerlijke gevangenis. Wat je ook probeert, de deur geeft geen krimp. Loku's vrienden zitten gevangen aan de andere kant. Hoewel de situatie hopeloos is, weigert Loku zijn post te verlaten. Pas na drie dagen weet je hem ervan te overtuigen dat er niets meer kan worden gedaan.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held krijgt 1 XP. De helden krijgen 100 credits per held.",
+      "eventActions": []
     },
     {
-      "eventName": "Open Crate 4",
-      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "De overgebleven keizerlijke troepen breken hun formatie en trekken zich terug. Loku haast zich naar zijn vrienden. Ze vallen elkaar in de armen waarna hij hun boeien losmaakt.\n\n{-} De rebellen winnen de missie!\n{-} Loku Kanoloa ontvangt de beloningskaart \"Battle Vision\".\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "EoR 1",
+      "GUID": "99436b3e-1df1-4659-9752-40a9c65cebf6",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Hero wounded",
+      "GUID": "d89b219c-f5f7-4be6-8c6b-2a3edbd3f974",
+      "eventText": "",
       "eventActions": [
         {
-          "translatedEntityProperties": [
+          "mainText": "De constante aanvallen dwingen je op je knieën. Je probeert het van je af te schudden, maar je pijn lijkt de keizerlijke troepen nieuwe kracht te geven.\n\nHoeveel activeringstokens heb je?",
+          "buttonList": [
             {
-              "entityName": "Crate4",
-              "GUID": "9285b90a-0bd7-46f7-ba54-198427457c8b",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "13844ac8-3712-498f-8764-f9a2414c343a",
-                  "theText": "{A} Openen"
-                }
-              ]
+              "GUID": "04e6e404-507e-4362-940f-d0d66151afe4",
+              "theText": "1"
+            },
+            {
+              "GUID": "6537804b-ba0b-49b0-a28a-3c8a5fbd0cde",
+              "theText": "2"
             }
           ],
-          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
+          "GUID": "93448d53-7f70-48a6-8634-4a49a4b4b470",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
         }
       ]
     },
     {
       "eventName": "Mission Briefing",
       "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Je ziet het konvooi aankomen terwijl keizerlijke troepen een groep Mon Calamari-gevangenen naar voren brengen.\r\n\r\n{-} Plaats de helden, behalve Loku Kanoloa, op het blauw gemarkeerde veld.",
+      "eventText": "Je ziet het konvooi arriveren terwijl keizerlijke troepen een groep Mon Calamari-gevangenen vooruit drijven.\n\n{-} Plaats de helden, behalve Loku Kanoloa, op het blauw gemarkeerde veld.",
       "eventActions": [
         {
           "newInstructions": "{-} MOVE, PRISONER: Duw de dichtstbijzijnde gevangene die zich niet op de gevangenis bevindt 4 velden in de richting van de gevangenis.",
@@ -118,19 +81,19 @@
           "eaName": "Change Group Instructions"
         },
         {
-          "tbText": "Vanuit je positie kijk je omhoog naar de uitkijkpost in de boomtop die Loku voor zichzelf heeft gemaakt. Hij ziet er kalm en vastberaden uit. Hij gebaart je om in positie te gaan terwijl hij zijn blastergeweer heft en richt.",
+          "tbText": "Vanaf je positie kijk je omhoog naar de uitkijkpost die Loku hoog tussen de boomtoppen heeft gebouwd. Hij oogt kalm en vastberaden. Hij gebaart dat je je positie in moet nemen, terwijl hij zijn blastergeweer heft en zorgvuldig een doelwit in het vizier neemt.",
           "GUID": "b240e639-a7b3-4bbb-80c2-8a0ee7fcad6e",
           "eventActionType": 16,
           "eaName": "Text Box"
         },
         {
-          "tbText": "{-} Dit is Loku's uitkijkpost. Plaats Loku Kanoloa op het rood gemarkeerde veld.\r\n{-} Rebellen missietokens stellen ladders voor. Een klein figuur op een ladder kan 2 verplaatspunten gebruiken om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.\r\n{-} Een figuur op de uitkijkpost negeert muren en figuren bij het bepalen van een zichtlijn of het tellen van velden. Bij het trekken van een zichtlijn of het tellen van velden naar een veld in de uitkijkpost, negeer je muren en figuren.\r\n{-} Wanneer een aanval op een figuur op de uitkijkpost wordt uitgevoerd door een figuur die zich niet op de uitkijkpost bevindt, voeg dan 1 witte dobbelsteen toe aan de verdedigingsdobbelstenen.",
+          "tbText": "{-} Dit is Loku's uitkijkpost. Plaats Loku Kanoloa op het rood gemarkeerde veld.\n{-} Rebellen missietokens stellen ladders voor. Een klein figuur op een ladder kan 2 verplaatspunten spenderen om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.\n{-} Een figuur op de uitkijkpost negeert muren en figuren bij het bepalen van een zichtlijn of het tellen van velden. Bij het trekken van een zichtlijn of het tellen van velden naar een veld in de uitkijkpost, negeer je muren en figuren.\n{-} Wanneer een aanval op een figuur op de uitkijkpost wordt ingezet door een figuur die zich niet op de uitkijkpost bevindt, voeg dan 1 witte dobbelsteen toe aan de verdedigingsdobbelstenen.",
           "GUID": "6c8f1989-304e-4d39-9577-2da920e9f7dc",
           "eventActionType": 16,
           "eaName": "Text Box"
         },
         {
-          "tbText": "Kort na je aankomst wordt de eerste gevangene door de keizerlijke soldaten naar voren geleid.",
+          "tbText": "Kort na je aankomst drijven de keizerlijke soldaten de eerste gevangene naar voren.",
           "GUID": "2ec13951-ccf4-4aca-b791-b7753e1cb5f0",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -155,7 +118,7 @@
           "eaName": "Text Box"
         },
         {
-          "tbText": "Terwijl je nog bezig bent met het bedenken van de beste aanpak, gaat een poort van de keizerlijke gevangenis open en marcheren gevechtsdroids naar buiten, terwijl ze de boomtoppen afspeuren naar verborgen sluipschutters.",
+          "tbText": "Terwijl je nog bezig bent de beste aanpak te bepalen, schuift een poort van de keizerlijke gevangenis open. Gevechtsdroids marcheren naar buiten en speuren de boomtoppen af op zoek naar verborgen sluipschutters.",
           "GUID": "28c930f6-5b3d-4462-99a3-4d976f7c08a6",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -174,7 +137,7 @@
             {
               "entityName": "Cell",
               "GUID": "7af4ffb9-5b2e-47b6-99a8-de23648f47c4",
-              "theText": "Het keizerlijke gevangeniscomplex is als een fort. Als een gevangene eenmaal binnen is, is de kans klein dat je hem ooit nog terugziet.\n\n{-} Wanneer een gevangene de gevangenis binnengaat, klik je op “gevangene overgebracht”.",
+              "theText": "Het keizerlijke gevangeniscomplex is als een fort. Als een gevangene eenmaal binnen is, is de kans klein dat je hem ooit nog terugziet.\n\n{-} Wanneer een gevangene de gevangenis binnengaat, klik je op \"gevangene overgebracht\".",
               "buttonList": [
                 {
                   "GUID": "4d2c4f3b-eb69-42fb-99e8-a4fb7a2f98b4",
@@ -188,7 +151,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "De deuren van het keizerlijke gevangeniscomplex staan al wijd open, klaar om de gevangenen te ontvangen.\r\n\r\n{-} Keizerlijke officieren en stormtroopers begeleiden de gevangenen naar de gevangenis.\r\n{-} Wanneer een gevangene de gevangenis binnenkomt, klik je op de groene markering en selecteer je “gevangene overgebracht”.\r\n{-} De rebellen winnen aan het einde van ronde 6.\r\n{-} De rebellen verliezen wanneer alle 4 gevangenen zijn overgebracht.",
+          "tbText": "De deuren van het keizerlijke gevangeniscomplex staan al wagenwijd open in afwachting van de gevangenen.\n\n{-} Keizerlijke officieren en stormtroopers begeleiden de gevangenen naar de gevangenis.\n{-} Wanneer een gevangene de gevangenis binnenkomt, klik je op de groene markering en selecteer je \"gevangene overgebracht\".\n{-} De rebellen winnen aan het einde van ronde 6.\n{-} De rebellen verliezen als alle 4 gevangenen zijn overgebracht.",
           "GUID": "db079b7e-9ec1-4fd8-872b-e9b687a61a9e",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -214,64 +177,18 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Rebellen missietokens stellen ladders voor. Een klein figuur op een ladder kan 2 verplaatspunten gebruiken om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.\r\n{-} Een figuur op de uitkijkpost negeert muren en figuren bij het bepalen van een zichtlijn of het tellen van velden. Bij het trekken van een zichtlijn of het tellen van velden naar een veld in de uitkijkpost, negeer je muren en figuren.\r\n{-} Wanneer een aanval op een figuur op de uitkijkpost wordt uitgevoerd door een figuur die zich niet op de uitkijkpost bevindt, voeg dan 1 witte dobbelsteen toe aan de verdedigingsdobbelstenen.\r\n{-} Neutrale missietokens stellen gevangenen voor. Gevangenen zijn neutrale figuren. Een gezonde rebellenfiguur kan een interactie op een gevangene ({J} of {K}) uitvoeren om die gevangene 3 velden te verplaatsen.\r\n{-} Wanneer een gevangene de gevangenis binnenkomt, klik je op de groene markering en selecteer je “gevangene overgebracht”.\r\n{-} De rebellen winnen aan het einde van ronde 6.\r\n{-} De rebellen verliezen wanneer alle 4 gevangenen zijn overgebracht.",
+          "theText": "{-} Rebellen missietokens stellen ladders voor. Een klein figuur op een ladder kan 2 verplaatspunten spenderen om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.\n{-} Een figuur op de uitkijkpost negeert muren en figuren bij het bepalen van een zichtlijn of het tellen van velden. Bij het trekken van een zichtlijn of het tellen van velden naar een veld in de uitkijkpost, negeer je muren en figuren.\n{-} Wanneer een aanval op een figuur op de uitkijkpost wordt uitgevoerd door een figuur die zich niet op de uitkijkpost bevindt, voeg dan 1 witte dobbelsteen toe aan de verdedigingsdobbelstenen.\n{-} Neutrale missietokens stellen gevangenen voor. Gevangenen zijn neutrale figuren. Een gezonde rebellenfiguur kan een interactie op een gevangene ({J} of {K}) uitvoeren om die gevangene 3 velden te verplaatsen.\n{-} Wanneer een gevangene de gevangenis binnenkomt, klik je op de groene markering en selecteer je \"gevangene overgebracht\".\n{-} De rebellen winnen aan het einde van ronde 6.\n{-} De rebellen verliezen als alle 4 gevangenen zijn overgebracht.",
           "GUID": "6b61ca33-cc8e-4e47-b3ee-91d9f5ee24ab",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
         },
         {
-          "repositionText": "Ga naar de uitkijkpost.",
+          "repositionText": "Verplaats naar de uitkijkpost.",
           "GUID": "77ed7310-6baa-4b70-800a-87981249aec4",
           "eventActionType": 17,
           "eaName": "Change Reposition Instructions"
         }
       ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "De overgebleven keizerlijke troepen breken de gelederen en trekken zich terug. Loku loopt naar zijn vrienden toe. Ze omhelzen elkaar hartelijk terwijl hij hun boeien verwijdert.\n\n{-} De rebellen winnen de missie!\n{-} Loku Kanoloa ontvangt de beloningskaart ‘Battle Vision’.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "De deur van de keizerlijke gevangenis valt dicht en hoe je ook je best doet, hij is ondoordringbaar. Lokus' vrienden zitten vast binnenin. Ondanks de hopeloze situatie duurt het drie dagen om Loku te overtuigen zijn post te verlaten.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held krijgt 1 XP. Helden krijgen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Prisoner transferred",
-      "GUID": "75f7248d-873e-4906-9888-02e049601b86",
-      "eventText": "Weer een arme ziel verdwijnt in de keizerlijke gevangenis.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Prison Guards",
-      "GUID": "2f8c4c5a-d551-4ab8-96a7-31b68ab22257",
-      "eventText": "Vanuit het gevangeniscomplex komen nog meer bewakers naar buiten om de rebellen tegemoet te treden.",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "3cf28608-fa7b-4977-9715-8586f4273ced",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG002/Stormtrooper"
-        }
-      ]
-    },
-    {
-      "eventName": "Reinforced",
-      "GUID": "20de965b-9220-47c7-8a02-a97808fd0094",
-      "eventText": "De keizerlijke troepen verzamelen meer manschappen om de aanval van de rebellen te verpletteren.",
-      "eventActions": []
-    },
-    {
-      "eventName": "No more prisoners",
-      "GUID": "6146d737-56e6-4322-9c5e-151f0cf77716",
-      "eventText": "Het gevangenisconvooi lijkt nu compleet te zijn. Er worden vandaag geen gevangenen meer vervoerd.",
-      "eventActions": []
     },
     {
       "eventName": "New prisoner",
@@ -292,7 +209,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "tbText": "Er wordt een nieuwe gevangene binnengebracht.",
+          "tbText": "Een nieuwe gevangene wordt naar binnen geleid.",
           "GUID": "97811812-d69a-4435-8702-2bc9827a62de",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -313,48 +230,142 @@
       ]
     },
     {
-      "eventName": "Hero wounded",
-      "GUID": "d89b219c-f5f7-4be6-8c6b-2a3edbd3f974",
-      "eventText": "",
+      "eventName": "No more prisoners",
+      "GUID": "6146d737-56e6-4322-9c5e-151f0cf77716",
+      "eventText": "Het gevangeniskonvooi lijkt compleet te zijn. Vandaag zullen er geen gevangenen meer worden overgebracht.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
-          "mainText": "De constante aanvallen brengen je op je knieën. Je probeert het van je af te schudden, maar je pijn lijkt de keizerlijke troepen nieuwe kracht te geven.\r\n\r\nHoeveel activeringstokens heb je?",
-          "buttonList": [
+          "translatedEntityProperties": [
             {
-              "GUID": "04e6e404-507e-4362-940f-d0d66151afe4",
-              "theText": "1"
-            },
-            {
-              "GUID": "6537804b-ba0b-49b0-a28a-3c8a5fbd0cde",
-              "theText": "2"
+              "entityName": "Crate1",
+              "GUID": "0cc54a17-5570-4cfd-b50a-45e10cb98dcc",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "36ff5ad5-854b-42a3-8ff6-a2f9b2cae248",
+                  "theText": "{A} Openen"
+                }
+              ]
             }
           ],
-          "GUID": "93448d53-7f70-48a6-8634-4a49a4b4b470",
-          "eventActionType": 5,
-          "eaName": "Question Prompt"
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
         }
       ]
     },
     {
-      "eventName": "Activation Tokens 1",
-      "GUID": "a84a61d0-8d8a-486e-b597-85ff4eb61d8b",
-      "eventText": "",
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "9563ab9d-b5d3-4e39-8d9b-81e32096fedc",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "5346dec5-8922-44a8-b117-c8efa036d8a1",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "9285b90a-0bd7-46f7-ba54-198427457c8b",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "13844ac8-3712-498f-8764-f9a2414c343a",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Prison Guards",
+      "GUID": "2f8c4c5a-d551-4ab8-96a7-31b68ab22257",
+      "eventText": "Uit het gevangeniscomplex stormen meer bewakers naar buiten om de rebellen aan te vallen.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "3cf28608-fa7b-4977-9715-8586f4273ced",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG002/Stormtrooper"
+        }
+      ]
+    },
+    {
+      "eventName": "Prisoner transferred",
+      "GUID": "75f7248d-873e-4906-9888-02e049601b86",
+      "eventText": "Weer een arme ziel verdwijnt in de keizerlijke gevangenis.",
       "eventActions": []
     },
     {
-      "eventName": "Activation Tokens 2",
-      "GUID": "f3fcc24a-60d6-4f79-a1ba-6409a15bdc6b",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "EoR 1",
-      "GUID": "99436b3e-1df1-4659-9752-40a9c65cebf6",
-      "eventText": "",
+      "eventName": "Reinforced",
+      "GUID": "20de965b-9220-47c7-8a02-a97808fd0094",
+      "eventText": "De keizerlijke troepen verzamelen meer versterkingen om de rebellen aanval te verpletteren.",
       "eventActions": []
     }
   ],
   "mapEntities": [
+    {
+      "entityName": "Cell",
+      "GUID": "b8c5a23d-48dd-4941-a2af-df39552df1c0",
+      "mainText": "Het keizerlijke gevangeniscomplex is als een fort. Als een gevangene eenmaal binnen is, is de kans klein dat je hem ooit nog terugziet.\n\n{-} Wanneer een gevangene de gevangenis binnengaat, klik je op \"gevangene overgebracht\".",
+      "buttonList": [
+        {
+          "GUID": "634f3c58-2a85-4a32-a33e-5d9166080cdd",
+          "theText": "Gevangene overgebracht"
+        }
+      ]
+    },
     {
       "entityName": "Crate1",
       "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
@@ -389,9 +400,21 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
+      "entityName": "DP ETrooper 1",
+      "GUID": "4f24643c-3241-43e2-a967-c40733e2262d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 2",
+      "GUID": "5d2b70ef-db4b-4cd1-ae25-d87ad6442049",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 3",
+      "GUID": "bf0e14fd-603c-4ceb-a78e-5b1688dcb29d",
+      "mainText": null,
       "buttonList": []
     },
     {
@@ -419,38 +442,8 @@
       "buttonList": []
     },
     {
-      "entityName": "DP Officer",
-      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
       "entityName": "DP Green 5",
       "GUID": "883fbfb3-6b6a-4527-82e6-ab3f676e004d",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Prisoner",
-      "GUID": "af077d70-8fa3-4fe1-b487-691498e47ab0",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP ETrooper 1",
-      "GUID": "4f24643c-3241-43e2-a967-c40733e2262d",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP ETrooper 2",
-      "GUID": "5d2b70ef-db4b-4cd1-ae25-d87ad6442049",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP ETrooper 3",
-      "GUID": "bf0e14fd-603c-4ceb-a78e-5b1688dcb29d",
       "mainText": null,
       "buttonList": []
     },
@@ -467,27 +460,15 @@
       "buttonList": []
     },
     {
-      "entityName": "Ladder 1",
-      "GUID": "f4cf6067-3700-48aa-885d-8fe6906b0d85",
-      "mainText": "Een ladder leidt naar Loku's uitkijkpost.\r\n\r\n{-} Een klein figuur op een ladder kan 2 verplaatspunten gebruiken om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.",
+      "entityName": "DP Officer",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
       "buttonList": []
     },
     {
-      "entityName": "Ladder 2",
-      "GUID": "ed62ee79-25b2-42e0-afe8-d6983b3c86aa",
-      "mainText": "Een ladder leidt naar Loku's uitkijkpost.\r\n\r\n{-} Een klein figuur op een ladder kan 2 verplaatspunten gebruiken om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.",
-      "buttonList": []
-    },
-    {
-      "entityName": "Ladder 3",
-      "GUID": "8dde7543-55bf-4e23-83a3-aa993f2bacb0",
-      "mainText": "Een ladder leidt naar Loku's uitkijkpost.\r\n\r\n{-} Een klein figuur op een ladder kan 2 verplaatspunten gebruiken om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.",
-      "buttonList": []
-    },
-    {
-      "entityName": "Ladder 4",
-      "GUID": "1aaa8243-5087-449d-9120-4de8506c6bcd",
-      "mainText": "Een ladder leidt naar Loku's uitkijkpost.\r\n\r\n{-} Een klein figuur op een ladder kan 2 verplaatspunten gebruiken om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.",
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
     },
     {
@@ -497,24 +478,43 @@
       "buttonList": []
     },
     {
-      "entityName": "Cell",
-      "GUID": "b8c5a23d-48dd-4941-a2af-df39552df1c0",
-      "mainText": "Het keizerlijke gevangeniscomplex is als een fort. Als een gevangene eenmaal binnen is, is de kans klein dat je hem ooit nog terugziet.\n\n{-} Wanneer een gevangene de gevangenis binnengaat, klik je op “gevangene overgebracht”.",
-      "buttonList": [
-        {
-          "GUID": "634f3c58-2a85-4a32-a33e-5d9166080cdd",
-          "theText": "Gevangene overgebracht"
-        }
-      ]
+      "entityName": "Ladder 1",
+      "GUID": "f4cf6067-3700-48aa-885d-8fe6906b0d85",
+      "mainText": "Een ladder leidt naar Loku's uitkijkpost.\n\n{-} Een klein figuur op een ladder kan 2 verplaatspunten spenderen om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Ladder 2",
+      "GUID": "ed62ee79-25b2-42e0-afe8-d6983b3c86aa",
+      "mainText": "Een ladder leidt naar Loku's uitkijkpost.\n\n{-} Een klein figuur op een ladder kan 2 verplaatspunten spenderen om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Ladder 3",
+      "GUID": "8dde7543-55bf-4e23-83a3-aa993f2bacb0",
+      "mainText": "Een ladder leidt naar Loku's uitkijkpost.\n\n{-} Een klein figuur op een ladder kan 2 verplaatspunten spenderen om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Ladder 4",
+      "GUID": "1aaa8243-5087-449d-9120-4de8506c6bcd",
+      "mainText": "Een ladder leidt naar Loku's uitkijkpost.\n\n{-} Een klein figuur op een ladder kan 2 verplaatspunten spenderen om zijn figuur op een veld te plaatsen met een ladder van dezelfde kleur.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Prisoner",
+      "GUID": "af077d70-8fa3-4fe1-b487-691498e47ab0",
+      "mainText": null,
+      "buttonList": []
     }
   ],
   "initialGroups": [
     {
-      "cardName": "Stormtrooper (Elite)",
+      "cardName": "Imperial Officer",
       "customInstructions": ""
     },
     {
-      "cardName": "Imperial Officer",
+      "cardName": "Stormtrooper (Elite)",
       "customInstructions": ""
     }
   ]

@@ -18,6 +18,7 @@ public class HelpPanel : MonoBehaviour
 	Transform customRegionsRoot;
 
 	Action closeCallback;
+	bool tbOpen = false;
 
 	private void Awake()
 	{
@@ -118,6 +119,7 @@ public class HelpPanel : MonoBehaviour
 				var tb = go.transform.Find( "TextBox" ).GetComponent<TextBox>();
 				textBoxPopupBase.ShowNoZoom();
 				tb.Show( helpText, CloseTB );
+				tbOpen = true;
 			}
 			else if ( helpTextBackup != null )
 			{
@@ -126,6 +128,7 @@ public class HelpPanel : MonoBehaviour
 				var tb = go.transform.Find( "TextBox" ).GetComponent<TextBox>();
 				textBoxPopupBase.ShowNoZoom();
 				tb.Show( helpTextBackup, CloseTB );
+				tbOpen = true;
 			}
 			else
 				Utils.LogWarning( $"OnHelpRequest()::panelHelp [{helpOverlayID}]::helpText [{elementID}] wasn't found in the translation or in the English backup" );
@@ -141,6 +144,7 @@ public class HelpPanel : MonoBehaviour
 				var tb = go.transform.Find( "TextBox" ).GetComponent<TextBox>();
 				textBoxPopupBase.ShowNoZoom();
 				tb.Show( helpText, CloseTB );
+				tbOpen = true;
 			}
 			else
 				Utils.LogWarning( $"OnHelpRequest()::panelHelp [{helpOverlayID}]::helpText [{elementID}] wasn't found in the English backup" );
@@ -167,6 +171,23 @@ public class HelpPanel : MonoBehaviour
 	/// </summary>
 	public void CloseTB()
 	{
+		tbOpen = false;
 		textBoxPopupBase.CloseNoZoom();
+	}
+
+	private void Update()
+	{
+		if ( InputManager.Instance.settingsOpenCloseInput )
+		{
+			if ( tbOpen )
+			{
+				textBoxPopupBase.transform.Find( "TextBoxPrefab(Clone)" )
+					.Find( "TextBox" )
+					.GetComponent<TextBox>().OnClose();
+				CloseTB();
+			}
+			else
+				Close();
+		}
 	}
 }

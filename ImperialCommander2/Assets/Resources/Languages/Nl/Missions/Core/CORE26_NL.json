@@ -3,202 +3,13 @@
   "missionProperties": {
     "missionName": "De spice klus",
     "missionDescription": "",
-    "missionInfo": "{-} Deuren zijn vergrendeld. Een rebellenfiguur met de sleutelkaart kan deuren openen.\n{-} Neutrale missietokens stellen overblijfselen voor. Nadat een keizerlijk figuur is verslagen, plaats je de overblijfselen in zijn veld. Een rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Gebruik de “controlekamer” (apart deel van het bord) om een interactie uit te voeren op de missietokens.\n{-} Keizerlijke missietokens vertegenwoordigen spicevaten. Een gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat ({K}) om de token te claimen.\n{-} De helden winnen als alle spicevaten zijn geclaimd.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=“red”>Chewbacca</color> is verslagen.",
+    "missionInfo": "{-} Deuren zijn vergrendeld. Een rebellenfiguur met de sleutelkaart kan deuren openen.\n{-} Neutrale missietokens stellen overblijfselen voor. Nadat een keizerlijke figuur is verslagen, plaats je de overblijfselen in zijn veld. Een rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Gebruik de \"controlekamer\" (apart deel van het speelbord) om een interactie uit te voeren op de missietokens.\n{-} Keizerlijke missietokens stellen spicevaten voor. Een gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat ({K}) om die token te claimen.\n{-} De helden winnen wanneer alle spicevaten zijn geclaimd.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=\"red\">Chewbacca</color> verslagen is.",
     "campaignName": "",
     "startingObjective": "Versla keizerlijke figuren en doorzoek hun overblijfselen om de sleutelkaart te vinden.",
     "repositionOverride": "Blokkeer de toegang tot de spicevaten.",
     "additionalMissionInfo": ""
   },
   "events": [
-    {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate1",
-              "GUID": "fed1f170-d8b2-403c-b9f5-6bd2cf461bf3",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "717ca7a5-884c-472f-bccd-040ba08d1494",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "42a6c336-dde4-419e-abb3-72b78bfbf861",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "0683dc33-5c1d-48b9-960a-9ea029f98819",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 4",
-      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate4",
-              "GUID": "ebcd900a-1709-4f00-8d46-02245f6a5707",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "1832ac4d-f37a-48e1-991d-c037f4560491",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Een Weequay staat op wacht in het steegje buiten het pakhuis, dit bevestigt dat je op de juiste plek bent. Wanneer je op hem afloopt, staart hij en legt een hand op zijn blaster.\n\nMet een brul stormt Chewbacca naar voren. Hij grijpt de verbaasde bewaker en slaat hem tegen de deur, keer op keer, totdat de deur naar binnen valt.\n\nHij laat de bewusteloze en gehavende Weequay vallen, stapt naar binnen en jij volgt.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Plaats 1 neutrale missietoken onder elke <color=“red”>Trandoshan Hunter</color> en onder de Probe Droid.\n{-} Plaats <color=“red”>Chewbacca</color> (Loyal Wookiee) op het rood gemarkeerde veld.\n{-} De deuren zijn vergrendeld. Een rebellenfiguur met de sleutelkaart kan deuren openen.\n{-} Neutrale missietokens vertegenwoordigen overblijfselen. Nadat een keizerlijk figuur is verslagen, plaats je de overblijfselen in zijn veld. Een rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Gebruik de “controlekamer” (apart deel van het speelbord) om een interactie uit te voeren op de missietokens.\n{-} Keizerlijke missietokens vertegenwoordigen spicevaten. Een gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat ({K}) om de token te claimen.\n{-} De helden winnen als alle spicevaten zijn geclaimd.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=“red”>Chewbacca</color> is verslagen.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Nadat je je een weg naar buiten hebt gebaand en de gestolen spice naar buiten hebt gesleept, bedankt Chewbacca je voor je hulp. Hij verzekert je snel dat, mocht je de hulp nodig hebben, hij je graag wil helpen.\n\n{-} De rebellen winnen de missie!\n{-} Helden ontvangen <color=“red”>Chewbacca</color> (Loyal Wookiee) als bondgenoot.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose round limit",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "De Hutt had zijn spice goed bewaakt; de weerstand die je bent tegengekomen is gewoonweg te veel. Je poging tot diefstal zal de Hutts nog wel even bezig en paranoïde houden, maar aanzienlijk minder dan wanneer het je was gelukt.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose defeat",
-      "GUID": "28aefc0c-76f0-46ec-81cd-0d05d2dbe042",
-      "eventText": "De Hutt had zijn spice goed bewaakt; de weerstand die je bent tegengekomen is gewoonweg te veel. Je poging tot diefstal zal de Hutts nog wel even bezig en paranoïde houden, maar aanzienlijk minder dan wanneer het je was gelukt.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Search Remains 1",
-      "GUID": "d8b71e68-e174-487e-9f75-af27f5a31398",
-      "eventText": "Je doorzoekt de overblijfselen, maar vindt niets interessants.\n\nLeg deze token af.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Remains 1",
-              "GUID": "7d110248-c42f-47d7-8988-729851c0e862",
-              "theText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token vertegenwoordigt de overblijfselen van dat figuur.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op “doorzoek de overblijfselen” op een beschikbare missietoken.",
-              "buttonList": [
-                {
-                  "GUID": "7581405b-5da4-4aca-af1b-c926cef51fed",
-                  "theText": "{A} Doorzoek de overblijfselen"
-                }
-              ]
-            }
-          ],
-          "GUID": "50ad26c7-ee0b-49b6-9c83-f65d15936de3",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Search Remains 2",
-      "GUID": "0834b742-a62c-4902-ae2b-3b8f621044c8",
-      "eventText": "Je doorzoekt de overblijfselen, maar vindt niets interessants.\n\nLeg deze token af.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Remains 2",
-              "GUID": "a1444649-e1d7-46be-a6a2-740c9e1ccdc5",
-              "theText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token vertegenwoordigt de overblijfselen van dat figuur.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op “doorzoek de overblijfselen” op een beschikbare missietoken.",
-              "buttonList": [
-                {
-                  "GUID": "f0aaf9aa-15c0-4963-88b1-890fbca2ba5f",
-                  "theText": "{A} Doorzoek de overblijfselen"
-                }
-              ]
-            }
-          ],
-          "GUID": "c9e36c1c-3b3f-4715-82d6-6d9be617425b",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Search Remains 3",
-      "GUID": "c4a1b508-95fd-4c24-a293-d432b337790c",
-      "eventText": "Je doorzoekt de overblijfselen en vindt uiteindelijk wat je zoekt: de sleutelkaart.\n\n{-} Claim deze token. Je draagt de sleutelkaart.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Remains 3",
-              "GUID": "4ef77da5-23e9-4b9a-a3b0-2efad09309c3",
-              "theText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token vertegenwoordigt de overblijfselen van dat figuur.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op “doorzoek de overblijfselen” op een beschikbare missietoken.",
-              "buttonList": [
-                {
-                  "GUID": "29776982-95f7-4ecf-86e8-a78a5d7bd5eb",
-                  "theText": "{A} Doorzoek de overblijfselen"
-                }
-              ]
-            }
-          ],
-          "GUID": "47a984cc-2290-457b-8717-fcdf5d428e10",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
     {
       "eventName": "Barrel 1 claimed",
       "GUID": "3879e143-6f28-4aa1-8326-10f68dcdabfc",
@@ -209,7 +20,7 @@
             {
               "entityName": "Barrel 1",
               "GUID": "43adf57f-338e-4dc5-aa50-7245e9eeb605",
-              "theText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+              "theText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
               "buttonList": [
                 {
                   "GUID": "ea34a6e1-e89a-428e-a07b-7c514350401e",
@@ -234,7 +45,7 @@
             {
               "entityName": "Barrel 2",
               "GUID": "aa06ae27-c116-4665-99a6-7afdabcbce45",
-              "theText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+              "theText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
               "buttonList": [
                 {
                   "GUID": "68746341-3cd5-441d-94a4-a84cc75544f9",
@@ -259,7 +70,7 @@
             {
               "entityName": "Barrel 3",
               "GUID": "7864bb34-d714-4a19-94b5-72023f764bd5",
-              "theText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+              "theText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
               "buttonList": [
                 {
                   "GUID": "47dbb7d2-027a-4983-803d-d1c153aa44bc",
@@ -284,7 +95,7 @@
             {
               "entityName": "Barrel 4",
               "GUID": "cc639d6d-3188-4e0e-bc89-ace6ebae308c",
-              "theText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+              "theText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
               "buttonList": [
                 {
                   "GUID": "0d77988d-a786-4255-a54d-1643e47d6e70",
@@ -309,7 +120,7 @@
             {
               "entityName": "Barrel 5",
               "GUID": "7df13e92-c58e-4060-984e-b06f82134f62",
-              "theText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+              "theText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
               "buttonList": [
                 {
                   "GUID": "4ed2004f-4269-445e-9c39-1d1008f4d521",
@@ -334,7 +145,7 @@
             {
               "entityName": "Barrel 6",
               "GUID": "00ad9658-5233-4ab1-9e59-8dbccfa2cc26",
-              "theText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+              "theText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
               "buttonList": [
                 {
                   "GUID": "c1210288-29ee-4864-8251-eb424ef2e5f9",
@@ -350,12 +161,24 @@
       ]
     },
     {
+      "eventName": "Defend the Spice 1",
+      "GUID": "54df7c5a-f2f8-43db-97a5-a5df5be3b1a8",
+      "eventText": "Het oppakken van de sleutelkaart lijkt een soort alarm te hebben geactiveerd.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defend the Spice 2",
+      "GUID": "4ea572b7-be50-4b27-9317-eca2d6bf2b4e",
+      "eventText": "Nu hun spicevoorraden in gevaar zijn, verdubbelen je vijanden hun inspanningen.\n\n{-} De keizerlijke figuur met de hoogste kosten die kan aanvallen, onderbreekt om {rebel} aan te vallen.",
+      "eventActions": []
+    },
+    {
       "eventName": "Doors unlock",
       "GUID": "bcbff42c-d7d8-497a-b48b-b4f29dc25012",
-      "eventText": "Nu je de sleutelkaart hebt gevonden, kun je toegang krijgen tot de spicekamer.",
+      "eventText": "Nu je de sleutelkaart gevonden hebt, kun je toegang krijgen tot de spicekamer.",
       "eventActions": [
         {
-          "theText": "{-} Deuren zijn vergrendeld. Een rebellenfiguur met een sleutelkaart kan deuren openen.\n{-} Keizerlijke missietokens vertegenwoordigen spicevaten. Een gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat ({K}) om de token te claimen.\n{-} De helden winnen als alle spicevaten zijn opgeëist.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=“red”>Chewbacca</color> is verslagen.",
+          "theText": "{-} Deuren zijn vergrendeld. Een rebellenfiguur met een sleutelkaart kan deuren openen.\n{-} Keizerlijke missietokens stellen spicevaten voor. Een gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat ({K}) om die token te claimen.\n{-} De helden winnen wanneer alle spicevaten zijn geclaimd.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=\"red\">Chewbacca</color> verslagen is.",
           "GUID": "384b8756-3d1f-45d9-8bb8-feaa57365b87",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -372,7 +195,7 @@
             {
               "entityName": "Door 1",
               "GUID": "f2f0ad7a-d228-4c7e-841b-352eba46c598",
-              "theText": "Deze deur zit op slot. Een rebellenfiguur met de sleutelkaart kan hem openen.",
+              "theText": "Deze deur is vergrendeld. Een rebellenfiguur met de sleutelkaart kan hem openen.",
               "buttonList": [
                 {
                   "GUID": "c08363cf-8cbe-4f08-84ae-e0b1e5c0236f",
@@ -383,7 +206,7 @@
             {
               "entityName": "Door 2",
               "GUID": "1548c031-b4a4-4815-9348-4f23afa23437",
-              "theText": "Deze deur zit op slot. Een rebellenfiguur met de sleutelkaart kan hem openen.",
+              "theText": "Deze deur is vergrendeld. Een rebellenfiguur met de sleutelkaart kan hem openen.",
               "buttonList": [
                 {
                   "GUID": "949b4365-2d32-42c9-8032-cb08597d7081",
@@ -399,16 +222,193 @@
       ]
     },
     {
-      "eventName": "Defend the Spice 1",
-      "GUID": "54df7c5a-f2f8-43db-97a5-a5df5be3b1a8",
-      "eventText": "Het oppakken van de sleutelkaart lijkt een soort alarm te hebben geactiveerd.",
+      "eventName": "End of Mission - Rebels lose defeat",
+      "GUID": "28aefc0c-76f0-46ec-81cd-0d05d2dbe042",
+      "eventText": "De Hutt had zijn specerijen goed beveiligd; de weerstand die je tegenkwam was simpelweg te groot. Je mislukte poging tot diefstal zal de Hutts nog even bezighouden en paranoïde maken, maar lang niet zo veel als wanneer je was geslaagd.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
     },
     {
-      "eventName": "Defend the Spice 2",
-      "GUID": "4ea572b7-be50-4b27-9317-eca2d6bf2b4e",
-      "eventText": "Nu hun spicevoorraden in gevaar zijn, verdubbelen je vijanden hun verdediging.\n\n{-} Het keizerlijke figuur met de hoogste kosten die kan aanvallen, onderbreekt om {rebel} aan te vallen.",
+      "eventName": "End of Mission - Rebels lose round limit",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "De Hutt had zijn specerijen goed beveiligd; de weerstand die je tegenkwam was simpelweg te groot. Je mislukte poging tot diefstal zal de Hutts nog even bezighouden en paranoïde maken, maar lang niet zo veel als wanneer je was geslaagd.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Nadat je je een weg hebt vrijgeschoten en de gestolen specerijen hebt buitgemaakt, bedankt Chewbacca je voor je hulp. Hij verzekert je meteen dat hij, mocht je zijn hulp ooit nodig hebben, hij die maar al te graag zal terugbetalen.\n\n{-} De rebellen winnen de missie!\n{-} Helden ontvangen <color=\"red\">Chewbacca</color> (Loyal Wookiee) als bondgenoot.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Een Weequay houdt de wacht in de steeg buiten het pakhuis, dit bevestigt dat je op de juiste plek bent. Wanneer je nadert, kijkt hij je dreigend aan en legt een hand op zijn blaster.\n\nMet een brul stormt Chewbacca naar voren. Hij grijpt de verbaasde bewaker en slaat hem tegen de deur, keer op keer, totdat de deur naar binnen valt.\n\nHij laat de bewusteloze, toegetakelde Weequay achter, stapt naar binnen en jij volgt.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Plaats 1 neutrale missietoken onder elke <color=\"red\">Trandoshan Hunter</color> en onder de Probe Droid.\n{-} Plaats <color=\"red\">Chewbacca</color> (Loyal Wookiee) op het rood gemarkeerde veld.\n{-} Deuren zijn vergrendeld. Een rebellenfiguur met de sleutelkaart kan deuren openen.\n{-} Neutrale missietokens stellen overblijfselen voor. Nadat een keizerlijke figuur is verslagen, plaats je de overblijfselen in zijn veld. Een rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Gebruik de \"controlekamer\" (apart deel van het speelbord) om een interactie uit te voeren op de missietokens.\n{-} Keizerlijke missietokens stellen spicevaten voor. Een gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat ({K}) om die token te claimen.\n{-} De helden winnen wanneer alle spicevaten zijn geclaimd.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=\"red\">Chewbacca</color> verslagen is.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "fed1f170-d8b2-403c-b9f5-6bd2cf461bf3",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "717ca7a5-884c-472f-bccd-040ba08d1494",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "42a6c336-dde4-419e-abb3-72b78bfbf861",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "0683dc33-5c1d-48b9-960a-9ea029f98819",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "ebcd900a-1709-4f00-8d46-02245f6a5707",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "1832ac4d-f37a-48e1-991d-c037f4560491",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Search Remains 1",
+      "GUID": "d8b71e68-e174-487e-9f75-af27f5a31398",
+      "eventText": "Je doorzoekt de overblijfselen, maar vindt niets interessants.\n\nLeg deze token af.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Remains 1",
+              "GUID": "7d110248-c42f-47d7-8988-729851c0e862",
+              "theText": "Als een <color=\"red\">Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token stelt de overblijfselen van dat figuur voor.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op \"doorzoek de overblijfselen\" op een beschikbare missietoken.",
+              "buttonList": [
+                {
+                  "GUID": "7581405b-5da4-4aca-af1b-c926cef51fed",
+                  "theText": "{A} Doorzoek de overblijfselen"
+                }
+              ]
+            }
+          ],
+          "GUID": "50ad26c7-ee0b-49b6-9c83-f65d15936de3",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Search Remains 2",
+      "GUID": "0834b742-a62c-4902-ae2b-3b8f621044c8",
+      "eventText": "Je doorzoekt de overblijfselen, maar vindt niets interessants.\n\nLeg deze token af.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Remains 2",
+              "GUID": "a1444649-e1d7-46be-a6a2-740c9e1ccdc5",
+              "theText": "Als een <color=\"red\">Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token stelt de overblijfselen van dat figuur voor.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op \"doorzoek de overblijfselen\" op een beschikbare missietoken.",
+              "buttonList": [
+                {
+                  "GUID": "f0aaf9aa-15c0-4963-88b1-890fbca2ba5f",
+                  "theText": "{A} Doorzoek de overblijfselen"
+                }
+              ]
+            }
+          ],
+          "GUID": "c9e36c1c-3b3f-4715-82d6-6d9be617425b",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Search Remains 3",
+      "GUID": "c4a1b508-95fd-4c24-a293-d432b337790c",
+      "eventText": "Je doorzoekt de overblijfselen en vindt uiteindelijk wat je zoekt: de sleutelkaart.\n\n{-} Claim deze token. Je draagt de sleutelkaart.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Remains 3",
+              "GUID": "4ef77da5-23e9-4b9a-a3b0-2efad09309c3",
+              "theText": "Als een <color=\"red\">Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token stelt de overblijfselen van dat figuur voor.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op \"doorzoek de overblijfselen\" op een beschikbare missietoken.",
+              "buttonList": [
+                {
+                  "GUID": "29776982-95f7-4ecf-86e8-a78a5d7bd5eb",
+                  "theText": "{A} Doorzoek de overblijfselen"
+                }
+              ]
+            }
+          ],
+          "GUID": "47a984cc-2290-457b-8717-fcdf5d428e10",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
     },
     {
       "eventName": "The Back Room",
@@ -435,7 +435,7 @@
           "eaName": "Modify Map Entity"
         },
         {
-          "theText": "{-} Keizerlijke missietokens vertegenwoordigen spicevaten. Een gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat ({K}) om de token te claimen.\n{-} De helden winnen als alle spicevaten zijn opgeëist.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=“red”>Chewbacca</color> is verslagen.",
+          "theText": "{-} Keizerlijke missietokens stellen spicevaten voor. Een gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat ({K}) om die token te claimen.\n{-} De helden winnen wanneer alle spicevaten zijn geclaimd.\n{-} De rebellen verliezen als alle helden gewond zijn en <color=\"red\">Chewbacca</color> verslagen is.",
           "GUID": "ef559368-d73d-4ce7-93df-4bdd380dea65",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -467,11 +467,77 @@
     {
       "eventName": "The Back Room 2",
       "GUID": "c1651f33-4861-4624-aa68-eea2d762b01c",
-      "eventText": "Nu hun spicevoorraden in gevaar zijn, verdubbelen je vijanden hun verdediging.\n\n{-} Het keizerlijke figuur met de hoogste kosten die kan aanvallen, onderbreekt om {rebel} aan te vallen.",
+      "eventText": "Nu hun spicevoorraden in gevaar zijn, verdubbelen je vijanden hun inspanningen.\n\n{-} De keizerlijke figuur met de hoogste kosten die kan aanvallen, onderbreekt om {rebel} aan te vallen.",
       "eventActions": []
     }
   ],
   "mapEntities": [
+    {
+      "entityName": "Barrel 1",
+      "GUID": "392fd57c-760b-4ede-952c-911b407a75fb",
+      "mainText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+      "buttonList": [
+        {
+          "GUID": "1501b92c-3595-4dc3-8bb6-1e0c7815aef6",
+          "theText": "{A} {K} Oppakken"
+        }
+      ]
+    },
+    {
+      "entityName": "Barrel 2",
+      "GUID": "41222907-04dd-4976-987e-3362f2c5d28e",
+      "mainText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+      "buttonList": [
+        {
+          "GUID": "cc63c569-ebe8-4044-a149-35ed3ae815c2",
+          "theText": "{A} {K} Oppakken"
+        }
+      ]
+    },
+    {
+      "entityName": "Barrel 3",
+      "GUID": "eca18e0a-ae87-49d9-b572-ad50bb187c84",
+      "mainText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+      "buttonList": [
+        {
+          "GUID": "f9bcb08e-96f2-4d7b-af9f-087bdd74c408",
+          "theText": "{A} {K} Oppakken"
+        }
+      ]
+    },
+    {
+      "entityName": "Barrel 4",
+      "GUID": "8c824486-edbf-48b7-bc7c-d0f30e1f5c37",
+      "mainText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+      "buttonList": [
+        {
+          "GUID": "6c5c4130-daa9-4e58-bad4-ef612ecb925a",
+          "theText": "{A} {K} Oppakken"
+        }
+      ]
+    },
+    {
+      "entityName": "Barrel 5",
+      "GUID": "6d5599ba-7ab7-4645-8f41-b6aef20b73a0",
+      "mainText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+      "buttonList": [
+        {
+          "GUID": "21e67d6d-23c7-455d-97e2-0d2d36ae321b",
+          "theText": "{A} {K} Oppakken"
+        }
+      ]
+    },
+    {
+      "entityName": "Barrel 6",
+      "GUID": "4c5b3640-8f9a-48ac-95bb-97a37d5ff452",
+      "mainText": "Een spicevat.\n\nEen gezonde held of <color=\"red\">Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
+      "buttonList": [
+        {
+          "GUID": "b9ddad36-13ae-48bc-bcb4-3cc2e19c77e9",
+          "theText": "{A} {K} Oppakken"
+        }
+      ]
+    },
     {
       "entityName": "Crate1",
       "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
@@ -506,12 +572,6 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
       "entityName": "Crate4",
       "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
       "mainText": "Een oud voorraadkrat.",
@@ -541,12 +601,6 @@
       "buttonList": []
     },
     {
-      "entityName": "DP Yellow",
-      "GUID": "7b337cf2-e746-4a51-aa39-7f2e0995479f",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
       "entityName": "DP Nexu",
       "GUID": "15d77011-bf93-46a3-bf56-f8168c2fd20d",
       "mainText": null,
@@ -571,109 +625,10 @@
       "buttonList": []
     },
     {
-      "entityName": "Entrance Chewie",
-      "GUID": "01807172-f650-4cda-b171-82ef1d899602",
-      "mainText": "Plaats Chewbacca hier.",
+      "entityName": "DP Yellow",
+      "GUID": "7b337cf2-e746-4a51-aa39-7f2e0995479f",
+      "mainText": null,
       "buttonList": []
-    },
-    {
-      "entityName": "Remains 1",
-      "GUID": "1c221acb-0b34-42c1-8e02-0b60fa69250e",
-      "mainText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token vertegenwoordigt de overblijfselen van dat figuur.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op “doorzoek de overblijfselen” op een beschikbare missietoken.",
-      "buttonList": [
-        {
-          "GUID": "2de39e97-db12-4812-86ca-4c5a255feeb3",
-          "theText": "{A} Doorzoek de overblijfselen"
-        }
-      ]
-    },
-    {
-      "entityName": "Remains 2",
-      "GUID": "11616d98-6709-47fb-8e56-9686ee7b43d6",
-      "mainText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token vertegenwoordigt de overblijfselen van dat figuur.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op “doorzoek de overblijfselen” op een beschikbare missietoken.",
-      "buttonList": [
-        {
-          "GUID": "05867501-9c56-4e49-8f09-4ad02dd366ce",
-          "theText": "{A} Doorzoek de overblijfselen"
-        }
-      ]
-    },
-    {
-      "entityName": "Remains 3",
-      "GUID": "a2cdfd53-3f2a-4727-9b1b-9fb78fef9c71",
-      "mainText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token vertegenwoordigt de overblijfselen van dat figuur.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op “doorzoek de overblijfselen” op een beschikbare missietoken.",
-      "buttonList": [
-        {
-          "GUID": "0228075f-1d16-4dba-9151-dd054f8552ad",
-          "theText": "{A} Doorzoek de overblijfselen"
-        }
-      ]
-    },
-    {
-      "entityName": "Barrel 1",
-      "GUID": "392fd57c-760b-4ede-952c-911b407a75fb",
-      "mainText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
-      "buttonList": [
-        {
-          "GUID": "1501b92c-3595-4dc3-8bb6-1e0c7815aef6",
-          "theText": "{A} {K} Oppakken"
-        }
-      ]
-    },
-    {
-      "entityName": "Barrel 2",
-      "GUID": "41222907-04dd-4976-987e-3362f2c5d28e",
-      "mainText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
-      "buttonList": [
-        {
-          "GUID": "cc63c569-ebe8-4044-a149-35ed3ae815c2",
-          "theText": "{A} {K} Oppakken"
-        }
-      ]
-    },
-    {
-      "entityName": "Barrel 3",
-      "GUID": "eca18e0a-ae87-49d9-b572-ad50bb187c84",
-      "mainText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
-      "buttonList": [
-        {
-          "GUID": "f9bcb08e-96f2-4d7b-af9f-087bdd74c408",
-          "theText": "{A} {K} Oppakken"
-        }
-      ]
-    },
-    {
-      "entityName": "Barrel 4",
-      "GUID": "8c824486-edbf-48b7-bc7c-d0f30e1f5c37",
-      "mainText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
-      "buttonList": [
-        {
-          "GUID": "6c5c4130-daa9-4e58-bad4-ef612ecb925a",
-          "theText": "{A} {K} Oppakken"
-        }
-      ]
-    },
-    {
-      "entityName": "Barrel 5",
-      "GUID": "6d5599ba-7ab7-4645-8f41-b6aef20b73a0",
-      "mainText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
-      "buttonList": [
-        {
-          "GUID": "21e67d6d-23c7-455d-97e2-0d2d36ae321b",
-          "theText": "{A} {K} Oppakken"
-        }
-      ]
-    },
-    {
-      "entityName": "Barrel 6",
-      "GUID": "4c5b3640-8f9a-48ac-95bb-97a37d5ff452",
-      "mainText": "Een spicevat.\n\nEen gezonde held of <color=“red”>Chewbacca</color> kan een interactie uitvoeren op een spicevat {K} om de token te claimen.",
-      "buttonList": [
-        {
-          "GUID": "b9ddad36-13ae-48bc-bcb4-3cc2e19c77e9",
-          "theText": "{A} {K} Oppakken"
-        }
-      ]
     },
     {
       "entityName": "Door 1",
@@ -686,6 +641,51 @@
       "GUID": "414e4c55-71f2-4e0d-8aa9-7ced4edcba93",
       "mainText": "Deze deur zit op slot. Een rebellenfiguur met de sleutelkaart kan hem openen.",
       "buttonList": []
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance Chewie",
+      "GUID": "01807172-f650-4cda-b171-82ef1d899602",
+      "mainText": "Plaats Chewbacca hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Remains 1",
+      "GUID": "1c221acb-0b34-42c1-8e02-0b60fa69250e",
+      "mainText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token stelt de overblijfselen van dat figuur voor.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op \"doorzoek de overblijfselen\" op een beschikbare missietoken.",
+      "buttonList": [
+        {
+          "GUID": "2de39e97-db12-4812-86ca-4c5a255feeb3",
+          "theText": "{A} Doorzoek de overblijfselen"
+        }
+      ]
+    },
+    {
+      "entityName": "Remains 2",
+      "GUID": "11616d98-6709-47fb-8e56-9686ee7b43d6",
+      "mainText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token stelt de overblijfselen van dat figuur voor.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op \"doorzoek de overblijfselen\" op een beschikbare missietoken.",
+      "buttonList": [
+        {
+          "GUID": "05867501-9c56-4e49-8f09-4ad02dd366ce",
+          "theText": "{A} Doorzoek de overblijfselen"
+        }
+      ]
+    },
+    {
+      "entityName": "Remains 3",
+      "GUID": "a2cdfd53-3f2a-4727-9b1b-9fb78fef9c71",
+      "mainText": "Als een <color=“red”>Trandoshan Hunter</color> of de Probe Droid verslagen is, plaats dan een neutrale missietoken op zijn veld. De token stelt de overblijfselen van dat figuur voor.\n\nEen rebellenfiguur kan een interactie uitvoeren op de overblijfselen om ze te doorzoeken naar de sleutelkaart. Klik hiervoor op \"doorzoek de overblijfselen\" op een beschikbare missietoken.",
+      "buttonList": [
+        {
+          "GUID": "0228075f-1d16-4dba-9151-dd054f8552ad",
+          "theText": "{A} Doorzoek de overblijfselen"
+        }
+      ]
     }
   ],
   "initialGroups": [

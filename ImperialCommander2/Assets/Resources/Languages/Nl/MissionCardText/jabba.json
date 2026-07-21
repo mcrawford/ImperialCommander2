@@ -2,7 +2,7 @@
   {
     "id": "Jabba1",
     "name": "Bijna thuis",
-    "descriptionText": "<i>“We hebben een afwijking in de signalen van het schip ontdekt toen we het stelsel verlieten”, luidt een waarschuwing van het konvooi. “We hebben vergelijkbare signalen getraceerd naar de uitvalsbasis van kapitein Terro. We vrezen dat er een trackerbaken op ons schip is geplaatst.\r\nJe moet naar die basis gaan en alle gevonden coördinaten vernietigen voordat de passagiers kunnen worden afgeleverd.”</i>",
+    "descriptionText": "<i>\"We hebben een afwijking gevonden in de metingen van het schip toen we het stelsel verlieten,\" waarschuwt een bericht uit het konvooi je. \"Er zijn vergelijkbare metingen die we hebben getraceerd naar de basis van kapitein Terro.  We vrezen dat er een volgbaken op ons schip is geplaatst. Je moet naar die basis gaan en alle gevonden coördinaten vernietigen voordat de passagiers kunnen worden afgeleverd.\"</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -15,7 +15,7 @@
   {
     "id": "Jabba2",
     "name": "Gevaarlijke bondgenoten",
-    "descriptionText": "<i>Je vrienden en familie zijn klaar om te vertrekken, maar kapitein Terro, woedend over Jabba's beslissing om je te helpen, heeft de enige weg terug naar de schepen geblokkeerd.\r\nJabba wil zijn dominantie laten gelden en stuurt je met zijn schip, de <i>Khetanna</i>, om de keizerlijke kapitein te laten zien wie de baas is op Tatooine.</i>",
+    "descriptionText": "<i>Je vrienden en familie zijn klaar om verplaatst te worden, maar kapitein Terro, woedend over Jabba’s besluit om jullie te helpen, heeft de enige route terug naar de schepen geblokkeerd. Gretig om zijn dominantie te laten zien, stuurt Jabba je met zijn barge, de <i>Khetanna</i>, om de keizerlijke kapitein te laten zien wie de baas is op Tatooine.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -28,7 +28,7 @@
   {
     "id": "Jabba3",
     "name": "Voer het plan uit",
-    "descriptionText": "<i>Een bericht van Bib Fortuna informeert je dat Jabba berichten van Terro's team heeft onderschept waarin wordt gesuggereerd dat ze een hinderlaag op de nieuwe kolonie plannen. “Ik zal een team van Jabba's beste bewakers begeleiden,” vertelt hij je. “En zij zullen je helpen om hier voor eens en voor altijd een einde aan te maken.”</i>",
+    "descriptionText": "<i>Een transmissie van Bib Fortuna informeert je dat Jabba onderschepte berichten heeft opgevangen van Terro’s team, waaruit blijkt dat zij een hinderlaag voorbereiden op de nieuwe kolonie. \"Ik zal een team van Jabba's beste bewakers begeleiden,\" vertelt hij je. \"En zij zullen je helpen om hier voor eens en voor altijd een einde aan te maken.\"</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -41,7 +41,7 @@
   {
     "id": "Jabba4",
     "name": "Van alle kanten",
-    "descriptionText": "<i>De burgers zijn klaar om te worden vervoerd en er wordt een taskforce samengesteld om hen naar een veilige locatie te brengen. Helaas blijkt uit inlichtingen dat Jabba het verraad niet licht opvat en bereid is alles te doen om je tegen te houden. Tegelijkertijd detecteren je sensoren dat Terro's team op weg is naar je locatie.</i>",
+    "descriptionText": "<i>De niet-strijders zijn klaar om verplaatst te worden en er wordt een taskforce samengesteld om hen naar een veilige locatie te brengen. Helaas blijkt uit inlichtingen dat Jabba het verraad niet licht opvat en bereid is alles te doen om je tegen te houden. Tegelijkertijd pikken je sensoren op dat Terro’s eenheid richting jullie positie oprukt.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -54,7 +54,7 @@
   {
     "id": "Jabba5",
     "name": "Vijandige onderhandelingen",
-    "descriptionText": "<i>Er bestaat misschien geen eer onder dieven, maar ze vertrouwen wel op elkaar. Jabba wil dat je een smokkelaar begeleidt naar een deal op Dosha. Er is veel spanning tussen de handelende partijen, dus je moet ervoor zorgen dat de levering vreedzaam verloopt, of op zijn minst winstgevend.</i>",
+    "descriptionText": "<i>Er mag dan geen eer bestaan onder dieven, ze zijn wel op elkaar aangewezen. Jabba wil dat je een smokkelaar begeleidt naar een deal op Dosha. Er heerst veel spanning tussen de betrokken partijen, dus je moet ervoor zorgen dat de overdracht vreedzaam verloopt, of op zijn minst winstgevend.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -67,7 +67,7 @@
   {
     "id": "Jabba6",
     "name": "Beslissend moment",
-    "descriptionText": "<i>De Alliantie neemt via een beveiligd kanaal contact met je op met een complicatie voor Jabba's laatste klus. Ze hebben middelen vrijgemaakt voor een kleine reddingsvloot en sturen die jouw kant op, maar ze hebben je nodig om de orbitale afweersystemen van de belangrijkste keizerlijke basis te saboteren. Je hoopt dat je genoeg tijd hebt om beide missies te volbrengen.</i>",
+    "descriptionText": "<i>Het Verbond neemt via een beveiligd kanaal contact met je op met een complicatie voor Jabba’s laatste opdracht. Ze hebben middelen vrijgemaakt voor een kleine reddingsvloot en sturen die jouw kant op, maar ze hebben je nodig om de orbitale afweersystemen te saboteren vanuit de belangrijkste keizerlijke basis. Je hoopt dat je genoeg tijd hebt om beide missies te voltooien.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -80,7 +80,7 @@
   {
     "id": "Jabba7",
     "name": "Muiterij",
-    "descriptionText": "<i>Na je gevangenneming en Jabba's verraad word je veroordeeld in een schijnproces. Je zult in de kuil van de almachtige Sarlacc worden gegooid, de tolk van de Hutt vertelt: “Je zult nieuwe betekenissen van pijn en lijden leren kennen terwijl je langzaam wordt verteerd gedurende duizend jaar.” Je wordt vervolgens op skiffs geladen en weggevlogen het felle zonlicht en het troosteloze landschap in.</i>",
+    "descriptionText": "<i>Na je gevangenneming en Jabba's verraad word je veroordeeld in een schijnproces. Je zult in de kuil van de almachtige Sarlacc worden geworpen. De tolk van de Hutt deelt je mee: \"Je zult nieuwe betekenissen van pijn en lijden leren kennen terwijl je gedurende duizend jaar langzaam wordt verteerd.\" Daarna worden jullie op skiffs geladen en weggevlogen, het felle zonlicht en troosteloze landschap in.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -93,7 +93,7 @@
   {
     "id": "Jabba8",
     "name": "Overladen",
-    "descriptionText": "<i>De voorraden van het Keizerrijk zijn onbeperkt. Ze zullen een handvol explosieven niet missen. Jabba wil dat je een deel van deze overtollige munitie verzamelt voor zijn eigen gebruik. Hij zal het zeker begrijpen als je een deel van de lading moet gebruiken op de keizerlijke verdediging om de missie te voltooien.</i>",
+    "descriptionText": "<i>De keizerlijke voorraden zijn eindeloos. Ze zullen een handvol explosieven niet missen. Jabba wil dat je een deel van deze overschotten aan munitie verzamelt voor zijn eigen gebruik. Hij zou echter goed begrijpen als je een deel van de lading moet gebruiken op de keizerlijke verdediging om de missie te voltooien.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -106,7 +106,7 @@
   {
     "id": "Jabba9",
     "name": "Bestorming van het paleis",
-    "descriptionText": "<i>Jabba's verraad kan alleen met geweld worden beantwoord. Als je je vrienden en familie wilt redden van een leven lang slavernij, is een frontale aanval de enige optie die je nog hebt. Je piloot waarschuwt je nogmaals dat het plan gekkenwerk is, maar je bent ervan overtuigd dat dit de enige manier is. Hij vliegt je naar de rand van Jabba's paleis in de Dune Sea en wenst je succes terwijl je naar de poort oprukt.</i>",
+    "descriptionText": "<i>Jabba's verraad kan alleen met geweld worden beantwoord. Als je je vrienden en familie wilt redden van een leven vol slavernij, is een volledige aanval de enige optie die je nog hebt. Je piloot waarschuwt je nogmaals dat het plan gekkenwerk is, maar je bent ervan overtuigd dat dit de enige manier is. Hij vliegt je naar de rand van Jabba's paleis in de Duinzee en wenst je geluk terwijl je naar de poort oprukt.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -119,7 +119,7 @@
   {
     "id": "Jabba10",
     "name": "Op verboden terrein",
-    "descriptionText": "<i>Gevaar! Terwijl de Galactische Burgeroorlog voortduurt, past het tirannieke KEIZERRIJK een verachtelijke nieuwe tactiek toe: het aanvallen van families en andere niet-strijders. Dappere soldaten van de REBELLENALLIANTIE zoeken onderdak voor deze onschuldige burgers en begeleiden een konvooi naar een veilige plek op een verborgen rebellenwereld.\nNa een verwoestende hinderlaag en een hevige strijd worden veel rebellenschepen vernietigd. De overlevenden vluchten naar de afgelegen woestijnplaneet TATOOINE, in de hoop bij de gemene gangster JABBA THE HUTT betere overlevingskansen te hebben dan in handen van het Rijk.\nMaar als de beschadigde rebellenschepen een noodlanding moeten maken in de droge woestijn, ontdekken ze dat een keizerlijk garnizoen al stormtroopers heeft gestuurd...</i>",
+    "descriptionText": "<i>Gevaar! Terwijl de Galactische Burgeroorlog in alle hevigheid voortwoedt, grijpt het tirannieke KEIZERRIJK naar een nieuwe, verachtelijke tactiek: het doelbewust aanvallen van families en andere niet-strijders. Dappere soldaten van het REBELLENVERBOND zoeken onderdak voor deze onschuldige burgers en begeleiden een konvooi naar een veilige plek op een verborgen rebellenwereld.\nNa een verwoestende hinderlaag en een hevige strijd worden veel rebellenschepen vernietigd. De overlevenden vluchten naar de afgelegen woestijnplaneet TATOOINE, in de hoop betere overlevingskansen te vinden bij de weerzinwekkende gangster JABBA DE HUTT dan in handen van het Keizerrijk.\nMaar terwijl de beschadigde rebellenschepen neerstorten in de brandende woestijn, ontdekken ze dat een keizerlijk garnizoen reeds aanwezig is en dat stormtroepen al onderweg zijn...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -132,7 +132,7 @@
   {
     "id": "Jabba11",
     "name": "Trofeeënjacht",
-    "descriptionText": "<i>Jabba heeft een doodvonnis uitgesproken over een keizerlijke officier genaamd Kallenn, maar zijn beveiliging heeft hem tot nu toe veilig gehouden. “Hij moest een nieuw huisdier voor mij bezorgen, maar heeft het voor zichzelf gehouden. Verraders worden niet gespaard”, vertelt zijn tolk je.\nJabba wil dat je je aansluit bij één van zijn beste premiejagers om Kallenn voorgoed uit te schakelen.</i>",
+    "descriptionText": "<i>Jabba heeft een doodvonnis uitgesproken over een keizerlijke officier genaamd Kallenn, maar zijn beveiliging heeft hem tot nu toe veilig gehouden. \"Hij zou een nieuw huisdier voor mij afleveren, maar heeft het voor zichzelf gehouden. Verraders worden niet gespaard,\" vertelt zijn tolk je.\nJabba wil dat je je aansluit bij één van zijn beste premiejagers om Kallenn voorgoed uit te schakelen.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -145,7 +145,7 @@
   {
     "id": "Jabba12",
     "name": "Territoriumoorlog",
-    "descriptionText": "<i>Een rivaliserende bende heeft langzaam maar zeker het uitgebreide grondgebied van Jabba op Nal Hutta ingepikt. Deze bedreiging kan niet onbeantwoord blijven. Jabba geeft je een eenvoudige opdracht: “Maak een voorbeeld van dit tuig.”</i>",
+    "descriptionText": "<i>Een rivaliserende bende dringt langzaam maar gestaag op binnen Jabba’s uitgebreide territorium op Nal Hutta. Deze uitdaging kan niet onbeantwoord blijven. Jabba geeft je een eenvoudige opdracht: \"Maak een voorbeeld van dit uitschot.\"</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -158,7 +158,7 @@
   {
     "id": "Jabba13",
     "name": "Een heldenontvangst",
-    "descriptionText": "<i>Hoewel hij buiten zijn wereld een reputatie heeft opgebouwd als meedogenloze huurling, is Vinto Hreeda voor zijn eigen clan een held en een vertrouwde verdediger. Dus toen een splintergroep van piraten uit een rivaliserende clan essentiële medische voorraden stal, was de eerste reactie van zijn eigen clan om contact op te nemen met Vinto en hem om hulp te smeken.</i>",
+    "descriptionText": "<i>Hoewel hij buiten zijn wereld een reputatie heeft opgebouwd als meedogenloze huurling, is Vinto Hreeda voor zijn eigen clan een held en een vertrouwde verdediger. Dus toen een splintergroep piraten van een rivaliserende clan vitale medische voorraden stal, was de eerste actie van zijn thuisclan om contact op te nemen met Vinto en hem om hulp te smeken.</i>",
     "bonusText": "",
     "heroText": "Vinto Hreeda",
     "allyText": "",
@@ -174,7 +174,7 @@
   {
     "id": "Jabba14",
     "name": "Geboren uit de dood",
-    "descriptionText": "<i>Shyla heeft altijd bewondering gehad voor de machtige clan van Mandalorians die bekend staat als de Deathwatch. Maar sinds ze heeft gehoord over een verborgen basis, met oude documenten van de clan, die onlangs is ontdekt door een keizerlijk scanteam, is haar verlangen om meer te weten te komen uitgegroeid tot een obsessie.</i>",
+    "descriptionText": "<i>Shyla heeft altijd bewondering gehad voor de machtige clan van Mandalorians die bekendstaat als de Death Watch. Maar sinds ze heeft gehoord over een verborgen basis met oude archieven van deze groep, die recent is ontdekt door een keizerlijke scaneenheid, is haar verlangen om meer te weten uitgegroeid tot een obsessie.</i>",
     "bonusText": "",
     "heroText": "Shyla Varad",
     "allyText": "",
@@ -190,7 +190,7 @@
   {
     "id": "Jabba15",
     "name": "Afpersing",
-    "descriptionText": "<i>Oude rivalen van Onar Koma hebben goede vrienden van de huurling-lijfwacht ontvoerd en dreigen hen te laten ‘boeten voor zijn zonden’. Deze vogelvrijen eisen een ontmoeting in een berucht gokhol op Onars thuiswereld. Dit is duidelijk een valstrik, maar de Aqualish is woedend en bereid om erheen te gaan.</i>",
+    "descriptionText": "<i>Oude rivalen van Onar Koma hebben naaste vrienden van de huurling-lijfwacht ontvoerd en dreigen hen \"te laten boeten voor zijn zonden.\" Deze outlaws eisen een ontmoeting in een berucht gokhol op Onars thuiswereld. Het is duidelijk een valstrik, maar de Aqualish is woedend en bereid erin te trappen.</i>",
     "bonusText": "",
     "heroText": "Onar Koma",
     "allyText": "",
@@ -206,7 +206,7 @@
   {
     "id": "Jabba16",
     "name": "Gevaarlijke jacht",
-    "descriptionText": "<i>Scouts hebben gemeld dat verkenningsploegen van het keizerrijk pogen hun natuurlijke oorlogsvoering te verbeteren door eieren van de gevreesde rancors op de planeet Dathomir te verzamelen. Aangezien de eieren ook tegen hoge prijzen kunnen worden verkocht aan Hutt-heren die op zoek zijn naar exotische huisdieren, wil het commando dat de eieren worden verzameld, in de hoop zowel de activiteiten van het Keizerrijk te verstoren als financiering te verkrijgen.</i>",
+    "descriptionText": "<i>Verkenners hebben gemeld dat keizerlijke verkenningseenheden proberen hun natuurlijke oorlogsvoering te versterken door eieren te verzamelen van de gevreesde rancors op de planeet Dathomir. Omdat deze eieren ook verkocht kunnen worden aan Hutt-heren die op zoek zijn naar exotische huisdieren voor hoge prijzen, wil het oppercommando dat de eieren worden verzameld, in de hoop zowel keizerlijke activiteiten te verstoren als financiering te verkrijgen.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
