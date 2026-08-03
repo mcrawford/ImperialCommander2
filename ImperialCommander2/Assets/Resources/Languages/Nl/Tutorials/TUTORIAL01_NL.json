@@ -1,0 +1,1171 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Tutorial 1: De Basis",
+    "missionDescription": "Je herinnert je niet veel meer, alleen nog maar lasers, explosies en daarna niets meer.",
+    "missionInfo": "",
+    "campaignName": "Tutorials",
+    "startingObjective": "",
+    "repositionOverride": null,
+    "additionalMissionInfo": "Deze tutorial leert je de beginselen van helden activatie in Imperial Assault."
+  },
+  "events": [
+    {
+      "eventName": "Beginning",
+      "GUID": "2c38848a-6013-4cad-be60-8709c6918b8c",
+      "eventText": "Je herinnert je niet veel meer.\r\n\r\nJe was onderweg naar een koper in de Outer Rim, ergens tussen Eadu en Kessel, met waardevolle gesmokkelde technologie aan boord. De overdracht ging helaas niet zoals gepland toen je contact een keizerlijke agent bleek te zijn. Hij probeerde de zeldzame technologie te kopen voor een wapen project tegen het \"Verbond voor het herstellen van de Republiek\".",
+      "eventActions": [
+        {
+          "tbText": "Je had je keuzes afgewogen, maar er was uiteindelijk maar één optie. Je had goed geld kunnen verdienen met de verkoop, maar dit was iets dat je liever niet op je geweten had. Je verdoofde de agent, stuurde een waarschuwing naar het Rebellenverbond en vluchtte.",
+          "GUID": "724927eb-69cf-4dfe-90ee-a5f60353d5a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je kwam helaas niet ver. Uit het niets verscheen een keizerlijk transportschip en het laservuur van TIE-fighters regende op je neer.\r\nJe probeerde de dodelijke dans te ontvluchten, maar het waren er teveel. Het laatste dat je herinnert voor de explosie, waren de lichtsporen van X-wings die uit de hyperruimte schoten en het vuur openden op de keizerlijke schepen.",
+          "GUID": "426baa76-52f8-42a3-98cf-3e957e65d2ac",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je komt weer bij bewust zijn. De wereld ziet er vertekend uit door het glas van de Bacta tank waar je in zweeft.",
+          "GUID": "598ed296-b337-464f-adc2-72e90e259207",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Welkom bij de tutorial van <b>Imperial Commander</b>! \r\n\r\nDeze reeks tutorials zijn ontworpen om je de beginselen van <b>Imperial Assault</b> bij te brengen in combinatie met de onofficiële companion app. Je hebt geen voorkennis van <b>Imperial Assault</b> nodig, maar houdt er rekening mee dat deze tutotials alleen basis informatie bevatten. Als je er dieper in wilt duiken of vragen hebt, kijk dan in de \"Learn to Play\" gids en de \"Rules Reference Guide\" die bij het spel zitten.</color>",
+          "GUID": "9e3e8682-8ca5-4965-b0ab-6946f2c3697d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Laten we beginnen met <b>Bord Management</b>. Je kunt het speelbord ten alle tijden bekijken, ook wanneer er een textbox geopend is. Selecteer daarvoor het {J} icoontje in de linker beneden hoek van je scherm. \r\n\r\nZoek de tegels 20A en 36A van het basisspel en een deur en plastic standaard, mits je dit nog niet gedaan hebt. Selecteer het {J} icoontje en plaats de tegels zoals op het scherm. Selecteer daarna opnieuw het {J} icoontje om terug te keren naar dit bericht.</color>",
+          "GUID": "dd035ee1-a6a7-4043-b85a-85497a62b49a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Je kunt de map bewegen met de muis of met je vingers:\r\n\r\n{-} <b>Pan:</b> Klik & Sleep / Sleep met 1 vinger\r\n{-} <b>Draaien:</b> Rechter klik & Slepen / Slepen met 3 vingers\r\n{-} <b>Zoomen:</b> Scroll Wiel / Knijpen\r\n\r\nProbeer maar. Selecteer daarna het {J} icoon opnieuw om terug te gaan naar deze tekst en selecteer dan <b>doorgaan</b> om verder te gaan.</color>",
+          "GUID": "40d65439-fbf9-4d53-b58c-b46af8592520",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Een medische droid houdt de bacta tanken in de gaten met zijn gloeiende optische sensoren. Hij controleert zijn informatie display en richt dan zijn aandacht op je.\r\n\r\n\"Mooi. Jullie zijn wakker\", kraakt zijn stem door de intercom. \"Duizeligheid is een veel voorkomend symptoom van bewusteloosheid. Jullie vitale functies zijn goed. Je geheugen zal snel terugkeren, als het goed is.\"\r\n\r\nDe droid heeft gelijk, je herinnert jullie namen weer.\r\n\r\nJullie namen zijn: <b>Jyn Odan</b>, buitengewoon smokkelaar, behendig en snel, de snelste schutter van deze kant van de Corellian Run. En <b>Gaarkhan</b>, krachtige Wookiee strijder van Kashyyyk, net zo loyaal als angstaanjagend.\r\n\r\nDe bacta tanken worden leeg gepompt en de medische droid helpt je eruit.",
+          "GUID": "74088b63-8375-483f-a842-f6c132586b74",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "18cff00b-ad29-4cdf-a6e5-65dfec660f5a",
+              "theText": "Plaats <b>Jyn Odan</b> hier.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "5268012d-31e4-48bb-9774-5e6da3acf9d8",
+              "theText": "Plaats <b>Gaarkhan</b> hier.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "cceb5ba1-bd68-40bb-9131-a16737d26fa9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Elke campagne in <b>Imperial Assault</b> begint met het kiezen met welke <b>helden</b> je de hele campagne wilt spelen.\r\nVoor deze tutorial hebben we die keuze alvast gemaakt.\r\n\r\nPak de heldenkaarten (de grote kaarten) voor <b>Jyn Odan</b> en <b>Gaarkhan</b>.\r\n\r\nPak ook de \"heldendecks\" (de kleine kaarten met de afbeelding van de held op de achterkant). Zoek in beide decks de start voorwerpen, dat zijn de enige kaarten zonder XP waarde aan de onderkant.\r\n\r\nLeg de heldenkaart vóór de speler die de betreffende held speelt en plaats de start voorwerpen met de achterkant naar boven ernaast.\r\n\r\nPak daarna de miniaturen van Jyn en Gaarkhan en plaats Jyn op het groen gemarkeerde veld en Gaarkhan op het blauw gemarkeerde veld.</color>",
+          "GUID": "325263ad-2c61-4ab1-a193-f6a7b3b3bef0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><b>Imperial Assault</b> wordt gespeeld in een serie van <i>activaties</i>. Eerst activeren de spelers een held en daarna activeert de app een vijandelijke groep (mits beschikbaar).\r\n\r\nDe helden waarmee gespeeld wordt staan aan de linkerkant van het scherm. Tussen de 2 en 4 helden kunnen geselecteerd worden voor een <b>Imperial Assault</b> campagne.\r\nEchter, hoeveel helden er ook meespelen, de spelers krijgen altijd 4 activaties.\r\n\r\n{-} 4 helden: Elke held krijgt 1 activatie.\r\n{-} 3 helden: Elke held krijgt 1 activatie. Nadat elke held één keer is geactiveerd, mag één van de helden nog 1 activatie doen. Dit wordt in de app aangetoond met een \"virtuele\" held. Deze extra activatie moet elke ronde door een andere held worden uitgevoerd. Tevens krijgt elke held +3 gezondheid (Health)\r\n{-} 2 helden: Elke held krijgt 2 activaties. De tweede activatie mag pas gedaan worden als beide helden allebei één keer geactiveerd zijn. Tevens krijgt elke held +10 gezondheid (Health).\r\n\r\nHet Keizerrijk krijgt altijd 1 activatie per ingezette vijandelijke groep.</color>",
+          "GUID": "f9bb75f6-ad94-4b09-a983-da4f9dc4ce4c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Om de activaties bij te houden kun je de tokens, die bij het spel komen, gebruiken, of de groene activatie symbolen op de thumbnails van de helden.\r\n\r\nKlik of tik op een groene activatie token om aan te geven dat de activatie klaar is. Bij het begin van een ronde worden de activatie tokens gereset.\r\n\r\nAan de linkerkant worden ook <b>Bondgenoten</B> getoond. Klik op <b>doorgaan</b> om te leren hoe dit werkt.",
+          "GUID": "d6db7bab-ccca-46d1-b513-cfd8e5d9d140",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "De deur schuift open en een jonge, donker harige vrouw in een wit gewaad komt binnen.\r\nJe herkent haar gelijk. De deur sluit zich en prinses Leia Organa glimlacht als ze ziet dat jullie al uit de bacta tank zijn gekomen.\r\n\r\n\"Mooi\", zegt ze. \"Ik was even bezorgd, maar jullie zien er gelukkig goed uit.\"",
+          "GUID": "c75d62d7-d111-48bd-8d65-dbe308d1046a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 1",
+              "GUID": "a95a19af-4d84-406e-9fb9-bccd6e37b8f0",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "f6dcf79c-288a-4640-9be2-1cdb7210ccb7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "GUID": "47097c07-5055-4fac-9d76-c9a7229e3e74",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Leia Organa",
+          "repositionInstructions": "",
+          "surges": "",
+          "bonuses": "",
+          "keywords": "",
+          "abilities": "",
+          "customText": "",
+          "cardName": "Leia Organa"
+        },
+        {
+          "tbText": "<color=\"yellow\">Wanneer een bondgenoot of een vijand is ingezet, dan zoek je de desbetreffende inzetkaart en plaats je deze ergens in het speelveld. Daarna plaats je de miniatuur of token van deze bondgenoot of vijand.\r\n\r\nSommige ingezette bondgenoten of vijanden worden aangepast door de app en komen niet overéén met hun fysieke inzetkaart en/of miniatuur/token. In het voorbeeld hier duidt de rebellen missietoken Leia aan. Je kunt de rechtermuisknop of dubbelklik / tik gebruiken op het portret van een bondgenoot of vijand om hun inzetkaart te zien, aangepast of origineel.\r\n(Selecteer het {J} icoon om dit te proberen, echter is er nog niet veel te zien op Leias kaart.)\r\n\r\nElke bondgenoot groep krijgt 1 activatie. De spelers bepalen normaal zelf waarneer een bondgenoot wordt geactiveerd, maar voor het doel van deze tutorial activeren we Leia als eerst. In een normale missie hebben de spelers volledige controle over de acties van een bondgenoot, maar Leia is altijd al koppig geweest.</color>",
+          "GUID": "60fa60fc-585c-4c5c-8154-a13160ebcc10",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "First Activation",
+      "GUID": "4f5befe7-5526-4fa6-9e40-8e78ffbc06f1",
+      "eventText": "\"Bedankt voor de waarschuwing\", gaat Leia verder. \"We onderzoeken de informatie die jullie hebben gestuurd, het is duidelijk dat jullie ons een grote gunst hebben gedaan. Er wordt gesproken over een baanbrekend nieuw wapen project, maar laten we ons daar nu nog niet druk om maken.\"\r\n\r\n\"Jullie zijn op de <i>Sundered Heart</i>, één van onze hospitaal schepen. Onze doktoren hebben jullie opgelapt, maar helaas heeft jullie schip het niet gered. We hebben nog wel wat bezittingen kunnen redden.\"\r\n\r\nLeia loopt naar een console aan de achterste muur.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "e4035385-55ae-49e1-9848-fd39e2da4dad",
+              "theText": "De aan de muur hangende console bestuurt de deuren van de opbergruimte.",
+              "buttonList": [
+                {
+                  "GUID": "8ad21825-ca37-4030-87ad-88b0d39fe61c",
+                  "theText": "{A} Open de opbergruimte"
+                }
+              ]
+            }
+          ],
+          "GUID": "c8f02fde-77a8-4e0f-8f2c-93457c0bf295",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Wanneer een figuur activeert ontvangt deze 2 <b>acties</b> om te spenderen. Mogelijke acties zijn:\r\n\r\n{-} Verplaatsen (Move)\r\n{-} Interactie (Interact)\r\n{-} Aanvallen (Attack)\r\n{-} Rusten (Rest)\r\n{-} Speciale Acties\r\n\r\nEen figuur kan acties spenderen aan elke combinatie van de bovenstaande mogelijkheden.</color>",
+          "GUID": "3f0f21ba-a7d7-45e8-b57a-f52e049c6610",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Omdat Leia naar de console moet verplaatsen, verbruikt ze 1 van haar 2 acties om te <b>verplaatsen (Move)</b>.\r\n\r\nDe <b>verplaats</b> actie verplaatst niet direct een figuur. De actie geeft een figuur <i>verplaatspunten</i> gelijk aan zijn/haar <i>snelheid (Speed)</i>. De snelheid van een figuur staat op zijn/haar inzetkaart.\r\nLeias snelheid is 5, dus krijgt ze 5 verplaatspunten. Deze punten kunnen gebruikt worden tijdens een activatie. Ze mogen zelfs verdeeld worden, maar mogen niet meegenomen worden naar een volgende activatie.\r\n\r\nEen figuur mag 1 verplaatspunt gebruiken om zich naar een aangrenzend veld te verplaatsen (orthogonaal of diagonaal (m.a.w. recht of schuin)).</color>",
+          "GUID": "a00f34fe-24e2-4a63-98e5-f331af679f8e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Tijdens een verplaats actie moeten de spelers het terrein in de gaten houden, de meeste velden mogen betreden worden met 1 verplaatspunt, maar er zijn uitzonderingen.\r\n\r\n{-} <i>Moeilijk terrein</i> is gemarkeerd met een blauwe rand. De verplaatsing in een <i>moeilijk</i> veld kost 1 extra verplaatspunt.\r\n{-} <i>Geblokkeerd terrein</i> is gemarkeerd met een rode rand, zoals de bacta tanken. Normaal kunnen figuren niet in een <i>geblokkeerd</i> veld verplaatsen. De zwarte rand rond een tegel is ook <i>geblokkeerd</i> terrein.\r\n{-} <i>Onbegaanbaar terrein</i> is gemarkeerd met een rode onderbroken rand. Normaal kunnen figuren niet in een <i>onbegaanbaar</i> veld verplaatsen, maar ze kunnen wel een interactie doen door, of aanvallen door een rode onderbroken rand.\r\n\r\nEen figuur mag wel door een veld met een ander figuur verplaatsen, maar mag er niet stoppen. Verplaatsen naar een veld met een <i>vijandelijk</i> figuur kost 1 extra verplaatspunt.</color>",
+          "GUID": "6ab12cd9-4a06-4f4a-99e0-3d4631139ed9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Leia spendeert nu 4 verplaatspunten en verplaats totdat ze naast de console staat.\r\n\r\nHoud er rekening mee dat <b>Imperial Commander</b> normaal de positie van figuren niet bijhoudt. Dit is puur ter demonstratie.</color>",
+          "GUID": "2f173ba6-4c1a-43f9-9543-5ba682be6c30",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 1",
+              "GUID": "2395ed6a-8cda-44ac-9f13-2212541f6a7e",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 2",
+              "GUID": "fd9919a3-c559-416f-8162-4c9a9527a223",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "dd1cad7c-d26b-4220-ab63-b7dd2bf4ffa2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 2",
+              "GUID": "101745b0-d23c-476a-a33f-cd5e6d6f69ba",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 3",
+              "GUID": "676a399c-7eb4-4596-bac9-d86e48fcf81b",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "0eeac485-b69d-454d-a8b7-75ead15372b1",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 3",
+              "GUID": "a82f98d1-21a3-4fdf-9817-010a16a8b25a",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 4",
+              "GUID": "d4b10257-1650-4b2e-b4ef-2ee568036405",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "929a5c58-391a-4b62-8c8b-77895f9e811a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 4",
+              "GUID": "df943329-6d10-4b0e-9af8-d0864dfdcda0",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 5",
+              "GUID": "af31875b-939a-4a3c-a345-620564bea1b4",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "e532b1a7-d02f-4140-b8aa-48bf6f19b4c6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia drukt op een knop.\r\n\r\n<color=\"yellow\">Leia spendeert haar tweede actie aan een <i>interactie (Interact)</i>. Figuren kunnen tokens op de kaart activeren. Om dit te doen moeten ze op hetzelfde veld als de token staan of een aangrenzend veld en een actie spenderen.\r\n\r\nSelecteer de console en klik / tik op \"{A} Open opbergruimte\". De {A} geeft aan dat dit een actie kost.</color>",
+          "GUID": "1ea511d2-46a6-4f1a-addf-ccec9e1ac0ce",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Shelf opens",
+      "GUID": "38a6adb2-12e8-473f-9f35-f4e47c30a5f6",
+      "eventText": "Een opbergruimte tegenover de bacta tanken gaat open.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Jyn",
+              "GUID": "3b97ef9b-d63d-498f-9af3-e26e59b8f24e",
+              "theText": "Dit krat bevat Jyns bezittingen.",
+              "buttonList": [
+                {
+                  "GUID": "17370558-b0b3-4ece-b13c-3533e976bea4",
+                  "theText": "{A} Openen"
+                }
+              ]
+            },
+            {
+              "entityName": "Crate Gaarkhan",
+              "GUID": "bbbecf88-8070-4c5a-9b72-109b361d477e",
+              "theText": "Dit krat bevat Gaarkhans bezittingen.",
+              "buttonList": [
+                {
+                  "GUID": "18944710-ea17-4e0e-84c8-b836e059b811",
+                  "theText": "{A} Openen"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 1",
+              "GUID": "c1cd6bba-10e1-49e7-a0a1-becacefe1fd6",
+              "theText": "De aan de muur hangende console bestuurt de deuren van de opbergruimte.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "1dd3026c-f46a-4c02-bba4-1c5153cedd70",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"Jullie spullen zitten in die kratten. Neem je tijd, ik wacht wel.\r\n\r\n<color=\"yellow\">Leia heeft al haar acties gebruikt, maar ze heeft nog 1 verplaatspunt over. Ze gebruikt dat punt of wat afstand te nemen.</color>",
+          "GUID": "ba1c8ef3-159e-4fa9-ad54-fd2d6eba33c8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 5",
+              "GUID": "4b5736ce-cd1d-4b42-b756-fb0cba274ab5",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 6",
+              "GUID": "adec692b-b930-469f-91fa-2c737f70b84d",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "4a0cc4ac-3933-4486-8157-dac06e424d10",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Nadat ze al haar acties en verplaatspunten heeft verbruikt eindigt Leias activatie.</color>",
+          "GUID": "4865fdd8-dc34-4900-8e2b-15194d89a1a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "c9772d45-2b54-4af7-af0b-b970b1847612",
+              "theText": "Plaats <b>Jyn Odan</b> hier.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "bfaea946-667c-4d60-9f6a-dd8a80c1940e",
+              "theText": "Plaats <b>Gaarkhan</b> hier.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 2",
+              "GUID": "fc735724-a721-4d6d-bcd5-791fab670ba5",
+              "theText": "Gaarkhans positie.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn 2",
+              "GUID": "4b5f8e2d-dafa-4d44-9a5f-1e6ecfccbefe",
+              "theText": "Jyns positie.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "06f9a6e9-5a1c-4cfa-bc9a-2bef4912734c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Nu Leia klaar is kunnen de helden activeren. Elke held moet 1 actie spenderen aan een <b>verplaats</b> actie en 1 actie aan een <b>interactie</b> om een krat te openen.\r\n\r\nActiveer de helden in willekeurige volgorde. Onthoud dat een figuur aangrenzend of op een veld met een krat moet staan om deze te openen. Verplaats Jyn dus naar het groen gemarkeerde veld tijdens haar activatie en Gaarkhan naar het blauw gemarkeerde veld tijdens zijn activatie.</color>",
+          "GUID": "8c2deefd-089c-4eae-8337-9fd535cd50fc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Verzamel de bezittingen uit de kratten.",
+          "longText": null,
+          "GUID": "509251b4-348e-4792-a208-64e5c80a36c7",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Jyn Crate Opened",
+      "GUID": "cf2f4483-8946-4553-8251-8dcf00ac3f53",
+      "eventText": "In het krat vind je Jyns kleding en haar vertrouwde oude blaster.\r\n\r\n<color=\"yellow\">Jyn Odan mag haar start voorwerpkaart omdraaien.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Jyn",
+              "GUID": "c624a9be-6b28-4bc6-94f0-c8060b4dc46f",
+              "theText": "Dit krat bevat Jyns bezittingen.",
+              "buttonList": [
+                {
+                  "GUID": "a6022564-dbbb-4d02-a5e1-ee9e611a1696",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "ebdabfc1-71ad-4e70-a1f8-c82af9cebb38",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Gaarkhan Crate Opened",
+      "GUID": "f2a46c86-cc4e-4b01-8da2-6025bcf3f83a",
+      "eventText": "Gaarkhans pantser en zijn grote vibro-ax bevinden zich in deze opbergruimte.\r\n\r\n<color=\"yellow\">Gaarkhan mag zijn start voorwerpkaart omdraaien.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Gaarkhan",
+              "GUID": "db491f97-f932-43e8-bd18-25b84c8e1230",
+              "theText": "Dit krat bevat Gaarkhans bezittingen.",
+              "buttonList": [
+                {
+                  "GUID": "10666666-c4cc-4663-a8b4-5fddd7e18b95",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "cdffeed5-5440-4167-b319-582728b2caef",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Both Crates Opened",
+      "GUID": "6c290cee-85ae-4cd7-8154-6d5db9e39ef2",
+      "eventText": "\"Ziet er goed uit\", zegt Leia. \"Laten we eens kijken hoe fit jullie zijn na die bacta behandeling.\"\r\n\r\nZe drukt op een andere knop op de console. De deur gaat een stukje open en stop met een scherp metaalachtig geluid, de deur zit vast. \"Natuurlijk. Wil je me een handje helpen?\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "b60780f0-483b-43b5-af8a-cfa4b5689d60",
+              "theText": "De deur naar buiten is vastgelopen. Je zult brute kracht moeten gebruiken om hem open te krijgen",
+              "buttonList": [
+                {
+                  "GUID": "33164345-eb1b-47b2-b98b-aa74fb4f73c1",
+                  "theText": "{A} Wrik de deur open"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Gaarkhan 2",
+              "GUID": "d4f64616-8405-49c8-91c1-98e06a35fb9a",
+              "theText": "Gaarkhans positie.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 3",
+              "GUID": "36fe2114-7b3c-4326-8332-3cc5a82644af",
+              "theText": "Gaarkhans positie.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "7717fe7e-9555-4b40-8cd3-b8a357251522",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Voor sommige interacties (en andere gebeurtenissen tijdens een missie) moet je een <i>attribuuttest</i> doen. De attributen van een held staan aan de onderkant van de heldenkaart.\r\n\r\n{K}: Kracht (Strength)\r\n{J}: Inzicht (Insight)\r\n{I}: Tech\r\n\r\nHoe meer dobbelstenen er bij een attribuut staan, hoe beter de kans op succes tijdens een attribuuttest.\r\n\r\nDe deur openwrikken heeft kracht (Strength) nodig. Een grote Wookiee is beter geschikt voor deze taak dan een behendige smokkelaar, gebruik daarom Gaarkhans tweede activatie. Verplaats hem naar het blauw gemarkeerde veld en gebruik een interactie om de deur open te wrikken.</color>",
+          "GUID": "a9bf6e05-1425-4730-85cf-b4646e019e0f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Wrik de deur open.",
+          "longText": null,
+          "GUID": "c5087acb-890a-4932-b9cc-47a87ae3de7d",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Door Attempt",
+      "GUID": "22a17d5b-d55f-4ebf-b2d1-0ba52261f3a6",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je duwt je vingers in de opening en trekt met al je kracht.\r\n\r\n<color=\"yellow\">Rol het aantal dobbelstenen zoals aangegeven door het {K} attribuut op je heldenkaart (1 blauwe, 1 groene en 1 gele). Elk {B} symbool is een <i>succes</i>. Voer het aantal successen hieronder in.</color>",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "79adc7e0-c3c6-4297-bb96-e39302bf5aae",
+              "theText": "Je trekt zo hard als je kunt, maar de deur blijft vastzitten.\r\n\r\n<color=\"yellow\">Geen paniek - je kunt het opnieuw proberen, maar elke interactie kost een actie. Jyn kan ook een poging wagen, maar met 1 blauwe dobbelsteen zijn haar kansen een stuk minder.</color>"
+            },
+            {
+              "GUID": "1faefe2d-9284-4aba-a618-bdce923c7bb2",
+              "theText": null
+            }
+          ],
+          "GUID": "aefc6fd8-8c00-449b-a936-6195bade52d6",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Door success",
+      "GUID": "482c6591-d971-4833-ba3a-74c2c359e87b",
+      "eventText": "Je krijgt beweging in de deur en Leia slaakt een zucht van opluchting. \"Gelukkig,\" zegt ze. Achter de deur bevindt zich een gang welke naar de hangar leidt.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "2a54605e-4194-4138-a32f-83bbe41a96b2",
+              "theText": "Een gesloten deur leidt naar de uitgang van de ziekenboeg.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "8ac52bdc-5410-4d63-8a9b-fa0ad9adb379",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"Ben je klaar om je oog-hand coördinatie te oefenen op wat doelwitten?\", vraagt Leia, grijnzend.\r\n\r\n<color=\"yellow\">Jyn Odan heeft nog een activatie over, maar laten we een nieuwe ronde starten. In een reguliere missie zou je normaal geen activaties overslaan, maar je hoeft niet al je acties te spenderen. Druk op <b>einde ronde</b> rechts onder.</color>",
+          "GUID": "4d20d544-e74e-4504-ac28-aef70200c612",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Einde ronde.",
+          "longText": null,
+          "GUID": "1f749c39-c96f-4b31-b78f-3b32f4499cd4",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Target Practice Start",
+      "GUID": "d214e790-be04-4b4b-9533-cfa6c8c208a7",
+      "eventText": "Leia gebaart je om de hangar binnen te gaan.\r\n\r\n<color=\"yellow\">Voor Jyns en Gaarkhans eerste activatie, gebruik je 2 <b>verplaats</b> acties elk en verplaats je ze naar hun eigen gemarkeerde velden. Als een held in positie is klik / tik je op de markering en selecteer je \"(Held) in positie\".</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn 2",
+              "GUID": "e94f7675-59a3-412c-80a7-e158cd545d05",
+              "theText": "Jyns positie.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 3",
+              "GUID": "603826c6-3c1c-4235-a754-7df68bdcf3b5",
+              "theText": "Gaarkhans positie.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn 3",
+              "GUID": "c5ce22a1-9f0f-4d15-a51f-4bb2835c0eca",
+              "theText": "Jyns positie.",
+              "buttonList": [
+                {
+                  "GUID": "381ad5bf-5324-4935-8848-069c1ec877c3",
+                  "theText": "Jyn in positie"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Gaarkhan 4",
+              "GUID": "2462faee-90a4-428a-9155-a5a10ba094c6",
+              "theText": "Gaarkhans positie.",
+              "buttonList": [
+                {
+                  "GUID": "e3706d57-a8c7-403c-89bf-67a16f7eb1c9",
+                  "theText": "Gaarkhan in positie"
+                }
+              ]
+            }
+          ],
+          "GUID": "7c5519ee-a80c-4c04-a564-ec25a42010ff",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Ga de hangar binnen.",
+          "longText": null,
+          "GUID": "85750eb0-e6bb-469e-80c9-c4587e1743d1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Drone Activation",
+      "GUID": "68150c11-d592-4927-94d4-1bc171e79555",
+      "eventText": "Leia volgt je de hangar in.\r\n\r\n<color=\"yellow\">Leia activeert en gebruikt 2 <b>verplaats</b> acties. Ze verplaatst 10 velden naar de positie aangegeven in de app.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 6",
+              "GUID": "70edd9a8-ffd5-4ddd-bbe3-4c540d7fff6c",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 7",
+              "GUID": "c2237e6f-4dc5-4fe7-84aa-66f9df718d93",
+              "theText": "De rebellen missietoken duidt <b>Leia Organa</b> aan.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "14b9e7c2-df15-49a0-ac97-ba04e3d0089d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia drukt op een serie knoppen aan de muur. Uit openingen in de muur komen training remotes de ruimte in zweven.",
+          "GUID": "774eed59-7501-4ecd-b1a5-25a80600cf2f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 1",
+              "GUID": "1d1806cb-0de4-484d-9847-207c1b3a39a4",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "a8f12165-2887-4c83-8919-38453c4b1a31",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 2",
+              "GUID": "4293c0c8-2809-4e03-950c-5c288a5ae502",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "ff085577-d5cf-4896-a0d3-3fb10c3da682",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 3",
+              "GUID": "21454b7f-0c6e-4d2f-b5d0-5bf37daffc51",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "897b4ac0-94fe-43f3-89c1-416d22e391c8",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 4",
+              "GUID": "98ae95a0-b09a-40cf-85d5-1a1c8a54b550",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "2a25c5cf-ca1f-43be-b3c7-25d12e9a03b2",
+                  "theText": "Vernietigen"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 5",
+              "GUID": "aa9d7c05-0a1a-451b-8e2a-c23dd3af7959",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid (Health) van 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "b09047e5-8ab8-4679-8709-f214931526ab",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "64a7af16-2f3b-4c98-997c-e27da16a1e61",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Missietokens kunnen vanalles aanduiden, bijvoorbeeld een omstander, een informant of, in dit geval, een training remote.</color>",
+          "GUID": "f24cd949-f82e-49c3-af1c-5fb2c6c7c4da",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "\"Laat maar eens zien wat je kunt\", zegt de prinses. Ze leunt tegen de muur, haar ogen volgen je aandachtig.",
+          "GUID": "1c8b1e72-d410-4725-8d0c-9c5a38dd1345",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Het is tijd om wat op te blazen.\r\n\r\nMet de <b>aanval (Attack)</b> actie kan een held of bondgenoot een doelwit aanvallen. Bondgenoten vallen aan met de dobbelstenen welke op hun inzetkaart staan. Helden kunnen uit de voorwerpen kiezen die ze uitgerust hebben.\r\n\r\nEr zijn twee verschillende soorten aanvallen: afstandsaanval (Ranged) ({O}) en melee-aanval (Melee) ({P}). {O} aanvallen kunnen doelwitten op afstand aanvallen. {P} aanvallen kunnen alleen aangrenzende doelwitten aanvallen.\r\n\r\nEchter, om een doelwit aan te vallen heeft een figuur een <i>zichtlijn (Line of Sight)</i> nodig naar het doelwit.</color>",
+          "GUID": "4a2a111a-589c-4dd9-bb09-4c52ca539d29",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Om een zichtlijn te bepalen trekt de speler twee denkbeeldige, niet kruisende lijnen van één hoek van het veld van het aanvallende figuur naar twee naast elkaar liggende hoeken van het veld van het doelwit. Als minimaal één van de lijnen door een muur, figuur of geblokkeerd terrein gaat, dan is er geen zichtlijn naar het doelwit.\r\n\r\nOp het huidige speelbord heeft Jyn (op het groen gemarkeerde veld) een zichtlijn met de grijze, groene en rode remotes.\r\nZe heeft geen zicht op de blauwe remote, omdat Gaarkhan in de weg staat. Ze heeft ook geen zicht op de gele remote, omdat het geblokkeerde terrein (rode lijn) in de weg zit.\r\n\r\nDe groene remote bevindt zich ook achter een rode lijn, maar een onderbroken rode lijn is onbegaanbaar terrein: figuren mogen er niet doorheen verplaatsen, maar wel erdoorheen aanvallen.\r\n\r\nGaarkhan heeft een zichtlijn met alle remotes, behalve de gele. Echter, zijn vibro-ax is een {P} wapen, dus hij kan geen remotes aanvallen zonder eerst te verplaatsen.\r\n\r\nVerwarrend? Geen probleem. Appendix I van de Rules Reference gids heeft meerdere voorbeelden van \"Line of Sight\" regels.",
+          "GUID": "8e0f4d70-7a66-4291-8a21-69ac96005871",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Gaarkhan en Jyn hebben beide nog 1 activatie over deze ronde. De spelers bepalen in welke volgorde de activaties worden afgehandeld.\r\nGaarkhan heeft een {P} wapen, dus hij moet eerst een verplaats actie doen voordat hij kan aanvallen. Jyn kan schieten vanaf haar positie, dus ze kan twee keer aanvallen, als ze wilt.\r\n\r\nLet op, alleen helden kunnen 2 acties spenderen aan aanvallen. Bondgenoten en vijanden mogen maar 1 van hun acties gebruiken om aan te vallen. Hierdoor hebben helden een groot voordeel.</color>",
+          "GUID": "88611afe-54dc-406c-a316-08188c363d47",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Kies een held. Je kunt een actie gebruiken om naar een betere plek te verplaatsen, kies daarna een doelwit.\r\n\r\nWerp nu de aanval dobbelstenen zoals aangegeven op de voorwerpkaart van de held. Voor Jyn betekent dit 2 groene dobbelstenen, voor Gaarkhan zijn dit 1 rode en 1 gele dobbelsteen.</color>",
+          "GUID": "b7e23f77-a722-4999-8e4e-ec32d309cd2b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Als je een {O} aanval doet, moet je eerst <i>nauwkeurigheid (Accuracy)</i> controleren. De getallen op de dobbelstenen vertegenwoordigen <i>nauwkeurigheid</i>.\r\n\r\nTel het aantal velden tussen aanvaller en doelwit. Bijvoorbeeld, Jyn is 3 velden verwijderd van alle training remotes die ze kan zien. Tel nu de nauwkeurigheid getallen van de dobbelstenen bij elkaar op. Als de nauwkeurigheid gelijk of hoger is dan het aantal velden, dan raakt de aanval zijn doel, anders is het mis.\r\n\r\n{P} aanvallen gebruiken geen nauwkeurigheid.</color>",
+          "GUID": "b397ab7d-11ae-4e7f-9e79-4ee281ba5936",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Als de aanval raak is, tel dan het aantal {H} symbolen bij elkaar op, dit is de schade die je doet aan je doelwit. Plaats het juiste aantal {H} tokens op de training remote op de map. Negeer het {B} symbool voorlopig.\r\n\r\nAls een doelwit {H} gelijk of hoger dan zijn gezondheid incasseert, dan is die verslagen. De training remotes hebben een gezondheid van 3, dus als ze tenminste 3 {H} incasseren, zijn ze vernietigd.\r\n\r\nAls dit gebeurt, selecteer dan de training remote en klik / tik \"vernietig\".</color>",
+          "GUID": "bab1ebbe-7897-4d38-aab5-6348984b0f71",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Blijf activaties uitvoeren en probeer de drones te vernietigen. Je mag vrij over het speelbord verplaatsen.\r\n\r\nAls alle helden activaties gespendeerd zijn, klik / tik dan op <b>einde ronde</b> en ga je verder met de volgende ronde. Leia activeert voorlopig niet, ze kijkt liever naar hoe jij de training remotes inmaakt.</color>",
+          "GUID": "16c7e43e-1ade-46b5-b842-9b27c958bb73",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Vernietig de training remotes (&Remotes destroyed&/5).",
+          "longText": null,
+          "GUID": "dd733ffe-013a-4680-a578-43b9f7e8a5d8",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "tbText": "<color=\"yellow\">Als je ooit missie regels vergeet, zoals de gezondheid van de training remotes, kun je altijd kijken in de <i>Missie Informatie</i>. Alle belangrijke informatie is daar verzameld. Klik / tik op het <b>(i)</b> icoon van onderen.</color>",
+          "GUID": "7d57cc96-22ee-4acd-aeaa-02560f850cb3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Gaarkhan 4",
+              "GUID": "aaf44839-c47a-402a-a2f3-8ba9f7a951ee",
+              "theText": "Gaarkhans positie.",
+              "buttonList": [
+                {
+                  "GUID": "98c29a64-ab3b-454a-95c7-bbf5f151e27a",
+                  "theText": "Gaarkhan in positie"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Jyn 3",
+              "GUID": "55b45aaf-d0a6-4f72-9531-62dfaf49f21f",
+              "theText": "Jyns positie.",
+              "buttonList": [
+                {
+                  "GUID": "474fe66a-95ac-43f5-b4d6-2161f4c296f5",
+                  "theText": "Jyn in positie"
+                }
+              ]
+            }
+          ],
+          "GUID": "0b7eaebe-6d49-45b2-8d5c-a5a252bb5a86",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Training remotes hebben een gezondheid van 3.",
+          "GUID": "0133ac59-be90-467a-bc83-beafc9cce759",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 1",
+      "GUID": "5b9050a9-f31b-466f-ae74-43beb94b652f",
+      "eventText": "De training remote ontploft in een vonkenregen.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 1",
+              "GUID": "8345b724-6025-4818-91eb-396627da4f6a",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "b883dd4b-569a-4938-a728-ebf6374acd2c",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "0c8ca803-878c-4a87-93e5-e4912cf9289d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 2",
+      "GUID": "06a17916-c69d-4306-a0bf-d653703309b9",
+      "eventText": "De training remote ontploft in een vonkenregen.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 2",
+              "GUID": "2755b0fb-e3f4-4e6b-9c34-0702158a2f98",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "d0cc12cc-6ba6-46b3-a70c-105c6921d309",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "75d8dc9c-9ed1-4ba3-b628-f7da8657c79c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 3",
+      "GUID": "d0cd7308-8a0e-405a-ba61-1f7aff42b836",
+      "eventText": "De training remote ontploft in een vonkenregen.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 3",
+              "GUID": "db28eac6-b6da-4f60-985a-a3474bf6ab7d",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "a34a5c30-b4d2-49c2-91c1-3a31541d8a39",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "4c1403b7-31ba-4ece-8be2-769624f8cf66",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 4",
+      "GUID": "769f7ce3-1ac4-4aa9-89f2-83f9dc3f06ee",
+      "eventText": "De training remote ontploft in een vonkenregen.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 4",
+              "GUID": "5d443152-90b8-4c04-b831-70d75b7640bf",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "2f92da19-123c-4678-a0c5-42fcd031212e",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "47e589d7-0f47-4fdd-9b41-31b25909dde7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 5",
+      "GUID": "8f9cd40f-4f48-4cd7-a717-2e9b8f376a43",
+      "eventText": "De training remote ontploft in een vonkenregen.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 5",
+              "GUID": "1926e7ae-e757-431a-a6af-64ef07c91083",
+              "theText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "f4787e16-6670-4c46-872f-e905d12b0ece",
+                  "theText": "Vernietigen"
+                }
+              ]
+            }
+          ],
+          "GUID": "341160af-ae8c-4a19-a1f1-1f4db3f46f2e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission",
+      "GUID": "6c4448ad-e5c6-47e5-8a2e-1ad3ea72cdd4",
+      "eventText": "Nadat de laatste training remote ontploft is geeft Leia je een applaus. \"Goed gedaan!\", zegt ze, glimlachend.\r\n\"Je hebt je goed verweerd. Personen als jullie kunnen we goed g-\"\r\n\r\nZe wordt onderbroken door haar comlink. \"Hoogheid\", kraakt een stem door de luidspreker. \"We hebben net een noodsignaal ontvangen van Indu, keizerlijke troepen naderen onze schuilplaats. Ze vragen om hulp en wij zijn het dichtst bij van alle Alliantie schepen.\"\r\n\r\nLeia d'r ogen worden groot, haar gezicht plooit in een starre vastberadenheid. \"Laat ze stand houden. Plot een route naar Indu\", roept ze in de comlink terwijl ze naar je kijkt.",
+      "eventActions": [
+        {
+          "tbText": "\"Je zult die wapens eerder nodig hebben dan ik dacht. Ik was je aan het vertellen dat we personen van jullie kaliber nodig hebben en ik wilde weten of jullie je bij ons willen aansluiten.\"\r\n\r\nJe heft je wapens op en Leia glimlacht. \"Welkom bij het Rebellenverbond.\"\r\n\r\n<color=\"yellow\">Dit is het einde van deel 1 van de <b>Imperial Commander</b> tutorials. In deel 2 ga je andere dingen dan training remotes te lijf.</color>",
+          "GUID": "9fff3167-309f-4bc2-a78f-4c6cadfc8deb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Energy Fields",
+      "GUID": "072630bd-e001-40fa-9c39-6e27f0eea580",
+      "eventText": "\"Volgens mij heb je de smaak te pakken\", Leia juigt als de tweede training remote ontploft.\r\n\r\n\"Laten we het iets interessanter maken.\" Ze drukt op een knop en zoemende krachtvelden vormen zich rond de remotes.",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">De meeste doelwitten - inclusief helden, vijanden en bondgenoten - zijn niet machteloos tegen aanvallen. Ze hebben één of meer <i>verdedig dobbelstenen</i> welke samen met de aanval dobbelstenen worden gegooid. De soort dobbelsteen (wit of zwart) staat aangegeven op de heldenkaart of de inzetkaart.\r\n\r\nDe krachtvelden beschermen de training remotes en geven ze 1 witte verdedig dobbelsteen. Als een held een training remote aanvalt, gooi dan 1 witte verdedig dobbelsteen tegelijkertijd. Elk {G} symbool - een <i>Block</i> - negeert 1 {H} symbool.\r\n\r\nElke keer als er een aanval wordt uitgevoerd, vergeet dan niet om de verdedig dobbelstenen mee te gooien. Er zijn een aantal doelwitten welke geen verdediging hebben. Die doelwitten hebben mogelijk een statische bonus (bijvoorbeeld een permanent {G} symbool) - of geen enkele.</color>",
+          "GUID": "370b63f9-0444-4e32-84d9-09a4a9e3d14a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Wapens kunnen ook wat trucjes. Elke keer als je de aanval dobbelstenen gooit, kan het zijn dat je ook een aantal {B} symbolen gooit. {B} symbolen worden <i>Surges</i> genoemd.\r\n\r\nSurges kunnen gebruikt worden om <i>surge vaardigheden</i> te activeren. Deze staan normaal op de inzetkaart of op de wapenkaart.</color>",
+          "GUID": "9d815937-2df9-4ca3-b7d1-8b7cfad9f5bc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Jyns <i>Vintage Blaster</i> bijvoorbeeld, heeft de volgende surge vaardigheden:\r\n\r\n{B}: +1 {H}\r\nJyn kan 1 gegooide {B} spenderen om 1 {H} bij het resultaat op te tellen.\r\n\r\n{B}: +1 nauwkeurigheid\r\nJyn kan 1 gegooide {B} spenderen om +1 op te tellen bij de nauwkeurigheid, met de mogelijkheid een doelwit te raken welke anders mis zou zijn.</color>",
+          "GUID": "4a60311b-4427-4027-bf06-be5b50765497",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Gaarkhans <i>Vibro-Ax</i> heeft de volgende surge vaardigheden:\r\n\r\n{B}: Pierce 1\r\nGaarkhan kan 1 gegooide {B} spenderen om 1 {G} symbool te negeren van de verdedigende dobbelstenen.\r\n\r\n{B}: Cleave 1 {H}\r\nAls het doelwit één of meer {H} incasseert kan Gaarkhan 1 gegooide {B} spenderen om een ander doelwit te raken welke hij volgens de normale regels kan aanvallen. Dat doelwit lijdt ook 1 {H}.</color>",
+          "GUID": "ee172af5-4525-4e47-8304-08fca5b6743c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Elke surge vaardigheid mag maar één keer per aanval worden gebruikt. Bijvoorbeeld, Jyn kan niet 2 {B} spenderen om 2 {H} te doen. De vaardigheid kan net zo vaak gebruikt worden als dat hij voorkomt op de desbetreffende kaart.\r\n\r\n{F} symbolen op de verdedig dobbelsteen worden <i>ontwijken (Evade)</i> genoemd. Elke {F} negeert 1 {B}.\r\n\r\nOp witte dobbelstenen staat ook het {E} symbool. Dit symbool heet <i>uitwijken (Dodge)</i>. Een {E} symbool betekent dat de hele aanval mist en geen schade doet.</color>",
+          "GUID": "2f2c25b1-a8d9-4046-a75c-9af90553e779",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Blijf de beschermde training remotes aanvallen.</color>",
+          "GUID": "16ba2493-6684-4295-9539-43b3e044ce3d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "theText": "{-} Training remotes hebben een gezondheid (Health) van 3.\r\n{-} Training remotes gooien 1 witte verdedig dobbelsteen.\r\n{-} {H} = Schade\r\n{-} {B} = Surge, wordt gebruikt om surge vaardigheden te activeren.\r\n{-} {G} = Block, negeert 1 {H}\r\n{-} {F} = Ontwijken, negeert 1 {B}\r\n{-} {E} = Uitwijken, de gehele aanval mist",
+          "GUID": "6f4724b7-ed95-4b08-afbe-1591c3094181",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Door 1",
+      "GUID": "b2070d75-7f02-4045-8976-d90ef8049e13",
+      "mainText": "Een gesloten deur leidt uit de ziekenboeg.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn",
+      "GUID": "2a41135e-0bee-4ad8-b776-039380272a16",
+      "mainText": "Plaats <b>Jyn Odan</b> hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan",
+      "GUID": "7f94645b-4f4d-4bec-8558-41fc6c6f72d7",
+      "mainText": "Plaats <b>Gaarkhan</b> hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 1",
+      "GUID": "7cd21e8e-34f7-4c18-b1c1-24aa13d0ae55",
+      "mainText": "De rebellen missietoken duidt<b>Leia Organa</b> aan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate Jyn",
+      "GUID": "d11bb204-54b3-4fcd-98e7-51ed05970335",
+      "mainText": "Dit krat bevat Jyns bezittingen.",
+      "buttonList": [
+        {
+          "GUID": "fd4cefa8-5a5a-46d1-9ec8-0fcb22fc8bda",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate Gaarkhan",
+      "GUID": "4d440025-3ec2-46f1-9069-2117eb5d7ae0",
+      "mainText": "Dit krat bevat Gaarkhans bezittingen.",
+      "buttonList": [
+        {
+          "GUID": "192babea-c855-4da8-b18f-3b3ff810ffb3",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "da948162-c3b5-4172-87b5-8a2bd213beee",
+      "mainText": "De aan de muur hangende console bestuurt de deuren van de opbergruimte.",
+      "buttonList": [
+        {
+          "GUID": "138cd0c3-88ce-427b-8a5e-ade463adde0e",
+          "theText": "{A} Open de opbergruimte"
+        }
+      ]
+    },
+    {
+      "entityName": "Leia 2",
+      "GUID": "d4de8012-e4ab-43f3-8cb9-76593eca68de",
+      "mainText": "De rebellen missietoken duidt<b>Leia Organa</b> aan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 3",
+      "GUID": "a4e09794-549c-4554-b5dd-7c9616280452",
+      "mainText": "De rebellen missietoken duidt<b>Leia Organa</b> aan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 4",
+      "GUID": "5079f713-03c8-42b3-8748-ab7bc5655abd",
+      "mainText": "De rebellen missietoken duidt<b>Leia Organa</b> aan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 5",
+      "GUID": "cfbaaf90-961d-4e94-bb05-586d846f2d9f",
+      "mainText": "De rebellen missietoken duidt<b>Leia Organa</b> aan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 6",
+      "GUID": "bb86cfa7-0b68-4c13-8c48-ac78918e1899",
+      "mainText": "De rebellen missietoken duidt<b>Leia Organa</b> aan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 2",
+      "GUID": "31a5f15d-f27b-4cd5-8e61-a5a29e052dbf",
+      "mainText": "Jyns positie.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 2",
+      "GUID": "76396914-322b-4901-af58-238c0d708659",
+      "mainText": "Gaarkhans positie.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 3",
+      "GUID": "0dbf8922-6f85-4042-9858-961d05af6b4b",
+      "mainText": "Gaarkhans positie.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 3",
+      "GUID": "fb09c4e7-baf6-481c-8e42-cfbb82fc047d",
+      "mainText": "Jyns positie.",
+      "buttonList": [
+        {
+          "GUID": "89f2c51f-8995-4db2-84ad-035b9b4654a4",
+          "theText": "Jyn in positie"
+        }
+      ]
+    },
+    {
+      "entityName": "Highlight Gaarkhan 4",
+      "GUID": "9c313a60-ea88-4cd8-bce2-b04dfe394777",
+      "mainText": "Gaarkhans positie.",
+      "buttonList": [
+        {
+          "GUID": "2aa20d01-0ef1-4599-be9a-82cd2099493f",
+          "theText": "Gaarkhan in positie"
+        }
+      ]
+    },
+    {
+      "entityName": "Leia 7",
+      "GUID": "a1d35d6d-ad6e-41d7-8fff-103db0acf0bc",
+      "mainText": "De rebellen missietoken duidt<b>Leia Organa</b> aan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Drone 1",
+      "GUID": "9769786b-ad51-4933-92b0-d32d520cd147",
+      "mainText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "d4817c6d-8343-4d2b-84f2-c9bfa514f27f",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 2",
+      "GUID": "a0658804-fbf9-494a-be42-cfc279f32787",
+      "mainText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "407fd50f-3baa-43ce-bbd3-ea473ccdbbfa",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 3",
+      "GUID": "40f7b7fa-a2d2-44b2-98ba-d1e9996877ab",
+      "mainText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "7e3f8bf7-56c9-414b-9ec2-c2bec798bc0c",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 4",
+      "GUID": "41ee4950-5d1c-41da-b3a3-56078d8ea6ae",
+      "mainText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "485244f5-105d-4eb7-aeee-75d2f1de6e2c",
+          "theText": "Vernietigen"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 5",
+      "GUID": "9ad4aa77-4667-47a4-8228-59ec456899b3",
+      "mainText": "De training remote zweeft anderhalve meter boven de grond, zacht zoemend.\r\n\r\n<color=\"yellow\">De training remote heeft een gezondheid van 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "6db96561-26b5-4c6a-98fd-797d80b3ce0e",
+          "theText": "Vernietigen"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

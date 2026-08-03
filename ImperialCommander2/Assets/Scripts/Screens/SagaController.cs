@@ -1053,6 +1053,7 @@ namespace Saga
 
 		public void SetMissionTranslation()
 		{
+			Debug.Log( $"SetMissionTranslation()::Language={DataStore.Language}, Mode={DataStore.sagaSessionData.setupOptions.projectItem.pickerMode}" );
 			//sanity check
 			if ( DataStore.sagaSessionData.setupOptions.projectItem == null )
 			{
@@ -1082,6 +1083,17 @@ namespace Saga
 			{
 				translation = RunningCampaign.campaignStructure.GetTranslatedMission( DataStore.Language );
 				TranslationController.Instance.SetMissionTranslation( translation, DataStore.mission );
+			}
+			//if it's a tutorial mission
+			else if ( DataStore.sagaSessionData.setupOptions.projectItem.pickerMode == PickerMode.Tutorial )
+			{
+				translation = FileManager.GetTutorialMissionTranslation( DataStore.sagaSessionData.setupOptions.projectItem, DataStore.Language );
+				if ( translation == null )
+				{
+					Debug.Log( $"SetMissionTranslation()::No translation found for Tutorial Mission: '{DataStore.sagaSessionData.setupOptions.projectItem.Title}'" );
+				}
+				else
+					TranslationController.Instance.SetMissionTranslation( translation, DataStore.mission );
 			}
 			//custom mission
 			else

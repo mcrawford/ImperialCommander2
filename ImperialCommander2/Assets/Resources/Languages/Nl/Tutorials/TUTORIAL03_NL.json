@@ -1,0 +1,1314 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Tutorial 3: Speciale regels",
+    "missionDescription": "De noodoproep van de rebellen buitenpost op Indu leidde jou en het andere aanvalsteam, onder leiding van prinses Leia Organa, in een hinderlaag. Je wist de eerste golf aanvallers te verslaan voordat je moest vluchten voor de Heer van de Sith zelf, Darth Vader. Nu zit je in je shuttle en race je wanhopig naar de locatie van Leia's laatste uitzending, in de hoop het andere aanvalsteam levend terug te vinden.",
+    "missionInfo": "",
+    "campaignName": "Tutorials",
+    "startingObjective": "",
+    "repositionOverride": null,
+    "additionalMissionInfo": "In deze tutorial leer je de overige regels en enkele fijne kneepjes nadat je de eerste twee tutorials hebt voltooid."
+  },
+  "events": [
+    {
+      "eventName": "Beginning",
+      "GUID": "89e7a2e8-2f3e-4480-ba99-4fec39779c48",
+      "eventText": "Je shuttle vliegt laag over Indu, het bladerdak van de prachtige bossen van de planeet is een groene waas.\n\nHet is bijna een half uur geleden sinds je laatste contact met Leia Organa en je kunt alleen maar hopen dat je haar op tijd zult bereiken. Haar laatste transmissie piept zachtjes op de navigatiecomputer, die de positie aangeeft van de buitenpost van de rebellen die de prinses en het andere aanvalsteam wilden onderzoeken.",
+      "eventActions": [
+        {
+          "tbText": "Je controleert de ingestelde koers nogmaals, maar je kunt er niet sneller zijn. Dus leun je achterover in de cockpit en gun je jezelf een moment om op adem te komen.",
+          "GUID": "2f0f5262-a432-4142-b359-5dcdb8c3cd14",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Welkom bij de derde tutorial voor <b>Imperial Commander</b>. In deze tutorial leer je de resterende regels die in de eerste en tweede tutorial niet aan bod zijn gekomen.\n\nZoals altijd kun je de Rules Reference Guide of de wiki-documentatie raadplegen als je vragen hebt.</color>",
+          "GUID": "323f7e6d-44ba-4957-964d-4976156bd76b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Plaats Gaarkhans en Jyn Odans heldenkaarten in het speelveld van de betreffende spelers, evenals hun start items (de kaarten zonder XP kosten van hun Held klassedeck).\n\nZoek daarna in Gaarkhans Held klassedeck naar de kaart <i>Wookiee Loyalty</i> en plaats deze in Gaarkhans speelveld. Zoek in Jyn Odans Held klassedeck naar de kaart <i>Smuggler's Luck</i> en plaats deze in Jyns speelveld.</color>",
+          "GUID": "f5443939-3a98-41dd-889c-dc705614a40e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Gewoon om <i>iets</i> te doen, doorzoek je de shuttle om te zien of er nog uitrusting is achtergebleven die nuttig voor je kan zijn. Tot je verbazing vind je iets: een gepantserde jas die door de rebellensoldaten wordt gebruikt en een contragewicht dat compatibel is met de vibro-ax van Gaarkhan.",
+          "GUID": "2c8107db-cd76-42f9-8342-925d96058a58",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Zoek in het Item kaartendeck naar de kaarten <i>Combat Coat</i> en <i>Balanced Hilt</i>. Itemkaarten zijn verdeeld in 3 niveaus. De kaarten die je zoekt liggen in het Tier I deck.\n\nPlaats de Combat Coat in Jyns speelveld en de Balanced Hilt naast Gaarkhans wapen.</color>",
+          "GUID": "8e4dfe05-c809-46df-86b8-b7b1edcf96c1",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">In <b>Imperial Assault</b> kun je tijdens missies credits verdienen die je kunt uitgeven om items te kopen voor de volgende missie. Voor het doel van deze tutorial krijg je deze items nu gratis.\n\nDe Combat Coat maakt Jyn weerbaarder. Het verhoogt haar gezondheid met 2 en het stelt haar in staat om 1 {F} (ontwijken) om te zetten in 1 {G} (blocken). Als ze bijvoorbeeld een {F} heeft gegooid, maar de vijand heeft geen {B} gegooid die ze moet negeren, kan ze die gewoon omzetten in een {G} om de inkomende schade te verminderen. Deze vaardigheid is altijd actief, dus ze kan hem gebruiken voor elke aanval die op haar gericht is. Ze kan het echter niet meer dan één keer per aanval gebruiken.</color>",
+          "GUID": "dbc6bf3b-35a8-4a72-a90f-98d7214d4a1a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">De Balanced Hilt is een <i>modificatie</i>. Modificaties werken niet op zichzelf, maar kunnen worden gekoppeld aan een itemkaart met het bijbehorende icoon. In dit geval is de Balanced Hilt een {P} (melee) modificatie, dus het kan worden bevestigd aan elk {P} wapen, zoals Gaarkhans vibro-ax.\n\nHet oranje vak rechtsonder op de kaart van de vibro-ax laat zien hoeveel modificaties een Item kan hebben. In dit geval kan de vibro-ax maar 1 modificatie hebben, maar dat is voorlopig genoeg.\n\nDe Balanced Hilt kan gebruikt worden tijdens het aanvallen - op elk moment, zelfs na het gooien van de dobbelstenen - om 1 {B} (Surge) toe te voegen aan de resultaten. Het moet wel uitgeput worden (90° met de klok meedraaien), dus Gaarkhan kan het maar één keer per activering gebruiken. Denk eraan dat alle kaarten die bij een held horen weer actief worden aan het begin van de activatie van die held.</color>",
+          "GUID": "39318a5a-df8a-4f63-9ec5-7a488ef7dfe7",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Tenzij de itemkaart expliciet anders vermeldt, kun je tijdens een missie geen items ruilen met andere helden. Aan het begin van elke missie kunnen alle beschikbare items echter vrij tussen helden worden verdeeld.\n\nEr zijn echter enkele beperkingen. Elke held mag slechts 2 wapens, 1 pantser ({R}) en 3 uitrusting ({S}) itemkaarten meenemen. Modificaties tellen niet als wapens, ondanks hun icoontjes.</color>",
+          "GUID": "7c4568d8-03f5-4c80-9056-a573d2188b57",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn 1",
+              "GUID": "5885678f-223d-40e4-9e01-0169af0173a9",
+              "theText": "Plaats Jyn Odan hier.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 1",
+              "GUID": "54d8ebdf-f5d4-46ce-b8cb-d62039bb7b20",
+              "theText": "Plaats Gaarkhan hier.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "252c36ea-2b87-4569-9a23-8da358ba635b",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Je nadert uiteindelijk je bestemming en landt de shuttle op een open plaats vlakbij de plek waar de buitenpost moet zijn. Dan maak je je wapens gereed en ga je naar de deur.\n\n<color=\"yellow\">Plaats Jyns miniatuur op het groen gemarkeerde veld en Gaarkhans miniatuur op het blauw gemarkeerde veld.</color>",
+          "GUID": "9259db2c-434e-4a8f-9f49-b9fd9473f739",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Jullie wisselen nog een laatste blik uit en openen dan de deur van de shuttle, klaar voor het onbekende. Achter de deur ligt het weelderige bos van Indu met nog meer afgebrokkelde ruïnes.",
+          "GUID": "fba71900-1f78-4f14-b67c-e5e5c04c4c13",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Shuttle Door",
+              "GUID": "a2512808-4862-43bd-8c2c-f0d3656c6dcc",
+              "theText": "",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a4ba4a95-583f-42ee-90ea-0eff5471adf9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Scene 1",
+      "GUID": "dfb443d0-4a55-411f-96f5-8dbea955c219",
+      "eventText": "",
+      "eventActions": [
+        {
+          "tbText": "Stormtroopers zijn al in positie gekomen toen ze de shuttle zagen landen. Ze heffen hun wapens en richten op de deur van de shuttle.",
+          "GUID": "d9c97329-e1d3-4a40-a793-fd2a330002af",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "c9f5704e-a4db-453c-9e19-480fac56d46d",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "tbText": "De schemering van het woud maakt het onmogelijk om te zien wat er voorbij deze open plek ligt, zeker zolang je andere dingen aan je hoofd hebt, maar de buitenpost moét dichtbij zijn. Je kunt zelfs een oude voorraadkrat zien liggen, achtergelaten door de rebellen.",
+          "GUID": "399fec8f-7825-4843-be24-0e2864fe24f6",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate 1",
+              "GUID": "e601d717-1fb4-4c99-8afa-97c90d8a17f5",
+              "theText": "Dit lijkt op een krat die de rebellen hebben achtergelaten, half overwoekerd door het bos.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "abdffd29-16c7-489c-a7b1-4a8ab608d648",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"Laat je wapens vallen!\", roept de stormtroopercommandant, maar je bent hier helemaal niet gekomen om je over te geven. Gaarkhan snauwt, pakt zijn bijl en stormt brullend op de keizerlijke soldaten af.\n\n<color=\"yellow\">In normale missies mogen de rebellen als eerste activeren en mogen ze zelf beslissen wie eerst geactiveerd wordt. Maar beze keer beginnen we met Gaarkhan.</color>",
+          "GUID": "152d9c1f-891d-4962-a7df-a27e0e6898cf",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Helden hebben speciale vaardigheden die hen onderscheiden. Ze worden onderverdeeld in actieve en passive vaardigheden.\n\nGaarkhan, bijvoorbeeld, heeft de passive vaardigheid <b>Rage</b>:\n\n</color><i>Nadat een aanval op jou is afgerond, word je <color=\"red\">gefocust (Focused)</color>,</i><color=\"yellow\"> mits je 3 of meer {H} hebt geleden.\n\nDit betekent dat elke keer als het Rijk Gaarkhan aanvalt, ze het risico lopen de Wookiee woedend te maken - nooit een goed idee.</color>",
+          "GUID": "02c0cafa-bb24-4d8d-8bbd-3fba9fecdd4c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><i><color=\"red\">gefocust (Focused)</color></i> is een <i>conditie</i>. Er zijn verschillende condities die een figuur positief kunnen beïnvloeden of juist negatief. \"Positieve\" condities worden gekenmerkt door een groene achterkant, \"negatieve\" condities hebben een paarse achterkant.\n\nWanneer een figuur een conditie krijgt, neem je de betreffende Conditiekaart en leg je de conditietoken naast die figuur of zijn inzetkaart / heldenkaart. Een figuur kan nooit een conditie krijgen die hij/zij al heeft.\n\nAls een figuur <i><color=\"red\">gefocust (Focused)</color></i> is, gooit hij de volgende keer als hij aanvalt of een attribuuttest uitvoert 1 extra groene dobbelsteen, waarna hij de Conditiekaart aflegt. Dus als Gaarkhan <color=\"red\">gefocust (Focused)</color> is, zal zijn volgende aanval of attribuuttest veel beter zijn.</color>",
+          "GUID": "bc27b013-238a-4ddc-baea-788bd3cd7d20",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Veel vaardigheden geven een figuur een <i>speciale actie</i>. Speciale acties worden aangegeven met het {A} symbool ervoor. Als een figuur toegang heeft tot een speciale actie, mag de figuur 1 actie per {A} symbool besteden om die speciale actie uit te voeren.</color>",
+          "GUID": "f79230b5-0303-4e65-9e22-e586a1c1e398",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Gaarkhan heeft de speciale actie <b>Charge</b>:</color>\n\n<i>{A}2{C}: Verplaats een aantal velden tot je maximale snelheid (Speed). Daarna mag je een aanval uitvoeren met een {P} wapen.</i>\n\n<color=\"yellow\">Door een actie te spenderen aan zijn speciale actie mag Gaarkhan zowel tot 4 vakken verplaatsen als aanvallen, hiermee bespaar je de actie om naar je doelwit te rennen. Let op: hiermee verplaatst Gaarkhan een aantal <i>velden</i>, maar hoeft hier dus geen verplaatspunten voor te spenderen. Hierdoor kan hij ook door moeilijk terrein of vijandige figuren zonder extra verplaats punten te spenderen. Dit betekent echter ook dat hij met deze actie zijn verplaatsing niet mag opdelen en verplaatspunten op een later tijdstip kan gebruiken.</color>",
+          "GUID": "fc97be07-1d76-4005-9a77-3b40e14ed5d8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">De meeste vaardigheden hebben een kostprijs. In het geval van \"Charge\" zijn de kosten 1 actie, maar er zijn nog extra kosten. De tekst \"2{C}\" betekent dat bij het gebruik van deze vaardigheid je 2 \"forceringen (strain)\" lijdt. Forcering wordt aangeduid met de {C} tokens, welke op de heldenkaart worden geplaatst, net als {H} tokens. Een held kan maximaal forceringen lijden tot zijn <i>uithoudingsvermogen (Endurance)</i>-waarde. \n\nHelden kunnen nooit vrijwillig forceringen lijden voorbij hun uithoudingsvermogen. Dit betekent dat Gaarkhan \"Charge\" kan gebruiken terwijl hij 0, 1 of 2 {C} heeft geleden, maar niet bij 3 of 4 {C}, omdat het gebruik van de vaardigheid zijn uithoudingsvermogen zou overschrijden.\n\nSommige vijanden of gebeurtenissen kunnen er echter voor zorgen dat een held meer {C} lijdt dan zijn uithoudingsvermogen. Elke forcering die onvrijwillig boven die limiet wordt geleden, wordt omgezet in {H} (schade).</color>",
+          "GUID": "219ffd77-c722-4439-b5e5-c63632751b5a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Dus, om samen te vatten: Gaarkhan kan 1 actie besteden en moet 2 {C} lijden om zijn speciale actie \"Charge\" te gebruiken, waardoor hij 4 plaatsen naar een vijand verplaatst en die vijand aanvalt. Hij kan deze actie echter maar één keer per activering gebruiken.\n\nKlinkt goed, nietwaar? Val dan die stormtroopers aan. Vergeet niet dat de vibro-ax de volgende surgevaardigheid {B} heeft: Cleave 1 {H}. Dit betekent dat Gaarkan een {B}, die hij tijdens de aanval heeft gegooid (of toegevoegd door de Balanced Hilt), kan gebruiken om een ander vijandelijk figuur aangrenzend aan hem (anders dan het aangevallen doelwit) 1 {H} toe te brengen, dus probeer een positie te vinden waar je dat kunt gebruiken.\n\nZodra Gaarkhan zijn \"Charge\" heeft gebruikt, heeft hij nog een actie over, bijvoorbeeld om een tweede keer aan te vallen. Als Gaarkhan klaar is, begin je met de volgende keizerlijke activering. Speel door tot de stormtroopers verslagen zijn.</color>",
+          "GUID": "e5219e27-94fe-40a7-940f-9af9c7f24285",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn 1",
+              "GUID": "20dae4b8-4907-4d4a-bede-f2a3790ad065",
+              "theText": "Plaats Jyn Odan hier.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 1",
+              "GUID": "3e2723a8-843e-48ec-b7ce-36338b6b367a",
+              "theText": "Plaats Gaarkhan hier.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "631af4a4-7290-49ec-9be8-359906cca635",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Versla de stormtroopers.",
+          "longText": null,
+          "GUID": "bf4172d3-3362-4559-bb58-d17562b34903",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "84137c98-52d5-49e1-8982-5c2a59195a13",
+      "eventText": "Je wrikt het krat open en het deksel valt op de grond. Binnenin zie je een paar nuttige dingen.\r\n\r\n<color=\"yellow\">Het openen van een krat geeft de held, die het krat opende, een voorraadkaart. Verzamel alle voorraadkaarten en verwijder de kaart <i>Troop Data</i>; deze kaart wordt niet gebruikt in <b>Imperial Commander</b>. Schudt daarna de kaarten en trek 1 willekeurige kaart. De held die de kist heeft geopend, plaatst dit voorwerp in zijn speelveld.\r\n\r\nVoorraadkaarten zijn niet overdraagbaar tussen missies. Ze worden na afloop van de missie weer in de stapel geschud, dus zorg ervoor dat je ze gebruikt.</color>",
+      "eventActions": [
+        {
+          "tbText": "Onder de voorraden vind je nog een medpac die er bruikbaar uitziet.\n\n<color=\"yellow\">Plaats 1 forceertoken ergens in het speelveld van de rebellen. Dit is een medpac. Medpacs zijn een gedeelde bron en alle spelers hebben er toegang toe. Spelers beginnen elke missie met 1 medpac en kunnen er meer vinden door kratten te openen tijdens missies. Als je een medpac vindt, leg je nog een forceertoken in het speelveld. Als je een medpac gebruikt, leg je 1 van deze forceertokens af.\n\nNet als voorraadkaarten zijn medpacs niet overdraagbaar tussen missies. Medpacs zijn schaars voor het Rebellenverbond.</color>",
+          "GUID": "ebeb3c22-013f-4d2d-8b11-8cc440e05a4d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Pak het krattoken. In een gewone missie krijg je 50 credits voor elk opgeëist krattoken aan het einde van de missie.</color>",
+          "GUID": "9b3fe620-060c-45e2-91f1-0c128c5577fc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate 1",
+              "GUID": "969a3adb-ea81-4d95-bb04-059dd395313e",
+              "theText": "Dit lijkt op een krat die de rebellen hebben achtergelaten, half overwoekerd door het bos.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "7e191503-5d01-469f-a153-62cb50503203",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\" >Dankzij zoveel manieren hoe helden {C} en {H} kunnen oplopen, kan het nodig zijn om helden af en toe te laten helen. Dit wordt gedaan met de laatste actie die nog niet behandeld is: rusten (Resting).\n\nEen held kan acties spenderen om een <i>rust</i> actie uit te voeren. Dit betekent dat de held forceringen <i>heelt</i> gelijk aan het uithoudingsvermogen van de held, waarbij dat aantal {C} tokens van de heldenkaart worden afgelegd. Een held kan niet meer forceringen herstellen dan de held aan {C} tokens heeft.</color>",
+          "GUID": "81225dd2-635c-4f48-8a9e-29e5073de642",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Bij het uitvoeren van een <i>rust</i> actie kan een held besluiten om ook 1 van de beschikbare medpacs te gebruiken. Als de held dat doet, wordt 1 medpac afgelegd en geneest de held 5 {H}.\n\nEn er is nog een laatste manier om forceringen te herstellen: als een held aanvalt, kan de held besluiten om 1 {B} uit te geven om 1 forcering te herstellen. De held kan hier maar 1 {B} voor uitgeven per aanval.</color>",
+          "GUID": "0efbc4ad-c996-440f-83e4-8661189bacfb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\" >Hier volgt een overzicht van de beschikbare acties voor helden:\n\n{-} <b>Aanval:</b> val een vijandig figuur of een token aan.\n{-} <b>Verplaats:</b> krijg verplaatspunten gelijk aan je snelheid.\n{-} <b>Interactie:</b> voer een interactie uit op een aangrenzende token.\n{-} <b>Rust:</b> herstel {C} gelijk aan je uithoudingsvermogen, je mag 1 beschikbare medpac gebruiken om ook 5 {H} te herstellen.\n{-} <b>Special:</b> gebruik een beschikbare speciale actie.</color>",
+          "GUID": "877d5de5-d818-4760-8293-b535669809c8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\" >Voer acties uit om de helden te laten rusten tot alle heldenactiveringen voltooid zijn en beëindig dan de ronde.</color>",
+          "GUID": "cd76628b-a941-43e6-a8b9-31b382d77b5c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Voltooi alle activeringen en beëindig dan de ronde.",
+          "longText": null,
+          "GUID": "a9c1d376-8f5b-4581-8d85-3e61818d0df6",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Stormtroopers Defeated",
+      "GUID": "1f3c8907-fd76-48e4-b45c-4c333963b1ff",
+      "eventText": "Als de laatste stormtrooper valt, laat je je wapens zakken en haal je een paar keer diep adem. Je moet de buitenpost vinden, maar misschien zit er nog iets nuttigs in het oude voorraadkrat.\n\n<color=\"yellow\" ><i>Kratten</i> kunnen allerlei nuttige voorraden bevatten die van pas kunnen komen tijdens een missie. Helden kunnen een interactie uitvoeren op kratten om ze te openen. Sommige kratten kunnen speciale regels hebben, maar meestal bevatten ze gewoon voorraden.\n\nMaak het voorraadkrat open. Vergeet niet dat je naast een token moet staan en een actie moet spenderen om er een interactie op uit te voeren.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate 1",
+              "GUID": "c592296f-8f88-4d3d-81a0-41c4c83fc9be",
+              "theText": "Dit lijkt op een krat die de rebellen hebben achtergelaten, half overwoekerd door het bos.\n\n<color=\"yellow\">Helden kunnen een interactie uitvoeren op kratten om ze te openen.</color>",
+              "buttonList": [
+                {
+                  "GUID": "a141ac37-896b-4823-9503-ec32604ca2ed",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "308f2ef1-2635-454b-bfe9-388a9c51d9ef",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Maak het krat open.",
+          "longText": null,
+          "GUID": "24b14782-641b-411a-99a4-a93a5166817f",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Stormtroopers activate",
+      "GUID": "01c81a4f-752d-4549-8c35-466dc99d7d6f",
+      "eventText": "De stormtroopers openen het vuur, maar Jyn is sneller en schiet erop los.\n\n<color=\"yellow\" >Niet alle vaardigheden hoeven te worden gebruikt tijdens de activering van een held. Sommige kunnen buiten een activatie worden gebruikt. Die vaardigheden gebruiken de term <i>onderbreking (interrupt)</i> om aan te geven dat ze gebruikt kunnen worden tijdens de activatie van een ander figuur.\n\nJyn Odan heeft de speciale vaardigheid <b>Quick Draw</b>:</color>\n\n<i>2{C}: Te gebruiken aan het begin van de activering van een vijandig figuur. Onderbreek om een aanval uit te voeren met een PISTOL, gericht op die figuur. Beperkt tot één keer per ronde (twee keer als je 2 activeringstokens hebt).",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\" >Als een vijandelijke groep wordt geactiveerd, beslissen de rebellen spelers in welke volgorde de figuren van die groep worden geactiveerd. Aan het begin van de activering van een vijandig figuur, als Jyn een zichtlijn heeft op dat figuur, kan ze beslissen om een schot af te vuren voordat ze kunnen handelen. Dit kan ze maar één keer per ronde doen (of twee keer als ze twee activatietokens heeft, die ze ook heeft, want er zijn maar 2 helden in deze tutorial).\n\nAls Jyn <b>Quick Draw</b> gebruikt, moet ze 2{C} lijden. Ze moet een zichtlijn hebben op minstens 1 stormtrooper die nog leeft, dus mag ze 2{C} lijden om als eerste te schieten.\n\nAls het haar lukt om de stormtrooper te verslaan, wordt die figuur verwijderd van de map en eindigt zijn activering onmiddellijk. Ga verder met de volgende stormtrooper, als die er nog is. Als het de laatste figuur van de groep was, beëindig dan de activering van de groep en versla de groep nadat je alle vensters hebt gesloten.</color>",
+          "GUID": "70780ecc-5a67-4b1c-a1c4-c5979b926024",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Vaardigheden zijn niet de enige reden waarom een held vrijwillig forceringen lijdt. Tot twee keer per activatie kan een held beslissen om 1{C} te lijden om 1 verplaatspunt te krijgen.\n\nHiermee kan een held bijvoorbeeld 2{C} lijden, 2 verplaatspunten krijgen, ze gebruiken om dichter bij een vijand te komen en nog twee keer aan te vallen, omdat de held geen actie aan beweging hoeft te spenderen.\n\nEen held kan maar maximaal 2 verplaatspunten per activering krijgen op deze manier.\n\nMaak de activering van de stormtroopers nu af en speel dan tot alle stormtroopers verslagen zijn. (Voer activeringen uit en beëindig rondes als dat nodig is.)</color>",
+          "GUID": "b55f8ac6-3156-434e-86fc-e8ddda5a3de3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "New Round",
+      "GUID": "58ad110a-a33a-4fe7-9232-65ba88ef6c03",
+      "eventText": "Met frisse ogen kijk je om je heen op zoek naar een weg richting de buitenpost. Je merkt uiteindelijk dat er kleine paadjes weglopen van de open plek. Terwijl je ze volgt, vind je een weg door de bomen naar een ander deel van het bos.",
+      "eventActions": [
+        {
+          "tbText": "In de verte zie je de kleine buitenpost van de rebellen.",
+          "GUID": "d28d12c9-58f0-4cd0-9254-cc20f9c9f4ca",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "De deur van de buitenpost is zwart van de schroeiplekken. Geschreeuw en het lawaai van een vuurgevecht weerklinken door het bos. Voor de buitenpost krioelt het van de keizerlijke soldaten. Het Keizerrijk heeft een mobiele geschutspost neergezet die de deur van de buitenpost meedogenloos bestookt.",
+          "GUID": "e04f780d-b437-42b1-abe7-e40e7d963983",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "64cc9fb5-f536-4c5b-b772-8a2426e19e88",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG007/E-Web Engineer"
+        },
+        {
+          "tbText": "<color=\"yellow\">De E-Web Engineer is een <i>groot (large)</i> figuur. Elk figuur waarvan de basis groter is dan 1 veld wordt beschouwd als een <i>groot</i> figuur. Wanneer een groot figuur wordt ingezet op één veld, plaats het dan zo op de map dat één veld van zijn basis het aangegeven veld beslaat. De uiteindelijke positionering bepaal je zelf.\n\nGrote figuren hebben een aantal speciale regels.</color>",
+          "GUID": "a7bea0f4-92d7-4e04-a4d9-a90205f54863",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">{-} Als een grote figuur aanvalt, mag de zichtlijn worden getrokken vanuit elk van de velden die het figuur inneemt. Wanneer een groot figuur wordt aangevallen, moet het figuur dat de aanval uitvoert zich richten op één van de velden die het grote figuur inneemt.\n{-} Grote figuren kunnen niet diagonaal verplaatsen.\n{-} Een groot figuur mag 1 verplaatspunt spenderen om 90° te draaien. Als je dit doet, moet het grote figuur nog steeds minstens de helft van de velden bezetten die het voor de rotatie bezette. Dit is echter alleen nodig voor figuren met een asymmetrische basis. De oriëntatie speelt geen rol bij het bepalen van de verplaats- of aanvalsrichting.\n{-} Grote figuren zijn onderhevig aan alle bewegingsvereisten voor terrein en andere figuren, maar ze zijn onderhevig aan deze vereisten slechts éénmaal per uitgegeven verplaatspunt. Bijvoorbeeld, als een E-Web Engineer naar twee velden met rebellenfiguren gaat, hoeft hij maar één extra verplaatspunt uit te geven in plaats van twee.</color>",
+          "GUID": "4d5d289a-3961-4d79-a8d3-b52060deccd3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Bij het blasterkanon maken meer stormtroopers zich klaar om op te rukken.",
+          "GUID": "c9e0328f-3fca-4c92-bef5-ca09c71ddee6",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "3889a137-da4b-4e09-9c94-b34882f87da6",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "tbText": "Als een groep met meerdere figuren wordt ingezet op één veld, plaats dan alle figuren zo dicht mogelijk bij dat veld. Meestal betekent dit dat 1 figuur op het aangegeven veld zelf wordt geplaatst, met de overige figuren ernaast. Als het veld al bezet is, plaats je de figuren zo dicht mogelijk bij elkaar.",
+          "GUID": "18283b9f-6751-4777-a217-829870e7d0ff",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Het lawaai van het gevecht en de geur van bloed en dood heeft een snauwend wezen van ergens diep uit de bossen aangetrokken. Het kruipt dichterbij en laat zijn enorme hoektanden zien.",
+          "GUID": "fdec822b-4fb5-41ac-b9da-868bed2891ff",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "b02f54c9-e450-43f6-81b1-707d69550a63",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG017/Nexu"
+        },
+        {
+          "tbText": "<color=\"yellow\">De Nexu is een {W} (huurling) eenheid, dus zijn inzetkaart heeft een groene achterkant. Het is een groot figuur en dus onderhevig aan alle regels voor grote figuren. Echter, op zijn inzetkaart staat ook dat hij <i>Mobiel</i> is, dus hij kan velden met blokkerend of onbegaanbaar terrein betreden en bezetten. Plaats daarom de Nexu figuur in de hoek van de kaart, met een van zijn velden op het blokkerende terrein. Dit is een geldige positie voor de Nexu.</color>",
+          "GUID": "26e29fd9-a8c3-4e3e-8a20-b5b606d808b5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">De Nexu heeft ook een passieve vaardigheid, <b>sluwheid (Cunning)</b>. Dit betekent dat wanneer hij een {F} gooit tijdens het verdedigen, hij 1 {G} toevoegt aan de resultaten.\n\nControleer altijd de inzetkaarten van onbekende groepen om te zien of ze vaardigheden hebben waar je rekening mee moet houden.</color>",
+          "GUID": "f25287b1-76c3-44d2-83e2-ebbbafcf9f89",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Het laatste opvallende onderdeel van de Nexu is het trefwoord <i>bloeden (Bleed)</i>. Er zijn meerdere trefwoorden zoals, bloeden, verdoven (Stun), verbergen (Hide) of focus, die een figuur toestaan om <i>condities</i> te krijgen of toe te brengen met een aanval. negatieve condities, zoals <color=\"red\">bloedend (Bleeding)</color> of <color=\"red\">verdoofd (Stunned)</color>, worden toegebracht aan het doelwit van de aanval. Positieve condities, zoals <color=\"red\">verborgen (Hidden)</color> of <color=\"red\">gefocust (Focused)</color>, worden toegepast op het aanvallende figuur zelf.\n\nDe meeste trefwoorden zijn surgevaardigheden, wat betekent dat het figuur een {B} moet uitgeven om de conditie te krijgen of toe te brengen. Andere, zoals <i>bloeden</i> van de Nexu, zijn niet gebonden aan een surge, dus ze worden automatisch bij elke aanval toegepast.\n\nMaar, om een conditie toe te passen moet een aanval tenminste 1 {H} toebrengen. Als de Nexu aanvalt en de aanval doet minstens 1 {H}, wordt het doelwit <i><color=\"red\">bloedend</color></i>. Als de aanval geen schade toebrengt, heeft het trefwoord geen effect.\n\nWanneer een figuur een conditie krijgt, zoek je in de conditiestapel naar de kaart en plaats je een conditie token naast de figuur of op zijn inzetkaart / heldenkaart.</color>",
+          "GUID": "b6803d58-27ae-4c6c-bbda-07f713ff7ceb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Let op dat de condities <i><color=\"red\">verdoofd</color></i> en <i><color=\"red\">bloedend</color></i> anders werken op keizerlijke figuren dan omschreven staat in de Rules Reference Guide als je <b>Imperial Commander</b> gebruikt. Raadpleeg de wiki-documentatie voor meer informatie.</color>",
+          "GUID": "1d0ac2fa-b402-4c0a-ae38-d7945acf9338",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Er staan kratten verspreid over de open plek, achtergelaten toen de rebellen zich haastig terugtrokken in de buitenpost.\n\n<color=\"yellow\">Bedenk dat je kratten kunt openen om bevoorradingskaarten te krijgen en medpacs te vinden om te genezen. Je hoeft niet te wachten tot je alle vijanden hebt verslagen, je kunt altijd een krat openen door er een interactie op uit te voeren.</color>",
+          "GUID": "92162be8-faa8-43bc-906f-fa0554341aa3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate 2",
+              "GUID": "4a2059c2-84bf-4e7e-b266-758f1ba1a8f7",
+              "theText": "Een voorraadkrat is achtergelaten toen de rebellen zich terugtrokken in de buitenpost.\n\n<color=\"yellow\">Een held kan een krat openen met een interactie.</color>",
+              "buttonList": [
+                {
+                  "GUID": "8a473728-6d2f-45ff-ac04-b7610c50696b",
+                  "theText": "{A} Openen"
+                }
+              ]
+            },
+            {
+              "entityName": "Crate 3",
+              "GUID": "1e415c01-f0b0-4962-b3ae-eaececc5c17c",
+              "theText": "Een voorraadkrat is achtergelaten toen de rebellen zich terugtrokken in de buitenpost.\n\n<color=\"yellow\">Een held kan een krat openen met een interactie.</color>",
+              "buttonList": [
+                {
+                  "GUID": "bfc19b87-b68f-49db-bc99-25f09eadb1dd",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "0b3e376d-f7f6-4a93-82b4-2db70a34106c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Zodra je de open plek nadert hoor je Leia's vermoeide stem door de comlink komen. \"Ik zei dat je terug moest gaan naar de <i>Sundered Heart</i>!\", zegt ze mopperend, maar ze wordt al snel overstemd door de luitenant van het aanvalsteam.\n\n\"Gelukkig ben je gekomen\", zegt hij. \"Commander Organa is gewond en we hebben de backup nodig.\"\n\n\"Ik kan nog steeds een blaster afvuren\", protesteert Leia op de achtergrond.\n\n\"Bedankt voor de afleiding. We komen je ondersteunen. Troopers, klaar voor de aanval!\"\n\nTerwijl de aandacht van de keizerlijke troepen op jou is gericht, schuift de deur van de buitenpost plotseling open en stromen de soldaten met getrokken wapens naar buiten.",
+          "GUID": "30a79b03-775a-4fa7-a6c2-ede1127310e5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Outpost Door",
+              "GUID": "d2456ff7-547b-4def-b39b-f3444fcf9fb3",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "769ee865-f552-4de8-9c1d-65811aa9cb01",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "customName": null,
+          "GUID": "ad400c5f-8a69-4cf9-84f2-885965345394",
+          "eventActionType": 7,
+          "eaName": "Ally Deployment"
+        },
+        {
+          "tbText": "<color=\"yellow\">De groep die net is ingezet, is een bondgenootgroep, dus pak de Rebel Trooper inzetkaart. Het is een rebellen kaart met een rode achterkant. Maak jezelf vertrouwd met de vaardigheden van de Rebel Troopers.\n\nBondgenoten kunnen worden geactiveerd en kunnen twee acties spenderen, net als helden. Er mag echter maar 1 actie worden besteed aan een aanval. De spelers beslissen wanneer ze een bondgenoot activeren. Een bondgenoot kan echter maar één keer per ronde geactiveerd worden.\n\nDe spelers beslissen ook in welke volgorde de figuren in een bondgenotengroep worden geactiveerd.</color>",
+          "GUID": "d4661f26-7de0-4dd2-9a50-52e9c38b3605",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "De Alliantie soldaten beginnen de keizerlijke soldaten te beschieten terwijl jij vanaf de andere kant aanvalt. Tijd om de belegering te stoppen.\n\n<color=\"yellow\">Blijf spelen tot alle vijandelijke groepen zijn verslagen.</color>",
+          "GUID": "7b0a18bf-3bcf-4686-96c4-11d01b2915f2",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Versla alle vijandelijke groepen.",
+          "longText": null,
+          "GUID": "da3c5d56-b8af-4c94-9200-528c69388a01",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "Regels voor grote figuren:\r\n\r\n{-} Als een grote figuur aanvalt, mag de zichtlijn worden getrokken vanuit elk van de velden die de figuur inneemt. Wanneer een groot figuur wordt aangevallen, moet het figuur dat de aanval uitvoert zich richten op een van de velden die het grote figuur inneemt.\n{-} Grote figuren kunnen niet diagonaal verplaatsen.\n{-} Een groot figuur mag 1 verplaatspunt spenderen om 90° te draaien. Als je dit doet, moet het grote figuur nog steeds minstens de helft van de velden bezetten die het voor de rotatie bezette. Dit is echter alleen nodig voor figuren met een asymmetrische basis. De oriëntatie speelt geen rol bij het bepalen van de verplaats- of aanvalsrichting.\n{-} Grote figuren zijn onderhevig aan alle bewegingsvereisten voor terrein en andere figuren, maar ze zijn onderhevig aan deze vereisten slechts éénmaal per uitgegeven verplaatspunt. Bijvoorbeeld, als een E-Web Engineer naar twee velden met rebellenfiguren gaat, hoeft hij maar één extra verplaatspunt uit te geven in plaats van twee.",
+          "GUID": "f14464c9-d6a2-43e6-9ea4-2d4aeba9df10",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Stormtroopers Defeated Early",
+      "GUID": "dc7f6bca-c469-47e5-9cca-939e7f888cf7",
+      "eventText": "<color=\"yellow\">Je kunt de Stormtroopers nog niet verslaan. Ze worden nu opnieuw ingezet. Ten behoeve van de tutorial kun je ze pas verslaan als ze geactiveerd zijn.</color>",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "29c2306d-1b52-442f-98f1-bace6a50ed29",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "43bee265-5a9a-4c55-b65f-0158947cd07a",
+      "eventText": "Je rommelt wat in het krat en pakt alles wat van pas kan komen.\r\n\r\n{-} Trek 1 voorraadkaart.\r\n{-} Neem 1 medpac.\r\n{-} Claim dit token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate 2",
+              "GUID": "696fb38b-00ae-4dc4-8673-080390e0558f",
+              "theText": "Een voorraadkrat is achtergelaten toen de rebellen zich terugtrokken in de buitenpost.\n\n<color=\"yellow\">Een held kan een krat openen door er een interactie op uit te voeren.</color>",
+              "buttonList": [
+                {
+                  "GUID": "e38211c0-ecf4-468b-864b-848695845e9e",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "c08149ee-fa37-4157-8851-1b5b263c0c49",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "f65c73e5-4573-401d-926d-58f4bf1c6672",
+      "eventText": "Je rommelt wat in het krat en pakt alles wat van paskan komen.\r\n\r\n{-} Trek 1 voorraadkaart.\r\n{-} Neem 1 medpac.\r\n{-} Claim dit token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate 3",
+              "GUID": "0fdc1857-2bc7-458f-99e5-3493b43b112f",
+              "theText": "Een voorraadkrat is achtergelaten toen de rebellen zich terugtrokken in de buitenpost.\n\n<color=\"yellow\">Een held kan een krat openen door er een interactie op uit te voeren.</color>",
+              "buttonList": [
+                {
+                  "GUID": "d2b8e3e2-f65c-4622-882e-df0f668399a2",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "bfbbe5a8-d49c-49ce-a4ab-06c4dd2da29e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Rebel Troopers Defeated",
+      "GUID": "203ae788-7a22-4a9d-8f70-7c6012322b75",
+      "eventText": "De laatste Alliantie soldaat valt op zijn knieën. Nu zijn alleen jij en Leia nog over.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Leia Shoots",
+      "GUID": "02f8ab8b-3071-4467-993c-b95eccf6dbb1",
+      "eventText": "Leia houdt een hand tegen haar bloedende zij en vuurt een paar schoten af met haar blasterpistool.\n\n{-} Kies een vijandelijk figuur op het spelbord. Dat figuur lijdt 1 {H}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "E-Web activates",
+      "GUID": "ab936349-7dca-4af0-b764-0f6cb4912b3e",
+      "eventText": "De E-Web Engineer draait zijn kanon in jouw richting.\n\n<color=\"yellow\" >Als je naar de inzetkaart van de E-Web Engineer kijkt, zie je dat hij met zijn <b>Assault</b> vaardigheid meerdere aanvallen per activatie kan uitvoeren. Dit betekent dat de E-Web Engineer meerdere {Q} instructies kan uitvoeren, wat hem - in combinatie met de grote voorraad aanvalsdobbelstenen - een zeer gevaarlijke vijand maakt.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Nexu activates",
+      "GUID": "be2c89f0-68fb-47af-8475-476029840052",
+      "eventText": "De Nexu gromt en spant zijn spieren voor een sprong.\n\n<color=\"yellow\" >De Nexu's <b>Pounce</b> instructie houdt weer in dat hij velden verplaatst zonder bewegingspunten uit te geven. Dit betekent dat hij niet onderworpen is aan de verplaats beperkingen van een groot figuur. De Nexu springt gewoon naar een veld dat maximaal 6 velden van hem verwijderd is. Plaats hem zo dat één deel van zijn basis op het doelveld staat.",
+      "eventActions": [
+        {
+          "tbText": "In de omschrijving van de Nexu's bonus effect, kom je misschien ook de term <i>buitenruimte</i> tegen. Buitenruimtes zijn alle velden van een spelbord die een plek in de buitenlucht voorstellen. Op het huidige spelbord zijn de shuttle en de buitenpost <i>binnenruimtes</i>, de rest zijn <i>buitenruimtes</i>.",
+          "GUID": "e260e736-bf15-45a1-a5bd-7ddbe2962bfb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "All Groups Defeated",
+      "GUID": "f54abb1b-92a1-4481-a942-97995695aac6",
+      "eventText": "Eindelijk valt de laatste vijand en de overgebleven troepen verspreiden zich.\n\nLeia kreunt, drukt nog steeds haar hand tegen haar zij en kijkt argwanend naar het bos.\n\n\"Bedankt dat je ons bent komen halen\", zegt ze uiteindelijk. \"Ik ben blij dat jullie aan Vader zijn ontsnapt, maar we hebben niet veel tijd. Ik weet zeker dat hij jullie op de hielen zit. Onze shuttle is neergeschoten, we moeten al het personeel van deze basis in die van jullie proppen.\"\n\nZe gebaart naar de buitenpost. Burgerpersoneel en gewonde soldaten zitten ineengedoken achterin. Leia helpt hen snel overeind en degenen die kunnen lopen, helpen degenen die dat niet kunnen. Er zijn hier echter nog meer mensen die gewond zijn.",
+      "eventActions": [
+        {
+          "tbText": "Een bewusteloze soldaat is achtergelaten.",
+          "GUID": "b8bc57ee-e5ac-4024-be9d-228f34b24ebf",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Rebel 1",
+              "GUID": "c67c9fb6-3828-448e-b654-2f6a6ab4e715",
+              "theText": "Een gewonde soldaat staat geleund in de hoek, hij blijkt bewusteloos te zijn.\n\n<color=\"yellow\">Een held kan een interactie uitvoeren op de soldaat om hem te dragen en het token op te pakken.</color>",
+              "buttonList": [
+                {
+                  "GUID": "73b3f357-c2c3-4806-9677-cb4e0bf8ffa0",
+                  "theText": "{A} Draag de soldaat"
+                }
+              ]
+            }
+          ],
+          "GUID": "35a557ac-b270-4c9e-a1dd-cd933c782c42",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "De communicatieofficier van de buitenpost leeft nog, maar kan niet lopen.",
+          "GUID": "da813ea4-245c-4242-bd16-378a519f14cd",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Rebel 2",
+              "GUID": "a2dc03ce-0dc5-41a4-a4c4-ce2f232e5266",
+              "theText": "De communicatieofficier van de buitenpost is geraakt door een blasterschot. Ze leeft nog, maar kan niet lopen.\n\n<color=\"yellow\">Een held kan een interactie uitvoeren op de communicatieofficier om haar te dragen en het token op te pakken.</color>",
+              "buttonList": [
+                {
+                  "GUID": "e077a97a-714d-44ac-8b93-632960e2465f",
+                  "theText": "{A} Draag de communicatieofficier"
+                }
+              ]
+            }
+          ],
+          "GUID": "e838a2c9-ba56-457c-8f68-6181399c2fa8",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia knikt naar de twee Alliantieleden. \"We hebben jullie hulp nodig. Kunnen jullie hen naar de shuttle brengen?\"\n\n<color=\"yellow\" >In sommige missies kunnen tokens worden <i>opgepakt</i>. Om een token op te pakken, moet een held er een interactie op uit voeren. Daarna wordt het token op de heldenkaart van de held geplaatst om aan te geven dat de held het draagt.\n\nDe twee rebellenmissietokens vertegenwoordigen gewonde Alliantieleden. De helden kunnen ze oppakken door er een interactie op uit te voeren. Een held kan 1 missietoken dragen per activeringstoken die de held bezit.\n\nAls de held gewond raakt, laat hij de token in zijn huidige veld vallen. De held (of een andere held) kan er een interactie op uitvoeren om het weer op te pakken</color>",
+          "GUID": "d60f5f47-8be2-4c25-9131-4812390ac5ee",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Shuttle Control",
+              "GUID": "abcac1ef-5d16-4ec3-b6ab-8afbdf66917f",
+              "theText": "De shuttle is volgepakt met het overlevende Alliantiepersoneel. Als iedereen aan boord is, kan de shuttle vertrekken.\n\n<color=\"yellow\">Als alle overlevende helden in de shuttle zijn en beide rebellen missietokens bij zich hebben, kan een held de terminal bedienen om de shuttle te lanceren en de tutorial te beëindigen.</color>",
+              "buttonList": [
+                {
+                  "GUID": "8ae22e74-0d73-46a5-aec1-07eaa3710c19",
+                  "theText": "{A} Lanceer de shuttle (einde van de tutorial)"
+                }
+              ]
+            }
+          ],
+          "GUID": "212956cd-e286-4f06-8a6d-2f4a5f49b7f5",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Als alle overlevende helden in de shuttle zijn en beide rebellen missietokens bij zich hebben, kan een held de terminal bedienen om de shuttle te lanceren en de tutorial te beëindigen.</color>",
+          "GUID": "e446a4d8-a1d7-4947-9445-0b893bd752b8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "theText": "{-} De twee rebellen missietokens vertegenwoordigen gewonde Alliantieleden. De helden kunnen ze oppakken door er een interactie op uit te voeren. Een held kan 1 missietoken dragen per activeringstoken die de held bezit.\r\n{-} Om een token op te pakken, moet een held er een interactie op uit voeren. Daarna wordt het token op de heldenkaart van de held geplaatst om aan te geven dat de held het draagt.\r\n{-} Als de held gewond raakt, laat hij de token in zijn huidige veld vallen. De held (of een andere held) kan er een interactie op uitvoeren om het weer op te pakken\r\n{-} Als alle overlevende helden in de shuttle zijn en beide rebellen missietokens bij zich hebben, kan een held de terminal bedienen om de shuttle te lanceren en de tutorial te beëindigen.",
+          "GUID": "e8984ef2-852a-4ed1-a780-e32441fbe842",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Breng de twee Alliantieleden naar de shuttle en ontsnap.",
+          "longText": null,
+          "GUID": "436e188f-e122-4ef8-88a1-7b555e3536eb",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "repositionText": "Blokkeer de toegang tot de shuttle.",
+          "GUID": "e65bff29-b06d-4493-ab1b-156c557a80f9",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        }
+      ]
+    },
+    {
+      "eventName": "Retrieve Rebel 1",
+      "GUID": "c255a3c6-09b0-4d9f-8ae6-34658274bca6",
+      "eventText": "Je hijst de rebellensoldaat op, die vervolgens zwaar op je leunt.\n\n<color=\"yellow\">Plaats dat token op je heldenkaart.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Rebel 1",
+              "GUID": "8d5ca44b-0bf3-4e18-a124-ce0984a299d7",
+              "theText": "Een gewonde soldaat staat geleund in de hoek, hij blijkt bewusteloos te zijn.\n\n<color=\"yellow\">Een held kan een interactie uitvoeren op de soldaat om hem te dragen en het token op te pakken.</color>",
+              "buttonList": [
+                {
+                  "GUID": "e3ee57b6-2d8f-47f5-8b64-d54480ef5f87",
+                  "theText": "{A} Draag de soldaat"
+                }
+              ]
+            }
+          ],
+          "GUID": "1b68e361-ecb8-4e23-a582-14d8f4d37b44",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Vastbesloten om te ontsnappen, begin je aan je weg terug naar de shuttle.\n\n{-} Voer een {K} of {J} attribuuttest uit. Je krijgt 1 verplaatspunt voor elke {B} die je rolt.",
+          "GUID": "faf14773-89b2-416e-a9d5-6d1e945f6032",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Retrieve Rebel 2",
+      "GUID": "9b791cb2-f045-4a90-8f9b-cad03bc8bc12",
+      "eventText": "De communicatieofficier kreunt, maar strompelt achter je aan.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Rebel 2",
+              "GUID": "930a5599-a227-479a-9af1-7e7f48a2e91a",
+              "theText": "De communicatieofficier van de buitenpost is geraakt door een blasterschot. Ze leeft nog, maar kan niet lopen.\n\n<color=\"yellow\">Een held kan een interactie uitvoeren op de communicatieofficier om haar te dragen en het token op te pakken.</color>",
+              "buttonList": [
+                {
+                  "GUID": "ed0a8e2a-1a82-402a-8ff4-228c2c66bd74",
+                  "theText": "{A} Draag de communicatieofficier"
+                }
+              ]
+            }
+          ],
+          "GUID": "09bad812-dfcd-465b-9855-8b97ceaabdaf",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Vastbesloten om te ontsnappen, begin je aan je weg terug naar de shuttle.\n\n{-} Voer een {K} of {J} attribuuttest uit. Je krijgt 1 verplaatspunt voor elke {B} die je rolt.",
+          "GUID": "9e92cb9e-acaa-4ba8-82d6-65152f2bd11a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "End Tutorial",
+      "GUID": "494c1295-10a2-428f-bb8d-47a01044d053",
+      "eventText": "De motoren van de shuttle komen tot leven. \"Zet je schrap!\", roept Leia terwijl de repulsor aanslaat en het voertuig de lucht in tilt. Enkele schreeuwen klinken door de shuttle als laserschoten de buitenkant raken, maar de deflector schilden blijven stabiel. Je activeert de sublight drive en schiet de ruimte in. TIE-fighters wachten je op en het silhouet van een star destroyer doemt niet ver daarachter op, maar de X-wings die vanaf de <i>Sundered Heart</i> worden gelanceerd houden de TIE's op afstand totdat je veilig aan boord bent.\n\nLeia negeert elke poging om haar wonden te verzorgen en haast zich naar de brug, samen met jou. De X-wings keren terug naar de hangar en voordat de star destroyer jullie schip kan bereiken, springen jullie in hyperspace en in veiligheid.",
+      "eventActions": [
+        {
+          "tbText": "Zodra de <i>Sundered Heart</i> terugvalt in de normale ruimte, hangt er een prachtige, oranje gasreus in de zwarte leegte van de ruimte. Het schip zet koers naar een kleine junglemaan die rond de planeet draait en landt uiteindelijk buiten een oeroude piramide die duidelijk dienst doet als rebellenbasis. Terwijl personeel en droids zich naar je toe haasten om de gewonden te verzorgen, wenkt Leia, opgelucht dat je het hebt gehaald, je om haar te volgen.\n\nZe neemt je mee de piramide in en naar een lange man met opvallend wit haar en baard. \"Generaal Dodonna\", zegt ze. \"Dit zijn de nieuwe rekruten waar ik je over vertelde. Ze hebben echt hun mannetje gestaan op Indu. Zonder hen hadden we het niet gered.\"\n\nDodonna bestudeert je aandachtig en knikt dan. \"Dit is veel lof van Hare Hoogheid. Ze vertelde ons dat je iets ontdekt hebt over een keizerlijk wapenproject. We moeten je debriefen, maar voor nu denk ik dat het tijd is om te rusten.\"\n\nHij draait zich om naar zijn adjudant. \"Laat ze hun kamers zien\", zegt hij, en werpt je nog een laatste blik toe. \"Welkom op Yavin IV.\"",
+          "GUID": "60fbd5fc-8659-403b-944a-10dca82c29de",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\" >Dit is het einde van de laatste tutorial voor <b>Imperial Commander</b>. Als het goed is weet je nu alle regels die je nodig hebt en hopelijk had je een leuke tijd tijdens het leren. Voor verdere details kijk je in de Rules Reference Guide of de wiki documentatie voor <b>Imperial Commander</b>.\n\nAls je er klaar voor bent kun je de missie <i>Aftermath</i> van het core spel starten, dit is de eerste echte <b>Imperial Assault</b> missie.\n\nDe tutorials behandelden niets over campagnestructuur en voortgang. Daarover kun je alles vinden in de Learn to Play gids en de wiki documentatie, of je kunt het lezen aan het einde van deze tutorial. Dit is echter niet interactief, alleen een hulp om je door het proces te leiden.</color>",
+          "GUID": "251b6baa-71fc-4800-88ea-c032e553787d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "New Enemies",
+      "GUID": "d0fee106-5408-41fe-8128-c5441dce3fb7",
+      "eventText": "De schaduw van een keizerlijke lambdaklasse shuttle valt over de open plek en Leia kijkt omhoog met angst op haar gezicht. \"Dat is hem\", zegt ze. \"We hebben niet veel tijd.\"",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vader 3",
+      "GUID": "c7541461-69ea-4494-a94d-3ada723e7195",
+      "eventText": "Darth Vader zal arriveren in &Vader Arrives& rondes.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vader 2",
+      "GUID": "d329149f-ebde-409a-8e3d-e1d73d9f6324",
+      "eventText": "Darth Vader zal arriveren in &Vader Arrives& rondes.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vader 1",
+      "GUID": "25150824-1319-4736-a874-9ca03e22279e",
+      "eventText": "Darth Vader zal arriveren in &Vader Arrives& rondes.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vader Arrives",
+      "GUID": "e43a2522-af71-47fb-b2ce-4b68866d8702",
+      "eventText": "Het geluid van een mechanische ademhaling is doordringend genoeg om boven het lawaai uit te komen. Door het bos nadert de intimiderende gestalte van Darth Vader met een lichtzwaard in zijn hand.\n\n\"Ga naar de shuttle!\", schreeuwt Leia en ze vuurt schoten af op Vader, die ze vakkundig weerkaatst met zijn zwaard.\n\n<color=\"yellow\"><color=\"red\">Darth Vader</color> kan geen {H} lijden en kan niet verslagen worden.</color>",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "e9e9b608-5dcb-4772-866d-04281a2286d0",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG072/Darth Vader"
+        }
+      ]
+    },
+    {
+      "eventName": "Scene 2",
+      "GUID": "7d175a1a-5c8e-44be-86ee-0e088776053c",
+      "eventText": "<color=\"yellow\">Veel <b>Imperial Assault</b> missies moeten worden opgelost in een bepaald aantal rondes. Sommige hebben harde tijdslimieten en eindigen in een nederlaag als die limiet wordt overschreden, andere, zoals deze tutorial, introduceren complicaties na een bepaalde tijd.</color>",
+      "eventActions": [
+        {
+          "tbText": "De keizerlijke troepen lijken zich te hebben gehergroepeerd. Een man in het uniform van een officier verschijnt tussen de bomen en wijst naar jou. Hij wordt al snel gevolgd door een andere stormtrooper-eenheid. \"Pak ze!\", roept hij. \"Vernietig ze voordat Lord Vader arriveert!\"",
+          "GUID": "76d0a305-6209-42aa-a949-b1044312bc2d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": "+3 gezondheid",
+          "repositionInstructions": "",
+          "GUID": "301c7771-ea09-45e7-94b5-b444ff71b9cc",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "eddff716-31f6-4dde-925d-2152b4ec1dbd",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "tbText": "<color=\"yellow\">De keizerlijke officier is een Elitegroep en heeft een aanpassing: +3 gezondheid. Dit betekent dat hij een gezondheid heeft van 8. Dit wordt zowel in zijn miniatuur als in zijn activeringsvenster weergegeven.</color>",
+          "GUID": "0cd1eefb-450b-4261-bc6c-8bc46bc694be",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Aan het einde van elke ronde krijgt het Keizerrijk {D} (dreiging), een valuta die door het Rijk gebruikt kan worden om nieuwe groepen en figuren in te zetten. <b>Imperial Commander</b> beslist automatisch of en wat er wordt ingezet. Waar ze geplaatst moeten worden wordt ook aangegeven door de app.\n\nDe app kan nieuwe groepen inzetten, maar ook <i>bestaande groepen versterken</i>. Dit betekent dat de app een groep uitkiest waarvan een aantal figuren is verslagen en die groep weer aanvult. Als dat gebeurt, plaats je de nieuwe figuren zo dicht mogelijk bij de andere figuren van die groep.\n\nVanaf nu neemt {D} aan het einde van elke ronde toe en kunnen er meer figuren worden ingezet.</color>",
+          "GUID": "267d705a-c8e1-4da3-8fb9-49b8c3d8f587",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">In de nieuwe activatie vensters zul je de tekst <i>Reposition Target</i> zien.\n\n<i>Reposition Target</i> geeft aan waar keizerlijke figuren naartoe bewegen als ze zich herpositioneren. Het herpositioneringsdoel verandert niet hoeveel verplaatspunten een figuur krijgt, maar het bepaalt wel hoe ver hij van een rebel af verplaatst.\n\nIn het kort: De keizerlijke figuren proberen altijd eerst aan het <i>Reposition Target</i> te voldoen, en pas daarna aan de herpositioneringsafstand die door de instructie wordt gegeven.</color>",
+          "GUID": "e7464718-b8c2-453c-b5c2-5c259b82ea70",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">De stormtroopers proberen bijvoorbeeld de toegang van de rebellen tot de shuttle te blokkeren door in de weg te lopen. Als ze dat kunnen doen terwijl ze 4 velden van de rebellen vandaan blijven, doen ze dat. Als ze de toegang tot de shuttle kunnen blokkeren, maar dichter of verder weg van de rebellen moeten zijn, negeren ze de herpositioneringswaarde en richten ze zich op het doelwit.\n\nMaak je echter niet te druk. Je moet niet elke beweging van de keizerlijken bestuderen. Als je twijfelt, doe dan gewoon iets, denk er niet te veel over na.</color>",
+          "GUID": "8f5f5ceb-d6ac-4eb4-84e0-f871a25d4cfe",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Officer Activates",
+      "GUID": "96351b85-7797-47e7-b5ac-80da620219bf",
+      "eventText": "De officier gebaart haastig naar je en zoekt dan dekking.\n\n<color=\"yellow\">De eerste instructieregel van de keizerlijke officier is:</color>\n\n{A} ORDER: Een ander keizerlijk figuur met figuurkosten van 6 of minder dat een aanval kan uitvoeren, valt aan (rebellen naam).\n\n<color=\"yellow\" >Keizerlijke officieren laten liever anderen voor hen vechten. Bij het uitvoeren van ORDER, kies je het figuur met de hoogste figuurkosten (maximaal 6) dat de geselecteerde rebel kan aanvallen. Als geen enkele figuur de geselecteerde rebel kan aanvallen, kies dan de figuur met de hoogste figuurkosten (maximaal 6) die elke willekeurige rebel kan aanvallen.</color>",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">Je vindt de kosten van het figuur linksboven op een inzetkaart. Dat getal zijn de inzetkosten, dus het bedrag aan {D} dat de app moet uitgeven om de groep in te zetten.\n\nAls de groep uit slechts 1 figuur bestaat, zijn de figuurkosten gelijk aan de inzetkosten. Groepen met meerdere figuren hebben een kleiner getal naast de inzetkosten. Dit zijn de kosten van een individueel figuur. De stormtroopers, bijvoorbeeld, hebben inzetkosten van 6 en figuurkosten van 2.</color>",
+          "GUID": "0af7b176-cb91-4bf4-a873-b7ff3786354a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Let op: de instructie wordt voorafgegaan door een {A} icoon, niet door een {Q} icoon. ORDER is geen aanvalsactie, dus de keizerlijke officier kan daarna nog steeds een actie besteden aan een {Q} instructie.\n\nLet er ook op dat de laatste instructieregel niet voorafgegaan wordt door een {A} of {Q} icoon, dus het kost geen actie. De officier lost altijd de laatste instructieregel op, indien mogelijk.</color>",
+          "GUID": "3e33772a-2355-4581-9a95-004736f7ffd6",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Jyn Wounded",
+      "GUID": "bf1689ff-e22e-4fdb-ba40-84c9fb0e5e09",
+      "eventText": "Jyn schreeuwt het uit als een nieuwe aanval haar op de grond gooit, maar ze krabbelt snel weer overeind.\n\n<color=\"yellow\">Verwijder alle {H} tokens van Jyn Odan's heldenkaart en draai de kaart om. Jyn is gewond, maar ze kan blijven vechten.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Gaarkhan Wounded",
+      "GUID": "60445b34-ef55-4683-8267-5a6ebbedb8a1",
+      "eventText": "Gaarkhan brult, bloed stroomt uit zijn wonden en in zijn vacht. Hij grijpt zijn bijl steviger vast.\n\n<color=\"yellow\">Verwijder alle {H} tokens van Gaarkhan's heldenkaart en draai de kaart om. Gaarkhan is gewond, maar hij kan blijven vechten.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Jyn Withdrawn",
+      "GUID": "7ab4a85d-b8b4-478c-ab3d-9039124f59b9",
+      "eventText": "Meer aanvallen regenen neer op Jyn en uiteindelijk heeft ze geen andere keuze: ze schiet wild in de richting van de aanvallers en trekt zich terug in het kreupelhout.\n\n<color=\"yellow\">Verwijder Jyns miniatuur van de kaart. Ze kan niet langer in actie komen tijdens de missie.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Gaarkhan Withdrawn",
+      "GUID": "c95a21c7-4680-48a2-a1fc-21c9a5dc1463",
+      "eventText": "Aanval na aanval raakt Gaarkhan en zelfs de machtigste Wookiee is niet bestand tegen zo'n aanval. Brullend van de pijn trekt Gaarkhan zich terug in het bos.\n\n<color=\"yellow\">Verwijder Gaarkhan's miniatuur van de kaart. Hij kan niet langer in actie komen tijdens de missie.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defeat",
+      "GUID": "70d901d7-c335-4945-93ce-8d53092f4407",
+      "eventText": "Nu Jyn en Gaarkhan allebei weg zijn en Leia gewond is, is er niemand meer over om het Keizerrijk op Indu te stoppen.\n\n<color=\"yellow\" >Omdat beide helden zijn teruggetrokken, is deze missie tot een einde gekomen. Maak je geen zorgen! Je kunt de tutorial altijd opnieuw starten.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Tutorial Question",
+      "GUID": "aef479b7-480b-4dae-8d3a-e78e8acf564f",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Wat wil je doen?",
+          "buttonList": [
+            {
+              "GUID": "ef2f38e8-7770-4863-97f2-674b8400d169",
+              "theText": "Leer meer over het voorbereiden van een campagne"
+            },
+            {
+              "GUID": "7efd500b-2358-43c1-b10b-c4930a6f6af6",
+              "theText": "Leer hoe een campagne is opgebouwd"
+            },
+            {
+              "GUID": "e7832235-8b64-495f-a717-b8be16ff94d4",
+              "theText": "Leer meer over de voortgang van een campagne"
+            },
+            {
+              "GUID": "f3cdf933-88e5-4a0a-a214-56c2b52c8413",
+              "theText": "Leer hoe je missies opzet en speelt"
+            },
+            {
+              "GUID": "757f99c1-2c21-4606-8bd4-b511d62058de",
+              "theText": "Einde tutorial"
+            }
+          ],
+          "GUID": "f286d8ea-189b-4725-b228-416f1cd0f594",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Campaign Structure",
+      "GUID": "3f4005d3-af7e-4292-95e2-a0d0c287e07c",
+      "eventText": "Een <b>Imperial Assault</b> campagne bestaat uit meerdere missies die na elkaar worden gespeeld. Er zijn twee soorten missies:\n\n{-} <b>Verhaalmissies</b> zijn campagnespecifieke missies die het verhaal van de campagne voortzetten.\n{-} <b>Zijmissies</b> zijn kleinere missies die plaatsvinden tussen verhaalmissies. Deze kunnen worden gebruikt om bondgenoten of andere beloningen te krijgen.\n\nEen campagne spelen is eenvoudig. Spelers lossen eerst een missie op en krijgen dan de kans om nieuwe itemkaarten en klassekaarten te kopen. Daarna hervatten ze hun verhaal door een nieuwe missie te kiezen en uit te voeren. Ze gaan door met het voltooien van deze fases totdat de campagne eindigt met een laatste missie die bekend staat als de finale.",
+      "eventActions": [
+        {
+          "tbText": "Een campagne begint altijd met dezelfde missie, die <b>introductie</b> wordt genoemd (de core spel campagne begint bijvoorbeeld altijd met de missie \"Aftermath\"). Om een campagne voort te zetten, controleren spelers het campagnelogboek in de app en lossen ze de volgende beschikbare (niet-gemarkeerde) fase op. In het campagnelogboek staat ook op welk dreigingsniveau de volgende missie moet worden gespeeld.",
+          "GUID": "30150aaf-ece4-43b7-ad21-f0d0f2eecf11",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Dit is hoe je kunt kiezen welke missie je wilt spelen:\n\n{-} <b>Verhaalmissies:</b> Nadat een verhaalmissie eindigd zal <b>Imperial Commander</b> aangeven welke verhaalmissiekaarten in het spel komen. Dat zijn de <i>actieve</i> verhaalmissies. De volgende keer dat de campagne aangeeft dat er een verhaalmissie gespeeld gaat worden, kiezen de spelers er één van de actieve verhaalmissiekaarten en leggen ze de andere actieve af. Daarna openen ze <b>Imperial Commander</b>, kiezen de missie die ze willen spelen, kiezen het dreigingsniveau, de helden, bondgenoten en schurken, en beginnen met spelen.\n\n{-} <b>Zijmissies:</b> Nadat de \"Introductie\" missie is afgerond schudden de spelers het zijmissiedeck en trekken twee zijmissiekaarten. Dat zijn de <i>actieve</i> zijmissies. Als het campagnelogboek zegt dat de spelers een zijmissie gaan spelen, kiezen ze één van de actieve zijmissies om te spelen. Na het uitspelen van die zijmissie trekken ze een nieuwe zijmissiekaart, zodat er altijd 2 zijmissiekaarten in het spel zijn.",
+          "GUID": "fb0cb8b1-110b-4fdb-937e-9896e5fa2663",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Er zijn ook missies die <b>keizerlijke missies</b> worden genoemd. Dit zijn speciale zijmissies die het Keizerrijk een boost kunnen geven. Er zijn twee soorten keizerlijke missies.\n\n{-} <b>Keizerlijke zijmissies:</b> Deze worden gespeeld naast de twee gewone zijmissies. De spelers kunnen ervoor kiezen om de keizerlijke zijmissies te spelen in plaats van één van hun reguliere zijmissies. Als ze ervoor kiezen om een andere zijmissie te spelen terwijl er een keizerlijke zijmissie beschikbaar is, dan moeten ze de keizerlijke zijmissie afleggen. Het Keizerrijk krijgt automatisch de genoemde beloningen.\n\n{-} <b>Geforceerde missies:</b> sommige keizerlijke missies dwingen spelers om een specifieke missie uit te voeren. Nadat één van deze kaarten in het spel is gebracht, voeren de spelers onmiddellijk de genoemde missie uit en leggen daarna de missiekaart af.\n\nHet campagnelogboek vertelt je wanneer je een keizerlijke missie moet spelen. Sommige missies in het logboek hebben een rood icoon van een planeet erop. Als je die missie volledig hebt opgelost en de Rebel Upgrade Fase hebt uitgevoerd, klik je op het pictogram. De app beslist dan of je een keizerlijke missie trekt of niet.",
+          "GUID": "f878db43-ba8b-4a70-aabc-f2ba1b32603e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "In de wiki documentatie kun je een voorbeeld vinden van de structuur en voortgang van een campagne. Klik op de link op het startscherm van <b>Imperial Commander</b>.",
+          "GUID": "6f6ee613-e241-48d1-b3dc-8abb7bad69ea",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Campaign Progress",
+      "GUID": "f51ca5e1-0b0c-4e57-a2f2-222001c983c8",
+      "eventText": "Als spelers missies voltooien en verder komen in de campagne, doorlopen ze na elke voltooide missie een reeks stappen. Daarna raadplegen ze het logboek van de campagne om hun volgende missie te bepalen.",
+      "eventActions": [
+        {
+          "tbText": "Bepaalde missies (meestal zijmissies, maar ook sommige verhaalmissies) geven de helden <b>beloningen</b> voor het voltooien ervan.\n\n{-} <b>Beloningskaarten:</b> veel beloningen komen in de vorm van beloningskaarten die de helden bepaalde vaardigheden geven. De meeste kunnen gebruikt worden zoals ze omschreven zijn. Maar sommige beloningskaarten moeten worden veranderd in de Saga-modus. Een lijst hiervan vind je in de wiki-documentatie.\n{-} <b>Bondgenoten:</b> groene zijmissies belonen de helden met bondgenoten. Zodra de spelers een bondgenoot hebben verdiend, kunnen ze besluiten deze mee te nemen op elke volgende missie. Selecteer ze gewoon in het missiescherm. Het meenemen van een bondgenoot verhoogt echter de dreiging die het rijk krijgt aan het begin van een missie, dus de spelers moeten het risico versus de beloning van het meenemen van bondgenoten afwegen. Verworven bondgenoten blijven gedurende de hele campagne.",
+          "GUID": "c08ee8d8-73f3-4440-b755-45f4853fca12",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Het Keizerrijk kan ook beloningen verdienen. <b>Imperial Commander</b> geeft aan welke beloningen het Rijk krijgt, maar dit kan afwijken van wat er in de campagnegids of op de missiekaart staat, omdat veel keizerlijke beloningskaarten niet worden gebruikt in <b>Imperial Commander</b>. Dit zijn de algemene regels:\n\n{-} <b>Verdiende vijanden:</b> als de keizerlijke speler een <i>vijand (villain)</i> verdient, leg dan die kaart opzij. De volgende keer dat je een missie speelt, selecteer je die vijand als <i>verdiend</i> in het missie-instellingenscherm. Verworven vijanden blijven gedurende de hele campagne.\n{-} <b>Andere keizerlijke beloningen:</b> als de keizerlijke speler een andere willekeurige beloningskaart zou krijgen, krijgt het Keizerrijk die beloningskaart niet. In plaats daarvan wordt het dreigingsniveau van de volgende missie (en alleen de volgende missie) verhoogd met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellen spelers beslissen om 50 credits per held uit te geven om dit te voorkomen.\n{-} <b>Geforceerde missies:</b> als de rebellen spelers een geforceerde missie verliezen wordt het dreigingsniveau van de volgende missie (en alleen de volgende missie) verhoogd met 2. Tijdens de Rebel Upgrade-fase kunnen de rebellen spelers beslissen om 100 credits per held uit te geven om dit te voorkomen.\n\nJe hoeft dit niet allemaal te onthouden, de app geeft aan wat er gaat gebeuren.",
+          "GUID": "63466ba8-891a-499f-91ef-a9289d3ddf16",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Nadat een missie is voltooid kunnen de spelers nieuwe kaarten aanschaffen tijdens de <i>Rebel Upgrade-fase</i>. Ze kunnen eerst <i>experience punten</i> uitgeven aan nieuwe klassekaarten en daarna kunnen ze <i>credits</i> uitgeven aan nieuwe itemkaarten.\n\nIn het campagnelogboek van de app kun je experience punten en credits bijhouden. Tevens kun je beloningen, verworven vijanden of bondgenoten en gekochte items bijhouden.",
+          "GUID": "543956cf-1cc3-4a0e-bcef-b875b974ae30",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Om klassekaarten aan te schaffen, moet elke speler in zijn/haar heldendeck kijken en beslissen welke kaarten ze willen aanschaffen.\n\n{-} Om een klassekaart aan te schaffen, moet de held XP uitgeven gelijk aan de kosten voor die kaart.\n{-} Eénmaal aangeschaft, behoudt de speler die kaart voor de gehele campagne.\r\n",
+          "GUID": "dc01121f-1ee3-4c35-ac1d-76312cca7d51",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Spelers kunnen verdiende credits uitgeven aan itemkaarten. Itemkaarten zijn verdeeld over 3 tiers. De spelers moeten onthouden hoeveel kaarten er in elk itemdeck zitten aan het begin van de campagne. Als je alleen met het core spel speelt, zitten er 12 in elk deck.",
+          "GUID": "c7096705-2e11-4f60-ae37-e1491a17b0a8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Het logboek van de campagne vertelt de spelers welke itemkaarten beschikbaar zijn nadat een missie is voltooid. Om itemkaarten te kopen, schudden de spelers de stapel die op het campagnelogboek staat en trekken een aantal kaarten dat gelijk is aan de helft van de startgrootte (naar boven afgerond). De spelers mogen een willekeurig aantal van deze kaarten kopen en niet-gekochte kaarten terugleggen op de stapel.\n\n{-} Als er meerdere itemdecken in het campagnelogboek staan, schudden en trekken de spelers kaarten van elke stapel.\n{-} Om een itemkaart te kopen, moeten de spelers evenveel credits uitgeven als de kosten van de kaart.\n{-} Na het kopen van een itemkaart geven de spelers de itemkaart aan de held van hun keuze. Items kunnen opnieuw worden toegewezen aan het begin van elke missie.\n{-} Vlak voordat ze itemkaarten kopen, kunnen de spelers de itemkaarten die ze al bezitten verkopen. Elke verkochte kaart gaat terug in de doos. Daarna ontvangen de helden een aantal credits dat gelijk is aan de kosten van de kaart.\n{-} Itemkaarten zonder creditkosten kunnen worden verkocht voor 50 credits.",
+          "GUID": "6c15889e-3f04-4b51-9667-ad3af71e6ebb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "In de wiki documentatie kun je een voorbeeld vinden van de structuur en voortgang van een campagne. Klik op de link op het startscherm van <b>Imperial Commander</b>.",
+          "GUID": "6ee497f1-8af0-456c-9185-ada06cf92774",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Play Missions",
+      "GUID": "2fc603f9-d08e-4a44-926a-912494cfda9c",
+      "eventText": "Om een missie te spelen doorlopen de spelers een reeks stappen.",
+      "eventActions": [
+        {
+          "tbText": "<b>Stap 1: missie kiezen</b>\nRaadpleeg het campagnelogboek om te bepalen welke missie je gaat spelen.",
+          "GUID": "182eb35e-d4a0-4319-a22c-653f9bc0ea2c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 2: dobbelstenen, kaarten en andere tokens klaarleggen</b>\nPlaats alle dobbelstenen, de conditiekaarten en voorraadkaarten, schadetokens, forceertokens en conditietokens binnen handbereik van alle spelers.",
+          "GUID": "1c3ba216-d713-4e02-89aa-af5755700095",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 3: helden verzamelen</b>\nVerzamel alle heldenkaarten, held klassekaarten, itemkaarten, beloningskaarten en andere kaarten die in het bezit zijn van de helden.",
+          "GUID": "8b2c33f9-f940-4376-b58d-72d182903154",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 4: start missie</b>\nSelecteer <b>Nieuw spel</b> in het startscherm. Selecteer de missie, de helden, het dreigingsniveau, de moeilijkheidsgraad en eventueel verworven vijanden. Beslis of je een bondgenoot meeneemt.",
+          "GUID": "0ab2ebad-f221-4b5b-85d1-16752b14335a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 5: rebellenfiguren inzetten</b>\nPlaats alle heldenfiguren op de plek die de app aangeeft of zo dicht mogelijk daarbij. De spelers kiezen de volgorde waarin ze hun figuren inzetten. Voordat ze hun figuren inzetten, kiezen ze de itemkaarten die ze meenemen naar de missie. Elke held mag maximaal 1 pantser ({R}), 2 wapens en 3 uitrusting ({S}) meenemen.",
+          "GUID": "8af5b1e9-7917-4ca0-99c3-58bd49f7ff5f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 6: zet bondgenoten in</b>\r\nAls de rebellen spelers beslissen om een bondgenoot in te zetten, plaats deze dan zo dicht mogelijk bij het aangegeven veld.\r\n\r\nDaarna start de missie met de eerste activatie voor de rebellen.",
+          "GUID": "5674dc48-b9c0-4cc3-afd7-e997770c0a9d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Als een missie voltooid is voeren de spelers een <i>post-missie cleanup</i> uit.\r\n\r\n{-} Gewonde helden draaien hun heldenkaart naar de gezonde zijde en genezen alle {H} (schade (damage)) en {C} (forceringen (strain)).\r\n{-} De spelers schudden al hun voorraadkaarten terug in het voorraaddeck.\r\n{-} Helden krijgen 50 credits voor elk krattoken die ze hebben geclaimt tijdens de missie en leggen ze daarna af.\r\n{-} Tenzij anders aangegeven door de regels of een vaardigheid, worden alle andere tokens afgelegd.\r\n{-} De spelers leggen de missiekaart van de zojuist voltooide missie in de doos.\r\n{-} Als de spelers de introductiemissie net hebben voltooid, shudt dan het zijmissiedeck, trek twee kaarten en plaats deze met de speelzijde naar boven op de tafel.\r\n{-} Als de spelers net een normale (niet keizerlijke) zijmissie hebben voltooid (afkomstig uit het zijmissiedeck), trek dan een willekeurige kaart van het zijmissiedeck en plaatst deze met de speelzijde naar boven op de tafel. Dit is nu een actieve missie.\r\n{-} Als er nog een keizerlijke missiekaart in het spel is, los dan de instructies op die kaart op.",
+          "GUID": "1dc2300e-9d36-458a-a976-84ff42134183",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "In de wiki documentatie kun je een voorbeeld vinden van de structuur en voortgang van een campagne. Klik op de link op het startscherm van <b>Imperial Commander</b>.",
+          "GUID": "015faa6e-b6c0-4e77-bb29-16a1011edea2",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "End Mission",
+      "GUID": "28558464-eceb-465a-9e61-d1fea3d80d9b",
+      "eventText": "<color=\"yellow\">Moge de Kracht met je zijn en veel plezier met <b>Imperial Commander</b>!</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Campaign Preparation",
+      "GUID": "bc396ce9-64ea-4f94-958d-1afd11ebbfd5",
+      "eventText": "Als je een nieuwe campagne wilt beginnen in <b>Imperial Commander</b>, moet je een reeks stappen doorlopen.",
+      "eventActions": [
+        {
+          "tbText": "<b>Stap 1: voorraad klaarzetten</b>\nPlaats de dobbelstenen, conditiekaarten en de schade, forceer- en conditietokens binnen handbereik van alle spelers. Leg de referentiekaarten binnen handbereik van alle spelers. Verwijder de kaart \" Troop Data\" van de stapel voorraadkaarten en leg die terug in de doos. Schud vervolgens de stapel met voorraadkaarten en leg ze met de achterkant naar boven binnen handbereik van alle spelers.",
+          "GUID": "ea6b99e5-7bec-464e-a89f-153b9ee03556",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 2: onderdelen klaarzetten</b>\nLeg de inzetkaarten, grijze (of geverfde) figuren, spelbordtegels, deuren en de objectief-, terminal- en krattentokens opzij. Deze onderdelen worden op verschillende momenten gevraagd door de app - ze moeten netjes worden georganiseerd zodat ze tijdens het spel gemakkelijk kunnen worden gepakt.",
+          "GUID": "106ac8f9-d6e9-4c00-a774-a58889ffb585",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 3: helden kiezen</b>\nElke speler kiest een held (minstens twee als je met één speler speelt) en verzamelt de heldenkaart, het figuur en het held klassendeck die bij die held horen. Elke speler plaatst zijn onderdelen in zijn/haar speelveld. Elke speler pakt de itemkaarten van zijn/haar Held klassendeck die geen XP-waarde hebben in de linkerbenedenhoek en legt ze met de speelzijde boven in zijn/haar speelveld.\n\nBij een spel met twee helden pakt elke speler ook een 'Legendary' beloningskaart. Bij een spel met drie helden neemt elke speler een 'Heroic' beloningskaart. Deze beloningskaarten dienen als herinnering aan de bonusgezondheid en activeringen van de helden.",
+          "GUID": "c7d71298-1ad7-44b7-9908-462726038061",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 4: zijmissiedeck samenstellen</b>\nMaak de stapel zijmissies die tijdens deze campagne zal worden gebruikt. De spelers sorteren eerst de zijmissiekaarten op kleur. Daarna maken ze het kaartendeck van de zijmissies door de volgende kaarten te schudden:\n\n{-} 1. Elke rode kaart met zijmissies (persoonlijke missies) die overeenkomt met hun helden\n{-} 2. Vier groene kaarten (bondgenootmissies) naar keuze van de spelers\n{-} 3. Vier willekeurige grijze kaarten (algemene zijmissies)",
+          "GUID": "b696b3d9-3d81-4b11-8ba3-1c707b85c14b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 5: keizerlijk missiedeck samenstellen</b>\nVerzamel alle agendakaarten met zijmissies en geforceerde missies. Schudt ze samen om de stapel keizerlijke missies te vormen. Uit deze stapel worden kaarten getrokken zoals beschreven onder \"Leer hoe een campagne is opgebouwd\".",
+          "GUID": "bd84fe79-bb64-4676-8a20-ec1509ab402e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<b>Stap 6: start introductie missie</b>\nStart een nieuwe campagne in <b>Imperial Commander</b>. Kies de campagne die je wilt spelen en geeft het een naam. Selecteer de helden in het campagneoverzicht en klik/tik op de groene pijl naast de <b>introductie</b> missie. Kies de moeilijkheidsgraad en start de missie.",
+          "GUID": "f5985ce2-44da-4aa4-b254-732c4ec03493",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Sommige campagne worden iets anders opgezet. Je kunt hier meer over vinden (en extra details) in de campagnegids of de campagneinfo (klik/tik het info icoon in het campagneoverzicht) of in de wiki documentatie (klik/tik op de link in het startscherm van <b>Imperial Commander</b>).",
+          "GUID": "452eae82-5e41-4880-b005-f56dfa357a69",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Shuttle Door",
+      "GUID": "5cfe3472-e70b-440f-b51f-1fea9f346f87",
+      "mainText": "",
+      "buttonList": []
+    },
+    {
+      "entityName": "Outpost Door",
+      "GUID": "b605eae3-f346-4f95-8d4e-12dcdf5da3c3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 1",
+      "GUID": "ee5079e8-133b-42d3-9069-5d20d5f56a22",
+      "mainText": "Plaats Jyn Odan hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 1",
+      "GUID": "31447f01-e683-4545-8b9f-e100b7556567",
+      "mainText": "Plaats Gaarkhan hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate 1",
+      "GUID": "51124f79-1daa-4838-b834-335a21fc1fbb",
+      "mainText": "Dit lijkt op een krat die de rebellen hebben achtergelaten, half overwoekerd door het bos.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "c3d24404-d79e-4e3f-9652-ba74f556a818",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "073b779f-6c5e-4c5a-9047-dc564cea7924",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "01ee811b-0df1-4295-b9b1-640d9b58e006",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP E-Web",
+      "GUID": "e1941b66-6a30-4797-8724-c47a8bffb14c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Stormtroopers",
+      "GUID": "92d0964d-f426-43a9-99c7-4af0b3cf01f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Nexu",
+      "GUID": "5eaadc24-0f8c-4cc3-85a7-08a97fb8cd0e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate 2",
+      "GUID": "f9ca216a-2996-4e64-b97c-80fa183d60b0",
+      "mainText": "Een voorraadkrat is achtergelaten toen de rebellen zich terugtrokken in de buitenpost.\n\n<color=\"yellow\">Een held kan een krat openen door er een interactie op uit te voeren.</color>",
+      "buttonList": [
+        {
+          "GUID": "0ad94bf3-98ad-4f7a-8f65-a03e83f5ec4d",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate 3",
+      "GUID": "92540aba-9e36-4171-a34e-8aff48b76fa5",
+      "mainText": "Een voorraadkrat is achtergelaten toen de rebellen zich terugtrokken in de buitenpost.\n\n<color=\"yellow\">Een held kan een krat openen door er een interactie op uit te voeren.</color>",
+      "buttonList": [
+        {
+          "GUID": "a1356366-19fa-4862-9e29-353f2dbf43b8",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Rebel Troopers",
+      "GUID": "bb87c862-c344-45aa-8e71-cae08e883fe9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Rebel 1",
+      "GUID": "322a0bef-3609-4e6b-bba4-b412bbb3d535",
+      "mainText": "Een gewonde soldaat staat geleund in de hoek, hij blijkt bewusteloos te zijn.\n\n<color=\"yellow\">Een held kan een interactie uitvoeren op de soldaat om hem te dragen en het token op te pakken.</color>",
+      "buttonList": [
+        {
+          "GUID": "4e157a9c-3a46-42bb-b639-fb02d8f76c7e",
+          "theText": "{A} Draag de soldaat"
+        }
+      ]
+    },
+    {
+      "entityName": "Rebel 2",
+      "GUID": "9324bf2c-438d-4f27-9a65-3fa8d0342282",
+      "mainText": "De communicatieofficier van de buitenpost is geraakt door een blasterschot. Ze leeft nog, maar kan niet lopen.\n\n<color=\"yellow\">Een held kan een interactie uitvoeren op de communicatieofficier om haar te dragen en het token op te pakken.</color>",
+      "buttonList": [
+        {
+          "GUID": "e2e868ce-d74d-4934-b92c-5fc8ea9705bd",
+          "theText": "{A} Draag de communicatieofficier"
+        }
+      ]
+    },
+    {
+      "entityName": "Shuttle Control",
+      "GUID": "f274679a-1767-490a-b03b-91bae11cc120",
+      "mainText": "De shuttle is volgepakt met het overlevende Alliantiepersoneel. Als iedereen aan boord is, kan de shuttle vertrekken.\n\n<color=\"yellow\">Als alle overlevende helden in de shuttle zijn en beide rebellen missietokens bij zich hebben, kan een held de terminal bedienen om de shuttle te lanceren en de tutorial te beëindigen.</color>",
+      "buttonList": [
+        {
+          "GUID": "1a591cb0-febc-4820-a6a3-b24f6656e74b",
+          "theText": "{A} Lanceer de shuttle (einde van de Tutorial)"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "4bd3111b-8a55-493b-86cc-394132a2fb44",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "777cb206-9c51-44d6-8c79-a498d8c0667a",
+      "mainText": null,
+      "buttonList": []
+    }
+  ],
+  "initialGroups": []
+}

@@ -750,6 +750,46 @@ namespace Saga
 			return translation;
 		}
 
+		public static TranslatedMission GetTutorialMissionTranslation( ProjectItem projectItem, string languageID )
+		{
+			TranslatedMission translation = null;
+			languageID = languageID.ToUpper();
+
+			try
+			{
+				var textAsset = Resources.Load<TextAsset>( $"Languages/{languageID}/Tutorials/{projectItem.fullPathWithFilename}_{languageID}" );
+				if ( textAsset == null )
+				{
+					Utils.LogWarning( $"LoadMissionFromResource()::Tutorial translation not found at: Languages/{languageID}/Tutorials/{projectItem.fullPathWithFilename}_{languageID}" );
+					//try loading the English version as a fallback
+					textAsset = Resources.Load<TextAsset>( $"Languages/EN/Tutorials/{projectItem.fullPathWithFilename}_EN" );
+					if ( textAsset == null )
+					{
+						Utils.LogWarning( $"LoadMissionFromResource()::Loading English fallback translation failed." );
+						return null;
+					}
+					Debug.Log( "LoadMissionFromResource()::Loaded English fallback translation." );
+				}
+
+				string mText = textAsset.text;
+
+				if ( mText != null )
+				{
+					translation = JsonConvert.DeserializeObject<TranslatedMission>( mText );
+					return translation;
+				}
+				else
+				{
+					Debug.Log( $"GetTutorialMissionTranslation()::No [{languageID}] Tutorial translation found at:\nLanguages/{languageID}/Tutorials/{projectItem.fullPathWithFilename}_{languageID}" );
+				}
+			}
+			catch ( Exception e )
+			{
+				Utils.LogWarning( $"GetTutorialMissionTranslation()::Error attempting to find and load a [{languageID}] Tutorial translation for: '{projectItem.missionID}'\n{e.Message}" );
+			}
+			return translation;
+		}
+
 		public static T LoadAssetFromResource<T>( string assetName )
 		{
 			try

@@ -1,0 +1,1559 @@
+{
+  "languageID": "German (DE)",
+  "missionProperties": {
+    "missionName": "Tutorial 2: Feindliche Aktivierungen",
+    "missionDescription": "Nachdem sie in Bacta-Tanks auf dem Rebellenschiff Sundered Heart aufgewacht sind, hat ein Notruf aus einem Rebellenversteck auf Indu Jyn und Gaarkhan auf den Plan gerufen. An der Seite von Prinzessin Leia Organa und einem Einsatzteam machen sich die frischgebackenen Rekruten der Allianz auf den Weg zu dem kleinen Waldplaneten.",
+    "missionInfo": "",
+    "campaignName": "Tutorials",
+    "startingObjective": "",
+    "repositionOverride": null,
+    "additionalMissionInfo": "Dieses Tutorial erklärt euch die Grundlagen feindlicher Aktivierungen in Imperial Assault."
+  },
+  "events": [
+    {
+      "eventName": "Beginning",
+      "GUID": "bb1ea71b-8e62-4a08-85c7-81e650a9aec1",
+      "eventText": "Vom Orbit aus sieht der Waldplanet Indu ruhig, sogar friedlich aus. Prinzessin Leias Gesicht ist jedoch düster.\n\n\"Wir haben zwei Notrufe erhalten\", erklärt sie und deutet auf eine holografische Karte. \"Wir müssen uns also aufteilen. Ich werde ein Einsatzteam zum Außenposten führen. Ihr landet hier, auf dieser Lichtung. Seht euch um, und wenn ihr nichts findet, treffen wir uns am Außenposten.\"\n\nSie deaktiviert die Karte und deutet mit einem Nicken auf ein Shuttle im Hangar. \"Bleibt in Funkkontakt. Und viel Glück.\"",
+      "eventActions": [
+        {
+          "tbText": "Euer Shuttle schießt aus dem Hangar und tritt bald in die Atmosphäre von Indu ein, während Leias Shuttle sich entfernt. Ein paar Minuten später springen die Repulsortriebwerke an und ihr landet auf einer Lichtung inmitten eines ruhigen Waldes. Ihr findet ein paar alte Wrackteile und verfallene Ruinen, aber keine Anzeichen für ein Notsignal oder ein Rebellenteam, das Hilfe braucht.\n\nEine Stunde lang durchkämmt ihr den Wald, findet aber keine Spuren von Rebellen. Schließlich beschließt ihr, zu eurem Shuttle zurückzukehren und die Prinzessin zu kontaktieren.\n\nAls ihr zur Lichtung zurückkehrt, merkt ihr jedoch, dass irgendetwas nicht stimmt.",
+          "GUID": "5b039fe0-f12b-4bc5-8e4e-1405da47ee71",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Willkommen zum zweiten Tutorial für <b>Imperial Commander</b>. Im ersten Tutorial habt ihr die Grundlagen für die Aktivierung von Helden kennengelernt. In diesem Tutorial geht es um etwas anderes: Wie man sich Feinden stellt.\n\nFolge einfach dem Tutorial Schritt für Schritt, um herauszufinden, wie das funktioniert.\n\nPlatziere zunächst Gaarkhans und Jyns Heldenbögen in den Spielbereichen ihrer jeweiligen Spieler, ebenso wie ihre Startgegenstände (die Karten aus ihrem Helden-Klassendeck ohne EP-Kosten).</color>",
+          "GUID": "734a014b-b739-4171-99af-a2c084e3c986",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "20dadd46-b118-4945-9dcd-4e07f4b05996",
+              "theText": "Stelle <b>Gaarkhan</b> hier auf.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "712adcd6-3bbb-4ad1-8c04-dca9f0100bdc",
+              "theText": "Stelle <b>Jyn</b> hier auf.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "21d0165e-2299-4292-9d1d-cd963760b7e4",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Die Lichtung mit den Trümmern sieht anders aus. Ihr könnt es nicht beschreiben, aber es fühlt sich so an, als ob jemand vor kurzem hier gewesen sei - jemand anderes als ihr.\n\n<color=\"yellow\">Platziere Gaarkhans Miniatur auf dem blau hervorgehobenen Feld und Jyns Miniatur auf dem grün hervorgehobenen Feld.</color>",
+          "GUID": "c4643c28-c4b4-462b-a973-8e5c1a32aff8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Die Zeit an der frischen Luft war erholsam, und ihr spürt, wie ein Teil eurer alten Kraft zurückkehrt.\n\n<color=\"yellow\" >Durchsucht Gaarkhans Helden-Klassenkarten nach der Karte <i>Loyalität der Wookiees</i> und platziert sie in Gaarkhans Spielbereich.\n\nDurchsucht Jyn Odans Helden-Klassenkarten nach der Karte <i>Schmugglerglück</i> und platziert sie in Jyns Spielbereich.</color>",
+          "GUID": "6ad5def8-f5d9-48ae-bf8a-63baf1fefc84",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"> Normalerweise erhaltet ihr Karten aus eurem Helden-Klassendeck, indem ihr EP zwischen den Einsätzen aufwendet, aber für dieses Tutorial bekommt ihr sie kostenlos.\n\nHelden-Klassenkarten verleihen den Helden neue, einzigartige Fähigkeiten, die sie einsetzen können.</color>",
+          "GUID": "4c6ca196-1215-4238-a900-5b33ec306c3b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Gaarkhans <i>Loyalität der Wookies</i> verleiht ihm die Fähigkeit, sich selbst oder seine Verbündeten zu schützen. Wenn er oder eine benachbarte befreundete Figur angegriffen wird, kann er 1 {G}-Symbol zu den Verteidigungsergebnissen hinzufügen und damit 1 {H} (Schaden) negieren.</color>",
+          "GUID": "b9a051f2-6547-457c-aca6-64b95250a1b5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Jyns <i>Schmugglerglück</i> verfügt sogar über mehrere Fähigkeiten. Für dieses Tutorial ist nur die erste Fähigkeit auf der Karte relevant, also ignoriere die anderen vorerst. Die erste Fähigkeit erlaubt es ihr, eine beliebige Anzahl von Würfeln zu wiederholen, wenn sie eine Probe auf {I} ab ablegt. Wenn Jyn zum Beispiel eine Probe auf {I} ablegt, aber keine {B}-Symbole (Erfolge) erzielt, kann sie eine beliebige Anzahl von Würfeln aus dieser Probe neu würfeln.</color>",
+          "GUID": "cc31be12-5df3-461f-ade7-133f7bbfd69c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Viele Fähigkeiten haben <i>Kosten</i>, die bezahlt werden müssen. In diesem Fall muss die Karte <i>erschöpft</i> werden. Wenn eine Karte erschöpft wird, drehe sie um 90 Grad im Uhrzeigersinn, um anzuzeigen, dass sie benutzt wurde. Solange die Karte erschöpft ist, dürfen alle Fähigkeiten, für die sie erschöpft werden muss, nicht mehr genutzt werden. Feindliche Gruppen werden ebenfalls erschöpft, indem man sie um 90 Grad im Uhrzeigersinn dreht, nachdem sie aktiviert wurden.\n\nHeldenkarten werden zu Beginn der Aktivierung des jeweiligen Helden wieder spielbereit gemacht. Zu Beginn der Aktivierung eines Helden drehe alle Karten dieses Helden wieder in die aufrechte Stellung\n\nFeindliche Gruppen, Verbündete und Helden-Aktivierungsmarker werden zu Beginn jeder Runde spielbereit gemacht.</color>",
+          "GUID": "046d0d27-3a36-42a1-b1a2-6815a02982d5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Ihr nähert euch langsam der Lichtung, als ihr eine Stimme hört, die durch die Maske eines Sturmtruppenhelms gefiltert wird: \"Halt, Rebellen! Ergebt euch und euch wird nichts geschehen!\" Hinter den Trümmern tauchen Sturmtruppen auf, Waffen im Anschlag.\n\n<color=\"yellow\">Klickt auf <b>Fortfahren</b> und platziert dann 3 Sturmtruppen-Miniaturen auf dem Spielplan wie von der App angezeigt.</color>",
+          "GUID": "c6c8cd7c-3a95-49aa-a119-a2a60425e19a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "12df1c95-0054-414c-9bd5-dfef26add967",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "tbText": "<color=\"yellow\">Die aufgestellten feindlichen Gruppen werden rechts gegenüber den Helden und ihren Verbündeten angezeigt. Gruppen, die <i>spielbereit</i> sind (also in dieser Runde noch nicht gehandelt haben), haben normale Porträts. <i>Erschöpfte</i> Gruppen sind abgedunkelt.</color>",
+          "GUID": "5cfb3b6e-021a-4656-9b3e-cba904848f78",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Die Kreise unter jedem Porträt zeigen an, wie viele Figuren zu einer Gruppe gehören. Wenn eine Figur besiegt wurde, klickt / tippt auf einen der Kreise, um ihn rot zu färben und der App mitzuteilen, dass sie besiegt wurde. Wenn dies aus Versehen geschehen ist oder aus irgendeinem Grund eine weitere Figur hinzugefügt werden muss, klickt / tippt einfach auf den roten Kreis, um ihn wieder grün zu färben.\n\nSobald die letzte Figur einer Gruppe besiegt wurde, könnt ihr die gesamte Gruppe besiegen.</color>",
+          "GUID": "f5c00b1d-a520-4f0b-9e79-dee131b8c7ed",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Einer der Truppler drückt einen Knopf an seinem Arm, woraufhin Energiefelder aufblitzen und den Weg versperren.",
+          "GUID": "c11401d7-8b93-4d9a-bee9-085fb45f6567",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Energy Field 1",
+              "GUID": "7cc56ed3-332c-4752-afde-c0be3cdfe071",
+              "theText": "Ein blaues Energiefeld versperrt den Weg zu den zerfallenen Ruinen und eurem Shuttle.\n\n<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.</color>",
+              "buttonList": []
+            },
+            {
+              "entityName": "Energy Field 2",
+              "GUID": "06e3835b-6223-4c50-aaa0-665bf159f81f",
+              "theText": "Ein blaues Energiefeld versperrt den Weg zu den zerfallenen Ruinen und eurem Shuttle.\n\n<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.</color>",
+              "buttonList": []
+            }
+          ],
+          "GUID": "8b27ce5e-8599-4429-bfbc-0daebb6853f0",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.</color>",
+          "GUID": "eb25b7df-f739-4113-9946-ab778312301e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Hinter dem Energiefeld könnt ihr immer noch die alten Ruinen und euer Shuttle sehen.",
+          "GUID": "7cb6ac55-7e33-4275-b692-ac1735e9c828",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Ihr hechtet in Deckung, als die Sturmtruppen, ohne eine Antwort abzuwarten, das Feuer eröffnen.\n\n<color=\"yellow\">Normalerweise handeln die Rebellen in jeder Runde zuerst. Für das Tutorial aktivieren wir aber zuerst die Sturmtruppen.\n\nUm die nächste imperiale Aktivierung zu starten, klickt / tippt auf das pulsierende rote Symbol unten links. Die App wählt dann zufällig eine imperiale Gruppe aus und aktiviert sie. Sobald die Aktivierung abgeschlossen ist, sind wieder die Rebellen an der Reihe.\n\nStartet jetzt die nächste imperiale Aktivierung.</color>",
+          "GUID": "20bb71bb-c93c-4ecf-b637-00aac06f6c3a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "0625d8ee-8881-43e6-97a6-789ff2ba83d5",
+              "theText": "Stelle <b>Gaarkhan</b> hier auf.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "a4fb9fce-f6d5-4e51-98c5-57b55a32ff16",
+              "theText": "Stelle <b>Jyn</b> hier auf.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "b9663e69-6e2b-44ff-8496-fb13fdf80194",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Startet die nächste imperiale Aktivierung.",
+          "longText": null,
+          "GUID": "cf19f058-717d-438d-8f67-f682afee8b98",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.</color>",
+          "GUID": "2fbc5932-bfb3-4dd1-bb30-8777e40d0f1d",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Stormtrooper Activation",
+      "GUID": "180a6db6-ce90-45d7-826d-ad0df25adbf6",
+      "eventText": "<color=\"yellow\">Wenn eine gegnerische Gruppe aktiviert wird, wird das Aktivierungsfenster angezeigt. Das Fenster besteht aus drei Teilen:\n\n{-} Im <b>oberen</b> Teil des Fensters wird ein zufälliger <i>Bonuseffekt</i> angezeigt. Wir ignorieren den Bonuseffekt erst einmal.\n{-} Die <b>rechte Seite</b> des Fensters zeigt die <i>Aufstellungskarte</i> der Gruppe.\n{-} Der <b>Hauptteil</b> des Aktivierungsfensters zeigt die <i>Anweisungen</i> der Gruppe an.</color>",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">Die Aufstellungskarte der Gruppe, die in der App gezeigt wird, unterscheidet sich von der Aufstellungskarte, die dem Spiel beiliegt. Wenn ihr sie vergleicht, könnt ihr sehen, dass die Sturmtruppen in der App keine Fähigkeiten haben, während die beiliegende Karte der Sturmtruppen die Fähigkeit <b>Truppenausbildung</b> zeigt.\n\nDas liegt daran, dass einige Kartenfähigkeiten in der App nicht verwendet werden. Unter <color=\"red\">Ignorierte Fähigkeiten</color> sagt dir die App ausdrücklich, welche Kartenfähigkeiten ihr ignorieren könnt. Um es einfacher zu machen, zeigen die Aufstellungskarten in der App nur Fähigkeiten, die nicht ignoriert werden.\n\nIgnorierte Fähigkeiten sind jedoch manchmal in den Bonuseffekten oder Anweisungen enthalten. So solltet ihr die Kartenfähigkeit <b>Truppenausbildung</b> ignorieren, aber die Sturmtruppen erhalten vielleicht einen Bonuseffekt, der ebenfalls <b>Truppenausbildung</b> heißt. Ignoriert natürlich nur die Kartenfähigkeiten.\n\nWenn ihr wollt, könnt ihr <b>Imperial Commander</b> auch ohne gedruckte Aufstellungskarten spielen und nur die von der App bereitgestellten verwenden.</color>",
+          "GUID": "767657a3-0f5d-4dce-9888-ccabf956abd7",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Die Aufstellungskarte zeigt außerdem die <i>Energie-Fähigkeiten</i> der Gruppe an. Energie-Fähigkeiten für Feinde funktionieren genauso wie Energie-Fähigkeiten für Helden oder Verbündete. Anstatt jedoch zu wählen, welche Energie-Fähigkeit verwendet werden soll, befolgt ihr einfach die auf der Aufstellungskarte angegebene Reihenfolge, bis alle Energien aufgebraucht sind.\n\nDas wird später noch genauer erklärt.</color>",
+          "GUID": "d3e9d577-0ca2-4a1b-824b-b2e78ffc057b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Nachdem ihr diese Tutorial-Fenster geschlossen habt, zeigt die App die Anweisungen der Sturmtruppen an. Keine Sorge, ihr müsst sie noch nicht ganz verstehen. \n\nDie App zeigt euch jetzt einen Hilfe-Marker an. Ihr müsst diesen Marker nicht auf dem Spielplan platzieren, er dient nur zu Lernzwecken.</color>",
+          "GUID": "2cf15328-cb93-4072-8c1d-a65c654b00fa",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Explanation Token",
+              "GUID": "47024665-224d-4cf8-ac6e-b76f213bcf12",
+              "theText": "<color=\"yellow\">Dies ist der Marker für die Erklärung der Anweisungen. Wenn ihr das Anweisungsfenster der Sturmtruppen geschlossen habt, wählt <b>Anweisungen erläutern</b>, um die Erklärung zu starten.</color>",
+              "buttonList": [
+                {
+                  "GUID": "96836bbf-2d0d-4ef4-8211-efe5d5decef7",
+                  "theText": "Anweisungen erläutern"
+                }
+              ]
+            }
+          ],
+          "GUID": "0d225ef9-7335-47d4-a888-04fa27e899f9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Dies ist der Marker für die Erklärung der Anweisungen. Wenn ihr das Anweisungsfenster der Sturmtruppen geschlossen habt, wählt <b>Anweisungen erläutern</b>, um die Erklärung zu starten.\r\n\r\nJetzt öffnen wir das Anleitungsfenster. Nachdem ihr es geschlossen habt, ruft ihr die Erklärung über den Marker auf.</color>",
+          "GUID": "6111ceba-e8a0-4e12-bbdf-fd0e9177a836",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Startet die Erklärung mit Hilfe des Erklärungsmarkers.",
+          "longText": null,
+          "GUID": "278ecf02-9940-49b1-b5c3-fbda3960e7e1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Explanation ST1",
+      "GUID": "5609b65c-90f2-4381-bc4f-d1544b167de2",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red 1",
+              "GUID": "6cbc2aa3-970b-4a38-b4a0-1567e557052c",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Purple",
+              "GUID": "ca39d650-49b1-44c2-b575-67a31ca5e237",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow",
+              "GUID": "f1d6a77f-b8c2-439d-b28f-e583f27e641e",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 1",
+              "GUID": "e0ce896d-395f-493d-a037-17c96afa8a1d",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 2",
+              "GUID": "220cda88-bab4-464b-b996-8dfd70ebafe9",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 1",
+              "GUID": "dace6a91-0723-46d9-9a31-efaa2cefc611",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 2",
+              "GUID": "1ac9e0a0-9374-4912-8a79-bfd39726f54b",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 3",
+              "GUID": "b009bf3d-36c4-485c-bffb-18f4529bfbc8",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "226e47c4-fadf-46f7-ba42-bf30805c3ce6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Yellow Attack 1",
+              "GUID": "83ee8784-bb5c-4b85-af4f-81e997da1a87",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow Retreat",
+              "GUID": "fc57f00e-b979-4874-a623-12187d6965e3",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Purple Retreat 1",
+              "GUID": "b140d9ac-7a45-437c-ad9a-2dc2844db337",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "50c8e5c4-40b4-49cd-862e-d731a74a3818",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\n\n<color=\"yellow\" >Sehen wir uns nun an, wie Anweisungen funktionieren. Für diese Erklärung werden die Anweisungen, die in der ersten Aktivierung gezeigt wurden, dauerhaft oben angezeigt. Ihr habt jedoch jederzeit die Möglichkeit, auf das {J}-Symbol zu klicken und dann mit der rechten Maustaste auf das Porträt der Sturmtruppen zu klicken bzw. doppelt zu tippen, um ihr letztes Anweisungsfenster erneut aufzurufen. Benutzt das, wenn ihr euch das Anweisungsfenster noch einmal ansehen wollt.\n\nWenn eine Gruppe aktiviert wird, folgen alle Figuren der Gruppe nacheinander der gesamten Anweisungsliste von oben nach unten. Wenn eine Figur alle Anweisungen durchgeführt hat, wird die nächste Figur aktiviert. Wenn alle Figuren aktiviert wurden, endet die Aktivierung der Gruppe.</color>",
+          "GUID": "e24dd427-16ee-4916-9ade-0ac310de7cdb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Figuren können jedoch nicht ALLE Anweisungen befolgen. Anweisungen, denen ein {A}- oder {Q}-Symbol vorangestellt ist, erfordern eine <b>Aktion</b>. Wie Helden und Verbündete haben auch Feinde nur 2 Aktionen pro Aktivierung. Sie können also maximal 2 Anweisungen durchführen, denen ein {A}- oder {Q}-Symbol vorangestellt ist.\n\nAnweisungen, denen kein {A}- oder {Q}-Symbol vorangestellt ist, kosten keine Aktion.</color>",
+          "GUID": "db234dbc-3cb0-4bcb-99d4-0c045ac888d5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Das {Q}-Symbol zeigt an, dass eine Anweisung eine <i>Angriffsaktion</i> erfordert. Denkt daran, dass Helden zwei Aktionen für Angriffe aufwenden dürfen, Verbündete und Feinde aber nicht.\n\nDeshalb kann ein Feind pro Aktivierung nur 1 Anweisung befolgen, der ein {Q}-Symbol vorangestellt ist.</color>",
+          "GUID": "ad2d84bf-a7d0-46af-b340-880a550e987e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Wenn Figuren Anweisungen befolgen, folgen sie der Anweisungsliste von oben nach unten. Sie befolgen die Anweisungen, bis sie 2 Aktionen aufgewendet haben oder die unterste Zeile erreichen, dann endet die Aktivierung.\n\nFiguren überspringen alle Anweisungen, die nicht befolgt werden können oder die den Spielzustand nicht verändern würden. Das wird später noch genauer erklärt.</color>",
+          "GUID": "82dafe1e-c60d-405a-a557-772d3fa3a504",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red 1",
+              "GUID": "ade4f6f4-d8a4-4241-ae0c-02ce47d77469",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "83fa208a-af29-439a-ae39-0ff2d98bca75",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Normalerweise werden die Figuren in einer Gruppe in einer von den Spielern gewählten Reihenfolge aktiviert. Zu Demonstrationszwecken wird in diesem Tutorial jedoch der Sturmtruppler, die auf dem <color=\"red\">rot</color> hervorgehobenen Feld aufgestellt ist, zuerst aktiviert.\n\nVergesst nicht, dass ihr jederzeit auf das {J}-Symbol klicken könnt, ohne ein Textfenster zu schließen, um den Spielplan zu sehen.</color>",
+          "GUID": "163db8a4-0075-4b70-a380-38b2321656c0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Die erste Zeile der Anweisungsliste lautet:</color>\n\n{Q} Bewegung 4, um Gaarkhan anzugreifen.\n\n<color=\"yellow\">Das bedeutet, dass der Sturmtruppler 4 Bewegungspunkte erhält und sie aufwendet, um sich so nah wie möglich an Gaarkhan heranzubewegen. Er hält an, wenn er 4 Bewegungspunkte aufgewandt hat, oder wenn er benachbart zu Gaarkhan ist. Alle verbleibenden Bewegungspunkte gehen verloren.\n\nWenn ein Feind angewiesen wird, ein Ziel anzugreifen, das er nicht erreichen oder angreifen kann, zielt er stattdessen auf die nächstgelegene Rebellenfigur, die er angreifen kann.</color>",
+          "GUID": "322d59b6-990f-4627-9a63-9265025c4328",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Attack 1",
+              "GUID": "e768bec1-5909-4436-8b6b-107bceced08a",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red 1",
+              "GUID": "71866447-1116-4da9-9caf-44ef3a42bb14",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 2",
+              "GUID": "2dd1da7e-6ac1-403c-8350-9db2d9c1e683",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 3",
+              "GUID": "4f8b404a-f27b-4b1f-af33-37441f79ba52",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "2a795645-299d-49e3-926f-a588e985be82",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Die App hat weitere rote Felder hervorgehoben. Diese Felder können alle mit 4 Bewegungspunkten von dem Sturmtruppler erreicht werden und sind gleich weit von Gaarkhan entfernt. Sie sind also alle gleichermaßen gültig. \n\nFür dieses Tutorial bewegt sich die Sturmtruppe auf das mittlere (etwas deutlicher hervorgehobene) Feld.</color>",
+          "GUID": "fc2f112a-d4cb-49fa-ae0c-b454ca12e912",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Attack 1",
+              "GUID": "7e502028-7886-43ee-a909-37a61d16760e",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "61cdb80e-141d-4475-8cb2-adce0ca76298",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\" >Jetzt ist der Sturmtruppler in Position und hat Sichtlinie zu Gaarkhan. Also greift er den Wookiee an. Die Angriffswürfel stehen auf der Aufstellungskarte des Sturmtrupplers (1 blau, 1 grün). Wirf 1 blauen und 1 grünen Würfel. Vergesst nicht, auch den schwarzen Verteidigungswürfel von Gaarkhan zu werfen.\n\nPrüft zuerst die Zielsicherheit. Gaarkhan ist 2 Felder entfernt, also kontrolliert, ob die Zahlen auf den Angriffswürfeln mindestens 2 ergeben. Wenn ja, trifft der Angriff.</color>",
+          "GUID": "835e0a24-d1fb-4e6a-a4d2-4b90e6fff6ae",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Als Nächstes wird geprüft, ob irgendwelche Energien ({B}) gewürfelt wurden. Genau wie ein Held kann der Sturmtruppler {B}-Symbole verwenden, um Energie-Fähigkeiten zu aktivieren. Wählt das {J}-Symbol aus und klickt dann mit der rechten Maustaste auf die Miniaturansicht des Sturmtrupplers, um seine Aufstellungskarte zu öffnen. Dort findet ihr die Energie-Priorität:\n\n1. {B}: +2 Zielsicherheit\n2. {B}: +1 {H}\n\nWenn Energien erzielt wurden, folgt der Liste beginnend bei 1, bis alle Energien aufgebraucht sind. Überspringt jede Zeile, die keinen Effekt hat. Wenn der Sturmtruppler zum Beispiel schon genug Zielsicherheit hat, wendet er keine {B} auf, um die Zielsicherheit um 2 zu erhöhen.\n\nWie üblich werden {B}-Symbole durch {F}-Symbole aufgehoben, falls Gaarkhan ein {F} gewürfelt hat.</color>",
+          "GUID": "e9546928-5bda-4a30-a28c-f205988688e8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Zählt alle {H}-Symbole auf den Angriffswürfeln (und die, die durch Energien hinzugefügt wurden) und zieht alle {G}-Symbole ab, die auf dem Verteidigungswürfel gewürfelt wurden.\n\nVergesst auch nicht, dass Gaarkhan die Klassenkarte <i>Loyalität der Wookies</i> besitzt. Wenn er will, kann er sie einsetzen, um einen zusätzlichen {G} zu seinem Verteidigungswurf hinzuzufügen. Da die Karte \"während der Verteidigung\" benutzt werden kann, kann er die Würfelergebnisse abwarten, bevor er sich entscheidet. Wenn er sich entscheidet, die Karte einzusetzen, erschöpft er sie (indem er sie um 90 Grad im Uhrzeigersinn dreht) und fügt 1 {G}-Symbol zu den Ergebnissen hinzu.\n\nDie verbleibenden {H} sind die Höhe des Schadens, den Gaarkhan erleidet. Platziere für jedes nicht annullierte {H} einen {H}-Marker auf seinem Heldenbogen.</color>",
+          "GUID": "d72494e3-07e3-4dff-8f9c-42633883f065",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Damit ist die erste Anweisungszeile erledigt. Der Sturmtruppler hat noch eine Aktion übrig, also fährt er mit der nächsten Zeile fort:</color>\n\n{A} Bewegung 2, um in Position 4 zu gelangen.\n\n<color=\"yellow\">Das bedeutet, dass der Sturmtruppler 2 Bewegungspunkte erhält und versucht, sich auf eine Position zu bewegen, die genau 4 Felder von allen Helden entfernt ist.\n\nWenn er diese Anweisung nicht perfekt erfüllen kann, zum Beispiel weil er sich nicht weit genug von allen Helden wegbewegen kann, versucht er, sie so gut wie möglich zu erfüllen. Das heißt, er bewegt sich auf eine Position, die so nah wie möglich daran ist, 4 Felder von allen Helden entfernt zu sein.</color>",
+          "GUID": "50c8bc75-a25c-4a26-bbf9-5fe4d545d87c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Attack 1",
+              "GUID": "83d8d040-cdf7-4831-a7bc-2bc0be349e8e",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 2",
+              "GUID": "fa3ff6fe-0850-42b5-b008-ddf649beecb7",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 3",
+              "GUID": "b749204c-4197-4a7b-b8a4-495f7918dcd3",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 1",
+              "GUID": "ab9bdcb7-3a79-40f4-88f8-d65c8a3c5443",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "b78b4e38-67ff-4652-a5ab-701a4369ac6e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Die rot hervorgehobenen Felder sind alle mit 2 Bewegungspunkten für den Sturmtruppler erreichbar und außerdem 4 Felder von den beiden Helden entfernt. Alle drei Felder sind gleichwertig.\n\nUm zu entscheiden, auf welches der Felder sich der Sturmtruppler bewegt, könnt ihr die <b>Imperiale Regel</b> anwenden.</color>",
+          "GUID": "b51d412e-b21f-4e2c-85b9-534e9db2406b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Manchmal kann es bei Einsätzen oder Aktivierungen zu einer Situation kommen, in der aus der App keine klare Aussage für das Imperium abgeleitet werden kann.\n\nWenn das der Fall ist, benutzt die <b>Imperiale Regel</b>:\n\n<b><i>Wähle die Option, die für die Rebellenspieler am schlechtesten ist.</i></b></color>",
+          "GUID": "fcae05c9-d845-4872-bd0d-457bc905e7d4",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Retreat 2",
+              "GUID": "62c2416c-ec42-4868-a9e6-faf1deac4352",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 3",
+              "GUID": "a36dc05c-e824-4dee-87b6-2c1c62e68db2",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "adffe233-7199-4600-a364-3d7d8fe3e70c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">In diesem Fall sind alle drei Felder gleichwertig. Das oberste Feld - in der App farblich hervorgehoben - befindet sich jedoch außerhalb von Jyns Sichtlinie. Da sie eine {O}-Waffe hat, könnte sie den Sturmtruppler auf den beiden anderen Feldern angreifen.\n\nWenn der Sturmtruppler sich aber auf das oberste Feld bewegt, muss sie sich erst bewegen, bevor sie ihn angreifen kann. Diese Option ist also schlechter für die Spieler.\n\nBewegt den Sturmtruppler dorthin.\n\nEs liegt an euch, ob ihr die imperiale Regel anwenden wollt oder nicht. Ihr könnt auch einfach ein zufälliges Feld wählen, wenn euch das lieber ist.</color>",
+          "GUID": "9c12309d-7254-4283-a37d-0894625f9356",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Retreat 1",
+              "GUID": "6df1fdd2-c003-4eaa-a751-d49a2cb83891",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "01063d06-1caf-4925-92f4-922ef9978c65",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Der Sturmtruppler hat jetzt 2 Aktionen aufgewendet, also endet seine Aktivierung. Er kann die letzte Zeile nicht befolgen, weil er keine Aktionen mehr hat. Machen wir also weiter mit der Bewegung des Sturmtrupplers, der auf dem gelben Feld aufgestellt wurde.</color>",
+          "GUID": "86896308-7071-42ca-9db0-5c5752822fd7",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Explanation ST2",
+      "GUID": "7f4bc3b1-5310-41a1-b283-3394e3283153",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Retreat 2",
+              "GUID": "22efe580-d98a-4d26-876b-69b862922d98",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 3",
+              "GUID": "8f8e47fd-e701-4257-ac60-8059025522e7",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow",
+              "GUID": "3a8d89f2-f719-4024-ac95-57f1ffa44078",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "8a2ac790-69d0-4497-923a-d78f396c8f76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Alle Figuren, die zur gleichen Gruppe gehören, folgen den gleichen Anweisungen. Also bewegt sich auch dieser Sturmtruppler, um Gaarkhan anzugreifen.\n\nEr erhält 4 Bewegungspunkte und bewegt sich auf den Wookiee zu.</color>",
+          "GUID": "45a2f48e-159d-487c-b7bb-6cca8ce4f677",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Yellow",
+              "GUID": "c1c33c2c-7b8f-4cde-8888-a7b00e5cb7e4",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow Attack 1",
+              "GUID": "7265f3e8-1240-473b-9546-7590ccebec83",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "4c1270f5-8a34-484d-98ae-89233aa2a228",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Der Weg des zweiten Sturmtrupplers zu Gaarkhan ist allerdings kürzer, also bleibt er stehen, wenn er das Feld erreicht, das die App gerade gelb hervorgehoben hat. Er ist jetzt benachbart zu Gaarkhan und kann sich nicht mehr näher bewegen. Der verbleibende Bewegungspunkt geht verloren.\n\nJetzt greift er Gaarkhan an, indem er seine Angriffswürfel gegen Gaarkhans Verteidigungswürfel würfelt. Wenn Gaarkhan beim letzten Angriff die <i>Loyalität der Wookies</i> benutzt hat, kann er dies nicht noch einmal tun, da die Karte bereits erschöpft ist.\n\nZähle alle {H}- und {B}-Symbole, ziehe dann alle {G}- und {F}-Symbole ab und gib Energien aus, wenn möglich. Wenn Gaarkhan {H} erleidet, platziere weitere {H}-Marker auf seinem Heldenbogen.</color>",
+          "GUID": "032094b7-2b37-4994-b4f3-faca2b0ff8d5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Yellow Attack 1",
+              "GUID": "8f9aee92-f881-46f6-946a-2744171216aa",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow Retreat",
+              "GUID": "39ba1efe-0ef4-48e5-8d22-0d260fcaa973",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "9d29e0b8-943c-4dd4-a71d-260ff601ab4a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Nachdem der Angriff durchgeführt wurde, bewegt sich der Sturmtruppler 2, um in Position 4 zu gelangen. Es gibt jedoch kein Feld, das er mit 2 Bewegungspunkten erreichen kann, um diese Anweisung perfekt zu erfüllen.\n\nAlso bewegt er sich auf eines der gelb hervorgehobenen Felder. Sie sind mit 2 Bewegungspunkten erreichbar und 3 Felder von den beiden Helden entfernt, besser kann er es nicht machen.\n\nBewege den Sturmtruppler auf eines der hervorgehobenen Felder.</color>",
+          "GUID": "a9e3d60a-c5e5-4e57-beef-ee252d3f1232",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Yellow Retreat",
+              "GUID": "4e95be6c-d718-4d3f-92ce-f028583f9a17",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Purple",
+              "GUID": "164067e8-6b10-408c-883d-9f8439e0683f",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "29a97f72-6101-4567-a8fa-ddddae3422f9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Damit ist die Aktivierung des zweiten Sturmtrupplers abgeschlossen. Kommen wir nun zum dritten Sturmtruppler, der auf dem violett hervorgehobenen Feld aufgestellt wurde.</color>",
+          "GUID": "cdbb87cf-0433-4acd-8a63-34b9b5289f91",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.\r\n\r\n<color=\"yellow\">Inzwischen solltet ihr genug wissen, um diese Aktivierung selbst durchführen zu können.\n\nKlickt auf das {J}-Symbol, um den Spielplan wieder anzuzeigen, und befolgt dann die Anweisungen des Sturmtrupplers. Wenn ihr fertig seid, klickt auf <b>Fortfahren</b>.</color>",
+          "GUID": "40685aca-fc03-4eec-b20c-586794415156",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Purple",
+              "GUID": "88817a44-8749-477d-ad77-a19e6006c02c",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Purple Retreat 1",
+              "GUID": "15eca75a-d114-4b0b-9419-9d87be15e109",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "00d97967-78f2-433c-8c34-91774a5fe399",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Ist der Sturmtruppler auf einem der violett hervorgehobenen Felder gelandet?\n\nWenn ja, gut gemacht, vor allem wenn ihr ihn zwischen das versperrte Gelände bewegt habt, da er dort außerhalb der Sichtlinie liegen würde.\n\nWenn nicht, macht euch nicht zu viele Gedanken darüber. Kleine Fehler sollten den Spaß nicht schmälern.</color>",
+          "GUID": "a66c1e05-e4dc-455e-a977-aa21c40fcf33",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\" >Jetzt ist es Zeit für eine Revanche. Die Aktivierung der Sturmtruppen ist beendet, also sind jetzt die Helden dran. Aber reden wir zuerst über Helden, die Schaden erleiden.\n\nWie Feinde und Verbündete können auch Helden besiegt werden. Wenn ein Held zum ersten Mal {H} in Höhe seiner Gesundheit erleidet, lege alle {H} ab und drehe den Heldenbogen auf die verwundete Seite. Ein verwundeter Held verliert einige Fähigkeiten und hat schlechtere Geschwindigkeit und Ausdauer sowie schlechtere Attribute, kann aber weiterhin Aktionen durchführen.</color>",
+          "GUID": "96a22966-5894-474d-9745-1deff4c3915e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Wenn ein Held ein zweites Mal besiegt wird - das heißt, wenn ein verwundeter Held wieder {H} in Höhe seiner Gesundheit erleidet - , ist der Held <i>Zurückgezogen</i>. Das bedeutet, dass er den Rückzug antreten muss. Er wird vom Spielplan entfernt und kann während dieses Einsatzes nicht mehr agieren.\n\nWenn ein Held verwundet oder zurückgezogen ist, wähle das Porträt des Helden in der App aus und markiere den Helden als verwundet oder zurückgezogen.\n\nDa es nur 2 Helden gibt, wird die Gesundheit beider Helden um 10 erhöht.</color>",
+          "GUID": "4bed1586-24de-49eb-8b51-1cc34a20dc92",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Jetzt rächt euch an den Sturmtruppen. Führt Aktivierungen durch, bis die Sturmtruppen besiegt sind. Denke daran, die Runde zu beenden, wenn die Helden jeweils zwei Aktivierungen befolgt haben. In der nächsten Runde können die Sturmtruppen wieder handeln, aber die Helden handeln wie üblich zuerst.\n\nIgnoriert die Bonuseffekte der Sturmtruppen vorerst weiter. Wenn ihr das Gefühl habt, nicht mehr weiter zu wissen, könnt ihr die Erklärung der Anweisungen durch den Erklärungsmarker erneut starten.</color>",
+          "GUID": "35cad79a-7a93-44d4-9e78-4b4bc2cbbe08",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "newInstructions": "{Q} Bewegung 4, um {rebel} anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.",
+          "GUID": "ba73941b-f7cb-46ba-94c5-cfba29b8a7ea",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Purple Retreat 1",
+              "GUID": "7ca70d6c-c52b-45e3-9e4c-1e486a189e73",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "c8ae3ff8-cf86-4cca-828f-7ecb445af2e6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Ignore the Stormtroopers' bonus effects.\r\n{-} At any time, you can re-start the instruction explanation with the explanation token.",
+          "GUID": "facfa090-7a78-490c-b4ea-dc19f907813a",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Besiegt die Sturmtruppen.",
+          "longText": null,
+          "GUID": "8a30618a-abe3-435f-9e12-5510dbb2683c",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Troopers Defeated",
+      "GUID": "9aca1385-4393-48c7-b57a-919730a26e70",
+      "eventText": "Nachdem der letzte Sturmtruppler unter euren Angriffen gefallen ist, erlaubt ihr euch eine kurze Atempause. Die imperialen Truppen hatten sich bei eurer Ankunft versteckt und versucht, euch an der Rückkehr zu eurem Shuttle zu hindern. Es war ein Hinterhalt. Und das könnte bedeuten, dass auch das andere Einsatzteam in einen Hinterhalt läuft.",
+      "eventActions": [
+        {
+          "tbText": "Genau in diesem Moment erwacht euer Comlink zum Leben. \"Leute!\", knistert Leias Stimme über das Gerät, ungeachtet jedes Funkprotokolls. \"Seid vorsichtig! Das ist ein Hinterhalt, in den Wäldern wimmelt es von Imps! Wir sind im Außenposten, wir stehen unter Dauerbeschuss! Zurück zur <i>Sundered Heart</i>, solange ihr noch könnt!\"\n\nIhr tauscht einen kurzen Blick aus. Wenn Leias Einsatzteam angegriffen wird, seid ihr ihre einzige Hoffnung.",
+          "GUID": "0ae9fefe-e9cd-4b0d-99bb-1980f14fc75d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Wenn ihr dem anderen Team zu Hilfe kommen wollt, müsst ihr zurück zu eurem Shuttle. Aber das Energiefeld versperrt euch immer noch den Weg.\n\nIhr wisst bereits, wie man mit Markern und Attributsproben umgeht. Manchmal habt ihr mehrere Möglichkeiten, eine Situation zu meistern. In diesem Fall könnt ihr entweder die Energiefelder zerstören oder versuchen, sie zu überladen.</color>",
+          "GUID": "449fd301-1e63-4337-ada4-ef3fdabdb1ef",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Um die Energiefelder zu zerstören, greift ihr sie einfach an, als wären sie eine feindliche Figur. Die Energiefelder haben 8 Gesundheit und 1 weißen Würfel als Verteidigung. Beide Marker zählen als ein einziges Ziel.\n\nEs könnte aber schneller gehen, sie einfach auszuschalten. Jyn ist nicht sehr stark, aber sie hat eine Begabung für Technik. Und denkt daran, dass Jyn die Karte <i>Schmugglerglück</i> erschöpfen kann, um Würfel neu zu würfeln.</color>",
+          "GUID": "2a41784f-7524-469d-87ed-b337e1310bf7",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Viele Fähigkeiten erlauben es, 1 oder mehrere Würfel neu zu würfeln. In Jyns Fall erlaubt <i>Schmugglerglück</i> ihr, <i>beliebig</i> viele Würfel neu zu würfeln, wenn sie eine Probe ablegt, solange sie die Karte dafür erschöpft.\n\nDas bedeutet, dass sie würfeln und dann entscheiden kann, ob sie 1, 2 oder alle 3 Würfel neu würfelt. Jeder Würfel kann aber nur einmal neu gewürfelt werden. Wenn ihr also einen Würfel neu würfelt, müsst ihr mit dem zweiten Ergebnis leben.\n\nVergesst nicht, dass sie die Karte erschöpfen muss, sie kann sie also nur einmal pro Aktivierung verwenden. Zu Beginn ihrer nächsten Aktivierung ist die Karte wieder spielbereit.</color>",
+          "GUID": "e717bd84-b482-434f-ac54-2282fc8ff018",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">In vielen Fällen benötigt man mehr als einen einzigen Erfolg, um bei einer Probe zu bestehen. Die App teilt aber normalerweise nicht mit, wie viele man benötigt.\n\nWenn ihr Erfolge würfelt, die Probe aber nicht besteht, platziert eine Anzahl von Erschöpfungsmarkern ({C}) auf oder neben dem Marker, auf den ihr die Probe gerade abgelegt habt. Wenn ihr die Probe das nächste Mal wiederholt, fügt ihr für jeden Erschöpfungsmarker auf dem Ziel 1 {B} hinzu und legt dann alle Erschöpfungsmarker vom Ziel ab. Auf diese Weise summieren sich die Erfolge, bis die Probe schließlich bestanden ist.</color>",
+          "GUID": "07f83690-9825-44af-b975-c87c58e4f858",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\" >Jetzt werdet die Energiefelder los, indem ihr sie entweder zerstört oder deaktiviert.</color>",
+          "GUID": "a031ade2-91ec-42ae-bc7e-9549149cb4ad",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Energy Field 1",
+              "GUID": "664c6c46-2edf-44d9-8772-34328a0eeb9e",
+              "theText": "Ein blaues Energiefeld versperrt den Weg zu den zerfallenen Ruinen und eurem Shuttle.\n\n<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.\r\n\r\nDie Energiefelder haben Gesundheit 8 und Verteidigung: 1 weißer Würfel. Beide Marker zählen als ein einziges Ziel. \n\nRebellenfiguren können entweder ein Energiefeld angreifen oder mit ihm interagieren, um es zu deaktivieren. Wenn die Energiefelder mindestens 8 {H} erlitten haben, wähle <b>Zerstören</b>. Wenn ihr sie deaktivieren wollt, könnt ihr eine Aktion aufwenden, um mit ihnen zu interagieren und auf <b>{A} Deaktivieren</b> zu klicken.</color>",
+              "buttonList": [
+                {
+                  "GUID": "4f718fac-8b86-4831-9fa7-a7171580d144",
+                  "theText": "Zerstören"
+                },
+                {
+                  "GUID": "e5038b57-3bc4-41b2-9669-6e5c77b73dcf",
+                  "theText": "{A} Deaktivieren"
+                }
+              ]
+            },
+            {
+              "entityName": "Energy Field 2",
+              "GUID": "7bceeabb-0c34-4763-bc17-15d32de2dcba",
+              "theText": "Ein blaues Energiefeld versperrt den Weg zu den zerfallenen Ruinen und eurem Shuttle.\n\n<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.\r\n\r\nDie Energiefelder haben Gesundheit 8 und Verteidigung: 1 weißer Würfel. Beide Marker zählen als ein einziges Ziel. \n\nRebellenfiguren können entweder ein Energiefeld angreifen oder mit ihm interagieren, um es zu deaktivieren. Wenn die Energiefelder mindestens 8 {H} erlitten haben, wähle <b>Zerstören</b>. Wenn ihr sie deaktivieren wollt, könnt ihr eine Aktion aufwenden, um mit ihnen zu interagieren und auf <b>{A} Deaktivieren</b> zu klicken.</color>",
+              "buttonList": [
+                {
+                  "GUID": "24a06290-7809-43c6-b59a-2bf458edfd4d",
+                  "theText": "Zerstören"
+                },
+                {
+                  "GUID": "cfa7471a-4439-40f5-9520-65d921741a75",
+                  "theText": "{A} Deaktivieren"
+                }
+              ]
+            },
+            {
+              "entityName": "Explanation Token",
+              "GUID": "d95573f1-d221-477b-8983-7b4ebdad996d",
+              "theText": "<color=\"yellow\">Dies ist der Marker für die Erklärung der Anweisungen. Wenn ihr das Anweisungsfenster der Sturmtruppen geschlossen habt, wählt <b>Anweisungen erläutern</b>, um die Erklärung zu starten.</color>",
+              "buttonList": [
+                {
+                  "GUID": "b64319e7-9392-479c-a4fc-a247a40d71d9",
+                  "theText": "Anweisungen erläutern"
+                }
+              ]
+            }
+          ],
+          "GUID": "94036bfc-2b84-4a7e-af08-469e8c0863de",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Zerstört oder deaktiviert die Energiefelder.",
+          "longText": null,
+          "GUID": "4b9fded4-f5c9-48e6-9c46-4e7ef8b60a3e",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und Figuren sich nicht durch sie bewegen können.\n{-} Die Energiefelder haben Gesundheit 8 und Verteidigung: 1 weißer Würfel. Beide Marker zählen als ein einziges Ziel. \n{-} Rebellenfiguren können entweder ein Energiefeld angreifen oder mit ihm interagieren, um es zu deaktivieren. Wenn die Energiefelder mindestens 8 {H} erlitten haben, wähle <b>Zerstören</b>. Wenn ihr sie deaktivieren wollt, könnt ihr eine Aktion aufwenden, um mit ihnen zu interagieren und auf <b>{A} Deaktivieren</b> zu klicken.",
+          "GUID": "265f5462-5a44-4aa9-a703-5ddf801d8b37",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Jyn Wounded",
+      "GUID": "35d18816-4b4a-4b5f-9862-3a3d6bb1f49f",
+      "eventText": "Jyn schreit auf, als ein weiterer Angriff sie zu Boden wirft, aber sie kommt schnell wieder auf die Beine.\n\n<color=\"yellow\">Lege alle {H}-Marker von Jyn Odans Heldenbogen ab und drehe dann den Bogen um. Jyn ist verwundet, aber sie kann weiterkämpfen.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Gaarkhan Wounded",
+      "GUID": "b32d7afd-04e1-4f9b-a701-b2fc11d7cb55",
+      "eventText": "Gaarkhan brüllt, Blut strömt aus seinen Wunden und besudelt sein Fell. Er umklammert seine Axt fester.\n\n<color=\"yellow\">Lege alle {H}-Marker von Gaarkhans Heldenbogen ab und drehe dann den Bogen um. Gaarkhan ist verwundet, aber er kann weiterkämpfen.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Jyn Withdrawn",
+      "GUID": "acf62615-359d-47b0-b87d-20ffd6b3f4c3",
+      "eventText": "Weitere Angriffe prasseln auf Jyn nieder, und sie hat schließlich keine andere Wahl: Sie schießt wild in die Richtung der Angreifer und zieht sich ins Unterholz zurück.\n\n<color=\"yellow\">Entferne Jyns Miniatur vom Spielplan. Sie kann während des Einsatzes nicht mehr agieren.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Gaarkhan Withdrawn",
+      "GUID": "5465f9c2-0adf-49b5-ad63-0e190617eb3e",
+      "eventText": "Ein Angriff nach dem anderen trifft Gaarkhan, und selbst der mächtigste Wookiee kann einem solchen Ansturm nicht standhalten. Gaarkhan brüllt vor Schmerz und zieht sich in den Wald zurück.\n\n<color=\"yellow\">Entferne Gaarkhans Miniatur vom Spielplan. Er kann während des Einsatzes nicht mehr agieren.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Both Heroes Withdrawn",
+      "GUID": "66118193-8efe-4015-9841-218636c6faf7",
+      "eventText": "Ohne Jyn und Gaarkhan ist niemand mehr übrig, der das Imperium auf Indu aufhalten kann.\n\n<color=\"yellow\">Da sich beide Helden zurückgezogen haben, ist dieser Einsatz zu Ende. Entweder hattet ihr schreckliches Pech mit euren Würfeln oder ihr habt es einfach ausprobiert, um zu sehen, was passieren würde. Wie auch immer, macht euch keine Sorgen! Ihr könnt das Tutorial jederzeit neu starten.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Energy Field Attempt",
+      "GUID": "bd3fc45a-ab74-46c5-9cb3-6a54d7ba1fde",
+      "eventText": "Du versuchst, das Energiefeld zu überladen, um es abzuschalten.",
+      "eventActions": [
+        {
+          "mainText": "<color=\"yellow\">Lege eine Probe auf {I} ab. \n\nWenn sich Erschöpfungsmarker auf den Energiefeldern befinden, wende +1 {B}-Symbol für jeden Erschöpfungsmarker darauf an und lege dann alle Erschöpfungsmarker von den Energiefeldern ab.\n\nDenkt daran, dass Jyn <i>Schmugglerglück</i> erschöpfen kann, um eine beliebige Anzahl von Würfeln neu zu würfeln.\n\nGib die Anzahl der Erfolge unten ein.</color>",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "145748a1-5d9f-44ee-86f7-8d3f646eacdb",
+              "theText": "Du bastelst an der Elektronik herum und machst einige Fortschritte, aber du musst es weiter versuchen.\n\n<color=\"yellow\">Wenn du {B}-Symbole gewürfelt hast, platziere eine Anzahl von Erschöpfungsmarkern ({C}) in Höhe der gewürfelten {B}-Symbole auf den Energiefeldern. Dies sind die Erfolge, die ihr bereits erzielt habt.</color>"
+            },
+            {
+              "GUID": "6690433d-82cb-4750-941c-1b61cbfd37e0",
+              "theText": null
+            }
+          ],
+          "GUID": "a8a9dccb-3e3a-427a-9566-172317e981ee",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Energy Field Removed",
+      "GUID": "b502f17e-a8bf-42c2-b88c-163f0279465d",
+      "eventText": "Das Energiefeld flackert, dann schaltet es sich ab und gibt den Weg zum Shuttle frei.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Energy Field 1",
+              "GUID": "7ed6122d-da72-4669-a703-a4a57a72bdbb",
+              "theText": "Ein blaues Energiefeld versperrt den Weg zu den zerfallenen Ruinen und eurem Shuttle.\n\n<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.</color>",
+              "buttonList": []
+            },
+            {
+              "entityName": "Energy Field 2",
+              "GUID": "242dba23-4f75-4a79-a5c9-d7315e0e343e",
+              "theText": "Ein blaues Energiefeld versperrt den Weg zu den zerfallenen Ruinen und eurem Shuttle.\n\n<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.</color>",
+              "buttonList": []
+            }
+          ],
+          "GUID": "838972af-ff38-4665-bb63-36fc6b0dbdcc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Der Lärm des Kampfes scheint jedoch nicht unbemerkt geblieben zu sein. Als ihr euch auf den Weg zu eurem Shuttle macht, hört ihr ein statisches Rauschen und dann das Summen eines Repulsorantriebs. Kurz darauf erscheint eine imperiale Drohne über den nahen Ruinen.",
+          "GUID": "cb2c2f46-a7b1-4c80-af52-23f161c96e7b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q} Bewegung 2, um {rebel} anzugreifen.\n{A} Bewegung 2, um in Position 3 zu gelangen.\n{A} Bewegung 4, um in Position 3 zu gelangen.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "b3275497-8b42-4337-8cab-f307e5df76da",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG011/Probe Droid"
+        },
+        {
+          "tbText": "<color=\"yellow\">Wählt das Symbol {J} und klickt mit der rechten Maustaste / tippt doppelt, um die Aufstellungskarte des Suchdroiden zu öffnen. Dort seht ihr, dass der Suchdroide über das Schlüsselwort <i>Beweglich</i> verfügt.\r\n\r\n<i>Bewegliche</i> Figuren behandeln alles Gelände wie normales Gelände. Das bedeutet, dass der Suchdroide sich durch rote Linien (gestrichelt oder durchgezogen) bewegen kann und keine zusätzlichen Bewegungspunkte ausgeben muss, um sich durch unwegsames Gelände (blaue Linien) oder Rebellenfiguren zu bewegen.\r\n\r\nBeachtet dies beim Befolgen ihrer Anweisungen.</color>",
+          "GUID": "8a5428fb-8036-445f-8778-0ca276f24391",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Ihr hebt eure Waffen, als ihr ein zweites Störgeräusch hört. Ein weiterer Droide erscheint auf der anderen Treppe.",
+          "GUID": "938839c5-78be-4a7e-ac39-7f109f151210",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q} Bewegung 2, um {rebel} anzugreifen.\n{A} Bewegung 2, um in Position 3 zu gelangen.\n{A} Bewegung 4, um in Position 3 zu gelangen.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "260ed1a2-459c-475c-a5b5-8645a1d8f81d",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG012/Probe Droid"
+        },
+        {
+          "tbText": "<color=\"yellow\" >Jetzt befinden sich zwei identische Gruppen auf dem Spielplan. Um sie voneinander zu unterscheiden, könnt ihr ihnen Farben zuweisen.\n\nKlickt auf das {J}-Symbol, um den Spielplan und die Aufstellungsgruppen anzuzeigen. Oben links auf dem Porträt einer Gruppe befindet sich ein grauer Kreis. Klickt / tippt auf diesen Kreis, um zwischen den Farben zu wechseln. Ihr könnt jedem Suchdroiden eine andere Farbe zuweisen. Diese Farbe wird auch im Aktivierungsfenster angezeigt, damit ihr wisst, welche Gruppe gerade aktiviert wurde.\n\nUm die Figuren voneinander zu unterscheiden, könnt ihr zum Beispiel die farbigen Aufkleber verwenden, die dem Spiel beiliegen.</color>",
+          "GUID": "c696b3bb-0bee-4821-a1df-f74d860fea54",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Inzwischen solltet ihr in der Lage sein, die Anweisungen des Suchdroiden selbst zu befolgen. Ignoriert im Moment noch alle Bonuseffekte.\n\nKnallt die Droiden ab!</color>",
+          "GUID": "47de4720-74f9-4768-847f-6a43c4d79e76",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Besiegt die Suchdroiden.",
+          "longText": null,
+          "GUID": "d0d9d956-91d6-40c6-a71c-369dacb6fd3d",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Ignoriert die Bonuseffekte der Suchdroiden.",
+          "GUID": "3afc1232-2123-4d13-9098-aa9daf31c0fa",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Stormy Defeated Early",
+      "GUID": "07d1c568-2a20-4755-b374-35c13501ae56",
+      "eventText": "<color=\"yellow\">Ihr könnt die Sturmtruppen noch nicht besiegen. Sie werden jetzt wieder aufgestellt. Klickt / tippt auf das rote Symbol unten links, um sie zu aktivieren, und startet dann die Erklärung über den Erklärungsmarker.</color>",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "{Q} Bewegung 4, um Gaarkhan anzugreifen.\n{A} Bewegung 2, um in Position 4 zu gelangen.\n{A} Bewegung 6, um in Position 4 zu gelangen.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "aaea29e9-d097-47cc-a4de-4401aef33fbc",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader Appears",
+      "GUID": "d9ceaeb7-a019-48d8-aa2d-51af6619f873",
+      "eventText": "Der letzte imperiale Droide explodiert in tausend Stücke, aber bevor ihr euren Sieg feiern könnt, ertönt Leias Stimme über das Comlink. Dieses Mal klingt sie fast panisch.\n\n\"VERSCHWINDET! ER KOM-\"\n\nDie Übertragung bricht ab und ein plötzliches Gefühl von beklemmender Angst befällt euch.",
+      "eventActions": [
+        {
+          "tbText": "Ohne Vorwarnung werden die Bäume hinter euch durch eine unsichtbare Kraft zur Seite geschleudert und geben den Blick auf einen schmalen Pfad durch den Wald frei.",
+          "GUID": "ed12af24-ebe2-4aae-ac83-e4303a6b83d9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Am Ende des Pfades steht eine hoch aufragende Gestalt in schwarzer Rüstung, die euch schweigend beobachtet.\n\nDann entzündet sich mit einem zischenden Schnappen ein Lichtschwert und taucht den Wald in ein bedrohliches Rot.",
+          "GUID": "46dd7bf4-eaf7-4ff4-8fe9-89a5c7924c8a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q}{A} GRAUSAMKEIT: Bewegung 4, um 2 oder mehr Rebellen zu berühren. Dann Angriff auf jeden benachbarten Rebellen.\r\n{Q} Bewegung 4, um {rebel} anzugreifen.\n{A} MACHTWÜRGEGRIFF: Bewegung 2 auf {rebel} zu. Dann erleidet {rebel} 2 {H} und wird 1 Feld in Richtung <color=\"red\">Darth Vader</color> gestoßen.\n{A} Bewegung 6 auf {rebel} zu.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "de92ebeb-f5e3-4ada-82ef-d9bd2a3c3b6f",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG072/Darth Vader"
+        },
+        {
+          "tbText": "Dieser Feind ist für euch unüberwindbar. Ihr müsst verschwinden. Jetzt.",
+          "GUID": "c12b10e5-669f-4aa1-8d7f-67218e3a6e30",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><color=\"red\">Darth Vader</color> ist eine <i>Elite</i>-Figur. Elite-Figuren können von normalen Figuren durch den roten Kartenrand (oder die rote Farbe der Aufstellungskarte in der App) unterschieden werden. Eliten haben bessere Werte als normale Gruppen und manchmal besondere Fähigkeiten.\n\nIn diesem Einsatz kann <color=\"red\">Darth Vader</color> keinen {H} erleiden. Jeder Schaden, den ihr ihm zufügt, wird automatisch abgelegt. Er kann nicht besiegt werden. Alles, was ihr tun könnt, ist zu fliehen.</color>",
+          "GUID": "530a1582-5470-441f-b888-194773047302",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Vaders Anblick erfüllt euch mit Angst und lässt euch für einen Moment erstarren.\n\n<color=\"yellow\">Die Aktivierung des aktuellen Helden endet sofort. Klickt / tippt auf das rote Symbol unten links, um <color=\"red\">Darth Vader</color> zu aktivieren.",
+          "GUID": "0de6c2c5-99fa-421e-aa39-ec49b851d8e8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Startet die nächste imperiale Aktivierung.",
+          "longText": "",
+          "GUID": "886076a2-2ba5-4506-8786-0bbd79bb91dd",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} <color=\"red\">Darth Vader</color> kann keinen {H} erleiden und nicht besiegt werden.",
+          "GUID": "90ed2ca5-8634-4398-81e4-d8ad356fe6bc",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader Activation",
+      "GUID": "5ea0991c-fdc0-49e4-bf5a-8e6540c2275f",
+      "eventText": "<color=\"yellow\">Vaders Angriff ist ein {P} (Nahkampf)-Angriff. Das bedeutet, dass er nah herankommen muss, um euch anzugreifen, was eure einzige Hoffnung auf Überleben sein könnte.\n\nDarth Vader ist außerdem mächtig, also hören wir auf, Bonuseffekte zu ignorieren. Für den Rest des Einsatzes müsst ihr mit ihnen fertig werden.</color>",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">Bonuseffekte werden immer am oberen Rand des Aktivierungsfensters angezeigt. Normalerweise gibt es mehrere Bonuseffekte, die zufällig ausgewählt werden, wenn eine Gruppe aktiviert wird. Sie gelten für die gesamte Aktivierung jeder Figur der Gruppe.\n\nGehen wir die möglichen Bonuseffekte für <color=\"red\">Darth Vader</color> durch. Vader hat drei mögliche Bonuseffekte.</color>",
+          "GUID": "29c5f5d8-ee65-4478-bc2d-6b49c45fa966",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">1. <i>ENTSCHLOSSENHEIT: Wende +1 {H} auf jeden Angriff an. Am Ende der Aktivierung dieser Figur erleidet diese Figur 2 {H}.</i>\r\n\r\nDas bedeutet, dass jeder Angriff von <color=\"red\">Darth Vader</color> 1 zusätzlichen {H} verursacht. Ignoriert den zweiten Teil des Bonuseffekts: In diesem Einsatz kann <color=\"red\">Darth Vader</color> keinen {H} erleiden.\n\nWenn <color=\"red\">Darth Vader</color> in seiner Aktivierung nicht angreift, habt ihr Glück gehabt.</color>",
+          "GUID": "61c36e5d-0945-47d1-ac85-1022fc64a49c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">2. <i>GRAUSAME AUSSTRAHLUNG: Am Ende der Aktivierung dieser Figur erleidet jeder Rebell, der zu dieser Figur benachbart ist, 1 {H}.</i>\r\n\r\nDas bedeutet dass, wenn <color=\"red\">Darth Vader</color> seine Aktivierung benachbart zu einem Rebellen beendet, dieser Rebell 1 {H} erleidet. Haltet euch von ihm fern.</color>",
+          "GUID": "bb9f350f-e648-4673-b028-484ccdfa3d44",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">3. <i>MACHTGRIFF: Zu Beginn der Aktivierung dieser Figur stoße den nächsten Rebellen 2 Felder auf diese Figur zu.</i>\r\n\r\nDas macht genau das, was da steht. Sobald <color=\"red\">Darth Vader</color> sich aktiviert, wird der am nächsten stehende Rebell 2 Felder in Richtung <color=\"red\">Darth Vader</color> gestoßen. Beachtet, dass dafür keine Sichtlinie erforderlich ist. Vader kann Rebellen zu sich ziehen, egal wo sie sich auf dem Spielplan befinden.\n\nBeachtet auch, dass \"Stoßen\" oder \"Bewegen um X <i>Felder</i>\" nicht dasselbe ist wie <i>Bewegungspunkte aufwenden</i>. Wenn dich etwas um ein Feld bewegt, wie z.B. Stoßen, erhältst du keine Bewegungspunkte. Das bedeutet auch, dass du dich durch Felder mit unwegsamem Gelände oder feindlichen Figuren bewegen kannst, ohne zusätzliche Bewegungspunkte aufwenden zu müssen.</color>",
+          "GUID": "12414200-4688-48dd-94ce-fbf1680535df",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Zuletzt gibt es noch einen Marker zur Erklärung.</color>",
+          "GUID": "616ceb1f-715e-4edc-8fd8-d01f6972b671",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Vader's Explanation Token",
+              "GUID": "5d7edeb1-8c5b-4334-8ef9-83cec816a01a",
+              "theText": "<color=\"yellow\">Dies ist der Marker für die Erklärung von Vaders Anweisungen. Wenn ihr das Anweisungsfenster von Darth Vader geschlossen habt, wählt <b>Anweisungen erläutern</b>, um die Erklärung zu starten.</color>",
+              "buttonList": [
+                {
+                  "GUID": "f426d364-49fb-4eb0-814d-ca8dc7857b3e",
+                  "theText": "Anweisungen erläutern"
+                }
+              ]
+            }
+          ],
+          "GUID": "6b4e4e1d-7fdc-48bb-ab04-bf7afdfa71ba",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Ihr kennt den Ablauf bereits. Nachdem ihr Vaders Aktivierungsfenster geschlossen habt, öffnet die Erklärungen zu den Anweisungen mit dem Marker.</color>",
+          "GUID": "56cc0434-bb3f-4ea0-a4b0-e738a1b9ae37",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Öffnet die Erklärung über den Erklärungsmarker.",
+          "longText": null,
+          "GUID": "66e5fca5-e576-4f0b-ac6b-8bb447f9b14f",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader Explanation",
+      "GUID": "94cdacfd-545e-4133-a942-5424992bebb7",
+      "eventText": "<color=\"yellow\">Gehen wir <color=\"red\">Darth Vader</color>s Anweisungen durch. Dieses Mal wiederholen wir die Anweisungen oben nicht. Ihr wisst bereits, dass ihr auf das {J}-Symbol klicken könnt, um den Spielplan zu sehen, und dann mit der rechten Maustaste auf Vaders Porträt klicken bzw. doppelt tippen könnt, um sein Aktivierungsfenster erneut zu öffnen.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Vader 1",
+              "GUID": "2f06fff5-aae2-488e-b236-c475c7cc1c2c",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Vader 2",
+              "GUID": "12f90e1a-262d-42fb-8aeb-a256ce0c88be",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 1",
+              "GUID": "f01e6eff-3850-458c-a797-90ae0e2ab809",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 2",
+              "GUID": "9b7a4e35-a4fe-45e2-a1f8-05dfdca228f2",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "d5ab285a-4520-402c-a505-c611a4935a8f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Befolgt zuerst den Bonuseffekt. Vader ist so weit weg, dass <i>ENTSCHLOSSENHEIT</i> bei seiner ersten Aktivierung wahrscheinlich keinen Effekt hat. Wenn der Bonuseffekt <i>GRAUSAME AUSSTRAHLUNG</i> ist, behaltet ihn im Hinterkopf. Wenn es <i>MACHTGRIFF</i> ist, platziert den nächstgelegenen Rebellen 2 Felder näher an Vader.</color>",
+          "GUID": "36eac565-b419-4621-9166-4f11fbfc191e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">The first line is:\r\n\r\n</color>{Q}{A} GRAUSAMKEIT: Bewegung 4, um 2 oder mehr Rebellen zu berühren. Dann Angriff auf jeden benachbarten Rebellen.<color=\"yellow\">\r\n\r\nHier steckt ein bisschen was dahinter. Erstens bedeuten die beiden Symbole {Q}{A}, dass diese Anweisung <b>zwei</b> Aktionen erfordert statt einer. Wenn Vader diese Anweisung durchführen würde, würde seine Aktivierung danach enden, weil er keine Aktionen mehr übrig hätte.\n\nDie Anweisung bedeutet, dass er 4 Bewegungspunkte erhält und sich bewegt, um 2 oder mehr Rebellen \"zu berühren\". Er versucht also, benachbart zu 2 oder mehr Rebellen zu sein.\n\nDafür ist Vader aber viel zu weit weg.</color>",
+          "GUID": "db1819ed-7d06-4075-bc90-8288f2455cfa",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Feindliche Figuren versuchen nur solche Anweisungen auszuführen, die für sie möglich sind. Wenn etwas unmöglich ist, wie Vaders GRAUSAMKEIT, <i>überspringen</i> sie die Anweisung und fahren stattdessen mit der nächsten Zeile fort.\n\nDa Vader in diesem Fall mit 2 Bewegungspunkten nicht benachbart zu einem Ziel sein kann, überspringt er die Anweisung.</color>",
+          "GUID": "6243f078-0a05-44ef-ba71-5bfb50dad030",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Die zweite Zeile lautet:</color>\n\n{Q} Bewegung 4, um (Held) anzugreifen.\n\n<color=\"yellow\">Wenn Vader sich nicht benachbart zu 2 oder mehr Rebellen bewegen konnte, versucht er, sich benachbart zu einem einzelnen Ziel zu bewegen. Aber selbst mit 4 Bewegungspunkten kann Vader nicht benachbart zu einem Rebellen sein. Er überspringt auch diese Zeile. Er hätte sie aber nicht übersprungen, wenn er eine andere Rebellenfigur als den genannten Helden hätte angreifen können. Wenn ein Feind den angegebenen Rebellen nicht angreifen kann, aber einen anderen Rebellen angreifen kann, tut er das.\n\nBeachtet, dass sowohl dieser als auch der vorherigen Anweisung ein {Q}-Symbol vorangestellt ist. Das bedeutet, dass es sich um Angriffsaktionen handelt. Nicht-Helden können nicht mehr als 1 Aktion für eine Angriffsaktion aufwenden. Selbst wenn Vader die erste Anweisung durchgeführt und noch Aktionen übrig gehabt hätte, hätte er die zweite Zeile übersprungen, weil auch er nur 1 Angriffsaktion durchführen darf.\n\nEine Angriffsaktion kann jedoch mehr als 1 Angriff beinhalten - wie Vaders GRAUSAMKEIT.</color>",
+          "GUID": "aafc6036-905d-4732-8239-1580b943046d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Vader 1",
+              "GUID": "e526da76-6845-468b-bb47-ce580845d6ef",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "88d10131-0268-41d8-b8e3-7466b28afa25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Die dritte Zeile lautet:</color>\n\n{A} MACHTWÜRGEGRIFF: Bewegung 2 auf (Held) zu. Dann erleidet (Held) 2 {H} und wird 1 Feld in Richtung <color=\"red\">Darth Vader</color> gestoßen.\n\n<color=\"yellow\">Dies ist eine Anweisung, die Vader ausführen <i>kann</i>. Zuerst erhält er 2 Bewegungspunkte und kommt näher heran. Feindliche Figuren versuchen immer den Weg zu nehmen, der die wenigsten Bewegungspunkte verbrauchen würde, also bewegt sich Vader auf das von der App rot hervorgehobene Feld.</color>",
+          "GUID": "44360855-b970-458a-baf3-569cb1e8bf53",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{A} MACHTWÜRGEGRIFF: Bewegung 2 auf (Held) zu. Dann erleidet (Held) 2 {H} und wird 1 Feld in Richtung <color=\"red\">Darth Vader</color> gestoßen.\r\n\r\n<color=\"yellow\">Als nächstes erleidet der in der Anweisung genannte Held 2 {H} und bewegt sich 1 Feld näher zu Vader. Auch hier ist keine Sichtlinie erforderlich. Vader spürt dich durch die Macht.\n\nDiese Anweisung wird durchgeführt, und Vader hat seine erste Aktion aufgewendet. Weiter zur nächsten Zeile.</color>",
+          "GUID": "91598801-20df-4fe3-8a31-8a2a825da16e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Vader 1",
+              "GUID": "4bcf1761-6506-4f9d-9ca0-569274d3314e",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Vader 2",
+              "GUID": "85ca5c0c-72a0-4983-bf40-fe8236032a6f",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 1",
+              "GUID": "023b9b79-5cb8-4776-93b5-bb74ec6befa6",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 2",
+              "GUID": "b706d479-d949-459a-a1bd-7cad335e8e15",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "06ad47f7-7a97-496b-bde8-e9956a1dfa79",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">The fourth line is:</color>\r\n\r\n{A} Move 6 toward (hero).\r\n\r\n<color=\"yellow\">Vader gains 6 movement points and moves closer. However, he needs to cross the swamp to approach you. The swamp (highlighted blue) is <i>difficult</i> terrain, so Vader needs 1 additional movement point to cross it.\r\n\r\nThis means that, starting from his current position, Vader can only reach one of the red highlighted spaces. Place his figure there.\r\n\r\nVader has now spent both actions, so his activation ends. If the bonus effect is CRUEL AURA and he is adjacent to any Rebel, each Rebel suffers 1 {H}.</color>",
+          "GUID": "bccdec95-041f-4317-9b67-cf588031a645",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Ihr schüttelt den Schrecken ab, den Vaders Anblick in euch ausgelöst hat. Ihr wisst, dass ihr keine Chance habt, ihn zu besiegen, also aktiviert ihr die Triebwerke eures Shuttles und entriegelt die Luke.",
+          "GUID": "551d9943-b9f7-48b1-868d-26d9dba7d82d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Shuttle Control",
+              "GUID": "f364559b-25e6-4edd-89d0-59e64ba1bf24",
+              "theText": "Die Triebwerke des Shuttles brummen bereits. Es ist bereit zum Start.\n\n<color=\"yellow\">Wenn alle überlebenden Helden im Shuttle sind, kann ein Held mit dem Terminal interagieren, um das Shuttle zu starten und das Tutorial zu beenden.</color>",
+              "buttonList": [
+                {
+                  "GUID": "f9ab85f1-692b-483f-b9fd-5610b17289a1",
+                  "theText": "{A} Shuttle starten (Tutorial beenden)"
+                }
+              ]
+            },
+            {
+              "entityName": "Shuttle Door",
+              "GUID": "050ab4b3-be12-4ad0-94b1-847058713ed8",
+              "theText": "Die Luke eures Shuttles ist geschlossen, um die Feuchtigkeit des Waldes fernzuhalten.",
+              "buttonList": [
+                {
+                  "GUID": "c80dced6-e13c-4aa8-ba1e-0303f0089e02",
+                  "theText": "{A} Öffnen"
+                }
+              ]
+            }
+          ],
+          "GUID": "dd1b775b-777b-4ad4-9510-fe1407e4d56c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\" >Zeit zu verschwinden. Die Tür des Shuttles ist jetzt entriegelt, also kann ein beliebiger Held mit ihr interagieren, um sie zu öffnen.\n\nSobald alle überlebenden Helden im Shuttle sind (ein beliebiges Feld hinter der Tür), kann ein beliebiger Held mit dem Terminal interagieren, um das Shuttle zu starten und das zweite Tutorial zu beenden.\n\nViel Glück, und möge die Macht mit euch sein.</color>",
+          "GUID": "9ee78959-5934-4f39-a171-4d041e58ea03",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Entkommt Darth Vader.",
+          "longText": "",
+          "GUID": "6b9091bf-715c-40a5-9da6-7411f06d41d1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "<color=\"yellow\"><color=\"red\">Darth Vader</color> kann keinen {H} erleiden.\n\nWenn alle überlebenden Helden im Shuttle sind, kann ein Held mit dem Terminal interagieren, um das Shuttle zu starten und das Tutorial zu beenden.</color>",
+          "GUID": "7b6c6b26-2516-4a7a-b334-4efc0150cb4f",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Vader 2",
+              "GUID": "e15cf7a0-5c04-4889-9893-5d4988bbab42",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 1",
+              "GUID": "d60df4be-2424-4113-a39b-4e15d7ca8647",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 2",
+              "GUID": "fa687f4a-f16c-4178-b515-8545e44d9fca",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "d9ddc031-5375-477a-964c-4d95db95b0be",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End Tutorial",
+      "GUID": "c424b7f9-fba1-4142-9631-4b464167501c",
+      "eventText": "Das Shuttle schießt in den Himmel über Indu. Aus den Fenstern könnt ihr sehen, wie Darth Vader auf der Lichtung steht und euch ruhig hinterherblickt, das Lichtschwert immer noch in der Hand.\n\nIhr gewinnt schnell an Höhe und nehmt dann Kurs auf die Koordinaten des anderen Einsatzteams. Ihr habt keine Ahnung, ob ihr es rechtzeitig schaffen werdet, aber ihr gebt die Hoffnung nicht auf.",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">Damit ist das zweite Tutorial abgeschlossen. Im dritten Tutorial erfahrt ihr die restlichen Regeln und ein paar andere Feinheiten.\n\nWenn ihr Fragen habt, könnt ihr jederzeit das Referenzhandbuch zu Rate ziehen, in dem ihr alle Details nachlesen könnt.</color>",
+          "GUID": "5f0db86b-1051-40e7-a9e2-8cd70921deb0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Door Opens",
+      "GUID": "15dc6135-76c7-48c8-b304-11db850a77be",
+      "eventText": "Du drückst auf die Zugangskontrolle und die Tür gleitet auf.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Shuttle Door",
+              "GUID": "a3be21f9-f749-4dd6-a885-601d7b510d82",
+              "theText": "Die Luke eures Shuttles ist geschlossen, um die Feuchtigkeit des Waldes fernzuhalten.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "66239cf4-0c12-4e50-8ea3-4c7a6e354ffe",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Highlight Gaarkhan",
+      "GUID": "7f94645b-4f4d-4bec-8558-41fc6c6f72d7",
+      "mainText": "Stelle <b>Gaarkhan</b> hier auf.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Shuttle Door",
+      "GUID": "27e82931-af8a-4887-9070-dec8a526d3ae",
+      "mainText": "Die Luke eures Shuttles ist geschlossen, um die Feuchtigkeit des Waldes fernzuhalten.\n\n{-} Die Tür ist verriegelt.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Energy Field 1",
+      "GUID": "78474806-46b8-4e3d-9bfa-634967833ced",
+      "mainText": "Ein blaues Energiefeld versperrt den Weg zu den zerfallenen Ruinen und eurem Shuttle.\n\n<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.</color>",
+      "buttonList": []
+    },
+    {
+      "entityName": "Energy Field 2",
+      "GUID": "a8f3fab6-9814-463a-83b2-4d625d2423f7",
+      "mainText": "Ein blaues Energiefeld versperrt den Weg zu den zerfallenen Ruinen und eurem Shuttle.\n\n<color=\"yellow\">Die imperialen Einsatzmarker sind <i>versperrtes Gelände</i>. Das bedeutet, dass keine Sichtlinie durch sie gezogen werden kann und sich Figuren nicht durch sie hindurch bewegen können.</color>",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn",
+      "GUID": "5ca57d5b-521f-4de7-bef5-e9c8e3601bde",
+      "mainText": "Stelle <b>Jyn</b> hier auf.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "15482748-c872-430f-9f04-a075ca6cecee",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Purple",
+      "GUID": "a960a0b1-818a-4112-a356-70069d127517",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "e26cc062-db60-426c-bf3e-2c6955ac7757",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red 1",
+      "GUID": "ee89cdca-27a7-4508-988f-e2d0d2eaf143",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Purple",
+      "GUID": "af631212-2b04-4cb9-a90c-3c5d37d2fec3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Yellow",
+      "GUID": "c2dfafe7-4cda-4ad1-8656-417de4742937",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Attack 1",
+      "GUID": "0210d75d-4bab-418d-9191-ad29cafaf778",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Attack 2",
+      "GUID": "04af2b16-09c5-44b5-b2a4-d3f1d8759fa6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Retreat 1",
+      "GUID": "90388dfb-c61a-4150-a0a7-33d15467c4b8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Retreat 2",
+      "GUID": "d771788e-97f2-484e-b3be-ebe30060f601",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Yellow Attack 1",
+      "GUID": "efbb0dc8-cc4c-49b1-8cbe-d94c8fb85e9b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Yellow Retreat",
+      "GUID": "1713acfc-50ed-42e7-9183-063272fcacaa",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Purple Retreat 1",
+      "GUID": "3c29cb3e-e2fe-4a75-9c94-de35e1d5a58c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Explanation Token",
+      "GUID": "751eeff1-25d3-4745-8792-80a80333bf38",
+      "mainText": "<color=\"yellow\">Dies ist der Marker für die Erklärung der Anweisungen. Wenn ihr das Anweisungsfenster der Sturmtruppen geschlossen habt, wählt <b>Anweisungen erläutern</b>, um die Erklärung zu starten.</color>",
+      "buttonList": [
+        {
+          "GUID": "d2a26025-a87b-41e5-a094-cab86d72efff",
+          "theText": "Anweisungen erläutern"
+        }
+      ]
+    },
+    {
+      "entityName": "Highlight Red Attack 3",
+      "GUID": "04623669-ef42-426c-ac55-fe2835cdf5f0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Retreat 3",
+      "GUID": "9fadf628-8522-466b-9b4d-33d91f8572e4",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 1",
+      "GUID": "bd5a17db-f0ce-474b-98b2-6e81d1454c84",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 2",
+      "GUID": "58b5c569-295b-4489-966d-a8ea3b3db948",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Vader",
+      "GUID": "d9c9a4fa-38ad-43f4-9f7c-67050ddc9a1b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Vader's Explanation Token",
+      "GUID": "c31869e9-306c-45a2-9ef2-0b5f8b6a56f5",
+      "mainText": "<color=\"yellow\">Dies ist der Marker für die Erklärung von Vaders Anweisungen. Wenn ihr das Anweisungsfenster von Darth Vader geschlossen habt, wählt <b>Anweisungen erläutern</b>, um die Erklärung zu starten.</color>",
+      "buttonList": [
+        {
+          "GUID": "845cd185-b57c-462b-8034-728d46687119",
+          "theText": "Anweisungen erläutern"
+        }
+      ]
+    },
+    {
+      "entityName": "Highlight Vader 1",
+      "GUID": "6952a565-aa73-4216-bc69-2c44a9e96f3d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Vader 2",
+      "GUID": "ed5d696f-455a-4dc9-a8e5-665d6c2b202a",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Swamp 1",
+      "GUID": "e4d09d4d-08da-4ded-8947-86243d4e68f7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Swamp 2",
+      "GUID": "da95173a-f715-41a9-8297-02390b09309d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Shuttle Control",
+      "GUID": "2d5bdb10-e0a3-4e63-b338-cada238a1c32",
+      "mainText": "Die Triebwerke des Shuttles brummen bereits. Es ist bereit zum Start.\n\n<color=\"yellow\">Wenn alle überlebenden Helden im Shuttle sind, kann ein Held mit dem Terminal interagieren, um das Shuttle zu starten und das Tutorial zu beenden.</color>",
+      "buttonList": [
+        {
+          "GUID": "691cf4bc-db6f-44bd-b04b-a2f946c1d5c0",
+          "theText": "{A} Shuttle starten (Tutorial beenden)"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

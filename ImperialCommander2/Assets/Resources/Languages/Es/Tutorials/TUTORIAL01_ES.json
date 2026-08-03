@@ -1,0 +1,1171 @@
+{
+  "languageID": "Spanish (ES)",
+  "missionProperties": {
+    "missionName": "Tutorial 1: Iniciación",
+    "missionDescription": "No recuerdas demasiado, excepto detonaciones, explosiones, y después oscuridad.",
+    "missionInfo": "",
+    "campaignName": "Tutoriales",
+    "startingObjective": "",
+    "repositionOverride": null,
+    "additionalMissionInfo": "Este tutorial te enseñará los fundamentos de la activación de Héroes en Imperial Assault."
+  },
+  "events": [
+    {
+      "eventName": "Beginning",
+      "GUID": "2c38848a-6013-4cad-be60-8709c6918b8c",
+      "eventText": "No recuerdas demasiado.\r\n\r\nEstabas haciendo un trabajito de contrabando en el Borde Exterior, en algún lugar entre Eadu y Kessel, con una preciada tecnología a bordo y de camino al mejor postor. Sin embargo, la transacción no salió como estaba planeada cuando tu contacto resultó ser un agente Imperial que estaba tratando de hacerse con esa tecnología tan especial, para algún proyecto de armas que usar contra la Alianza que trata de restaurar la República.",
+      "eventActions": [
+        {
+          "tbText": "Habías sopesado tus opciones cuidadosamente, pero en realidad solo había una salida. El pago habría sido bueno, pero no podías cargar con esto sobre tu conciencia. Aturdiste al agente Imperial, enviaste un aviso a la Alianza Rebelde, y te largaste de allí",
+          "GUID": "724927eb-69cf-4dfe-90ee-a5f60353d5a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "No llegaste muy lejos. Un transporte Imperial apareció de la nada, y cazas TIE comenzaron a disparar sobre tu carguero. Aceleraste intentando quitártelos de encima, pero eran demasiados. Lo último que recuerdas antes de una explosión que te dejó inconsciente son destellos de luz cuando los caza Ala-X salieron del hiperespacio y abrieron fuego sobre las naves Imperiales.",
+          "GUID": "426baa76-52f8-42a3-98cf-3e957e65d2ac",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Cuando por fin despiertas, estás viendo el mundo a través del cristal de un tanque bacta.",
+          "GUID": "598ed296-b337-464f-adc2-72e90e259207",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">¡Bienvenido al tutorial de <b>Imperial Commander</b>!\r\n\r\nEsta serie de tutoriales está diseñada para enseñarte los fundamentos para jugar <b>Imperial Assault</b> con la app compañera no oficial Imperial Commander. No necesitas conocimientos previos de <b>Imperial Assault</b>, pero ten en cuenta que el tutorial solo proporciona información básica. Si quieres profundizar más o tienes dudas, consulta las guías Aprende a Jugar y Referencia de Reglas que se suministran con el juego.</color>",
+          "GUID": "9e3e8682-8ca5-4965-b0ab-6946f2c3697d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Empecemos con la <b>Gestión del Mapa</b>. Puedes ver el mapa en cualquier momento, incluso cuando haya un mensaje de texto abierto. Simplemente pulsa sobre el icono {J} en la esquina inferior izquierda de la pantalla. \r\n\r\nSi aún no lo hecho, coge las losetas {0}20A y {0}36A del Juego Base así como una ficha de puerta y su peana. Selecciona el icono {J} y ensambla el mapa tal y como se muestra; luego vuelve a pulsar el icono {J} para volver al mensaje.</color>",
+          "GUID": "dd035ee1-a6a7-4043-b85a-85497a62b49a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Puedes controlar la vista del mapa con el ratón o con tus dedos:\r\n\r\n{-} <b>Mover:</b> Click & Arrastrar / Arrastrar con 1 dedo\r\n{-} <b>Rotar:</b> Click derecho & Arrastrar / Arrastrar con 3 dedos\r\n{-} <b>Zoom:</b> Rueda / Pellizcar\r\n\r\nPruébalo ahora. En cualquier momento, pulsa sobre el icono {J} de nuevo para volver a este texto y selecciona <b>Continuar</b>.</color>",
+          "GUID": "40d65439-fbf9-4d53-b58c-b46af8592520",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Un droide médico está vigilando los tanques de bacta, mirando con sus brillantes sensores ópticos. Comprueba la pantallas de los tanques y después fija su atención en vosotros.\r\n\r\n- Bien, estáis despiertos- su voz cruje por el comunicador. - La desorientación es un efecto común después de estar inconsciente. Vuestros signos vitales son excelentes. Recuperaréis la memoria muy pronto.\r\n\r\nY lo hacéis. Al menos, ahora recordáis vuestros nombres.\r\n\r\nSois <b>Jyn Odan</b>, extraordinaria contrabandista, ágil y rápida, la pistolera más rápida a este lado del Corredor Corelliano, y <b>Gaarkhan</b>, un fiero guerrero Wookiee de Kashyyyk, tan leal como temible.\r\n\r\nEl tanque de bacta se vacía, y el droide médico os ayuda a salir.",
+          "GUID": "74088b63-8375-483f-a842-f6c132586b74",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "f1e7bb89-8811-4077-9b8e-5435e30ca4f2",
+              "theText": "Despliega a <b>Jyn Odan</b> aquí.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "58d8a4ac-512c-47b8-b3f0-391d0771cc1d",
+              "theText": "Despliega a <b>Gaarkhan</b> aquí.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "cceb5ba1-bd68-40bb-9131-a16737d26fa9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Cada campaña de <b>Imperial Assault</b> comienza seleccionando a los <b>Heroes</b> con los que jugarás a lo largo de la campaña. Sin embargo, para este tutorial hemos hecho esa elección por tí. \r\n\r\nToma las Hojas de Héroe (las tarjetas grandes) de <b>Jyn Odan</b> y <b>Gaarkhan</b>.\r\n\r\nDespués toma los Mazos de Clase de estos Héroes (cartas pequeñas con la imagen de los Héroes en el dorso). Busca en los mazos tus objetos iniciales. Son las únicas cartas sin un valor de PE (experiencia) en la parte inferior.\r\n\r\nColoca las Hojas de Héroe delante del jugador que controla a cada Héroe, y pon sus objetos iniciales junto a las Hojas de Héroe, boca abajo.\r\n\r\nPor último, coge las miniaturas de Jyn Odan y Gaarkhan. Coloca a Jyn en la casilla resaltada en rojo y a Gaarkhan en la casilla resaltada en azul.</color>",
+          "GUID": "325263ad-2c61-4ab1-a193-f6a7b3b3bef0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><b>Imperial Assault</b> se juega mediante una serie de <i>Activaciones</i>. En primer lugar, el jugador Rebelde elige un Héroe al que activar, y luego la app activa un grupo enemigo (si hay alguno).\r\n\r\nLos Héroes elegidos se muestran en el lado izquierdo de la pantalla. Para una campaña de <b>Imperial Assault</b> se pueden escoger entre 2 y 4 Héroes. Sin embargo, no importa cuántos Héroes se hayan elegido, el jugador Rebelde siempre cuenta con 4 activaciones de Héroes. \r\n\r\n{-} 4 Héroes: cada Héroe se activa 1 vez\r\n{-} 3 Héroes: cada Héroe se activa 1 vez. Después de que cada uno se haya activado 1 vez, uno de los Héroes puede realizar una activación adicional. Esto se muestra en la app como un Héroe \"virtual\". La activación adicional se debe hacer por un Héroe diferente en cada ronda. Adicionalmente, cada Héroe gana +3 Vida.\r\n{-} 2 Héroes: cada Héroe se activa 2 veces. La segunda activación solo puede realizarse después de que ambos Héroes hayan completado la primera activación. Adicionalmente, cada Héroe gana +10 Vida\r\n\r\nEl Imperio siempre obtiene 1 activación por cada grupo que tenga desplegado.</color>",
+          "GUID": "f9bb75f6-ad94-4b09-a983-da4f9dc4ce4c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Para seguir las activaciones, puedes usar las fichas que se suministran con el juego, o los símbolos verdes de activación en las imágenes de los Héroes en la app.\r\n\r\nPulsa sobre un símbolo de activación verde para marcar que la activación se ha completado. Al comienzo de la siguiente ronda, todos los símbolos de activación se reinician. \r\n\r\nEn el lado izquierdo de la pantalla también se muestran los <b>Aliados</b>. Pulsa sobre <b>Continuar</b> para aprender más sobre cómo funcionan.</color>",
+          "GUID": "d6db7bab-ccca-46d1-b513-cfd8e5d9d140",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "La puerta se abre y una mujer joven de pelo oscuro con una túnica blanca entra. Le reconoces inmediatamente. La puerta se cierra tras ella, y la Princesa Leia Organa sonríe cuando ve que ya habéis salido del tanque bacta. \r\n\r\n- Muy bien - dice. - Parece que estáis bien. Por un momento llegué a estar preocupada.",
+          "GUID": "c75d62d7-d111-48bd-8d65-dbe308d1046a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 1",
+              "GUID": "28bf58e6-74e2-453d-a659-383410ad1188",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "f6dcf79c-288a-4640-9be2-1cdb7210ccb7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "",
+          "bonuses": "",
+          "keywords": "",
+          "abilities": "",
+          "customText": "",
+          "cardName": "Leia Organa",
+          "GUID": "47097c07-5055-4fac-9d76-c9a7229e3e74",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Leia Organa"
+        },
+        {
+          "tbText": "<color=\"yellow\">Cuando un Aliado o Enemigo es desplegado, busca la carta de Despliegue correspondiente y colócala en la zona de juego. Después, despliega la miniatura. \r\n\r\nSin embargo, algunos Aliados o Enemigos se han modificado en la app, y no corresponden con una carta de despliegue impresa o una miniatura. En este caso, la ficha de misión Rebelde representa a Leia. Puedes hacer click derecho / doble click en la imagen de un Aliado o Enemigo para mostrar su carta de despliegue, ya sea a medida de la app o no. (Selecciona el icono {J} y pruébalo, aunque no hay mucho que ver en la carta de Leia).\r\n\r\nCada grupo Aliado obtiene 1 activación. Los jugadores Rebeldes normalmente eligen cuándo activar a un Aliado, pero para este tutorial, activemos a Leia en primer lugar. En una misión normal, los jugadores tienen todo el control sobre las acciones de los Aliados, pero Leia siempre ha sido cabezota.</color>",
+          "GUID": "60fa60fc-585c-4c5c-8154-a13160ebcc10",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "First Activation",
+      "GUID": "4f5befe7-5526-4fa6-9e40-8e78ffbc06f1",
+      "eventText": "- Gracias por el aviso- continúa Leia. - Ahora mismo estamos analizando la información que nos habéis proporcionado, pero está claro que nos habéis hecho un gran favor. Hay rumores sobre un novedoso programa de armas, pero no tenemos que preocuparnos por eso ahora mismo. \r\n\r\n- Estáis en la \"Corazón Partío\", una de nuestras fragatas médicas. Nuestros médicos os han curado. Me temo que vuestro carguero no tuvo tanta suerte, pero pudimos sacaros a tiempo, junto con algunas de vuestras pertenencias. \r\n\r\nLeia comienza a caminar hacia una consola en la pared más alejada de vosotros.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "00b5f051-0f5c-4d39-bd9d-c1d0a7055a0b",
+              "theText": "La consolda de la pared controla las puertas de los armarios.",
+              "buttonList": [
+                {
+                  "GUID": "d15cec46-7f79-44bd-8853-6ef8dd0e17f3",
+                  "theText": "{A} Abrir armario"
+                }
+              ]
+            }
+          ],
+          "GUID": "c8f02fde-77a8-4e0f-8f2c-93457c0bf295",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Cuando una figura se activa, dispone de 2 <b>acciones</b> que puede gastar para varias cosas. Las acciones disponibles son:\r\n\r\n{-} Mover\r\n{-} Interactuar\r\n{-} Atacar\r\n{-} Descansar\r\n{-} Acciones Especiales\r\n\r\nUna figura puede gastar sus 2 acciones en cualquier combinación de las acciones listadas.</color>",
+          "GUID": "3f0f21ba-a7d7-45e8-b57a-f52e049c6610",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Puesto que Leia necesita <b>moverse</b> para llegar al terminal, gasta 1 de sus 2 acciones en una acción de <b>Mover</b>\r\n\r\nLa acción de <b>Mover</b> no mueve inmediatamente a una figura. En su lugar, otorga a la figura tanto <i>puntos de movimiento</i> como su valor de <i>Velocidad</i>. La velocidad de una figura aparece en su carta de despliegue (u Hoja de Héroe). En el caso de Leia, su Velocidad es 5, por lo que obtiene 5 puntos de movimiento. Los puntos de movimiento se pueden gastar durante toda la activación, e incluso repartirse, pero no se acumulan para activaciones posteriores.\r\n\r\nUna figura puede gastar 1 punto de movimiento para moverse a una casilla adyacente (ortogonalmente o en diagonal).</color>",
+          "GUID": "a00f34fe-24e2-4a63-98e5-f331af679f8e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Al moverse, los jugadores deben tener en cuenta el terreno. 1 punto de movimiento basta para moverse a la mayoría de casillas. Sin embargo, hay excepciones:\r\n\r\n{-} El <i>Terreno Difícil</i> se identifica por el borde azul. Moverse a una casilla de terreno difícil requiere 1 punto de movimiento adicional. \r\n{-} El <i>Terreno Bloqueado</i> está marcado mediante un borde rojo, como los tanques de bacta. Las figuras normalmente no pueden moverse a casillas de <i>terreno bloqueado</i>. Los bordes negros entre casillas (muros) también cuentan como terreno bloqueado.\r\n{-} El <i>Terreno Infranqueable</i> se identifica mediante un borde rojo discontinuo. Las figuras normalmente no pueden moverse a casillas de terreno infranqueable, pero puede interactuar y atacar a través del borde discontinuo.\r\n\r\nUna figura puede moverse a la casilla ocupada por otra figura, pero no puede terminar su movimiento en esa casilla. Moverse a una casilla ocupada por una figura <i>hostil</i> requiere un punto de movimiento adicional.</color>",
+          "GUID": "6ab12cd9-4a06-4f4a-99e0-3d4631139ed9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Leia gasta 4 puntos de movimiento y se mueve hasta estar adyacente al terminal.\r\n\r\nTen en cuenta que <b>Imperial Commander</b> no sigue la posición de las figuras en las misiones normales. Esto se hace solo para la demostración de este tutorial.</color>",
+          "GUID": "2f173ba6-4c1a-43f9-9543-5ba682be6c30",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 1",
+              "GUID": "8f650ca0-2257-4f66-a109-1ef0eb4be7fd",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 2",
+              "GUID": "dcab5335-287c-406a-a4a5-8cb581c2631c",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "dd1cad7c-d26b-4220-ab63-b7dd2bf4ffa2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 2",
+              "GUID": "75a8b5c8-6197-4390-9d35-8f1b3ceeeef7",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 3",
+              "GUID": "a2f9ea5f-94a4-434c-a40e-b42ae562aec7",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "0eeac485-b69d-454d-a8b7-75ead15372b1",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 3",
+              "GUID": "1a151d65-ded0-43bb-b414-f762bd22d9f9",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 4",
+              "GUID": "bbc930d3-01f4-45ff-865a-167b8a42ab1e",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "929a5c58-391a-4b62-8c8b-77895f9e811a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 4",
+              "GUID": "067ea6e4-bd05-4bba-84c8-3e34670456d0",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 5",
+              "GUID": "84d28d38-2289-40f8-b48f-4f6eeff1265c",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "e532b1a7-d02f-4140-b8aa-48bf6f19b4c6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia presiona un botón.\r\n\r\n<color=\"yellow\">Leia gasta su segunda activación en una acción de <i>Interactuar</i>. Las figuras pueden interactuar con las fichas del tablero. Para hacerlo, deben estar en la misma casilla que la ficha, o en una adyacente, y gastar una acción.\r\n\r\nSelecciona el terminal y pulsa sobre \"{A} Abrir armario\". El símbolo {A} indica que esto requiere una acción.</color>",
+          "GUID": "1ea511d2-46a6-4f1a-addf-ccec9e1ac0ce",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Shelf opens",
+      "GUID": "38a6adb2-12e8-473f-9f35-f4e47c30a5f6",
+      "eventText": "Un armario en la pared opuesta a los tanques de bacta se abre.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Jyn",
+              "GUID": "6f860a46-bf6c-448f-ada7-3aaae97c765a",
+              "theText": "Las posesiones de Jyn están en este contenedor.",
+              "buttonList": [
+                {
+                  "GUID": "d7412c88-4055-47dd-a0fb-efaf87031377",
+                  "theText": "{A} Abrir"
+                }
+              ]
+            },
+            {
+              "entityName": "Crate Gaarkhan",
+              "GUID": "e524f274-5d73-4ceb-bab0-4c0c83566b9a",
+              "theText": "Las posesiones de Gaarkhan están en este contenedor.",
+              "buttonList": [
+                {
+                  "GUID": "6743906f-708c-4164-b6b7-3fb5362d3b8e",
+                  "theText": "{A} Abrir"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 1",
+              "GUID": "f3f01bff-0e9e-41d9-a859-07031cf7c118",
+              "theText": "La consola de la pared controla las puertas de los armarios.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "1dd3026c-f46a-4c02-bba4-1c5153cedd70",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "- Vuestras cosas están en esos contenedores. Tomaos el tiempo que necesitéis.\r\n\r\n<color=\"yellow\">Leia ya ha gastado todas sus acciones, pero aún le queda 1 punto de movimiento. Usa ese punto para retroceder un poco.</color>",
+          "GUID": "ba1c8ef3-159e-4fa9-ad54-fd2d6eba33c8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 5",
+              "GUID": "ae7ebf00-bd99-4f90-a1ef-7b9b0e36c11c",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 6",
+              "GUID": "97e89eb7-3006-44ca-8607-e5e884b08625",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "4a0cc4ac-3933-4486-8157-dac06e424d10",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Una vez que ha gastado todas sus acciones y puntos de movimiento, la activación de Leia termina.</color>",
+          "GUID": "4865fdd8-dc34-4900-8e2b-15194d89a1a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "3e4df8cf-dfd2-4bf6-8cec-1176ce0b6860",
+              "theText": "Despliega a <b>Jyn Odan</b> aquí.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "39c0f4ed-b2d6-4330-9a49-7976dde56f76",
+              "theText": "Despliega a <b>Gaarkhan</b> aquí.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 2",
+              "GUID": "5e3c1866-2edc-42f2-a095-0ef2a50a6cc0",
+              "theText": "Posición de Gaarkhan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn 2",
+              "GUID": "89b1d262-d116-4279-b790-fe481d5fb3c6",
+              "theText": "Posición de Jyn.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "06f9a6e9-5a1c-4cfa-bc9a-2bef4912734c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Ahora que Leia ha terminado, los Héroes pueden activarse. Cada Héroe debe gasta 1 acción de <b>Mover</b> y 1 acción de <b>Interactuar</b> para abrir un contendor. \r\n\r\nProcede con las activaciones de los Héroes en cualquier orden. Recuerda que debes estar adyacente a un contenedor o en la casilla de dicho contenedor para interactuar con él, así que mueve a Jyn a la casilla resaltada en verde durante su activación, y a Garrkhan a la casilla resaltada en azul en la suya.</color>",
+          "GUID": "8c2deefd-089c-4eae-8337-9fd535cd50fc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Recoger vustras pertenencias de los contenedores.",
+          "longText": null,
+          "GUID": "509251b4-348e-4792-a208-64e5c80a36c7",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Jyn Crate Opened",
+      "GUID": "cf2f4483-8946-4553-8251-8dcf00ac3f53",
+      "eventText": "Dentro encontráis la ropa de Jyn y su viejo y confiable bláster. \r\n\r\n<color=\"yellow\">Jyn Odan puede poner su carta de objeto inicial boca arriba.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Jyn",
+              "GUID": "b040c0aa-8a08-43dd-a48c-3454e6b10c47",
+              "theText": "Las posesiones de Jyn están en este contenedor.",
+              "buttonList": [
+                {
+                  "GUID": "6d0e1ad7-646f-485e-86fc-244a10904246",
+                  "theText": "{A} Abrir"
+                }
+              ]
+            }
+          ],
+          "GUID": "ebdabfc1-71ad-4e70-a1f8-c82af9cebb38",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Gaarkhan Crate Opened",
+      "GUID": "f2a46c86-cc4e-4b01-8da2-6025bcf3f83a",
+      "eventText": "La armadura de Gaarkhan y su vibro-hacha están dentro del armario.\r\n\r\n<color=\"yellow\">Gaarkhan puede poner su carta de objeto inicial boca arriba.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Gaarkhan",
+              "GUID": "d14ec9ff-fd6e-402a-91b1-b58f530cc958",
+              "theText": "Las posesiones de Gaarkhan están en este contenedor.",
+              "buttonList": [
+                {
+                  "GUID": "0d9481a9-7c36-4531-985a-b10b13ee7120",
+                  "theText": "{A} Abrir"
+                }
+              ]
+            }
+          ],
+          "GUID": "cdffeed5-5440-4167-b319-582728b2caef",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Both Crates Opened",
+      "GUID": "6c290cee-85ae-4cd7-8154-6d5db9e39ef2",
+      "eventText": "- Tenéis buen aspecto - dice Leia. - Veamos como de en forma estáis después del tiempo que habéis pasado en el tanque bacta.\r\n\r\nPresiona otro botón en el terminal. La puerta se mueve unos centímetros, y se detiene con un ruido metálico. Parece atascada. Leia suspira. - Por supuesto. ¿Me ayudas, grandullón?",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "9c0253ec-9e45-4b5a-88b1-e4128e0bca0d",
+              "theText": "La puerta de salida de la enfermería está atascada. Va a requerir algo de fuerza para abrirse.",
+              "buttonList": [
+                {
+                  "GUID": "bd1e7cdc-e558-483e-b8df-964a66a47a8f",
+                  "theText": "{A} Forzar"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Gaarkhan 2",
+              "GUID": "7d315334-6c2a-4820-a9f7-e70a8b7c2c5e",
+              "theText": "Posición de Gaarkhan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 3",
+              "GUID": "307ab2a3-4cc2-45b7-be0c-3eab1555a439",
+              "theText": "Posición de Gaarkhan.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "7717fe7e-9555-4b40-8cd3-b8a357251522",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Algunas interacciones (y otros eventos durante una misión) requieren de una <i>prueba de atributos</i>. Los atributos de los Héroes se listan en la parte inferior de su Hoja de Héroe.\r\n\r\n{K}: Fortaleza\r\n{J}: Percepción\r\n{I}: Tecnología\r\n\r\nCuantos más dados tenga un Héroe listados para sus atributos, mayor probabilidad tiene de pasar las pruebas con éxito. \r\n\r\nForzar la puerta va a requerir algo de Fortaleza. Por supuesto, un enorme Wookie es más adecuado para esta tarea que un ágil contrabandista, así que comienza la segunda activación de Gaarkhan. Muévelo a la casilla resaltada en azul y haz que interactúe con la puerta para forzarla.</color>\r\n",
+          "GUID": "a9bf6e05-1425-4730-85cf-b4646e019e0f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Forzar la puerta.",
+          "longText": null,
+          "GUID": "c5087acb-890a-4932-b9cc-47a87ae3de7d",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Door Attempt",
+      "GUID": "22a17d5b-d55f-4ebf-b2d1-0ba52261f3a6",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Introduces los dedos en la rendija de la puerta y empujas con todas tus fuerzas.\r\n\r\n<color=\"yellow\">Tira un número de dados según el atributo {K} en tu Hoja de Héroe (1 azul, 1 verde, 1 amarillo). Cada resultado {B} es un <i>éxito</i>. Introduce el número de éxitos debajo.</color>",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "529d177c-2f07-48c0-88b9-1647a1a66b22",
+              "theText": "Empujas tan fuerte como puedes, pero la puerta permanece atascada. \r\n\r\n<color=\"yellow\">No te preocupes, por supuesto que puedes volver a intentarlo. Sin embargo, cada interacción cuesta una acción. Jun también puede intentar forzar la puerta, pero con solo 1 dado azul, tiene muchas menos posibilidades.</color>"
+            },
+            {
+              "GUID": "60fde047-50b0-4612-ae20-48c1531c8905",
+              "theText": null
+            }
+          ],
+          "GUID": "aefc6fd8-8c00-449b-a936-6195bade52d6",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Door success",
+      "GUID": "482c6591-d971-4833-ba3a-74c2c359e87b",
+      "eventText": "Conseguís forzar la puerta, y Leia respira con un suspiro de alivio. - Por fin - dice. Tras la puerta hay un pasillo que lleva hasta el hangar. ",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "3303e3cb-ccc8-4004-8571-74d59bdf910f",
+              "theText": "Una puerta cerrada permite salir de la enfermería.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "8ac52bdc-5410-4d63-8a9b-fa0ad9adb379",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "- ¿Os apetecen unas prácticas de tiro para probar vuestra coordinación ojo-mano? - os pregunta Leia, burlona.\r\n\r\n<color=\"yellow\">A Jyn Oda aún le queda una activación, pero empecemos una nueva ronda. En una misión normal, normalmente no desperdiciarás activaciones, pero nada te obliga a gastar acciones. Simplemente pulsa en <b>Fin de Ronda</b> en la esquina inferior derecha.</color>",
+          "GUID": "4d20d544-e74e-4504-ac28-aef70200c612",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Finalizar la ronda.",
+          "longText": null,
+          "GUID": "1f749c39-c96f-4b31-b78f-3b32f4499cd4",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Target Practice Start",
+      "GUID": "d214e790-be04-4b4b-9533-cfa6c8c208a7",
+      "eventText": "Leia os hace señas para que entréis al hangar.\r\n\r\n<color=\"yellow\">En las primeras 2 activaciones, simplemente haz que Jyn y Gaarkhan realicen 2 acciones de <b>Mover</b> cada uno y llévalos a sus correspondientes casillas resaltadas. Una vez que un Héroe esté en posición, pulsa sobre la casilla y selecciona \"Héroe en posición\".</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn 2",
+              "GUID": "7f792718-9c30-4620-a1bd-1bf73f795290",
+              "theText": "Posición de Jyn.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 3",
+              "GUID": "d8dfe11c-d131-4fce-b00a-f6163159cb75",
+              "theText": "Posición de Gaarkhan.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn 3",
+              "GUID": "5bd88ef8-ba10-44bf-a09c-cac1d2b62fbb",
+              "theText": "Posición de Jyn.",
+              "buttonList": [
+                {
+                  "GUID": "596ce9c7-70b8-4b08-bdab-14b63b0c91ea",
+                  "theText": "Jyn en posición"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Gaarkhan 4",
+              "GUID": "d9b4f158-60ed-4d0c-a744-4480112d5968",
+              "theText": "Posición de Gaarkhan",
+              "buttonList": [
+                {
+                  "GUID": "238add75-d9c9-43e6-880a-4625ffa7b4d5",
+                  "theText": "Gaarkhan en posición"
+                }
+              ]
+            }
+          ],
+          "GUID": "7c5519ee-a80c-4c04-a564-ec25a42010ff",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Entrar al hangar.",
+          "longText": null,
+          "GUID": "85750eb0-e6bb-469e-80c9-c4587e1743d1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Drone Activation",
+      "GUID": "68150c11-d592-4927-94d4-1bc171e79555",
+      "eventText": "Leia os sigue dentro del hangar. \r\n\r\n<color=\"yellow\">Leia se activa y también realiza 2 acciones de <b>Mover</b>. Se mueve 10 casillas hasta la posición marcada en la app.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 6",
+              "GUID": "2192da21-ccb6-4fc6-bcb5-44c82d29f95b",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 7",
+              "GUID": "b39c8f5e-e27a-4a3f-9a0d-473ffaba1fb5",
+              "theText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "14b9e7c2-df15-49a0-ac97-ba04e3d0089d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia presiona unos botones en la pared. De unas aberturas en el muro, droides de entrenamiento entran flotando.",
+          "GUID": "774eed59-7501-4ecd-b1a5-25a80600cf2f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 1",
+              "GUID": "66d797ec-31ec-425f-87ba-2718a636fbef",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "b5885627-6caf-4ac9-9eb0-089fb880191e",
+                  "theText": "Destruir"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 2",
+              "GUID": "6410442e-c665-4757-8ab2-045b5c9a51f0",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "827dc410-99b2-4cca-80f6-2fced7096579",
+                  "theText": "Destruir"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 3",
+              "GUID": "b6ca5a82-9a1d-412e-8cf6-dd248b775d09",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "dd4f4a7c-4418-4319-8eba-cdd143dccd35",
+                  "theText": "Destruir"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 4",
+              "GUID": "0be298c8-1ed8-43f8-b4b4-03a1fec8ba00",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "a5410c00-d5bd-435e-9bf2-58afed88695d",
+                  "theText": "Destruir"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 5",
+              "GUID": "195c0acc-32f4-45f7-8cac-dc6cf260912a",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "3698af05-c0f8-4756-9c41-4f0e938a7719",
+                  "theText": "Destruir"
+                }
+              ]
+            }
+          ],
+          "GUID": "64a7af16-2f3b-4c98-997c-e27da16a1e61",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Las fichas de misión puede representar varias cosas, por ejemplo, transeúntes, informadores, o, en este caso, los droides de entrenamiento.</color>",
+          "GUID": "f24cd949-f82e-49c3-af1c-5fb2c6c7c4da",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "- Ahora enseñadme de lo que sois capaces - dice Leia, inclinándose sobre la pared y observándoos atentamente.",
+          "GUID": "1c8b1e72-d410-4725-8d0c-9c5a38dd1345",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Es hora de volar algunas cosas por los aires. \r\n\r\nLa acción de <b>Atacar</b> permite a un Héroe o Aliado atacar a un objetivo. Los Aliados atacan con la reserva de dados listada en su carta de despliegue. Los Héroes pueden elegir cualquier objeto con el que estén equipados. \r\n\r\nHay 2 tipos de ataques: a distancia ({O}) y cuerpo a cuerpo ({P}). Los ataques ({O}) pueden alcanzar a blancos lejanos. Los ataques ({P}) solo pueden realizarse contra objetivos adyacentes. \r\n\r\nSin embargo, para poder atacar a un objetivo, una figura debe tener <i>Línea de Visión</i> hasta él. </color>",
+          "GUID": "4a2a111a-589c-4dd9-bb09-4c52ca539d29",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Para determinar la línea de visión, el jugador traza 2 líneas imaginarias, que no se intersecten, desde una esquina de la casilla ocupada por el atacante hasta 2 esquinas contiguas de la casilla del objetivo. Si cualquiera de esas líneas pasa a través de un muro, figura o terreno bloqueado, la figura no tiene línea de visión sobre el objetivo. \r\n\r\nEn el tablero actual, Jyn (en la casilla resaltada en verde) tiene línea de visión sobre los droides gris, verde y rojo. No tiene línea de visión sobre el droide azul, porque Gaarkham la bloquea. Tampoco tiene línea de visión sobre el droide amarillo, puesto que hay terreno bloqueado (líneas rojas) que interrumpen su visión.\r\n\r\nEl droide verde también está tras líneas rojas, pero las líneas discontinuas son terreno infranqueable: las figuras no se puede mover a través de él, pero puede atacar o interactúa a través.\r\n\r\nGaarkhan tiene línea de visión sobre todos los drones excepto el amarillo. Sin embargo, su vibro-hacha es un arma {P}, por lo que no puede atacar a ningún droide sin moverse primero. \r\n\r\n¿Confuso? No te preocupes. El Apéndice 1 de la Guía de Referencia tiene múltiples ejemplos de las reglas sobre Línea de Visión.</color>",
+          "GUID": "8e0f4d70-7a66-4291-8a21-69ac96005871",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Gaarkhan y Jyn tienen una activación pendiente cada uno en esta ronda. Los jugadores deciden el orden en que los activan. Gaarkham tiene un arma {P}, por lo que necesita realizar una acción de Mover antes de poder atacar. Jyn puede disparar desde donde está, por lo que puede atacar 2 veces si lo desea. \r\n\r\nTen en cuenta que solo los Héroes pueden gastar 2 acciones de una activación en Atacar. Los Aliados y Enemigos solo tienen permitido atacar 1 vez por activación. Esto da a los Héroes una importante ventaja.</color>",
+          "GUID": "88611afe-54dc-406c-a316-08188c363d47",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Elige un Héroe. Puedes gastar una acción en moverlo a una posición mejor si lo necesitas. Luego, elige un objetivo. \r\n\r\nAhora tira los dados que se indican en la carta de objeto del Héroe. Para Jyn son 2 dados verdes; para Gaarkhan, 1 dado rojo y 1 dado amarillo.</color>",
+          "GUID": "b7e23f77-a722-4999-8e4e-ec32d309cd2b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Cuando realizas un ataque {O}, lo primero que hay que comprobar es la <i>Precisión</i>. Los números en los dados representan <i>Precisión</i>.\r\n\r\nCuenta el número de casillas entre el atacante y el objetivo. Por ejemplo, Jyn está a 3 casillas de todos los droides de entrenamiento que puede ver (gris, verde y rojo). Ahora suma los números de Precisión obtenidos en los dados. Si la precisión es al menos igual al número de casillas, el ataque impacta en el blanco. En caso contrario, falla. \r\n\r\nLos ataques {P} no requieren Precisión.</color>",
+          "GUID": "b397ab7d-11ae-4e7f-9e79-4ee281ba5936",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Si el ataque impacta, cuenta el número de símbolos {H} obtenidos en la tirada. Este es el daño que infliges a tu objetivo. Coloca el número correspondiente de fichas {H} sobre el droide de entrenamiento en el tablero. Ignora los símbolos {B} por ahora.\r\n\r\nSi el blanco sufre {H} igual o superior a su valor de Vida, es derrotado. Los droides de entrenamiento tienen Vida 3, por lo que si sufren al menos 3 {H}, son destruidos. \r\n\r\nSi esto ocurre, selecciona el droide y pulsa sobre \"Destruir\".</color>",
+          "GUID": "bab1ebbe-7897-4d38-aab5-6348984b0f71",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Continúa realizando activaciones y atacando a los droides. Por supuesto, puedes moverte libremente por el tablero. \r\n\r\nCuando todas las activaciones de los Héroes se han llevado a cabo, pulsa sobre <b>Fin de Ronda</b> y continúa con una nueva ronda. Leia no se activa por ahora. Se lo pasa mejor viendo como os peleáis con los droides de entrenamiento.</color>",
+          "GUID": "16c7e43e-1ade-46b5-b842-9b27c958bb73",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Destruye los droides (&Remotes destroyed&/5).",
+          "longText": null,
+          "GUID": "dd733ffe-013a-4680-a578-43b9f7e8a5d8",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "tbText": "<color=\"yellow\">Si en algún momento olvidas las reglas de la misión, como el valor de Vida de los droides de entrenamiento, siempre puedes abrir la <i>Información de Misión</i>. Toda la información relevante está resumida aquí. Simplemente pulsa sobre el icono <b>(i)</b> en la parte inferior.</color>",
+          "GUID": "7d57cc96-22ee-4acd-aeaa-02560f850cb3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Gaarkhan 4",
+              "GUID": "ce1926bb-0f1a-4778-ae64-a8e4c3111d6e",
+              "theText": "Posición de Gaarkhan.",
+              "buttonList": [
+                {
+                  "GUID": "ad08f9e1-0203-4ad2-995b-31622fb2f923",
+                  "theText": "Gaarkhan en posición"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Jyn 3",
+              "GUID": "35936235-d4d1-45f5-8970-cbcb1af5ee30",
+              "theText": "Posición de Jyn.",
+              "buttonList": [
+                {
+                  "GUID": "2010bb3f-7d2a-4225-af35-c51601d2ea37",
+                  "theText": "Jyn en posición"
+                }
+              ]
+            }
+          ],
+          "GUID": "0b7eaebe-6d49-45b2-8d5c-a5a252bb5a86",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Los droides de entrenamiento tienen Vida 3.",
+          "GUID": "0133ac59-be90-467a-bc83-beafc9cce759",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 1",
+      "GUID": "5b9050a9-f31b-466f-ae74-43beb94b652f",
+      "eventText": "El droide de entrenamiento explota con una lluvia de chispas.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 1",
+              "GUID": "291e7630-4230-46a1-96c8-a398ec39374b",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "d39291e7-f7e1-4704-b365-6269d7cc1640",
+                  "theText": "Destruir"
+                }
+              ]
+            }
+          ],
+          "GUID": "0c8ca803-878c-4a87-93e5-e4912cf9289d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 2",
+      "GUID": "06a17916-c69d-4306-a0bf-d653703309b9",
+      "eventText": "El droide de entrenamiento explota con una lluvia de chispas.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 2",
+              "GUID": "a6daf49a-48e6-4743-8cc6-1bd0378ea937",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "aa302b0a-fc9d-4364-b039-3e2742c0a84d",
+                  "theText": "Destruir"
+                }
+              ]
+            }
+          ],
+          "GUID": "75d8dc9c-9ed1-4ba3-b628-f7da8657c79c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 3",
+      "GUID": "d0cd7308-8a0e-405a-ba61-1f7aff42b836",
+      "eventText": "El droide de entrenamiento explota con una lluvia de chispas.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 3",
+              "GUID": "98bcfbbb-5732-4173-b061-c7d791d183fb",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "9320c181-ce87-4210-86b6-6b8f1fe69e34",
+                  "theText": "Destruir"
+                }
+              ]
+            }
+          ],
+          "GUID": "4c1403b7-31ba-4ece-8be2-769624f8cf66",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 4",
+      "GUID": "769f7ce3-1ac4-4aa9-89f2-83f9dc3f06ee",
+      "eventText": "El droide de entrenamiento explota con una lluvia de chispas.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 4",
+              "GUID": "dd8b72c2-c10e-47cd-b339-6399482cbb33",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "43c847ad-89dd-486f-9df9-1550b6f27cfb",
+                  "theText": "Destruir"
+                }
+              ]
+            }
+          ],
+          "GUID": "47e589d7-0f47-4fdd-9b41-31b25909dde7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 5",
+      "GUID": "8f9cd40f-4f48-4cd7-a717-2e9b8f376a43",
+      "eventText": "El droide de entrenamiento explota con una lluvia de chispas.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 5",
+              "GUID": "e75a2184-a517-41f7-9cf4-2ceb25ba453f",
+              "theText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "6d1a452b-015f-42ae-99e3-64d15011a6f3",
+                  "theText": "Destruir"
+                }
+              ]
+            }
+          ],
+          "GUID": "341160af-ae8c-4a19-a1f1-1f4db3f46f2e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission",
+      "GUID": "6c4448ad-e5c6-47e5-8a2e-1ad3ea72cdd4",
+      "eventText": "Cuando el último droide de entrenamiento explota, Leia os dedica unos aplausos. - ¡Bien hecho!- dice, sonriente. - Parece que habéis salido bien de ese lio. Realmente podríamos us...\r\n\r\nEl comunicador la interrumpe. -Alteza - una voz crepita a través del altavoz -Acabamos de recibir una señal de emergencia de Indu. Fuerzas Imperiales se aproximan a nuestra base secreta allí. Están pidiendo ayuda. Ninguna otra nave Rebelde está tan cerca como nosotros. \r\n\r\nLos ojos de Leia se abren más, y una determinación sombría se refleja en su rostro. -Dígales que aguanten. Ponga rumbo a Idu - ordena por el comunicador, y luego mira hacia vosotros.",
+      "eventActions": [
+        {
+          "tbText": "Puede que necesitéis esas armas más pronto de lo que pensábamos. Estaba a punto de deciros que nos vendría bien gente con vuestras habilidades y preguntaros si consideraríais uniros a nosotros. \r\n\r\nCuando ve que preparáis vuestras armas, os dedica una sonrisa. -Bienvenidos a la Alianza Rebelde.\r\n\r\n<color=\"yellow\">Esto completa la parte 1 de los tutoriales de <b>Imperial Commander</b>. En la parte 2, os enfrentaréis a otras cosas que no son droides de entrenamiento.</color>",
+          "GUID": "9fff3167-309f-4bc2-a78f-4c6cadfc8deb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Energy Fields",
+      "GUID": "072630bd-e001-40fa-9c39-6e27f0eea580",
+      "eventText": "- Parece que le habéis cogido el truco -Leia aplaude cuando el segundo droide de entrenamiento se estrella contra el suelo.\r\n\r\n- Hagámoslo un poco más interesante, ¿os parece? - Presiona un botón en la consola y unos campos de energía rodean a los droides.\r\n",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">La mayoría de objetivos, incluyendo Héroes, Enemigos y Aliados, no están indefensos contra los ataques. Tienen uno o más <i>dados de defensa</i> que se tiran a la vez que los dados de ataque. El tipo de dado (blanco o negro) se indica en la Hoja de Héroe o Carta de Despliegue.\r\n\r\nLos campos de energía protegen a los droides de entrenamiento y les otorgan 1 dado blanco de defensa. Cuando un Héroe ataque a un droide de entrenamiento, tira 1 dado blanco al mismo tiempo. Cada símbolo {G} (<i>Bloqueo</i>) anula 1 símbolo {H}.\r\n\r\nCada vez que se ejecute un ataque, no olvides tirar los dados de defensa correspondientes. Hay algunos blancos que no tienen dados de defensa. Estos podrían tener valores estáticos (por ejemplo, un símbolo {G}), o no tener ninguna defensa.</color>",
+          "GUID": "370b63f9-0444-4e32-84d9-09a4a9e3d14a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Las armas también tienen algunos trucos. Cada vez que tires los dados de ataque, puedes obtener algunos símbolos {B}. Los símbolos {B} se denominan <i>Incrementos</i>.\r\n\r\nLos incrementos se puede usar para activar <i>Capacidades de Incremento</i>. Normalmente aparecen en las Cartas de Despliegue o en las Cartas de Objeto.</color>",
+          "GUID": "9d815937-2df9-4ca3-b7d1-8b7cfad9f5bc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Por ejemplo, el <i>Bláster de Época</i> de Jyn tiene las siguientes capacidades de incremento:\r\n\r\n{B}: +1{H}\r\nJyn puede gastar uno de los {B} obtenidos para añadir 1 {H} a los resultados.\r\n\r\n{B}: +1 Precisión\r\nJyn puede gastar uno de los {B} obtenidos en el ataque para añadir +1 a la Precisión, posiblemente alcanzando un blanco en el que de otra forma no hubiera logrado impactar.</color>",
+          "GUID": "4a60311b-4427-4027-bf06-be5b50765497",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">La vibrohacha de Gaarkhan tiene las siguientes capacidades de incremento:\r\n\r\n{B}: Perforante 1\r\nGaarkhan puede gastar 1 de los {B} obtenidos para anular un símbolo {G} de los dados de defensa.\r\n\r\n{B}: Tajo 1 {H}\r\nSi el blanco del ataque sufre 1 o más {H}, Gaarkhan puede gastar uno de los {B} obtenidos en el ataque para elegir a otra figura distinta u objeto quesean un objetivo válido para un ataque. La figura u objeto elegido sufre 1 {H}.</color>",
+          "GUID": "ee172af5-4525-4e47-8304-08fca5b6743c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Cada capacidad de incremento solo se puede usar una vez por ataque. Por ejemplo, Jyn no puede gastar 2 {B} para incrementar el daño en 2 {H}. Si una habilidad se lista varias veces en una carta, se puede usar tantas veces como aparezca listada. \r\n\r\nLos símbolos {F} en los dados de defensa se denominan <i>Evadir</i>. Cada {F} cancela un {B}.\r\n\r\nEn el dado blanco, también aparece el símbolo {E}. Se denomina <i>Esquivar</i>. El símbolo {E} implica que el ataque falla por completo, sin infligir ningún daño.</color>",
+          "GUID": "2f2c25b1-a8d9-4046-a75c-9af90553e779",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Ahora seguid atacando a los droides de entrenamiento protegidos.</color>",
+          "GUID": "16ba2493-6684-4295-9539-43b3e044ce3d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "theText": "{-} Los droides de entrenamiento tienen Vida 3.\r\n{-} Los droides de entrenamiento tiran 1 dado blanco como defensa.\r\n{-} {H} = Daño\r\n{-} {B} = Incremento, para activar capacidades de incremento\r\n{-} {G} = Bloqueo, anula 1 {H}\r\n{-} {F} = Evadir, anula 1 {B}\r\n{-} {E} = Esquivar, el ataque falla",
+          "GUID": "6f4724b7-ed95-4b08-afbe-1591c3094181",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Door 1",
+      "GUID": "b2070d75-7f02-4045-8976-d90ef8049e13",
+      "mainText": "Una puerta cerrada permite salir de la enfermería",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn",
+      "GUID": "2a41135e-0bee-4ad8-b776-039380272a16",
+      "mainText": "Despliega a <b>Jyn Odan</b> aquí.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan",
+      "GUID": "7f94645b-4f4d-4bec-8558-41fc6c6f72d7",
+      "mainText": "Despliega a <b>Gaarkhan</b> aquí.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 1",
+      "GUID": "7cd21e8e-34f7-4c18-b1c1-24aa13d0ae55",
+      "mainText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate Jyn",
+      "GUID": "d11bb204-54b3-4fcd-98e7-51ed05970335",
+      "mainText": "Las posesiones de Jyn están en este contenedor",
+      "buttonList": [
+        {
+          "GUID": "a994744b-2f91-444d-89f9-eccc0b0bfbca",
+          "theText": "{A} Abrir"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate Gaarkhan",
+      "GUID": "4d440025-3ec2-46f1-9069-2117eb5d7ae0",
+      "mainText": "Las posesiones de Gaarkhan están en este contenedor.",
+      "buttonList": [
+        {
+          "GUID": "8980b5fd-df4b-46c8-a614-97d9a1f8a1b7",
+          "theText": "{A} Abrir"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "da948162-c3b5-4172-87b5-8a2bd213beee",
+      "mainText": "La consola de la pared controla las puertas de los armarios",
+      "buttonList": [
+        {
+          "GUID": "a95a01dd-f827-48bb-824a-3fa1549b3a06",
+          "theText": "{A} Abrir armarios"
+        }
+      ]
+    },
+    {
+      "entityName": "Leia 2",
+      "GUID": "d4de8012-e4ab-43f3-8cb9-76593eca68de",
+      "mainText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 3",
+      "GUID": "a4e09794-549c-4554-b5dd-7c9616280452",
+      "mainText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 4",
+      "GUID": "5079f713-03c8-42b3-8748-ab7bc5655abd",
+      "mainText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 5",
+      "GUID": "cfbaaf90-961d-4e94-bb05-586d846f2d9f",
+      "mainText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 6",
+      "GUID": "bb86cfa7-0b68-4c13-8c48-ac78918e1899",
+      "mainText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 2",
+      "GUID": "31a5f15d-f27b-4cd5-8e61-a5a29e052dbf",
+      "mainText": "Posición de Jyn.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 2",
+      "GUID": "76396914-322b-4901-af58-238c0d708659",
+      "mainText": "Posición de Gaarkhan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 3",
+      "GUID": "0dbf8922-6f85-4042-9858-961d05af6b4b",
+      "mainText": "Posición de Gaarkhan.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 3",
+      "GUID": "fb09c4e7-baf6-481c-8e42-cfbb82fc047d",
+      "mainText": "Posición de Jyn.",
+      "buttonList": [
+        {
+          "GUID": "8e723b57-995e-49ec-b0f3-fbbfccc3bc8a",
+          "theText": "Jyn en posición"
+        }
+      ]
+    },
+    {
+      "entityName": "Highlight Gaarkhan 4",
+      "GUID": "9c313a60-ea88-4cd8-bce2-b04dfe394777",
+      "mainText": "Posición de Gaarkhan.",
+      "buttonList": [
+        {
+          "GUID": "03636aa7-72a4-4a5f-a414-6e54166c165e",
+          "theText": "Gaarkhan en posición"
+        }
+      ]
+    },
+    {
+      "entityName": "Leia 7",
+      "GUID": "a1d35d6d-ad6e-41d7-8fff-103db0acf0bc",
+      "mainText": "La ficha de misión Rebelde representa a <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Drone 1",
+      "GUID": "9769786b-ad51-4933-92b0-d32d520cd147",
+      "mainText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "070599c7-7692-40b9-98cb-6c225d6f1ced",
+          "theText": "Destruir"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 2",
+      "GUID": "a0658804-fbf9-494a-be42-cfc279f32787",
+      "mainText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "49b1a1e4-5881-453d-96f8-3ff8ce3007da",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 3",
+      "GUID": "40f7b7fa-a2d2-44b2-98ba-d1e9996877ab",
+      "mainText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "3b881738-af54-4b0e-9f33-85bb85f71dcc",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 4",
+      "GUID": "41ee4950-5d1c-41da-b3a3-56078d8ea6ae",
+      "mainText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "1b08619e-7a31-4526-9fb3-e0a74a8ff3bc",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 5",
+      "GUID": "9ad4aa77-4667-47a4-8228-59ec456899b3",
+      "mainText": "El droide de entrenamiento está flotando a 2 metros del suelo, con suave zumbido.\r\n\r\n<color=\"yellow\">El droide de entrenamiento tiene Vida 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "21c10f4c-3f3a-4e63-9c94-5b1997dba364",
+          "theText": "Destroy"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}
