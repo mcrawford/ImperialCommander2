@@ -493,6 +493,9 @@ namespace Saga
 			//create deployment hand and manual deploy list
 			DataStore.CreateDeploymentHand( DataStore.sagaSessionData.EarnedVillains, DataStore.sagaSessionData.setupOptions.threatLevel );
 			DataStore.CreateManualDeployment();
+			//ensure a regular Imperial Officer (DG004, else DG005) is in the deployment hand
+			//for the "Internal Affairs" Agenda card -- remove after this campaign
+			EnsureImperialOfficerInHand();
 			//deploy heroes
 			for ( int i = 0; i < DataStore.sagaSessionData.MissionHeroes.Count; i++ )
 				dgManager.DeployHeroAlly( DataStore.sagaSessionData.MissionHeroes[i] );
@@ -530,6 +533,32 @@ namespace Saga
 				 var tiles = tileManager.ActivateAllVisibleSections();
 				 DoStartupTasks( tiles );
 			 } );
+		}
+
+		/// <summary>
+		/// Ensure the Imperial deployment hand contains a regular Imperial Officer.
+		/// Adds DG004 if not already present; otherwise adds DG005 if not already present;
+		/// otherwise does nothing.
+		///
+		/// NOTE: This is for the "Internal Affairs" Agenda card.
+		/// TODO: Remove this code (and its call in StartNewGame) after this campaign.
+		/// </summary>
+		void EnsureImperialOfficerInHand()
+		{
+			string[] candidates = { "DG004", "DG005" };
+			foreach ( var id in candidates )
+			{
+				if ( DataStore.deploymentHand.Any( x => x.id == id ) )
+					continue;
+				var card = DataStore.allEnemyDeploymentCards.Where( x => x.id == id ).FirstOr( null );
+				if ( card != null )
+				{
+					DataStore.deploymentHand.Add( card );
+					Debug.Log( $"EnsureImperialOfficerInHand()::ADDED {card.name} ({card.id}) to deployment hand" );
+					return;
+				}
+			}
+			Debug.Log( "EnsureImperialOfficerInHand()::Both DG004 and DG005 already in hand (or unavailable); nothing added" );
 		}
 
 		void DoStartupTasks( Tuple<List<string>, List<string>> tiles )

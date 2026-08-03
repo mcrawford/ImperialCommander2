@@ -171,6 +171,12 @@ namespace Saga
 			//otherwise it just got (up/down)graded to/from Elite or it's from the event action
 			DataStore.deploymentHand.Remove( cardDescriptor );
 
+			if ( cardDescriptor.faction == "Mercenary" )
+			{
+				GlowEngine.FindUnityObject<QuickMessage>().Show(
+					$"GUILD HUNTERS: {cardDescriptor.name} is deployed Hidden." );
+			}
+
 			//ATTACHMENT SYSTEM: Check if any attachments are available and assign to this new deployment
 			if ( DataStore.sagaSessionData.gameVars.attachmentDefinitions != null &&
 				 DataStore.sagaSessionData.gameVars.availableAttachments.Count > 0 )

@@ -1,3 +1,8 @@
 {
-  "effects": ["KNOWLEDGE OF ATTACK: Give one figure in this group +1 {f}."]
+  "effects": [
+    "WANTED: DEAD: Once per this activation: Apply +1 Damage or +1 Surge to the attack results.",
+    "SAVAGE MOTIVATION: If at any point during this activation a Rebel figure is adjacent to this group, roll 1 yellow die — that figure suffers that much Damage. {W} figures roll 1 blue die instead.",
+    "VENDETTA: Once per this activation: Reroll 1 attack die — choose a red die showing only 1 {H} result, a blue or green die showing no {H} results, or a yellow die showing only the single {B}.\nThe attack gains: {B}: Reroll 1 additional attack die using the same criteria. Only spend if no other surge abilities remain.",
+    "NOWHERE TO HIDE: Once per this activation: Figures do not block line of sight for this attack and you add 1 blue die to the attack pool."
+  ]
 }

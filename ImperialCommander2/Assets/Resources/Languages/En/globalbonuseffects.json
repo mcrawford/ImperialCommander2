@@ -1,14 +1,9 @@
 {
   "globalBonuses": [
     {
-      "id": "sharpshooters",
-      "name": "SHARPSHOOTERS",
-      "bonusInstruction": "Apply +1 Accuracy to the attack results."
-    },
-    {
-      "id": "find_the_weakness",
-      "name": "FIND THE WEAKNESS",
-      "bonusInstruction": "Apply Pierce 1 to the attack results."
+      "id": "GH",
+      "name": "GUILD HUNTERS",
+      "bonusInstruction": "Imperial figures gain:\n{B}: +1 {H}, +2 Accuracy\n{B}: Pierce 2\n{B}: Hide"
     }
   ]
 }
