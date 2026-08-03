@@ -1,128 +1,74 @@
 {
   "languageID": "Dutch (NL)",
   "missionProperties": {
-    "missionName": "Duistere Obsessie",
+    "missionName": "Duistere obsessie",
     "missionDescription": "",
-    "missionInfo": "{-} <color=“red”>Darth Vader</color> heeft +1 {G}.\n{-} <color=“red”>Darth Vader</color> kan niet worden geduwd door vaardigheden van rebellen.\n{-} Wanneer <color=“red”>Darth Vader</color> wordt aangevallen terwijl hij grenst aan een stormtrooper of <color=“red”>stormtrooper</color> die een doelwit van die aanval kan zijn, wordt dat figuur het doelwit van de aanval.\n{-} De rode rebellenmissietoken vertegenwoordigt Luke Skywalker.\n{-} Eenmaal per activering kan een held een interactie uitvoeren op een terminal ({I}) om de geopende deur het dichtst bij Luke te sluiten. Deuren die geopend zijn na de opstelling kunnen niet opnieuw gesloten worden.\n{-} Deuren zijn vergrendeld. Een figuur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).\n{-} Als alle helden gewond zijn, kan <color=“red”>Darth Vader</color> Luke aanvallen.\n{-} Als <color=“red”>Darth Vader</color> zijn activering beëindigt naast Luke, valt hij hem aan.\n{-} De rebellen winnen aan het einde van ronde 6 of wanneer <color=“red”>Darth Vader</color> is verslagen.\n{-} De rebellen verliezen wanneer <color=“red”>Darth Vader</color> Luke aanvalt.",
+    "missionInfo": "{-} <color=\"red\">Darth Vader</color> heeft +1 {G}.\n{-} <color=\"red\">Darth Vader</color> kan niet worden geduwd door vaardigheden van rebellen.\n{-} Wanneer <color=\"red\">Darth Vader</color> wordt aangevallen terwijl hij grenst aan een stormtrooper of <color=\"red\">stormtrooper</color> die een doelwit van die aanval kan zijn, wordt dat figuur het doelwit van de aanval.\n{-} De rode rebellen missietoken stelt Luke Skywalker voor.\n{-} Eénmaal per activering kan een held een interactie uitvoeren op een terminal ({I}) om de geopende deur het dichtst bij Luke te sluiten. Deuren die geopend zijn na de opstelling kunnen niet opnieuw gesloten worden.\n{-} Deuren zijn vergrendeld. Een figuur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).\n{-} Als alle helden gewond zijn, kan <color=\"red\">Darth Vader</color> Luke aanvallen.\n{-} Als <color=\"red\">Darth Vader</color> zijn activering beëindigt grenzend aan Luke, valt hij hem aan.\n{-} De rebellen winnen aan het einde van ronde 6 of wanneer <color=\"red\">Darth Vader</color> verslagen is.\n{-} De rebellen verliezen wanneer <color=\"red\">Darth Vader</color> Luke aanvalt.",
     "campaignName": "Darth Vader (Lord of the Sith) Figure Pack",
-    "startingObjective": "Houd <color=“red”>Darth Vader</color> weg bij Luke.",
-    "repositionOverride": "Iedereen behalve <color=“red”>Darth Vader</color>, stormtroopers: blokkeren de zichtlijn van de rebellen naar <color=“red”>Darth Vader</color>.",
+    "startingObjective": "Houd <color=\"red\">Darth Vader</color> weg bij Luke.",
+    "repositionOverride": "Iedereen behalve <color=\"red\">Darth Vader</color>, stormtroopers: blokkeren de zichtlijn van de rebellen naar <color=\"red\">Darth Vader</color>.",
     "additionalMissionInfo": ""
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "All Heroes Wounded",
+      "GUID": "72b8e023-a13f-4a6a-9118-c0dd1983778a",
+      "eventText": "Terwijl de laatste van jullie zich terugtrekt met de nodige verwondingen, klinkt een triomfkreet vanuit de Keizerlijke troepen.\n\nDarth Vader echter, zwijgt, op het mechanische ademhalen en het gezoem van zijn lichtzwaard na. In plaats van jullie af te maken, richt hij onmiddellijk zijn aandacht op Luke.\n\n{-} <color=\"red\">Darth Vader</color> kan nu Luke aanvallen.\n{-} Als <color=\"red\">Darth Vader</color> zijn activering grenzend aan Luke beëindigt, valt hij hem aan.",
       "eventActions": [
+        {
+          "newInstructions": "{-} Dit figuur legt elke schadelijke conditie af en lijdt dan 1 {H} voor elke afgelegde conditie. Als dit figuur verslagen zou worden, wordt hij niet verslagen tot het einde van deze activering.\n{A} Verplaats 4 naar de sabotageplaats.\n{A} Open een deur binnen 3 velden van dit figuur.\n{A} Verplaats 4 naar de sabotageplaats.\n{-} FORCE PULL: Plaats de twee dichtstbijzijnde stormtroopers of <color=\"red\">stormtroopers</color> grenzend aan dit figuur.\n{-} Val Luke aan.",
+          "GUID": "089b7e67-ca7e-43a7-8a78-663e92c5f2ad",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate1",
-              "GUID": "fa7ea3fe-e2bd-4cc4-af47-992f2b8c5233",
-              "theText": "Een oud voorraadkrat.",
+              "entityName": "Luke Skywalker",
+              "GUID": "4f556654-8057-4596-a30f-b31c159eb84f",
+              "theText": "Luke Skywalker probeert haastig zijn werk af te maken. Hij weet dat Vader bijna bij hem is.\n\n{-} Als <color=\"red\">Darth Vader</color> zijn activatie grenzend aan Luke beëindigt, valt hij hem aan.",
               "buttonList": [
                 {
-                  "GUID": "c1fd9946-ba3e-4736-80c2-3c1ca3114202",
-                  "theText": "{A} Openen"
+                  "GUID": "ae1c976e-0e81-4be1-9d9a-85b2bc540edf",
+                  "theText": "Val Luke aan"
                 }
               ]
             }
           ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "GUID": "3d50cdf3-5437-4061-a218-bb452e0de08d",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         }
       ]
     },
     {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventName": "Close Inner Door",
+      "GUID": "fc04bc99-4637-44f2-8a96-2a9fe9e930df",
+      "eventText": "De deur slaat dicht en beschermt Luke - voor nu. De deur zal de aanval niet lang kunnen weerstaan.",
       "eventActions": [
+        {
+          "otherTarget": "de dichtstbijzijnde gesloten deur",
+          "GUID": "38554f16-3677-4b65-9c91-0ea677fa5148",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Crate2",
-              "GUID": "ef3e5fa6-a895-4def-96fa-a40b7f33392c",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Je vergezelt Luke Skywalker op een geheime sabotagemissie. Het doelwit is een keizerlijk bolwerk en het is jouw taak om de held van de rebellen te bewaken. \n\nJe bewaakt de ingang van de faciliteit als er een bericht binnenkomt. “Vader komt eraan! Ga daar nu weg!”",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "{-} Dit figuur legt elke schadelijke conditie af en lijdt dan 1 {H} voor elke conditie die wordt afgelegd. Als dit figuur zou worden verslagen, wordt hij niet verslagen tot het einde van deze activatie.\n{Q}{A} BRUTALITY: Verplaats 4 om aangrenzend aan 2 of meer rebellen te komen. Val dan elke aangrenzende rebel aan.\n{Q} Verplaats 4 om {R1} aan te vallen.\n{A} FORCE CHOKE: Verplaats 2 richting {R1}. Vervolgens lijdt dat figuur 2 {H} en 1 {C}.\n{A} Verplaats 6 richting {R1}.\n{-} FORCE PULL: Plaats de twee dichtstbijzijnde stormtroopers of <color=“red”>stormtroopers</color> naast dit figuur.",
-          "modification": "+1 {G}",
-          "repositionInstructions": "",
-          "GUID": "bbaf2b80-a12f-4a4d-ae45-c865db559b70",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG072/Darth Vader"
-        },
-        {
-          "repositionText": "Kom naast <color=“red”>Darth Vader</color> te staan.",
-          "GUID": "f2842974-39f2-4a2f-a259-6d35390db780",
-          "eventActionType": 17,
-          "eaName": "Change Reposition Instructions"
-        },
-        {
-          "tbText": "{-} <color=“red”>Darth Vader</color> heeft +1 {G}.\n{-} <color=“red”>Darth Vader</color> kan niet worden geduwd door vaardigheden van rebellen.\n{-} Wanneer <color=“red”>Darth Vader</color> wordt aangevallen terwijl hij grenst aan een stormtrooper of <color=“red”>stormtrooper</color> die een doelwit van die aanval kan zijn, wordt dat figuur het doelwit van de aanval.\n{-} De rode rebellenmissietoken vertegenwoordigt Luke Skywalker.\n{-} Eenmaal per activering kan een held een interactie uitvoeren op een terminal ({I}) om de geopende deur het dichtst bij Luke te sluiten. Deuren die geopend zijn na de opstelling kunnen niet opnieuw gesloten worden.\n{-} Deuren zijn vergrendeld. Een figuur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).\n{-} Als alle helden gewond zijn, kan <color=“red”>Darth Vader</color> Luke aanvallen.\n{-} Als <color=“red”>Darth Vader</color> zijn activering beëindigt naast Luke, valt hij hem aan.\n{-} De rebellen winnen aan het einde van ronde 6 of wanneer <color=“red”>Darth Vader</color> is verslagen.\n{-} De rebellen verliezen wanneer <color=“red”>Darth Vader</color> Luke aanvalt.\r\n{-} Plaats de helden op het blauw gemarkeerde veld.",
-          "GUID": "b46690e4-0eed-42a1-aacb-a69e1156cb93",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Achter je klinkt het geluid van een explosie door de hal. Luke's stem klinkt door je comlink: “Ik ben klaar hier en heb een andere uitgang voor ons geopend. Volg me naar buiten toe!”\n\n{-} De rebellen winnen de missie!\n{-} Elke held ontvangt 1 XP. Helden ontvangen 200 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Vanuit de hal hoor je Luke schreeuwen. Je rent naar binnen en ziet Vader over een ontwapende en verslagen Skywalker staan. Terwijl de Dark Lord dichterbij komt, blaas je een gat naar buiten. Vader is afgeleid door de explosie, je grijpt Luke en duikt door het gat in de muur, blaster vuur regent op je neer.\n\n{-} De rebellen verliezen de missie.\n{-} Het Rijk krijgt <color=“red”>Darth Vader</color> (Lord of the Sith) als schurk.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Open Outer Door",
-      "GUID": "8c6180fd-ca09-4702-bd86-9ef4bb5e9f8f",
-      "eventText": "De deur stort in.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Outer Door",
-              "GUID": "309d3ebc-ea64-48e4-8004-98ab3f1d9d41",
-              "theText": "De buitendeur leidt dieper de installatie in, in de richting van Luke. De deur zal Darth Vader niet lang tegenhouden.\n\nDe deur is vergrendeld. Een figuur kan hem aanvallen (gezondheid: 5, verdediging: 1 {G}).",
+              "entityName": "Inner Door",
+              "GUID": "87686079-92f9-43a8-aa4d-2fa9fbb9b4cf",
+              "theText": "Direct achter de binnenste deur ligt de ruimte waar Luke probeert de installatie te saboteren.\n\nDe deur is vergrendeld. Een figuur kan hem aanvallen (gezondheid: 5, verdediging: 1 {G}).",
               "buttonList": [
                 {
-                  "GUID": "5f09d976-889a-432d-bcfb-44fb7cc92967",
+                  "GUID": "56629b57-7531-4072-ba8d-e5c65a89b4bc",
                   "theText": "Vernietigen"
                 }
               ]
             }
           ],
-          "GUID": "f7b125d1-360f-402b-b8c1-b52dd9377117",
+          "GUID": "4edef6fd-5edd-4261-858a-31c2ca090c68",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
-        },
-        {
-          "otherTarget": null,
-          "GUID": "6d60aae2-4920-4ffa-a783-db545534f424",
-          "eventActionType": 12,
-          "eaName": "Change Priority Target"
         }
       ]
     },
@@ -158,16 +104,101 @@
       ]
     },
     {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Vanuit de gang hoor je Luke schreeuwen. Wanneer je naar binnen rent, zie je Vader boven een ontwapende en verslagen Skywalker staan. Terwijl de Dark Lord dichterbij komt, blaas je een gat naar buiten. Afgeleid door de explosie grijpt Vader niet meteen in en jij grijpt je kans: je pakt Luke en duikt door het gat in de muur, terwijl blastervuur om je heen neerregent.\n\n{-} De rebellen verliezen de missie.\n{-} Het Rijk krijgt <color=\"red\">Darth Vader</color> (Lord of the Sith) als schurk.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Achter je galmt het geluid van een explosie door de gang. Luke meldt zich via je comlink: \"Ik ben hier klaar en heb nog een uitgang voor ons geopend. Volg me!\"\n\n{-} De rebellen winnen de missie!\n{-} Elke held ontvangt 1 XP. De helden ontvangen 200 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Je vergezelt Luke Skywalker op een geheime sabotagemissie. Het doelwit is een keizerlijk bolwerk en het is jouw taak om de held van de rebellen te bewaken. \n\nJe houdt de ingang van de faciliteit bezet wanneer er een bericht binnenkomt. \"Vader komt eraan! Wegwezen, nu!\"",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "{-} Dit figuur legt elke schadelijke conditie af en lijdt dan 1 {H} voor elke afgelegde conditie. Als dit figuur zou worden verslagen, wordt hij niet verslagen tot het einde van deze activatie.\n{Q}{A} BRUTALITY: Verplaats 4 om aangrenzend aan 2 of meer rebellen te komen. Val dan elke aangrenzende rebel aan.\n{Q} Verplaats 4 om {R1} aan te vallen.\n{A} FORCE CHOKE: Verplaats 2 richting {R1}. Vervolgens lijdt dat figuur 2 {H} en 1 {C}.\n{A} Verplaats 6 richting {R1}.\n{-} FORCE PULL: Plaats de twee dichtstbijzijnde stormtroopers of <color=\"red\">stormtroopers</color> grenzend aan dit figuur.",
+          "modification": "+1 {G}",
+          "repositionInstructions": "",
+          "GUID": "bbaf2b80-a12f-4a4d-ae45-c865db559b70",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG072/Darth Vader"
+        },
+        {
+          "repositionText": "Sta grenzend aan <color=\"red\">Darth Vader</color>.",
+          "GUID": "f2842974-39f2-4a2f-a259-6d35390db780",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "tbText": "{-} <color=\"red\">Darth Vader</color> heeft +1 {G}.\n{-} <color=\"red\">Darth Vader</color> kan niet worden geduwd door vaardigheden van rebellen.\n{-} Wanneer <color=\"red\">Darth Vader</color> wordt aangevallen terwijl hij grenst aan een stormtrooper of <color=\"red\">stormtrooper</color> die een doelwit van die aanval kan zijn, wordt dat figuur het doelwit van de aanval.\n{-} De rode rebellenmissietoken stelt Luke Skywalker voor.\n{-} Eénmaal per activering kan een held een interactie uitvoeren op een terminal ({I}) om de geopende deur het dichtst bij Luke te sluiten. Deuren die geopend zijn na de opstelling kunnen niet opnieuw gesloten worden.\n{-} Deuren zijn vergrendeld. Een figuur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).\n{-} Als alle helden gewond zijn, kan <color=\"red\">Darth Vader</color> Luke aanvallen.\n{-} Als <color=\"red\">Darth Vader</color> zijn activering beëindigt grenzend aan Luke, valt hij hem aan.\n{-} De rebellen winnen aan het einde van ronde 6 of wanneer <color=\"red\">Darth Vader</color> verslagen is.\n{-} De rebellen verliezen wanneer <color=\"red\">Darth Vader</color> Luke aanvalt.\n{-} Plaats de helden op het blauw gemarkeerde veld.",
+          "GUID": "b46690e4-0eed-42a1-aacb-a69e1156cb93",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "fa7ea3fe-e2bd-4cc4-af47-992f2b8c5233",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "c1fd9946-ba3e-4736-80c2-3c1ca3114202",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "ef3e5fa6-a895-4def-96fa-a40b7f33392c",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
       "eventName": "Open Inner Door",
       "GUID": "936b12bf-db4c-4b98-842e-f8b165432a85",
-      "eventText": "De deur slaat naar binnen, Luke schrikt op van zijn werk.\n\n“Hou hem bezig!”, roept hij. “Ik heb nog maar één minuut nodig!”",
+      "eventText": "De deur slaat naar binnen, Luke schrikt op van zijn werk.\n\n\"Hou hem bezig!\" roept hij. \"Ik heb nog maar één minuut nodig!\"",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Inner Door",
               "GUID": "41ca60c0-daad-4491-b647-2810fa69121c",
-              "theText": "Vlak achter de binnenste deur ligt de kamer waar Luke de installatie probeert te saboteren.\n\nDe deur is vergrendeld. Een figuur kan hem aanvallen (gezondheid: 5, verdediging: 1 {G}).",
+              "theText": "Direct achter de binnenste deur ligt de ruimte waar Luke probeert de installatie te saboteren.\n\nDe deur is vergrendeld. Een figuur kan hem aanvallen (gezondheid: 5, verdediging: 1 {G}).",
               "buttonList": [
                 {
                   "GUID": "6f94bb21-0e6e-48cf-8f6d-ca9bff2d7aeb",
@@ -189,64 +220,55 @@
       ]
     },
     {
-      "eventName": "Close Inner Door",
-      "GUID": "fc04bc99-4637-44f2-8a96-2a9fe9e930df",
-      "eventText": "De deur slaat dicht en beschermt Luke - voor nu. De deur zal de aanval niet lang kunnen weerstaan.",
+      "eventName": "Open Outer Door",
+      "GUID": "8c6180fd-ca09-4702-bd86-9ef4bb5e9f8f",
+      "eventText": "De deur stort in.",
       "eventActions": [
-        {
-          "otherTarget": "de dichtstbijzijnde gesloten deur",
-          "GUID": "38554f16-3677-4b65-9c91-0ea677fa5148",
-          "eventActionType": 12,
-          "eaName": "Change Priority Target"
-        },
         {
           "translatedEntityProperties": [
             {
-              "entityName": "Inner Door",
-              "GUID": "87686079-92f9-43a8-aa4d-2fa9fbb9b4cf",
-              "theText": "Vlak achter de binnenste deur ligt de kamer waar Luke de installatie probeert te saboteren.\n\nDe deur is vergrendeld. Een figuur kan hem aanvallen (gezondheid: 5, verdediging: 1 {G}).",
+              "entityName": "Outer Door",
+              "GUID": "309d3ebc-ea64-48e4-8004-98ab3f1d9d41",
+              "theText": "De buitendeur leidt dieper de installatie in, in de richting van Luke. De deur zal Darth Vader niet lang tegenhouden.\n\nDe deur is vergrendeld. Een figuur kan hem aanvallen (gezondheid: 5, verdediging: 1 {G}).",
               "buttonList": [
                 {
-                  "GUID": "56629b57-7531-4072-ba8d-e5c65a89b4bc",
+                  "GUID": "5f09d976-889a-432d-bcfb-44fb7cc92967",
                   "theText": "Vernietigen"
                 }
               ]
             }
           ],
-          "GUID": "4edef6fd-5edd-4261-858a-31c2ca090c68",
+          "GUID": "f7b125d1-360f-402b-b8c1-b52dd9377117",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
+        },
+        {
+          "otherTarget": null,
+          "GUID": "6d60aae2-4920-4ffa-a783-db545534f424",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
         }
       ]
     },
     {
-      "eventName": "All Heroes Wounded",
-      "GUID": "72b8e023-a13f-4a6a-9118-c0dd1983778a",
-      "eventText": "Terwijl de laatste van jullie zich terugtrekt met de nodige verwondingen, klinkt er een kreet van triomf door de keizerlijke troepen.\n\nAlleen Darth Vader blijft stil op zijn mechanische ademhaling en het gezoem van zijn lichtzwaard na. In plaats van jullie af te maken, richt hij zijn aandacht op Luke.\n\n{-} <color=“red”>Darth Vader</color> kan nu Luke aanvallen.\n{-} Als <color=“red”>Darth Vader</color> zijn activering naast Luke beëindigt, valt hij hem aan.",
+      "eventName": "Power of the Dark Side",
+      "GUID": "c0f7a89b-1d57-4f86-baf1-9ee8cd1a5676",
+      "eventText": "Terwijl de woede van Vader toeneemt, voel je een duistere energie om je heen toenemen, omdat de Sith Lord de duistere kant van de Force in zijn voordeel manipuleert.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Security Breach",
+      "GUID": "e7582cfd-c7ae-4831-97c0-91ff8af2dca9",
+      "eventText": "Alarmen beginnen door het hele station te loeien wanneer steeds meer Keizerlijke troepen op jullie aanwezigheid worden geattendeerd. Een verse groep stormtroopers stormt binnen om Vader te ondersteunen in zijn opmars.",
       "eventActions": [
         {
-          "newInstructions": "{-} Dit figuur legt elke schadelijke conditie af en lijdt dan 1 {H} voor elke conditie die wordt afgelegd. Als dit figuur verslagen zou worden, wordt hij niet verslagen tot het einde van deze activering.\n{A} Verplaats 4 naar de sabotageplaats.\n{A} Open een deur binnen 3 velden van dit figuur.\n{A} Verplaats 4 naar de sabotageplaats.\n{-} FORCE PULL: Plaats de twee dichtstbijzijnde stormtroopers of <color=“red”>stormtroopers</color> naast dit figuur.\n{-} Val Luke aan.",
-          "GUID": "089b7e67-ca7e-43a7-8a78-663e92c5f2ad",
-          "eventActionType": 11,
-          "eaName": "Change Group Instructions"
-        },
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Luke Skywalker",
-              "GUID": "4f556654-8057-4596-a30f-b31c159eb84f",
-              "theText": "Luke Skywalker probeert haastig zijn werk af te maken. Hij weet dat Vader bijna bij hem is.\n\n{-} Als <color=“red”>Darth Vader</color> zijn activatie naast Luke beëindigt, valt hij hem aan.",
-              "buttonList": [
-                {
-                  "GUID": "ae1c976e-0e81-4be1-9d9a-85b2bc540edf",
-                  "theText": "Val Luke aan"
-                }
-              ]
-            }
-          ],
-          "GUID": "3d50cdf3-5437-4061-a218-bb452e0de08d",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "dde9c01f-02a0-4bba-bfa3-11268ed1ce1f",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
         }
       ]
     },
@@ -275,28 +297,6 @@
           "eaName": "Change Priority Target"
         }
       ]
-    },
-    {
-      "eventName": "Security Breach",
-      "GUID": "e7582cfd-c7ae-4831-97c0-91ff8af2dca9",
-      "eventText": "Overal in het station gaan alarmbellen af zodra meer keizerlijke troepen te horen krijgen dat jullie er zijn. Een nieuwe groep stormtroopers stormt binnen om Vader te helpen bij zijn opmars.",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "dde9c01f-02a0-4bba-bfa3-11268ed1ce1f",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG001/Stormtrooper"
-        }
-      ]
-    },
-    {
-      "eventName": "Power of the Dark Side",
-      "GUID": "c0f7a89b-1d57-4f86-baf1-9ee8cd1a5676",
-      "eventText": "Terwijl de woede van Vader toeneemt, voel je een duistere energie om je heen toenemen, omdat de Sith Lord de duistere kant van de Force in zijn voordeel manipuleert.",
-      "eventActions": []
     }
   ],
   "mapEntities": [
@@ -323,9 +323,21 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
+      "entityName": "DP ETrooper 1",
+      "GUID": "45be4ca8-b6a7-4685-aa29-bbf28d60ef60",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 2",
+      "GUID": "0f224098-3061-4955-8eaf-dca23d59f052",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 3",
+      "GUID": "2f1cdb7d-56bb-4b61-9ce3-4a8625216eba",
+      "mainText": null,
       "buttonList": []
     },
     {
@@ -353,21 +365,26 @@
       "buttonList": []
     },
     {
-      "entityName": "DP ETrooper 1",
-      "GUID": "45be4ca8-b6a7-4685-aa29-bbf28d60ef60",
-      "mainText": null,
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
     },
     {
-      "entityName": "DP ETrooper 2",
-      "GUID": "0f224098-3061-4955-8eaf-dca23d59f052",
-      "mainText": null,
-      "buttonList": []
+      "entityName": "Inner Door",
+      "GUID": "72b5929e-b47b-46c8-852f-2a82a12f67a2",
+      "mainText": "Direct achter de binnenste deur ligt de ruimte waar Luke probeert de installatie te saboteren.\n\nDe deur is vergrendeld. Een figuur kan hem aanvallen (gezondheid: 5, verdediging: 1 {G}).",
+      "buttonList": [
+        {
+          "GUID": "b6bca997-cb00-42e3-9073-b0c80d8a6b11",
+          "theText": "Vernietigen"
+        }
+      ]
     },
     {
-      "entityName": "DP ETrooper 3",
-      "GUID": "2f1cdb7d-56bb-4b61-9ce3-4a8625216eba",
-      "mainText": null,
+      "entityName": "Luke Skywalker",
+      "GUID": "a86f044a-bce5-4201-b5a7-d2879b7cdd0e",
+      "mainText": "Luke Skywalker probeert haastig zijn werk af te maken.\n\n{-} Als alle helden gewond zijn, kan <color=\"red\">Darth Vader</color> Luke aanvallen.",
       "buttonList": []
     },
     {
@@ -382,26 +399,9 @@
       ]
     },
     {
-      "entityName": "Inner Door",
-      "GUID": "72b5929e-b47b-46c8-852f-2a82a12f67a2",
-      "mainText": "Vlak achter de binnenste deur ligt de kamer waar Luke de installatie probeert te saboteren.\n\nDe deur is vergrendeld. Een figuur kan hem aanvallen (gezondheid: 5, verdediging: 1 {G}).",
-      "buttonList": [
-        {
-          "GUID": "b6bca997-cb00-42e3-9073-b0c80d8a6b11",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "Luke Skywalker",
-      "GUID": "a86f044a-bce5-4201-b5a7-d2879b7cdd0e",
-      "mainText": "Luke Skywalker probeert haastig zijn werk af te maken.\n\n{-} Als alle helden gewond zijn, kan <color=“red”>Darth Vader</color> Luke aanvallen.",
-      "buttonList": []
-    },
-    {
       "entityName": "Terminal",
       "GUID": "dd0d7fc1-f7a9-4321-9c5a-06918c372689",
-      "mainText": "Deze terminal stuurt de deuren aan.\n\n{-} Eenmaal per activering kan een held een interactie uitvoeren op een terminal ({I}) om de open deur het dichtst bij Luke te sluiten. Deuren die geopend zijn na de opstelling kunnen niet meer gesloten worden.\n{-} Elke deur kan maar één keer gesloten worden. Als die opnieuw wordt geopend, wordt die vernietigd en kan die niet opnieuw worden gesloten.",
+      "mainText": "Deze terminal stuurt de deuren aan.\n\n{-} Eénmaal per activering kan een held een interactie uitvoeren op een terminal ({I}) om de open deur het dichtst bij Luke te sluiten. Deuren die geopend zijn na de opstelling kunnen niet meer gesloten worden.\n{-} Elke deur kan maar één keer gesloten worden. Als die opnieuw wordt geopend, wordt die vernietigd en kan die niet opnieuw worden gesloten.",
       "buttonList": [
         {
           "GUID": "9d5abea4-b6a0-4b81-bd8e-fc9b672b0b81",

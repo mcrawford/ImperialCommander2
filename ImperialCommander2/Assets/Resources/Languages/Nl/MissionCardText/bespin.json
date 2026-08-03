@@ -2,7 +2,7 @@
   {
     "id": "Bespin1",
     "name": "Het geheim van Cloud City",
-    "descriptionText": "<i>Een agent heeft enkele keizerlijke codes bemachtigd voordat het contact werd verbroken. Het is onbekend of hij gevangen is of ondergedoken zit, maar hij was heel duidelijk dat de informatie moest worden opgehaald uit een geheime locatie in Cloud City. Het einde van zijn rapport luidt:\n“De informatie lijkt van groot belang te zijn. Hij is ernaar op jacht.”</i>",
+    "descriptionText": "<i>Een agent heeft enkele keizerlijke codes weten te bemachtigen voordat hij van de radar verdween. Of hij gevangen is genomen of zich schuilhoudt, weet niemand, maar hij maakte duidelijk dat de informatie moest worden opgehaald uit een geheime dropplek in Cloud City. Het einde van zijn rapport luidt:\n\"De inlichtingen lijken van groot belang. Hij is ernaar op jacht.\"</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -18,7 +18,7 @@
   {
     "id": "Bespin2",
     "name": "Vrijheidsstrijders",
-    "descriptionText": "<i>De laatste tijd verdwijnen er steeds meer burgers uit de lagere klasse van Cloud City. Het commando van de Alliantie ontving een noodbericht van Lobot, de voormalige computerverbindingsofficier van de stad:\r\n“Trandoshan-slavenhandelaars actief in Cloud City. Reddingsteams vermist. Stuur alstublieft versterking. Ik zal een doelwit worden.”</i>",
+    "descriptionText": "<i>Burgers uit de lagere klassen van Cloud City verdwijnen de laatste tijd spoorloos. Het commando van het Verbond ontving een noodbericht van de voormalige computerverbindingsofficier van de stad, Lobot:\n\"Trandoshaanse slavenhandelaars actief in Cloud City. Reddingsteams vermist. Stuur versterkingen. Ik word het volgende doelwit.\"</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -34,7 +34,7 @@
   {
     "id": "Bespin3",
     "name": "Vijandige overname",
-    "descriptionText": "<i>In een poging om de controle over de tibanna-reserves van Cloud City te krijgen, hebben een snode ISB-agent en de premiejager Bossk hun krachten gebundeld. Ze hebben de lokale verzetsleider gevangengenomen en het oppercommando wil dat hij wordt gered. Volgens inlichtingen houden ze de leider vast voor ondervraging en zijn ze van plan hem in carbonite naar een onbekende locatie te vervoeren.</i>",
+    "descriptionText": "<i>In een poging de tibanna-voorraden van Cloud City onder controle te krijgen, hebben een verraderlijke ISB-agent en de premiejager Bossk hun krachten gebundeld. Ze hebben de lokale verzetsleider gevangengenomen en het Commando wil dat hij wordt gered.\nInlichtingen wijzen erop dat ze hem vasthouden voor ondervraging en van plan zijn hem in carboniet te transporteren naar een onbekende faciliteit.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -50,7 +50,7 @@
   {
     "id": "Bespin4",
     "name": "Paniek in de straten",
-    "descriptionText": "<i>De gevechten in Cloud City hebben hun tol geëist onder de bevolking. Mensen geven de rebellen de schuld van het geweld en geven de voorkeur aan relatieve stabiliteit, zelfs onder keizerlijke vlag. Uit angst dat haar guerrillastrijders hun steun zullen verliezen, organiseert Murne een hulpactie. Ze belooft de bevolking van Cloud City te helpen en hun steun terug te winnen.</i>",
+    "descriptionText": "<i>De gevechten op Cloud City hebben hun tol geëist onder de bevolking. Steeds meer mensen geven de rebellen de schuld van het geweld en kiezen voor relatieve stabiliteit, zelfs onder de vlag van het Keizerrijk. Uit vrees haar steun onder de guerrilla’s te verliezen, stelt Murne een hulpmissie samen. Ze zweert de inwoners van Cloud City te helpen en hun vertrouwen terug te winnen.</i>",
     "bonusText": "",
     "heroText": "Murne Rin",
     "allyText": "",
@@ -66,7 +66,7 @@
   {
     "id": "Bespin5",
     "name": "Terugwinning",
-    "descriptionText": "<i>Lando Calrissian moet Cloud City terug binnensluipen om belangrijke documenten terug te halen die hij daar heeft achtergelaten. Het probleem is, zo vertelt hij, dat de lokale ISB extra bewaking heeft geïnstalleerd. Lando vraagt een eliteteam om hem te voet door de stad te begeleiden.</i>",
+    "descriptionText": "<i>Lando Calrissian moet terug Cloud City binnensluipen om cruciale documenten terug te halen die hij heeft achtergelaten. Het addertje onder het gras, zo onthult hij, is dat de lokale ISB extra bewaking heeft geïnstalleerd. Lando vraagt om een eliteteam om hem te voet door de stad te begeleiden.</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "Lando Calrissian (Charming Gambler)",
@@ -82,7 +82,7 @@
   {
     "id": "Bespin6",
     "name": "Gereclassificeerd",
-    "descriptionText": "<i>Geruchten doen de ronde dat een vertrouwde bron al jarenlang informatie verkoopt aan het Keizerrijk. Davith graaft verder en ontdekt dat de verrader zijn voormalige contactpersoon is, die bekendstaat onder de raadselachtige naam ‘The Duke’.\r\nHawkbat gaat naar een privécomplex om alles wat zijn mentor in gevaar heeft gebracht veilig te stellen.</i>",
+    "descriptionText": "<i>Geruchten doen de ronde dat een vertrouwde bron al jarenlang informatie aan het Keizerrijk verkoopt. Bij verder onderzoek ontdekt Davith dat de verrader zijn voormalige contactpersoon is, bekend onder de raadselachtige naam \"The Duke\"\nHawkbat vertrekt naar een afgelegen privécomplex om alles wat zijn mentor heeft prijsgegeven opnieuw veilig te stellen.</i>",
     "bonusText": "",
     "heroText": "Davith Elso",
     "allyText": "",

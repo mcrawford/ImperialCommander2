@@ -1,11 +1,11 @@
-<b>TYRANTS OF LOTHAL SPECIAL RULES</b>
-{-} Each hero receives 2 XP and heroes collectively receive 300 credits per hero. Then, heroes resolve a Rebel Upgrade Stage. When purchasing Item cards during this Rebel Upgrade Stage, Rebel players draw cards from the Tier 1 Item deck.
-{-} During the <i>Tyrants of Lothal</i> campaign, the Empire cannot earn Hondo Ohnaka or Thrawn as villains. If "The Pirate's Ploy" or "The Admiral's Grip" are drawn as side missions, draw another side mission.
-{-} The <i>Tyrants of Lothal</i> mini campaign can be expanded using side missions in certain Ally and Villain packs. Follow the instructions of the respective mission.
+<b>SPECIALE SPELREGELS TYRANTS OF LOTHAL</b>
+{-} Elke held ontvangt 2 XP en de helden ontvangen gezamenlijk 300 credits per held. Daarna voeren de helden een Rebel Upgrade-fase uit. Wanneer de spelers tijdens deze Rebel Upgrade-fase itemkaarten kopen, trekken zij kaarten van het itemkaartendeck Tier 1.
+{-} Tijdens de campagne <i>Tyrants of Lothal</i> kan het Keizerrijk Hondo Ohnaka en Thrawn niet als schurken krijgen. Als "De list van de piraat (The Pirate's Ploy)" of "In de greep van de admiraal (The Admiral's Grip)" als zijmissie wordt getrokken, trek dan een andere zijmissie.
+{-} De minicampagne <i>Tyrants of Lothal</i> kan worden uitgebreid met zijmissies uit bepaalde bondgenoot- en schurkenpacks. Volg hiervoor de instructies van de betreffende missie.
 
-<b>GENERAL SETUP</b>
-{-} Set aside the dice, Condition cards, and the damage, strain, and condition tokens.
-{-} Remove the card "Troop Data" from the Supply card deck and return it to the game box, then shuffle the Supply deck.
-{-} Set aside the Deployment cards, gray figures, map tiles, doors, and the objective, terminal, and crate tokens.
-{-} Each player selects a hero to play (at least two if playing single-player) and gathers the Hero sheet, figure, Hero Class deck, and starting items that correspond to that hero.
-{-} For a two-hero game, each hero also takes a "Legendary" Reward card. For a three-hero game, each hero takes a "Heroic" Reward card.
+<b>ALGEMENE VOORBEREIDING</b>
+{-} Leg de dobbelstenen, conditiekaarten en de schade-, forceer- en conditietokens apart.
+{-} Verwijder de voorraadkaart "Troop Data" uit het voorraaddeck en leg deze terug in de speldoos. Schud daarna het voorraaddeck.
+{-} Leg de inzetkaarten, grijze figuren, terreintegels, deuren en de missie-, terminal- en krattokens apart.
+{-} Elke speler kiest een held om mee te spelen (minimaal twee helden bij een solospel) en neemt het heldenblad, het figuur, het heldenklassedeck en de startuitrusting van die held.
+{-} Bij een spel met twee helden neemt elke held ook een "Legendary" beloningskaart. Bij een spel met drie helden neemt elke held een "Heroic" beloningskaart.

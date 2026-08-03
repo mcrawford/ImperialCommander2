@@ -1,0 +1,1171 @@
+{
+  "languageID": "Norwegian (NO)",
+  "missionProperties": {
+    "missionName": "Oppløring 1: Grunnleggende",
+    "missionDescription": "Dere husker ikke mye bortsett fra skudd, eksplosjoner og deretter mørke.",
+    "missionInfo": "",
+    "campaignName": "Opplæring",
+    "startingObjective": "",
+    "repositionOverride": null,
+    "additionalMissionInfo": "Denne opplæringen vil lære deg/dere det grunnleggende om helteaktivering i Imperial Assault."
+  },
+  "events": [
+    {
+      "eventName": "Beginning",
+      "GUID": "2c38848a-6013-4cad-be60-8709c6918b8c",
+      "eventText": "Dere husker ikke mye.\r\n\r\nDere var på smuglerfart i Outer Rim, et sted mellom Eadu og Kessel, med verdifull teknologi om bord og på vei til budgiveren. Transaksjonen gikk imidlertid ikke som planlagt, da kontakten deres viste seg å være en Imperieagent som prøvde å kjøpe den sjeldne teknologien for et våpenprosjekt for å bruke mot Alliansen for å Gjenopprette Republikken.",
+      "eventActions": [
+        {
+          "tbText": "Dere hadde veid alternativene deres nøye, men det var egentlig bare én vei å gå. Betalingen hadde vært bra, men dere kunne ikke ha dette på samvittigheten. Dere lammet Imperieagenten, sendte en advarsel til opprørsalliansen og flyktet.",
+          "GUID": "724927eb-69cf-4dfe-90ee-a5f60353d5a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Dere kom ikke langt. Fra ingensteds dukket et Imperietransportskip opp, og TIE-jagere begynte å skyte på frakteskipet deres. Dere satte fart i håp om å riste dem av, men det var for mange av dem. Det siste dere husker før en eksplosjon slo dere i svime, var lysglimt da X-wing-jagerfly droppet ut av hyperrommet og åpnet ild mot Imperieskipene.",
+          "GUID": "426baa76-52f8-42a3-98cf-3e957e65d2ac",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Når dere endelig våkner, ser dere verden gjennom glasset på baktatanker.",
+          "GUID": "598ed296-b337-464f-adc2-72e90e259207",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Velkommen til opplæringen for <b>Imperial Commander</b>! \r\n\r\nDenne serien med opplæringsspill er designet for å lære deg det grunnleggende for å kunne spille <b>Imperial Assault</b> med den uoffisielle appen. Du trenger ingen forkunnskap om <b>Imperial Assault</b>, men husk at veiledningene bare gir grunnleggende informasjon. Hvis du vil fordype deg mer eller har noen spørsmål, se \"Lær å spille\"-guiden og \"Regelreferanseveiledningen\" som følger med spillet.</color>",
+          "GUID": "9e3e8682-8ca5-4965-b0ab-6946f2c3697d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">La oss starte med <b>Kartbehandling</b>. Du kan vise kartet når som helst, selv når en tekstmelding er åpen. Bare trykk på {J} -ikonet nederst til venstre på skjermen for å se kartet.\r\n\r\nHvis du ikke har gjort det ennå, finn kartbrikke {0}20A og {0}36A fra grunnspillet, samt 1 dørbrikke med en plastholder. Velg {J} -ikonet og sett sammen kartet som vist, og velg deretter {J} -ikonet for å gå tilbake til tekstmeldingene.</color>",
+          "GUID": "dd035ee1-a6a7-4043-b85a-85497a62b49a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Du kan kontrollere kartvisningen med musen eller fingrene:\r\n\r\n{-} <b>Panorer:</b> Klikk & Dra / Dra med 1 finger\r\n{-} <b>Roter:</b> Høyreklikk & Dra / Dra med 3 fingre\r\n{-} <b>Zoom:</b> Rull musehjul / Klyp fingre sammen\r\n\r\nPrøv det nå. Velg {J} -ikonet igjen når som helst, for å gå tilbake til denne teksten, og velg <b>Fortsett</b>.</color>",
+          "GUID": "40d65439-fbf9-4d53-b58c-b46af8592520",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "En medisinsk droide ser på baktatankene, med glødende optiske sensorer. Han undersøker skjermene ved tankene, og retter deretter oppmerksomheten mot dere.\r\n\r\n\"Bra. Dere er våkne\", sprekker stemmen hans gjennom intercomen. \"Desorientering er et vanlig symptom etter bevisstløshet. Helsen deres er utmerket. Hukommelsen deres bør snart komme tilbake.\"\r\n\r\nDet gjør den. I det minste husker dere navnene deres nå.\r\n\r\nDere er <b>Jyn Odan</b>, ekstraordinær smugler, kvikk og rask, og den raskeste på avtrekkeren på denne siden av Corellian Run, og <b>Gaarkhan</b>, en voldsom Wookiee-kriger fra Kashyyyk, like lojal som han er skremmende.\r\n\r\nBacta-tankene tømmes, og den medisinske droiden hjelper dere ut av den.",
+          "GUID": "74088b63-8375-483f-a842-f6c132586b74",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "0b6a53ca-e0be-4bd4-adad-3b3e71e7034f",
+              "theText": "Utplasser <b>Jyn Odan</b> her.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "973ff79d-f531-4c97-990d-d92ccba096f3",
+              "theText": "Utplasser <b>Gaarkhan</b> her.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "cceb5ba1-bd68-40bb-9131-a16737d26fa9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Hver kampanje i <b>Imperial Assault</b> begynner med at du velger hvilke <b>helter</b> du vil spille gjennom hele kampanjen. I dette opplæringsspillet har vi imidlertid tatt det valget for deg.\r\n\r\nFinn heltearkene (de store kortene) for <b>Jyn Odan</b> og <b>Gaarkhan</b>.\r\n\r\nDeretter samler du også \"heltestokkene\" (de små kortene med heltenes portretter på baksiden). Let i begge heltestokkene etter startgjenstandene dine. Dette er de eneste kortene uten XP-verdi nederst.\r\n\r\nPlasser heltearkene foran spilleren som kontrollerer helten, og plasser deretter startgjenstanden med forsiden ned ved siden av.\r\n\r\nDeretter finner du Jyns og Gaarkhans miniatyrfigurer. Plasser Jyns figur på den grønne markerte plassen og Gaarkhans figur på den blå markerte plassen.</color>",
+          "GUID": "325263ad-2c61-4ab1-a193-f6a7b3b3bef0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><b>Imperial Assault</b> spilles som en rekke <i>aktiveringer</i>. Først velger Rebellspillerne å aktivere en helt, deretter aktiverer appen en fiendegruppe (hvis tilgjengelig).\r\n\r\nDe valgte heltene vises på venstre side av skjermen. Mellom 2 og 4 helter kan velges for en <b>Imperial Assault</b>-kampanje. Uansett hvor mange helter som velges, mottar Rebellspillerne alltid 4 helteaktiveringer.\r\n\r\n{-} 4 helter: Hver helt får 1 aktivering.\r\n{-} 3 helter: Hver helt får 1 aktivering. Etter at hver helt har aktivert én gang, kan en av heltene utføre 1 ekstra aktivering. Dette vises i appen som en \"virtuell\" helt. Den ekstraaktiveringen må utføres av en annen helt hver runde. I tillegg får hver helt +3 helse.\r\n{-} 2 helter: Hver helt får 2 aktiveringer. Den andre aktiveringen kan bare utføres når begge heltene har aktivert én gang. I tillegg får hver helt +10 helse.\r\n\r\nImperiet får alltid 1 aktivering for hver utplasserte fiendegruppe.</color>",
+          "GUID": "f9bb75f6-ad94-4b09-a983-da4f9dc4ce4c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">For å holde oversikt over aktiveringer kan du bruke pappsymbolene som følger med spillet, eller de grønne aktiveringssymbolene på heltens miniatyrbilder (i appen).\r\n\r\nKlikk eller tapp på et grønt aktiveringssymbol for å markere en aktivering som fullført. Ved starten av en ny runde blir alle aktiveringssymboler nullstilte igjen.\r\n\r\nVenstre side er også der <b>Allierte</b> vises. Klikk <b>Fortsett</b> for å finne ut hvordan dette fungerer.</color>",
+          "GUID": "d6db7bab-ccca-46d1-b513-cfd8e5d9d140",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Døren glir opp, og en ung, mørkhåret kvinne i hvit kappe kommer inn. Dere kjenner henne igjen umiddelbart. Døren lukkes bak henne, og prinsesse Leia Organa smiler når hun ser at dere allerede har kommet ut av baktatankene.\r\n\r\n\"OK\", sier hun. \"Det ser ut til at dere har det bra. Jeg var bekymret et øyeblikk.\"",
+          "GUID": "c75d62d7-d111-48bd-8d65-dbe308d1046a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 1",
+              "GUID": "29452fed-1c7b-484a-8025-6f4455946e0a",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "f6dcf79c-288a-4640-9be2-1cdb7210ccb7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "",
+          "bonuses": "",
+          "keywords": "",
+          "abilities": "",
+          "customText": "",
+          "cardName": "Leia Organa",
+          "GUID": "47097c07-5055-4fac-9d76-c9a7229e3e74",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Leia Organa"
+        },
+        {
+          "tbText": "<color=\"yellow\">Når en Alliert eller en Fiende blir utplassert, leter du i Utplasseringsskortene etter deres respektive kort og plasserer de et sted i spillområdet. Så utplasserer du figuren deres.\r\n\r\nNoen Allierte eller Fiender er imidlertid tilpasset appen, og samsvarer ikke med trykte Utplasseringskort eller miniatyrfigurer. I dette tilfellet representerer Rebelloppdragssymbolet Leia. Du kan høyreklikke eller dobbeltklikke / tappe på et Alliert- eller Fiendeportrett for å vise deres Utplasseringskort, enten det er tilpasset appen eller ikke. (Velg {J}-ikonet, for å teste det - men det er foreløpig ikke mye å finne på Leias kort ennå.)\r\n\r\nHver Alliert gruppe får 1 aktivering. Rebellspillerne bestemmer vanligvis når de vil aktivere en Alliert, men la oss aktivere Leia først i dette opplæringsspillet. I et vanlig oppdrag har spillerne full kontroll over en Allierts handlinger, men Leia har alltid vært litt egenrådig.</color>",
+          "GUID": "60fa60fc-585c-4c5c-8154-a13160ebcc10",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "First Activation",
+      "GUID": "4f5befe7-5526-4fa6-9e40-8e78ffbc06f1",
+      "eventText": "«Takk for advarselen», fortsetter Leia. \"Vi undersøker for øyeblikket informasjonen dere ga oss, men det er allerede helt klart at dere gjorde oss en stor tjeneste. Det er snakk om et banebrytende nytt våpenprosjekt, men la oss ikke bekymre oss over det nå.\"\r\n\r\n\"Du er på <i>Det Splittede Hjerte</i>, et av sykehusskipene våre. Legene våre lappet deg sammen. Jeg er redd frakteskipet deres ikke klarte seg, men vi klarte å hente dere ut i tide, sammen med noen få grunnleggende eiendeler.\"\r\n\r\nLeia begynner å gå mot en konsoll montert på veggen lengst unna.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "4e2930db-4c95-454d-b45c-348a083e7fd8",
+              "theText": "Den veggmonterte konsollen styrer hylledørene.",
+              "buttonList": [
+                {
+                  "GUID": "4287f313-6a07-409f-9414-5bc7a9b02b8c",
+                  "theText": "{A} Åpne hylle"
+                }
+              ]
+            }
+          ],
+          "GUID": "c8f02fde-77a8-4e0f-8f2c-93457c0bf295",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Når en figur aktiveres, får den 2 <b>handlinger</b> som kan brukes på forskjellige ting. De tilgjengelige handlingene er:\r\n\r\n{-} Flytt\r\n{-} Interaksjon\r\n{-} Angrep\r\n{-} Hvil\r\n{-} Spesielle handlinger\r\n\r\nEn figur kan kombinere hvilke som helst av av handlingene ovenfor.</color>",
+          "GUID": "3f0f21ba-a7d7-45e8-b57a-f52e049c6610",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Siden Leia må <b>flytte</b> for å komme til terminalen, bruker hun 1 av sine 2 handlinger på en <b>Flytt</b>-handling.\r\n\r\n<b>Flytt</b>-handlingen flytter ikke en figur umiddelbart. I stedet gir den figuren <i>bevegelsespoeng</i> som samsvarer med dens <i>Hastighet</i>. Hastigheten til en figur står på Utplasseringskortet. I Leias tilfelle er hastigheten hennes 5, så hun får 5 bevegelsespoeng. Bevegelsespoeng kan brukes gjennom en aktivering og kan til og med deles opp, men de overføres ikke til neste aktivering.\r\n\r\nEn figur kan bruke 1 bevegelsespunkt for å bevege seg inn i et tilstøtende felt på spillebrettet (ortogonalt eller diagonalt).</color>",
+          "GUID": "a00f34fe-24e2-4a63-98e5-f331af679f8e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Når spillerne beveger seg, må de tenke på terrenget. De fleste områder kan enkelt flyttes inn med et enkelt bevegelsespunkt. Det finnes imidlertid unntak.\r\n\r\n{-} <i>Vanskelig terreng</i> er merket med en blå kant. Å flytte inn i et felt med <i>vanskelig</i> terreng krever 1 ekstra bevegelsespunkt.\r\n{-} <i>Blokkerende terreng</i> er merket med en rød kant, for eksempel baktatankene. Figurer kan vanligvis ikke bevege seg inn i <i>blokkerende</i> terreng. De svarte kantene rundt en kartbrikke teller også som <i>blokkerende</i> terreng.\r\n{-} <i>Ufremkommelig terreng</i> er merket med en stiplet rød kant. Figurer kan vanligvis ikke bevege seg inn i <i>ufremkommelig</i> terreng, men de kan samhandle og angripe gjennom en stiplet rød linje.\r\n\r\nEn figur kan bevege seg inn i en annen figurs felt, men den kan ikke avslutte bevegelseshandlingen der. Å flytte inn i et felt som inneholder en <i>fiendtlig</i> figur krever 1 ekstra bevegelsespunkt.</color>",
+          "GUID": "6ab12cd9-4a06-4f4a-99e0-3d4631139ed9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Leia bruker nå 4 bevegelsespoeng og beveger seg til hun er ved siden av terminalen.\r\n\r\nMerk at <b>Imperial Commander</b> vanligvis ikke har oversikt over figurenes posisjoner. Dette gjøres kun som en demonstrasjon i dette opplæringsspillet.</color>",
+          "GUID": "2f173ba6-4c1a-43f9-9543-5ba682be6c30",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 1",
+              "GUID": "2c759baa-dfc4-46d2-b7ef-15e6a57c0a82",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 2",
+              "GUID": "52031a9f-c0f3-4984-bc4c-4edcbafa3932",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "dd1cad7c-d26b-4220-ab63-b7dd2bf4ffa2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 2",
+              "GUID": "af4ce0ad-6eb2-4204-b427-d7c7b8eacf36",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 3",
+              "GUID": "3efbe9c5-7085-4062-96d7-2b45f1c4ac0b",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "0eeac485-b69d-454d-a8b7-75ead15372b1",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 3",
+              "GUID": "98618e30-df93-404a-b2cb-020a3d1a7873",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 4",
+              "GUID": "fcbe0a8d-1540-4d00-94f9-a6ec0b0b6184",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "929a5c58-391a-4b62-8c8b-77895f9e811a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 4",
+              "GUID": "bf700c44-1db1-4278-a8ef-853ea874fb78",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 5",
+              "GUID": "777afed4-a3e5-41c4-aea6-3aca0d8dc22d",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "e532b1a7-d02f-4140-b8aa-48bf6f19b4c6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia trykker på en knapp.\r\n\r\n<color=\"yellow\">Leia bruker sin andre handling på en <i>Interaksjon</i>-handling. Figurer kan interagere med symboler på kartet. For å gjøre dette, må de enten være i symbolets felt eller i et tilstøtende felt, og bruke en handling.\r\n\r\nVelg terminalen og klikk / tapp på \"{A} Åpne hylle\". {A} signaliserer at dette krever en handling.</color>",
+          "GUID": "1ea511d2-46a6-4f1a-addf-ccec9e1ac0ce",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Shelf opens",
+      "GUID": "38a6adb2-12e8-473f-9f35-f4e47c30a5f6",
+      "eventText": "En hylle på motsatt vegg av baktatankene åpnes.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Jyn",
+              "GUID": "d4df8de2-8dbd-481f-9588-ad5a4e189367",
+              "theText": "Denne kassen inneholder Jyns eiendeler.",
+              "buttonList": [
+                {
+                  "GUID": "79cd658d-4681-4334-962f-eb299add775c",
+                  "theText": "{A} Åpne"
+                }
+              ]
+            },
+            {
+              "entityName": "Crate Gaarkhan",
+              "GUID": "e88d7b4e-fdee-4e36-ac78-3c706c5b0271",
+              "theText": "Denne kassen inneholder Gaarkhans eiendeler.",
+              "buttonList": [
+                {
+                  "GUID": "445dc6ab-0fc3-444f-a4ae-9d7656af6357",
+                  "theText": "{A} Åpne"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 1",
+              "GUID": "df98fe4f-31f7-4539-8995-26d7b1356646",
+              "theText": "Den veggmonterte konsollen styrer hylledørene.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "1dd3026c-f46a-4c02-bba4-1c5153cedd70",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"Tingene dine ligger i kassene. Ta deg god tid, jeg venter.\"\r\n\r\n<color=\"yellow\">Leia har brukt alle handlingene sine, men hun har fortsatt ett bevegelsespoeng igjen. Hun bruker det bevegelsespunktet for å bevege seg litt tilbake.</color>",
+          "GUID": "ba1c8ef3-159e-4fa9-ad54-fd2d6eba33c8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 5",
+              "GUID": "efb855da-7dcc-40f6-b6d1-dd175e9f3d11",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 6",
+              "GUID": "068557a8-8075-48cf-8794-d796e98b4ae6",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "4a0cc4ac-3933-4486-8157-dac06e424d10",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Etter å ha brukt alle handlinger og bevegelsespoeng, avsluttes Leias aktivering.</color>",
+          "GUID": "4865fdd8-dc34-4900-8e2b-15194d89a1a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "7e1b0b3f-5fd0-4eb3-9b1b-296e34fcb5c4",
+              "theText": "Utplasser <b>Jyn Odan</b> her.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "d642788f-d3b1-478b-9286-c33aa96ab70c",
+              "theText": "Utplasser <b>Gaarkhan</b> her.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 2",
+              "GUID": "602f22e3-114c-4b11-9082-5b6ad565b517",
+              "theText": "Gaarkhan's posisjon.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn 2",
+              "GUID": "f0f9eb21-832f-436d-8a06-264773a62e64",
+              "theText": "Jyn's posisjon.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "06f9a6e9-5a1c-4cfa-bc9a-2bef4912734c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Nå som Leia er ferdig, kan heltene aktiveres. Hver helt må bruke 1 handling på en <b>Flytt</b>-handling og 1 handling på en <b>Interaksjon</b>-handling for å åpne en kasse.\r\n\r\nFortsett med helteaktiveringene i hvilken som helst rekkefølge. Husk at du må være ved siden av en kasse eller i kassens felt for å interagere med en kasse, så la Jyn flytte til den grønne markerte plassen under hennes aktivering og Gaarkhan til den blå markerte plassen under hans.</color>",
+          "GUID": "8c2deefd-089c-4eae-8337-9fd535cd50fc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Ta eiendelene deres fra kassene.",
+          "longText": null,
+          "GUID": "509251b4-348e-4792-a208-64e5c80a36c7",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Jyn Crate Opened",
+      "GUID": "cf2f4483-8946-4553-8251-8dcf00ac3f53",
+      "eventText": "Inni finner deres Jyns klær og hennes pålitelige gamle blaster.\r\n\r\n<color=\"yellow\">Jyn Odan kan nå snu startgjenstandskortet sitt med forsiden opp.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Jyn",
+              "GUID": "b4426c7e-e402-4147-b99d-a710cab542af",
+              "theText": "Denne kassen inneholder Jyns eiendeler.",
+              "buttonList": [
+                {
+                  "GUID": "a1ee598a-738e-44ee-9cd0-c54deb81d989",
+                  "theText": "{A} Åpne"
+                }
+              ]
+            }
+          ],
+          "GUID": "ebdabfc1-71ad-4e70-a1f8-c82af9cebb38",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Gaarkhan Crate Opened",
+      "GUID": "f2a46c86-cc4e-4b01-8da2-6025bcf3f83a",
+      "eventText": "Gaarkhans rustning og den enorme vibroøksen hans ligger oppbevart i hyllen.\r\n\r\n<color=\"yellow\">Gaarkhan kan nå snu startgjenstandskortet sitt med forsiden opp.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Gaarkhan",
+              "GUID": "f73fc6b0-3c86-4fca-9e36-99a112390fbf",
+              "theText": "Denne kassen inneholder Gaarkhans eiendeler.",
+              "buttonList": [
+                {
+                  "GUID": "e4334ef3-291f-4524-ad05-3ec89ba1b37b",
+                  "theText": "{A} Åpne"
+                }
+              ]
+            }
+          ],
+          "GUID": "cdffeed5-5440-4167-b319-582728b2caef",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Both Crates Opened",
+      "GUID": "6c290cee-85ae-4cd7-8154-6d5db9e39ef2",
+      "eventText": "«Dette ser lovende ut», sier Leia. \"La oss finne ut hvor god form dere er i etter tiden i tanken.\"\r\n\r\nHun trykker på en annen knapp på terminalen. Døren rykker seg noen få centimeter, og stopper med et skarpt metallisk klang. Den ser ut til å ha satt seg fast. Leia sukker. \"Selvfølgelig. Store fyr, hjelp meg er du snill\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "f454c859-8af8-495c-8ced-43892e49f6a8",
+              "theText": "Døren som leder ut av sykeavdelingen er blokkert. Det kommer til å kreve litt makt for å åpne den.",
+              "buttonList": [
+                {
+                  "GUID": "8cd0b385-2891-4b86-b14f-c3003590786d",
+                  "theText": "{A} Tving opp"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Gaarkhan 2",
+              "GUID": "9734ac21-86e9-4097-a1aa-e63abd36769c",
+              "theText": "Gaarkhan's posisjon.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 3",
+              "GUID": "e1cefc48-4c22-4d88-956c-16aa8632d50e",
+              "theText": "Gaarkhan's posisjon.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "7717fe7e-9555-4b40-8cd3-b8a357251522",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Noen interaksjoner (og andre hendelser under et oppdrag) krever en <i>egenskapstest</i>. En helts egenskaper er oppført nederst på heltearket.\r\n\r\n{K}: Styrke\r\n{J}: Innsikt\r\n{I}: Teknologi\r\n\r\nJo flere terninger en helt har listet opp for egenskapene sine, jo større er sjansene for å lykkes med en egenskapstest.\r\n\r\nÅ tvinge døren opp kommer til å kreve litt styrke. Selvfølgelig er en enorm Wookiee bedre egnet for oppgaven enn en smidig smugler, så start derfor Gaarkhans andre aktivering. Flytt ham til det blå markerte feltet og få ham til å interagere med døren for å tvinge den opp.</color>",
+          "GUID": "a9bf6e05-1425-4730-85cf-b4646e019e0f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Tving døren opp.",
+          "longText": null,
+          "GUID": "c5087acb-890a-4932-b9cc-47a87ae3de7d",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Door Attempt",
+      "GUID": "22a17d5b-d55f-4ebf-b2d1-0ba52261f3a6",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Du dytter fingrene inn i sprekken under døra og løfter med all din kraft.\r\n\r\n<color=\"yellow\">Kast et antall terninger basert på {K}-egenskapen på heltearket ditt (1 blå, 1 grønn, 1 gul). Hvert {B}-resultat er en <i>suksess</i>. Skriv inn antall suksesser nedenfor.</color>",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "863805ee-3bf4-40d2-8347-5422052eb330",
+              "theText": "Du løfter så hardt du kan, men døren rikker seg ikke.\r\n\r\n<color=\"yellow\">Bekymre deg ikke - du kan selvfølgelig prøve igjen. Hver interaksjon koster imidlertid en handling. Jyn kan prøve å løfte opp døren også, men med bare 1 blå terning har hun mye dårligere sjanser.</color>"
+            },
+            {
+              "GUID": "9ee15147-a1cb-465e-ab98-17e587b3a80e",
+              "theText": null
+            }
+          ],
+          "GUID": "aefc6fd8-8c00-449b-a936-6195bade52d6",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Door success",
+      "GUID": "482c6591-d971-4833-ba3a-74c2c359e87b",
+      "eventText": "Du klarer å vrenge opp døra, og Leia puster lettet ut. «Endelig», sier hun. Bak døren ligger en korridor som fører inn til en hangar.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "a06e43f7-fc51-4b4e-ab81-00aad19c6c2a",
+              "theText": "En stengt dør leder ut av sykeavdelingen.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "8ac52bdc-5410-4d63-8a9b-fa0ad9adb379",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "«Er du klar for litt måltrening for å teste hånd-øye-koordinasjonen?», spør Leia og smiler.\r\n\r\n<color=\"yellow\">Jyn Odan har fortsatt en aktivering igjen, men la oss i stedet starte en ny runde. I et vanlig oppdrag mister du vanligvis ikke aktiveringer, men du er ikke nødt for å bruke handlingene dine. Bare klikk på <b>Avslutt runde</b> nederst til høyre.</color>",
+          "GUID": "4d20d544-e74e-4504-ac28-aef70200c612",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Avlslutt runden.",
+          "longText": null,
+          "GUID": "1f749c39-c96f-4b31-b78f-3b32f4499cd4",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Target Practice Start",
+      "GUID": "d214e790-be04-4b4b-9533-cfa6c8c208a7",
+      "eventText": "Leia gir deg tegn om å gå inn i hangaren.\r\n\r\n<color=\"yellow\">For de to første aktiveringene, lar du Jyn og Gaarkhan utføre 2 <b>Flytte</b>-handlinger hver, og så flytter du dem til hver sine uthevede områder. Når en Helt er i posisjon, klikk / trykk på uthevingen og velg \"(Helt) i posisjon\".</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn 2",
+              "GUID": "c0c1e4e8-27fe-4b42-b008-52354ac33414",
+              "theText": "Jyn's posisjon.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 3",
+              "GUID": "cef0357d-b8f1-4403-be78-d46379e4816b",
+              "theText": "Gaarkhan's posisjon.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn 3",
+              "GUID": "04b8ce2c-3142-4480-a601-6388bc2ea059",
+              "theText": "Jyn's posisjon.",
+              "buttonList": [
+                {
+                  "GUID": "b9fb1414-9745-4725-b6a3-c8e25a626d2a",
+                  "theText": "Jyn i posisjon"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Gaarkhan 4",
+              "GUID": "a9b3456a-63e5-4ff9-9321-92c803fd1796",
+              "theText": "Gaarkhan's posisjon.",
+              "buttonList": [
+                {
+                  "GUID": "8a24ae0a-7949-485f-9c9f-48b01410d221",
+                  "theText": "Gaarkhan i posisjon"
+                }
+              ]
+            }
+          ],
+          "GUID": "7c5519ee-a80c-4c04-a564-ec25a42010ff",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Gå inn i hangaren.",
+          "longText": null,
+          "GUID": "85750eb0-e6bb-469e-80c9-c4587e1743d1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Drone Activation",
+      "GUID": "68150c11-d592-4927-94d4-1bc171e79555",
+      "eventText": "Leia følger deg inn i hangaren.\r\n\r\n<color=\"yellow\">Leia aktiverer og utfører 2 <b>Flytte</b>-handlinger også. Hun flytter 10 steg til posisjonen som vises i appen.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 6",
+              "GUID": "2f9dc7a0-a4d3-41cf-912d-bf1af4efd989",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 7",
+              "GUID": "3e5b398c-ad0e-460c-a438-ff2c81b3ae9d",
+              "theText": "Rebelloppdragssymbolene representerer <b>Leia Organa</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "14b9e7c2-df15-49a0-ac97-ba04e3d0089d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia trykker på en rekke knapper på veggen. Gjennom åpninger i veggen kommer treningsdroner svevende inn.",
+          "GUID": "774eed59-7501-4ecd-b1a5-25a80600cf2f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 1",
+              "GUID": "24a59274-182d-4758-8c96-f5f02ef01aac",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "04e1ca7b-8c6c-4d41-a2c2-9979f89ebbf2",
+                  "theText": "Ødelegg"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 2",
+              "GUID": "5ef37588-8b57-46ad-be2c-acaa8925a45c",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "a660af33-6f2f-44b4-a150-f39276523d1f",
+                  "theText": "Ødelegg"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 3",
+              "GUID": "1b46ed29-9563-49a7-80a6-0082b0e638bc",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "99720301-9d94-463b-b28f-1c4c06afd5e9",
+                  "theText": "Ødelegg"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 4",
+              "GUID": "56f4dd08-b3a2-49f7-8983-c4e36efc2b5f",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "47dc3504-2e9a-4ce1-8b4c-b2f69b0b12fa",
+                  "theText": "Ødelegg"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 5",
+              "GUID": "d3e0d3ff-3b87-4620-831f-c648c230c7a1",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "edaa42cf-e118-49eb-9039-7ba78ac7099f",
+                  "theText": "Ødelegg"
+                }
+              ]
+            }
+          ],
+          "GUID": "64a7af16-2f3b-4c98-997c-e27da16a1e61",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Oppdragssymboler kan representere en rekke ting, for eksempel tilskuere, informanter eller, i dette tilfellet, treningsdroner.</color>",
+          "GUID": "f24cd949-f82e-49c3-af1c-5fb2c6c7c4da",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "«Vis meg hva du kan», sier prinsessen, lener seg mot veggen og ser oppmerksomt på deg.",
+          "GUID": "1c8b1e72-d410-4725-8d0c-9c5a38dd1345",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Det er på tide å sprenge ting.\r\n\r\n<b>Angrep</b>-handlingen lar en Helt eller Alliert angripe et mål. Allierte angriper med terningene som er oppført på Utplasseringskortet deres. Helter kan velge hvilket som helst gjentand som helten har utstyrt.\r\n\r\nDet er to angrepstyper: Avstandsangrep ({O}) og Nærkampangrep ({P}). {O}-angrep kan angripe fjerne mål. {P}-angrep kan bare angripe tilstøtende mål.\r\n\r\nFor å kunne angripe et mål, må en figur imidlertid ha <i>Siktlinje</i> til seg.</color>",
+          "GUID": "4a2a111a-589c-4dd9-bb09-4c52ca539d29",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">For å bestemme siktelinjen, tegner spilleren to imaginære, ikke-skjærende linjer fra det ene hjørnet av den angripende figurens felt til to tilstøtende hjørner av målets felt. Hvis en av disse linjene passerer gjennom en vegg, figur eller blokkerende terreng, har ikke figuren siktlinje til målet.\r\n\r\nPå det gjeldende kartet har Jyn (på det grønne markerte området) siktlinje til de grå, grønne og røde dronene. Hun har ikke siktelinje til den blå dronen, fordi Gaarkhan blokkerer sikten hennes. Hun har heller ingen siktlinje til den gule dronen, fordi det blokkerende terrenget (røde linjer) blokkerer sikten hennes.\r\n\r\nDen grønne dronen befinner seg også bak røde linjer, men røde stiplede linjer er ufremkommelig terreng: Figurer kan ikke bevege seg gjennom den, men de kan angripe eller samhandle gjennom den.\r\n\r\nGaarkhan har siktlinje til alle droner bortsett fra den gule. Imidlertid er vibroøksen et {P}-våpen, så han kan ikke angripe noen av dronene uten å bevege seg først.\r\n\r\nForvirret? Ikke bekymre deg. Vedlegg I i Regelreferanseguiden har flere eksempler for Siktelinjeregler.</color>",
+          "GUID": "8e0f4d70-7a66-4291-8a21-69ac96005871",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Gaarkhan og Jyn har begge 1 aktivering igjen denne runden. Spillerne bestemmer i hvilken rekkefølge de skal aktiveres. Gaarkhan har et {P}-våpen, så han må utføre en Flytt-handling før han kan angripe. Jyn kan skyte fra der hun står, så hun kan angripe to ganger, hvis hun vil.\r\n\r\nMerk at bare helter har lov til å bruke 2 handlinger på angrep. Allierte og fiender har kun lov til å bruke 1 av handlingene sine på et angrep. Dette gir helter en stor fordel.</color>",
+          "GUID": "88611afe-54dc-406c-a316-08188c363d47",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Velg én helt. Du kan bruke en handling for å flytte til en bedre posisjon hvis nødvendig. Velg deretter et mål.\r\n\r\nKast deretter angrepsterningen som er oppført på heltens gjenstandskort. For Jyn er det 2 grønne terninger, for Gaarkhan er det 1 rød og 1 gul terning.</color>",
+          "GUID": "b7e23f77-a722-4999-8e4e-ec32d309cd2b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Når du utfører et {O}-angrep, må du først sjekke <i>Nøyaktighet</i>. Tallene på terningen representerer <i>Nøyaktighet</i>.\r\n\r\nTell antall mellomrom mellom angriperen og målet. Jyn befinner seg for eksempel 3 plasser unna alle treningsdronene hun kan se (grå, grønn, rød). Legg nå sammen nøyaktighetstallene fra terningene dine. Hvis nøyaktigheten er minst lik antall mellomrom, treffer angrepet. Ellers bommer det.\r\n\r\n{P} angrep krever ikke nøyaktighet.</color>",
+          "GUID": "b397ab7d-11ae-4e7f-9e79-4ee281ba5936",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Hvis angrepet treffer, tell antall {H} symboler. Dette er skaden du påfører målet ditt. Plasser et tilsvarende antall {H} symboler på treningsdronen på kartet. Ignorer {B}-symbolene så lenge.\r\n\r\nHvis et mål mottar {H} lik eller høyere enn dets helse, blir det beseiret. Treningsdronene har Helse 3, så hvis de mottar minst 3 {H}, blir de ødelagte.\r\n\r\nHvis dette skjer, velg treningsdronen og klikk / tapp på \"Ødelegg\".</color>",
+          "GUID": "bab1ebbe-7897-4d38-aab5-6348984b0f71",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Fortsett å utføre aktiveringer og angripe dronene. Du kan selvfølgelig bevege deg fritt rundt på kartet.\r\n\r\nNår alle helteaktiveringene er brukt opp, klikker du på <b>Avslutt runde</b> og fortsetter med neste runde. Leia kommer foreløpig ikke til å aktiveres. Hun har mer moro av å se deg kjempe mot treningsdroner.</color>",
+          "GUID": "16c7e43e-1ade-46b5-b842-9b27c958bb73",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Ødelegg treningsdronene (&Remotes destroyed&/5).",
+          "longText": null,
+          "GUID": "dd733ffe-013a-4680-a578-43b9f7e8a5d8",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "tbText": "<color=\"yellow\">Hvis du noen gang glemmer oppdragsreglene, for eksempel treningsdronenes helseverdi, kan du alltid hente frem <i>Oppdragsinformasjon</i>. All relevant informasjon er samlet der. Bare klikk / tapp på <b>(i)</b>-ikonet nederst.</color>",
+          "GUID": "7d57cc96-22ee-4acd-aeaa-02560f850cb3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Gaarkhan 4",
+              "GUID": "213b20d4-5993-4870-949c-f5d84617ad95",
+              "theText": "Gaarkhans posisjon.",
+              "buttonList": [
+                {
+                  "GUID": "dbfcae08-977f-4640-91de-24ebc7dd9d4e",
+                  "theText": "Gaarkhan i posisjon"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Jyn 3",
+              "GUID": "67ed13fc-299f-4fbc-8324-1d0cdf04e80c",
+              "theText": "Jyns posisjon.",
+              "buttonList": [
+                {
+                  "GUID": "04a0369a-3826-4715-a7ff-0f240bfcfecd",
+                  "theText": "Jyn i posisjon"
+                }
+              ]
+            }
+          ],
+          "GUID": "0b7eaebe-6d49-45b2-8d5c-a5a252bb5a86",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Treningsdronene har en Helse på 3.",
+          "GUID": "0133ac59-be90-467a-bc83-beafc9cce759",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 1",
+      "GUID": "5b9050a9-f31b-466f-ae74-43beb94b652f",
+      "eventText": "Treningsdronen eksploderer i en sky av gnister.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 1",
+              "GUID": "c6673342-df48-4e2f-9f6c-081ee39b6a02",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "a94abcf0-8521-482c-a0c7-e8394c3e180d",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "0c8ca803-878c-4a87-93e5-e4912cf9289d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 2",
+      "GUID": "06a17916-c69d-4306-a0bf-d653703309b9",
+      "eventText": "Treningsdronen eksploderer i en sky av gnister.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 2",
+              "GUID": "ca87d895-a976-44bb-abff-46b95f22059d",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "ea4c24cd-5787-40c6-add8-f1a2097474de",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "75d8dc9c-9ed1-4ba3-b628-f7da8657c79c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 3",
+      "GUID": "d0cd7308-8a0e-405a-ba61-1f7aff42b836",
+      "eventText": "Treningsdronen eksploderer i en sky av gnister.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 3",
+              "GUID": "e4c08281-6780-411f-80ab-8ef43e6f34d2",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "383f075c-101b-4c37-94d4-27ca18c937c5",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "4c1403b7-31ba-4ece-8be2-769624f8cf66",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 4",
+      "GUID": "769f7ce3-1ac4-4aa9-89f2-83f9dc3f06ee",
+      "eventText": "Treningsdronen eksploderer i en sky av gnister.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 4",
+              "GUID": "f29ceb2c-899e-42b4-81f5-7e166fe471c5",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "cd291861-51ec-45a4-843f-adcfc790e9a1",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "47e589d7-0f47-4fdd-9b41-31b25909dde7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Destroy Drone 5",
+      "GUID": "8f9cd40f-4f48-4cd7-a717-2e9b8f376a43",
+      "eventText": "Treningsdronen eksploderer i en sky av gnister.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 5",
+              "GUID": "ae135021-8d1b-4fa1-9566-5bdcff91ea06",
+              "theText": "Treningsdronen svever halvannen meter over bakken og summer lavt.\r\n\r\n<color=\"yellow\">Treningsdronen har en Helse på 3.</color>",
+              "buttonList": [
+                {
+                  "GUID": "0b4db800-c773-4013-80d8-27b125ef59ff",
+                  "theText": "Destroy"
+                }
+              ]
+            }
+          ],
+          "GUID": "341160af-ae8c-4a19-a1f1-1f4db3f46f2e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission",
+      "GUID": "6c4448ad-e5c6-47e5-8a2e-1ad3ea72cdd4",
+      "eventText": "Etter at den siste treningsdronen detonerer, gir Leia deg en kort applaus. «Godt jobbet!», sier hun og smiler. \"Det virker som du deg ut av den smørja, helt fint. Vi kunne virkelig t-\"\r\n\r\nHun blir avbrutt av comlinken hennes. «Deres Høyhet», sprekker en stemme gjennom høyttaleren. \"Vi har nettopp mottatt et nødsignal fra Indu. Imperiestyrker nærmer seg gjemmestedet vårt der. De signaliserer om hjelp. Ingen andre Allianseskip er så nærme som oss.\"\r\n\r\nLeias øyne blir store, så dukker en dyster besluttsomhet opp i ansiktet hennes. \"Be dem holde ut. Sett kursen mot Indu\", roper hun inn i comlinken sin, og ser så på deg.",
+      "eventActions": [
+        {
+          "tbText": "\"Dere kan få behov for disse våpnene tidligere enn vi trodde. Jeg skulle akkurat til å si at vi kunne ha trengt folk med deres ferdigheter og spørre dere om dere kunne tenke dere å bli med.\"\r\n\r\nNår hun ser dere klargjøre våpnene deres, smiler hun til dere. \"Velkommen til Opprørsalliansen.\"\r\n\r\n<color=\"yellow\">Dette avslutter del 1 av <b>Imperial Commander</b>-opplæringen. I del 2 vil du møte andre ting enn treningsdroner.</color>",
+          "GUID": "9fff3167-309f-4bc2-a78f-4c6cadfc8deb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Energy Fields",
+      "GUID": "072630bd-e001-40fa-9c39-6e27f0eea580",
+      "eventText": "«Det ser ut som du har fått taket på det», jubler Leia mens den andre treningsdronen styrter i bakken.\r\n\r\n\"La oss gjøre det litt mer interessant, skal vi?\" Hun trykker på en knapp på veggkonsollen, og brummende energifelter omgir dronene.",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">De fleste mål - inkludert helter, fiender og allierte - er ikke forsvarsløse mot angrep. De har en eller flere <i>forsvarsterninger</i> som kastes samtidig med angrepsterningen. Typen terning (svart eller hvit) er oppført på Heltearket eller Utplasseringsskortet.\r\n\r\nEnergifeltene beskytter treningsdronene og gir dem 1 hvit forsvarsterning. Når en helt angriper en treningsdrone, kaster du 1 hvit forsvarsterning samtidig. Hvert {G}-symbol - kalt en <i>Blokk</i> - annulerer 1 {H}-symbol.\r\n\r\nHver gang et angrep utføres, må den den tilsvarende forsvarsterningen alltid kastes. Det er noen få mål som ikke har noen forsvarsterninger. De kan ha statiske bonuser (for eksempel et permanent {G}-symbol) - eller ingen i det hele tatt.</color>",
+          "GUID": "370b63f9-0444-4e32-84d9-09a4a9e3d14a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Våpen kan også gjøre noen triks. Hver gang du kaster angrepsterninger, kan du få et hvilket som helst antall {B} symboler. {B} symboler kalles <i>Overspenninger</i>.\r\n\r\nOverspenninger kan brukes til å aktivere <i>Overspenningsevner</i>. De er vanligvis oppført på Utplasseringskortet eller på Våpenkortet.</color>",
+          "GUID": "9d815937-2df9-4ca3-b7d1-8b7cfad9f5bc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Jyns <i>Vintage Blaster</i> har for eksempel følgende Overspenningsevner:\r\n\r\n{B}: +1 {H}\r\nJyn kan bruke 1 {B} hun rullet i angrepet for å legge til 1 {H} til resultatene.\r\n\r\n{B}: +1 Nøyaktighet\r\nJyn kan bruke 1 {B} hun rullet i angrepet for å legge til +1 til Nøyaktigheten til angrepet, og muligens treffe et mål hun ellers ville ha bommet på.</color>",
+          "GUID": "4a60311b-4427-4027-bf06-be5b50765497",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Gaarkhans <i>Vibroøks</i> har følgende Overspenningsevner:\r\n\r\n{B}: Gjennombore 1\r\nGaarkhan kan bruke 1 {B} han rullet i angrepet for å fjerne 1 {G} symbol fra forsvarsterningen.\r\n\r\n{B}: Klyv 1 {H}\r\nHvis målet for angrepet hans fikk en eller flere {H}, kan Gaarkhan bruke 1 {B} han rullet i angrepet for å velge en annen fiendtlig figur eller objekt som han kan velge som mål for et angrep. Den figuren eller objektet lider også av 1 {H}.</color>",
+          "GUID": "ee172af5-4525-4e47-8304-08fca5b6743c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Hver overspenningsevne kan bare brukes én gang under et angrep. Jyn kan for eksempel ikke bruke 2 {B} for å øke skaden med 2 {H}. Hvis en evne er oppført flere ganger på et kort, kan den brukes like ofte som den er oppført.\r\n\r\n{F} symboler på forsvarsterningene kalles <i>Unngå</i>. Hver {F} kansellerer 1 {B}.\r\n\r\nPå hvite terninger er det også {E}-symbolet. Dette kalles <i>Dukk unna</i>. Et {E}-symbol betyr at hele angrepet bommer, og påfører ingen skade.</color>",
+          "GUID": "2f2c25b1-a8d9-4046-a75c-9af90553e779",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Fortsett nå og skyt ned de beskyttede treningsdronene.</color>",
+          "GUID": "16ba2493-6684-4295-9539-43b3e044ce3d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "theText": "{-} Treningsdroner har en Helse på 3.\r\n{-} Treningsdroner kaster 1 hvit terning som forsvar.\r\n{-} {H} = Skade\r\n{-} {B} = Overspenning, brukes til å aktivere overspenningsevner\r\n{-} {G} = Blokk, annulerer 1 {H}\r\n{-} {F} = Unngå, annulerer 1 {B}\r\n{-} {E} = Dukk unna, hele angrepet bommer",
+          "GUID": "6f4724b7-ed95-4b08-afbe-1591c3094181",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Door 1",
+      "GUID": "b2070d75-7f02-4045-8976-d90ef8049e13",
+      "mainText": "A closed door leads out of the medbay.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn",
+      "GUID": "2a41135e-0bee-4ad8-b776-039380272a16",
+      "mainText": "Deploy <b>Jyn Odan</b> here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan",
+      "GUID": "7f94645b-4f4d-4bec-8558-41fc6c6f72d7",
+      "mainText": "Deploy <b>Gaarkhan</b> here.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 1",
+      "GUID": "7cd21e8e-34f7-4c18-b1c1-24aa13d0ae55",
+      "mainText": "The Rebel mission tokens represents <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate Jyn",
+      "GUID": "d11bb204-54b3-4fcd-98e7-51ed05970335",
+      "mainText": "This crate contains Jyn's possessions.",
+      "buttonList": [
+        {
+          "GUID": "4449788f-db9e-42c9-806b-9f5d9b151384",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate Gaarkhan",
+      "GUID": "4d440025-3ec2-46f1-9069-2117eb5d7ae0",
+      "mainText": "This crate contains Gaarkhan's possessions.",
+      "buttonList": [
+        {
+          "GUID": "55a234be-673d-4eb1-9e81-7177996abf93",
+          "theText": "{A} Open"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "da948162-c3b5-4172-87b5-8a2bd213beee",
+      "mainText": "The wall-mounted console controls the shelf doors.",
+      "buttonList": [
+        {
+          "GUID": "aa7b9e24-3361-456a-8897-eab68085a86b",
+          "theText": "{A} Open shelf"
+        }
+      ]
+    },
+    {
+      "entityName": "Leia 2",
+      "GUID": "d4de8012-e4ab-43f3-8cb9-76593eca68de",
+      "mainText": "The Rebel mission tokens represents <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 3",
+      "GUID": "a4e09794-549c-4554-b5dd-7c9616280452",
+      "mainText": "The Rebel mission tokens represents <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 4",
+      "GUID": "5079f713-03c8-42b3-8748-ab7bc5655abd",
+      "mainText": "The Rebel mission tokens represents <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 5",
+      "GUID": "cfbaaf90-961d-4e94-bb05-586d846f2d9f",
+      "mainText": "The Rebel mission tokens represents <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 6",
+      "GUID": "bb86cfa7-0b68-4c13-8c48-ac78918e1899",
+      "mainText": "The Rebel mission tokens represents <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 2",
+      "GUID": "31a5f15d-f27b-4cd5-8e61-a5a29e052dbf",
+      "mainText": "Jyn's position.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 2",
+      "GUID": "76396914-322b-4901-af58-238c0d708659",
+      "mainText": "Gaarkhan's position.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 3",
+      "GUID": "0dbf8922-6f85-4042-9858-961d05af6b4b",
+      "mainText": "Gaarkhan's position.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 3",
+      "GUID": "fb09c4e7-baf6-481c-8e42-cfbb82fc047d",
+      "mainText": "Jyn's position.",
+      "buttonList": [
+        {
+          "GUID": "ea70c278-d81c-46e7-a887-e9a2940d539c",
+          "theText": "Jyn in position"
+        }
+      ]
+    },
+    {
+      "entityName": "Highlight Gaarkhan 4",
+      "GUID": "9c313a60-ea88-4cd8-bce2-b04dfe394777",
+      "mainText": "Gaarkhan's position.",
+      "buttonList": [
+        {
+          "GUID": "873aca38-2ffe-456f-9e07-8cc7bd28cca0",
+          "theText": "Gaarkhan in position"
+        }
+      ]
+    },
+    {
+      "entityName": "Leia 7",
+      "GUID": "a1d35d6d-ad6e-41d7-8fff-103db0acf0bc",
+      "mainText": "The Rebel mission tokens represents <b>Leia Organa</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Drone 1",
+      "GUID": "9769786b-ad51-4933-92b0-d32d520cd147",
+      "mainText": "The training remote is hovering five feet above the ground, humming softly.\r\n\r\n<color=\"yellow\">The training remote has a Health of 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "21177d96-bddb-4ade-a6ee-2cb5ad2c84da",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 2",
+      "GUID": "a0658804-fbf9-494a-be42-cfc279f32787",
+      "mainText": "The training remote is hovering five feet above the ground, humming softly.\r\n\r\n<color=\"yellow\">The training remote has a Health of 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "6e2dfe1c-e68b-4bc1-bc1c-8d14a46e174b",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 3",
+      "GUID": "40f7b7fa-a2d2-44b2-98ba-d1e9996877ab",
+      "mainText": "The training remote is hovering five feet above the ground, humming softly.\r\n\r\n<color=\"yellow\">The training remote has a Health of 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "5c64a129-f7d3-4b11-a328-edd5e3119959",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 4",
+      "GUID": "41ee4950-5d1c-41da-b3a3-56078d8ea6ae",
+      "mainText": "The training remote is hovering five feet above the ground, humming softly.\r\n\r\n<color=\"yellow\">The training remote has a Health of 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "20919e7f-8c2c-4639-9e3c-e5ed5c1dd77b",
+          "theText": "Destroy"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 5",
+      "GUID": "9ad4aa77-4667-47a4-8228-59ec456899b3",
+      "mainText": "The training remote is hovering five feet above the ground, humming softly.\r\n\r\n<color=\"yellow\">The training remote has a Health of 3.</color> ",
+      "buttonList": [
+        {
+          "GUID": "fd1dcf74-33d3-4b63-a108-06be5414da2e",
+          "theText": "Destroy"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

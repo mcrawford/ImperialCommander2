@@ -1,0 +1,1171 @@
+{
+  "languageID": "Polish (PL)",
+  "missionProperties": {
+    "missionName": "Samouczek 1: Podstawy",
+    "missionDescription": "Nie pamiętacie wiele poza wybuchami, eksplozjami, a potem ciemnością.",
+    "missionInfo": "",
+    "campaignName": "Samouczek",
+    "startingObjective": "",
+    "repositionOverride": null,
+    "additionalMissionInfo": "Ten poradnik nauczy was podstaw aktywacji bohaterów w Imperium Atakuje."
+  },
+  "events": [
+    {
+      "eventName": "Beginning",
+      "GUID": "2c38848a-6013-4cad-be60-8709c6918b8c",
+      "eventText": "Niewiele pamiętacie.\r\n\r\nByliście na szlaku przemytniczym w Zewnętrznych Rubieżach, gdzieś pomiędzy Eadu a Kessel, z cenną technologią na pokładzie i w drodze do oferenta. Transakcja nie poszła jednak zgodnie z planem, gdy wasz kontakt okazał się być agentem Imperium, który próbował kupić rzadką technologię do projektu broni, którą miał wykorzystać przeciwko Sojuszowi.",
+      "eventActions": [
+        {
+          "tbText": "Uważnie rozważyliście swoje opcje, ale naprawdę była tylko jedna droga. Zapłata byłaby dobra, ale nie mogliście mieć tego na sumieniu. Ogłuszyliście imperialnego agenta, wysłaliście ostrzeżenie do Sojuszu Rebeliantów i uciekliście.",
+          "GUID": "724927eb-69cf-4dfe-90ee-a5f60353d5a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Nie zaszliście daleko. Znikąd pojawił się imperialny transportowiec, a myśliwce TIE zaczęły rozwalać wasz frachtowiec. Oddaliliście się z nadzieją, że uda wam się je zgubić, ale było ich zbyt wiele. Ostatnią rzeczą, jaką pamiętacie, zanim eksplozja was znokautowała, były błyski światła, gdy myśliwce X-wing wyszły z nadprzestrzeni i otworzyły ogień do statków Imperium...",
+          "GUID": "426baa76-52f8-42a3-98cf-3e957e65d2ac",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Kiedy w końcu się budzicie, patrzycie na świat przez szybę zbiorników z bactą.",
+          "GUID": "598ed296-b337-464f-adc2-72e90e259207",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Witamy w samouczku <b>Imperial Commander</b>! \r\n\r\nTa seria ma na celu nauczyć podstaw gry <b>Imperium Atakuje</b> z nieoficjalną apką. Nie jest wymagana żadna znajomość <b>Imperium Atakuje</b>, ale należy pamiętać, że samouczki zawierają tylko podstawowe informacje. Jeśli chcecie pogłębić wiedzę lub macie jakieś pytania, zajrzyjcie do instrukcji \"Zasady wprowadzające\" i \"Kompletny podręcznik zasad\" znajdujących się w pudełku z grą.</color>",
+          "GUID": "9e3e8682-8ca5-4965-b0ab-6946f2c3697d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Zacznijmy od <b>Zarządzania mapą</b>. Mapę można wyświetlić w każdej chwili, nawet gdy otwarte jest okno wiadomości tekstowej. Wystarczy wybrać ikonę {J} w lewej dolnej części ekranu, aby wyświetlić mapę. \r\n\r\nJeśli jeszcze tego nie zrobiliście, zbierzcie kafle {0}20A i {0}36A z gry podstawowej oraz 1 żeton drzwi z plastikową podstawką. Wybierzcie ikonę {J} i ułóżcie mapę jak pokazano, a następnie wybierzcie ikonę {J} aby powrócić do wiadomości tekstowej.</color>",
+          "GUID": "dd035ee1-a6a7-4043-b85a-85497a62b49a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Widok mapy można kontrolować za pomocą myszy lub palców:\r\n\r\n{-} <b>Widok:</b> Kliknij i przeciągnij / Przeciągnij jednym palcem\r\n{-} <b>Obrót:</b> Kliknięcie prawym przyciskiem myszy i przeciąganie / przeciąganie trzema palcami\r\n{-} <b>Zbliżenie:</b> Kółko przewijania / szczypnięcie\r\n\r\nPrzetestujcie to teraz. W dowolnym momencie można wybrać ikonę {J} aby powrócić do tego tekstu i wybrać <b>Kontynuuj</b>.</color>",
+          "GUID": "40d65439-fbf9-4d53-b58c-b46af8592520",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Droid medyczny obserwuje zbiorniki z bactą, przyglądając się wam za pomocą świecących sensorów optycznych. Sprawdza wyświetlacze przy zbiornikach, po czym zwraca uwagę na was.\r\n\r\n\"Dobrze. Obudziliście się\", jego głos trzeszczy przez interkom. \"Dezorientacja to częsty efekt utraty przytomności. Wasze parametry życiowe są doskonałe. Niedługo powinna wrócić wam pamięć.\"\r\n\r\nTak jest. Przynajmniej pamiętacie teraz swoje imiona.\r\n\r\nJesteście <b>Jyn Odan</b>, niezwykle utalentowany przemytnik, zwinny i szybki, najszybszy strzelec po tej stronie Koreliańskiego szlaku i <b>Gaarkhan</b>, zaciekły wojownik Wookiee z Kashyyyk, równie lojalny, co przerażający.\r\n\r\nZbiornik bacta opróżnia się, a droid medyczny pomaga wam z niego wyjść.",
+          "GUID": "74088b63-8375-483f-a842-f6c132586b74",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "7e9f55d5-7c27-4fec-a475-c5bf24aa60dd",
+              "theText": "Rozstaw <b>Jyn Odan</b> tutaj.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "ebf5a914-32ee-4a33-a0c0-98dada44cc85",
+              "theText": "Rozstaw <b>Gaarkhana</b> tutaj.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "cceb5ba1-bd68-40bb-9131-a16737d26fa9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Każda kampania w <b>Imperium Atakuje</b> zaczyna się od wyboru, którymi <b>bohaterami</b> chcecie grać przez całą kampanię. Jednak na potrzeby tego samouczka dokonaliśmy tego wyboru za was.\r\n\r\nWeźcie arkusze bohaterów (duże arkusze) dla <b>Jyn Odan</b> i <b>Gaarkhana</b>.\r\n\r\nNastępnie weźcie \"talie klasy bohaterów\" (małe karty z portretami bohaterów na odwrocie). Przeszukajcie obie talie bohaterów w celu znalezienia przedmiotów startowych. Są to jedyne karty bez wartości PZ na dole karty.\r\n\r\nNależy umieścić arkusz bohatera przed graczem kontrolującym bohatera, a następnie umieścić obok niego zakryty przedmiot startowy.\r\n\r\nNastępnie weźcie figurki Jyn i Gaarkhana. Umieśćcie figurkę Jyn na zaznaczonym na zielono polu, a figurkę Gaarkhana na zaznaczonym na niebiesko polu.</color>",
+          "GUID": "325263ad-2c61-4ab1-a193-f6a7b3b3bef0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><b>Imperium Atakuje</b> jest rozgrywana jako seria <i>aktywacji</i>. Najpierw gracze Rebelii wybierają bohatera, którego aktywują, a następnie aplikacja aktywuje grupę wroga (jeśli jest dostępna).\r\n\r\nWybrani bohaterowie są wyświetleni po lewej stronie ekranu. Można wybrać od 2 do 4 bohaterów w kampanii <b>Imperium Atakuje</b>. Jednak niezależnie od tego, ilu bohaterów zostanie wybranych, gracze Rebelii zawsze otrzymują 4 aktywacje bohaterów.\r\n\r\n{-} 4 bohaterów: Każdy bohater otrzymuje 1 aktywację.\r\n{-} 3 bohaterów: Każdy bohater otrzymuje 1 aktywację. Po tym jak każdy bohater aktywował się raz, jeden z bohaterów może wykonać 1 dodatkową aktywację. Jest to wyświetlane w aplikacji jako \"wirtualny\" bohater. Dodatkowa aktywacja musi być wykonana przez innego bohatera w każdej rundzie. Dodatkowo, każdy bohater zyskuje +3 żywotności.\r\n{-} 2 bohaterów: Każdy bohater otrzymuje 2 aktywacje. Druga aktywacja może być wykonana dopiero po tym, jak obaj bohaterowie aktywują się raz. Dodatkowo, każdy bohater zyskuje +10 żywotności.\r\n\r\nImperium zawsze otrzymuje 1 aktywację za każdą rozstawioną grupę wroga.</color>",
+          "GUID": "f9bb75f6-ad94-4b09-a983-da4f9dc4ce4c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Aby śledzić aktywacje, można użyć kartonowych żetonów dołączonych do gry lub zielonych symboli aktywacji na miniaturkach bohaterów.\r\n\r\nKliknij lub dotknij zielonego żetonu aktywacji, aby oznaczyć aktywację jako zakończoną. Na początku nowej rundy wszystkie żetony aktywacji są ponownie ustawiane jako gotowe.\r\n\r\nPo lewej stronie znajduje się również <b>Sojusznik</b>. Kliknijcie <b>Kontynuuj</b> aby dowiedzieć się jak to działa.</color>",
+          "GUID": "d6db7bab-ccca-46d1-b513-cfd8e5d9d140",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Drzwi rozsuwają się i do środka wchodzi młoda, ciemnowłosa kobieta w białej szacie. Od razu ją rozpoznajecie. Drzwi zamykają się za nią, a księżniczka Leia Organa uśmiecha się widząc, że opuściliście już zbiornik z bactą.\r\n\r\n\"W porządku\", mówi. \"Wygląda na to, że nic wam nie jest. Martwiłam się przez chwilę.\"",
+          "GUID": "c75d62d7-d111-48bd-8d65-dbe308d1046a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 1",
+              "GUID": "68e369e8-5603-44db-b4e7-f61b63b17dd6",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "f6dcf79c-288a-4640-9be2-1cdb7210ccb7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionInstructions": "",
+          "surges": "",
+          "bonuses": "",
+          "keywords": "",
+          "abilities": "",
+          "customText": "",
+          "cardName": "Leia Organa",
+          "GUID": "47097c07-5055-4fac-9d76-c9a7229e3e74",
+          "eventActionType": 21,
+          "eaName": "Custom Deployment: Leia Organa"
+        },
+        {
+          "tbText": "<color=\"yellow\">Kiedy sojusznik lub przeciwnik zostaje rozstawiony, należy wyszukać w kartach rozstawienia odpowiednią kartę i umieścić ją w swoim obszarze gry. Następnie należy rozmieścić ich figurki.\r\n\r\nNiektórzy sojusznicy lub wrogowie są jednak tworzeni przez aplikację i nie odpowiadają wydrukowanej karcie rozstawienia lub figurce. W tym przypadku żeton misji Rebelii reprezentuje Leię. Możesz kliknąć prawym przyciskiem myszy lub dwukrotnie kliknąć / dotknąć portret sojusznika lub wroga, aby wyświetlić jego kartę rozstawienia, niezależnie od tego, czy jest to karta standardowa czy nie. (Wybierz ikonę {J}, i wypróbujcie to - jednak na karcie Leii nie ma jeszcze zbyt wiele do zobaczenia). \r\n\r\nKażda grupa sojuszników otrzymuje 1 aktywację. Gracze Rebelii zwykle decydują, kiedy aktywować sojusznika, ale na potrzeby tego poradnika aktywujmy najpierw Leię. W zwykłej misji gracze mają pełną kontrolę nad działaniami sojusznika, ale Leia zawsze była uparta.</color>",
+          "GUID": "60fa60fc-585c-4c5c-8154-a13160ebcc10",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "First Activation",
+      "GUID": "4f5befe7-5526-4fa6-9e40-8e78ffbc06f1",
+      "eventText": "\"Dziękuję za ostrzeżenie\", kontunuuje Leia. \"Obecnie analizujemy informacje, które nam przekazaliście, ale już teraz widać, że wyświadczyliście nam ogromną przysługę. Mówi się o jakimś przełomowym projekcie nowej broni, ale nie martwmy się o to teraz.\"\r\n\r\n\"Jesteście na <i>Rozdartym sercu</i>, jednym z naszych statków medycznych. Nasi medycy opatrzyli was. Obawiam się, że wasz frachtowiec nie przetrwał, ale udało nam się was wyciągnąć na czas, razem z kilkoma podstawowymi rzeczami.\"\r\n\r\nLeia zaczyna iść w kierunku konsoli zamontowanej na odległej ścianie.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "ecde3e4f-474f-408e-8032-a978f6fa50a6",
+              "theText": "Konsola zamontowana na ścianie steruje drzwiami szafek.",
+              "buttonList": [
+                {
+                  "GUID": "2c587674-e689-41ce-8c17-aa4cced1ce24",
+                  "theText": "{A} Otwórz szafkę"
+                }
+              ]
+            }
+          ],
+          "GUID": "c8f02fde-77a8-4e0f-8f2c-93457c0bf295",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Kiedy figurka się aktywuje, zyskuje 2 <b>akcje</b> które można wydać na różne rzeczy. Dostępne akcje to:\r\n\r\n{-} Ruch\r\n{-} Skorzystanie\r\n{-} Atak\r\n{-} Odpoczynek\r\n{-} Akcje specjalne\r\n\r\nFigurka może wydać akcje na dowolną kombinację powyższych akcji.</color>",
+          "GUID": "3f0f21ba-a7d7-45e8-b57a-f52e049c6610",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Ponieważ Leia musi wykonać <b>ruch</b> aby dostać się do terminalu, wydaje 1 ze swoich 2 akcji na akcję <b>Ruchu</b>.\r\n\r\nAkcja <b>Ruchu</b>  nie powoduje natychmiastowego przesunięcia figurki. Zamiast tego, figurka zyskuje <i>punkty ruchu</i> równe swojej <i>Szybkości</i>. Szybkość figurki znajduje się na jej karcie rozstawienia. W przypadku Leii jej szybkość wynosi 5, więc zyskuje 5 punktów ruchu. Punkty ruchu mogą być wydawane w trakcie aktywacji, a nawet dzielone, ale nie przechodzą do następnej aktywacji.\r\n\r\nFigurka może wydać 1 punkt ruchu, aby przesunąć się na sąsiadujące pole (także na skos).</color>",
+          "GUID": "a00f34fe-24e2-4a63-98e5-f331af679f8e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Podczas poruszania się gracze muszą pamiętać o różnych terenach. Do większości pól można się po prostu przemieścić za pomocą jednego punktu ruchu. Istnieją jednak wyjątki.\r\n\r\n{-} <i>Trudny teren</i> jest oznaczony niebieską obwódką. Przejście na <i>trudne</i> pole wymaga 1 dodatkowego punktu ruchu.\r\n{-} <i>Blokujący teren</i> jest reprezentowany za pomocą ciągłej czerwonej linii, otaczającej pole planszy. Figurki nie mogą wchodzić na <i>blokujący</i> teren. Czarne obwódki wokół kaflelka planszy również liczą się jako <i>blokujący</i> teren.\r\n{-} <i>Niedostępny teren</i> jest reprezentowany za pomocą przerywanej czerwonej linii otaczającej pole planszy. Figurki nie mogą wchodzić na pola zawierające <i>niedostępny</i> teren, ale mogą korzystać i atakować przez czerwoną przerywaną linię.\r\n\r\nFigurki mogą się poruszać przez pola innych figurek. Figurka musi wydać jeden dodatkowy punkt ruchu, aby wejść na pole zawierające <i>wrogą</i> figurkę.</color>",
+          "GUID": "6ab12cd9-4a06-4f4a-99e0-3d4631139ed9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Leia wydaje teraz 4 punkty ruchu i porusza się, aż znajdzie się w pobliżu terminala.\r\n\r\nNależy pamiętać, że <b>Imperial Commander</b> zazwyczaj nie śledzi pozycji figurek. Tutaj jest to po prostu zrobione dla celów demonstracyjnych.</color>",
+          "GUID": "2f173ba6-4c1a-43f9-9543-5ba682be6c30",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 1",
+              "GUID": "754766c6-8bd6-4650-9a0c-96877c18e2ab",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 2",
+              "GUID": "5feeb7c7-6b4f-4f00-8939-35af3b71d4d5",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "dd1cad7c-d26b-4220-ab63-b7dd2bf4ffa2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 2",
+              "GUID": "fe2ca107-9550-488b-bb7a-557f1df71191",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 3",
+              "GUID": "c58d2011-b37b-49bc-85b8-5cdd975b8cf4",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "0eeac485-b69d-454d-a8b7-75ead15372b1",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 3",
+              "GUID": "fb23fb9b-97a4-48db-8fab-5df4982d5b68",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 4",
+              "GUID": "1505d9e0-4f62-4638-a6eb-9e3aea15daa0",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "929a5c58-391a-4b62-8c8b-77895f9e811a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 4",
+              "GUID": "36dcfa37-7a75-4dc3-862a-8c716b997579",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 5",
+              "GUID": "eb8dc60a-4435-4137-bf06-5aa8dd8877df",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "e532b1a7-d02f-4140-b8aa-48bf6f19b4c6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia naciska przycisk.\r\n\r\n<color=\"yellow\">Leia wydaje swoją drugą akcję na <i>Skorzystanie</i>. Figurki mogą wchodzić w interakcje z żetonami na mapie. Aby to zrobić, muszą znaleźć się na polu z żetonem lub na sąsiadującym z nim polu i wydać akcję. \r\n\r\nWybrać terminal, a następnie kliknąć / stuknąć na \"{A} Otwórz szafkę\". {A} wskazuje, że to działanie wymaga wydania akcji.</color>",
+          "GUID": "1ea511d2-46a6-4f1a-addf-ccec9e1ac0ce",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Shelf opens",
+      "GUID": "38a6adb2-12e8-473f-9f35-f4e47c30a5f6",
+      "eventText": "Szafka na przeciwległej ścianie zbiorników z bactą otwiera się.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Jyn",
+              "GUID": "fe0813b6-8045-47c2-a363-ed7986c7d292",
+              "theText": "Ta skrzynka zawiera rzeczy Jyn.",
+              "buttonList": [
+                {
+                  "GUID": "7ac9fbd0-820a-4bd3-a517-01931e55f172",
+                  "theText": "{A} Otwórz"
+                }
+              ]
+            },
+            {
+              "entityName": "Crate Gaarkhan",
+              "GUID": "01c3940b-1098-4ae4-b4db-9091855fa133",
+              "theText": "Ta skrzynka zawiera rzeczy Gaarkhana.",
+              "buttonList": [
+                {
+                  "GUID": "1fcbedc1-50a9-487b-8126-8aa7d0cd27f6",
+                  "theText": "{A} Otwórz"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 1",
+              "GUID": "8cd647df-c66c-4cf6-aad3-e2dd51277953",
+              "theText": "Konsola zamontowana na ścianie steruje drzwiami szafek.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "1dd3026c-f46a-4c02-bba4-1c5153cedd70",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"Wasze rzeczy są w tych skrzyniach. Nie śpieszcie się, ja poczekam.\"\r\n\r\n<color=\"yellow\">Leia wydała wszystkie swoje akcje, ale wciąż pozostał jej 1 punkt ruchu. Używa tego punktu ruchu, aby cofnąć się nieco do tyłu.</color>",
+          "GUID": "ba1c8ef3-159e-4fa9-ad54-fd2d6eba33c8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 5",
+              "GUID": "67849232-df74-454d-9ea8-e8cc9bfe2cc4",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 6",
+              "GUID": "57fb8648-2708-4c00-a9b2-582d7182cf66",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "4a0cc4ac-3933-4486-8157-dac06e424d10",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Po wydaniu wszystkich akcji i punktów ruchu, aktywacja Leii kończy się.</color>",
+          "GUID": "4865fdd8-dc34-4900-8e2b-15194d89a1a3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "9454aa6f-9101-4e6c-b8fd-bc020f9cfa60",
+              "theText": "Rozstaw <b>Jyn Odan</b> tutaj.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "7a058a20-2a25-4324-94fd-dcbbaac186ea",
+              "theText": "Rozstaw <b>Gaarkhana</b> tutaj.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 2",
+              "GUID": "a8bde4d8-43c6-424f-a36b-670495da94d7",
+              "theText": "Pozycja Gaarkhana.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn 2",
+              "GUID": "feefe13d-4884-465e-83ac-2380066ddc60",
+              "theText": "Pozycja Jyn.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "06f9a6e9-5a1c-4cfa-bc9a-2bef4912734c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Teraz, gdy Leia skończyła, bohaterowie mogą się aktywować. Każdy bohater musi wydać 1 akcję na <b>Ruch</b> i 1 akcję na <b>Skorzystanie</b> aby otworzyć skrzynkę.\r\n\r\nWykonajcie aktywacje bohaterów w dowolnej kolejności. Należy pamiętać, że aby skorzystać ze skrzyni, trzeba z nią sąsiadować lub znajdować się na jej polu, dlatego podczas swojej aktywacji Jyn przesuńcie na podświetlone na zielono pole, a Gaarkhana na podświetlone na niebiesko pole.</color>",
+          "GUID": "8c2deefd-089c-4eae-8337-9fd535cd50fc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Zabierzcie swoje rzeczy ze skrzyń.",
+          "longText": null,
+          "GUID": "509251b4-348e-4792-a208-64e5c80a36c7",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Jyn Crate Opened",
+      "GUID": "cf2f4483-8946-4553-8251-8dcf00ac3f53",
+      "eventText": "W środku odnajdziesz ubrania Jyn i jej stary, zaufany blaster.\r\n\r\n<color=\"yellow\">Jyn Odan może odwrócić swoją kartę przedmiotu startowego.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Jyn",
+              "GUID": "ef14e83f-69e8-497b-8bee-2c80c0b7d769",
+              "theText": "Ta skrzynka zawiera rzeczy Jyn.",
+              "buttonList": [
+                {
+                  "GUID": "9a4cce72-b79c-4b41-8ee6-33234d83b00a",
+                  "theText": "{A} Otwórz"
+                }
+              ]
+            }
+          ],
+          "GUID": "ebdabfc1-71ad-4e70-a1f8-c82af9cebb38",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Gaarkhan Crate Opened",
+      "GUID": "f2a46c86-cc4e-4b01-8da2-6025bcf3f83a",
+      "eventText": "Zbroja Gaarkhana i jego ogromny wibrotopór są przechowywane w tej skrzyni.\r\n\r\n<color=\"yellow\">Gaarkhan może odwrócić swoją kartę przedmiotu startowego.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate Gaarkhan",
+              "GUID": "5a9df840-f1f1-4267-8a3e-037e8ab4b1ad",
+              "theText": "Ta skrzynka zawiera rzeczy Gaarkhana.",
+              "buttonList": [
+                {
+                  "GUID": "4e27076a-189c-4565-9d28-9dbceb4327db",
+                  "theText": "{A} Otwórz"
+                }
+              ]
+            }
+          ],
+          "GUID": "cdffeed5-5440-4167-b319-582728b2caef",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Both Crates Opened",
+      "GUID": "6c290cee-85ae-4cd7-8154-6d5db9e39ef2",
+      "eventText": "\"Wygląda to dobrze\", mówi Leia. \"Sprawdźmy, jak sprawni jesteście po czasie spędzonym w zbiorniku.\"\r\n\r\nNaciska inny przycisk na terminalu. Drzwi przesuwają się o cal, po czym zatrzymują się z ostrym metalicznym zgrzytem. Wygląda na to, że się zacięły. Leia wzdycha \"Oczywiście. Pomożesz mi, wielkoludzie?\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "ced34724-4e5e-47f5-b7d7-08fcbb5210b7",
+              "theText": "Drzwi prowadzące z ambulatorium zacięły się. Trzeba będzie użyć trochę siły, żeby je otworzyć.",
+              "buttonList": [
+                {
+                  "GUID": "78bd8b47-3616-4553-8133-f7c583b0e7b0",
+                  "theText": "{A} Wywarz drzwi"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Gaarkhan 2",
+              "GUID": "bd36dd64-8871-4b7d-965c-0b445937a94d",
+              "theText": "Pozycja Gaarkhana.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 3",
+              "GUID": "f6ce9d14-7fa8-4435-baff-5ca52fb623aa",
+              "theText": "Pozycja Gaarkhana.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "7717fe7e-9555-4b40-8cd3-b8a357251522",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Niektóre działania (i inne efekty podczas misji) wymagają <i>testu atrybutów</i>. Atrybuty bohatera są wymienione na dole jego arkusza bohatera.\r\n\r\n{K}: Siła\r\n{J}: Przenikliwość\r\n{I}: Technika\r\n\r\nIm więcej kości bohater ma wypisanych dla swojego atrybutu, tym większe szanse na powodzenie testu atrybutu. \r\n\r\nWyważenie drzwi będzie wymagało nieco siły. Oczywiście ogromny Wookiee nadaje się do tego zadania lepiej niż zwinny przemytnik, więc rozpocznij drugą aktywację Gaarkhana. Porusz go na zaznaczonym na niebiesko pole i spróbuj wyważyć drzwi.</color>\r\n",
+          "GUID": "a9bf6e05-1425-4730-85cf-b4646e019e0f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Wyważcie drzwi.",
+          "longText": null,
+          "GUID": "c5087acb-890a-4932-b9cc-47a87ae3de7d",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Door Attempt",
+      "GUID": "22a17d5b-d55f-4ebf-b2d1-0ba52261f3a6",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Wciskasz palce w szczelinę i ciągniesz z całej siły.\r\n\r\n<color=\"yellow\">Rzuć liczbą kostek na podstawie {K} atrybutu na arkuszu bohatera (1 niebieska, 1 zielona, 1 żółta). Każdy wynik {B} to <i>sukces</i>. Wpisz liczbę sukcesów poniżej.</color>",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "f4c2adaa-427f-45bb-ba4d-5d87d4b4d651",
+              "theText": "Pociągasz najmocniej jak potrafisz, ale drzwi pozostają zaklinowane.\r\n\r\n<color=\"yellow\">Nie martw się - możesz oczywiście spróbować ponownie. Każda interakcja kosztuje jednak akcję. Jyn również może spróbować wyważyć drzwi, ale mając tylko 1 niebieską kość, ma znacznie mniejsze szanse.</color>"
+            },
+            {
+              "GUID": "8fb2a6cc-1621-4b42-b0ff-d125e92ab790",
+              "theText": null
+            }
+          ],
+          "GUID": "aefc6fd8-8c00-449b-a936-6195bade52d6",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Door success",
+      "GUID": "482c6591-d971-4833-ba3a-74c2c359e87b",
+      "eventText": "Udało ci się otworzyć drzwi, a Leia odetchnęła z ulgą. \"W końcu\", mówi. Za drzwiami znajduje się korytarz prowadzący do hangaru.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door 1",
+              "GUID": "6c145b9b-65be-4c74-8214-047d44053dcb",
+              "theText": "Zamknięte drzwi prowadzą z ambulatorium.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "8ac52bdc-5410-4d63-8a9b-fa0ad9adb379",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"Chcecie poćwiczyć celowanie, żeby sprawdzić swoją koordynację ruchową?\", pyta Leia, uśmiechając się..\r\n\r\n<color=\"yellow\">Jyn Odan ma jeszcze aktywację, ale zacznijmy teraz nową turę. W zwykłej misji zazwyczaj nie przepadają aktywacje, ale nic nie zmusza cię do wydawania akcji. Po prostu kliknij na <b>Koniec rundy</b> w prawym dolnym rogu.</color>",
+          "GUID": "4d20d544-e74e-4504-ac28-aef70200c612",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Zakończ rundę.",
+          "longText": null,
+          "GUID": "1f749c39-c96f-4b31-b78f-3b32f4499cd4",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Target Practice Start",
+      "GUID": "d214e790-be04-4b4b-9533-cfa6c8c208a7",
+      "eventText": "Leia zaprasza was do hangaru.\r\n\r\n<color=\"yellow\">Dla pierwszych dwóch aktywacji, po prostu wykonaj 2 akcje <b>Ruchu</b> Jyn i Gaarkhanem i przenieś ich na odpowiednie, zaznaczone pola. Gdy bohater jest już na swoim polu, kliknij / dotknij podświetlone miejsce i wybierz \"(Bohater) na pozycji\".</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Jyn 2",
+              "GUID": "4effdfad-2890-48bb-8b15-c069968bb1a7",
+              "theText": "Pozycja Jyn.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Gaarkhan 3",
+              "GUID": "c295fed9-0d3a-4b8b-aa3d-73ffe4321ab3",
+              "theText": "Pozycja Gaarkhana.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn 3",
+              "GUID": "5262480a-842c-49a9-b6f3-f26636aa01f0",
+              "theText": "Pozycja Jyn.",
+              "buttonList": [
+                {
+                  "GUID": "645854bc-e982-4fbc-aa9b-c9e2ce3b6fa8",
+                  "theText": "Jyn na pozycji"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Gaarkhan 4",
+              "GUID": "893b1751-d303-427e-8fc4-1756012b2c85",
+              "theText": "Pozycja Gaarkhana.",
+              "buttonList": [
+                {
+                  "GUID": "054adac1-b5e4-4080-b879-439b56514e0b",
+                  "theText": "Gaarkhan na pozycji"
+                }
+              ]
+            }
+          ],
+          "GUID": "7c5519ee-a80c-4c04-a564-ec25a42010ff",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Wejdź do hangaru.",
+          "longText": null,
+          "GUID": "85750eb0-e6bb-469e-80c9-c4587e1743d1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Drone Activation",
+      "GUID": "68150c11-d592-4927-94d4-1bc171e79555",
+      "eventText": "Leia podąża za wami do hangaru.\r\n\r\n<color=\"yellow\">Leia aktywuje się i wykonuje 2 akcje <b>Ruchu</b>. Porusza się o 10 pól w kierunku pozycji wskazanej przez aplikację.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Leia 6",
+              "GUID": "1049e842-e1bb-42c7-a607-11f0ce391332",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Leia 7",
+              "GUID": "4e1264f6-9677-42a5-9493-89230c9593b9",
+              "theText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "14b9e7c2-df15-49a0-ac97-ba04e3d0089d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Leia naciska serię przycisków na ścianie. Przez otwory w ścianie unoszą się roboty szkoleniowe.",
+          "GUID": "774eed59-7501-4ecd-b1a5-25a80600cf2f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 1",
+              "GUID": "8bda5b73-39e4-45e2-a194-6bfdff377c63",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "67a5089a-b887-42fa-b757-4edf6617c941",
+                  "theText": "Zniszcz"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 2",
+              "GUID": "93466dc7-8a6b-48ec-b395-c72f82d83f93",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "a60af08d-11dd-4d94-a13f-0fdf164f5b9d",
+                  "theText": "Zniszcz"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 3",
+              "GUID": "0b27e095-7a5a-4a14-b95d-ed6ed288f022",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "4d0656de-6668-450d-8c2e-9beceb63a540",
+                  "theText": "Zniszcz"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 4",
+              "GUID": "ac199cf2-d139-48a8-987a-c78e04543df7",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "bb14cb13-0f1f-4c1f-bc53-e3dab480fad8",
+                  "theText": "Zniszcz"
+                }
+              ]
+            },
+            {
+              "entityName": "Drone 5",
+              "GUID": "f502d959-bcd4-4a66-9515-23d0e940ea23",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "c5f26901-c74d-4a20-88f3-42c9d4df1825",
+                  "theText": "Zniszcz"
+                }
+              ]
+            }
+          ],
+          "GUID": "64a7af16-2f3b-4c98-997c-e27da16a1e61",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Żetony misji mogą reprezentować wiele różnych rzeczy, na przykład osoby postronne, informatorów lub, jak w tym przypadku, roboty szkoleniowe.</color>",
+          "GUID": "f24cd949-f82e-49c3-af1c-5fb2c6c7c4da",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "\"Teraz pokażcie mi, co potraficie\", mówi księżniczka, opierając się o ścianę i obserwując was z uwagą.",
+          "GUID": "1c8b1e72-d410-4725-8d0c-9c5a38dd1345",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Czas wysadzić kilka rzeczy w powietrze.\r\n\r\nAkcja <b>Ataku</b> pozwala bohaterowi lub sojusznikowi zaatakować cel. Sojusznicy atakują za pomocą puli kości wymienionej na ich karcie rozstawienia. Bohater może wybrać dowolny przedmiot, w który jest na jego wyposażeniu.\r\n\r\nIstnieją dwa rodzaje ataków: Ataki dystansowe ({O}) i ataki wręcz ({P}). {O} ataki mogą atakować odległe cele. {P} ataki mogą atakować jedynie sąsiadujące cele.\r\n\r\nAby jednak móc zaatakować cel, figurka musi mieć cel w <i>polu widzenia</i>.</color>",
+          "GUID": "4a2a111a-589c-4dd9-bb09-4c52ca539d29",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Aby określić pole widzenia, gracz wytycza dwie umowne, nie przecinające się linie z jednego rogu pola atakującej figurki do dwóch sąsiadujących rogów pola celu. Jeśli któraś z tych linii przechodzi przez ścianę, figurkę lub blokujący teren, dana figurka nie ma celu w polu widzenia.\r\n\r\nNa obecnej mapie, Jyn (na podświetlonym na zielono polu) ma w polu widzenia roboty szary, zielony i czerwony. Nie ma w polu widzenia niebieskiego robota, ponieważ Gaarkhan jej zasłania. Nie ma również w polu widzenia żółtego robota, ponieważ blokujący teren (czerwone linie) zasłania jej widok.\r\n\r\nZielony robot też jest za czerwonymi liniami, ale przerywane czerwone linie to niedostępny teren: Figurki nie mogą się przez niego poruszać, ale mogą przez niego atakować lub wchodzić w interakcje.\r\n\r\nGaarkhan ma w polu widzenia wszystkie roboty poza żółtym. Jednak jego wibrotopór jest bronią {P}, więc nie może zaatakować żadnego robota bez wykonania ruchu.\r\n\r\nZdezorientowani? Nie martwcie się. Dodatek I w Kompletnym podręczniku zasad zawiera wiele przykładów wytyczania pola widzenia.</color>",
+          "GUID": "8e0f4d70-7a66-4291-8a21-69ac96005871",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Zarówno Gaarkhan, jak i Jyn mają po 1 aktywacji w tej rundzie. Gracze decydują, w jakiej kolejności mają się aktywować. Gaarkhan posiada broń {P}, więc musi wykonać akcję ruchu, zanim będzie mógł zaatakować. Jyn może strzelać z miejsca, w którym się znajduje, więc może zaatakować dwa razy, jeśli chce.\r\n\r\nNależy pamiętać, że tylko bohaterowie mogą wydać 2 akcje na ataki. Sojusznicy i wrogowie mogą wydać na atak tylko 1 ze swoich akcji. To daje bohaterom dużą przewagę.</color>",
+          "GUID": "88611afe-54dc-406c-a316-08188c363d47",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Wybierzcie jednego bohatera. Może wydać akcję, aby w razie potrzeby przesunąć się na lepszą pozycję. Następnie wybierz cel.\r\n\r\nPodczas ataku należy rzucić kostkami ataku wymienionymi na karcie przedmiotu bohatera. Dla Jyn są to 2 zielone kostki, dla Gaarkhana 1 czerwona i 1 żółta.</color>",
+          "GUID": "b7e23f77-a722-4999-8e4e-ec32d309cd2b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Podczas wykonywania ataku {O} pierwszą rzeczą, którą należy sprawdzić jest <i>celność</i>. Cyfry na kościach reprezentują <i>celność</i>. \r\n\r\nWartość wymaganej celności jest równa liczbie pól, o jaką atakujący jest oddalony od swojego celu. Na przykład, Jyn jest oddalona o 3 pola od wszystkich robotów szkoleniowych, które widzi (szary, zielony, czerwony). Należy teraz dodać do siebie cyfry z kostek. Jeśli celność jest co najmniej równa liczbie pól, atak trafia. W przeciwnym razie pudłuje.\r\n\r\n{P} ataki nie wymagają celności.</color>",
+          "GUID": "b397ab7d-11ae-4e7f-9e79-4ee281ba5936",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Jeśli atak trafi, należy policzyć liczbę symboli {H}. Są to obrażenia, które zadajecie swojemu celowi. Umieśćcie odpowiednią liczbę żetonów {H} na robocie treningowym na mapie. Na razie zignorujcie symbole {B}.\r\n\r\nJeśli cel otrzyma {H} równe lub wyższe od jego żywotności, zostaje pokonany. Roboty szkoleniowe mają 3 żywotności, więc jeśli otrzymają co najmniej 3 {H}, zostaną zniszczone. \r\n\r\nJeśli tak się stanie, wybierz robota szkoleniowego i kliknij / stuknij \"Zniszcz\".</color>",
+          "GUID": "bab1ebbe-7897-4d38-aab5-6348984b0f71",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Kontynuujcie wykonywanie aktywacji i atakujcie roboty. Oczywiście możecie swobodnie poruszać się po mapie.\r\n\r\nKiedy wszystkie aktywacje bohaterów zostaną wydane, kliknij <b>Koniec rundy</b> i kontynuujcie następną rundę. Leia na razie nie będzie się aktywować. Lepiej się bawi, patrząc jak walczycie z robotami szkoleniowymi.</color>",
+          "GUID": "16c7e43e-1ade-46b5-b842-9b27c958bb73",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Zniszcz roboty szkoleniowe (&Remotes destroyed&/5).",
+          "longText": null,
+          "GUID": "dd733ffe-013a-4680-a578-43b9f7e8a5d8",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "tbText": "<color=\"yellow\">Jeśli kiedykolwiek zapomnicie zasad misji, takich jak wartość żywotności robotów szkoleniowych, zawsze możecie przywołać <i>Informacje o misji</i>. Wszystkie istotne informacje są tam zebrane. Wystarczy kliknąć / dotknąć ikonę <b>(i)</b> na dole ekranu.</color>",
+          "GUID": "7d57cc96-22ee-4acd-aeaa-02560f850cb3",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Gaarkhan 4",
+              "GUID": "e74710f8-878e-4945-9601-4254c096b3c4",
+              "theText": "Pozycja Gaarkhana.",
+              "buttonList": [
+                {
+                  "GUID": "bb50d687-50ca-4822-8f84-df00c46b2f4e",
+                  "theText": "Gaarkhan na pozycji"
+                }
+              ]
+            },
+            {
+              "entityName": "Highlight Jyn 3",
+              "GUID": "6a933ec2-f43a-4b74-b73a-c20b0757dafe",
+              "theText": "Pozycja Jyn.",
+              "buttonList": [
+                {
+                  "GUID": "26c590de-d77e-4c88-bb76-baf6515d891c",
+                  "theText": "Jyn na pozycji"
+                }
+              ]
+            }
+          ],
+          "GUID": "0b7eaebe-6d49-45b2-8d5c-a5a252bb5a86",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Robot szkoleniowy ma 3 żywotności.",
+          "GUID": "0133ac59-be90-467a-bc83-beafc9cce759",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Zniszcz Drone 1",
+      "GUID": "5b9050a9-f31b-466f-ae74-43beb94b652f",
+      "eventText": "Robot szkoleniowy eksploduje deszczem iskier.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 1",
+              "GUID": "ca15bb9f-d9c8-4bac-914e-b7426461db6e",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "d4cb6e09-a55b-4243-9c68-7dde914f6d14",
+                  "theText": "Zniszcz"
+                }
+              ]
+            }
+          ],
+          "GUID": "0c8ca803-878c-4a87-93e5-e4912cf9289d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Zniszcz Drone 2",
+      "GUID": "06a17916-c69d-4306-a0bf-d653703309b9",
+      "eventText": "Robot szkoleniowy eksploduje deszczem iskier.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 2",
+              "GUID": "9abbd151-a3a0-4b5b-a14b-113b0f162e7b",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "1d35f3df-355f-4e6a-9331-765fd8077f9a",
+                  "theText": "Zniszcz"
+                }
+              ]
+            }
+          ],
+          "GUID": "75d8dc9c-9ed1-4ba3-b628-f7da8657c79c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Zniszcz Drone 3",
+      "GUID": "d0cd7308-8a0e-405a-ba61-1f7aff42b836",
+      "eventText": "Robot szkoleniowy eksploduje deszczem iskier.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 3",
+              "GUID": "22946384-2903-4349-84b6-e14c9425b21a",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "99ed03a0-b0fc-4cdb-a98e-126e0386449b",
+                  "theText": "Zniszcz"
+                }
+              ]
+            }
+          ],
+          "GUID": "4c1403b7-31ba-4ece-8be2-769624f8cf66",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Zniszcz Drone 4",
+      "GUID": "769f7ce3-1ac4-4aa9-89f2-83f9dc3f06ee",
+      "eventText": "Robot szkoleniowy eksploduje deszczem iskier.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 4",
+              "GUID": "ac053deb-5a1b-4bcf-81b9-27e67a92a948",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "b574bc64-184e-408f-bd69-f3b1937f16e2",
+                  "theText": "Zniszcz"
+                }
+              ]
+            }
+          ],
+          "GUID": "47e589d7-0f47-4fdd-9b41-31b25909dde7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Zniszcz Drone 5",
+      "GUID": "8f9cd40f-4f48-4cd7-a717-2e9b8f376a43",
+      "eventText": "Robot szkoleniowy eksploduje deszczem iskier.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Drone 5",
+              "GUID": "5835b626-b682-4466-967f-16616e8b75f7",
+              "theText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+              "buttonList": [
+                {
+                  "GUID": "c62132f6-8293-4aac-8903-6f8333c2aecc",
+                  "theText": "Zniszcz"
+                }
+              ]
+            }
+          ],
+          "GUID": "341160af-ae8c-4a19-a1f1-1f4db3f46f2e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission",
+      "GUID": "6c4448ad-e5c6-47e5-8a2e-1ad3ea72cdd4",
+      "eventText": "Po wybuchu ostatniego robota Leia nagradza was krótkimi brawami. \"Dobra robota!\", mówi, uśmiechając się. \"Wygląda na to, że wyszliście z tego bałaganu cało. Moglibyśmy naprawdę u-\"\r\n\r\nPrzerywa jej comlink. \"Wasza wysokość\", głos trzeszczy w głośniku. \"Właśnie otrzymaliśmy sygnał alarmowy z Indu. Siły imperialne zbliżają się do naszej kryjówki. Sygnał wzywa o pomoc. Żaden inny statek Sojuszu nie jest tak blisko jak my.\"\r\n\r\nOczy Leii rozszerzają się, po czym na jej twarzy pojawia się grymas determinacji. \"Powiedz im, żeby się trzymali. Obrać kurs na Indu\", woła do komunikatora, a potem patrzy na was.",
+      "eventActions": [
+        {
+          "tbText": "\"Możecie potrzebować tej broni wcześniej niż myśleliśmy. Chciałam wam powiedzieć, że przydadzą nam się ludzie o waszych umiejętnościach i zapytać, czy rozważylibyście dołączenie do nas.\"\r\n\r\nKiedy widzi, że przygotowujecie broń, uśmiecha się do was. \"Witamy w Sojuszu Rebeliantów.\"\r\n\r\n<color=\"yellow\">To kończy 1 samouczek w apce <b>Imperial Commander</b>. W części 2 czeka was coś innego niż walka z robotami szkoleniowymi.</color>",
+          "GUID": "9fff3167-309f-4bc2-a78f-4c6cadfc8deb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Energy Fields",
+      "GUID": "072630bd-e001-40fa-9c39-6e27f0eea580",
+      "eventText": "\"Wygląda na to, że masz w tym wprawę\", Leia wiwatuje, gdy drugi pilot treningowy rozbija się o ziemię.\r\n\r\n\"Zróbmy coś trochę bardziej interesującego, dobrze?\" Naciska przycisk na konsoli ściennej, a szumiące pola energii otaczają roboty.",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">Większość celów - w tym bohaterowie, wrogowie i sojusznicy - nie są bezbronni wobec ataków. Posiadają oni jedną lub więcej <i>kości obrony</i> które są rzucane jednocześnie z kostkami ataku. Rodzaj kości (czarna lub biała) jest umieszczony na arkuszu bohatera lub karcie rozstawienia.\r\n\r\nPola energii chronią roboty szkoleniowe i zapewniają im 1 białą kość obrony. Kiedy bohater atakuje robota szkoleniowego, należy jednocześnie rzucić 1 białą kością obrony. Każdy symbol {G} - zwany <i>Osłona</i> - odejmuje 1 symbol {H}.\r\n\r\nZa każdym razem, gdy wykonywany jest atak, nie zapomnijcie rzucić odpowiednią kostką obrony. Jest jednak kilka celów, które nie mają kości obrony. Mogą one mieć statyczne bonusy (np. stały symbol {G}) - lub nie mieć ich wcale.</color>",
+          "GUID": "370b63f9-0444-4e32-84d9-09a4a9e3d14a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Bronie też mają różne sztuczki. Za każdym razem, gdy rzucasz kostkami ataku, możesz rzucić dowolną liczbę symboli {B}. Symbole {B} są nazywane <i>Wzmocnieniami</i>.\r\n\r\nWzmocnienia mogą być wykorzystane do aktywacji <i>zdolności wzmocnień</i>. Zazwyczaj są one wymienione na karcie rozstawienia lub na karcie broni.</color>",
+          "GUID": "9d815937-2df9-4ca3-b7d1-8b7cfad9f5bc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><i>Staroświecki blaster</i> Jyn, na przykład, posiada następujące zdolności wzmocnień:\r\n\r\n{B}: +1 {H}\r\nJyn może wydać 1 {B} wyrzucone w ataku, aby dodać 1 {H} do wyników.\r\n\r\n{B}: +1 celności\r\nJyn może wydać 1 {B} wyrzucone w ataku, aby dodać +1 do celności ataku, być może trafiając cel, który w innym wypadku by spudłowała.</color>",
+          "GUID": "4a60311b-4427-4027-bf06-be5b50765497",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><i>Wibrotopór</i> Gaarkhana posiada następujące zdolności wzmocnień:\r\n\r\n{B}: Przebicie 1\r\nGaarkhan może wydać 1 {B} wyrzucone w ataku, aby zanegować 1 symbol {G} z kostki obrony.\r\n\r\n{B}: Rozpłatanie 1 {H}\r\nJeśli cel jego ataku otrzymał jedno lub więcej {H}, Gaarkhan może wydać 1 {B} wyrzucone w ataku, aby wybrać inną wrogą figurkę lub obiekt, który mógłby obrać za cel ataku. Ta figurka lub obiekt również otrzymuje 1 {H}.</color>",
+          "GUID": "ee172af5-4525-4e47-8304-08fca5b6743c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Każda zdolność wzmocnień może być użyta tylko raz podczas ataku. Jyn, na przykład, nie może wydać 2 {B}, aby zwiększyć obrażenia o 2 {H}. Jeśli zdolność jest wymieniona wielokrotnie na karcie, można jej użyć tak często, jak jest wymieniona.\r\n\r\n{F} symbole na kostkach obrony nazywane są <i>Zmyleniem</i>. Każdy {F} anuluje 1 {B}.\r\n\r\nNa białych kostkach znajduje się również symbol {E}. Jest to tzw. <i>Unik</i>. Symbol {E} oznacza, że cały atak pudłuje, nie zadając żadnych obrażeń.</color>",
+          "GUID": "2f2c25b1-a8d9-4046-a75c-9af90553e779",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">A teraz rozwalcie chronione roboty szkoleniowe.</color>",
+          "GUID": "16ba2493-6684-4295-9539-43b3e044ce3d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "theText": "{-} Robot szkoleniowy ma 3 żywotności.\r\n{-} Roboty szkoleniowe rzucają 1 białą kością obrony.\r\n{-} {H} = Damage\r\n{-} {B} = Surge, used to activate surge abilities\r\n{-} {G} = Osłona, neguje 1 {H}\r\n{-} {F} = Zmylenie, neguje 1 {B}\r\n{-} {E} = Unik, cały atak pudłuje",
+          "GUID": "6f4724b7-ed95-4b08-afbe-1591c3094181",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Door 1",
+      "GUID": "b2070d75-7f02-4045-8976-d90ef8049e13",
+      "mainText": "Zamknięte drzwi prowadzą z ambulatorium.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn",
+      "GUID": "2a41135e-0bee-4ad8-b776-039380272a16",
+      "mainText": "Rozstaw <b>Jyn Odan</b> tutaj.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan",
+      "GUID": "7f94645b-4f4d-4bec-8558-41fc6c6f72d7",
+      "mainText": "Rozstaw <b>Gaarkhana</b> tutaj.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 1",
+      "GUID": "7cd21e8e-34f7-4c18-b1c1-24aa13d0ae55",
+      "mainText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate Jyn",
+      "GUID": "d11bb204-54b3-4fcd-98e7-51ed05970335",
+      "mainText": "Ta skrzynka zawiera rzeczy Jyn.",
+      "buttonList": [
+        {
+          "GUID": "cfdca69a-6b1b-4a1f-89b8-f442b68f5b06",
+          "theText": "{A} Otwórz"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate Gaarkhan",
+      "GUID": "4d440025-3ec2-46f1-9069-2117eb5d7ae0",
+      "mainText": "Ta skrzynka zawiera rzeczy Gaarkhana.",
+      "buttonList": [
+        {
+          "GUID": "75d0aff5-ac96-4d1f-8059-939337adf109",
+          "theText": "{A} Otwórz"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "da948162-c3b5-4172-87b5-8a2bd213beee",
+      "mainText": "Konsola zamontowana na ścianie steruje drzwiami szafek.",
+      "buttonList": [
+        {
+          "GUID": "fc5ca6ba-888c-46f4-84cc-cc276a7ae386",
+          "theText": "{A} Otwórz szafkę"
+        }
+      ]
+    },
+    {
+      "entityName": "Leia 2",
+      "GUID": "d4de8012-e4ab-43f3-8cb9-76593eca68de",
+      "mainText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 3",
+      "GUID": "a4e09794-549c-4554-b5dd-7c9616280452",
+      "mainText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 4",
+      "GUID": "5079f713-03c8-42b3-8748-ab7bc5655abd",
+      "mainText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 5",
+      "GUID": "cfbaaf90-961d-4e94-bb05-586d846f2d9f",
+      "mainText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Leia 6",
+      "GUID": "bb86cfa7-0b68-4c13-8c48-ac78918e1899",
+      "mainText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 2",
+      "GUID": "31a5f15d-f27b-4cd5-8e61-a5a29e052dbf",
+      "mainText": "Pozycja Jyn.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 2",
+      "GUID": "76396914-322b-4901-af58-238c0d708659",
+      "mainText": "Pozycja Gaarkhana.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Gaarkhan 3",
+      "GUID": "0dbf8922-6f85-4042-9858-961d05af6b4b",
+      "mainText": "Pozycja Gaarkhana.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn 3",
+      "GUID": "fb09c4e7-baf6-481c-8e42-cfbb82fc047d",
+      "mainText": "Pozycja Jyn.",
+      "buttonList": [
+        {
+          "GUID": "52562de3-fc0a-45b9-b04f-c196eb99c4f5",
+          "theText": "Jyn na pozycji"
+        }
+      ]
+    },
+    {
+      "entityName": "Highlight Gaarkhan 4",
+      "GUID": "9c313a60-ea88-4cd8-bce2-b04dfe394777",
+      "mainText": "Pozycja Gaarkhana.",
+      "buttonList": [
+        {
+          "GUID": "43dd90da-f4c0-4e8b-a4c6-ba5bb53721c2",
+          "theText": "Gaarkhan na pozycji"
+        }
+      ]
+    },
+    {
+      "entityName": "Leia 7",
+      "GUID": "a1d35d6d-ad6e-41d7-8fff-103db0acf0bc",
+      "mainText": "Żeton misji Rebelii reprezentuje <b>Leię Organę</b>.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Drone 1",
+      "GUID": "9769786b-ad51-4933-92b0-d32d520cd147",
+      "mainText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+      "buttonList": [
+        {
+          "GUID": "a1381399-3125-482b-a1de-ebee4430697d",
+          "theText": "Zniszcz"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 2",
+      "GUID": "a0658804-fbf9-494a-be42-cfc279f32787",
+      "mainText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+      "buttonList": [
+        {
+          "GUID": "b49e3817-05f1-4d0b-a797-819d345ea7c9",
+          "theText": "Zniszcz"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 3",
+      "GUID": "40f7b7fa-a2d2-44b2-98ba-d1e9996877ab",
+      "mainText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+      "buttonList": [
+        {
+          "GUID": "52221d6d-8a6b-42fb-9675-0b49b9a5874d",
+          "theText": "Zniszcz"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 4",
+      "GUID": "41ee4950-5d1c-41da-b3a3-56078d8ea6ae",
+      "mainText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+      "buttonList": [
+        {
+          "GUID": "ead8a34c-f557-429a-be21-cda75500c034",
+          "theText": "Zniszcz"
+        }
+      ]
+    },
+    {
+      "entityName": "Drone 5",
+      "GUID": "9ad4aa77-4667-47a4-8228-59ec456899b3",
+      "mainText": "Robot szkoleniowy unosi się pięć stóp nad ziemią, cicho szumiąc.\r\n\r\n<color=\"yellow\">Robot szkoleniowy ma 3 żywotności.</color> ",
+      "buttonList": [
+        {
+          "GUID": "bbcad1a8-12ba-4e5c-baaa-919ae9a1796d",
+          "theText": "Zniszcz"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

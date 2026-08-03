@@ -3,7 +3,7 @@
   "missionProperties": {
     "missionName": "Ongeleid projectiel",
     "missionDescription": "",
-    "missionInfo": "{-} De <color=“red”>AT-ST</color> is een rebellenfiguur onder controle van Mak. Als Mak activeert, zet je de <color=“red”>AT-ST</color> klaar en activeer je deze. De heldfiguur van Mak wordt niet ingezet en kan niet activeren. Geef de <color=“red”>AT-ST</color> extra gezondheid gelijk aan het bedreigingsniveau. De <color=“red”>AT-ST</color> kan velden in de hangar betreden en bezetten. Als de <color=“red”>AT-ST</color> is verslagen, klik je op de keizerlijke missietokens en selecteer je “AT-ST verslagen”.\n{-} Alle aanvallen die gericht zijn op Mak terwijl zijn figuur niet is ingezet, zijn gericht op de <color=“red”>AT-ST</color>.\n{-} De muur tussen de hangar (tegel 19A) en de testlocatie (tegel 2B) blokkeert geen beweging of zichtlijn.\n{-} De rebellen winnen als alle keizerlijke figuren zijn verslagen.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+    "missionInfo": "{-} De <color=\"red\">AT-ST</color> is een rebellenfiguur onder controle van Mak. Als Mak activeert, maak je de <color=\"red\">AT-ST</color> klaar en activeer je deze. De figuur van Mak wordt niet ingezet en kan niet activeren. Geef de <color=\"red\">AT-ST</color> extra gezondheid gelijk aan het bedreigingsniveau. De <color=\"red\">AT-ST</color> kan velden in de hangar betreden en bezetten. Als de <color=\"red\">AT-ST</color> verslagen is, klik je op de keizerlijke missietoken en selecteer je \"AT-ST verslagen\".\n{-} Alle aanvallen die gericht zijn op Mak terwijl zijn figuur niet is ingezet, zijn gericht op de <color=\"red\">AT-ST</color>.\n{-} De muur tussen de hangar (tegel 19A) en de testlocatie (tegel 2B) blokkeert geen verplaatsing of zichtlijn.\n{-} De rebellen winnen wanneer alle keizerlijke figuren verslagen zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
     "campaignName": "Basisspel",
     "startingObjective": "Versla alle keizerlijke troepen.",
     "repositionOverride": null,
@@ -11,9 +11,68 @@
   },
   "events": [
     {
+      "eventName": "Advantage 1",
+      "GUID": "41fb0855-8d76-4813-a5c8-058aab4cf96a",
+      "eventText": "De <color=\"red\">Royal Guard Champion</color> herstelt {H} gelijk aan 1 + bedreigingsniveau (*1*).",
+      "eventActions": []
+    },
+    {
+      "eventName": "Advantage 2",
+      "GUID": "e5d6762c-aec9-4d1d-95ec-dc70a7b5cbb2",
+      "eventText": "De <color=\"red\">Royal Guard Champion</color> verplaatst 5 naar de dichtstbijzijnde rebel en valt die rebel aan, indien mogelijk.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Advantage 3",
+      "GUID": "ab34be27-7799-41d2-aa74-75f96f09362e",
+      "eventText": "De twee keizerlijke figuren met de hoogste figuurkosten worden gefocust.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Chaos",
+      "GUID": "da4f0f53-91b7-45e8-b3d9-ac13cc715647",
+      "eventText": "Schreeuwend komen keizerlijke soldaten aangerend, terwijl ze een enorm blasterkanon op een statief meedragen.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "6ba3db99-aba1-436a-87f9-63c5fd1975f8",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG007/E-Web Engineer"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "\"Niet weer!\" schreeuwt Mak, terwijl hij naar voren probeert te stormen, zelfs wanneer je hem wegtrekt en de planeet verlaat.\n\nMet smeulende woede hurkt Mak in een hoek van het ruim en mompelt hij keer op keer zachtjes: \"De volgende keer…\"\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Mak doorzoekt de installatie grondig en vindt verschillende prototype-onderdelen, daarna plaatst hij een aantal explosieve ladingen.\n\nVanaf een veilige afstand kijk je toe hoe de buitensporig grote explosie de installatie reduceert tot kleine smeulende brokstukken.\n\n{-} De rebellen winnen de missie!\n{-} Mak ontvangt de \"Shadow Suit\" beloningskaart.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Je maakt je zorgen over Mak's obsessie om deze installatie te vernietigen. Hij heeft nog steeds niet uitgelegd waarom die zo belangrijk is, maar zijn houding blijft onvoorspelbaar.\n\nDat verandert wanneer jullie de hoofdhangar van de installatie bereiken en hij een onbemande scout walker ziet.\n\n{-} De muur tussen de hangar (tegel 19A) en de testlocatie (tegel 2B) blokkeert geen verplaatsing of zichtlijn.\n{-} De rebellen winnen wanneer alle keizerlijke figuren verslagen zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+      "eventActions": [
+        {
+          "tbText": "{-} Plaats de <color=“red”>AT-ST</color> figuur op de rood gemarkeerde velden.\n{-} De <color=\"red\">AT-ST</color> is een rebellenfiguur onder controle van Mak. Als Mak activeert, maak je de <color=\"red\">AT-ST</color> klaar en activeer je deze. De figuur van Mak wordt niet ingezet en kan niet activeren. Geef de <color=\"red\">AT-ST</color> extra gezondheid gelijk aan het bedreigingsniveau. De <color=\"red\">AT-ST</color> kan velden in de hangar betreden en bezetten. Als de <color=\"red\">AT-ST</color> verslagen is, klik je op de keizerlijke missietoken en selecteer je \"AT-ST verslagen\".\n{-} Alle aanvallen die gericht zijn op Mak terwijl zijn figuur niet is ingezet, zijn gericht op de <color=\"red\">AT-ST</color>.\n{-} Plaats de helden op het blauw gemarkeerde veld.",
+          "GUID": "3f2dcc6a-d136-4db4-b88b-7bb679435955",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
       "eventName": "Open Crate 1",
       "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -38,7 +97,7 @@
     {
       "eventName": "Open Crate 2",
       "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -58,7 +117,7 @@
     {
       "eventName": "Open Crate 3",
       "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -78,7 +137,7 @@
     {
       "eventName": "Open Crate 4",
       "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -101,37 +160,12 @@
       ]
     },
     {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Je bent bezorgd over Mak's obsessie om deze installatie te vernietigen. Hij heeft je nog steeds niet verteld wat voor belang het heeft, maar zijn houding is nogal explosief.\n\nDat wil zeggen, totdat je aankomt in de hoofdhangar van de faciliteit en hij een onbemande scout walker ziet.\n\n{-} De muur tussen de hangar (tegel 19A) en de testlocatie (tegel 2B) blokkeert geen beweging of zichtlijn.\n{-} De rebellen winnen als alle keizerlijke figuren zijn verslagen.\n{-} De rebellen verliezen als alle helden gewond zijn.",
-      "eventActions": [
-        {
-          "tbText": "{-} Plaats de <color=“red”>AT-ST</color> figuur op de rood gemarkeerde velden.\r\n{-} De <color=“red”>AT-ST</color> is een rebellenfiguur onder controle van Mak. Als Mak activeert, zet je de <color=“red”>AT-ST</color> klaar en activeer je deze. De heldfiguur van Mak wordt niet ingezet en kan niet activeren. Geef de <color=“red”>AT-ST</color> extra gezondheid gelijk aan het bedreigingsniveau. De <color=“red”>AT-ST</color> kan velden in de hangar betreden en bezetten. Als de <color=“red”>AT-ST</color> is verslagen, klik je op de keizerlijke missietokens en selecteer je “AT-ST verslagen”.\n{-} Alle aanvallen die gericht zijn op Mak terwijl zijn figuur niet is ingezet, zijn gericht op de <color=“red”>AT-ST</color>.\r\n{-} Plaats de helden op het blauw gemarkeerde veld.",
-          "GUID": "3f2dcc6a-d136-4db4-b88b-7bb679435955",
-          "eventActionType": 16,
-          "eaName": "Text Box"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Mak doorzoekt de installatie grondig en vindt verschillende prototype-onderdelen, daarna plaatst hij een aantal explosieve ladingen.\n\nVanaf een veilige afstand kijk je toe hoe de onnodig grote explosie de installatie reduceert tot kleine smeulende brokstukken.\n\n{-} De rebellen winnen de missie!\n{-} Mak ontvangt de “Shadow Suit” beloningskaart.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "“Niet weer!” schreeuwt Mak, terwijl je hem wegsleurt en de planeet verlaat.\n\nMet smeulende woede hurkt Mak in de hoek van het vrachtruim en mompelt “Volgende keer ... “, opnieuw en opnieuw.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
       "eventName": "Press the Advantage",
       "GUID": "85cb7813-f0e5-47c8-a3a6-4399ef5d0a83",
-      "eventText": "Mak vloekt en springt uit de walker terwijl die van alle kanten wordt aangevallen.\n\nMak komt hard op de grond terecht. Hij komt overeind terwijl zijn tactische voordeel ontploft, waardoor hij weer onderuit wordt geslingerd.\n\n{-} Plaats Mak's figuur op één van de velden waar de <color=“red”>AT-ST</color> stond. Hij lijdt 10 {H}.",
+      "eventText": "Mak vloekt en springt uit de walker terwijl die van alle kanten onder vuur ligt.\n\nMak komt hard op de grond terecht, krabbelt overeind, maar wanneer zijn tactisch voordeel ontploft, wordt hij opnieuw tegen de grond geslingerd.\n\n{-} Plaats Mak's figuur op één van de velden waar de <color=\"red\">AT-ST</color> stond. Hij lijdt 10 {H}.",
       "eventActions": [
         {
-          "mainText": "Selecteer de juiste optie.\r\n\r\n<b>1:</b> De <color=\"red\">Royal Guard Champion</color> staat op het bord en heeft 7 {H} of meer geleden.\r\n<b>2:</b> De <color=\"red\">Royal Guard Champion</color> staat op het bord en heeft minder dan 7 {H} geleden.\r\n<b>3:</b> De <color=\"red\">Royal Guard Champion</color> staat niet op het bord.",
+          "mainText": "Selecteer de juiste optie.\n\n<b>1:</b> De <color=\"red\">Royal Guard Champion</color> staat op het speelbord en heeft 7 {H} of meer geleden.\n<b>2:</b> De <color=\"red\">Royal Guard Champion</color> staat op het speelbord en heeft minder dan 7 {H} geleden.\n<b>3:</b> De <color=\"red\">Royal Guard Champion</color> staat niet op het speelbord.",
           "buttonList": [
             {
               "GUID": "f73c09d4-9356-4e07-b211-d1d5e640ea17",
@@ -151,7 +185,7 @@
           "eaName": "Question Prompt"
         },
         {
-          "theText": "{-} De muur tussen de hangar (tegel 19A) en de testlocatie (tegel 2B) blokkeert geen beweging of zichtlijn.\n{-} De rebellen winnen als alle keizerlijke figuren zijn verslagen.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "theText": "{-} De muur tussen de hangar (tegel 19A) en de testlocatie (tegel 2B) blokkeert geen verplaatsing of zichtlijn.\n{-} De rebellen winnen wanneer alle keizerlijke figuren verslagen zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
           "GUID": "68033082-8c64-4d33-8c38-fbd776fac1a1",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
@@ -167,7 +201,7 @@
             {
               "entityName": "AT-ST Token",
               "GUID": "8a699eb0-66d8-485f-9c88-7865526ec82f",
-              "theText": "Als de <color=“red”>AT-ST</color> is verslagen, klik je op “AT-ST verslagen”.",
+              "theText": "Als de <color=\"red\">AT-ST</color> verslagen is, klik je op \"AT-ST verslagen\".",
               "buttonList": [
                 {
                   "GUID": "f5400e43-9835-4fe6-8c79-65cd75f11f7f",
@@ -185,45 +219,28 @@
     {
       "eventName": "Strategic Withdrawal",
       "GUID": "859820fc-59c5-408d-986d-a9c85765fa9a",
-      "eventText": "De aanval van de keizerlijke troepen begint af te nemen. Dit is waarschijnlijk een van de laatste golven.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Chaos",
-      "GUID": "da4f0f53-91b7-45e8-b3d9-ac13cc715647",
-      "eventText": "Schreeuwende keizerlijke soldaten komen aangerend, met een enorm blasterkanon op een driepoot.",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "6ba3db99-aba1-436a-87f9-63c5fd1975f8",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG007/E-Web Engineer"
-        }
-      ]
-    },
-    {
-      "eventName": "Advantage 1",
-      "GUID": "41fb0855-8d76-4813-a5c8-058aab4cf96a",
-      "eventText": "De <color=“red”>Royal Guard Champion</color> herstelt {H} gelijk aan 1 + bedreigingsniveau (*1*).",
-      "eventActions": []
-    },
-    {
-      "eventName": "Advantage 2",
-      "GUID": "e5d6762c-aec9-4d1d-95ec-dc70a7b5cbb2",
-      "eventText": "De <color=“red”>Royal Guard Champion</color> verplaatst 5 naar de dichtstbijzijnde rebel en valt die rebel aan, indien mogelijk.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Advantage 3",
-      "GUID": "ab34be27-7799-41d2-aa74-75f96f09362e",
-      "eventText": "De twee keizerlijke figuren met de hoogste figuurkosten worden gefocust.",
+      "eventText": "De aanval van de keizerlijke troepen begint af te nemen. Dit is waarschijnlijk één van de laatste golven.",
       "eventActions": []
     }
   ],
   "mapEntities": [
+    {
+      "entityName": "AT-ST",
+      "GUID": "5714cf6c-3b57-4bc2-bf4b-863de49f3cb6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "AT-ST Token",
+      "GUID": "e0435ad7-e4b1-4144-aebc-52c63700b8d9",
+      "mainText": "Als de <color=\"red\">AT-ST</color> verslagen is, klik je op \"AT-ST verslagen\".",
+      "buttonList": [
+        {
+          "GUID": "a4fa1219-d7eb-415a-9713-a2e286a2bed2",
+          "theText": "AT-ST verslagen"
+        }
+      ]
+    },
     {
       "entityName": "Crate1",
       "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
@@ -258,12 +275,6 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
-      "mainText": "Plaats de helden hier.",
-      "buttonList": []
-    },
-    {
       "entityName": "Crate4",
       "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
       "mainText": "Een oud voorraadkrat.",
@@ -275,15 +286,10 @@
       ]
     },
     {
-      "entityName": "AT-ST Token",
-      "GUID": "e0435ad7-e4b1-4144-aebc-52c63700b8d9",
-      "mainText": "Als de <color=“red”>AT-ST</color> is verslagen, klik je “AT-ST verslagen”.",
-      "buttonList": [
-        {
-          "GUID": "a4fa1219-d7eb-415a-9713-a2e286a2bed2",
-          "theText": "AT-ST verslagen"
-        }
-      ]
+      "entityName": "DP Champion",
+      "GUID": "c9f896a2-e269-4c79-8425-f501d0fe9ce5",
+      "mainText": null,
+      "buttonList": []
     },
     {
       "entityName": "DP Green 1",
@@ -322,12 +328,6 @@
       "buttonList": []
     },
     {
-      "entityName": "DP Champion",
-      "GUID": "c9f896a2-e269-4c79-8425-f501d0fe9ce5",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
       "entityName": "DP Trooper 1",
       "GUID": "41a6b5c6-d680-457f-9f2f-7ffb2b9084a6",
       "mainText": null,
@@ -346,23 +346,23 @@
       "buttonList": []
     },
     {
-      "entityName": "AT-ST",
-      "GUID": "5714cf6c-3b57-4bc2-bf4b-863de49f3cb6",
-      "mainText": null,
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
       "buttonList": []
     }
   ],
   "initialGroups": [
+    {
+      "cardName": "Imperial Officer (Elite)",
+      "customInstructions": ""
+    },
     {
       "cardName": "Royal Guard",
       "customInstructions": ""
     },
     {
       "cardName": "Royal Guard Champion",
-      "customInstructions": ""
-    },
-    {
-      "cardName": "Imperial Officer (Elite)",
       "customInstructions": ""
     },
     {

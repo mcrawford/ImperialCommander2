@@ -1,0 +1,1559 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Tutorial 2: Vijandelijke activaties",
+    "missionDescription": "Nadat Jyn en Gaarkhan zijn ontwaakt uit hun bactatanken op het rebellenschip de Sundered Heart, kwam er een noodoproep vanuit een schuilplaats van de rebellen op Indu. Jyn en Gaarkhan werden gevraagd om in actie te komen, samen met prinses Leia Organa en een aanvalsteam gaan de nieuwe rekruten van de Alliantie op weg naar de kleine bosplaneet.",
+    "missionInfo": "",
+    "campaignName": "Tutorials",
+    "startingObjective": "",
+    "repositionOverride": null,
+    "additionalMissionInfo": "In deze tutorial leer je de basisbeginselen van vijand activering in Imperial Assault."
+  },
+  "events": [
+    {
+      "eventName": "Beginning",
+      "GUID": "bb1ea71b-8e62-4a08-85c7-81e650a9aec1",
+      "eventText": "Vanuit de omloopbaan ziet de bosplaneet Indu er rustig, zelfs vredig uit. Het gezicht van prinses Leia is echter grimmig.\n\n\"We hebben twee noodsignalen ontvangen\", legt ze uit terwijl ze naar een holografische kaart wijst. \"We moeten ons dus opsplitsen. Ik zal een aanvalsteam naar de buitenpost leiden. Jullie landen hier, op die open plek. Kijk rond en als je niets vindt, kom je naar ons toe.\"\n\nZe deactiveert de kaart en knikt naar een shuttle in de hangar. \"Houd radiocontact. En veel succes.\"",
+      "eventActions": [
+        {
+          "tbText": "Jullie shuttle schiet de hangar uit en komt al snel in de atmosfeer van Indu terecht terwijl Leia's shuttle een andere kant op vliegt. Een paar minuten later activeren de repulsormotoren en land je op een open plek midden in een sereen bos. Er liggen wat oude wrakstukken en oude, afgebrokkelde ruïnes, maar geen teken van een noodbaken of een rebellen team dat hulp nodig heeft.\n\nJe doorzoekt het bos maar een uur later heb je nog geen sporen gevonden van de rebellen. Je besluit uiteindelijk om terug te keren naar je shuttle en contact op te nemen met de prinses.\n\nWanneer je echter terugkeert bij de open plek, is er iets niet in de haak.",
+          "GUID": "5b039fe0-f12b-4bc5-8e4e-1405da47ee71",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Welkom bij de tweede tutorial voor <b>Imperial Commander</b>. In de eerste tutorial leerde je de basisbeginselen van het activeren van helden. In deze tutorial leer je iets anders: Oog in oog staan met vijanden.\n\nVolg de tutorial stap voor stap om erachter te komen hoe dit werkt.\n\nLeg eerst de heldenkaarten van Gaarkhan en Jyn in de speelvelden van hun respectievelijke spelers, evenals hun startvoorwerpen (de kaarten zonder XP-kosten uit hun Held klassedeck).</color>",
+          "GUID": "734a014b-b739-4171-99af-a2c084e3c986",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "1d1f2332-f891-4e62-a100-201347abfe2a",
+              "theText": "Plaats <b>Gaarkhan</b> hier.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "e73bbebb-4286-4624-9b71-a2cd7377ebf0",
+              "theText": "Plaats <b>Jyn</b> hier.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "21d0165e-2299-4292-9d1d-cd963760b7e4",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "De open plek met het wrak ziet er anders uit. Je kunt je vinger er niet opleggen, maar het voelt alsof hier onlangs iemand is geweest - iemand anders dan jij.\n\n<color=\"yellow\">Plaats Gaarkhan's figuur op het blauw gemarkeerde veld en Jyn's figuur op het groen gemarkeerde veld.</color>",
+          "GUID": "c4643c28-c4b4-462b-a973-8e5c1a32aff8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "De tijd in de open lucht is verfrissend en doet je goed, je voelt dat je weer terug op krachten komt.\r\n\r\n<color=\"yellow\">Zoek in Gaarkhans Held klassedeck naar de kaart <i>Wookiee Loyalty</i> en plaats deze in Gaarkhans speelveld.\r\n\r\nZoek in Jyn Odans Held klassedeck naar de kaart <i>Smuggler's Luck</i> en plaats deze in Jyns speelveld.</color>",
+          "GUID": "6ad5def8-f5d9-48ae-bf8a-63baf1fefc84",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Je krijgt meestal kaarten van je Held klassedeck door XP uit te geven tussen missies, maar voor deze tutorial krijg je ze gratis.\r\n\r\nHeld klassekaarten geven helden nieuwe, unieke vaardigheden die ze kunnen gebruiken.</color>",
+          "GUID": "4c6ca196-1215-4238-a900-5b33ec306c3b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Gaarkhan's <i>Wookiee Loyalty</i> geeft hem de mogelijkheid om zichzelf of zijn bondgenoten te beschermen. Als hij of een aangrenzend bevriend figuur wordt aangevallen, mag hij 1 {G} symbool toevoegen aan de verdedigingsresultaten, waardoor 1 {H} (damage) wordt genegeerd.</color>",
+          "GUID": "b9a051f2-6547-457c-aca6-64b95250a1b5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Jyns <i>Smuggler's Luck</i> heeft zelfs meerdere vaardigheden. Voor deze tutorial is alleen de eerste vaardigheid op de kaart relevant, dus negeer de andere voor nu. Met de eerste vaardigheid kan ze een willekeurig aantal dobbelstenen opnieuw gooien als ze een attribuuttest uitvoert. Als Jyn bijvoorbeeld een {I} test uitvoert maar geen {B} symbolen (successen) krijgt, mag ze een willekeurig aantal dobbelstenen van die test opnieuw gooien.",
+          "GUID": "cc31be12-5df3-461f-ade7-133f7bbfd69c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Veel vaardigheden hebben een bepaalde <i>kostprijs</i> waaraan voldaan moet worden. In dit geval moet de kaart <i>uitgeput</i> worden. Als een kaart wordt uitgeput, draai je die 90 graden met de klok mee om aan te tonen dat deze gebruikt is. Zolang de kaart is uitgeput, mogen alle vaardigheden op de kaart die vereisen dat de kaart wordt uitgeput, niet meer worden gebruikt. Vijandelijke groepen worden ook uitgeput door ze 90 graden met de klok mee te draaien nadat ze geactiveerd zijn.\r\n\r\nHelden kaarten worden weer gereset bij het begin van de activering van die held. Draai aan het begin van de activering alle kaarten van die held terug in de juiste positie.\r\n\r\nVijandelijke groepen, bondgenoten en heldenactivatie-tokens worden weer gereset aan het begin van elke ronde.</color>",
+          "GUID": "046d0d27-3a36-42a1-b1a2-6815a02982d5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je loopt langzaam naar de open plek toe als je een stem hoort, gefilterd door het masker van een stormtrooperhelm: \"Halt, rebellen! Geef je over en er zal jullie niets gebeuren!\" Van achter het wrak verschijnen stormtroopers, hun wapens gereed.\r\n\r\n<color=\"yellow\">Klik op <b>doorgaan</b> en plaats vervolgens 3 stormtrooper figuren op de map zoals aangegeven door de app.</color>",
+          "GUID": "c6c8cd7c-3a95-49aa-a119-a2a60425e19a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q} Verplaats 4 om Gaarkhan aan te vallen\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "12df1c95-0054-414c-9bd5-dfef26add967",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "tbText": "<color=\"yellow\">Ingezette vijandelijke groepen worden rechts getoond, tegenover de helden en hun bondgenoten. Groepen die <i>gereed</i> zijn (ze hebben nog geen actie gedaan deze ronde), hebben normale thumbnails. <i>Uitgeputte</i> groepen zijn donker.</color>",
+          "GUID": "5cfb3b6e-021a-4656-9b3e-cba904848f78",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">De cirkels onder elke miniatuur geven aan hoeveel figuren tot een groep behoren. Als een figuur verslagen is, klik / tik je op één van de cirkels om hem rood te maken en de app te laten weten dat hij verslagen is. Als je dit per ongeluk hebt gedaan, of om wat voor reden dan ook een ander figuur moet toevoegen, klik/tik je gewoon op de rode cirkel om deze weer groen te maken.\n\nAls het laatste figuur van een groep is verslagen, kun je de hele groep verslaan.</color>",
+          "GUID": "f5c00b1d-a520-4f0b-9e79-dee131b8c7ed",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Eén van de soldaten drukt op een knop op zijn arm en energieschilden schieten omhoog die je de weg versperren.",
+          "GUID": "c11401d7-8b93-4d9a-bee9-085fb45f6567",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Energy Field 1",
+              "GUID": "e95fb6d0-ba7b-4d6f-94d7-4b3f55faafa2",
+              "theText": "Een blauw energieschild blokkeert de weg naar de afgebrokkelde ruïnes en je shuttle.\r\n\r\n<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn (Line of Sight) doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.</color>",
+              "buttonList": []
+            },
+            {
+              "entityName": "Energy Field 2",
+              "GUID": "7266e19a-e660-4172-bd31-2ea9f802c009",
+              "theText": "Een blauw energieschild blokkeert de weg naar de afgebrokkelde ruïnes en je shuttle.\r\n\r\n<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn (Line of Sight) doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.</color>",
+              "buttonList": []
+            }
+          ],
+          "GUID": "8b27ce5e-8599-4429-bfbc-0daebb6853f0",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn (Line of Sight) doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.</color>",
+          "GUID": "eb25b7df-f739-4113-9946-ab778312301e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Achter het energieschild kun je nog steeds de oude ruïnes en je shuttle zien.",
+          "GUID": "7cb6ac55-7e33-4275-b692-ac1735e9c828",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je duikt in dekking terwijl de stormtroopers, die niet op een antwoord wachten, het vuur openen.\n\n<color=\"yellow\">Over het algemeen zijn de rebellen als eerste aan de beurt in een ronde. Maar voor deze tutorial activeren we eerst de Stormtroopers.\n\nOm de volgende keizerlijke activering te starten, klik / tik je op het pulserende rode pictogram linksonder. De app kiest dan willekeurig een Keizerlijke groep om te activeren. Als de activering klaar is, is het weer de beurt aan de rebellen.\n\nStart nu de volgende keizerlijke activering.</color>",
+          "GUID": "20bb71bb-c93c-4ecf-b637-00aac06f6c3a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Gaarkhan",
+              "GUID": "a7322efc-0cc4-4f97-a6d6-f7c4fe7f9c5c",
+              "theText": "Plaats <b>Gaarkhan</b> hier.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Jyn",
+              "GUID": "a37ddc5c-5448-474f-b686-59bf89fc407d",
+              "theText": "Plaats <b>Jyn</b> hier.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "b9663e69-6e2b-44ff-8496-fb13fdf80194",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Start de volgende keizerlijke activering.",
+          "longText": null,
+          "GUID": "cf19f058-717d-438d-8f67-f682afee8b98",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.</color>",
+          "GUID": "2fbc5932-bfb3-4dd1-bb30-8777e40d0f1d",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Stormtrooper Activation",
+      "GUID": "180a6db6-ce90-45d7-826d-ad0df25adbf6",
+      "eventText": "<color=\"yellow\">Wanneer een vijandelijke groep wordt geactiveerd, wordt het activeringsvenster weergegeven. Het venster bestaat uit drie delen:\r\n\r\n{-} Aan de <b>bovenkant</b> van het venster staat een willekeurig <i>bonus effect</i>. Voor nu negeren we die.\n{-} Aan de <b>rechterkant</b> van het venster staat de <i>inzetkaart</i> van de groep.\n{-} Het <b>hoofdscherm</b> van het venster toont de <i>instructies</i> van de groep.</color>",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">De inzetkaart van de groep in de app verschilt van de kaart die bij het spel wordt geleverd. Als je ze vergelijkt, zie je dat de Stormtroopers in de app geen vaardigheden hebben, terwijl op de Stormtrooper kaart de vaardigheid <b>Squad Training</b> staat.\r\n\r\nDit komt omdat sommige kaart vaardigheden niet worden gebruikt in de app. Onder <color=\"red\">Ignored Abilities</color> vertelt de app je expliciet welke kaartvaardigheden je kunt negeren. Voor het gemak tonen de inzetkaarten in de app alleen vaardigheden die niet genegeerd worden.\r\n\r\nSoms worden genegeerde vaardigheden wel opgenomen in de bonuseffecten of instructies. Dus je moet de vaardigheid <b>Squad Training</b> van de kaart negeren, maar de Stormtroopers kunnen wel een bonuseffect krijgen die ook <b>Squad Training</b> heet. Negeer alleen de kaartvaardigheden.\r\n\r\nAls je wilt, kun je <b>Imperial Commander</b> gebruiken zonder fysieke inzetkaarten en alleen de kaarten gebruiken die in de app worden getoond.</color>",
+          "GUID": "767657a3-0f5d-4dce-9888-ccabf956abd7",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">De inzetkaart in de app toont ook de <i>surgevaardigheden</i> van de groep. Surgevaardigheden voor vijanden werken op dezelfde manier als surgevaardigheden voor helden of bondgenoten. Maar in plaats van te kiezen welke vaardigheid je wilt gebruiken, volg je gewoon de volgorde op de inzetkaart in de app, totdat alle surges opgebruikt zijn.\n\nDit wordt later in meer detail uitgelegd.</color>",
+          "GUID": "d3e9d577-0ca2-4a1b-824b-b2e78ffc057b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Nadat je deze tutorialvensters hebt gesloten, toont de app de instructies van de Stormtroopers. Maak je geen zorgen, het is nog niet de bedoeling dat je ze helemaal begrijpt.\n\nDe app geeft je nu een helptoken. Je hoeft dat token niet op de kaart te plaatsen, het is alleen voor de tutorial.</color>",
+          "GUID": "2cf15328-cb93-4072-8c1d-a65c654b00fa",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Explanation Token",
+              "GUID": "af9317d7-ba38-406c-a803-a8cfc108380b",
+              "theText": "<color=\"yellow\">Dit is de instructie uitlegtoken. Zodra je het instructievenster van de Stormtroopers hebt gesloten, selecteer je <b>uitleg instructies</b> om de uitleg te starten.</color>",
+              "buttonList": [
+                {
+                  "GUID": "b7041cef-511a-4e6c-805f-dc9b2bcfd99d",
+                  "theText": "Uitleg instructies"
+                }
+              ]
+            }
+          ],
+          "GUID": "0d225ef9-7335-47d4-a888-04fa27e899f9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Dit is de instructie uitlegtoken. Zodra je het instructievenster van de Stormtroopers hebt gesloten, selecteer je <b>uitleg instructies</b> om de uitleg te starten.\r\n\r\nLaten we nu het instructievenster openen. Nadat je het hebt gesloten, kun je de uitleg openen via de token.</color>",
+          "GUID": "6111ceba-e8a0-4e12-bbdf-fd0e9177a836",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Start de uitleg door middel van de uitlegtoken",
+          "longText": null,
+          "GUID": "278ecf02-9940-49b1-b5c3-fbda3960e7e1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Explanation ST1",
+      "GUID": "5609b65c-90f2-4381-bc4f-d1544b167de2",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red 1",
+              "GUID": "29a6ebf6-aaac-4e9d-8914-4d72f25a3f27",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Purple",
+              "GUID": "0277460f-3317-472a-b3e0-db12f83a5741",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow",
+              "GUID": "09eb1f73-2744-4bdd-844a-0618548aa4f4",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 1",
+              "GUID": "55cd8d48-f44d-4f44-985c-7cb0e6471577",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 2",
+              "GUID": "51e9c30b-aa72-4353-a798-1d04b8dfeb9b",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 1",
+              "GUID": "1f06f150-3662-4e0e-810d-b696208af5b9",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 2",
+              "GUID": "18af0979-c12f-4a65-b5a1-90887f0a6524",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 3",
+              "GUID": "e177f327-ef10-4ca0-bcfc-98adc8debe05",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "226e47c4-fadf-46f7-ba42-bf30805c3ce6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Yellow Attack 1",
+              "GUID": "925ab8b3-4638-4068-ad81-de99cf6f0022",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow Retreat",
+              "GUID": "df2abddd-c355-4db1-a1e0-bf1b7055eb90",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Purple Retreat 1",
+              "GUID": "d345794e-c609-4760-bff0-86e69688d78d",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "50c8e5c4-40b4-49cd-862e-d731a74a3818",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Laten we nu eens kijken hoe die instructies werken. Voor deze uitleg blijven de instructies die in de eerste activering worden getoond bovenaan staan. Je kunt echter altijd het {J} pictogram selecteren en dan met de rechtermuisknop / dubbeltik op de miniatuur van de stormtroopers klikken om hun laatste instructievenster weer op te roepen. Gebruik dit wanneer je het instructievenster opnieuw wilt bekijken.\n\nWanneer een groep wordt geactiveerd, volgen alle figuren in de groep, de één na de ander, de hele instructielijst van boven naar beneden. Wanneer een figuur alle instructies heeft uitgevoerd, wordt de volgende figuur geactiveerd. Als alle figuren geactiveerd zijn, eindigt de activering van de groep.</color>",
+          "GUID": "e24dd427-16ee-4916-9ade-0ac310de7cdb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Figuren kunnen niet ALLE instructies uitvoeren. Instructies die voorafgegaan worden door een {A} or {Q} icoon kosten een <b>actie</b>. Net als helden en bondgenoten hebben vijanden 2 acties per activatie. Dus kunnen ze maximaal 2 instructies uitvoeren die voorafgegaan worden door een {A} of {Q} icoon.\n\nInstructies die niet voorafgegaan worden door een {A} of {Q} icoon kosten geen actie.</color>",
+          "GUID": "db234dbc-3cb0-4bcb-99d4-0c045ac888d5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Het {Q} icoon geeft aan dat een instructie een <i>aanval actie</i> vereist. Onthoud dat helden twee acties mogen besteden aan aanvallen, maar bondgenoten en vijanden niet.\n\nDaarom kan een vijand maar 1 instructie uitvoeren die voorafgegaan wordt door een {Q} symbool per activering.</color>",
+          "GUID": "ad2d84bf-a7d0-46af-b340-880a550e987e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Bij het uitvoeren van instructies volgen figuren de instructielijst van boven naar beneden. Ze lossen instructies op totdat ze 2 acties hebben besteed of de onderste regel hebben bereikt, dan eindigt de instructie.\n\nFiguren slaan elke instructie over die onmogelijk op te lossen is of die de spelstatus niet veranderd. Dit wordt later in meer detail uitgelegd.</color>",
+          "GUID": "82dafe1e-c60d-405a-a557-772d3fa3a504",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red 1",
+              "GUID": "dd30b8d7-4ecf-4ffd-8efa-48b52d0396b1",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "83fa208a-af29-439a-ae39-0ff2d98bca75",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Gewoonlijk worden figuren in een groep geactiveerd in een door de spelers gekozen volgorde. Maar voor demonstratiedoeleinden wordt in deze tutorial de stormtrooper die op het <color=\"red\">rood</color> gemarkeerde veld staat als eerste geactiveerd.\n\nVergeet niet dat je op elk moment op het {J} pictogram kunt klikken zonder een tekstvenster te sluiten om de kaart te bekijken.</color>",
+          "GUID": "163db8a4-0075-4b70-a380-38b2321656c0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">De eerste regel van de instructies luidt:</color>\r\n\r\n{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n\r\n<color=\"yellow\">Dit betekent dat de stormtrooper 4 verplaatspunten krijgt en deze uitgeeft om zo dicht mogelijk bij Gaarkhan te komen. Hij stopt als hij 4 verplaatspunten heeft uitgegeven of als hij naast Gaarkhan staat. Overgebleven verplaatspunten gaan verloren.\n\nAls een vijand de opdracht krijgt om een doel aan te vallen dat niet kan worden bereikt of aangevallen, richt de vijand zich in plaats daarvan op de dichtstbijzijnde rebellenfiguur die hij wel kan aanvallen.</color>",
+          "GUID": "322d59b6-990f-4627-9a63-9265025c4328",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Attack 1",
+              "GUID": "6608e5a7-4a1d-4348-9fd7-5e6a3ad947e7",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red 1",
+              "GUID": "1f1c150e-0685-468c-a6a9-0dbd5655602a",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 2",
+              "GUID": "daeee3b4-c443-4797-9760-922c41259b28",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 3",
+              "GUID": "7109242e-f380-4696-a821-0a82742e0eeb",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "2a795645-299d-49e3-926f-a588e985be82",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">De app heeft meerdere rode velden gemarkeerd. Die kunnen allemaal worden bereikt met 4 verplaatspunten door de stormtrooper en liggen op gelijke afstand van Gaarkhan. Ze zijn dus allemaal even geldig. \n\nVoor het doel van deze tutorial verplaatst de stormtrooper naar het middelste (iets meer effen gekleurd) veld.</color>",
+          "GUID": "fc2f112a-d4cb-49fa-ae0c-b454ca12e912",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Attack 1",
+              "GUID": "d71f5512-b947-4c63-a9ea-152e01369e2a",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "61cdb80e-141d-4475-8cb2-adce0ca76298",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Nu is de stormtrooper in positie en heeft een zichtlijn op Gaarkhan. Dus valt hij de Wookiee aan. Je ziet de aanvalsdobbelstenen op de inzetkaart van de stormtrooper (1 blauwe, 1 groene). Gooi met 1 blauwe en 1 groene dobbelsteen. Vergeet niet om ook de zwarte verdedigingsdobbelsteen van Gaarkhan te gooien.\n\nControleer eerst nauwkeurigheid. Gaarkhan is 2 plaatsen verwijderd, dus controleer of de getallen op de aanvalsdobbelstenen opgeteld minstens 2 zijn. Als dat zo is, is de aanval raak.</color>",
+          "GUID": "835e0a24-d1fb-4e6a-a4d2-4b90e6fff6ae",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Controleer vervolgens of er surges ({B}) zijn gegooid. De stormtrooper kan {B} symbolen gebruiken om surgevaardigheden te activeren, net als een held. Selecteer het {J} icoon en klik met de rechtermuisknop / dubbeltik op de stormtrooper om zijn inzetkaart te openen. Daar zie je de surge prioriteit:\n\n1. {B}: +2 Nauwkeurigheid\n2. {B}: +1 {H}\n\nAls er surges zijn, volg dan de lijst vanaf 1 totdat alle surges zijn uitgegeven. Sla regels over die geen effect hebben. Als de stormtrooper bijvoorbeeld al genoeg nauwkeurigheid heeft, geeft hij geen {B} uit om nauwkeurigheid met 2 te verhogen.\n\nZoals gebruikelijk worden {B} symbolen geannuleerd door {F} symbolen, voor het geval Gaarkhan een {F} heeft gegooid.</color>",
+          "GUID": "e9546928-5bda-4a30-a28c-f205988688e8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Tel alle {H} symbolen op (van de aanvalsdobbelstenen en ook die toegevoegd zijn door surges) en haal elk {G} symbool van de verdedigingsdobbelsteen eraf.\n\nOnthoud dat Gaarkhan de <i>Wookiee Loyalty</i> klasse kaart heeft. Als hij dat wil, kan hij die gebruiken om een extra {G} aan zijn verdedigingsworp toe te voegen. Omdat de kaart kan worden gebruikt \"terwijl hij verdedigt\", kan hij wachten op de dobbelsteenresultaten voordat hij beslist. Als hij besluit om de kaart te gebruiken, put deze dan uit (draai de kaart 90 graden met de klok mee) en voeg 1 {G} symbool toe aan het resultaat.\n\nDe overgebleven {H} is de hoeveelheid schade die Gaarkhan lijdt. Voor elke {H} die niet geannuleerd wordt, plaats je een {H} token op zijn heldenkaart.</color>",
+          "GUID": "d72494e3-07e3-4dff-8f9c-42633883f065",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Hiermee is de eerste instructieregel voltooid. De stormtrooper heeft nog een actie over, dus hij gaat door naar de volgende regel:</color>\n\n{A} Verplaats 2 naar herpositie 4.\n\n<color=\"yellow\">Dit betekent dat de stormtrooper 2 verplaatspunten krijgt en probeert naar een positie te gaan die precies 4 velden verwijderd is van alle helden.\n\nAls hij deze instructie niet perfect kan uitvoeren, bijvoorbeeld omdat hij niet ver genoeg van alle helden vandaan kan verplaatsen, probeert hij hem zo goed mogelijk uit te voeren. Dit betekent dat hij zo ver mogelijk tot maximaal 4 velden verplaatst van elke held vandaan.</color>",
+          "GUID": "50c8bc75-a25c-4a26-bbf9-5fe4d545d87c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Attack 1",
+              "GUID": "bbdc6093-ebb6-40ef-b97f-54ed7c01cf9f",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 2",
+              "GUID": "fcaa02e6-dcc8-4c8d-9841-758ba131292c",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Attack 3",
+              "GUID": "5663c5b6-6e00-4d8f-9682-68afc3437b96",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 1",
+              "GUID": "e74f1681-e1d0-4746-b611-596ec43ae2ac",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "b78b4e38-67ff-4652-a5ab-701a4369ac6e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">De rood gemarkeerde velden zijn allemaal bereikbaar met 2 verplaatspunten voor de stormtrooper en alle 4 velden verwijderd van beide helden. Alle drie de velden zijn geldig.\n\nOm te bepalen naar welk veld de stormtrooper gaat, kun je de <b>Keizerlijke Regel</b> gebruiken.</color>",
+          "GUID": "b51d412e-b21f-4e2c-85b9-534e9db2406b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Tijdens missies of activeringen kan er soms een situatie ontstaan waarin er geen duidelijke koers voor het Rijk kan worden bepaald vanuit de app.\r\n\r\nAls dat zich voordoet, gebruik dan de <b>Keizerlijke Regel</b>:\n\n<b><i>Kies de optie die het grootste nadeel geeft voor de rebellen.</i></b></color>",
+          "GUID": "fcae05c9-d845-4872-bd0d-457bc905e7d4",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Retreat 2",
+              "GUID": "58b35ae1-4eea-466d-b294-5998577e109f",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 3",
+              "GUID": "acfb6b50-aa88-4098-a8a6-7c8f43bdfcb9",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "adffe233-7199-4600-a364-3d7d8fe3e70c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">In dit geval zijn alle drie de velden even geldig. Echter, het bovenste veld - gemarkeerd in een meer effen kleur in de app - is buiten Jyns zichtlijn. Omdat ze een {O} wapen heeft, kan ze de stormtrooper op de twee andere velden aanvallen.\n\nMaar als de stormtrooper naar het bovenste veld verplaatst, moet ze eerst verplaatsen voordat ze hem kan aanvallen. Deze optie is dus slechter voor de spelers.\n\nVerplaats de stormtrooper daarheen.\n\nHet is aan jou om de Keizerlijke Regel te gebruiken of niet. Je kunt ook gewoon een willekeurig veld kiezen, als je dat liever doet.</color>",
+          "GUID": "9c12309d-7254-4283-a37d-0894625f9356",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Retreat 1",
+              "GUID": "8a1beb4b-2c3f-4353-b80d-a9bc329ae50c",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "01063d06-1caf-4925-92f4-922ef9978c65",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">De stormtrooper heeft nu 2 acties uitgevoerd, dus zijn activering eindigt. Hij lost de laatste regel niet op omdat hij geen acties meer heeft. Laten we verder gaan met de stormtrooper die op het gele veld staat.</color>",
+          "GUID": "86896308-7071-42ca-9db0-5c5752822fd7",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Explanation ST2",
+      "GUID": "7f4bc3b1-5310-41a1-b283-3394e3283153",
+      "eventText": "",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Red Retreat 2",
+              "GUID": "87859f1e-fbf7-4f54-9cb1-ae3ebe18433e",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Red Retreat 3",
+              "GUID": "0072c6a3-524b-435a-8e46-e3b782f5470b",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow",
+              "GUID": "af4e8963-64c4-4cb9-ab51-1ccaadcc6386",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "8a2ac790-69d0-4497-923a-d78f396c8f76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Alle figuren die tot dezelfde groep behoren volgen dezelfde instructies. Dus de stormtrooper verplaatst ook om Gaarkhan aan te vallen.\n\nHij krijgt 4 verplaatspunten en verplaatst naar de Wookiee.</color>",
+          "GUID": "45a2f48e-159d-487c-b7bb-6cca8ce4f677",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Yellow",
+              "GUID": "1e702de7-ef86-48c2-8a8f-d80237f538bd",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow Attack 1",
+              "GUID": "e6212fdc-5184-464e-9c6b-ef847fc40f57",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "4c1270f5-8a34-484d-98ae-89233aa2a228",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">De tweede stormtrooper hoeft minder velden te verplaatsen naar Gaarkhan, dus hij stopt als hij het veld bereikt die de app zojuist geel heeft gemarkeerd. Hij staat nu naast Gaarkhan en kan niet dichterbij komen. Het overgebleven verplaatspunt is verloren.\n\nNu valt hij Gaarkhan aan en rolt zijn aanvalsdobbelstenen samen met Gaarkhans verdedigingsdobbelsteen. Als Gaarkhan <i>Wookiee Loyalty</i> heeft gebruikt bij de laatste aanval, kan hij dat niet nog een keer doen, omdat die kaart al uitgeput is.\n\nTel alle {H} en {B} symbolen, trek daar alle {G} en {F} symbolen van af en pas waar mogelijk surges toe. Als Gaarkhan {H} lijdt, plaats dan meer {H} tokens op zijn heldenkaart.</color>",
+          "GUID": "032094b7-2b37-4994-b4f3-faca2b0ff8d5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Yellow Attack 1",
+              "GUID": "61e6b537-6e18-4354-a360-b89e552b97fe",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Yellow Retreat",
+              "GUID": "3db9baeb-9f94-4e9b-9484-1cee1d7d1508",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "9d29e0b8-943c-4dd4-a71d-260ff601ab4a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Nadat de aanval is afgerond, verplaatst de stormtrooper 2 naar herpositie 4. Er is echter geen veld dat hij kan bereiken met 2 verplaatspunten om die opdracht perfect uit te voeren.\n\nDus gaat hij naar één van de geel gemarkeerde velden. Ze zijn bereikbaar met 2 verplaatspunten en 3 velden verwijderd van beide helden, het beste wat hij kan doen.\n\nVerplaats de stormtrooper naar één van de gemarkeerde velden.</color>",
+          "GUID": "a9e3d60a-c5e5-4e57-beef-ee252d3f1232",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Yellow Retreat",
+              "GUID": "91d99bec-0ef3-4a9f-ab4d-b3b36a0cf702",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Purple",
+              "GUID": "1715b926-9d62-44c4-8073-33f55ae2f9a5",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "29a97f72-6101-4567-a8fa-ddddae3422f9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Hiermee is de tweede stormtrooper z'n activatie afgerond. Laten we verder gaan met de derde stormtrooper die werd ingezet op het paars gemarkeerde veld.</color>",
+          "GUID": "cdbb87cf-0433-4acd-8a63-34b9b5289f91",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.\r\n\r\n<color=\"yellow\">Op dit moment zou je genoeg moeten weten om deze activering zelf uit te voeren.\n\nSelecteer het {J} icoon om de map te zien, rond daarna de stormtroopers instructies af. Als je klaar bent, klik op <b>doorgaan</b>.</color>",
+          "GUID": "40685aca-fc03-4eec-b20c-586794415156",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Purple",
+              "GUID": "ef7ac797-f38c-4709-8c57-a5c7fc4e5212",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Purple Retreat 1",
+              "GUID": "4c0022cf-30e7-401a-93fb-467edec8953d",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "00d97967-78f2-433c-8c34-91774a5fe399",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Is de stormtrooper op een van de paars gemarkeerde velden terechtgekomen?\n\nZo ja, goed gedaan, vooral als je hem tussen het blokkerende terrein hebt verplaatst, omdat hij daar uit het zicht staat.\n\nZo niet, maak je dan niet te druk. Kleine foutjes mogen de pret niet drukken.</color>",
+          "GUID": "a66c1e05-e4dc-455e-a977-aa21c40fcf33",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Nu is het tijd voor wraak. De activering van de Stormtroopers is afgelopen, dus nu is het de beurt aan de helden. Maar laten we het eerst hebben over helden die schade lijden.\n\nNet als vijanden en bondgenoten kunnen helden verslagen worden. Als een held voor het eerst {H} lijdt die gelijk is aan de gezondheid van de held, moet je alle {H} weggooien en de heldenkaart omdraaien naar de gewonde kant. Een gewonde held verliest enkele vaardigheden, heeft een slechtere snelheid en uithoudingsvermogen en slechtere attributen, maar kan nog steeds acties uitvoeren zoals voorheen.</color>",
+          "GUID": "96a22966-5894-474d-9745-1deff4c3915e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Als een held een tweede keer wordt verslagen - dat wil zeggen als een gewonde held weer {H} lijdt gelijk aan de gezondheid van die held - , dan is de held <i>teruggetrokken</i>. Dit betekent dat hij zich moet terugtrekken. Hij wordt verwijderd van de map en kan niets meer doen tijdens deze missie.\n\nAls een held gewond of teruggetrokken is, selecteer je de miniatuur van de held in de app en markeer je de held als gewond of teruggetrokken.\n\nOnthoud dat, omdat er maar 2 helden zijn, de gezondheid van beide helden met 10 wordt verhoogd.</color>",
+          "GUID": "4bed1586-24de-49eb-8b51-1cc34a20dc92",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Nu, terug naar die Stormtroopers. Voer activeringen uit tot de Stormtroopers verslagen zijn. Vergeet niet om de ronde te beëindigen nadat de helden allebei twee activeringen hebben uitgevoerd. In de volgende ronde kunnen de Stormtroopers opnieuw actie ondernemen, maar de helden doen dat zoals gewoonlijk eerst.\n\nNegeer voorlopig de bonuseffecten van de Stormtroopers. Als je iets op welk moment dan ook vergeten bent, kun je de uitleg van de instructies opnieuw starten via de uitlegtoken.</color>",
+          "GUID": "35cad79a-7a93-44d4-9e78-4b4bc2cbbe08",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "newInstructions": "{Q} Verplaats 4 om {rebel} aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.",
+          "GUID": "ba73941b-f7cb-46ba-94c5-cfba29b8a7ea",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Purple Retreat 1",
+              "GUID": "3201490b-1759-4a33-9d80-7c7b9b6c4b1c",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "c8ae3ff8-cf86-4cca-828f-7ecb445af2e6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "theText": "{-} Negeer de Stormtroopers' bonus effecten.\n{-} Op elk moment kun je de uitleg opnieuw starten met de uitlegtoken.",
+          "GUID": "facfa090-7a78-490c-b4ea-dc19f907813a",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "shortText": "Versla de Stormtroopers.",
+          "longText": null,
+          "GUID": "8a30618a-abe3-435f-9e12-5510dbb2683c",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Troopers Defeated",
+      "GUID": "9aca1385-4393-48c7-b57a-919730a26e70",
+      "eventText": "Terwijl de laatste stormtrooper bezwijkt onder je aanvallen, gun je jezelf een moment om op adem te komen. De keizerlijke troepen hielden zich verborgen toen jullie aankwamen en probeerden te voorkomen dat jullie terug zouden keren naar jullie shuttle. Het was een hinderlaag. En dat kan betekenen dat het andere aanvalsteam ook in een hinderlaag loopt.",
+      "eventActions": [
+        {
+          "tbText": "Op dat moment komt je comlink tot leven. \"Mannen!\", kraakt de stem van Leia over het apparaat, de radiostilte negerend. \"Wees voorzichtig! Het is een valstrik, de bossen krioelen met keizerlijke troepen! Wij zijn bij de buitenpost, we worden flink onder vuur genomen! Ga terug naar de <i>Sundered Heart</i> als je kunt!\"\n\nJullie wisselen een snelle blik uit. Als Leia's aanvalsteam wordt aangevallen, ben jij hun enige hoop.",
+          "GUID": "0ae9fefe-e9cd-4b0d-99bb-1980f14fc75d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Je moet terug naar je shuttle om het andere team te hulp te schieten. Het energieschild blokkeert echter nog steeds je weg.\n\nJe weet al hoe je moet omgaan met tokens en attribuuttesten. Soms heb je meerdere manieren om met een situatie om te gaan. In dit geval kun je de energieschilden vernietigen of proberen ze uit te schakelen.</color>",
+          "GUID": "449fd301-1e63-4337-ada4-ef3fdabdb1ef",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Om de energieschilden te vernietigen, val je ze gewoon aan alsof het een vijandige figuur is. De energieschilden hebben 8 gezondheid en 1 witte dobbelsteen als verdediging. Beide tokens tellen als één doelwit.\n\nHet kan echter sneller zijn om ze gewoon uit te schakelen. Jyn is niet heel sterk, maar ze heeft een aanleg voor technologie. En vergeet niet dat Jyn de kaart <i>Smuggler's Luck</i> kan gebruiken om dobbelstenen opnieuw te gooien.</color>",
+          "GUID": "2a41784f-7524-469d-87ed-b337e1310bf7",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Verschillende vaardigheden laten je 1 of meer dobbelstenen opnieuw gooien. In het geval van Jyn laat<i>Smuggler's Luck</i> haar <i>elk</i> aantal dobbelstenen van een attribuuttest opnieuw gooien, zolang ze de kaart daarvoor uitput.\n\nDit betekent dat ze de dobbelstenen kan gooien en dan kan beslissen om 1, 2 of alle 3 de dobbelstenen te hergooien. Elke dobbelsteen kan echter maar één keer opnieuw gegooid worden. Dus als je een dobbelsteen opnieuw gooit, moet je leven met het tweede resultaat.\n\nVergeet niet dat ze de kaart moet uitputten, dus ze kan dit maar één keer per activering gebruiken. Aan het begin van haar volgende activering wordt de kaart opnieuw gereset.</color>",
+          "GUID": "e717bd84-b482-434f-ac54-2282fc8ff018",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">In veel gevallen heb je meer dan één succes nodig om te slagen voor een test. De app vertelt je echter meestal niet hoeveel je er nodig hebt.\n\nAls je successen gooit, maar je slaagt niet voor de test, plaats dan een aantal forceertokens ({C}) op of naast het token waarop je net de test hebt geprobeerd. De volgende keer dat je die attribuuttest herhaalt, voeg je 1 {B} symbool toe voor elk forceertoken op het doelwit en leg je alle forceertokens van het doelwit af. Op deze manier kun je successen verzamelen totdat je uiteindelijk slaagt voor de test.</color>",
+          "GUID": "07f83690-9825-44af-b975-c87c58e4f858",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Zorg dat je van die energieschilden afkomt, door ze te vernietigen of door ze uit te schakelen.</color>",
+          "GUID": "a031ade2-91ec-42ae-bc7e-9549149cb4ad",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Energy Field 1",
+              "GUID": "dd75ebd7-2506-4f8e-960c-b283e25eb8e9",
+              "theText": "Een blauw energieschild blokkeert de weg naar de afgebrokkelde ruïnes en je shuttle.\n\n<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.\n\nDe energieschilden hebben een gezondheid van 8 en verdediging: 1 witte dobbelsteen. Beide tokens tellen als één doelwit. \n\nRebellenfiguren kunnen de energieschilden aanvallen of uitschakelen. Wanneer de energieschilden tenminste 8 {H} hebben geleden, selecteer dan <b>vernietig</b>. Als je ze uit wilt schakelen, kun je een actie spenderen om een interactie uit te voeren, selecteer dan <b>{A} deactiveer</b>.</color>",
+              "buttonList": [
+                {
+                  "GUID": "1c289ad7-f55a-4dc6-b77c-2a902917f863",
+                  "theText": "Vernietig"
+                },
+                {
+                  "GUID": "26b75433-dc4d-4e2a-bbfd-8acb7d3e88f0",
+                  "theText": "{A} Deactiveer"
+                }
+              ]
+            },
+            {
+              "entityName": "Energy Field 2",
+              "GUID": "20c2f35e-d5d3-46c5-8eab-fa96dcbbe4d2",
+              "theText": "Een blauw energieschild blokkeert de weg naar de afgebrokkelde ruïnes en je shuttle.\n\n<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.\n\nDe energieschilden hebben een gezondheid van 8 en verdediging: 1 witte dobbelsteen. Beide tokens tellen als één doelwit. \n\nRebellenfiguren kunnen de energieschilden aanvallen of uitschakelen. Wanneer de energieschilden tenminste 8 {H} hebben geleden, selecteer dan <b>vernietigen</b>. Als je ze uit wilt schakelen, kun je een actie spenderen om een interactie uit te voeren, selecteer dan <b>{A} deactiveer</b>.</color>",
+              "buttonList": [
+                {
+                  "GUID": "90ec6585-b6c9-4803-9c49-c05b3ff336a4",
+                  "theText": "Vernietigen"
+                },
+                {
+                  "GUID": "4c229c2d-fc82-489b-9540-0edc5dea74f6",
+                  "theText": "{A} Deactiveer"
+                }
+              ]
+            },
+            {
+              "entityName": "Explanation Token",
+              "GUID": "e699188e-0552-4162-b86b-253ac39e3cd6",
+              "theText": "<color=\"yellow\">Dit is de instructie uitlegtoken. Zodra je het instructievenster van de Stormtroopers hebt gesloten, selecteer je <b>uitleg instructies</b> om de uitleg te starten.</color>",
+              "buttonList": [
+                {
+                  "GUID": "753f9d35-19a2-4e7f-b9ad-820eb5610466",
+                  "theText": "UItleg instructies"
+                }
+              ]
+            }
+          ],
+          "GUID": "94036bfc-2b84-4a7e-af08-469e8c0863de",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Vernietig of deactiveer de energievelden.",
+          "longText": null,
+          "GUID": "4b9fded4-f5c9-48e6-9c46-4e7ef8b60a3e",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.\r\n{-} De energieschilden hebben een gezondheid van 8 en verdediging: 1 witte dobbelsteen. Beide tokens tellen als één doelwit.\r\n{-} Rebellenfiguren kunnen de energieschilden aanvallen of uitschakelen. Wanneer de energieschilden tenminste 8 {H} hebben geleden, selecteer dan <b>vernietigen</b>. Als je ze uit wilt schakelen, kun je een actie spenderen om een interactie uit te voeren, selecteer dan <b>{A} deactiveer</b>.",
+          "GUID": "265f5462-5a44-4aa9-a703-5ddf801d8b37",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Jyn Wounded",
+      "GUID": "35d18816-4b4a-4b5f-9862-3a3d6bb1f49f",
+      "eventText": "Jyn schreeuwt het uit als een nieuwe aanval haar op de grond gooit, maar ze krabbelt snel weer overeind.\n\n<color=\"yellow\">Verwijder alle {H} tokens van Jyn Odans heldenkaart en draai de kaart om. Jyn is gewond, maar ze kan nog blijven vechten.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Gaarkhan Wounded",
+      "GUID": "b32d7afd-04e1-4f9b-a701-b2fc11d7cb55",
+      "eventText": "Gaarkhan brult, bloed stroomt uit zijn wonden en kleurt zijn vacht. Hij grijpt zijn bijl steviger vast.\n\n<color=\"yellow\">Verwijder alle {H} tokens van Gaarkhans heldenkaart en draai de kaart om. Gaarkhan is gewond, maar hij kan nog blijven vechten.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Jyn Withdrawn",
+      "GUID": "acf62615-359d-47b0-b87d-20ffd6b3f4c3",
+      "eventText": "Meer aanvallen regenen neer op Jyn en uiteindelijk heeft ze geen andere keuze: ze schiet als een wilde in de richting van de aanvallers en trekt zich terug in het kreupelhout.\n\n<color=\"yellow\">Verwijder Jyns miniatuur van de map. Ze kan niet langer deelnemen aan deze missie.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Gaarkhan Withdrawn",
+      "GUID": "5465f9c2-0adf-49b5-ad63-0e190617eb3e",
+      "eventText": "Aanval na aanval raakt Gaarkhan en zelfs de machtigste Wookiee is niet bestand tegen de aanvallen. Brullend van de pijn trekt Gaarkhan zich terug in het bos.\n\n<color=\"yellow\">Verwijder Gaarkhan's miniatuur van de map. Hij kan niet langer deelnemen aan deze missie.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Both Heroes Withdrawn",
+      "GUID": "66118193-8efe-4015-9841-218636c6faf7",
+      "eventText": "Nu Jyn en Gaarkhan allebei teruggetrokken zijn, is er niemand meer over om het Keizerrijk op Indu te stoppen.\n\n<color=\"yellow\">Omdat beide helden zijn teruggetrokken, is deze missie ten einde. Of je hebt vreselijke pech gehad met dobbelen, of je dacht; laat ik eens proberen wat er gebeurd. Hoe dan ook, maak je geen zorgen! Je kunt de tutorial altijd opnieuw starten.</color>",
+      "eventActions": []
+    },
+    {
+      "eventName": "Energy Field Attempt",
+      "GUID": "bd3fc45a-ab74-46c5-9cb3-6a54d7ba1fde",
+      "eventText": "Je probeert het energieschild uit te schakelen door het te overladen.",
+      "eventActions": [
+        {
+          "mainText": "Voer een {I} test uit. \n\nAls er al forceertokens op de energieschilden liggen, pas dan +1 {B} symbolen toe voor elke forceertoken, verwijder daarna alle forceertokens van de energieschilden.\n\nVergeet niet dat Jyn <i>Smuggler's Luck</i> kan toepassen om de dobbelstenen opnieuw te gooien.\n\nVul het aantal successen hieronder in.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "ff769b17-ce97-48f1-86fa-3f5c49fc7950",
+              "theText": "Je rommelt met de elektronica and boekt wat succes, maar je bent er nog niet.\r\n\r\n<color=\"yellow\">Als je {B} symbolen hebt gegooid, plaatst dan een aantal forceertokens ({C}), gelijk aan het aantal gegooide {B} symbolen, op de energieschilden. Dit is de vooruitgang die je al hebt geboekt.</color>"
+            },
+            {
+              "GUID": "43cf5516-30db-4aa4-b20d-606d378abbf8",
+              "theText": null
+            }
+          ],
+          "GUID": "a8a9dccb-3e3a-427a-9566-172317e981ee",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Energy Field Removed",
+      "GUID": "b502f17e-a8bf-42c2-b88c-163f0279465d",
+      "eventText": "Het energieschild flikkert even en schakelt daarna volledig uit, de weg naar de shuttle is vrij.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Energy Field 1",
+              "GUID": "f628db9e-b286-4a86-86a5-afc4c49c8160",
+              "theText": "Een blauw energieschild blokkeert de weg naar de afgebrokkelde ruïnes en je shuttle.\r\n\r\n<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.</color>",
+              "buttonList": []
+            },
+            {
+              "entityName": "Energy Field 2",
+              "GUID": "e21431cc-cd91-465d-87af-b5526a6dae2a",
+              "theText": "Een blauw energieschild blokkeert de weg naar de afgebrokkelde ruïnes en je shuttle.\r\n\r\n<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.</color>",
+              "buttonList": []
+            }
+          ],
+          "GUID": "838972af-ff38-4665-bb63-36fc6b0dbdcc",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Het lawaai van het gevecht lijkt echter niet onopgemerkt te zijn gebleven. Onderweg naar je shuttle, hoor je plots een ruis en daarna het gezoem van een repulsoraandrijving. Kort daarna verschijnt er een keizerlijke drone boven de nabijgelegen ruïnes.",
+          "GUID": "cb2c2f46-a7b1-4c80-af52-23f161c96e7b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q} Verplaats 2 om {rebel} aan te vallen.\r\n{A} Verplaats 2 naar herpositie 3.\r\n{A} Verplaats 4 naar herpositie 3.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "b3275497-8b42-4337-8cab-f307e5df76da",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG011/Probe Droid"
+        },
+        {
+          "tbText": "<color=\"yellow\">Selecteer het {J} icoon en rechtermuisknop/ dubbeltik om de inzetkaart van de Probe Droid te openen. Zoals je ziet heeft de Probe Droid het trefwoord <i>Mobile</i>.\n\nFiguren met <i>Mobile</i> behandelen elk terrein als gewoon terrein. Dit betekent dat de Probe Droid door rode lijnen (gestippeld of doorgetrokken) kan verplaatsen en geen extra verplaatspunten hoeft uit te geven om door moeilijk terrein (blauwe lijnen) of rebellenfiguren te verplaatsen.\n\nHoud hier rekening mee bij het uitvoeren van hun instructies.</color>",
+          "GUID": "8a5428fb-8036-445f-8778-0ca276f24391",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je trekt je wapens wanneer je een tweede geruis hoort. Er verschijnt nog een droid bij de andere trap.",
+          "GUID": "938839c5-78be-4a7e-ac39-7f109f151210",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q} Verplaats 2 om {rebel} aan te vallen.\r\n{A} Verplaats 2 naar herpositie 3.\r\n{A} Verplaats 4 naar herpositie 3.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "260ed1a2-459c-475c-a5b5-8645a1d8f81d",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG012/Probe Droid"
+        },
+        {
+          "tbText": "<color=\"yellow\">Nu zijn er twee identieke groepen op de kaart. Om ze van elkaar te onderscheiden, kun je ze kleuren geven.\n\nSelecteer het {J} icoon om de kaart en de inzetgroepen te bekijken. Linksboven de thumbnail van een groep staat een grijze cirkel. Klik/tik op die cirkel om tussen de kleuren te wisselen. Je kunt elke Probe Droid een andere kleur geven. Die kleur wordt ook getoond in het activeringsvenster zodat je weet welke groep net geactiveerd is.\n\nOm onderscheid te maken tussen de figuren kun je bijvoorbeeld de gekleurde stickers gebruiken die bij het spel worden geleverd.</color>",
+          "GUID": "c696b3bb-0bee-4821-a1df-f74d860fea54",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Je zou nu in staat moeten zijn om de instructies van de Probe Droid zelf uit te voeren. Blijf voorlopig alle bonuseffecten negeren.\n\nSchiet die droids neer!</color>",
+          "GUID": "47de4720-74f9-4768-847f-6a43c4d79e76",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Versla de Probe Droids.",
+          "longText": null,
+          "GUID": "d0d9d956-91d6-40c6-a71c-369dacb6fd3d",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Negeer de bonus effecten van de Probe Droids.",
+          "GUID": "3afc1232-2123-4d13-9098-aa9daf31c0fa",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Stormy Defeated Early",
+      "GUID": "07d1c568-2a20-4755-b374-35c13501ae56",
+      "eventText": "<color=\"yellow\">Je kunt de Stormtroopers nog niet verslaan. Ze worden nu opnieuw ingezet. Klik/tik op het rode icoontje linksonder om ze eerst te activeren en start dan de uitleg via de uitlegtoken.</color>",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "{Q} Verplaats 4 om Gaarkhan aan te vallen.\r\n{A} Verplaats 2 naar herpositie 4.\r\n{A} Verplaats 6 naar herpositie 4.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "aaea29e9-d097-47cc-a4de-4401aef33fbc",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader Appears",
+      "GUID": "d9ceaeb7-a019-48d8-aa2d-51af6619f873",
+      "eventText": "De laatste keizerlijke droid explodeert in een regen van brokstukken, maar voordat je je overwinning kunt vieren, kraakt Leia's stem door de comlink. Deze keer klinkt ze bijna paniekerig.\n\n\"GA DAAR WEG! HIJ KOM-\"\n\nDe verbinding wordt verbroken en een beklemmende angst overvalt je.",
+      "eventActions": [
+        {
+          "tbText": "Zonder waarschuwing worden de bomen achter je opzij geslagen door een onzichtbare kracht, waardoor een smal pad door het bos zichtbaar wordt.",
+          "GUID": "ed12af24-ebe2-4aae-ac83-e4303a6b83d9",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Aan het einde van het pad staat een imposante figuur in een zwart harnas die je zwijgend gadeslaat.\n\nDan, met een sissend geluid, ontsteekt een lichtzwaard en kleurt het bos in een onheilspellend rood.",
+          "GUID": "46dd7bf4-eaf7-4ff4-8fe9-89a5c7924c8a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{Q}{A}BRUTALITY: Verplaats 4 om naast 2 of meer rebellen te komen. Val dan elke aangrenzende rebel aan.\n{Q} Verplaats 4 om {rebel} aan te vallen.\n{A} FORCE CHOKE: Verplaats 2 naar {rebel}. Dan lijdt {rebel} 2 {H} en wordt 1 veld naar <color=\"red\">Darth Vader</color> geduwd.\n{A} Verplaats 6 naar {rebel}.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "de92ebeb-f5e3-4ada-82ef-d9bd2a3c3b6f",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG072/Darth Vader"
+        },
+        {
+          "tbText": "Deze vijand is te sterk voor je. Je moet vluchten. Nu.",
+          "GUID": "c12b10e5-669f-4aa1-8d7f-67218e3a6e30",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\"><color=\"red\">Darth Vader</color> is een <i>Elite</i> figuur. Elitefiguren zijn te onderscheiden van gewone figuren door de rode rand van de kaart (of de rode kleur van de app inzetkaart). Elitefiguren hebben betere statistieken dan gewone figuren en soms speciale vaardigheden.\n\nIn deze missie kan <color=\"red\">Darth Vader</color> geen {H} lijden. Alle schade die je hem toebrengt, wordt automatisch afgelegd. Hij kan niet worden verslagen. Het enige wat je kunt doen is vluchten.</color>",
+          "GUID": "530a1582-5470-441f-b888-194773047302",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Het aanzicht van Vader vervult je met angst en bevriest je heel even.\n\n<color=\"yellow\">De activering van de huidige held eindigt onmiddellijk. Klik/tik op het rode pictogram linksonder om <color=\"red\">Darth Vader</color> te activeren.",
+          "GUID": "0de6c2c5-99fa-421e-aa39-ec49b851d8e8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Start de volgende keizerlijke activering.",
+          "longText": "",
+          "GUID": "886076a2-2ba5-4506-8786-0bbd79bb91dd",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} <color=\"red\">Darth Vader</color> kan geen {H} lijden en kan niet worden verslagen.",
+          "GUID": "90ed2ca5-8634-4398-81e4-d8ad356fe6bc",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader Activation",
+      "GUID": "5ea0991c-fdc0-49e4-bf5a-8e6540c2275f",
+      "eventText": "<color=\"yellow\">Vader's aanval is een {P} (melee) aanval. Dit betekent dat hij dichterbij moet komen om je aan te vallen en dat is misschien je enige hoop om te overleven.\n\nDarth Vader is sterk, dus laten we stoppen met het negeren van bonuseffecten. Je moet er de rest van de missie rekening mee houden.</color>",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">Bonuseffecten worden altijd bovenaan het activeringsvenster weergegeven. Er zijn meestal meerdere bonuseffecten die willekeurig worden geselecteerd wanneer een groep wordt geactiveerd. Ze zijn van toepassing op de volledige activering van elk figuur in de groep.\n\nLaten we eens kijken naar de mogelijke bonuseffecten voor <color=\"red\">Darth Vader</color>. Vader heeft drie mogelijke bonuseffecten.</color>",
+          "GUID": "29c5f5d8-ee65-4478-bc2d-6b49c45fa966",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">1. <i>DETERMINATION: Pas +1 {H} toe op elke aanval. Aan het einde van de activering van deze figuur lijdt deze figuur 2 {H}.</i>\n\nDit betekent dat elke aanval van <color=\"red\">Darth Vader</color> 1 extra {H} aanricht. Negeer het tweede deel van het bonuseffect: In deze missie kan <color=\"red\">Darth Vader</color> geen {H} lijden, dus je negeert dit gewoon.\n\nAls <color=\"red\">Darth Vader</color> niet aanvalt in zijn activatie, heb je geluk gehad.</color>",
+          "GUID": "61c36e5d-0945-47d1-ac85-1022fc64a49c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">2. <i>CRUEL AURA: Aan het einde van de activering van deze figuur lijdt elke rebel die aan deze figuur grenst 1 {H}.</i>\n\nDit betekent dat als <color=\"red\">Darth Vader</color> zijn activering eindigt naast een rebel, die rebel 1 {H} lijdt. Blijf uit zijn buurt.</color>",
+          "GUID": "bb9f350f-e648-4673-b028-484ccdfa3d44",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">3. <i>FORCE PULL: Aan het begin van de activering van deze figuur duw je de dichtstbijzijnde rebel 2 velden naar deze figuur toe.</i>\n\nDit doet precies wat het zegt. Zodra <color=\"red\">Darth Vader</color> wordt geactiveerd, wordt de dichtstbijzijnde rebel 2 velden naar <color=\"red\">Darth Vader</color> verplaatst. Let op: hiervoor is geen zichtlijn nodig. Vader kan rebellen naar zich toetrekken, ongeacht waar ze staan.\n\nHoudt er rekening mee dat als je wordt geduwd of X <i>velden</i> wordt verplaatst, dit niet hetzelfde is als <i>verplaatspunten uit geven</i>. Als iets jouw verplaatst, zoals duwen, krijg je geen verplaatspunten. Dit betekent ook dat je door velden met moeilijk terrein of vijandige figuren kunt verplaatsen zonder extra verplaatspunten uit te geven.</color>\r\n\r\n\r\n",
+          "GUID": "12414200-4688-48dd-94ce-fbf1680535df",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Tot slot geven we je nog een andere uitlegtoken.</color>",
+          "GUID": "616ceb1f-715e-4edc-8fd8-d01f6972b671",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Vader's Explanation Token",
+              "GUID": "4108a58a-27d7-4ad6-b695-1cb6e5f60099",
+              "theText": "<color=\"yellow\">Dit is de uitlegtoken van Vader. Zodra je het instructievenster van Darth Vader hebt gesloten, selecteer je <b>uitleg instructies</b> om de uitleg te starten.</color>",
+              "buttonList": [
+                {
+                  "GUID": "de12a8cf-79af-4e61-9943-871ccd9429ad",
+                  "theText": "Uitleg instructies"
+                }
+              ]
+            }
+          ],
+          "GUID": "6b4e4e1d-7fdc-48bb-ab04-bf7afdfa71ba",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Je kent de procedure. Nadat je Vader's activeringsvenster hebt gesloten, roep je met de token de instructie uitleg op.</color>",
+          "GUID": "56cc0434-bb3f-4ea0-a4b0-e738a1b9ae37",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Open de uitleg via de uitlegtoken.",
+          "longText": null,
+          "GUID": "66e5fca5-e576-4f0b-ac6b-8bb447f9b14f",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "Vader Explanation",
+      "GUID": "94cdacfd-545e-4133-a942-5424992bebb7",
+      "eventText": "<color=\"yellow\">Laten we de instructies van <color=\"red\">Darth Vader</color> doornemen. Deze keer herhalen we de instructies bovenaan niet. Je weet al dat je het {J} icoon kunt selecteren om de map te bekijken. Klik dan met de rechtermuisknop / dubbeltik op Vader's miniatuur om zijn activeringsvenster opnieuw te openen.</color>",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Vader 1",
+              "GUID": "2ff074f2-5a8f-4a97-96bb-2e82bdf8ecc6",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Vader 2",
+              "GUID": "14117a75-9bfa-45e9-8917-15832db0f66a",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 1",
+              "GUID": "b89926a0-5736-4e11-bcb9-192301f854c6",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 2",
+              "GUID": "3fa23163-9735-459e-9ea7-e7dc11aaf7e4",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "d5ab285a-4520-402c-a505-c611a4935a8f",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Handel eerst het bonus effect af. Vader staat ver weg, dus voor zijn eerste activatie zal <i>DETERMINATION</i> niet veel effect hebben. Als het bonus effect <i>CRUEL AURA</i> is, houd dit dan in gedachten. Als het <i>FORCE PUSH</i> is, verplaats dan de dichtstbijzijnde rebel 2 velden dichter bij Vader.</color>",
+          "GUID": "36eac565-b419-4621-9166-4f11fbfc191e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">De eerste regel is:\n\n</color>{Q}{A} BRUTALITY: Verplaats 4 om naast 2 of meer rebellen te komen. Val dan elke aangrenzende rebel aan.<color=\"yellow\">\n\nDit vereist wat uitleg. Ten eerste betekenen de twee symbolen {Q}{A} dat deze instructie <b>twee</b> acties vereist in plaats van één. Als Vader deze instructie zou uitvoeren, zou zijn activering daarna eindigen, omdat hij geen acties meer over heeft.\n\nDe instructie betekent dat hij 4 verplaatspunten krijgt en zich verplaatst om \"naast\" (aangrenzend aan) 2 of meer rebellen te komen staan. \n\nMaar daarvoor staat Vader veel te ver weg.</color>",
+          "GUID": "db1819ed-7d06-4075-bc90-8288f2455cfa",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">Vijandelijke figuren proberen enkel instructies uit te voeren welke ze mogelijk kunnen uitvoeren. Als er iets onmogelijk is, zoals Vader's BRUTALITY, dan wordt de instructie <i>overgeslagen</i> en gaan ze door naar de volgende regel.\n\nIn dit geval kan Vader niet naast een doelwit komen te staan met maar 2 verplaats punten, dus slaat hij de instructie over.</color>",
+          "GUID": "6243f078-0a05-44ef-ba71-5bfb50dad030",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "<color=\"yellow\">De tweede regel is:</color>\n\n{Q} Verplaats 4 om (held) aan te vallen.\n\n<color=\"yellow\">Als Vader niet naast 2 of meer rebellen kon komen, probeert hij naast één doel te komen. Maar zelfs met 4 verplaatspunten kan Vader niet naast een rebel komen te staan. Hij slaat deze regel dus ook over. Hij zou deze regel echter niet overslaan als hij een andere rebellenfiguur dan de genoemde held had kunnen aanvallen. Als een vijand de aangegeven rebel niet kan aanvallen, maar wel een andere rebel, dan doet hij dat.\n\nLet op: zowel deze als de vorige instructie werden voorafgegaan door een {Q} icoon. Dat betekent dat het aanvalsacties zijn. Niet-helden kunnen niet meer dan 1 actie spenderen aan een aanvalsactie, dus zelfs als Vader de eerste instructie uitvoerde en nog acties over had, zou hij de tweede regel overslaan omdat zelfs hij maar 1 aanvalsactie mag uitvoeren.\n\nEen aanvalsactie kan echter meer dan 1 aanval bevatten - zoals Vader's BRUTALITY.</color>",
+          "GUID": "aafc6036-905d-4732-8239-1580b943046d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Vader 1",
+              "GUID": "5f94e850-592f-41f4-90e9-dead7e152741",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "88d10131-0268-41d8-b8e3-7466b28afa25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">De derde regel is:</color>\n\n{A} FORCE CHOKE: Verplaats 2 naar (held). Dan lijdt (held) 2 {H} en wordt 1 veld in de richting van <color=\"red\">Darth Vader</color> geduwd.\n\n<color=\"yellow\" >Deze instructie <i>kan</i> Vader wel uitvoeren. Eerst krijgt hij 2 verplaatspunten en komt hij dichterbij. Vijandelijke figuren proberen altijd de weg te nemen die de minste verplaatspunten kost, dus Vader verplaatst naar het rood gemarkeerde veld.</color>",
+          "GUID": "44360855-b970-458a-baf3-569cb1e8bf53",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "{A} FORCE CHOKE: Verplaats 2 naar (held). Dan lijdt (held) 2 {H} en wordt 1 veld in de richting van <color=\"rood\">Darth Vader</color> geduwd.\n\n<color=\"yellow\" >De held die in de instructie wordt genoemd, lijdt 2 {H} en verplaatst zich 1 veld dichter naar Vader. Nogmaals, hiervoor is geen zichtlijn nodig. Vader gebruikt de Force om je te zien.\n\nDeze instructie is uitgevoerd en Vader heeft zijn eerste actie gespendeerd. Op naar de volgende regel.</color>",
+          "GUID": "91598801-20df-4fe3-8a31-8a2a825da16e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Vader 1",
+              "GUID": "a98235cc-2ee0-4b47-b002-53e83eb624d6",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Vader 2",
+              "GUID": "300c6b56-50cd-44e2-bd58-6ee5043603b2",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 1",
+              "GUID": "51554d5e-633c-4eb7-8fb4-ec7f5117ff20",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 2",
+              "GUID": "5484ba39-d0d9-42b2-ac00-8ceda3fedfe4",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "06ad47f7-7a97-496b-bde8-e9956a1dfa79",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">De vierde regel is:</color>\n\n{A} Verplaats 6 naar (held).\n\n<color=\"yellow\" >Vader krijgt 6 verplaats punten en komt dichterbij. Hij moet wel door het moeras om bij je in de buurt te komen. Het moeras (blauw gemarkeerd) is <i>moeilijk</i> terrein, dus Vader heeft 1 extra verplaatspunt nodig om het moeras over te steken.\n\nDit betekent dat Vader vanuit zijn huidige positie slechts één van de rood gemarkeerde velden kan bereiken. Plaats zijn figuur daar naartoe.\n\nNu heeft Vader beide acties gespendeerd en beëindigt zijn activering. Als het bonus effect CRUEL AURA is en naast één of meer rebellen staat, lijdt elke rebel 1 {H}. </color>",
+          "GUID": "bccdec95-041f-4317-9b67-cf588031a645",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je schudt de angst van je af. Je weet dat je hem niet kunt verslaan, dus activeer je op afstand de motoren van je shuttle en ontgrendel je het luik.",
+          "GUID": "551d9943-b9f7-48b1-868d-26d9dba7d82d",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Shuttle Control",
+              "GUID": "d55e9c0f-edcc-4d7a-86a0-abd13709c0a5",
+              "theText": "De motoren van de shuttle zoemen. Hij staat klaar om te vertrekken.\n\n<color=\"yellow\">Als alle overlevende helden in de shuttle zijn, kan een held de terminal bedienen om de shuttle te lanceren en de tutorial te beëindigen.</color>",
+              "buttonList": [
+                {
+                  "GUID": "b4010a97-7790-4b96-af45-2ecb160a25d9",
+                  "theText": "{A} Lanceer de shuttle (einde van de tutorial)"
+                }
+              ]
+            },
+            {
+              "entityName": "Shuttle Door",
+              "GUID": "78c7a82e-6de7-4ee5-b64a-2b8d029f44f2",
+              "theText": "Het luik van je shuttle is gesloten om de vochtigheid van het bos buiten te houden.",
+              "buttonList": [
+                {
+                  "GUID": "a9905a6f-8b2c-4419-a811-fe2dbbd4a0c8",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "dd1b775b-777b-4ad4-9510-fe1407e4d56c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "<color=\"yellow\">Het is tijd om te gaan. De deur van de shuttle is nu ontgrendeld, dus elke held kan een interactie uitvoeren met de deur om hem te openen.\n\nAls alle overlevende helden in de shuttle zijn (een willekeurig veld achter de deur), kan een held de terminal bedienen om de shuttle te lanceren en de tweede tutorial te beëindigen.\n\nVeel succes en moge de Force met je zijn.</color>",
+          "GUID": "9ee78959-5934-4f39-a171-4d041e58ea03",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Vlucht van Darth Vader.",
+          "longText": "",
+          "GUID": "6b9091bf-715c-40a5-9da6-7411f06d41d1",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "<color=\"yellow\"><color=\"red\">Darth Vader</color> kan geen {H} lijden.\n\nAls alle overlevende helden in de shuttle zijn, kan een held de terminal bedienen om de shuttle te lanceren en de tutorial te beëindigen.</color>",
+          "GUID": "7b6c6b26-2516-4a7a-b334-4efc0150cb4f",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Highlight Vader 2",
+              "GUID": "43a343b0-caa7-4f4d-97cc-f63b12af229c",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 1",
+              "GUID": "b30ccb9a-c953-4bac-81d8-b82745422785",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Highlight Swamp 2",
+              "GUID": "17a75d8a-ac64-4fd2-9859-26b978a6c840",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "d9ddc031-5375-477a-964c-4d95db95b0be",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "End Tutorial",
+      "GUID": "c424b7f9-fba1-4142-9631-4b464167501c",
+      "eventText": "De shuttle schiet de lucht in boven Indu. Uit het raam zie je Darth Vader op de open plek staan, die je met een kalme blik nakijkt, met het lichtzwaard nog in zijn handen.\n\nJe wint snel hoogte en zet dan koers naar de coördinaten van het andere aanvalsteam. Je hebt geen idee of je er op tijd zult zijn, maar je geeft de hoop zeker niet op.",
+      "eventActions": [
+        {
+          "tbText": "<color=\"yellow\">Hiermee is de tweede tutorial afgerond. In de derde tutorial leer je de resterende regels en een paar andere nuances.\n\nAls je vragen hebt, kun je altijd de Rules Reference gids raadplegen voor alle details die je nodig hebt.</color>",
+          "GUID": "5f0db86b-1051-40e7-a9e2-8cd70921deb0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Door Opens",
+      "GUID": "15dc6135-76c7-48c8-b304-11db850a77be",
+      "eventText": "Je slaat op de toegangscontrole en de deur schuift open.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Shuttle Door",
+              "GUID": "a10e36c7-4fa7-4226-a6c8-7c9be8bee89f",
+              "theText": "Het luik van je shuttle is gesloten om de vochtigheid van het bos buiten te houden.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "66239cf4-0c12-4e50-8ea3-4c7a6e354ffe",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Highlight Gaarkhan",
+      "GUID": "7f94645b-4f4d-4bec-8558-41fc6c6f72d7",
+      "mainText": "Plaats <b>Gaarkhan</b> hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Shuttle Door",
+      "GUID": "27e82931-af8a-4887-9070-dec8a526d3ae",
+      "mainText": "Het luik van je shuttle is gesloten om de vochtigheid van het bos buiten te houden.\r\n\r\n{-} De deur is vergrendeld.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Energy Field 1",
+      "GUID": "78474806-46b8-4e3d-9bfa-634967833ced",
+      "mainText": "Een blauw energieschild blokkeert de weg naar de afgebrokkelde ruïnes en je shuttle.\r\n\r\n<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.</color>",
+      "buttonList": []
+    },
+    {
+      "entityName": "Energy Field 2",
+      "GUID": "a8f3fab6-9814-463a-83b2-4d625d2423f7",
+      "mainText": "Een blauw energieschild blokkeert de weg naar de afgebrokkelde ruïnes en je shuttle.\r\n\r\n<color=\"yellow\">De keizerlijke missietokens zijn <i>geblokkeerd terrein</i>. Dit betekent dat er geen zichtlijn doorheen kan worden getrokken en dat figuren er niet doorheen kunnen verplaatsen.</color>",
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Jyn",
+      "GUID": "5ca57d5b-521f-4de7-bef5-e9c8e3601bde",
+      "mainText": "Plaats <b>Jyn</b> hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "15482748-c872-430f-9f04-a075ca6cecee",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Purple",
+      "GUID": "a960a0b1-818a-4112-a356-70069d127517",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow",
+      "GUID": "e26cc062-db60-426c-bf3e-2c6955ac7757",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red 1",
+      "GUID": "ee89cdca-27a7-4508-988f-e2d0d2eaf143",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Purple",
+      "GUID": "af631212-2b04-4cb9-a90c-3c5d37d2fec3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Yellow",
+      "GUID": "c2dfafe7-4cda-4ad1-8656-417de4742937",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Attack 1",
+      "GUID": "0210d75d-4bab-418d-9191-ad29cafaf778",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Attack 2",
+      "GUID": "04af2b16-09c5-44b5-b2a4-d3f1d8759fa6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Retreat 1",
+      "GUID": "90388dfb-c61a-4150-a0a7-33d15467c4b8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Retreat 2",
+      "GUID": "d771788e-97f2-484e-b3be-ebe30060f601",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Yellow Attack 1",
+      "GUID": "efbb0dc8-cc4c-49b1-8cbe-d94c8fb85e9b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Yellow Retreat",
+      "GUID": "1713acfc-50ed-42e7-9183-063272fcacaa",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Purple Retreat 1",
+      "GUID": "3c29cb3e-e2fe-4a75-9c94-de35e1d5a58c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Explanation Token",
+      "GUID": "751eeff1-25d3-4745-8792-80a80333bf38",
+      "mainText": "<color=\"yellow\">Dit is de instructie uitlegtoken. Zodra je het instructievenster van de Stormtroopers hebt gesloten, selecteer je <b>uitleg instructies</i> om de uitleg te starten.</color>",
+      "buttonList": [
+        {
+          "GUID": "8ca8c91c-d0a9-48cb-b45b-7e592d0d1cf2",
+          "theText": "Uitleg instructies"
+        }
+      ]
+    },
+    {
+      "entityName": "Highlight Red Attack 3",
+      "GUID": "04623669-ef42-426c-ac55-fe2835cdf5f0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Red Retreat 3",
+      "GUID": "9fadf628-8522-466b-9b4d-33d91f8572e4",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 1",
+      "GUID": "bd5a17db-f0ce-474b-98b2-6e81d1454c84",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 2",
+      "GUID": "58b5c569-295b-4489-966d-a8ea3b3db948",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Vader",
+      "GUID": "d9c9a4fa-38ad-43f4-9f7c-67050ddc9a1b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Vader's Explanation Token",
+      "GUID": "c31869e9-306c-45a2-9ef2-0b5f8b6a56f5",
+      "mainText": "<color=\"yellow\">Dit is Vader's uitlegtoken. Zodra je het instructievenster van Darth Vader hebt gesloten, selecteer je <b>uitleg instructies</i> om de uitleg te starten.</color>",
+      "buttonList": [
+        {
+          "GUID": "7ece4543-70b2-482d-8421-3f82b704939a",
+          "theText": "Uitleg instructies"
+        }
+      ]
+    },
+    {
+      "entityName": "Highlight Vader 1",
+      "GUID": "6952a565-aa73-4216-bc69-2c44a9e96f3d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Vader 2",
+      "GUID": "ed5d696f-455a-4dc9-a8e5-665d6c2b202a",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Swamp 1",
+      "GUID": "e4d09d4d-08da-4ded-8947-86243d4e68f7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Highlight Swamp 2",
+      "GUID": "da95173a-f715-41a9-8297-02390b09309d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Shuttle Control",
+      "GUID": "2d5bdb10-e0a3-4e63-b338-cada238a1c32",
+      "mainText": "De motoren van de shuttle zoemen. Hij staat klaar om te vertrekken.\n\n<color=\"yellow\">Als alle overlevende helden in de shuttle zijn, kan een held de terminal bedienen om de shuttle te lanceren en de tutorial te beëindigen.</color>",
+      "buttonList": [
+        {
+          "GUID": "c01e0c45-5757-4872-a178-93bfdd473781",
+          "theText": "{A} Lanceer de shuttle (einde van de tutorial)"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

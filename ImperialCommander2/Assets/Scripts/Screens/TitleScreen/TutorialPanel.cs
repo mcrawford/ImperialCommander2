@@ -17,22 +17,38 @@ public class TutorialPanel : MonoBehaviour
 		cancelText.text = DataStore.uiLanguage.uiSetup.cancel;
 		tutIndex = index + 1;
 
-		//try to load the mission in selected language
-		var json = Resources.Load<TextAsset>( $"SagaTutorials/{DataStore.languageCodeList[DataStore.languageCode]}/TUTORIAL0{tutIndex}" );
+		//try to load the mission
+		TranslatedMission translatedMission = null;
+		var json = Resources.Load<TextAsset>( $"SagaTutorials/TUTORIAL0{tutIndex}" );
 		if ( json != null )
-			DataStore.mission = FileManager.LoadMissionFromString( json.text );
-		else//otherwise fall back to English
 		{
-			var ENjson = Resources.Load<TextAsset>( $"SagaTutorials/En/TUTORIAL0{tutIndex}" );
-			if ( ENjson != null )
-				DataStore.mission = FileManager.LoadMissionFromString( ENjson.text );
+			DataStore.mission = FileManager.LoadMissionFromString( json.text );
+
+			var pItem = new ProjectItem()
+			{
+				missionID = $"TUTORIAL0{tutIndex}",
+				Description = DataStore.mission.missionProperties.missionDescription,
+				AdditionalInfo = DataStore.mission.missionProperties.additionalMissionInfo,
+				fullPathWithFilename = $"TUTORIAL0{tutIndex}",
+				Title = DataStore.mission.missionProperties.missionName,
+				pickerMode = PickerMode.Tutorial
+			};
+			translatedMission = FileManager.GetTutorialMissionTranslation( pItem, DataStore.Language );
+
+			if ( translatedMission == null )//otherwise fall back to English
+			{
+				Debug.Log( $"No translation found for TUTORIAL0{tutIndex} in [{DataStore.Language}], falling back to English" );
+				translatedMission = FileManager.GetTutorialMissionTranslation( pItem, "EN" );
+			}
 		}
 
-		if ( DataStore.mission != null )
+		if ( DataStore.mission != null && translatedMission != null )
 		{
-			titleText.text = DataStore.mission.missionProperties.missionName.ToUpper();
-			descriptionText.text = DataStore.mission.missionProperties.missionDescription;
-			taglineText.text = DataStore.mission.missionProperties.additionalMissionInfo;
+			titleText.text = translatedMission.missionProperties.missionName.ToUpper();
+			descriptionText.text = translatedMission.missionProperties.missionDescription;
+			taglineText.text = translatedMission.missionProperties.additionalMissionInfo;
+			//set Mission name to translated name
+			DataStore.mission.missionProperties.missionName = translatedMission.missionProperties.missionName;
 		}
 
 		popupBase.Show();
@@ -61,6 +77,17 @@ public class TutorialPanel : MonoBehaviour
 		DataStore.StartNewSagaSession( setupOptions );
 		DataStore.sagaSessionData.MissionHeroes.Add( DataStore.heroCards[2] );
 		DataStore.sagaSessionData.MissionHeroes.Add( DataStore.heroCards[4] );
+
+		var pItem = new ProjectItem()
+		{
+			missionID = $"TUTORIAL0{tutIndex}",//DataStore.mission.missionProperties.missionID,
+			Description = DataStore.mission.missionProperties.missionDescription,
+			AdditionalInfo = DataStore.mission.missionProperties.additionalMissionInfo,
+			fullPathWithFilename = $"TUTORIAL0{tutIndex}",
+			Title = DataStore.mission.missionProperties.missionName,
+			pickerMode = PickerMode.Tutorial
+		};
+		DataStore.sagaSessionData.setupOptions.projectItem = pItem;
 
 		//ignore figure packs for Tutorial
 		for ( int i = 62; i <= 69; i++ )

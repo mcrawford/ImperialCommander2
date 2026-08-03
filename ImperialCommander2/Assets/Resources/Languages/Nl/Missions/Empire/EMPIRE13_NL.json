@@ -1,0 +1,399 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Burgerlijke onrust",
+    "missionDescription": "",
+    "missionInfo": "{-} De <color=\"red\">AT-DP</color> kan geen {H} lijden.\n{-} Neutrale missietokens stellen burgers voor. Burgers zijn neutrale figuren. Keizerlijke figuren kunnen burgers aanvallen (gezondheid: 4).\n{-} De rebellen missietoken stelt een vluchtroute voor. Wanneer een burger een veld betreedt dat op of grenzend aan de vluchtroute ligt, klik je op de vluchtroute en selecteer je \"burger ontsnapt\".\n{-} Wanneer een burger wordt verslagen, klik je op de vluchtroute en selecteer je \"burger verslagen\".\n{-} Aan het einde van de activering van een held mag die held een burger binnen 2 velden maximaal 2 velden verplaatsen.\n{-} Een held kan 1 verplaatspunt spenderen om een energieschild vanuit zijn speelgebied op een aangrenzend veld te plaatsen.\n{-} Een held kan 1 verplaatspunt uitgeven om een aangrenzend energieschild te claimen.\n{-} De missie gaat verder wanneer er geen burgers meer op het speelbord zijn of aan het einde van ronde 4.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+    "campaignName": "",
+    "startingObjective": "Bescherm de burgers. Burgers ontsnapt of verslagen: &Civilians&/9",
+    "repositionOverride": null,
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Civilian defeated",
+      "GUID": "58e40a61-4aaa-4aa8-80dc-91073f9b838b",
+      "eventText": "De keizerlijke schoten treffen opnieuw een demonstrant, die inéénzakt op de grond.\n\n{-} Verwijder de verslagen burger.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Civilian escapes",
+      "GUID": "16c86d5f-75fb-4367-841c-ef999722d18e",
+      "eventText": "Nog een demonstrant weet de vluchtroute te bereiken en is eindelijk veilig voor het Keizerrijk.\n\n{-} Verwijder de ontsnapte burger.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "De metalen reus lijkt niet te stoppen. Je hebt geen andere keuze dan je bij de vluchtende menigte aan te sluiten en de onschuldige burgers aan hun lot over te laten. Het zal lang duren voordat de inwoners van Taris de moed hervinden om zich opnieuw tegen het Keizerrijk te verzetten.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held krijgt 1 XP. De helden krijgen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "De walker stort in vlammen neer. Enkele van de moedigere demonstranten komen uit hun schuilplaatsen tevoorschijn, beklimmen het wrak en verheffen opnieuw hun stem in verzet. Je vertrekt in de overtuiging dat de geest van het Verzet vandaag sterker is geworden.\n\n{-} De rebellen winnen de missie!\n{-} Helden ontvangen de beloningskaart \"Populist Support\". (Deze beloningskaart werkt anders wanneer je speelt met <b>Imperial Commander</b>. Raadpleeg het gedeelte <b>Rules Change</b> in de wiki-documentatie voor meer informatie.)\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Heating Up",
+      "GUID": "1a3613c4-127c-404f-98a0-1fc1b154d8c9",
+      "eventText": "Steeds meer keizerlijke troepen stromen de straten in.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Tegen de tijd dat je de plek bereikt, is de chaos al losgebarsten in de straten. Burgers duiken weg achter alles wat maar enigszins dekking biedt, wanhopig op zoek naar een manier om te ontsnappen aan de torenhoge oorlogsmachines van het Keizerrijk.\n\n{-} Plaats de helden op de rebellen missietoken.",
+      "eventActions": [
+        {
+          "otherTarget": "de dichtstbijzijnde burger",
+          "GUID": "13df9421-7be5-4584-a465-b28dbe6f0a1d",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
+          "tbText": "De demonstranten van zojuist kruipen angstig weg of rennen op zoek naar dekking.\n\n{-} Leg 1 neutrale missietoken op elk rood gemarkeerde veld.\n{-} Neutrale missietokens stellen burgers voor. Burgers zijn neutrale figuren. Keizerlijke figuren kunnen burgers aanvallen (gezondheid: 4).\n{-} De rebellen missietoken stelt een vluchtroute voor. Wanneer een burger een veld betreedt dat op of grenzend aan de vluchtroute ligt, klik je op de vluchtroute en selecteer je \"burger ontsnapt\".\n{-} Wanneer een burger wordt verslagen, klik je op de vluchtroute en selecteer je \"burger verslagen\".\n{-} Aan het einde van de activering van een held mag die held een burger binnen 2 velden maximaal 2 velden verplaatsen.",
+          "GUID": "561387f9-553b-46ec-a660-6061017be9d0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Een enorme gevechtswalker stampt door de straten van Taris. Zijn metalen romp wordt omgeven door een glinsterend energieschild.\n\n{-} De <color=\"red\">AT-DP</color> kan geen {H} lijden.",
+          "GUID": "b8b5546d-2fe9-48e2-8171-7863e3295c4b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "{-} CHARGE GENERATORS: Als dit figuur minder dan 9 {H} heeft geleden, krijgt het +2 {H}.\n{Q} Verplaats 2 om {rebel} aan te vallen.\n{Q} Verplaats 2 om {rebel} aan te vallen.\n{Q}{A} Verplaats 5 om {rebel} aan te vallen.\n{A}{A} Verplaats 8 in de richting van {rebel}.\n{A} Verplaats 3 in de richting van de dichtstbijzijnde rebel.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "0b17956e-45fb-44be-b43c-daa860b4484f",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG046/AT-DP"
+        },
+        {
+          "tbText": "Gelukkig heeft het oppercommando jullie voorzien van draagbare schildgeneratoren. Je haalt ze uit je uitrusting.\n\n{-} Verdeel 4 energieschildtokens over de speelgebieden van de helden.\n{-} Een held kan 1 verplaatspunt spenderen om een energieschild vanuit zijn speelgebied op een aangrenzend veld te plaatsen.\n{-} Een held kan 1 verplaatspunt uitgeven om een aangrenzend energieschild te claimen.",
+          "GUID": "08d99eaa-d73c-450f-a76f-9cbf0620dd0b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je maakt je wapens gereed. Dit wordt een zwaar gevecht.\n\n{-} De missie gaat verder wanneer er geen burgers meer op het speelbord zijn of aan het einde van ronde 4.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "aae392af-b09a-4c1a-a99e-a3f1e586e032",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "ab093815-8db6-493c-a4fd-08e70cacc5a7",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "2c4ed049-ca85-449d-853d-d5be3cd7c526",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "9f70865a-5404-4aad-bfc7-2edbe4b51cb8",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "9917c48a-121a-4904-8a68-d8122d438c52",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Take it Down!",
+      "GUID": "0bb9fb9f-d9a4-489f-a1c7-0ea302f87cfe",
+      "eventText": "Terwijl versterkingen dichterbij komen, proberen de overgebleven demonstranten zich in veiligheid bijeen te dringen. Je piloot scheert over je heen en vuurt een EMP-lading af op de schildgeneratoren van de AT-DP.\n\nNu het schild zijn zwakke punten niet meer beschermd, richt je je wapens en maak je je klaar om de plotseling een stuk minder intimiderende walker neer te halen.\n\n{-} De <color=\"red\">AT-DP</color> kan nu {H} lijden.\n{-} De rebellen winnen wanneer de <color=\"red\">AT-DP</color> verslagen is.",
+      "eventActions": [
+        {
+          "otherTarget": null,
+          "GUID": "983c4f28-68df-42d9-a8e7-cff7cbc9ced2",
+          "eventActionType": 12,
+          "eaName": "Change Priority Target"
+        },
+        {
+          "shortText": "Schakel de <color=\"red\">AT-DP</color> uit.",
+          "longText": null,
+          "GUID": "e5a15a54-2d26-43ea-92b3-c8641bf3dc0f",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Aan het einde van de activering van een held mag die held een burger binnen 2 velden maximaal 2 velden verplaatsen.\n{-} Een held kan 1 verplaatspunt spenderen om een energieschild vanuit zijn speelgebied op een aangrenzend veld te plaatsen.\n{-} Een held kan 1 verplaatspunt uitgeven om een aangrenzend energieschild te claimen.\n{-} De rebellen winnen wanneer de <color=\"red\">AT-DP</color> verslagen is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "22cff33b-02ff-48b7-a9f3-74133a80c17c",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Escape Route",
+              "GUID": "751be06f-102c-4cfd-b6a3-d7e46ead9da9",
+              "theText": "Smalle straten leiden naar de lagere niveaus van Taris, waardoor het voor het Keizerrijk onmogelijk is de achtervolging in te zetten.\n\n{-} Plaats de helden hier.\n{-} Wanneer een burger een veld betreedt dat op of grenzend aan de vluchtroute ligt, klik je op de vluchtroute en selecteer je \"burger ontsnapt\".\n{-} Wanneer een burger wordt verslagen, klik je op de vluchtroute en selecteer je \"burger verslagen\".",
+              "buttonList": [
+                {
+                  "GUID": "3cd60078-1086-4878-86ea-4b6a802d7f34",
+                  "theText": "Burger ontsnapt"
+                },
+                {
+                  "GUID": "6fef5a45-1ef6-4c01-b8be-193017fc511c",
+                  "theText": "Burger verslagen"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Red 1",
+              "GUID": "23764870-6a54-400f-a2c2-a8b531db0f51",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Red 2",
+              "GUID": "eb55c00a-0a2f-44b2-91de-76eff63cf156",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "9ddd4ed2-0edb-4bfd-bd04-206966731496",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Civilian 1",
+      "GUID": "f5159dd1-a62b-4385-b436-8358b30426e8",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 2",
+      "GUID": "2f382096-e498-4edd-a093-ba5db92d65a4",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 3",
+      "GUID": "8fe5a957-7a17-4d6a-9c2d-28f3e35b4fba",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 4",
+      "GUID": "b04b35f0-40b4-4b95-8ccc-d5b2373e90a9",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 5",
+      "GUID": "e610676b-6778-4037-8ccb-d6b0c7f3bc48",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 6",
+      "GUID": "b21d981a-e87c-4b43-bc6b-76b63f2966f7",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 7",
+      "GUID": "e1b0f97b-00e0-4c60-9f11-92be28ec2330",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 8",
+      "GUID": "1bd9659f-6cd4-4605-a56c-9ffe25171e0d",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Civilian 9",
+      "GUID": "c87315a0-931b-4385-a10e-59196ea59158",
+      "mainText": "Plaats hier 1 neutrale missietoken.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "3fd5a087-331c-4e50-b595-174f355b46e4",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "befff3de-2756-4d8e-a7fb-e1e19038eabe",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "9183fb28-5787-4648-b078-1298d184217f",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP AT-DP",
+      "GUID": "a8142ab6-52dc-43a9-8ed5-872cdf85a9a2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "e4e544a0-bb2f-45bb-8fd1-d9e28a17e6fb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid 1",
+      "GUID": "c4d5c970-92d4-474e-8a6e-6ee10c47d58c",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "9e570400-6000-44e8-8d33-4db79de3b7a3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "0c460771-18cb-43cd-8b34-0799f7d780c8",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "bd0b25fa-7742-42d1-b89a-c652ac4b6add",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "9aafd505-a163-4845-8870-58ab8c76d5d0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Escape Route",
+      "GUID": "ee1ec8a2-4825-447d-9f0a-49664ed84091",
+      "mainText": "Smalle straten leiden naar de lagere niveaus van Taris, waardoor het voor het Keizerrijk onmogelijk is de achtervolging in te zetten.\n\n{-} Plaats de helden hier.\n{-} Wanneer een burger een veld betreedt dat op of grenzend aan de vluchtroute ligt, klik je op de vluchtroute en selecteer je \"burger ontsnapt\".\n{-} Wanneer een burger wordt verslagen, klik je op de vluchtroute en selecteer je \"burger verslagen\".",
+      "buttonList": [
+        {
+          "GUID": "3fb56b57-3f57-4eab-a12f-b2fb00c45ea3",
+          "theText": "Burger ontsnapt"
+        },
+        {
+          "GUID": "398d40ee-5bae-49fa-ae68-5fb311c10fc8",
+          "theText": "Burger verslagen"
+        }
+      ]
+    }
+  ],
+  "initialGroups": [
+    {
+      "cardName": "Imperial Officer",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Probe Droid",
+      "customInstructions": ""
+    },
+    {
+      "cardName": "Stormtrooper",
+      "customInstructions": ""
+    }
+  ]
+}

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using DG.Tweening;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
@@ -1010,7 +1011,7 @@ namespace Saga
 			EventSystem.current.SetSelectedGameObject( null );
 			if ( !eventManager.IsUIHidden )
 			{
-				GlowEngine.FindUnityObject<SettingsScreen>().Show( OnQuitSaga, tileManager.currentBiometype, () => UpdateRoundNumberUI() );
+				GlowEngine.FindUnityObject<SettingsPanel>().Show( OnQuitSaga, tileManager.currentBiometype, () => UpdateRoundNumberUI() );
 			}
 		}
 
@@ -1078,7 +1079,15 @@ namespace Saga
 				} );
 			}
 			else
-				Application.Quit();
+			{
+#if UNITY_EDITOR
+				// Exits Play mode in the Unity Editor
+				EditorApplication.isPlaying = false;
+#else
+            // Quits the built application
+            Application.Quit();
+#endif
+			}
 		}
 
 		/// <summary>
@@ -1161,6 +1170,7 @@ namespace Saga
 
 		public void SetMissionTranslation()
 		{
+			Debug.Log( $"SetMissionTranslation()::Language={DataStore.Language}, Mode={DataStore.sagaSessionData.setupOptions.projectItem.pickerMode}" );
 			//sanity check
 			if ( DataStore.sagaSessionData.setupOptions.projectItem == null )
 			{
@@ -1190,6 +1200,17 @@ namespace Saga
 			{
 				translation = RunningCampaign.campaignStructure.GetTranslatedMission( DataStore.Language );
 				TranslationController.Instance.SetMissionTranslation( translation, DataStore.mission );
+			}
+			//if it's a tutorial mission
+			else if ( DataStore.sagaSessionData.setupOptions.projectItem.pickerMode == PickerMode.Tutorial )
+			{
+				translation = FileManager.GetTutorialMissionTranslation( DataStore.sagaSessionData.setupOptions.projectItem, DataStore.Language );
+				if ( translation == null )
+				{
+					Debug.Log( $"SetMissionTranslation()::No translation found for Tutorial Mission: '{DataStore.sagaSessionData.setupOptions.projectItem.Title}'" );
+				}
+				else
+					TranslationController.Instance.SetMissionTranslation( translation, DataStore.mission );
 			}
 			//custom mission
 			else
@@ -1230,42 +1251,58 @@ namespace Saga
 			//generic keyboard input
 			inputTimer = Mathf.Max( inputTimer - Time.deltaTime, 0 );
 
-			if ( !eventManager.UIShowing
-				|| !eventManager.IsProcessingEvents
-				|| inputTimer == 0 )
+			if ( Input.anyKeyDown )
 			{
-				//activate Imperial
-				if ( Input.GetKeyDown( KeyCode.I ) )
-				{
-					inputTimer = 1;
-					OnActivateImperial();
-				}
-				//top down view
-				if ( Input.GetKeyDown( KeyCode.Home ) )
-				{
-					inputTimer = .25f;
-					//also save the Setting
-					if ( cameraController.CurrentViewMode == CameraView.Normal )
-					{
-						PlayerPrefs.SetInt( "viewToggle", 1 );
-						cameraController.CameraViewToggle( CameraView.TopDown );
-					}
-					else
-					{
-						PlayerPrefs.SetInt( "viewToggle", 0 );
-						cameraController.CameraViewToggle( CameraView.Normal );
-					}
-				}
-			}
+				string keyCodePressed = "";
 
-			//toggle map view during dialog boxes
-			if ( mapViewToggleButton.gameObject.activeInHierarchy
-				&& inputTimer == 0 )
-			{
-				if ( Input.GetKeyDown( KeyCode.M ) )
+				if ( !eventManager.UIShowing
+					|| !eventManager.IsProcessingEvents
+					|| inputTimer == 0 )
 				{
-					inputTimer = .25f;
-					eventManager.ToggleVisibility();
+					//get the keycode and convert it to a string
+					KeyCode[] keys = (KeyCode[])Enum.GetValues( typeof( KeyCode ) );
+					foreach ( KeyCode k in keys )
+					{
+						if ( Input.GetKey( k ) )
+						{
+							keyCodePressed = k.ToString();
+							break;
+						}
+					}
+
+					//activate Imperial
+					if ( keyCodePressed == PlayerPrefs.GetString( "mapActivateImperials" ) )
+					{
+						inputTimer = 1;
+						OnActivateImperial();
+					}
+					//top down view
+					if ( keyCodePressed == PlayerPrefs.GetString( "mapToggleCamView" ) )
+					{
+						inputTimer = .25f;
+						//also save the Setting
+						if ( cameraController.CurrentViewMode == CameraView.Normal )
+						{
+							PlayerPrefs.SetInt( "viewToggle", 1 );
+							cameraController.CameraViewToggle( CameraView.TopDown );
+						}
+						else
+						{
+							PlayerPrefs.SetInt( "viewToggle", 0 );
+							cameraController.CameraViewToggle( CameraView.Normal );
+						}
+					}
+				}
+
+				//toggle map view during dialog boxes
+				if ( mapViewToggleButton.gameObject.activeInHierarchy
+					&& inputTimer == 0 )
+				{
+					if ( keyCodePressed == PlayerPrefs.GetString( "mapToggleMapVisibility" ) )
+					{
+						inputTimer = .25f;
+						eventManager.ToggleVisibility();
+					}
 				}
 			}
 		}

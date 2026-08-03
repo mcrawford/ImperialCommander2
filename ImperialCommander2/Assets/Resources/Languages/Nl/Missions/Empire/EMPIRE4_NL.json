@@ -1,0 +1,694 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Dubbelagent",
+    "missionDescription": "",
+    "missionInfo": "{-} Lorn is een rebellenfiguur die door de rebellen als bondgenoot wordt bestuurd. Lorn kan geen {H} lijden.\n{-} Lorn wordt niet op de normale manier geactiveerd. In plaats daarvan voert hij aan het begin van elke statusfase 1 actie uit.\n{-} Als er geen gezonde helden binnen 3 velden van Lorn zijn, kan een keizerlijke figuur een interactie op Lorn uitvoeren om hem te arresteren wanneer dat wordt geïnstrueerd. Wanneer dat gebeurt, klik je op de keizerlijke missietoken en selecteer je \"Lorn gearresteerd\".\n{-} Muren tussen 2 puin-tokens blokkeren de verplaatsing van figuren op die puin-tokens niet.\n{-} Wanneer het de beurt is aan de rebellen om een figuur te activeren, kunnen ze ervoor kiezen om de beurt terug te geven aan de keizerlijke speler.\n{-} De rebellen winnen aan het einde van ronde 7.\n{-} De rebellen verliezen als Lorn gearresteerd wordt.",
+    "campaignName": "Heart of the Empire",
+    "startingObjective": "",
+    "repositionOverride": "Sta grenzend aan Lorn (alleen figuren zonder \"Massive\" of \"Non-Sentient\").",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "Bombardment 1",
+      "GUID": "a1da5642-7efc-4dfe-872d-9c095d79e9c3",
+      "eventText": "De bommenwerpershuttle keert om voor een nieuwe aanval. Explosies doen het restaurant op zijn grondvesten schudden.\n\n{-} Plaats 1 puin-token aan elke kant van de muur tussen Core 28B en Empire 18B.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 2",
+      "GUID": "6beddd1a-ab84-4ca7-b0cd-f397fec871c7",
+      "eventText": "De bommenwerpershuttle keert om voor een nieuwe aanval. Explosies doen het restaurant op zijn grondvesten schudden.\n\n{-} Plaats 1 puin-token aan elke kant van de muur tussen Core 23B en Empire 6B (laagst mogelijke positie).",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 3",
+      "GUID": "15210d80-ba8f-45c2-9ff9-cc1c851f2c22",
+      "eventText": "De bommenwerpershuttle keert om voor een nieuwe aanval. Explosies doen het restaurant op zijn grondvesten schudden.\r\n\r\n{-} Plaats 1 puin-token op het veld van het rebellenfiguur die grenst aan de meeste andere rebellenfiguren. Elk rebellenfiguur op of grenzend aan die puin-token lijdt 1 {C}. Elk figuur op die puin-token lijdt ook 1 {H}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 4",
+      "GUID": "3b229440-a554-407c-aab9-227f78b7a121",
+      "eventText": "De bommenwerpershuttle keert om voor een nieuwe aanval. Explosies doen het restaurant op zijn grondvesten schudden.\r\n\r\n{-} Plaats 1 puin-token op het veld van het rebellenfiguur die grenst aan de meeste andere rebellenfiguren. Elk rebellenfiguur op of grenzend aan die puin-token lijdt 1 {C}. Elk figuur op die puin-token lijdt ook 1 {H}.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 5",
+      "GUID": "78323a7e-9f9f-4824-8969-c0b746c5ddc4",
+      "eventText": "Alarmen blijven door de straten van Coruscant galmen en waarschuwen de keizerlijke troepen voor wat er aan de hand is.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment 6",
+      "GUID": "cfac4d25-94d5-439f-bab7-401d86d6165d",
+      "eventText": "Alarmen blijven door de straten van Coruscant galmen en waarschuwen de keizerlijke troepen voor wat er aan de hand is.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Bombardment Trigger",
+      "GUID": "b9c89a5d-76bd-4b75-a41c-ed5e93ca55db",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Keizerlijke soldaten omsingelen Lorn, smijten hem op de grond en boeien zijn handen stevig achter zijn rug. \"Help me! Laat me niet achter!\" roept hij wanhopig. Je weet dat deze strijd verloren is. Je onderdrukt je schuldgevoelens en laat de arme man achter, terwijl je probeert niet te denken aan het lot dat hem te wachten staat.\r\n\r\n{-} De rebellen verliezen de missie.\n{-} Het dreigingsniveau van de volgende missie (en alleen de volgende missie) stijgt met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers besluiten om 50 credits per held uit te geven om dit te voorkomen.\n{-} Elke held ontvangt 2 XP. De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "\"Heeft iemand een lift nodig?\" kraakt een stem via je comlink. Uit de smog boven je doemt een speeder op, die zich slingerend een weg naar de grond baant en het vuur van de cirkelende bommenwerper behendig ontwijkt. Hij landt precies lang genoeg om jou en Lorn aan boord te laten, waarna hij weer opstijgt en in de mistige nevel verdwijnt.\r\n\n\"Dat was op het nippertje!\" zegt Lorn, iets te opgewekt voor iemand die net uit een oorlogsgebied ontsnapt is. \"Bedankt voor je hulp! Nu wil ik graag iets terugdoen.\"\r\n\r\n{-} De rebellen winnen de missie!\n{-} De helden ontvangen de beloningskaart \"Inside Source\". (Deze beloningskaart werkt anders wanneer je met <b>Imperial Commander</b> speelt. Raadpleeg het gedeelte <b>Rules Change</b> van de wikidocumentatie voor meer informatie.)\r\n{-} Elke held ontvangt 2 XP. De helden ontvangen 100 credits per held.\n{-} De helden moeten kiezen of ze het artefact met of zonder Lorn willen achtervolgen. Als de helden het artefact met Lorn achtervolgen, leg dan de verhaalmissiekaart \"Geschiedenis herhaalt zich (History Repeats)\" in het spel. Als ze het zonder Lorn achtervolgen, leg dan de verhaalmissiekaart \"Vijanden dichterbij (Enemies Closer)\" in het spel.",
+      "eventActions": [
+        {
+          "mainText": "Is er maar 1 gezonde held?",
+          "buttonList": [
+            {
+              "GUID": "8d8778d6-9b04-48bd-a46c-b627f517758d",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "ee0dfae9-26c0-481d-9450-e685e59cf4d9",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "9d3c24ba-360f-4934-ade8-5deb209c4add",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Healthy Hero No",
+      "GUID": "64a222fd-16e5-4545-9d2b-2a8fe10f7261",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Healthy Hero Yes",
+      "GUID": "92cb039a-9d87-412e-8afd-a01f525208f5",
+      "eventText": "Het dreigingsniveau van de volgende missie (en alleen de volgende missie) wordt met 1 verhoogd. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers besluiten om 50 credits per held uit te geven om dit te voorkomen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Intrusion",
+      "GUID": "09ddd186-7d41-47bf-85b6-f792b390346c",
+      "eventText": "Militaire speeders naderen snel, terwijl zwaar gepantserde soldaten uit de transportvoertuigen springen.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "5832a217-3135-44c0-a80f-478316479a42",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG049/Riot Trooper (Elite)"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Yellow 1",
+              "GUID": "318c85f7-9805-4bcd-a226-7be45b3768d7",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Yellow 2",
+              "GUID": "491ef120-8b43-49a4-8066-890758af8faf",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "72c3d9ca-4db2-4aec-8f05-ad6cb125995d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Het kleine restaurant dat Lorn voor jullie ontmoeting heeft uitgekozen, ligt in een zwaar geïndustrialiseerd deel van de planeet. De lucht hangt vol smog en roet, zo dicht dat het moeilijk is om naderende schepen te zien.\n\nOm geen argwaan te wekken, blijft de helft van het team buiten bij de speeder, terwijl de anderen naar binnen gaan om contact te leggen. Je schuift in een zitje en wacht, turend naar de ingang, tot Lorn verschijnt.\n\nNa een paar drankjes die de serveerster je met zichtbaar schuldgevoel heeft aangesmeerd, begint de irritatie toe te slaan. Lorn is er nog steeds niet. Even denk je dat hij helemaal niet zal komen, maar dan valt je oog op een verdachte figuur in een lange jas en met een donkere bril. Je rolt met je ogen om de wel erg doorzichtige vermomming en staat op om contact te maken, tot een beweging in je ooghoek je aandacht trekt. Je bent niet alleen. Er is nog meer gezelschap.\n\nBuiten zwelt een zacht gezoem aan. Een gloeiende bol slaat in op je speeder en verandert het voertuig in een smeulend wrak. Door de rook heen zie je het silhouet van een bommenwerpershuttle, die al omkeert voor een nieuwe aanval. Je activeert haastig je noodbaken en hoopt dat de hulp op tijd zal arriveren.\r\n\r\n{-} Plaats de rebellen zo gelijkmatig mogelijk verdeeld tussen de 2 blauwe markeringen.",
+      "eventActions": [
+        {
+          "tbText": "Lorn zit ineengedoken in een hoek, zichtbaar in shock door de explosie, maar langzaam komt hij weer bij zinnen.",
+          "GUID": "5b964cf1-c4ec-419f-8868-89fe26e87fad",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Lorn",
+              "GUID": "9778b553-efb9-4b26-8274-14e5098f8d2d",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "43c6692e-2e24-497a-892e-168bfddab23d",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Plaats 1 rebellen missietoken zoals aangegeven. Dit is Lorn.\r\n{-} Lorn is een rebellenfiguur die door de rebellen als bondgenoot wordt bestuurd. Lorn kan geen {H} lijden.\n{-} Lorn wordt niet op de normale manier geactiveerd. In plaats daarvan voert hij aan het begin van elke statusfase 1 actie uit.\n{-} Als er geen gezonde helden binnen 3 velden van Lorn zijn, kan een keizerlijke figuur een interactie op Lorn uitvoeren om hem te arresteren wanneer dat wordt geïnstrueerd. Wanneer dat gebeurt, klik je op de keizerlijke missietoken en selecteer je \"Lorn gearresteerd\".",
+          "GUID": "b105c929-e6f1-4d5e-aae0-242334f974c4",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Lorn",
+              "GUID": "02412988-576f-47ae-b577-c622a890aadb",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "1d180127-e449-4410-a9f1-985197678024",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Plotseling schudt het gebouw door hevige explosies en storten delen van de muur in.",
+          "GUID": "3efe625c-14a1-439c-ae9d-2d6eaa9460ec",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Rubble 1",
+              "GUID": "92b565b4-df7c-4337-979d-6d09ce317b65",
+              "theText": "{-} Plaats op elk veld hier 1 puin-token.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Rubble 2",
+              "GUID": "4c75e93e-c4ce-4d4f-a0e5-2041654c56d9",
+              "theText": "{-} Plaats op elk veld hier 1 puin-token.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "c728e70e-f255-4a42-963f-f6495e45b2ae",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Plaats 1 puin-token op elk van de rood gemarkeerde velden.\r\n{-} Muren tussen 2 puin-tokens blokkeren de verplaatsing van figuren op die puin-tokens niet.",
+          "GUID": "26fdb11f-00d2-4f23-bd4f-fbb28d5f4b8a",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "\"Rebellenterroristen,\" galmt de versterkte stem van een keizerlijke commandant over het plein. \"Jullie bieden onderdak aan een gezochte verrader. Lever hem uit en geef je over. Doen jullie dat niet, dan zullen we jullie arresteren, desnoods met geweld.\"\n\nBuiten nemen ontzagwekkend veel keizerlijke troepen hun posities in. Niet veel later sluiten ook premiejagers zich aan, aangetrokken door de belofte van een snelle en gemakkelijke beloning.",
+          "GUID": "97405af1-5e8c-4650-a4d0-4deb5af90ebd",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "4036526b-ca2a-4d6e-9313-e9bfea70834d",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG053/Clawdite Shapeshifter"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "bb83c616-c0f4-4c27-9aa8-958f44d423c6",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG004/Imperial Officer"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "dc4f5eb9-0e27-4c81-8464-3f1f46c9f197",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG011/Probe Droid"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "0dc972f2-860c-44f8-91f3-b4a32f5c68ad",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG003/Stormtrooper (Elite)"
+        },
+        {
+          "tbText": "Je kijkt om je heen, op zoek naar een uitweg, wanneer de eerste soldaten het restaurant binnenstormen, gewapend met enorme oproerschilden. Twee Trandoshaanse klanten, die al je bewegingen nauwlettend hebben gevolgd, springen op, ontbloten hun tanden en grijpen hun wapens.",
+          "GUID": "9991c6ea-bb03-4330-8283-b8797980e32b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "b0787cce-9950-48e9-bdf6-413c6326fca5",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG047/Riot Trooper"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "c6e6b60f-a723-417d-a8f2-243e8dd69a9b",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG015/Trandoshan Hunter"
+        },
+        {
+          "newInstructions": "{-} Als Lorn aangrenzend is en er geen gezonde helden binnen 3 velden van Lorn zijn: arresteer Lorn. (Alleen figuren zonder \"Massive\" of \"Non-Sentient\")",
+          "GUID": "7ba6b65e-37a0-4062-ab97-a70781895197",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "tbText": "Je maakt je wapens gereed, in de hoop dat de evacuatie snel zal komen.\n\n{-} Wanneer het de beurt is aan de rebellen om een figuur te activeren, kunnen ze ervoor kiezen om de beurt terug te geven aan de keizerlijke speler.\n{-} De rebellen winnen aan het einde van ronde 7.\n{-} De rebellen verliezen wanneer Lorn gearresteerd wordt.",
+          "GUID": "b9203bd6-64cf-4d5d-afed-f4b51edfc6d1",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Bescherm Lorn.",
+          "longText": null,
+          "GUID": "b22d0e98-6e38-40c8-8ab7-0368a1fc5cd2",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        }
+      ]
+    },
+    {
+      "eventName": "On Patrol",
+      "GUID": "bc7c7bb6-4193-4ae2-8b86-56cba06225c3",
+      "eventText": "Een patrouille stormtroopers hoort het tumult rond het restaurant, stormt naar binnen en mengt zich meteen in de strijd.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "4b0be648-1bca-4560-9e3c-5a32bc1f30fa",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "DP Green 2",
+              "GUID": "252e0460-93e1-4a69-ab6f-a8cb68ae0def",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 3",
+              "GUID": "13109eba-3824-43e7-8d4b-a7bc850414fa",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "DP Green 4",
+              "GUID": "08137dee-1ca3-4006-ab44-86bfd67186d9",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "dd68b9ea-4fc4-4497-9ca5-6ea77b6d8a8a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "f2037eb8-7860-4951-971f-d417208d7076",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "06b72f01-872b-4341-8367-271a0c01312d",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "9b3a2b9e-e148-4c39-8f64-5ea7153a78ed",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "87ca8257-5cc3-485e-a161-97365cdc74df",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "085fb320-a2fb-468c-b997-42f76f03ffa6",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "d2a6d47f-7563-4355-8345-dceef72b8944",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Rebels Lose Bonus Credits",
+      "GUID": "1e764237-0372-404c-826a-5fcaf978fefd",
+      "eventText": "Omdat Lorn niet voor ronde 7 werd gearresteerd, ontvangen de helden 25 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Rebels Lose No Bonus Credits",
+      "GUID": "6381b60d-b612-4eb5-be22-6befded031e0",
+      "eventText": "Omdat dit ronde 7 is, ontvangen de helden 25 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Round 7 starts",
+      "GUID": "f2beeb78-c18d-4fa7-9971-fd6ae5e3fa2c",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Story 1",
+      "GUID": "fac456cf-6c32-4b32-9708-84538d36ec5d",
+      "eventText": "Het Keizerrijk besluit het artefact rechtstreeks te achtervolgen, in de hoop het vóór de helden te vinden.\r\n\r\n{-} Plaats de verhaalmissiekaart \"Vijanden dichterbij (Enemies Closer)\" in het spel.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Story 2",
+      "GUID": "24142781-4f57-4d08-aa89-dec53e4c9c27",
+      "eventText": "In plaats van het artefact rechtstreeks te achtervolgen, besluit het Keizerrijk om de helden te saboteren en hen te vertragen.\r\n\r\n{-} Plaats de verhaalmissiekaart \"Op de vlucht (On the Run)\" in het spel.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Vile Creatures",
+      "GUID": "e7a1428c-82d4-43ce-858f-4c4a2785cf50",
+      "eventText": "De achterwanden van het restaurant barsten open wanneer verborgen explosieven afgaan. Grommend stormen Trandoshaanse huurlingen naar binnen, met hun blasters getrokken.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "671ba25a-0664-4179-a472-05d57f193e69",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG016/Trandoshan Hunter (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "Walker Support",
+      "GUID": "7ba30888-5045-4e89-b23e-27e3a360142c",
+      "eventText": "\"Je krijgt me nooit levend te pakken!\" roept Lorn lachend naar de keizerlijke troepen terwijl je een andere soldaat uitschakelt. Plotseling voel je de grond ritmisch trillen en hoor je het bonkende gedreun van een naderende walker. Lorns lach sterft weg; zijn zelfvertrouwen is verdwenen.\n\n\"Bij nader inzien…\"",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "{-} CHARGE GENERATORS: Als deze figuur minder dan 9 {H} heeft geleden, krijgt het +2 {H}.\n{-} EXPLOSIVE SHOTS: Plaats na elke aanval 1 puin-token op het veld van de verdediger. Als de verdediger grenzend aan de muur stond, plaats dan ook 1 puin-token aan de andere kant van de muur, indien mogelijk.\n{Q} Verplaats 1 om {rebel} aan te vallen.\n{Q} Verplaats 1 om {rebel} aan te vallen.\n{Q}{A} Verplaats 3 om {rebel} aan te vallen.\n{A}{A} Verplaats 6 richting {rebel}.\n{A} Verplaats 2 richting de dichtstbijzijnde rebel.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "95c8aa6c-a44a-4bce-abb1-e21970d0a3ad",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG046/AT-DP"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Arrest Token",
+      "GUID": "5ed67f85-cc46-47e9-942a-44147e380ce9",
+      "mainText": "{-} Wanneer Lorn gearresteerd is, klik dan op \"Lorn gearresteerd\".",
+      "buttonList": [
+        {
+          "GUID": "f7c43e95-93ad-4c8a-aa10-cfdaee1c603c",
+          "theText": "Lorn gearresteerd"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "412e45a2-5009-45e8-aa24-9a37bb3ada93",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "95e52a17-75ad-42b4-8aa2-61eb3faef7a9",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "0f956e2c-894b-4de9-b716-28e346d32723",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "13302b9b-01cc-42bc-82df-1140c2b9afcb",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Black 1",
+      "GUID": "cb138c1f-99c3-482e-9a93-794529b2354b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Black 2",
+      "GUID": "e61b564c-e072-4a46-acfc-25843760934e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Clawdite",
+      "GUID": "111e8b4c-871b-434e-9d54-b4b96ad58de6",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 1",
+      "GUID": "96efd903-fa53-4958-870f-0c3a490e0588",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 2",
+      "GUID": "011fbe90-2374-4817-8867-4bec2c29d3f0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 3",
+      "GUID": "415fabe1-fdb7-4daf-a409-f4aec0113510",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 4",
+      "GUID": "2e35c1c1-e257-4195-ae0a-0b94cbd3e374",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 5",
+      "GUID": "683f3140-50cf-44c5-8c1c-b9a5c99ce91b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "49f3a43a-477b-42c8-817a-630f509e032e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Droid",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP RTrooper 1",
+      "GUID": "e5fc0f24-9e5e-4420-82d5-7583cbb41134",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP RTrooper 2",
+      "GUID": "274ebb06-986f-4aed-a2d7-5aaec76c9f05",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red",
+      "GUID": "ded513cc-509e-4eb2-8c4a-2e29c559bcf2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 1",
+      "GUID": "6e8c747c-e13d-431f-8a6e-a6bf8d4d42b7",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trando 2",
+      "GUID": "59b045e1-66e7-4c76-9f51-d267eb62bfcb",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 1",
+      "GUID": "ab63f242-66aa-49b0-8f3d-64f42d4fec9e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Yellow 2",
+      "GUID": "27a5a1d8-3ccc-41ec-80c4-de777d6e270f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance 1",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helft van de helden hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance 2",
+      "GUID": "af39b8f5-dbf6-441c-b5e1-f221ab357918",
+      "mainText": "Plaats de helft van de helden hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Lorn",
+      "GUID": "72d9bc48-2bd4-4243-8a02-d794ecec8439",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Rubble 1",
+      "GUID": "4869b0f2-600e-4a8c-8a02-c62fdd1857c3",
+      "mainText": "{-} Plaats op elk veld hier 1 puin-token.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Rubble 2",
+      "GUID": "b42c137c-9598-40be-a8b8-50a7309ebae4",
+      "mainText": "{-} Plaats op elk veld hier 1 puin-token.",
+      "buttonList": []
+    }
+  ],
+  "initialGroups": []
+}

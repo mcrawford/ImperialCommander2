@@ -1,104 +1,98 @@
 [
-	{
-		"id": "Lothal1",
-		"name": "Call to Action",
-		"descriptionText": "<i>\"Every time I have worked with a Rebel, everyone has profited!\" declares Hondo Ohnaka, former pirate and current ne'er-do-well. \"The Empire thinks there are no Rebels left on Lothal, so stealing this weapons should be like taking credits from a baby.\" He stares off into space, grinning. \"Ah, good times.\"</i>",
-		"bonusText": "",
-		"heroText": "",
-		"allyText": "",
-		"villainText": "",
-		"tagsText":
-			[
-			"Lothal",
-			"Outskirts"
-			],
-		"expansionText": "Tyrants of Lothal",
-		"rebelRewardText": "\"Nova Cell Leader\" Reward Card",
-		"imperialRewardText": ""
-	},
-	{
-		"id": "Lothal2",
-		"name": "Duel on Devaron",
-		"descriptionText": "<i>Tress's father used to tell the wildest stories of his days smuggling spice all over the Outer Rim. She remembers his bravado... and his obsessive need to record and protect every clever hyperroute he ever used. Though he is gone, these navigational records could help Rebel smugglers, but to get it, Tress will have to return to a home of which she has only bad memories.</i>",
-		"bonusText": "",
-		"heroText": "Tress Hacnua",
-		"allyText": "",
-		"villainText": "",
-		"tagsText":
-			[
-			"Devaron",
-			"Jungle"
-			],
-		"expansionText": "Tyrants of Lothal",
-		"rebelRewardText": "\"Wholeness\" Reward Card",
-		"imperialRewardText": ""
-	},
-	{
-		"id": "Lothal3",
-		"name": "Race on Ryloth",
-		"descriptionText": "<i>A recent ISB raid has captured supplies critical to the resistance on Ryloth, along with encrypted data detailing their operations across the planet. Hera Syndulla has dispatched one of her crew to help you reclaim the supplies and data before the Empire can use it against the Twi'lek rebels.</i>",
-		"bonusText": "",
-		"heroText": "",
-		"allyText": "Any 1 Spectre ally",
-		"villainText": "",
-		"tagsText":
-			[
-			"Ryloth",
-			"Plains"
-			],
-		"expansionText": "Tyrants of Lothal",
-		"rebelRewardText": "Any 1 Spectre ally",
-		"imperialRewardText": ""
-	},
-	{
-		"id": "Lothal4",
-		"name": "Sands of Seelos",
-		"descriptionText": "<i>Upon hearing that his commander during the Clone Wars, Wolffe, is not only alive but an ally to the Rebellion, CT-1701 volunteers his team to travel to Seelos to pick up useful intelligence gathered from Wolffe's stolen AT-AT walker. But the Empire arrives first, pursuing Wolffe's walker with their own armored war machines.</i>",
-		"bonusText": "",
-		"heroText": "CT-1701",
-		"allyText": "",
-		"villainText": "",
-		"tagsText":
-			[
-			"Seelos",
-			"Desert"
-			],
-		"expansionText": "Tyrants of Lothal",
-		"rebelRewardText": "\"Bullseye!\" Reward Card",
-		"imperialRewardText": ""
-	},
-	{
-		"id": "Lothal5",
-		"name": "Siege on Geonosis",
-		"descriptionText": "<i>Thanks to the reconnaissance the Spectres performed on Geonosis, the Rebellion sees an opportunity to salvage an old battle droid factory on the planet and turn these Clone Wars soldiers against the might of the Empire. A member of Spectre group will meet you at the side.</i>",
-		"bonusText": "",
-		"heroText": "",
-		"allyText": "Any 1 Spectre ally",
-		"villainText": "",
-		"tagsText":
-			[
-			"Geonosis",
-			"Facility"
-			],
-		"expansionText": "Tyrants of Lothal",
-		"rebelRewardText": "Any 1 Spectre ally",
-		"imperialRewardText": ""
-	},
-	{
-		"id": "Lothal6",
-		"name": "The Final Order",
-		"descriptionText": "<i>An Imperial engineer on Lothal has offered to defect. What's more, he claims to know where we can find vital information on Grand Admiral Thrawn's latest plans for the Lothal system. Command wants you to check into his claim and, if necessary, put a stop to whatever Thrawn is planning.</i>",
-		"bonusText": "",
-		"heroText": "",
-		"allyText": "",
-		"villainText": "",
-		"tagsText":
-			[
-			"Lothal",
-			"Outskirts"
-			],
-		"expansionText": "Tyrants of Lothal",
-		"rebelRewardText": "Credits",
-		"imperialRewardText": ""
-	}
+  {
+    "id": "Lothal1",
+    "name": "Oproep tot actie",
+    "descriptionText": "<i>\"Elke keer dat ik met een rebel samenwerkte, had iedereen daar baat bij!\" zegt Hondo Ohnaka, voormalig piraat en huidig nietsnut. \"Het Rijk gelooft dat er geen rebellen meer zijn op Lothal, dus het stelen van deze wapens zou een fluitje van een credit moeten zijn.\" Hij staart glimlachend voor zich uit. \"Ah, dat waren nog eens tijden.\"</i>",
+    "bonusText": "",
+    "heroText": "",
+    "allyText": "",
+    "villainText": "",
+    "tagsText": [
+      "Lothal",
+      "Outskirts"
+    ],
+    "expansionText": "Tyrants of Lothal",
+    "rebelRewardText": "\"Nova Cell Leader\" beloningskaart",
+    "imperialRewardText": ""
+  },
+  {
+    "id": "Lothal2",
+    "name": "Duel op Devaron",
+    "descriptionText": "<i>Tress' vader vertelde vroeger de meest avontuurlijke verhalen over zijn tijd als spice-smokkelaar in de Outer Rim. Ze herinnert zich zijn zelfverzekerdheid... en zijn bijna obsessieve drang om elke slimme hyperroute waarlangs hij reisde te documenteren en te bewaken. Hoewel hij er niet meer is, zouden deze navigatiegegevens een waardevolle hulp kunnen zijn voor rebellen-smokkelaars. Maar om ze te bemachtigen, moet Tress terugkeren naar een thuis dat voor haar enkel nare herinneringen met zich meebrengt.</i>",
+    "bonusText": "",
+    "heroText": "Tress Hacnua",
+    "allyText": "",
+    "villainText": "",
+    "tagsText": [
+      "Devaron",
+      "Jungle"
+    ],
+    "expansionText": "Tyrants of Lothal",
+    "rebelRewardText": "\"Wholeness\" beloningskaart",
+    "imperialRewardText": ""
+  },
+  {
+    "id": "Lothal3",
+    "name": "Race op Ryloth",
+    "descriptionText": "<i>Tijdens een recente operatie van de ISB zijn voorraden in beslag genomen die essentieel zijn voor het verzet op Ryloth. Daarnaast hebben ze versleutelde informatie bemachtigd over de activiteiten van het verzet op de planeet. Hera Syndulla heeft een van haar manschappen aangesteld om je te ondersteunen bij het terughalen van zowel de voorraden als de gegevens, voordat het Keizerrijk deze tegen de Twi'lek-rebellen kan gebruiken.</i>",
+    "bonusText": "",
+    "heroText": "",
+    "allyText": "Eén willekeurige Spectre-bondgenoot",
+    "villainText": "",
+    "tagsText": [
+      "Ryloth",
+      "Plains"
+    ],
+    "expansionText": "Tyrants of Lothal",
+    "rebelRewardText": "Eén willekeurige Spectre-bondgenoot",
+    "imperialRewardText": ""
+  },
+  {
+    "id": "Lothal4",
+    "name": "Het zand van Seelos",
+    "descriptionText": "<i>Toen CT-1701 vernam dat zijn voormalig commandant tijdens de Clone Wars, Wolffe, nog in leven is en bovendien een bondgenoot van het Verzet is, bood hij aan om samen met zijn team naar Seelos af te reizen. Het doel is om waardevolle informatie te verzamelen die afkomstig is uit Wolffe's gestolen AT-AT walker. Maar het Keizerrijk is hen voor en zet hun eigen gepantserde oorlogsmachines in om Wolffe's walker op te sporen</i>",
+    "bonusText": "",
+    "heroText": "CT-1701",
+    "allyText": "",
+    "villainText": "",
+    "tagsText": [
+      "Seelos",
+      "Desert"
+    ],
+    "expansionText": "Tyrants of Lothal",
+    "rebelRewardText": "\"Bullseye!\" beloningskaart",
+    "imperialRewardText": ""
+  },
+  {
+    "id": "Lothal5",
+    "name": "Belegering van Geonosis",
+    "descriptionText": "<i>Dankzij de verkenning van de Spectres op Geonosis heeft het Verzet een mogelijkheid ontdekt om een oude gevechtsdroidfabriek op de planeet nieuw leven in te blazen. Deze Kloonoorlog-troepen kunnen vervolgens worden ingezet tegen de heerschappij van het Rijk. Een lid van de Spectre-groep zal je ter plaatse opwachten.</i>",
+    "bonusText": "",
+    "heroText": "",
+    "allyText": "Eén willekeurige Spectre-bondgenoot",
+    "villainText": "",
+    "tagsText": [
+      "Geonosis",
+      "Facility"
+    ],
+    "expansionText": "Tyrants of Lothal",
+    "rebelRewardText": "Eén willekeurige Spectre-bondgenoot",
+    "imperialRewardText": ""
+  },
+  {
+    "id": "Lothal6",
+    "name": "Het laatste bevel",
+    "descriptionText": "<i>Een keizerlijke ingenieur op Lothal heeft aangegeven over te willen lopen. Daarnaast claimt hij waar we cruciale informatie kunnen vinden over de nieuwste plannen van grootadmiraal Thrawn met betrekking tot het Lothal-stelsel. Het oppercommando geeft je de opdracht om zijn beweringen te verifiëren en, indien nodig, Thrawns plannen te verijdelen.</i>",
+    "bonusText": "",
+    "heroText": "",
+    "allyText": "",
+    "villainText": "",
+    "tagsText": [
+      "Lothal",
+      "Outskirts"
+    ],
+    "expansionText": "Tyrants of Lothal",
+    "rebelRewardText": "Credits",
+    "imperialRewardText": ""
+  }
 ]

@@ -8,8 +8,8 @@ using UnityEngine;
 
 public static class DataStore
 {
-	public static readonly string appVersion = "v.2.2.13";
-	public static readonly string[] languageCodeList = { "En", "De", "Es", "Fr", "Pl", "It", "Hu", "No", "Ru", "Nl", "Pt" };
+	public static readonly string appVersion = "v.2.2.15";
+	public static readonly string[] languageCodeList = { "En", "De", "Es", "Fr", "Pl", "It", "Hu", "No", "Ru", "Nl", "Br" };
 
 	public static Mission mission;
 	public static GameType gameType;
@@ -1176,5 +1176,39 @@ public static class DataStore
 			PlayerPrefs.SetInt( "defaultEliteEnemyColor2", 0 );//0=grey
 		if ( !PlayerPrefs.HasKey( "defaultVillainColor" ) )
 			PlayerPrefs.SetInt( "defaultVillainColor", 0 );//0=grey
+
+		//keyboard mapping
+		if ( !PlayerPrefs.HasKey( "mapActivateImperials" ) )
+			PlayerPrefs.SetString( "mapActivateImperials", "I" );
+		if ( !PlayerPrefs.HasKey( "mapToggleCamView" ) )
+			PlayerPrefs.SetString( "mapToggleCamView", "Home" );
+		if ( !PlayerPrefs.HasKey( "mapToggleMapVisibility" ) )
+			PlayerPrefs.SetString( "mapToggleMapVisibility", "M" );
+		if ( !PlayerPrefs.HasKey( "mapNavForward" ) )
+			PlayerPrefs.SetString( "mapNavForward", "W" );
+		if ( !PlayerPrefs.HasKey( "mapNavBack" ) )
+			PlayerPrefs.SetString( "mapNavBack", "S" );
+		if ( !PlayerPrefs.HasKey( "mapNavLeft" ) )
+			PlayerPrefs.SetString( "mapNavLeft", "A" );
+		if ( !PlayerPrefs.HasKey( "mapNavRight" ) )
+			PlayerPrefs.SetString( "mapNavRight", "D" );
+		if ( !PlayerPrefs.HasKey( "mapNavCW" ) )
+			PlayerPrefs.SetString( "mapNavCW", "Q" );
+		if ( !PlayerPrefs.HasKey( "mapNavCCW" ) )
+			PlayerPrefs.SetString( "mapNavCCW", "E" );
+	}
+
+	public static void SetDefaultKeyMaps()
+	{
+		Debug.Log( "SetDefaultKeyMaps()" );
+		PlayerPrefs.SetString( "mapActivateImperials", "I" );
+		PlayerPrefs.SetString( "mapToggleCamView", "Home" );
+		PlayerPrefs.SetString( "mapToggleMapVisibility", "M" );
+		PlayerPrefs.SetString( "mapNavForward", "W" );
+		PlayerPrefs.SetString( "mapNavBack", "S" );
+		PlayerPrefs.SetString( "mapNavLeft", "A" );
+		PlayerPrefs.SetString( "mapNavRight", "D" );
+		PlayerPrefs.SetString( "mapNavCW", "Q" );
+		PlayerPrefs.SetString( "mapNavCCW", "E" );
 	}
 }

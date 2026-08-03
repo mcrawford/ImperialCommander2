@@ -1,0 +1,824 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Het zand van Seelos",
+    "missionDescription": "Als je een minicampagne speelt, moeten helden een Spectre-bondgenoot meenemen die ze tijdens deze minicampagne nog niet hebben meegenomen op een missie. ==== Toen CT-1701 vernam dat zijn voormalig commandant tijdens de Clone Wars, Wolffe, nog in leven is en bovendien een bondgenoot is van het Verzet, bood hij aan om samen met zijn team naar Seelos af te reizen. Het doel is om waardevolle informatie te verzamelen die afkomstig is uit Wolffe's gestolen AT-AT walker. Maar het Keizerrijk is hen voor en zet hun eigen gepantserde oorlogsmachines in om Wolffe's walker op te sporen.",
+    "missionInfo": "",
+    "campaignName": "Tyrants of Lothal",
+    "startingObjective": "",
+    "repositionOverride": "Blokkeer de toegang tot de deuren.",
+    "additionalMissionInfo": "Als je een minicampagne speelt, moeten helden een Spectre-bondgenoot meenemen die ze tijdens deze minicampagne nog niet hebben meegenomen op een missie."
+  },
+  "events": [
+    {
+      "eventName": "AT-AT Activation captured",
+      "GUID": "7c682a51-7630-4c28-bc80-dcd3edc13169",
+      "eventText": "De hele vloer schommelt terwijl de AT-AT's voortploeteren.\n\n{-} Activeer beide rebellen AT-AT's.\n{-} Aan het begin van de activering van de veroverde AT-AT mag een held op of grenzend aan de besturing (blauwe terminal) {I} of {J} testen. Als dit lukt, krijgt de veroverde AT-AT 1 verplaatspunt.\n{-} Aan het begin van de activering van de veroverde AT-AT mag een held op of grenzend aan de vuurbesturing (rode terminal) {I} of {K} testen. Als dit lukt, krijgt de veroverde AT-AT 1 {h}.\n\n{-} Na de activering van de rebellen AT-AT's voert de keizerlijke AT-AT de volgende instructies uit:\n\n{A} Verplaats 1 naar de rebellen AT-AT die de meeste schade {H} heeft opgelopen.\n{Q} Val de rebellen AT-AT aan die de meeste schade {H} heeft opgelopen.\n\n(AT-AT's hebben een gezondheid van 9, verdediging: geen, aanval: {O} 1 blauwe dobbelsteen en een snelheid van 1.)",
+      "eventActions": []
+    },
+    {
+      "eventName": "AT-AT Activation uncaptured",
+      "GUID": "04bf8ddb-7b81-4456-8363-cc47e16423d5",
+      "eventText": "De hele vloer schommelt terwijl de AT-AT's voortploeteren.\n\n{-} Activeer de rebellen AT-AT. De rebellen AT-AT kan niet aanvallen.\n{-} Vervolgens voert elke keizerlijke AT-AT de volgende instructies uit, te beginnen met de AT-AT die het verst verwijderd is van de rebellen AT-AT:\r\n\r\n{A} Verplaats 1 richting de rebellen AT-AT.\n{Q} Val de rebellen AT-AT aan.\n\n(AT-AT's hebben een gezondheid van 9, verdediging: geen, aanval: {O} 1 blauwe dobbelsteen en een snelheid van 1.)",
+      "eventActions": []
+    },
+    {
+      "eventName": "CT present",
+      "GUID": "40cbb412-440f-413e-ba4b-bb41322b1182",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Cockpit breached",
+      "GUID": "3c0b3db6-1f68-4701-b61e-3195b039e6cc",
+      "eventText": "Je breekt de deur naar de cockpit open en stormt naar binnen.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Cockpit Door",
+              "GUID": "5641c490-1d75-4b2d-bc84-9e06e38c723f",
+              "theText": "Een stevige deur leidt naar de cockpit van de AT-AT.",
+              "buttonList": [
+                {
+                  "GUID": "340e019b-2935-4793-a750-af317a44995f",
+                  "theText": "{A} Openen"
+                }
+              ]
+            },
+            {
+              "entityName": "DP Green 1",
+              "GUID": "62def6d7-5936-4853-a9f7-7efb7844a37c",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "76a96fe2-f207-4d8a-90e5-7b66c4c9342c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Onmiddellijk draait de bemanning van de AT-AT zich naar je toe.",
+          "GUID": "bef80eae-8e19-423a-ad89-e49cfac1e2dc",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "4fadfcb2-99f1-4005-ac1e-5352f381e01b",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG006/Imperial Officer (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "f6c2f7f8-472d-48c5-87f4-3d530557984d",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG057/Death Trooper"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "2e251528-91d9-4b70-b60a-15ea8bf1d98f",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG058/Death Trooper (Elite)"
+        },
+        {
+          "tbText": "Achter de troepen zie je de bediening van de walker, klaar om over te nemen.",
+          "GUID": "51343bd9-c96c-4940-b738-a9864ae940cd",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Steering control",
+              "GUID": "1f0887b2-5200-489d-9b06-b20acf1cb977",
+              "theText": "De besturing regelt de bewegingen van de walker.\n\n{-} Een held kan een interactie uitvoeren op beide terminals om de walker over te nemen.",
+              "buttonList": [
+                {
+                  "GUID": "910a93e1-36ea-477f-a56e-a194015fb4cc",
+                  "theText": "{A} Neem de controle over"
+                }
+              ]
+            },
+            {
+              "entityName": "Fire control",
+              "GUID": "d82d5e00-4ae8-4db7-a918-31c10f467504",
+              "theText": "De vuurbediening bestuurt de kanonnen van de walker.\r\n\r\n{-} Een held kan een interactie uitvoeren op beide terminals om de walker over te nemen.",
+              "buttonList": [
+                {
+                  "GUID": "203a5f2b-6d51-4c6e-be38-8feb0287ad91",
+                  "theText": "{A} Neem de controle over"
+                }
+              ]
+            }
+          ],
+          "GUID": "d816571e-6dea-4f54-8c67-244d6cb9d940",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Een held kan een interactie uitvoeren op beide terminals om de walker over te nemen.\r\n{-} De missie gaat verder wanneer een held de controle over de walker overneemt.",
+          "GUID": "c685b3db-0a4e-4f89-bd67-ca1dae20bb37",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "repositionText": "Blokkeer de toegang tot de terminals.",
+          "GUID": "1c74da82-8392-425d-8a2e-6fd515d11532",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Neem de controle over de walker.",
+          "longText": "",
+          "GUID": "2c515325-c97c-439d-945e-ec9f5e6e02ab",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Het Seelos-speelbord en alle tokens daarop kunnen niet worden beïnvloed door kaart effecten.\n{-} De rebellen missietoken stelt de AT-AT van de rebellen voor.\n{-} De keizerlijke missietokens stellen de keizerlijke AT-AT's voor.\n{-} AT-AT's hebben een gezondheid van 9, verdediging: geen, aanval: {O} 1 blauwe dobbelsteen en een snelheid van 1.\n{-} Rebellen missietokens zijn rebellenfiguren en keizerlijke missietokens zijn keizerlijke figuren.\n{-} Rebellen AT-AT's kunnen niet aanvallen.\n{-} AT-AT's worden niet op de normale manier geactiveerd. In plaats daarvan wordt aan het einde van de activeringsfase elke rebellen AT-AT geactiveerd. Daarna wordt elke keizerlijke AT-AT geactiveerd.\n{-} Een held kan een interactie uitvoeren op beide terminals om de walker over te nemen.\n{-} De missie gaat verder wanneer een held de controle over de walker overneemt.\n{-} Wanneer een rebellen AT-AT verslagen is, klik je op de markering op het Seelos-speelbord en selecteer je \"rebellen AT-AT verslagen\".\n{-} De rebellen verliezen wanneer een rebellen AT-AT verslagen is of wanneer alle helden gewond zijn.",
+          "GUID": "7242278f-a3db-4b86-aed1-240a23de8058",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Commandeered",
+      "GUID": "879d40c3-00b8-4e8c-9322-29c6f4cea4a4",
+      "eventText": "Je neemt de controle over van de keizerlijke troepen en neemt zelf plaats in de pilotenstoel. \"Goed gedaan!\", roept Wolffe via de comlink. \"Tijd om de aanval in te zetten, klaar?\" Buiten zie je hoe Wolffe's AT-AT langzaam draait en zich richt op zijn achtervolgers. De jacht is geopend.\r\n\r\n{-} Draai één keizerlijke AT-AT naar de rebellenkant. Dit is de veroverde AT-AT. \n{-} Rebellen AT-AT's kunnen nu aanvallen.",
+      "eventActions": [
+        {
+          "tbText": "{-} Aan het begin van de activering van de veroverde AT-AT mag een held op of grenzend aan de besturing (blauwe terminal) {I} of {J} testen. Als dit lukt, krijgt de veroverde AT-AT 1 verplaatspunt.\n{-} Aan het begin van de activering van de veroverde AT-AT mag een held op of grenzend aan de vuurbesturing (rode terminal) {I} of {K} testen. Als dit lukt, krijgt de veroverde AT-AT 1 {h}.\n{-} Wanneer een rebellen AT-AT verslagen is, klik je op de markering op het Seelos-speelbord en selecteer je \"rebellen AT-AT verslagen\". Wanneer een keizerlijke AT-AT verslagen is, klik je op de markering op het Seelos-speelbord en selecteer je \"keizerlijke AT-AT verslagen\".\n{-} De rebellen winnen wanneer de keizerlijke AT-AT verslagen is.",
+          "GUID": "ee1695c3-fc5d-4133-b4a6-0e7dd8b8d70b",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "AT-AT Highlight",
+              "GUID": "2589a7a7-dd4a-49cb-9246-f50c14881960",
+              "theText": "Wanneer een Rebel AT-AT verslagen is, klik je op \"rebellen AT-AT verslagen\".\nWanneer een keizerlijke AT-AT verslagen is, klik je op \"keizerlijke AT-AT verslagen\".",
+              "buttonList": [
+                {
+                  "GUID": "5c211d4c-0920-4267-9ff5-f2f1327d5474",
+                  "theText": "Rebellen AT-AT verslagen"
+                },
+                {
+                  "GUID": "80a35c4d-9540-4d41-9a3c-8d443269c1d1",
+                  "theText": "Keizerlijke AT-AT verslagen"
+                }
+              ]
+            },
+            {
+              "entityName": "Steering control",
+              "GUID": "2c8b0d4d-abce-4597-8bd2-db3b77fdafb7",
+              "theText": "De besturing regelt de bewegingen van de walker.\r\n\r\n{-} Aan het begin van de activering van de veroverde AT-AT mag een held op of grenzend aan de besturing {I} of {J} testen. Als dit lukt, krijgt de veroverde AT-AT 1 verplaatspunt.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Fire control",
+              "GUID": "af42b04a-a517-4d9d-aaff-3fa319020957",
+              "theText": "De vuurbediening bestuurt de kanonnen van de walker.\r\n\r\n{-} Aan het begin van de activering van de veroverde AT-AT mag een held op of grenzend aan de vuurbesturing {I} of {K} testen. Als dit lukt, krijgt de veroverde AT-AT 1 {h}.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "b827f5a8-ee8c-425d-a562-e5462612f6c7",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": null,
+          "GUID": "ebb2b006-8de0-46c9-bb4c-3d73f2fe0922",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "shortText": "Vernietig de keizerlijke AT-AT.",
+          "longText": null,
+          "GUID": "8e242316-4d7a-460a-bb73-e4909ff92f86",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Het Seelos-speelbord en alle tokens daarop kunnen niet worden beïnvloed door kaart effecten.\r\n{-} De rebellen missietoken stelt de AT-AT van de rebellen voor.\r\n{-} De keizerlijke missietokens stellen de keizerlijke AT-AT's voor.\n{-} AT-AT's hebben een gezondheid van 9, verdediging: geen, aanval: {O} 1 blauwe dobbelsteen en een snelheid van 1.\n{-} Rebellen missietokens zijn rebellenfiguren en keizerlijke missietokens zijn keizerlijke figuren.\n{-} AT-AT's worden niet op de normale manier geactiveerd. In plaats daarvan wordt aan het einde van de activeringsfase elke rebellen AT-AT geactiveerd. Daarna wordt elke keizerlijke AT-AT geactiveerd.\r\n{-} Aan het begin van de activering van de veroverde AT-AT mag een held op of grenzend aan de besturing (blauwe terminal) {I} of {J} testen. Als dit lukt, krijgt de veroverde AT-AT 1 verplaatspunt.\n{-} Aan het begin van de activering van de veroverde AT-AT mag een held op of grenzend aan de vuurbesturing (rode terminal) {I} of {K} testen. Als dit lukt, krijgt de veroverde AT-AT 1 {h}.\n{-} Wanneer een rebellen AT-AT verslagen is, klik je op de markering op het Seelos-speelbord en selecteer je \"rebellen AT-AT verslagen\". Wanneer een keizerlijke AT-AT verslagen is, klik je op de markering op het Seelos-speelbord en selecteer je \"keizerlijke AT-AT verslagen\".\n{-} De rebellen winnen wanneer de keizerlijke AT-AT verslagen is.\r\n{-} De rebellen verliezen wanneer een rebellen AT-AT verslagen is of wanneer alle helden gewond zijn.",
+          "GUID": "414300af-efb1-4768-bf57-1f36b58f7773",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Je wordt gedwongen je terug te trekken naar de shuttle. Terwijl je opstijgt, zie je hoe een salvo van de walkers één van de poten van de AT-AT van de klooncommandanten wegschiet, waardoor het gevaarte instort.\n\n{-} De rebellen verliezen de missie.",
+      "eventActions": [
+        {
+          "mainText": "Speel je deze missie als onderdeel van de minicampagne \"Tyrants of Lothal\"?",
+          "buttonList": [
+            {
+              "GUID": "e04d0b57-8803-4051-bcba-b21e0d7e8289",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "dca505c2-3a29-4625-8f57-1db287b1e93c",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "922d0b18-3b9c-4426-b8b1-9d79afd7d873",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "De keizerlijke walker ontploft in een vurige wolk. De klooncommandanten zijn weer veilig.\n\n{-} De rebellen winnen de missie!",
+      "eventActions": [
+        {
+          "mainText": "Speel je deze missie als onderdeel van de minicampagne \"Tyrants of Lothal\"?",
+          "buttonList": [
+            {
+              "GUID": "79e23f30-9b9c-4823-bb3a-d16396d9a092",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "42245da9-e0ad-414a-884e-d83e9ebd3d74",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "fa160c96-ff1c-4306-ad5f-f40d51ef9331",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Round 5",
+      "GUID": "78a68094-fadf-4982-ac61-b80c37a2d0eb",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Round 5 Check",
+      "GUID": "7749a7e7-c54b-4581-af6d-197414ec927b",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Extended campaign 1",
+      "GUID": "2f95d44b-fe49-4580-aed5-8b4db04f67d8",
+      "eventText": "\"We houden ons gedeisd,\" vertelt Hera je. \"Wat nu het belangrijkste is, is een manier vinden om Thrawn af te leiden.\"\r\n\r\nJe neemt contact op met je informant op Lothal, de droid N-4M. Hij lijkt verheugd om van je te horen – althans, zo verheugd als een analysedroid kan zijn. N-4M vertelt je, \"Je hebt het lokale garnizoen wat ongemak bezorgd. Ze bereiden zich nu voor op de mogelijkheid van een grotere rebellenaanval.\"\r\n\r\nN-4M verschuift zijn holodisplay om te focussen op het oppervlak van Lothal. \"Het Keizerrijk drijft hun dwangarbeiders harder dan ooit. Eén officier in het bijzonder, kolonel Xarok, krijgt snel een reputatie vanwege zijn bijzonder... agressieve praktijken.\"\r\n\r\n{-} De volgende actieve missie is \"Overmacht van de Leiding (Executive Overreach)\" (Ezra & Kanan Ally Pack).",
+      "eventActions": []
+    },
+    {
+      "eventName": "Extended campaign 2",
+      "GUID": "fbdc139d-95c5-421b-9b4a-ace4b3010a6b",
+      "eventText": "\"We houden ons gedeisd,\" vertelt Hera je. \"Wat nu het belangrijkste is, is een manier vinden om Thrawn af te leiden.\"\r\n\r\nJe neemt contact op met je informant op Lothal, de droid N-4M. Hij lijkt verheugd om van je te horen – althans, zo verheugd als een analysedroid kan zijn. N-4M vertelt je, \"Je hebt het lokale garnizoen wat ongemak bezorgd. Ze bereiden zich nu voor op de mogelijkheid van een grotere rebellenaanval.\"\r\n\r\nN-4M toont een diagram van de keizerlijke bevoorradingsroutes naar Lothal. \"Verschillende Wookiee-arbeiders kwamen onlangs in opstand in een werkkamp dat direct verbonden is met de operaties van Thrawn. Hun poging is echter mislukt en het Keizerrijk dreigt nu met wraakacties tegen hun families. Misschien kun je iets ondernemen om de Wookiees te helpen.\"\r\n\r\n{-} De volgende actieve missie is \"Intimidatiefactor (Intimidation Factor)\" (Sabine & Zeb Ally Pack).",
+      "eventActions": []
+    },
+    {
+      "eventName": "Extended campaign 3",
+      "GUID": "3b320c43-2936-47f5-8dab-d5677138c38d",
+      "eventText": "\"We houden ons gedeisd,\" vertelt Hera je. \"Wat nu het belangrijkste is, is een manier vinden om Thrawn af te leiden.\"\r\n\r\nJe neemt contact op met je informant op Lothal, de droid N-4M. Hij lijkt verheugd om van je te horen – althans, zo verheugd als een analysedroid kan zijn. N-4M vertelt je, \"Je hebt het lokale garnizoen wat ongemak bezorgd. Ze bereiden zich nu voor op de mogelijkheid van een grotere rebellenaanval.\"\r\n\r\nN-4M verschuift zijn holodisplay om te focussen op het oppervlak van Lothal. \"Het Keizerrijk drijft hun dwangarbeiders harder dan ooit. Eén officier in het bijzonder, kolonel Xarok, krijgt snel een reputatie vanwege zijn bijzonder... agressieve praktijken.\"\r\n\r\nN-4M toont een diagram van de keizerlijke bevoorradingsroutes naar Lothal. \"Verschillende Wookiee-arbeiders kwamen onlangs in opstand in een werkkamp dat direct verbonden is met de operaties van Thrawn. Hun poging is echter mislukt en het Keizerrijk dreigt nu met wraakacties tegen hun families. Misschien kun je iets ondernemen om de Wookiees te helpen.\"\r\n\r\n{-} De helden kiezen gezamenlijk of ze kolonel Xarok aanvallen of de Wookiees helpen.\r\n{-} Als de helden ervoor kiezen om kolonel Xarok aan te vallen, is de volgende actieve missie \"Overmacht van de Leiding (Executive Overreach)\" (Ezra & Kanan Ally Pack).\r\n{-} Als de helden ervoor kiezen om de Wookiees te helpen, is de volgende actieve missie ‘‘Intimidatiefactor (Intimidation Factor)\" (Sabine & Zeb Ally Pack).",
+      "eventActions": []
+    },
+    {
+      "eventName": "Foresection entered",
+      "GUID": "8c7aa9d0-dd40-4965-910a-5dd6fdef2d8d",
+      "eventText": "Je opent de deur en staat oog in oog met nog meer soldaten.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Mid Section Door",
+              "GUID": "a14ba52c-55bc-4f91-a7d4-288606234d24",
+              "theText": "Een stevige deur leidt dieper de AT-AT in.",
+              "buttonList": [
+                {
+                  "GUID": "e7f6f50d-7d98-4af4-8e72-49cf5553b5a1",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "fc684a2b-ca11-4320-8b7e-31abed3a0026",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Intruder Alert",
+      "GUID": "f6257004-674b-4d10-a96e-5845329276e0",
+      "eventText": "Meer troepen stormen naar binnen om te voorkomen dat je de AT-AT in beslag neemt.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mini campaign Defeat",
+      "GUID": "ee9e6f21-9b9f-47ca-b982-44b59453a837",
+      "eventText": "Je houdt je bijna een week lang gedeisd voordat je de Ghost weer ontmoet. Onder de Spectres hangt een sombere sfeer zodra het nieuws hen bereikt. Ezra is de eerste die de stilte doorbreekt. \n\n\"Wolffe en Gregor hebben de Kloonoorlog overleefd. Ze kunnen dit ook overleven.\"\r\n\r\n\"We hadden er allemaal bij moeten zijn,\" gromt Zeb.\n\n\"Ik weet zeker dat iedereen heeft gedaan wat hij kon,\" zegt Hera.\n\n{-} Elke held ontvangt 3 XP.\n{-} De helden ontvangen 300 credits per held.",
+      "eventActions": [
+        {
+          "mainText": "Selecteer hieronder de juiste optie.\r\n\r\n{-} Uitgebreide campagne 1: Ik speel de uitgebreide minicampagne met het Ezra Bridger / Kanan Jarrus Ally Pack.\r\n{-} Uitgebreide campagne 2: Ik speel de uitgebreide minicampagne met het Sabine Wren / Zeb Orrelios Ally Pack.\r\n{-} Uitgebreide campagne 3: Ik speel de uitgebreide minicampagne met beide Ally Packs.\r\n{-} Minicampagne: Ik speel de reguliere minicampagne \"Tyrants of Lothal\" zonder één van de bovenstaande Ally Packs.",
+          "buttonList": [
+            {
+              "GUID": "20c4cb6c-a9cf-49c7-ace4-f07dccc38bfb",
+              "theText": "Uitgebreide campagne 1"
+            },
+            {
+              "GUID": "07eed054-933c-41c2-b6b6-039ef06a1971",
+              "theText": "Uitgebreide campagne 2"
+            },
+            {
+              "GUID": "70d5e00d-ec89-45d7-9b56-15107d9cb1fc",
+              "theText": "Uitgebreide campagne 3"
+            },
+            {
+              "GUID": "f090acbe-3116-4e5a-a317-e2145fed9418",
+              "theText": "Minicampagne"
+            }
+          ],
+          "GUID": "c47a75a7-d9d7-4f27-ab49-39ee814934b8",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Mini campaign Win",
+      "GUID": "1fb0c0b1-7388-42f6-9c4c-801de27f03a5",
+      "eventText": "Wolffe neemt contact met je op en stuurt hun gestolen codes via een beveiligd kanaal. De grijsharige kloonsoldaat lijkt bijna vrolijk. \"Ik ken clankers die meer weerstand bieden dan die nieuwe soldaten. We zijn je iets verschuldigd, jongen.\"\r\n\r\nTijdens je volgende ontmoeting delen de Spectres hun opluchting over de veiligheid van Wolffe en Gregor. Sabine onderzoekt de door Wolffe overgebrachte codes. \"We kunnen deze een tijdje gebruiken voordat ze erachter komen,\" zegt ze.\n\n{-} Elke held ontvangt 3 XP.\n{-} De helden ontvangen 300 credits per held.",
+      "eventActions": [
+        {
+          "mainText": "Selecteer hieronder de juiste optie.\r\n\r\n{-} Uitgebreide campagne 1: Ik speel de uitgebreide minicampagne met het Ezra Bridger / Kanan Jarrus Ally Pack.\r\n{-} Uitgebreide campagne 2: Ik speel de uitgebreide minicampagne met het Sabine Wren / Zeb Orrelios Ally Pack.\r\n{-} Uitgebreide campagne 3: Ik speel de uitgebreide minicampagne met beide Ally Packs.\r\n{-} Minicampagne: Ik speel de reguliere minicampagne \"Tyrants of Lothal\" zonder één van de bovenstaande Ally Packs.",
+          "buttonList": [
+            {
+              "GUID": "9d3b40b7-6b49-4f27-9f43-45f8c387c6d3",
+              "theText": "Uitgebreide campagne 1"
+            },
+            {
+              "GUID": "4af18656-a2f8-448c-bc39-90c94a83a885",
+              "theText": "Uitgebreide campagne 2"
+            },
+            {
+              "GUID": "29bfbf8b-b6b4-4d09-a327-0cd15b18233b",
+              "theText": "Uitgebreide campagne 3"
+            },
+            {
+              "GUID": "066f28b3-950e-4fc9-a4ab-fc4a55f9c440",
+              "theText": "Minicampagne"
+            }
+          ],
+          "GUID": "d93f8f65-094a-440f-bd2c-2849d9099137",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Wanneer je de coördinaten nadert die je van Wolffe hebt ontvangen, ontvouwt het dorre landschap van Seelos zich voor je.",
+      "eventActions": [
+        {
+          "tbText": "Vanuit de lucht zien de kolossale oorlogsmachines in de woestijn eruit als kinderspeelgoed. Maar terwijl je piloot het vaartuig versnelt en je dichterbij komt, wordt al snel de indrukwekkende omvang van de intimiderende AT-AT-walkers zichtbaar.\n\n{-} Het Seelos-speelbord en alle daarop geplaatste tokens kunnen niet worden beïnvloed door kaarteffecten.",
+          "GUID": "9e5cdd57-ca7e-4958-b834-cb2e983d3648",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Rebel AT-AT",
+              "GUID": "a5d11d81-549b-42d3-aa7e-1406c1f440cf",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "c7063f61-1a96-4782-894c-99523a820ac8",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Wolffe's walker is gehavend en vertoont schroeiplekken. \n\n{-} De rebellen missietoken stelt de AT-AT van de rebellen voor.",
+          "GUID": "148debf2-ccc7-4f80-b8a8-ca31e1dd5088",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "In de verte doemen achter Wolffe's walker nog twee AT-AT's op. Hun zware, langzame passen lijken traag, maar ze zitten Wolffe op de hielen en beschieten hem onophoudelijk.",
+          "GUID": "8e9771aa-7e1d-493f-bf11-b98aec43f537",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Imperial AT-AT 1",
+              "GUID": "5cce025e-6117-4f04-8d60-1cb3cbcb4bf7",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Imperial AT-AT 2",
+              "GUID": "53c97387-3b31-4239-9169-9423fb7821dd",
+              "theText": null,
+              "buttonList": []
+            }
+          ],
+          "GUID": "be3bd227-8870-4991-b491-b96d1e14fc9b",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} De keizerlijke missietokens stellen de keizerlijke AT-AT's voor.\n{-} AT-AT's hebben een gezondheid van 9, verdediging: geen, aanval: {O} 1 blauwe dobbelsteen en een snelheid van 1.\n{-} Rebellen missietokens zijn rebellenfiguren en keizerlijke missietokens zijn keizerlijke figuren.\n{-} Rebellen AT-AT's kunnen niet aanvallen.\n{-} AT-AT's worden niet op de normale manier geactiveerd. In plaats daarvan wordt aan het einde van de activeringsfase elke rebellen AT-AT geactiveerd. Daarna wordt elke keizerlijke AT-AT geactiveerd.",
+          "GUID": "10dfa0a8-db85-4611-8e38-d074f14626b0",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "\"Zet je schrap\", waarschuwt je piloot. \"Ik ga dalen.\" Je shuttle landt op één van de walkers, waarna je via een noodluik naar binnen breekt.",
+          "GUID": "c93d9492-1f2f-4977-9d0d-8eb79fd8494f",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "Je klimt naar beneden en staat plots oog in oog met een volledig leger van keizerlijke troepen.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.",
+          "GUID": "af2a2205-73db-4170-a9f2-0749d9800829",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "bc186a0b-e449-43fa-a181-a566d7cdde5e",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG001/Stormtrooper"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "b252ddff-d004-457d-adeb-192ea150e815",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG004/Imperial Officer"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "0e89fab0-438f-4d56-8961-f49478ddae3e",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG056/Death Trooper"
+        },
+        {
+          "tbText": "Als je Wolffe een kans wilt geven, moet je deze walker zo snel mogelijk veroveren.\r\n\r\n{-} De missie gaat verder wanneer de rebellen de cockpit bereiken.\n{-} Wanneer een rebellen AT-AT verslagen is, klik je op de markering op het Seelos-speelbord en selecteer je ‘rebellen AT-AT verslagen’.\n{-} De rebellen verliezen wanneer een rebellen AT-AT verslagen is of wanneer alle helden gewond zijn.",
+          "GUID": "560fafe8-2aeb-4b58-a583-5c211a581a32",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Rebel AT-AT",
+              "GUID": "89237206-9c70-453f-b729-15b106d71483",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Imperial AT-AT 1",
+              "GUID": "81a5b19e-4e71-4f83-b906-2985f5acb1e2",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "Imperial AT-AT 2",
+              "GUID": "8af30721-51ff-4f2a-8e88-0632cb662d47",
+              "theText": null,
+              "buttonList": []
+            },
+            {
+              "entityName": "AT-AT Highlight",
+              "GUID": "d2a3bd4e-a157-46f8-8660-2c42c9de5c7a",
+              "theText": "Wanneer een rebellen AT-AT verslagen is, klik je op \"rebellen AT-AT verslagen\".",
+              "buttonList": [
+                {
+                  "GUID": "a7e27db3-ee71-4788-a785-08384dac85dd",
+                  "theText": "Rebellen AT-AT verslagen"
+                }
+              ]
+            }
+          ],
+          "GUID": "2592d3a3-ef02-4c50-b2ef-27ecbbccc6c6",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "shortText": "Bereik de cockpit.",
+          "longText": null,
+          "GUID": "f31b9a3b-28b4-4f8c-a2d0-e3a3c45e64d5",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} Het Seelos-speelbord en alle tokens daarop kunnen niet worden beïnvloed door kaart effecten.\n{-} De rebellen missietoken stelt de AT-AT van de rebellen voor.\n{-} De keizerlijke missietokens stellen de keizerlijke AT-AT's voor.\n{-} AT-AT's hebben een gezondheid van 9, verdediging: geen, aanval: {O} 1 blauwe dobbelsteen en een snelheid van 1.\n{-} Rebellen missietokens zijn rebellenfiguren en keizerlijke missietokens zijn keizerlijke figuren.\n{-} Rebellen AT-AT's kunnen niet aanvallen.\n{-} AT-AT's worden niet op de normale manier geactiveerd. In plaats daarvan wordt aan het einde van de activeringsfase elke rebellen AT-AT geactiveerd. Daarna wordt elke keizerlijke AT-AT geactiveerd.\n{-} De missie gaat verder wanneer de rebellen de cockpit bereiken.\n{-} Wanneer een rebellen AT-AT verslagen is, klik je op de markering op het Seelos-speelbord en selecteer je \"rebellen AT-AT verslagen\".\n{-} De rebellen verliezen wanneer een rebellen AT-AT verslagen is of wanneer alle helden gewond zijn.",
+          "GUID": "52795fcb-08c7-44a4-94d8-e7519eb9fd2d",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Ends Defeat",
+      "GUID": "f6f8d62f-7f6a-4e16-bdf4-d960a7b071dd",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Ends Win CT No",
+      "GUID": "957b5cb0-c62e-4150-a055-eaac45a0a0b9",
+      "eventText": "De helden ontvangen 150 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Ends Win CT Yes",
+      "GUID": "6f0e8c86-a5bf-4a45-82b4-ae3a3150ccda",
+      "eventText": "CT-1701 ontvangt de beloningskaart \"Bullseye!\".",
+      "eventActions": []
+    },
+    {
+      "eventName": "No campaign",
+      "GUID": "8fe1b24a-487b-46a0-9e81-94329508e0dc",
+      "eventText": "{-} Elke held ontvangt 1 XP.\n{-} De helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "98a39f99-9bdf-4506-8ef8-d70a54017f34",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "7e7ef78a-d6dd-4023-8084-602f3bb8ec42",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "d5643609-a8db-4f5c-821a-2ad58a807621",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "c8945a77-8c64-4d36-8a90-4b4780e31a2b",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Regular mini campaign",
+      "GUID": "5912594d-6f76-449a-8572-5004d336bdd9",
+      "eventText": "Aan boord van de Ghost onderzoeken Hera en Sabine zorgvuldig de resten van een E-XD-infiltratiedroid. Hera merkt op dat ze de laatste tijd meerdere van dit soort droids hebben gevonden die hen probeerden te bespioneren. \"Thrawn geeft niet op. We moeten onze kansen vergroten,\" zegt ze.\r\n\r\n\"Dus geven we ze iets anders om zich zorgen over te maken\", stelt Sabine voor. \"Al is het maar om een paar stormtroopers bezig te houden. We zijn niet lang genoeg op Geonosis gebleven om het te controleren, maar ik denk dat we een paar van die oude gevechtsdroids weer aan de praat kunnen krijgen.\"\r\n\r\n\"Of,\" voegt Hera toe, \"we kunnen proberen de Twi'lek-rebellen op Ryloth te helpen. Het Keizerrijk onderschept al een tijdje hun voorraden. Als we hen kunnen helpen om meer weerstand te bieden, is dat weer iets extra waar Thrawn zich zorgen over moet maken.\"\r\n\r\n{-} De helden kiezen gezamenlijk of ze de droidfabriek gaan bekijken of de Twi'lek-rebellen gaan helpen.\r\n{-} Als de helden ervoor kiezen om de droidfabriek te bekijken, is de volgende actieve missie \"Belegering op Geonosis (Siege on Geonosis)\".\r\n{-} Als de helden ervoor kiezen om de Twi'lek-rebellen te helpen, is de volgende actieve missie \"Race op Ryloth (Race on Ryloth)\".",
+      "eventActions": []
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "AT-AT Highlight",
+      "GUID": "c44a77fb-4a32-4735-a075-af4c9ecbcb0d",
+      "mainText": "Wanneer een rebellen AT-AT verslagen is, klik je op \"rebellen AT-AT verslagen\".",
+      "buttonList": [
+        {
+          "GUID": "0a4ede49-101d-4227-846d-f5992b8a1848",
+          "theText": "Rebellen AT-AT verslagen"
+        }
+      ]
+    },
+    {
+      "entityName": "Cockpit Door",
+      "GUID": "c062a2fd-f6af-4100-b717-58fe76f63b47",
+      "mainText": "Een stevige deur leidt naar de cockpit van de AT-AT.",
+      "buttonList": [
+        {
+          "GUID": "1f464408-580d-400f-a4d2-09e811e1ad64",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "d2a79f3a-92a4-425b-b448-0681c02e1e09",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "0450f260-11e1-41b0-8a47-670bc8a8398c",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "7781bca0-22cb-47a3-bd38-7d36cbb11d5c",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP Cockpit Blue",
+      "GUID": "07401005-142e-403a-8271-a557ff97b877",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Cockpit Red",
+      "GUID": "d07e3f74-e71e-424d-a836-5c1e587b1627",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP DTrooper",
+      "GUID": "8c01f03c-8e3b-4b28-9424-174a7b3789f4",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "6257c339-ff9e-4093-ae3d-597be1873adf",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 1",
+      "GUID": "bc73ffeb-be9c-4854-b372-1d161e13630f",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Red 2",
+      "GUID": "0575ba7c-00e8-48f3-9da6-dbe3c1dc666d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 2",
+      "GUID": "659ddee3-c15a-48b4-a659-28bd8321016d",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Trooper 3",
+      "GUID": "2829eb95-8709-4d2c-968b-37ee60e1e579",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Fire control",
+      "GUID": "282ba109-02fb-4d00-8bb8-14b382bd3864",
+      "mainText": "De vuurbediening bestuurt de kanonnen van de walker.\r\n\r\n{-} Een held kan een interactie uitvoeren op beide terminals om de walker over te nemen.",
+      "buttonList": [
+        {
+          "GUID": "355a68ed-67a8-411c-a6c9-8988dafa4861",
+          "theText": "{A} Neem de controle over"
+        }
+      ]
+    },
+    {
+      "entityName": "Imperial AT-AT 1",
+      "GUID": "3bcdb08b-a233-46ff-86fd-236485efb6ef",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Imperial AT-AT 2",
+      "GUID": "d8bffe12-afdf-4659-8240-2b86c43d0660",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Mid Section Door",
+      "GUID": "466bc0cd-7b86-4a75-8848-50888f3d1f23",
+      "mainText": "Een stevige deur leidt dieper de AT-AT in.",
+      "buttonList": [
+        {
+          "GUID": "ff4ff200-f142-4829-83cb-01e0dd416999",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Rebel AT-AT",
+      "GUID": "e9c1cbbf-fb11-4e9c-bdc9-391c5e21377b",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Steering control",
+      "GUID": "3d230cce-bc92-4b85-bc13-eedca8f46692",
+      "mainText": "De besturing regelt de bewegingen van de walker.\n\n{-} Een held kan een interactie uitvoeren op beide terminals om de walker over te nemen.",
+      "buttonList": [
+        {
+          "GUID": "2341e326-c3d6-445a-949a-4007a617eb4c",
+          "theText": "{A} Neem de controle over"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

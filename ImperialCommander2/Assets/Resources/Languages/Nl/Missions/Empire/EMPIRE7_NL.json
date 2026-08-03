@@ -1,0 +1,975 @@
+{
+  "languageID": "Dutch (NL)",
+  "missionProperties": {
+    "missionName": "Geschiedenis herhaalt zich",
+    "missionDescription": "",
+    "missionInfo": "",
+    "campaignName": "Heart of the Empire",
+    "startingObjective": "",
+    "repositionOverride": "Blokkeer de toegang tot de terminals.",
+    "additionalMissionInfo": ""
+  },
+  "events": [
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "De aanval blijkt te hevig en je wordt voor de keizer op je knieën gedwongen. Met een gemene glimlach op zijn gezicht ziet hij toe hoe Lorn hem de scherf van de Bardottaanse bol overhandigt. Stormtroopers binden je armen achter je rug terwijl de keizer zijn buit bewondert.\n\n\"Met deze kracht zal ik jullie zielige opstand de kop indrukken,\" zegt hij met een genietende stem. \"Jullie openbare executies zullen de hele melkweg laten zien dat mijn macht absoluut is!\"\r\n\r\n{-} De rebellen verliezen de missie.\n{-} Het dreigingsniveau van de volgende missie (en alleen de volgende missie) wordt met 1 verhoogd. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers besluiten om 50 credits per held uit te geven om dit te voorkomen.\n{-} Elke held ontvangt 2 XP. De helden ontvangen 100 credits per held.\n{-} Plaats de verhaalmissiekaart \"Het rijk van de Duistere Kant (The Realm of the Dark Side)\" in het spel.",
+      "eventActions": [
+        {
+          "mainText": "Heeft Lorn 1 of meer forceertokens op zich?",
+          "buttonList": [
+            {
+              "GUID": "b54c3a07-6dbe-4e28-9153-4061bff37530",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "cd532c65-2c9d-41c7-b3c2-072db92bd499",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "31f6c8ad-6ab4-4e35-b348-7a1be1debd53",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
+      "eventText": "Je rukte de scherf van de Bardottaanse bol uit de handen van de verrader Lorn en rent zo snel als je kunt weg van de woedende keizer Palpatine. Wanneer je eindelijk een plek bereikt om te hergroeperen, kijk je naar de scherf in je hand, hijgend van de inspanning.\n\nJe voelt de Force-energie die uit het gloeiende fragment straalt en een tintelend gevoel door je arm stuurt. Alleen al door het vast te houden word je overweldigd door een mengeling van macht en angst.\n\nJe moet de scherf van de planeet krijgen, buiten het bereik van de keizer.\r\n\r\n{-} De rebellen winnen de missie!\n{-} De helden ontvangen de beloningskaart \"Bardottan Shard\". (Deze beloningskaart werkt anders wanneer je met  <b>Imperial Commander</b> speelt. Raadpleeg het gedeelte <b>Rules Change</b> van de wikidocumentatie voor meer informatie.)\n{-} Elke held ontvangt 2 XP. De helden ontvangen 100 credits per held.\n{-} Plaats de verhaalmissiekaart \"Vlucht uit de hoofdstad (Capital Escape)\" in het spel.",
+      "eventActions": [
+        {
+          "mainText": "Is er maar 1 gezonde held?",
+          "buttonList": [
+            {
+              "GUID": "d91ae34a-10dd-4629-99d1-8976c7f41f7c",
+              "theText": "Ja"
+            },
+            {
+              "GUID": "b1edfc07-cf30-4fe9-8a67-91fc6116a5db",
+              "theText": "Nee"
+            }
+          ],
+          "GUID": "9457dccf-83a3-4395-a91c-2a7e765f58d5",
+          "eventActionType": 5,
+          "eaName": "Question Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Healthy Hero No",
+      "GUID": "75d926c0-6db0-4a12-be84-60c4dce204f0",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Healthy Hero Yes",
+      "GUID": "cf3b2e8f-cd7e-43d7-b0a3-702717b020cb",
+      "eventText": "Het dreigingsniveau van de volgende missie (en alleen de volgende missie) wordt met 1 verhoogd. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers besluiten om 50 credits per held uit te geven om dit te voorkomen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Lorn Strain No",
+      "GUID": "a923238f-5c28-42cc-b442-0275a4dbdd07",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Lorn Strain Yes",
+      "GUID": "14f7a01b-dfc1-4c30-8a5d-3365c705ccd7",
+      "eventText": "Omdat er minstens 1 forceertoken op Lorn ligt, krijgen de helden 25 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Master of Puppets",
+      "GUID": "a0d6b005-6966-450d-95ac-a6ec1259771f",
+      "eventText": "Een rilling trekt door je heen wanneer Lorn de gloeiende groene scherf uit een verborgen compartiment haalt. Je gebaart hem je terug naar het schip te volgen, maar je aandacht wordt abrupt getrokken door een kwaadaardig gekakel dat door de tempel weerklinkt. Je draait je om en ziet keizer Palpatine zelf daar staan.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 1",
+              "GUID": "8c3a02ca-0fb4-4daa-ad26-f8a8bbab1fcf",
+              "theText": "Volgens Lorn ligt de scherf van de Bardottaanse bol begraven onder wat puin in dit vervallen deel van de tempel.\n\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+              "buttonList": [
+                {
+                  "GUID": "94826443-b063-48ad-899b-200b6bee4c64",
+                  "theText": "Pak op"
+                }
+              ]
+            },
+            {
+              "entityName": "Hiding Place 2",
+              "GUID": "0f04662a-3525-4845-b47a-3676e866e05c",
+              "theText": "Volgens Lorn ligt de scherf van de Bardottaanse bol verstopt in een oude muurkluis in het kantoor van de Jedi.\r\n\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+              "buttonList": [
+                {
+                  "GUID": "6350e73f-4dcf-430f-9a48-835b249875fa",
+                  "theText": "Pak op"
+                }
+              ]
+            },
+            {
+              "entityName": "Hiding Place 3",
+              "GUID": "481110b3-4409-4de9-8624-4065baa43f3d",
+              "theText": "Volgens Lorn ligt de scherf van de Bardottaanse bol verborgen in de voet van een zuil bij de oude fontein.\r\n\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+              "buttonList": [
+                {
+                  "GUID": "3e361070-aaad-4a86-9a35-9b5a8f8bee32",
+                  "theText": "Pak op"
+                }
+              ]
+            }
+          ],
+          "GUID": "32410846-c758-4cc8-bd8a-96d1340b9841",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "repositionText": "Kom grenzend aan Lorn te staan.",
+          "GUID": "f6feeb47-f46b-4e7d-924b-8410a734d14f",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        },
+        {
+          "newInstructions": "{-} Als je grens aan Lorn: verplaats Lorn 2 velden richting <color=\"red\">Emperor Palpatine</color>.",
+          "GUID": "625edce7-512a-43d9-a66e-cc25dbc900a3",
+          "eventActionType": 11,
+          "eaName": "Change Group Instructions"
+        },
+        {
+          "enemyName": null,
+          "customText": "{-} MASTER OF PUPPETS: Verplaats Lorn 4 velden naar deze figuur toe.\r\n{A} RULE THROUGH FEAR: De andere keizerlijke figuur met de hoogste figuurkosten die niet <color=\"red\">gefocust</color> is, wordt <color=\"red\">gefocust</color>. \r\n{-} EMPEROR: De andere keizerlijke figuur met de hoogste figuurkosten die kan aanvallen valt de rebel aan die het dichtst bij Lorn staat.\r\n{A} FORCE LIGHTNING: Eén rebel binnen 6 velden lijdt 2 {H} en wordt <color=\"red\">verzwakt</color>. Als er nog een rebel binnen 2 velden van het doelwit is, herhaal dan deze instructie voor die rebel. Maximaal één keer per rebel.",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "ef6ac3ac-858f-4072-b558-4859d3c93fe1",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG083/Emperor Palpatine"
+        },
+        {
+          "tbText": "{-} <color=\"red\">Emperor Palpatine</color> kan geen {H} lijden.",
+          "GUID": "66b44ac2-97d6-4757-913a-07bf1013b86e",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "\"Je hebt me goed gediend,\" zegt hij met een tevreden glimlach. Je weet niet precies wat hij bedoelt, totdat Lorn in de richting van de keizer begint te lopen.\n\n\"Ik leef om te dienen,\" zegt Lorn terwijl hij langs je loopt. Je probeert hem vast te grijpen, maar merkt dat je vreemd genoeg aan de grond genageld staat.\r\n\r\n\"Wat de rest van jullie betreft,\" zegt Palpatine, \"jullie diensten worden ook gewaardeerd, maar zijn niet langer nodig. Nu... zullen jullie sterven!\"\r\n\r\n{-} Verplaats Lorn 4 velden richting <color=\"red\">Emperor Palpatine</color>.",
+          "GUID": "1cbf7ec1-e2ca-40a2-a568-7c01f7703b75",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Lorn",
+              "GUID": "e5dac392-515d-4c3b-a1d9-2a69b8342285",
+              "theText": "Dit is de controletoken voor Lorn.\n\n{-} Een held kan een interactie uitvoeren op Lorn ({K}) om te proberen de scherf terug te halen. Pas +1 {B} toe op het resultaat als er een andere held grenst aan Lorn. Pas -2 {B} toe op het resultaat als <color=\"red\">Emperor Palpatine</color> grenst aan Lorn.",
+              "buttonList": [
+                {
+                  "GUID": "3dcc3218-810a-46e8-9266-08e6eabbff38",
+                  "theText": "Haal de scherf terug"
+                }
+              ]
+            }
+          ],
+          "GUID": "a46057cb-6c98-4e02-8b38-390bf25a4bad",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Dit is de controletoken voor Lorn.\n\n{-} Een held kan een interactie uitvoeren op Lorn ({K}) om te proberen de scherf terug te halen. Pas +1 {B} toe op het resultaat als er een andere held grenst aan Lorn. Pas -2 {B} toe op het resultaat als <color=\"red\">Emperor Palpatine</color> grenst aan Lorn.\r\n{-} De rebellen winnen wanneer ze de scherf terughalen.",
+          "GUID": "e578a6a3-b0e3-409a-9431-620e661debc8",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Haal de scherf terug.",
+          "longText": null,
+          "GUID": "67e8b456-1739-4c35-bbda-1a6349e542c0",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De keizerlijke missietoken stelt Lorn voor. Lorn is een neutraal figuur. Een held die grenst aan Lorn kan 1 verplaatspunt uitgeven om Lorn maximaal 2 velden te verplaatsen.\r\n{-} Neutrale missietokens met de afbeelding naar beneden stellen geheime doorgangen voor.\r\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\r\n{-} Een held kan een interactie uitvoeren op Lorn ({K}) om te proberen de scherf terug te halen. Pas +1 {B} toe op het resultaat als er een andere held grenst aan Lorn. Pas -2 {B} toe op het resultaat als <color=\"red\">Emperor Palpatine</color> grenst aan Lorn.\n{-} De rebellen winnen wanneer ze de scherf terughalen.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "3f35da96-76c5-447f-ad78-057efb4da457",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "\"Het is dichtbij,\" fluistert Lorn terwijl jullie stil de oude Jedi-tempel binnengaan. \"De Jedi-Raad wilde de scherf dichtbij houden, zelfs toen het verborgen was. Denk daar eens over na: de Force-essentie van tientallen, misschien wel honderden wezens, allemaal geconcentreerd in één enkel object. Stel je voor wat je zou kunnen doen met zelfs maar een fractie van zo’n kracht.\" Zijn stem trilt van angstig ontzag.\r\n\r\n{-} Plaats de helden op het blauw gemarkeerde veld.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Lorn",
+              "GUID": "5c9cfe6a-80b7-4e88-866a-50069b79eedf",
+              "theText": "Locatie van Lorn",
+              "buttonList": []
+            }
+          ],
+          "GUID": "e3e282ab-3c97-41bd-b567-4dd1fe96abf4",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "Lorn ziet er tegelijkertijd bezorgd en opgewonden uit.\n\n{-} De keizerlijke missietoken stelt Lorn voor. Lorn is een neutraal figuur. Een held die grenst aan Lorn kan 1 verplaatspunt uitgeven om Lorn maximaal 2 velden te verplaatsen.",
+          "GUID": "c97f5363-e0eb-46ca-9a2a-93bd67b377db",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Lorn",
+              "GUID": "1a50809d-53df-4fa9-a1b2-ca1c1647ef8e",
+              "theText": "Locatie van Lorn",
+              "buttonList": []
+            }
+          ],
+          "GUID": "1fe07ad7-8fd8-4463-be5e-c40ab709261c",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"Er zijn een onbekend aantal geheime doorgangen in deze tempel, waardoor de Jedi zich onzichtbaar tussen de kamers konden verplaatsen,\" legt Lorn uit. \"Sommige daarvan zijn misschien nog intact.\"",
+          "GUID": "7a9daf44-0595-4cb0-9002-b2b6bb3386ff",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Passage 1",
+              "GUID": "c25f1bf7-043b-4724-9d88-8aa778d29404",
+              "theText": "Een verborgen deur leidt naar een geheime gang door de oude tempel.\n\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Passage 2",
+              "GUID": "3e47c118-9145-4223-b578-a0f1982afb07",
+              "theText": "Een verborgen deur leidt naar een geheime gang door de oude tempel.\n\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.",
+              "buttonList": []
+            },
+            {
+              "entityName": "Passage 3",
+              "GUID": "3a386829-1596-44f6-95bb-7c098bfa2972",
+              "theText": "Een verborgen deur leidt naar een geheime gang door de oude tempel.\n\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "dae1c5b7-16a7-4703-872c-8a490d53df9e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Neutrale missietokens met de afbeelding naar beneden stellen geheime doorgangen voor.\r\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.",
+          "GUID": "79dd1d2d-7dfe-4512-952b-9ee5f98d258c",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "f1dbd52a-747a-4646-85bb-8588174f9bf8",
+              "theText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+              "buttonList": [
+                {
+                  "GUID": "776941fd-8e70-4a41-93c4-bbc01cb01a72",
+                  "theText": "Claimen"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 2",
+              "GUID": "1d276117-d8fc-46f9-a632-dd1510153827",
+              "theText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+              "buttonList": [
+                {
+                  "GUID": "51bf0148-bb5f-40d3-b940-6f541e4153d9",
+                  "theText": "Claimen"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 3",
+              "GUID": "c9d155b3-7ab3-4647-b2d5-7e2a972b3dd5",
+              "theText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+              "buttonList": [
+                {
+                  "GUID": "7eb7acb8-10a6-46cf-9cd2-bcd769a81dd6",
+                  "theText": "Claimen"
+                }
+              ]
+            },
+            {
+              "entityName": "Terminal 4",
+              "GUID": "a0959ae4-ddf3-4f38-89ea-c0479fa7797c",
+              "theText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+              "buttonList": [
+                {
+                  "GUID": "66fc17e2-7727-4ba7-9de9-61c11b6bc80d",
+                  "theText": "Claimen"
+                }
+              ]
+            }
+          ],
+          "GUID": "a4f4a89a-e569-4732-8dba-2436fdca10f0",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "\"We kunnen alleen maar hopen dat er nog wat gegevens op de terminals hier staan,\" zegt Lorn.\r\n\r\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.\r\n{-} De missie gaat verder wanneer alle terminals geclaimd zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "81c6ab1b-02f9-4bcd-b5c8-83b4459b8dbb",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "tbText": "De griezelige sfeer van de verlaten tempel wordt abrupt doorbroken wanneer een stormtrooper \"Stil staan!\" roept en een blasterkogel langs suist. Al snel barst een vuurgevecht los en je duwt Lorn op de grond om dekking te zoeken.\n\n\"Bescherm me!\" roept hij terwijl de blasters blijven vuren. \"Zonder mijn hulp zul je het nooit vinden!\"",
+          "GUID": "c0db1dde-9470-4ece-b892-af8a1e4a7862",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "2710208e-be65-4361-bc8f-c2a8875b6b0f",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG003/Stormtrooper (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "d457f6d0-b35a-426c-a7cd-409572451fad",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG049/Riot Trooper (Elite)"
+        },
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "8b182372-4534-4354-a7d5-0bbda32771a3",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG004/Imperial Officer"
+        },
+        {
+          "shortText": "Laat Lorn de terminals onderzoeken (&Terminals claimed&/4).",
+          "longText": null,
+          "GUID": "25dda0db-d644-4486-a12a-deffa101bf0c",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De keizerlijke missietoken stelt Lorn voor. Lorn is een neutraal figuur. Een held die grenst aan Lorn kan 1 verplaatspunt uitgeven om Lorn maximaal 2 velden te verplaatsen.\r\n{-} Neutrale missietokens met de afbeelding naar beneden stellen geheime doorgangen voor.\r\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\r\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.\r\n{-} De missie gaat verder wanneer alle terminals geclaimd zijn.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "ca05eadf-8eca-45ea-a78c-1cba020932a6",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "fa6fea4b-db6e-43df-b5c9-594740f11745",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "06d1fffb-b8f8-4a6a-a73b-14611644647b",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "4f5b979d-9451-48ff-b309-0538305fbba7",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "e3b91a73-5ef9-490a-8488-3e22c162ccd8",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "696897e0-c174-4dc9-9acd-a9393ac6b84a",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "132f3bb4-e978-4e80-a816-691820c82249",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Reclaim Shard",
+      "GUID": "95a70d0a-2de2-4eb0-b215-6ac6293240df",
+      "eventText": "",
+      "eventActions": [
+        {
+          "mainText": "Je probeert de scherf uit Lorns handen te worstelen.\r\n\r\n{-} Test {K}. Pas +1 {B} toe op het resultaat als er een andere held grenst aan Lorn. Pas +1 {B} toe voor elke forceertoken op Lorn. Pas -2 {B} toe op het resultaat als <color=\"red\">Emperor Palpatine</color> grenst aan Lorn.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "c4d56eb0-ca7f-4849-bf85-6dcfef82343b",
+              "theText": "Lorn houdt de scherf met meer kracht vast dan je ooit van de magere geleerde had verwacht.\n\n{-} Voor elk {B}-symbool plaatst je 1 forceertoken op Lorn."
+            },
+            {
+              "GUID": "036afda2-5de7-43bc-9831-cae9aedba51d",
+              "theText": null
+            }
+          ],
+          "GUID": "93925f3e-585b-4ef7-9b56-69b2daa0f8a0",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Spot 1",
+      "GUID": "bf83cd19-b36c-4602-be6b-c42c81526c11",
+      "eventText": "\"Daar! Het moet daar zijn!\" Lorn verschuilt zich achter een oud standbeeld en wijst naar een plek verderop in de tempel. \"Breng me daarheen!\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 1",
+              "GUID": "28a3d764-92dd-43d4-80c3-055b36c68822",
+              "theText": "Volgens Lorn ligt de scherf van de Bardottaanse bol begraven onder wat puin in dit vervallen deel van de tempel.\n\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+              "buttonList": [
+                {
+                  "GUID": "70caf62f-2654-4d7c-afcc-65a8d4649966",
+                  "theText": "Pak op"
+                }
+              ]
+            }
+          ],
+          "GUID": "91a8d957-6c9e-40f9-929c-bc3f509cb0a2",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Het rebellen missietoken stelt de verstopplek voor.\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, Pakt hij de scherf op.\n{-} De missie gaat verder wanneer Lorn de scherf opgepakt heeft.",
+          "GUID": "e8119229-2c25-496e-b4b9-cbe7822ad9a5",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Laat Lorn de scherf oppakken.",
+          "longText": null,
+          "GUID": "56e324e7-6c25-42d7-a2e9-d98a881a3d72",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De keizerlijke missietoken stelt Lorn voor. Lorn is een neutraal figuur. Een held die grenst aan Lorn kan 1 verplaatspunt uitgeven om Lorn maximaal 2 velden te verplaatsen.\r\n{-} Neutrale missietokens met de afbeelding naar beneden stellen geheime doorgangen voor.\r\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, Pakt hij de scherf op.\n{-} De missie gaat verder wanneer Lorn de scherf opgepakt heeft.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "fda66d98-ab26-4e02-9158-92d486c73d6a",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Spot 2",
+      "GUID": "ca9ccc4f-5dcc-4ef1-8827-e69d2b16fb2d",
+      "eventText": "\"Daar! Het moet daar zijn!\" Lorn verschuilt zich achter een oud standbeeld en wijst naar een plek verderop in de tempel. \"Breng me daarheen!\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 2",
+              "GUID": "47866f31-9575-472e-ac21-6c65d1b25703",
+              "theText": "Volgens Lorn ligt de scherf van de Bardottaanse bol verstopt in een oude muurkluis in het kantoor van de Jedi.\r\n\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+              "buttonList": [
+                {
+                  "GUID": "3bd40fe3-72ee-4860-b136-0dd71029403e",
+                  "theText": "Pak op"
+                }
+              ]
+            }
+          ],
+          "GUID": "7daabf17-3aff-47f8-aa84-3f16f0274aa4",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Het rebellen missietoken stelt de verstopplek voor.\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, Pakt hij de scherf op.\n{-} De missie gaat verder wanneer Lorn de scherf opgepakt heeft.",
+          "GUID": "4839163e-a93c-4fee-a07e-33b608066b53",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Laat Lorn de scherf oppakken.",
+          "longText": null,
+          "GUID": "fa18ff87-5ce3-4104-b09b-53d379f642f8",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De keizerlijke missietoken stelt Lorn voor. Lorn is een neutraal figuur. Een held die grenst aan Lorn kan 1 verplaatspunt uitgeven om Lorn maximaal 2 velden te verplaatsen.\r\n{-} Neutrale missietokens met de afbeelding naar beneden stellen geheime doorgangen voor.\r\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, Pakt hij de scherf op.\n{-} De missie gaat verder wanneer Lorn de scherf opgepakt heeft.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "09b7e47a-89d8-43f1-8ea4-0c6fc32ffaa5",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Spot 3",
+      "GUID": "3fe0ad6d-f221-40ac-93f7-dceff91cb714",
+      "eventText": "\"Daar! Het moet daar zijn!\" Lorn verschuilt zich achter een oud standbeeld en wijst naar een plek verderop in de tempel. \"Breng me daarheen!\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Hiding Place 3",
+              "GUID": "491c53e8-abc9-432b-aad4-b965543860df",
+              "theText": "Volgens Lorn ligt de scherf van de Bardottaanse bol verborgen in de voet van een zuil bij de oude fontein.\r\n\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+              "buttonList": [
+                {
+                  "GUID": "e01ec982-7f80-48d4-b7cf-d62e1ce587f3",
+                  "theText": "Pak op"
+                }
+              ]
+            }
+          ],
+          "GUID": "e415358d-bba1-435c-a41a-163154ed57c5",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        },
+        {
+          "tbText": "{-} Het rebellen missietoken stelt de verstopplek voor.\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, Pakt hij de scherf op.\n{-} De missie gaat verder wanneer Lorn de scherf opgepakt heeft.",
+          "GUID": "4def7c85-b58d-4ef3-beab-42e3108298ab",
+          "eventActionType": 16,
+          "eaName": "Text Box"
+        },
+        {
+          "shortText": "Laat Lorn de scherf oppakken.",
+          "longText": null,
+          "GUID": "c1854104-8672-477c-8cbf-01baa3b047b3",
+          "eventActionType": 2,
+          "eaName": "Change Objective"
+        },
+        {
+          "theText": "{-} De keizerlijke missietoken stelt Lorn voor. Lorn is een neutraal figuur. Een held die grenst aan Lorn kan 1 verplaatspunt uitgeven om Lorn maximaal 2 velden te verplaatsen.\r\n{-} Neutrale missietokens met de afbeelding naar beneden stellen geheime doorgangen voor.\r\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, Pakt hij de scherf op.\n{-} De missie gaat verder wanneer Lorn de scherf opgepakt heeft.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "GUID": "d826d0b3-3d87-455a-aeca-424f48e90bd0",
+          "eventActionType": 1,
+          "eaName": "Change Mission Info"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal 1 claimed",
+      "GUID": "ab5e4384-11ab-499b-85bd-a74853483409",
+      "eventText": "Lorn mompelt zachtjes terwijl zijn ogen de gegevens op de terminal scannen en uiteindelijk knikt hij. \"Ja!\" zegt hij. \"Ja, dit helpt enorm!\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 1",
+              "GUID": "adc783d7-2b09-4ea7-9dea-e23e179a7d03",
+              "theText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+              "buttonList": [
+                {
+                  "GUID": "b9978422-59a2-4564-83e7-7a52f6d9c319",
+                  "theText": "Claimen"
+                }
+              ]
+            }
+          ],
+          "GUID": "374924a4-936f-4239-bdb4-00c3c99368a1",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal 2 claimed",
+      "GUID": "86fe4ee4-dc36-425e-9b77-06226915fbbd",
+      "eventText": "Lorn mompelt zachtjes terwijl zijn ogen de gegevens op de terminal scannen en uiteindelijk knikt hij. \"Ja!\" zegt hij. \"Ja, dit helpt enorm!\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 2",
+              "GUID": "e5580024-371b-4c96-8912-8467fc099e19",
+              "theText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+              "buttonList": [
+                {
+                  "GUID": "ca4d3425-619a-4c44-a422-ff66503dc138",
+                  "theText": "Claimen"
+                }
+              ]
+            }
+          ],
+          "GUID": "0237340f-bb53-4938-a089-5d2a202821a3",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal 3 claimed",
+      "GUID": "e007af9d-33e3-45e2-9984-83d411224cb9",
+      "eventText": "Lorn mompelt zachtjes terwijl zijn ogen de gegevens op de terminal scannen en uiteindelijk knikt hij. \"Ja!\" zegt hij. \"Ja, dit helpt enorm!\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 3",
+              "GUID": "322967a5-94b5-4251-9824-cf3a1f29e8df",
+              "theText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+              "buttonList": [
+                {
+                  "GUID": "97b16e4a-ca94-46b9-ac4a-7a69184dd56b",
+                  "theText": "Claimen"
+                }
+              ]
+            }
+          ],
+          "GUID": "81b0ed6b-0bb1-42b5-9100-02287672a996",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal 4 claimed",
+      "GUID": "69895302-af13-43d2-abfe-b385b0f0f5c3",
+      "eventText": "Lorn mompelt zachtjes terwijl zijn ogen de gegevens op de terminal scannen en uiteindelijk knikt hij. \"Ja!\" zegt hij. \"Ja, dit helpt enorm!\"",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal 4",
+              "GUID": "f0b2e8f4-138e-4592-ab40-8413e34a05cb",
+              "theText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+              "buttonList": [
+                {
+                  "GUID": "4a003452-e494-47c1-bcb7-1e9aa2f47b1b",
+                  "theText": "Claimen"
+                }
+              ]
+            }
+          ],
+          "GUID": "bea4c191-5616-49e4-ad44-de6769011396",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "The Emperor's Elites",
+      "GUID": "b02e3246-1ca4-4bff-b2c3-1eb6f44e8b2a",
+      "eventText": "De troepen van de keizer zitten je op de hielen. Gestalten in rode harnassen, gewapend met lange schoklansen, stormen de tempel binnen.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "fa678d8d-d696-498c-a8ed-5c50ccb6aff8",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG010/Royal Guard (Elite)"
+        }
+      ]
+    },
+    {
+      "eventName": "X Marks the Spot",
+      "GUID": "4843dff9-5ebb-44a2-a7bc-30ae3bd62154",
+      "eventText": "\"Eindelijk! Dit is het!\" Lorn klinkt oprecht enthousiast. \"Ik weet waar het is!\"\n\nNog voordat je de richting kunt volgen die hij aanwijst, hoor je geschreeuw en gedreun van voetstappen: er stormen nog meer vijanden de tempel binnen.",
+      "eventActions": [
+        {
+          "repositionText": "Blokkeer de toegang tot de verstopplek.",
+          "GUID": "95d03956-6d5d-4309-8060-f71da7d95dfc",
+          "eventActionType": 17,
+          "eaName": "Change Reposition Instructions"
+        }
+      ]
+    }
+  ],
+  "mapEntities": [
+    {
+      "entityName": "Crate1",
+      "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "ce22d333-449d-44db-b2f5-4b559189aca5",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate2",
+      "GUID": "461e69e0-7c26-42a1-ad2a-a5e71b4f7707",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "5f0f1906-7aad-4883-87af-d62b0873120b",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate3",
+      "GUID": "1e60bee2-7e72-4f71-8c0e-45b5a2d0baf8",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "71c21bdc-c5b9-45bb-86cc-83ba7ef33243",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "Crate4",
+      "GUID": "3cb4be6e-caea-4e62-8224-09b5c1aa9cba",
+      "mainText": "Een oud voorraadkrat.",
+      "buttonList": [
+        {
+          "GUID": "b766175a-9fd6-4fe4-bc68-f88cd3061a2b",
+          "theText": "{A} Openen"
+        }
+      ]
+    },
+    {
+      "entityName": "DP ERTrooper 1",
+      "GUID": "81ead058-7663-414c-aed5-13a096cc71f9",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ERTrooper 2",
+      "GUID": "a1476256-9ccb-4f18-a5f0-469ae3c22004",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 1",
+      "GUID": "15e983a1-a995-4427-aeb7-407f2afd8b55",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 2",
+      "GUID": "4316dbfe-7adc-48ca-8486-16f52f6ca3dc",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP ETrooper 3",
+      "GUID": "8e7f5fda-40e0-4de2-8c6e-58f9ad8eb7c0",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 1",
+      "GUID": "c8062d94-a52f-4458-b2cf-3c7b515747e5",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 2",
+      "GUID": "5bdffef2-c7c7-4e16-ab66-dca82b0481fd",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 3",
+      "GUID": "64b4dbf2-4e39-4ce7-a5fe-94eed25c16d2",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Green 4",
+      "GUID": "2e35c1c1-e257-4195-ae0a-0b94cbd3e374",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "9c045cf6-9432-4c67-84f1-837208af4734",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Palpatine",
+      "GUID": "a9268d1f-5391-4491-9d7a-b5a0e3688ff3",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
+      "mainText": "Plaats de helden hier.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Hiding Place 1",
+      "GUID": "0efd741d-0e97-41c7-ae89-f10e60d791bd",
+      "mainText": "Volgens Lorn ligt de scherf van de Bardottaanse bol begraven onder wat puin in dit vervallen deel van de tempel.\n\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+      "buttonList": [
+        {
+          "GUID": "e56a3ee3-c479-4489-b1af-b3b55fb8ddf5",
+          "theText": "Pak op"
+        }
+      ]
+    },
+    {
+      "entityName": "Hiding Place 2",
+      "GUID": "a3b890e5-cbdd-46bb-bb16-1c8538e1d53a",
+      "mainText": "Volgens Lorn ligt de scherf van de Bardottaanse bol verstopt in een oude muurkluis in het kantoor van de Jedi.\r\n\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+      "buttonList": [
+        {
+          "GUID": "4af5006f-4035-439e-b4ee-53dadb004ef5",
+          "theText": "Pak op"
+        }
+      ]
+    },
+    {
+      "entityName": "Hiding Place 3",
+      "GUID": "9db8ea6c-3ad4-4d69-b5ec-4add205eccea",
+      "mainText": "Volgens Lorn ligt de scherf van de Bardottaanse bol verborgen in de voet van een zuil bij de oude fontein.\r\n\r\n{-} Wanneer Lorn zich op het veld van een rebellen missietoken bevindt, pakt hij de scherf op.",
+      "buttonList": [
+        {
+          "GUID": "28232b11-7d71-46cb-9eda-af442367457b",
+          "theText": "Pak op"
+        }
+      ]
+    },
+    {
+      "entityName": "Lorn",
+      "GUID": "cd1153e2-8bef-4fea-a78f-fe5bbef80ae9",
+      "mainText": "Locatie van Lorn",
+      "buttonList": []
+    },
+    {
+      "entityName": "Passage 1",
+      "GUID": "e9789083-55b0-4985-b4d3-8b9b468a1eed",
+      "mainText": "Een verborgen deur leidt naar een geheime gang door de oude tempel.\n\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Passage 2",
+      "GUID": "1531643c-36b3-44d5-a6e9-cbede6b03c3b",
+      "mainText": "Een verborgen deur leidt naar een geheime gang door de oude tempel.\n\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Passage 3",
+      "GUID": "6fa8ab71-d631-49e9-ba8e-de6f26ce2f97",
+      "mainText": "Een verborgen deur leidt naar een geheime gang door de oude tempel.\n\n{-} Een rebellenfiguur in een geheime gang kan 3 verplaatspunten uitgeven om zijn figuur zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.\n{-} Als Lorn zich in een geheime gang bevindt, kan een held die grenst aan hem 2 verplaatspunten spenderen om hem zo dicht mogelijk bij een andere veld met een geheime gang te plaatsen.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Terminal 1",
+      "GUID": "1a729d78-d5e8-4898-a90f-dfb3e76fa96a",
+      "mainText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+      "buttonList": [
+        {
+          "GUID": "da71c5ee-1cac-43aa-977d-61f600bb129b",
+          "theText": "Claimen"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 2",
+      "GUID": "8b1ec064-a751-4fb7-90da-117db749ac81",
+      "mainText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+      "buttonList": [
+        {
+          "GUID": "30945585-a94b-481c-bbda-87757fcecc1e",
+          "theText": "Claimen"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 3",
+      "GUID": "9e23faec-1a2b-40be-afaa-360e2f54780a",
+      "mainText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+      "buttonList": [
+        {
+          "GUID": "5e1c0c4b-19d2-4a5c-a406-5472306e8e9d",
+          "theText": "Claimen"
+        }
+      ]
+    },
+    {
+      "entityName": "Terminal 4",
+      "GUID": "289855fb-5e14-45cc-bd79-8cd4547f4b54",
+      "mainText": "Een oude terminal kan aanwijzingen bevatten over de locatie van de scherf.\n\n{-} Wanneer Lorn een veld met een terminal betreedt, claimen de helden die terminal.",
+      "buttonList": [
+        {
+          "GUID": "2f2e474b-ea57-478a-9c81-62ede498d15b",
+          "theText": "Claimen"
+        }
+      ]
+    }
+  ],
+  "initialGroups": []
+}

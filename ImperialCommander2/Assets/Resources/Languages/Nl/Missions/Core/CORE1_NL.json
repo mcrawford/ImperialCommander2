@@ -2,8 +2,8 @@
   "languageID": "Dutch (NL)",
   "missionProperties": {
     "missionName": "Een nieuwe dreiging",
-    "missionDescription": "Rebellen ontdekten dat het noodbaken een afleiding was van generaal Weiss, een rijzende ster in het keizerlijke leger.\n\nDoor zijn inspanningen is hij een belangrijk doelwit geworden voor het oppercommando van de rebellen. Agenten zoeken het hele sterrenstelsel af naar informatie over de plannen van deze generaal...",
-    "missionInfo": "{-} Deuren zijn vergrendeld voor rebellenfiguren. Een rebellenfiguur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).\n{-} Een held kan een interactie uitvoeren op een terminal om de token om te draaien naar de gekleurde zijde en een attribuuttest uit te voeren afhankelijk van de terminal waarmee hij/zij bezig is. Als die slaagt, is die terminal onderzocht.\n{-} De rebellen winnen als alle terminals zijn onderzocht. \n{-} De rebellen verliezen aan het einde van ronde 7 of wanneer alle helden gewond zijn.",
+    "missionDescription": "Rebellen ontdekten dat het noodbaken een afleiding was van generaal Weiss, een rijzende ster binnen het keizerlijke leger.\n\nZijn inspanningen hebben hem tot een cruciaal doelwit gemaakt voor het oppercommando van de rebellen. Agenten zoeken het hele sterrenstelsel af naar informatie over de plannen van deze generaal...",
+    "missionInfo": "{-} Deuren zijn vergrendeld voor rebellen. Een rebellenfiguur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).\n{-} Een held kan een interactie uitvoeren op een terminal om de token om te draaien naar de gekleurde zijde en een attribuuttest uit te voeren afhankelijk van de terminal waarmee hij/zij bezig is. Als die slaagt, is die terminal onderzocht.\n{-} De rebellen winnen als alle terminals onderzocht zijn.\n{-} De rebellen verliezen aan het einde van ronde 7 of wanneer alle helden gewond zijn.",
     "campaignName": "Basisspel",
     "startingObjective": "Vind en onderzoek alle drie de terminals (&Terminals investigated&/3)",
     "repositionOverride": null,
@@ -11,16 +11,102 @@
   },
   "events": [
     {
+      "eventName": "Arrival",
+      "GUID": "1d149f68-c9f2-4ac8-a0bd-8ed9146d6cb8",
+      "eventText": "Uit het gebladerte komt een scout walker tevoorschijn, eentje die je nog niet eerder hebt gezien. Het angstaanjagende voertuig is afgeladen met wapens. Een krachtige, versterkte stem klinkt vanuit de intimiderende machine, \"Rebellen! Dit is generaal Vitsun Weiss van het keizerlijke leger. Jullie hebben geen enkele kans en zijn volledig omsingeld. Geef je over en ik beloof dat ik genadig zal zijn!\"",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "cf1867b3-3b7e-4133-ac54-9afc397a458b",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG073/General Weiss"
+        }
+      ]
+    },
+    {
+      "eventName": "Check Early Win",
+      "GUID": "e3a486b7-68c8-4165-a875-74a3b79fed2b",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defense Protocol 1",
+      "GUID": "a23542c8-dca5-41c9-9bd9-d2b8a0fb38a3",
+      "eventText": "Terwijl de deur openschuift, ontploft een verborgen lading met een oorverdovende knal.\n\nElke held die zich binnen 3 velden van de deur bevindt test {J}. Elke held die faalt, wordt <color=\"red\">verdoofd</color>.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defense Protocol 2",
+      "GUID": "6137459f-7412-4d99-896e-8c4633d37b78",
+      "eventText": "Terwijl de deur openschuift, bekruipt je een gevoel van onheil.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defense Protocol 3",
+      "GUID": "85559af7-c245-4195-b199-b143337dc279",
+      "eventText": "Terwijl de deur openschuift, komen de overgebleven Probe Droids in actie.\n\nElke Probe Droid voert de volgende instructie uit:\n\n{-} Verplaats 3 om {rebel} aan te vallen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Defense Protocol 4",
+      "GUID": "765c284f-1d70-4fea-96b8-5344d61108ce",
+      "eventText": "Wanneer de deur opengaat, klinkt er een gegrom uit het donker en maakt iets zich gereed om aan te vallen.\n\nPlaats de Nexu op een binnenveld binnen 3 velden van de geopende deur.",
+      "eventActions": [
+        {
+          "enemyName": null,
+          "customText": "",
+          "modification": null,
+          "repositionInstructions": "",
+          "GUID": "8d903642-7405-4064-b10c-189fe0104d00",
+          "eventActionType": 6,
+          "eaName": "Deploy: DG017/Nexu"
+        }
+      ]
+    },
+    {
+      "eventName": "End Mission Early Win",
+      "GUID": "c9e988e6-2624-4ef5-98e0-04343353b19b",
+      "eventText": "Omdat de helden alle terminals hebben onderzocht voor het einde van ronde 5, ontvangen ze 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End Mission No Early Win",
+      "GUID": "2d24ba83-f2e2-4ec1-b0d1-8956e2f578e3",
+      "eventText": "",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "58d91632-7258-43d3-943e-d9751a023be8",
+      "eventText": "Hoewel de missie nog niet voltooid is, zie je geen mogelijkheid om door de keizerlijke troepen heen te breken die je positie onder vuur blijven nemen. Alleen dankzij een gewaagde en gevaarlijke reddingsactie van je piloot weet je ternauwernood te ontsnappen.\n\nUit de schaarse informatie die je hebt kunnen verzamelen, blijkt dat het oppercommando van het Verzet op het spoor is gekomen van geruchten over een nieuw wapen in ontwikkeling onder leiding van generaal Weiss. Hoewel de details beperkt blijven, blijkt dat de missie tenminste geen volledige mislukking was.\n\n{-} De Rebellen verliezen de missie.\n{-} Plaats verhaalmissiekaart \"Op eigen houtje (Fly Solo)\" in het spel. \n{-} Elke held ontvangt 1 XP.\n{-} Helden ontvangen 100 credits per held.\n{-} Verhoog het dreigingsniveau van de volgende missie (en alleen de volgende missie) met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellen spelers beslissen om 50 credits per held uit te geven om dit te voorkomen.",
+      "eventActions": []
+    },
+    {
+      "eventName": "End of Mission - Rebels win",
+      "GUID": "f8166aac-359c-4023-9592-51fecec969c1",
+      "eventText": "De missie is voltooid. Je trekt je snel terug in het omringende bos en geeft door dat je klaarstaat om opgehaald te worden. Je vertrekt op het juiste moment en terwijl je in de lucht bent, merk je dat een grote groep keizerlijke troepen naar de installatie oprukt.\n\nBij je terugkeer krijg je een compliment van je commandant, \"Goed gedaan. Het team van technici is al bezig met het analyseren van de verzamelde gegevens. Hoewel ze nog lang niet klaar zijn, veroorzaakt de eerste informatie over dit nieuwe wapenproject al flinke zorgen.\"\n\n\"Bereid je voor op een nieuwe operatie binnenkort,\" waarschuwt ze, \"want we gaan achter alle aanwijzingen aan die we kunnen vinden.\"\n\n{-} De Rebellen winnen de missie!\n{-} Plaats verhaalmissiekaart \"Keizerlijke gastvrijheid (Imperial Hospitality)\" in het spel. \n{-} Elke held ontvangt 2 XP.\n{-} Helden ontvangen 100 credits per held.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Je hebt de opdracht gekregen om een installatie onder bevel van generaal Weiss te onderzoeken. Het wemelt van de keizerlijke troepen in deze sector, maar dankzij een goed getimede afleidingsactie van een ander team krijg je de kans om ongezien binnen te sluipen. Het is een vreemde plek en mist de strakke organisatie die je normaal gesproken van het Keizerrijk zou verwachten.\n\nOndanks de afleiding duurt het niet lang voordat je de aandacht trekt. Een snelle en doeltreffende infiltratie is daarom essentieel.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Deuren zijn vergrendeld voor rebellen. Een rebellenfiguur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).\n{-} Een held kan een interactie uitvoeren op een terminal om de token om te draaien naar de gekleurde zijde en een attribuuttest uit te voeren afhankelijk van de terminal waarmee hij /zij bezig is. Als die slaagt, is die terminal onderzocht.\n{-} De rebellen winnen als alle terminals onderzocht zijn. \n{-} De rebellen verliezen aan het einde van ronde 7 of wanneer alle helden gewond zijn.",
+      "eventActions": []
+    },
+    {
       "eventName": "Open Crate 1",
       "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
             {
               "entityName": "Crate1",
               "GUID": "9f225146-8114-4d60-9bb4-98859821ba75",
-              "theText": "Een oud voorraadkrat",
+              "theText": "Een oud voorraadkrat.",
               "buttonList": [
                 {
                   "GUID": "26fdfdc2-fa3a-4de8-9c6f-7d33824f21ce",
@@ -38,7 +124,7 @@
     {
       "eventName": "Open Crate 2",
       "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -58,7 +144,7 @@
     {
       "eventName": "Open Crate 3",
       "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -78,7 +164,7 @@
     {
       "eventName": "Open Crate 4",
       "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -90,48 +176,6 @@
             }
           ],
           "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Je bent gestuurd om een installatie onder het bevel van generaal Weiss te onderzoeken. De aanwezigheid van keizerlijke troepen is hoog in deze sector, maar een goed getimede afleiding van een ander team geeft je de kans om binnen te sluipen. Het is een vreemde plek, zonder de strakke organisatie die je van het Keizerrijk verwacht.\n\nZelfs met de afleiding duurt het niet lang voordat je de aandacht trekt. Een zo snel en efficiënt mogelijke infiltratie is aangeraden. \n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Deuren zijn vergrendeld voor rebellenfiguren. Een rebellenfiguur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).\n{-} Een held kan een interactie uitvoeren op een terminal om de token om te draaien naar de gekleurde zijde en een attribuuttest uit te voeren afhankelijk van de terminal waarmee hij /zij bezig is. Als die slaagt, is die terminal onderzocht.\n{-} De rebellen winnen als alle terminals zijn onderzocht. \n{-} De rebellen verliezen aan het einde van ronde 7 of wanneer alle helden gewond zijn.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Arrival",
-      "GUID": "1d149f68-c9f2-4ac8-a0bd-8ed9146d6cb8",
-      "eventText": "Uit het gebladerte komt een scout walker tevoorschijn die je nog nooit eerder hebt gezien. Het angstaanjagende voertuig is afgeladen met wapens. \"Rebellen!\" een versterkte stem komt uit de monsterlijke walker. \"Dit is generaal Vitsun Weiss van het keizerlijke leger. Jullie zijn omsingeld en kansloos. Geef je over en ik beloof dat ik genadig zal zijn!\"",
-      "eventActions": [
-        {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "cf1867b3-3b7e-4133-ac54-9afc397a458b",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG073/General Weiss"
-        }
-      ]
-    },
-    {
-      "eventName": "Reveal North",
-      "GUID": "e283030c-382e-4051-996b-bbbb27da4d71",
-      "eventText": "Je opent de deur en komt in een schemerige briefingruimte die in verval lijkt te zijn.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Door North",
-              "GUID": "6e4fce7e-1494-444b-9000-8cd65e605ef5",
-              "theText": "Deze deur leidt naar een grote opslagruimte.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "44c7eefc-79d2-4c5e-a223-0aa78dcff2bb",
           "eventActionType": 15,
           "eaName": "Modify Map Entity"
         }
@@ -163,9 +207,29 @@
       ]
     },
     {
+      "eventName": "Reveal North",
+      "GUID": "e283030c-382e-4051-996b-bbbb27da4d71",
+      "eventText": "Je opent de deur en stapt een halfverlichte briefingruimte binnen die duidelijk tekenen van verval vertoont.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Door North",
+              "GUID": "6e4fce7e-1494-444b-9000-8cd65e605ef5",
+              "theText": "Deze deur leidt naar een grote opslagruimte.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "44c7eefc-79d2-4c5e-a223-0aa78dcff2bb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
       "eventName": "Reveal South",
       "GUID": "67fd011a-09f7-4885-bf95-9330a71a5cf4",
-      "eventText": "Je opent de deur en ziet een opslagruimte met overal rommel.",
+      "eventText": "Je opent de deur en ziet een opslagruimte bezaaid met afval.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -188,43 +252,123 @@
       ]
     },
     {
-      "eventName": "Defense Protocol 1",
-      "GUID": "a23542c8-dca5-41c9-9bd9-d2b8a0fb38a3",
-      "eventText": "Als de deur opengaat, ontploft een verborgen lading met een oorverdovende knal.\n\nElke held binnen 3 velden van de deur test {J}. Elke held die faalt is <color=\"red\">verdoofd</color>.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Defense Protocol 2",
-      "GUID": "6137459f-7412-4d99-896e-8c4633d37b78",
-      "eventText": "Zodra de deur opengaat, bekruipt je een gevoel van angst.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Defense Protocol 3",
-      "GUID": "85559af7-c245-4195-b199-b143337dc279",
-      "eventText": "Zodra de deur opengaat, komen de overgebleven Probe droids in actie.\n\nElke Probe droid lost de volgende instructie op:\n\n{-} Verplaats 3 om {rebel} aan te vallen.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Defense Protocol 4",
-      "GUID": "765c284f-1d70-4fea-96b8-5344d61108ce",
-      "eventText": "Op het moment dat de deur opengaat, gromt er iets in het donker en het maakt zich klaar om aan te vallen.\n\nZet de Nexu in op een binnenruimte binnen 3 velden van de geopende deur.",
+      "eventName": "Terminal Blue Interact",
+      "GUID": "e46816a8-666a-4f66-87be-b63a4b28c8e0",
+      "eventText": "Je begint met het herstellen van de gegevens.",
       "eventActions": [
         {
-          "enemyName": null,
-          "customText": "",
-          "modification": null,
-          "repositionInstructions": "",
-          "GUID": "8d903642-7405-4064-b10c-189fe0104d00",
-          "eventActionType": 6,
-          "eaName": "Deploy: DG017/Nexu"
+          "mainText": "Voer een {J}-test uit en voer het aantal successen in.\n\nPas +1 {B} toe voor elk forceertoken dat zich op de terminal bevindt.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "2d017143-515a-4859-bf4c-01900421cda9",
+              "theText": "Je boekt vooruitgang, maar je bent nog niet klaar.\n\nVoor elke {B} die je gooit, plaats je 1 forceertoken op de terminal."
+            }
+          ],
+          "GUID": "3a702c1b-e535-4b67-8e4e-1e8596d7e2d3",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal Blue Success",
+      "GUID": "863dfc37-e540-4884-a0e8-7d074ce24860",
+      "eventText": "Gegevens rollen over het scherm van het verouderde apparaat, een logboek vol met uiteenlopende technische details. Terwijl je het zorgvuldig doorneemt, ontdek je vermeldingen van diverse zendingen naar dit gebied.\n\nHet gaat om allerlei onderdelen: schroot, energievoorzieningen, een paar wapens. Wat echter meteen opvalt, is hoe de puzzelstukjes op elkaar aansluiten. Je krijgt het sterke vermoeden dat deze installatie werd gebruikt om een voertuig te bouwen of aan te passen, iets wat volledig afwijkt van de typische keizerlijke ontwerpen.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal Blue",
+              "GUID": "7c91c48b-0327-4c06-bf6d-e4843d013c51",
+              "theText": "De gegevens op deze terminal lijken beschadigd te zijn. Het zal wat inspanning vergen om er iets bruikbaars uit te halen.",
+              "buttonList": [
+                {
+                  "GUID": "8f281675-8e67-4557-be01-6c53497d0062",
+                  "theText": "Button Text"
+                }
+              ]
+            }
+          ],
+          "GUID": "3d1a1a99-82a8-4a67-bd95-5014b6e3998e",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal Green Interact",
+      "GUID": "9897ecc3-1fde-4502-8fbc-cc382755e86b",
+      "eventText": "Je begint met het repareren van de terminal.",
+      "eventActions": [
+        {
+          "mainText": "Voer een {I}-test uit en voer het aantal successen in.\n\nPas +1 {B} toe voor elk forceertoken dat zich op de terminal bevindt.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "205ba7d1-5ef9-4141-8c34-2daacb323694",
+              "theText": "Je maakt vooruitgang, maar je bent nog niet klaar.\n\nVoor elke {B} die je gooit, plaats je 1 forceertoken op de terminal."
+            }
+          ],
+          "GUID": "74cf2484-20ca-444f-a1b8-250bab6ccb72",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal Green Success",
+      "GUID": "c70508ca-0df5-43ec-91ef-8d93cc5cd916",
+      "eventText": "Met enige inspanning komt de terminal tot leven. Er worden tal van prototype-ingenieursprojecten beschreven, maar één wapenproject in het bijzonder is duidelijk van belang.\n\nHoewel de details opzettelijk vaag blijven, is er sprake van uitgebreide communicatie rond het onderwerp. Een voelbare ernst hangt rond het project, wat het belang van de informatie benadrukt.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Terminal Green",
+              "GUID": "e9b8ff2b-0bd6-4a20-8359-c211353fdfb5",
+              "theText": "Deze terminal is vervallen. Er is enige inspanning nodig om hem weer aan de praat te krijgen.",
+              "buttonList": [
+                {
+                  "GUID": "b5bb03e2-095e-445c-95b3-1e91fabeec60",
+                  "theText": "Button Text"
+                },
+                {
+                  "GUID": "243e82a1-d9f4-4269-b89e-4bb5e09932e8",
+                  "theText": "Button Text"
+                }
+              ]
+            }
+          ],
+          "GUID": "e9cd03ac-f67d-4a48-86c9-eded5f5c9af9",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Terminal Red Interact",
+      "GUID": "297a2fcf-b9ed-49e1-8704-6e78c01425a0",
+      "eventText": "Je begint door het puin te graven.",
+      "eventActions": [
+        {
+          "mainText": "Voer een {K}-test uit en voer het aantal successen in. Pas +1 {B} toe voor elk forceertoken dat zich op de terminal bevindt.",
+          "failText": "",
+          "inputList": [
+            {
+              "GUID": "04c3205d-c4cd-4df3-aaa9-a810e347a666",
+              "theText": "Je maakt vooruitgang, maar je bent nog niet klaar.\n\nVoor elke {B} die je gooit, plaats je 1 forceertoken op de terminal."
+            }
+          ],
+          "GUID": "f8e3cc3b-3460-4ca7-8fef-7adf62e1d9df",
+          "eventActionType": 20,
+          "eaName": "Input Prompt"
         }
       ]
     },
     {
       "eventName": "Terminal Red Success",
       "GUID": "366b9ee1-b953-443b-bea4-3bbcb889eb90",
-      "eventText": "Met veel moeite graaf je door het puin en vind je de terminal. Het is een klein wonder, hij functioneert nog steeds en bevat zelfs bruikbare gegevens. \n\nHet lijkt erop dat het doel van deze buitenpost onderzoek en ontwikkeling was, aangezien veel van de gegevens betrekking hebben op techniek, prototypes van aanvalsvoertuigen, bepantsering en wapens. Overal vind je berichten van generaal Weiss en het is duidelijk dat hij betrokken is bij veel van de genoemde projecten.",
+      "eventText": "Met veel moeite worstel je je door het puin en vind je uiteindelijk de terminal. Tot je verbazing functioneert deze nog steeds en bevat hij zelfs waardevolle informatie.\n\nUit de gegevens blijkt dat deze buitenpost zich richtte op onderzoek en ontwikkeling. Een aanzienlijk deel van de informatie gaat over technologie, prototypes van gevechtsvoertuigen, bepantsering en wapens. Overal kom je berichten tegen van generaal Weiss, wat erop wijst dat hij nauw betrokken was bij veel van deze projecten.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -245,150 +389,6 @@
           "eaName": "Modify Map Entity"
         }
       ]
-    },
-    {
-      "eventName": "Terminal Red Interact",
-      "GUID": "297a2fcf-b9ed-49e1-8704-6e78c01425a0",
-      "eventText": "Je begint door het puin te graven.",
-      "eventActions": [
-        {
-          "mainText": "Voer een {K} test uit en voer het aantal successen in. Pas +1 {B} toe voor elk forceertoken op de terminal.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "04c3205d-c4cd-4df3-aaa9-a810e347a666",
-              "theText": "Je boekt vooruitgang, maar je bent nog niet klaar.\n\nVoor elke {B} die je gooit, plaats je 1 forceertoken op de terminal."
-            }
-          ],
-          "GUID": "f8e3cc3b-3460-4ca7-8fef-7adf62e1d9df",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Terminal Blue Interact",
-      "GUID": "e46816a8-666a-4f66-87be-b63a4b28c8e0",
-      "eventText": "Je begint de data te herstellen.",
-      "eventActions": [
-        {
-          "mainText": "Voer een {J} test uit en voer het aantal successen in.\n\nPas +1 {B} toe voor elk forceertoken op de terminal.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "2d017143-515a-4859-bf4c-01900421cda9",
-              "theText": "Je boekt vooruitgang, maar je bent nog niet klaar.\n\nVoor elke {B} die je gooit, plaats je 1 forceertoken op de terminal."
-            }
-          ],
-          "GUID": "3a702c1b-e535-4b67-8e4e-1e8596d7e2d3",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "Terminal Blue Success",
-      "GUID": "863dfc37-e540-4884-a0e8-7d074ce24860",
-      "eventText": "Gegevens rollen over het verouderde apparaat, een logboek gevuld met allerlei technische gegevens. Terwijl je er een tijdje in graaft, vind je vermeldingen over diverse zendingen naar dit gebied.\n\nAllerlei schroot, stroomvoorzieningen, een paar wapens, maar wat je opvalt is hoe de stukjes in elkaar passen. Je vermoedt dat dit deel van de installatie werd gebruikt om een soort voertuig te bouwen of aan te passen. Iets heel anders dan het gebruikelijke keizerlijke patroon.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Terminal Blue",
-              "GUID": "7c91c48b-0327-4c06-bf6d-e4843d013c51",
-              "theText": "De gegevens op deze terminal lijken corrupt te zijn. Het zal enige moeite kosten om er iets zinnigs uit te halen.",
-              "buttonList": [
-                {
-                  "GUID": "8f281675-8e67-4557-be01-6c53497d0062",
-                  "theText": "Button Text"
-                }
-              ]
-            }
-          ],
-          "GUID": "3d1a1a99-82a8-4a67-bd95-5014b6e3998e",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Terminal Green Success",
-      "GUID": "c70508ca-0df5-43ec-91ef-8d93cc5cd916",
-      "eventText": "Met wat moeite komt de terminal tot leven. Er wordt een groot aantal prototype engineering projecten beschreven, maar één wapenproject in het bijzonder is duidelijk van belang.\n\nDetails lijken opzettelijk vaag, maar er is veel communicatie rond het onderwerp. Er is een zekere ernst verbonden aan het project, waardoor de informatie belangrijk voelt.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Terminal Green",
-              "GUID": "e9b8ff2b-0bd6-4a20-8359-c211353fdfb5",
-              "theText": "Deze terminal is in verval. Er is wat werk nodig om hem weer aan de praat te krijgen.",
-              "buttonList": [
-                {
-                  "GUID": "b5bb03e2-095e-445c-95b3-1e91fabeec60",
-                  "theText": "Button Text"
-                },
-                {
-                  "GUID": "243e82a1-d9f4-4269-b89e-4bb5e09932e8",
-                  "theText": "Button Text"
-                }
-              ]
-            }
-          ],
-          "GUID": "e9cd03ac-f67d-4a48-86c9-eded5f5c9af9",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Terminal Green Interact",
-      "GUID": "9897ecc3-1fde-4502-8fbc-cc382755e86b",
-      "eventText": "Je probeert de terminal te repareren.",
-      "eventActions": [
-        {
-          "mainText": "Voer een {I} test uit en voer het aantal successen in.\n\nPas +1 {B} toe voor elk forceertoken op de terminal.",
-          "failText": "",
-          "inputList": [
-            {
-              "GUID": "205ba7d1-5ef9-4141-8c34-2daacb323694",
-              "theText": "Je boekt vooruitgang, maar je bent nog niet klaar.\n\nVoor elke {B} die je gooit, plaats je 1 forceertoken op de terminal."
-            }
-          ],
-          "GUID": "74cf2484-20ca-444f-a1b8-250bab6ccb72",
-          "eventActionType": 20,
-          "eaName": "Input Prompt"
-        }
-      ]
-    },
-    {
-      "eventName": "End of Mission - Rebels win",
-      "GUID": "f8166aac-359c-4023-9592-51fecec969c1",
-      "eventText": "De klus is geklaard, je trekt je haastig terug in het omringende bos en geeft aan dat je opgepikt wilt worden. Je vertrek komt precies op tijd en terwijl je wegvliegt, zie je een aanzienlijk aantal keizerlijke troepen op de installatie afkomen.\n\n\"Goed gedaan,\" je commandant feliciteert je bij je terugkeer. \"De technici zijn de gegevens die je hebt gevonden aan het analyseren. Ze zijn nog lang niet klaar, maar er is nu al veel ongerustheid over dit nieuwe wapenproject.\"\n\n\"Bereid je voor op een nieuwe operatie binnenkort,\" waarschuwt ze, \"want we gaan achter alle aanwijzingen aan die we kunnen vinden.\"\n\n{-} De Rebellen winnen de missie!\n{-} Plaats verhaalmissiekaart \"Imperial Hospitality\" in het spel. \n{-} Elke held ontvangt 2 XP.\n{-} Helden ontvangen 100 credits per held.\n{-} Als de helden alle terminals hebben onderzocht voor het einde van ronde 5, ontvangen ze nog eens 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "58d91632-7258-43d3-943e-d9751a023be8",
-      "eventText": "Hoewel de missie nog niet is voltooid, zie je geen mogelijkheid om door de keizerlijke troepen heen te breken die je positie onder vuur blijven nemen. Alleen door een riskante en dwaze reddingsactie van je piloot kun je ontsnappen.\n\nUit de weinige informatie die je hebt kunnen vinden, blijkt dat het Oppercommando van de Alliantie geruchten heeft ontdekt over een nieuw wapen dat door generaal Weiss wordt ontwikkeld. Tot nu toe is er niet meer bekend, maar de missie was in ieder geval geen complete mislukking.\n\n{-} De Rebellen verliezen de missie.\n{-} Plaats verhaalmissiekaart \"Fly Solo\" in het spel. \n{-} Elke held ontvangt 1 XP.\n{-} Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "Check Early Win",
-      "GUID": "e3a486b7-68c8-4165-a875-74a3b79fed2b",
-      "eventText": "",
-      "eventActions": []
-    },
-    {
-      "eventName": "End Mission Early Win",
-      "GUID": "c9e988e6-2624-4ef5-98e0-04343353b19b",
-      "eventText": "Omdat de helden alle terminals hebben onderzocht voor het einde van ronde 5, ontvangen ze 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End Mission No Early Win",
-      "GUID": "2d24ba83-f2e2-4ec1-b0d1-8956e2f578e3",
-      "eventText": "",
-      "eventActions": []
     }
   ],
   "mapEntities": [
@@ -437,34 +437,37 @@
       ]
     },
     {
-      "entityName": "Entrance",
-      "GUID": "d20550ac-ae14-4a6e-b558-0a07eecc53e5",
-      "mainText": "Plaats de rebellen hier.",
-      "buttonList": []
+      "entityName": "Door East",
+      "GUID": "628f5a4b-173e-44d6-ba37-a4d357b350ec",
+      "mainText": "Deze deur leidt naar een kleine loods.",
+      "buttonList": [
+        {
+          "GUID": "74cb455c-1177-43b0-8a18-893435a0dcdd",
+          "theText": "Vernietigen"
+        }
+      ]
     },
     {
-      "entityName": "DP Probe Elite",
-      "GUID": "32c71483-fc5e-4de5-aecc-d484c0909b5e",
-      "mainText": null,
-      "buttonList": []
+      "entityName": "Door North",
+      "GUID": "98907d92-58b8-42fe-9fd8-23ae74f4ab98",
+      "mainText": "Deze deur leidt naar een grote briefingruimte.",
+      "buttonList": [
+        {
+          "GUID": "c141b44e-84ea-42bf-9c13-dc8dc26a7b15",
+          "theText": "Vernietigen"
+        }
+      ]
     },
     {
-      "entityName": "DP Probe 1",
-      "GUID": "9fca2c6c-597f-4377-81a4-56b4d3922422",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Probe 2",
-      "GUID": "ea1de4a1-5762-4a49-9b4c-ebcc14db5c07",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Nexu",
-      "GUID": "ca801794-9cb7-40d6-b6eb-ef03bac35b22",
-      "mainText": null,
-      "buttonList": []
+      "entityName": "Door South",
+      "GUID": "7965c8a5-b117-48af-8f9c-2e02ba495178",
+      "mainText": "Deze deur leidt naar een opslagruimte.",
+      "buttonList": [
+        {
+          "GUID": "0a474ea3-8b05-4f82-9449-503ed76df2e6",
+          "theText": "Vernietigen"
+        }
+      ]
     },
     {
       "entityName": "DP Green 1",
@@ -485,20 +488,45 @@
       "buttonList": []
     },
     {
-      "entityName": "Terminal Red",
-      "GUID": "20661d7f-0da5-418c-85b4-f5f7d27c1ac0",
-      "mainText": "De terminal is onder het puin begraven door het ingestorte plafond. Je zult hem moeten uitgraven.",
-      "buttonList": [
-        {
-          "GUID": "9aebb290-6d28-4a3a-8e70-3a6535ae4d3b",
-          "theText": "{A} Begin met graven"
-        }
-      ]
+      "entityName": "DP Nexu",
+      "GUID": "ca801794-9cb7-40d6-b6eb-ef03bac35b22",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe 1",
+      "GUID": "9fca2c6c-597f-4377-81a4-56b4d3922422",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe 2",
+      "GUID": "ea1de4a1-5762-4a49-9b4c-ebcc14db5c07",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Probe Elite",
+      "GUID": "32c71483-fc5e-4de5-aecc-d484c0909b5e",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Weiss",
+      "GUID": "2252d135-34c0-437b-b7fc-4c850c6c3f24",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "Entrance",
+      "GUID": "d20550ac-ae14-4a6e-b558-0a07eecc53e5",
+      "mainText": "Plaats de rebellen hier.",
+      "buttonList": []
     },
     {
       "entityName": "Terminal Blue",
       "GUID": "bf3e6580-c9db-4605-bd0a-a703fc7bf2d6",
-      "mainText": "De gegevens op deze terminal lijken corrupt te zijn. Het zal enige moeite kosten om er iets zinnigs uit te halen.",
+      "mainText": "De gegevens op deze terminal lijken beschadigd te zijn. Het zal wat inspanning vergen om er iets bruikbaars uit te halen.",
       "buttonList": [
         {
           "GUID": "e6c48b71-3dc3-4457-833c-a3ff131228fa",
@@ -509,7 +537,7 @@
     {
       "entityName": "Terminal Green",
       "GUID": "26c125bf-1337-44ce-945e-8a84362726f6",
-      "mainText": "Deze terminal is in verval. Er is wat werk nodig om hem weer aan de praat te krijgen.",
+      "mainText": "Deze terminal is vervallen. Er is enige inspanning nodig om hem weer aan de praat te krijgen.",
       "buttonList": [
         {
           "GUID": "38e8f64d-6fe5-41d5-9778-a46f537cee15",
@@ -518,46 +546,22 @@
       ]
     },
     {
-      "entityName": "DP Weiss",
-      "GUID": "2252d135-34c0-437b-b7fc-4c850c6c3f24",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "Door North",
-      "GUID": "98907d92-58b8-42fe-9fd8-23ae74f4ab98",
-      "mainText": "Deze deur leidt naar een grote briefingruimte.\r\n\r\nDeuren zijn vergrendeld voor rebellenfiguren. Een rebellenfiguur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).",
+      "entityName": "Terminal Red",
+      "GUID": "20661d7f-0da5-418c-85b4-f5f7d27c1ac0",
+      "mainText": "De terminal is onder het puin begraven door het ingestorte plafond. Je zult hem moeten uitgraven.",
       "buttonList": [
         {
-          "GUID": "c141b44e-84ea-42bf-9c13-dc8dc26a7b15",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "Door East",
-      "GUID": "628f5a4b-173e-44d6-ba37-a4d357b350ec",
-      "mainText": "Deze deur leidt naar een kleine loods.\r\n\r\nDeuren zijn vergrendeld voor rebellenfiguren. Een rebellenfiguur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).",
-      "buttonList": [
-        {
-          "GUID": "74cb455c-1177-43b0-8a18-893435a0dcdd",
-          "theText": "Vernietigen"
-        }
-      ]
-    },
-    {
-      "entityName": "Door South",
-      "GUID": "7965c8a5-b117-48af-8f9c-2e02ba495178",
-      "mainText": "Deze deur leidt naar een opslagruimte.\r\n\r\nDeuren zijn vergrendeld voor rebellenfiguren. Een rebellenfiguur kan een deur aanvallen (gezondheid: 5, verdediging: 1 {G}).",
-      "buttonList": [
-        {
-          "GUID": "0a474ea3-8b05-4f82-9449-503ed76df2e6",
-          "theText": "Vernietigen"
+          "GUID": "9aebb290-6d28-4a3a-8e70-3a6535ae4d3b",
+          "theText": "{A} Begin met graven"
         }
       ]
     }
   ],
   "initialGroups": [
+    {
+      "cardName": "Nexu (Elite)",
+      "customInstructions": ""
+    },
     {
       "cardName": "Probe Droid",
       "customInstructions": ""
@@ -568,10 +572,6 @@
     },
     {
       "cardName": "Probe Droid (Elite)",
-      "customInstructions": ""
-    },
-    {
-      "cardName": "Nexu (Elite)",
       "customInstructions": ""
     }
   ]

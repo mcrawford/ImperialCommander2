@@ -3,7 +3,7 @@
   "missionProperties": {
     "missionName": "Middernacht",
     "missionDescription": "",
-    "missionInfo": "{-} De deur is vergrendeld.\n{-} De missietoken van de rebellen stelt een comlink voor. Jyn kan een interactie uitvoeren op de comlink om Szark op te roepen.\n{-} De missie gaat verder als Jyn Szark roept.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+    "missionInfo": "{-} De deur is vergrendeld.\n{-} De rebellen missietoken stelt een comlink voor. Jyn kan een interactie uitvoeren op de comlink om Szark op te roepen.\n{-} De missie gaat verder als Jyn Szark oproept.\n{-} De rebellen verliezen als alle helden gewond zijn.",
     "campaignName": "Basisspel",
     "startingObjective": "Roep Szark op via de comlink.",
     "repositionOverride": "Blokkeer de toegang tot <b>Szark</b>.",
@@ -11,112 +11,21 @@
   },
   "events": [
     {
-      "eventName": "Open Crate 1",
-      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate1",
-              "GUID": "24377393-d316-4bbe-9a8c-718a6cc2cf57",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": [
-                {
-                  "GUID": "b0919fee-478c-41c1-91ca-1de463928ec9",
-                  "theText": "{A} Openen"
-                }
-              ]
-            }
-          ],
-          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 2",
-      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate2",
-              "GUID": "36472561-1a0f-4778-bdf9-a03d96941882",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 3",
-      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate3",
-              "GUID": "33f5b9da-5944-48d7-afd6-e1575b65bbc2",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Open Crate 4",
-      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
-      "eventText": "Je rommelt door de voorraden en neemt alles wat nuttig lijkt.\r\n\r\nTrek een voorraadkaart. Je krijgt 1 medpac. Claim dit token.",
-      "eventActions": [
-        {
-          "translatedEntityProperties": [
-            {
-              "entityName": "Crate4",
-              "GUID": "5713b9fd-273b-47eb-b7b0-f209f71cb194",
-              "theText": "Een oud voorraadkrat.",
-              "buttonList": []
-            }
-          ],
-          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
-          "eventActionType": 15,
-          "eaName": "Modify Map Entity"
-        }
-      ]
-    },
-    {
-      "eventName": "Mission Briefing",
-      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
-      "eventText": "Je verstopt je en wacht tot Szark zich laat zien. “Het is blijkbaar zijn maan. Hij zal uiteindelijk wel komen.” Jyn vloekt en fronst. Je wacht al behoorlijk lang.\n\n“Daar is hij,” zegt Jyn, terwijl ze wijst. Verderop in de straat loopt Szark de cantina uit, naar de kleine groep keizerlijke troepen. “Weer een deal aan het sluiten, hè? Was één maan niet genoeg?”\n\nVoordat je haar kunt tegenhouden, springt Jyn uit haar dekking en sprint naar voren, terwijl ze haar blaster afvuurt. Szark's ogen worden groot en hij krabbelt weg. Hij duikt zijn persoonlijke cantina weer in en slaat de deur dicht terwijl er blasterschoten langs zijn hoofd suizen.\n\nJe staat een paar stappen achter Jyn terwijl Szarks huurlingen en keizerlijke bondgenoten hun wapens trekken.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Jyn Odan wordt niet ingezet bij de helden en wordt in plaats daarvan op het rood gemarkeerde veld geplaatst.\n{-} De deur is vergrendeld.\n{-} De missietoken van de rebellen stelt een comlink voor. Jyn kan een interactie uitvoeren op de comlink om Szark op te roepen.\n{-} De missie gaat verder als Jyn Szark roept.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+      "eventName": "End of Mission - Rebels lose",
+      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
+      "eventText": "Schreeuwend springt Jyn uit haar dekking, in een poging nog een paar schoten te lossen. Drie blasterschoten treffen haar in de borst en ze valt neer. Vechtend trek je haar nauwelijks nog levende lichaam terug naar het schip.\n\"Tot de volgende keer, Jyn...\" klinkt een transmissie. \"Je moet snel weer langskomen!\" Szark barst uit in een lange, spottende lach en je bent opgelucht dat Jyn bewusteloos is.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held",
       "eventActions": []
     },
     {
       "eventName": "End of Mission - Rebels win",
       "GUID": "69b80fad-5e0e-46cd-a70e-defa45de4db6",
-      "eventText": "Gewond rent Szark de hoek om. Jyn volgt, er klinkt een vuurgevecht en daarna stilte.\n\nNiet lang daarna komt ze weer tevoorschijn en stopt haar wapen in het holster. “We gaan,” zegt ze, zonder om te kijken.\n\n{-} De rebellen winnen de missie!\n{-} Jyn ontvangt de “Peacemaker” beloningskaart.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held.",
-      "eventActions": []
-    },
-    {
-      "eventName": "End of Mission - Rebels lose",
-      "GUID": "9e960fce-d271-468c-8d6c-233bc752aa52",
-      "eventText": "Schreeuwend springt Jyn uit haar dekking om nog een paar schoten af te vuren. Drie schoten raken haar in de borst en ze valt. Vechtend trek je haar nauwelijks nog levende lichaam terug naar het schip.\n“Tot de volgende keer, Jyn... “ Er komt een bericht binnen. “Je moet snel weer langskomen!” Szark lacht spottend, je bent blij dat Jyn bewusteloos is.\n\n{-} De rebellen verliezen de missie.\n{-} Elke held ontvangt 1 XP. Helden ontvangen 100 credits per held",
+      "eventText": "Gewond strompelt Szark de hoek om. Jyn zet de achtervolging in, je hoort een uitwisseling van blastervuur, daarna stilte.\n\nNiet veel later verschijnt ze weer en stopt haar wapen in het holster. \"We gaan,\" zegt ze, zonder om te kijken.\n\n{-} De rebellen winnen de missie!\n{-} Jyn ontvangt de \"Peacemaker\" beloningskaart.\n{-} Elke held ontvangt 1 XP. De helden ontvangen 100 credits per held.",
       "eventActions": []
     },
     {
       "eventName": "Gunfight",
       "GUID": "e7a3f869-8d0e-43e3-b121-652d672ae6d1",
-      "eventText": "De deur van de cantina gaat langzaam open en een dunne Trandoshan komt naar buiten.\n\n\"Kijk wie we hier hebben,” gromt hij glimlachend. \"Jyn Odan. Nooit gedacht dat ik dit nog zou meemaken.” Zijn hand glijdt naar het holster aan zijn heup.",
+      "eventText": "De deur van de cantina zwaait langzaam open en een magere Trandoshaan slentert naar buiten.\n\n\"Kijk wie we hier hebben,\" gromt hij glimlachend. \"Jyn Odan. Nooit gedacht dat ik dit nog zou meemaken.\" Zijn hand glijdt langzaam naar het holster aan zijn heup.",
       "eventActions": [
         {
           "translatedEntityProperties": [
@@ -162,7 +71,7 @@
           "eaName": "Deploy: DG015/Trandoshan Hunter"
         },
         {
-          "tbText": "{-} Szark krijgt extra gezondheid gelijk aan twee keer het dreigingsniveau.\n{-} Szark krijgt +1 {G}.\n{-} Szark past + 2 nauwkeurigheid toe op zijn aanvalsresultaten en krijgt {B}: + 2 {H} (bovenaan de surge prioriteitenlijst).\n{-} De rebellen winnen als Szark verslagen is.",
+          "tbText": "{-} Szark krijgt extra gezondheid gelijk aan twee keer het dreigingsniveau.\n{-} Szark krijgt +1 {G}.\n{-} Szark past + 2 nauwkeurigheid toe op zijn aanvalsresultaten en krijgt {B}: + 2 {H} (bovenaan de surge prioriteitenlijst).\n{-} De rebellen winnen wanneer Szark verslagen is.",
           "GUID": "1abd0b77-e204-4796-8350-4ffd32e4949c",
           "eventActionType": 16,
           "eaName": "Text Box"
@@ -175,15 +84,123 @@
           "eaName": "Change Objective"
         },
         {
-          "theText": "{-} Szark krijgt extra gezondheid gelijk aan twee keer het dreigingsniveau.\n{-} Szark krijgt +1 {G}.\n{-} Szark past + 2 nauwkeurigheid toe op zijn aanvalsresultaten en krijgt {B}: + 2 {H} (bovenaan de surge prioriteitenlijst).\n{-} De rebellen winnen als Szark verslagen is.\r\n{-} De rebellen verliezen als alle helden gewond zijn.",
+          "theText": "{-} Szark krijgt extra gezondheid gelijk aan twee keer het dreigingsniveau.\n{-} Szark krijgt +1 {G}.\n{-} Szark past + 2 nauwkeurigheid toe op zijn aanvalsresultaten en krijgt {B}: + 2 {H} (bovenaan de surge prioriteitenlijst).\n{-} De rebellen winnen wanneer Szark verslagen is.\n{-} De rebellen verliezen als alle helden gewond zijn.",
           "GUID": "924d18d2-51c8-4511-9513-0cf7b79ede9e",
           "eventActionType": 1,
           "eaName": "Change Mission Info"
         }
       ]
+    },
+    {
+      "eventName": "Mission Briefing",
+      "GUID": "edc56ae0-7e4f-4ecd-9176-26e69bfd835a",
+      "eventText": "Je verstopt je en wacht tot Szark zich laat zien. \"Het is tenslotte zijn maan. Hij komt vanzelf wel,\" moppert Jyn met een frons. Het wachten duurt lang.\n\n\"Daar is hij,\" zegt Jyn, terwijl ze wijst. Verderop in de straat loopt Szark de cantina uit, naar de kleine groep keizerlijke troepen.\" Weer een dealtje, hè? Wat, was één maan niet genoeg?\"\n\nVoordat je haar kunt tegenhouden, springt Jyn uit haar dekking en sprint naar voren, terwijl ze haar blaster afvuurt. Szark's ogen worden groot en hij vlucht weg. Hij duikt zijn persoonlijke cantina weer in en slaat de deur dicht, terwijl blasterstralen langs zijn hoofd suizen.\n\nJe zit Jyn op de hielen wanneer Szarks huurlingen en keizerlijke bondgenoten hun wapens trekken.\n\n{-} Plaats de helden op het blauw gemarkeerde veld.\n{-} Jyn Odan wordt niet ingezet bij de helden en wordt in plaats daarvan op het rood gemarkeerde veld geplaatst.\n{-} De deur is vergrendeld.\n{-} De rebellen missietoken van de rebellen stelt een comlink voor. Jyn kan een interactie uitvoeren op de comlink om Szark op te roepen.\n{-} De missie gaat verder wanneer Jyn Szark oproept.\n{-} De rebellen verliezen als alle helden gewond zijn.",
+      "eventActions": []
+    },
+    {
+      "eventName": "Open Crate 1",
+      "GUID": "2dec36b9-ce77-4bf6-8c35-9489e6573609",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate1",
+              "GUID": "24377393-d316-4bbe-9a8c-718a6cc2cf57",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": [
+                {
+                  "GUID": "b0919fee-478c-41c1-91ca-1de463928ec9",
+                  "theText": "{A} Openen"
+                }
+              ]
+            }
+          ],
+          "GUID": "8eb6c4bb-fd64-4ae8-9b6d-a5ba3f737e6a",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 2",
+      "GUID": "74bbaee9-47db-48c2-b09c-7d0940adf6ab",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate2",
+              "GUID": "36472561-1a0f-4778-bdf9-a03d96941882",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "a6f06d59-b18c-465a-acc1-85db4a122e25",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 3",
+      "GUID": "4c60aea9-45d0-4dbe-9bea-27d51eba9079",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate3",
+              "GUID": "33f5b9da-5944-48d7-afd6-e1575b65bbc2",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "50b5bf42-216f-45db-925e-d733f34fdd76",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
+    },
+    {
+      "eventName": "Open Crate 4",
+      "GUID": "76a22dbc-227b-4ecd-8252-fd22ac3f7577",
+      "eventText": "Je rommelt door de voorraad en neemt alles wat nuttig lijkt.\n\nTrek een voorraadkaart. Je ontvangt 1 medpac. Claim deze token.",
+      "eventActions": [
+        {
+          "translatedEntityProperties": [
+            {
+              "entityName": "Crate4",
+              "GUID": "5713b9fd-273b-47eb-b7b0-f209f71cb194",
+              "theText": "Een oud voorraadkrat.",
+              "buttonList": []
+            }
+          ],
+          "GUID": "5d3f9806-368e-4034-981d-86ca38608ffb",
+          "eventActionType": 15,
+          "eaName": "Modify Map Entity"
+        }
+      ]
     }
   ],
   "mapEntities": [
+    {
+      "entityName": "Cantina Door",
+      "GUID": "7f20fe1d-9299-4fac-bb87-0dea00a9ae57",
+      "mainText": "De deur naar Szarks cantina zit stevig op slot.",
+      "buttonList": []
+    },
+    {
+      "entityName": "Comlink",
+      "GUID": "c5289b7a-b443-4442-b5db-5963633b7069",
+      "mainText": "Een oude, vast opgestelde comlink is verbonden met het communicatiesysteem van de cantina.\r\n\nJyn Odan kan een interactie uitvoeren op de comlink om Szark op te roepen.",
+      "buttonList": [
+        {
+          "GUID": "01c86eed-dfa7-470f-88f2-cf27d9c09c9f",
+          "theText": "{A} Oproepen"
+        }
+      ]
+    },
     {
       "entityName": "Crate1",
       "GUID": "dcf1e03e-e328-4f79-8427-e0a0bfc64f82",
@@ -229,9 +246,9 @@
       ]
     },
     {
-      "entityName": "Cantina Door",
-      "GUID": "7f20fe1d-9299-4fac-bb87-0dea00a9ae57",
-      "mainText": "De deur naar Szarks cantina zit op slot.",
+      "entityName": "DP E-Web",
+      "GUID": "ce75ef2b-96d3-4ff5-90e3-d62ce242146b",
+      "mainText": null,
       "buttonList": []
     },
     {
@@ -243,6 +260,18 @@
     {
       "entityName": "DP Green 2",
       "GUID": "58a58803-7b07-4743-b71c-5bbb36adbf02",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Nexu",
+      "GUID": "949cacc3-50f6-4ff8-8ca5-d3b8e6bdb876",
+      "mainText": null,
+      "buttonList": []
+    },
+    {
+      "entityName": "DP Officer",
+      "GUID": "4d04e15d-08bc-4a5b-971a-6fe9cf06f8d2",
       "mainText": null,
       "buttonList": []
     },
@@ -261,24 +290,6 @@
     {
       "entityName": "DP Szark",
       "GUID": "a22a2eda-d9c5-4a49-8893-8c3d6c0df2ce",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Nexu",
-      "GUID": "949cacc3-50f6-4ff8-8ca5-d3b8e6bdb876",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP E-Web",
-      "GUID": "ce75ef2b-96d3-4ff5-90e3-d62ce242146b",
-      "mainText": null,
-      "buttonList": []
-    },
-    {
-      "entityName": "DP Officer",
-      "GUID": "4d04e15d-08bc-4a5b-971a-6fe9cf06f8d2",
       "mainText": null,
       "buttonList": []
     },
@@ -305,17 +316,6 @@
       "GUID": "a343a128-3b10-48ff-878f-71c89176d776",
       "mainText": "Plaats de helden hier.",
       "buttonList": []
-    },
-    {
-      "entityName": "Comlink",
-      "GUID": "c5289b7a-b443-4442-b5db-5963633b7069",
-      "mainText": "Een oude, vast opgestelde comlink is verbonden met het communicatiesysteem van de cantina.\r\n\nJyn Odan kan een interactie uitvoeren op de comlink om Szark op te roepen.",
-      "buttonList": [
-        {
-          "GUID": "01c86eed-dfa7-470f-88f2-cf27d9c09c9f",
-          "theText": "{A} Interactie"
-        }
-      ]
     },
     {
       "entityName": "Entrance Jyn",

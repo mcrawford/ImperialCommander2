@@ -31,7 +31,7 @@
     "content": [
       {
         "instruction": [
-          "{-} ACTIVATE AGENT: Aan het begin van deze activering, gooi 1 blauwe dobbelsteen. Als de dobbelsteenuitslag een {B} toont, versterk je een verslagen keizerlijke figuur zo dicht mogelijk bij een andere figuur in die groep. Hij wordt <color=\"rood\">Hidden</color>.",
+          "{-} ACTIVATE AGENT: Aan het begin van deze activering, gooi 1 blauwe dobbelsteen. Als het resultaat een {B} toont, versterk je een verslagen keizerlijke figuur zo dicht mogelijk bij een andere figuur in die groep. Hij wordt <color=\"red\">verborgen</color>.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 3 naar herpositie 4.",
           "{A} Verplaats 5 naar herpositie 4.",
@@ -63,7 +63,7 @@
     "content": [
       {
         "instruction": [
-          "{-} TARGETING COMPUTER: Krijg +1 {H} en +2 Nauwkeurigheid.",
+          "{-} TARGETING COMPUTER: Krijg +1 {H} en +2 nauwkeurigheid.",
           "{Q} Val {R1} aan.",
           "{A} Verplaats 5 naar herpositie 2.",
           "{Q} Val {R1} aan.",
@@ -80,7 +80,7 @@
         "instruction": [
           "{-} Wanneer hij verplaatst, eindigt deze figuur zijn verplaatsing op zoveel mogelijk rebellen.",
           "{A} TRAMPLE: Verplaats 5 om aangrenzend aan zoveel mogelijk rebellen (minimaal 1) te komen, gooi daarna 1 rode dobbelsteen. Elke aangrenzende rebel lijdt {H} gelijk aan het totaal aantal {H} symbolen.",
-          "{Q} Als deze figuur geen \"Trample\" heeft uitgevoerd, verplaatst hij 5 om {R1} aan te vallen.",
+          "{Q} Als deze figuur geen Trample heeft uitgevoerd, verplaatst hij 5 om {R1} aan te vallen.",
           "{A} Verplaats 10 naar de dichtstbijzijnde rebel.",
           "{A} Verplaats 5 naar de dichtstbijzijnde rebel."
         ]
@@ -93,7 +93,7 @@
     "content": [
       {
         "instruction": [
-          "{-} BATTLE DISCIPLINE: Als deze figuur 2 of meer {H} heeft geleden, herstelt hij 2 {H}. Anders krijgt hij +2 {H} en +2 Nauwkeurigheid.",
+          "{-} BATTLE DISCIPLINE: Als deze figuur 2 of meer {H} heeft geleden, herstelt hij 2 {H}. Anders krijgt hij +2 {H} en +2 nauwkeurigheid.",
           "{Q} Verplaats 6 om {R1} aan te vallen.",
           "{A} Verplaats 5 om aangrenzend aan zoveel mogelijk rebellen (minimaal 1) te komen.",
           "{A} Verplaats 2 naar de dichtstbijzijnde rebel die gereed is.",
@@ -147,9 +147,9 @@
     "content": [
       {
         "instruction": [
-          "{Q} Verplaats 3 om de dichtstbijzijnde niet-<color=\"red\">Weakened</color> rebel aan te vallen.",
-          "{Q}{A} Verplaats 8 om de dichtstbijzijnde niet-<color=\"red\">Weakened</color> rebel aan te vallen.",
-          "{A} FLAMETHROWER: De 2 dichtstbijzijnde rebellen binnen 2 velden van deze figuur lijden elk 1 {H} en 1 {C}, en mogen dan {J} testen. Elke rebel die niet slaagt, wordt <color=\"red\">Verzwakt</color>.",
+          "{Q} Verplaats 3 om de dichtstbijzijnde niet-<color=\"red\">verzwakte</color> rebel aan te vallen.",
+          "{Q}{A} Verplaats 8 om de dichtstbijzijnde niet-<color=\"red\">verzwakte</color> rebel aan te vallen.",
+          "{A} FLAMETHROWER: De 2 dichtstbijzijnde rebellen binnen 2 velden van deze figuur lijden elk 1 {H} en 1 {C}, en mogen dan {J} testen. Elke rebel die niet slaagt, wordt <color=\"red\">verzwakt</color>.",
           "{A} Verplaats 5 naar herpositie 2.",
           "{A} Verplaats 5 naar herpositie 2."
         ]
@@ -157,8 +157,8 @@
       {
         "instruction": [
           "{-} Verplaats 3 naar {R1}",
-          "{A} FLAMETHROWER: De 2 dichtstbijzijnde rebellen binnen 2 velden van deze figuur lijden elk 1 {H} en 1 {C}, en mogen dan {J} testen. Elke rebel die niet slaagt, wordt <color=\"red\">Verzwakt</color>.",
-          "{Q} Als deze figuur geen \"Flamethrower\" heeft uitgevoerd, verplaatst hij 6 om {R1} aan te vallen.",
+          "{A} FLAMETHROWER: De 2 dichtstbijzijnde rebellen binnen 2 velden van deze figuur lijden elk 1 {H} en 1 {C}, en mogen dan {J} testen. Elke rebel die niet slaagt, wordt <color=\"red\">verzwakt</color>.",
+          "{Q} Als deze figuur geen FLAMETHROWER heeft uitgevoerd, verplaatst hij 6 om {R1} aan te vallen.",
           "{Q} Val {R1} aan.",
           "{A} Verplaats 2 naar herpositie 2.",
           "{A} Verplaats 8 naar herpositie 2."
@@ -174,12 +174,12 @@
         "instruction": [
           "{-} SCOUT: Aan het begin van deze activering, krijg je de Scout Form kaart.",
           "{-} AMBUSH: Als je een rebel aanvalt die 4 of meer velden verwijderd is of geen zichtlijn heeft naar deze figuur, krijg je Pierce 2.",
-          "{-} RIFLEMAN: Wanneer je een aanval declareert, vervang je 1 rode dobbelsteen van je aanvalsdobbelstenen door 1 blauwe dobbelsteen.",
+          "{-} RIFLEMAN: Wanneer je een aanval verklaart, vervang je 1 rode dobbelsteen van je aanvalsdobbelstenen door 1 blauwe.",
           "{-} PRIORITY TARGET: Figuren blokkeren de zichtlijn voor je aanvallen niet.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 4.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       },
       {
@@ -189,16 +189,16 @@
           "{-} ASSASSIN'S BLADE: Verplaats 2 om aangrenzend aan de dichtstbijzijnde rebel te komen. Als hij aangrenst, gooi je 1 rode dobbelsteen. Die rebel lijdt {H} gelijk aan het totaal aantal {H} symbolen.",
           "{A} Verplaats 2 naar herpositie 4.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       },
       {
         "instruction": [
-          "{-} SENATOR: Aan het begin van deze activatie, krijg je de Senator Form kaart...",
+          "{-} SENATOR: Aan het begin van deze activatie, krijg je de Senator Form kaart.",
           "{A} Verplaats 2 naar herpositie 4.",
-          "{-} CONSPIRE: Gooi de aanvalsdobbelstenen van deze figuur plus 1 gele dobbelsteen. Elk keizerlijk figuur binnen X velden krijgt 1 {g}, waarbij X het aantal {B} symbolen is.",
+          "{-} CONSPIRE: Gooi de aanvalsdobbelstenen van deze figuur plus 1 gele dobbelsteen. Elke keizerlijke figuur binnen X velden krijgt 1 {g}, waarbij X het aantal {B} symbolen is.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       }
     ]
@@ -211,12 +211,12 @@
         "instruction": [
           "{-} SCOUT: Aan het begin van deze activering, krijg je de Scout Form kaart.",
           "{-} AMBUSH: Als je een rebel aanvalt die 4 of meer velden verwijderd is of geen zichtlijn heeft naar deze figuur, krijg je Pierce 2.",
-          "{-} RIFLEMAN: Wanneer je een aanval declareert, vervang je 1 rode dobbelsteen van je aanvalsdobbelstenen door 1 blauwe dobbelsteen.",
+          "{-} RIFLEMAN: Wanneer je een aanval verklaart, vervang je 1 rode dobbelsteen van je aanvalsdobbelstenen door 1 blauwe.",
           "{-} PRIORITY TARGET: Figuren blokkeren de zichtlijn voor je aanvallen niet.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 4.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       },
       {
@@ -226,16 +226,16 @@
           "{-} ASSASSIN'S BLADE: Verplaats 2 om aangrenzend aan de dichtstbijzijnde rebel te komen. Als hij aangrenst, gooi je 1 rode dobbelsteen. Die rebel lijdt {H} gelijk aan het totaal aantal {H} symbolen.",
           "{A} Verplaats 2 naar herpositie 4.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       },
       {
         "instruction": [
-          "{-} SENATOR: Aan het begin van deze activatie, krijg je de Senator Form kaart...",
+          "{-} SENATOR: Aan het begin van deze activatie, krijg je de Senator Form kaart.",
           "{A} Verplaats 2 naar herpositie 4.",
-          "{-} CONSPIRE: Gooi de aanvalsdobbelstenen van deze figuur plus 1 gele dobbelsteen. Elk keizerlijk figuur binnen X velden krijgt 1 {g}, waarbij X het aantal {B} symbolen is.",
+          "{-} CONSPIRE: Gooi de aanvalsdobbelstenen van deze figuur plus 1 gele dobbelsteen. Elke keizerlijke figuur binnen X velden krijgt 1 {g}, waarbij X het aantal {B} symbolen is.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       }
     ]
@@ -248,12 +248,12 @@
         "instruction": [
           "{-} SCOUT: Aan het begin van deze activering, krijg je de Scout Form kaart.",
           "{-} AMBUSH: Als je een rebel aanvalt die 4 of meer velden verwijderd is of geen zichtlijn heeft naar deze figuur, krijg je Pierce 2.",
-          "{-} RIFLEMAN: Wanneer je een aanval declareert, vervang je 1 rode dobbelsteen van je aanvalsdobbelstenen door 1 blauwe dobbelsteen.",
+          "{-} RIFLEMAN: Wanneer je een aanval verklaart, vervang je 1 rode dobbelsteen van je aanvalsdobbelstenen door 1 blauwe.",
           "{-} PRIORITY TARGET: Figuren blokkeren de zichtlijn voor je aanvallen niet.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 4.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       },
       {
@@ -263,16 +263,16 @@
           "{-} ASSASSIN'S BLADE: Verplaats 2 om aangrenzend aan de dichtstbijzijnde rebel te komen. Als hij aangrenst, gooi je 1 rode dobbelsteen. Die rebel lijdt {H} gelijk aan het totaal aantal {H} symbolen.",
           "{A} Verplaats 2 naar herpositie 4.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       },
       {
         "instruction": [
-          "{-} SENATOR: Aan het begin van deze activatie, krijg je de Senator Form kaart...",
+          "{-} SENATOR: Aan het begin van deze activatie, krijg je de Senator Form kaart.",
           "{A} Verplaats 2 naar herpositie 4.",
-          "{-} CONSPIRE: Gooi de aanvalsdobbelstenen van deze figuur plus 1 gele dobbelsteen. Elk keizerlijk figuur binnen X velden krijgt 1 {g}, waarbij X het aantal {B} symbolen is.",
+          "{-} CONSPIRE: Gooi de aanvalsdobbelstenen van deze figuur plus 1 gele dobbelsteen. Elke keizerlijke figuur binnen X velden krijgt 1 {g}, waarbij X het aantal {B} symbolen is.",
           "{A} Verplaats 6 naar herpositie 4.",
-          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op de map staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
+          "{-} SHAPESHIFT: Als er geen figuur op de inzetkaart van deze figuur staat, neem dan de verslagen figuur met de hoogste figuurkosten van een andere keizerlijke groep die nog op het speelbord staat en plaats deze op de inzetkaart van deze figuur. Wanneer die keizerlijke groep activeert, activeer je deze figuur alsof het een figuur van die groep was, met gebruik van de aanvalsdobbelstenen van die groep, de surge prioriteit en de instructies. Wanneer de figuur op de inzetkaart van deze groep opnieuw wordt ingezet of zijn groep wordt verslagen, verwijder je de figuur van de inzetkaart van deze figuur."
         ]
       }
     ]
@@ -283,10 +283,10 @@
     "content": [
       {
         "instruction": [
-          "{-} Deze figuur legt elke Harmful conditie af en lijdt dan 1 {H} voor elke afgeworpen conditie. Als deze figuur verslagen zou worden, is hij niet verslagen tot het einde van deze activering.",
+          "{-} Deze figuur legt elke schadelijke conditie af en lijdt dan 1 {H} voor elke afgelegde conditie. Als deze figuur verslagen zou worden, is hij niet verslagen tot het einde van deze activering.",
           "{Q}{A} BRUTALITEIT: Verplaats 4 om aangrenzend aan 2 of meer rebellen te komen. Val dan elke aangrenzende rebel aan.",
           "{Q} Verplaats 4 om {R1} aan te vallen.",
-          "{A} FORCE CHOKE: Verplaats 2 naar {R1}. Dan lijdt die figuur 2 {H} en 1 {C}.",
+          "{A} FORCE CHOKE: Verplaats 2 naar {R1}. Daarna lijdt die figuur 2 {H} en 1 {C}.",
           "{A} Verplaats 6 naar {R1}."
         ]
       }
@@ -354,7 +354,7 @@
     "content": [
       {
         "instruction": [
-          "{Q} PUNISHMENT: Verplaats 4 om {R1} aan te vallen. Na deze aanval moet de verdediger voor elke niet uitgegeven {B} 1 Harmful conditie naar keuze krijgen die hij nog niet heeft.",
+          "{Q} PUNISHMENT: Verplaats 4 om {R1} aan te vallen. Na deze aanval moet de verdediger voor elke niet uitgegeven {B} 1 schadelijke conditie naar keuze krijgen die hij nog niet heeft.",
           "{A} Verplaats 3 naar herpositie 3.",
           "{A} Verplaats 5 naar herpositie 3."
         ]
@@ -369,7 +369,7 @@
         "instruction": [
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{Q}{A} Verplaats 8 om {R1} aan te vallen.",
-          "{A} De dichtstbijzijnde rebel binnen 2 velden lijdt 1 {H} en wordt <color=\"rood\">Verzwakt</color>.",
+          "{A} De dichtstbijzijnde rebel binnen 2 velden lijdt 1 {H} en wordt <color=\"red\">verzwakt</color>.",
           "{A} Verplaats 5 naar herpositie 2.",
           "{A} Verplaats 5 naar herpositie 2."
         ]
@@ -384,7 +384,7 @@
         "instruction": [
           "{-} EMPEROR: De andere keizerlijke figuur met de hoogste figuurkosten die kan aanvallen, valt {R1} aan.",
           "{A} Als deze figuur minstens 5 velden verwijderd is van de dichtstbijzijnde rebel, verplaatst hij 3 naar de rebel die aan de meeste andere rebellen grenst.",
-          "{A} FORCE LIGHTNING: Eén rebel binnen 4 velden lijdt 2 {H} en wordt <color=\"red\">Weakened</color>. Als er een andere rebel binnen 2 velden van het doelwit is, herhaal je deze instructie gericht op die rebel. Beperkt tot één keer per rebel.",
+          "{A} FORCE LIGHTNING: Eén rebel binnen 4 velden lijdt 2 {H} en wordt <color=\"red\">verzwakt</color>. Als er een andere rebel binnen 2 velden van het doelwit is, herhaal je deze instructie gericht op die rebel. Beperkt tot één keer per rebel.",
           "{Q} Verplaats 2 om {R1} aan te vallen.",
           "{A} Verplaats 3 naar herpositie 3."
         ]
@@ -401,7 +401,7 @@
           "{Q} Val {R1} aan.",
           "{Q} Val {R1} aan.",
           "{Q}{A} Verplaats 2 om {R1} aan te vallen.",
-          "{-} Als deze figuur de vorige instructie uitvoerde, lijdt hij 2 {H}.",
+          "{-} Als deze figuur de vorige instructie uitvoerde, lijdt die 2 {H}.",
           "{A} Als deze figuur niet aanviel, verplaats 4 naar herpositie 3."
         ]
       }
@@ -417,7 +417,7 @@
           "{Q} Val {R1} aan.",
           "{Q} Val {R1} aan.",
           "{Q}{A} Verplaats 3 om {R1} aan te vallen.",
-          "{-} Als deze figuur de vorige instructie uitvoerde, lijdt hij 2 {H}.",
+          "{-} Als deze figuur de vorige instructie uitvoerde, lijdt die 2 {H}.",
           "{A} Als deze figuur niet aanviel, verplaats 6 naar herpositie 3."
         ]
       }
@@ -429,7 +429,7 @@
     "content": [
       {
         "instruction": [
-          "{-} LABORED ATTACK: Als deze figuur aanvalt, werp je elke rode dobbelsteen, die een enkel {H} symbool toont, opnieuw. Na de aanval, lijdt deze figuur 1 {H} voor elke gegooide dobbelsteen.",
+          "{-} LABORED ATTACK: Tijdens het aanvallen, werp je elke rode dobbelsteen, die een enkel {H} symbool toont, opnieuw. Na de aanval, lijdt deze figuur 1 {H} voor elke opnieuw gegooide dobbelsteen.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 2.",
           "{A} Verplaats 6 naar herpositie 2."
@@ -443,7 +443,7 @@
     "content": [
       {
         "instruction": [
-          "{-} LABORED ATTACK: Als deze figuur aanvalt, werp je elke rode dobbelsteen, die een enkel {H} symbool toont, opnieuw. Na de aanval, lijdt deze figuur 1 {H} voor elke gegooide dobbelsteen.",
+          "{-} LABORED ATTACK: Tijdens het aanvallen, werp je elke rode dobbelsteen, die een enkel {H} symbool toont, opnieuw. Na de aanval, lijdt deze figuur 1 {H} voor elke opnieuw gegooide dobbelsteen.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 2.",
           "{A} Verplaats 6 naar herpositie 2."
@@ -457,7 +457,7 @@
     "content": [
       {
         "instruction": [
-          "{-} PROFESSIONAL: Als deze figuur aanvalt, werp je elke rode dobbelsteen, die een enkel {H} symbool toont, opnieuw.",
+          "{-} PROFESSIONAL: Tijdens het aanvallen, werp je elke rode dobbelsteen, die een enkel {H} symbool toont, opnieuw.",
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 2.",
           "{A} Verplaats 6 naar herpositie 2."
@@ -471,10 +471,10 @@
     "content": [
       {
         "instruction": [
-          "{-} BOMBARDMENT: De aanvallen van deze figuur vereisen geen zichtlijn of Nauwkeurigheid, en elke aanval krijgt Blast 1 {H}.",
+          "{-} BOMBARDMENT: De aanvallen van deze figuur vereisen geen zichtlijn of nauwkeurigheid, en elke aanval krijgt Blast 1 {H}.",
           "{Q} Val 2 verschillende rebellen aan. Richt op de gezonde rebel die grenst aan de meeste andere rebellen.",
           "{A} Verplaats 2 om aangrenzend aan zoveel mogelijk keizerlijke figuren (minimaal 1) te komen.",
-          "{-} ADVANCED FIREPOWER: Elk aangrenzend keizerlijk figuur wordt <color=\"red\">gefocust</color>.",
+          "{-} ADVANCED FIREPOWER: Elke aangrenzende keizerlijke figuur wordt <color=\"red\">gefocust</color>.",
           "{A} Verplaats 4 naar herpositie 6.",
           "{A} Verplaats 4 naar herpositie 6."
         ]
@@ -603,7 +603,7 @@
           "{-} PARTING SHOT: Val {R1} aan. Als het doelwit 2 of meer {H} lijdt, is deze figuur verslagen. Beperkt tot één keer per groep.",
           "{A} Verplaats 3 naar herpositie 3.",
           "{A} Verplaats 7 naar herpositie 3.",
-          "{-} REINFORCE: Versterk na activering van deze groep 1 verslagen figuur uit deze groep zo dicht mogelijk bij een andere figuur uit deze groep."
+          "{-} REINFORCE: Versterk, na activering van deze groep, 1 verslagen figuur uit deze groep zo dicht mogelijk bij een andere figuur uit deze groep."
         ]
       }
     ]
@@ -615,7 +615,7 @@
       {
         "instruction": [
           "{-} VERSATILE WEAPONRY: Tijdens een aanval moet de verdediger elke verdedigingsdobbelsteen met een {E} symbool of 3 {G} symbolen opnieuw werpen.",
-          "{Q} Val {R1} aan. Pas +1 {H} en +2 Nauwkeurigheid toe op de aanvalsresultaten.",
+          "{Q} Val {R1} aan. Pas +1 {H} en +2 nauwkeurigheid toe op de aanvalsresultaten.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 3 naar herpositie 5.",
           "{A} Verplaats 5 naar herpositie 5."
@@ -630,7 +630,7 @@
       {
         "instruction": [
           "{-} VERSATILE WEAPONRY: Tijdens een aanval moet de verdediger elke verdedigingsdobbelsteen met een {E} symbool of 3 {G} symbolen opnieuw werpen.",
-          "{Q} Val {R1} aan. Pas +1 {H} en +2 Nauwkeurigheid toe op de aanvalsresultaten.",
+          "{Q} Val {R1} aan. Pas +1 {H} en +2 nauwkeurigheid toe op de aanvalsresultaten.",
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 5.",
           "{A} Verplaats 6 naar herpositie 5."
@@ -644,7 +644,7 @@
     "content": [
       {
         "instruction": [
-          "{-} NEGOTIATE: Elke held mag een voorraadkaart afleggen om <color=\"red\">gefocust</color> van deze figuur af te leggen.",
+          "{-} NEGOTIATE: Elke held mag een voorraadkaart afleggen om de conditie <color=\"red\">gefocust</color> van deze figuur af te leggen.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 3 naar herpositie 3.",
           "{A} Verplaats 7 naar herpositie 3."
@@ -719,11 +719,11 @@
       {
         "instruction": [
           "{A} ORDER: Een andere keizerlijke figuur met figuurkosten van 3 of minder die een aanval kan uitvoeren, valt {R1} aan.",
-          "{Q} Als deze figuur \"Order\" niet heeft gebruikt, verplaats dan 3 om {R1} aan te vallen.",
+          "{Q} Als deze figuur ORDER niet heeft gebruikt, verplaats dan 3 om {R1} aan te vallen.",
           "{Q} Verplaats 1 om {R1} aan te vallen.",
-          "{A} Verplaats 3 om aangrenzend aan de andere keizerlijke figuur met de meeste Health te komen.",
+          "{A} Verplaats 3 om aangrenzend aan de andere keizerlijke figuur met de meeste gezondheid te komen.",
           "{A} Als deze figuur niet grenst aan een andere keizerlijke figuur, verplaats 4 naar herpositie 5.",
-          "{-} COWER: Indien aangrenzend aan een andere keizerlijke figuur, herstel 1 {H}. De aangrenzende niet-<color=\"red\">gefocust</color> keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>."
+          "{-} COWER: Indien aangrenzend aan een andere keizerlijke figuur, herstel 1 {H}. De aangrenzende niet-<color=\"red\">gefocuste</color> keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>."
         ]
       }
     ]
@@ -735,11 +735,11 @@
       {
         "instruction": [
           "{A} ORDER: Een andere keizerlijke figuur met figuurkosten van 3 of minder die een aanval kan uitvoeren, valt {R1} aan.",
-          "{Q} Als deze figuur \"Order\" niet heeft gebruikt, verplaats dan 3 om {R1} aan te vallen.",
+          "{Q} Als deze figuur ORDER niet heeft gebruikt, verplaats dan 3 om {R1} aan te vallen.",
           "{Q} Verplaats 1 om {R1} aan te vallen.",
-          "{A} Verplaats 3 om aangrenzend aan de andere keizerlijke figuur met de meeste Health te komen.",
+          "{A} Verplaats 3 om aangrenzend aan de andere keizerlijke figuur met de meeste gezondheid te komen.",
           "{A} Als deze figuur niet grenst aan een andere keizerlijke figuur, verplaats 4 naar herpositie 5.",
-          "{-} COWER: Indien aangrenzend aan een andere keizerlijke figuur, herstel 1 {H}. De aangrenzende niet-<color=\"red\">gefocust</color> keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>."
+          "{-} COWER: Indien aangrenzend aan een andere keizerlijke figuur, herstel 1 {H}. De aangrenzende niet-<color=\"red\">gefocuste</color> keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>."
         ]
       }
     ]
@@ -751,11 +751,11 @@
       {
         "instruction": [
           "{A} ORDER: Een andere keizerlijke figuur met figuurkosten van 6 of minder die een aanval kan uitvoeren, valt {R1} aan.",
-          "{Q} Als deze figuur \"Order\" niet heeft gebruikt, verplaats dan 3 om {R1} aan te vallen.",
+          "{Q} Als deze figuur ORDER niet heeft gebruikt, verplaats dan 3 om {R1} aan te vallen.",
           "{Q} Verplaats 1 om {R1} aan te vallen.",
-          "{A} Verplaats 3 om aangrenzend aan de andere keizerlijke figuur met de meeste Health te komen.",
+          "{A} Verplaats 3 om aangrenzend aan de andere keizerlijke figuur met de meeste gezondheid te komen.",
           "{A} Als deze figuur niet grenst aan een andere keizerlijke figuur, verplaats 4 naar herpositie 5.",
-          "{-} COWER: Indien aangrenzend aan een andere keizerlijke figuur, herstel 2 {H}. De aangrenzende niet-<color=\"red\">gefocust</color> keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>."
+          "{-} COWER: Indien aangrenzend aan een andere keizerlijke figuur, herstel 1 {H}. De aangrenzende niet-<color=\"red\">gefocuste</color> keizerlijke figuur met de hoogste figuurkosten wordt <color=\"red\">gefocust</color>."
         ]
       }
     ]
@@ -784,7 +784,7 @@
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 3.",
           "{A} Verplaats 6 naar herpositie 3.",
-          "{-} Als deze figuur niet aanviel, wordt hij <color=\"red\">Hidden</color>."
+          "{-} Als deze figuur niet aanviel, wordt hij <color=\"red\">verborgen</color>."
         ]
       }
     ]
@@ -828,7 +828,7 @@
           "{A} Verplaats 2 naar herpositie 3.",
           "{-} HAGGLE: Elke held binnen 3 velden mag 2 {J} testen. Als geen enkele held slaagt, lijden ze elk 1 {C}.",
           "{A} Verplaats 6 naar herpositie 3.",
-          "{-} TAKE COVER: Als er geen rebellen binnen 2 velden zijn, herstel dan 2 {H}."
+          "{-} TAKE COVER: Als er geen rebellen zijn binnen 2 velden, herstel dan 2 {H}."
         ]
       }
     ]
@@ -868,7 +868,7 @@
       {
         "instruction": [
           "{-} Figuren blokkeren de zichtlijn van deze figuur niet.",
-          "{Q} FLY-BY: Verplaats 4 om {R1} aan te vallen. Als deze figuur binnen 2 velden van het doelwit is, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen.",
+          "{Q} FLY-BY: Verplaats 4 om {R1} aan te vallen. Als dit figuur binnen 2 velden van het doelwit is, voeg je 1 blauwe dobbelsteen toe aan de aanvalsdobbelstenen.",
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 3 naar herpositie 4.",
           "{A} Verplaats 5 naar herpositie 4."
@@ -925,7 +925,7 @@
     "content": [
       {
         "instruction": [
-          "{Q} DUAL-BLADED FURY: Verplaats 4 om {R1} aan te vallen. Voor deze aanval, als meer dan 1 rebel zich binnen 2 velden en in een zichtlijn bevindt, krijgt deze figuur Reach en Cleave 2. Anders voeg je 1 groene dobbelsteen toe aan de aanvalsdobbelstenen.",
+          "{Q} DUAL-BLADED FURY: Verplaats 4 om {R1} aan te vallen. Vóór deze aanval, als meer dan 1 rebel zich binnen 2 velden en in de zichtlijn bevindt, krijgt deze figuur Reach en Cleave 2. Anders voeg je 1 groene dobbelsteen toe aan de aanvalsdobbelstenen.",
           "{A} Verplaats 2 naar de dichtstbijzijnde held die niet gereed is.",
           "{A} Verplaats 8 naar de dichtstbijzijnde held die niet gereed is."
         ]
@@ -999,7 +999,7 @@
     "content": [
       {
         "instruction": [
-          "{-} TARGETING COMPUTER: Krijg +1 {H} en +2 Nauwkeurigheid.",
+          "{-} TARGETING COMPUTER: Krijg +1 {H} en +2 nauwkeurigheid.",
           "{Q} Verplaats 3 om {R1} aan te vallen.",
           "{A} Verplaats 2 om aangrenzend aan zoveel mogelijk rebellen (minimaal 1) te komen.",
           "{-} Als deze figuur aangrenzend aan een rebel staat, beëindig deze activering.",
@@ -1020,7 +1020,7 @@
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 2.",
           "{A} Verplaats 6 naar herpositie 2.",
-          "{-} FEED: Als deze figuur minstens 5 {H} heeft geleden, versla dan het keizerlijke figuur met figuurkosten van 5 of minder binnen 2 velden met de minste overgebleven Health. Herstel {H} gelijk aan zijn resterende Gezondheid."
+          "{-} FEED: Als deze figuur minstens 5 {H} heeft geleden, versla dan het keizerlijke figuur met figuurkosten van 5 of minder binnen 2 velden met de minste overgebleven gezondheid. Herstel {H} gelijk aan zijn resterende gezondheid."
         ]
       },
       {
@@ -1028,8 +1028,8 @@
           "{A} Verplaats 4 om aangrenzend aan zoveel mogelijk rebellen (minimaal 1) te komen.",
           "{A} Als deze figuur niet grenst aan een rebel, verplaatst hij 4 naar de dichtstbijzijnde rebel.",
           "{Q} CLAW: Val {R1} aan.",
-          "{-} SLASH: Als deze figuur \"Claw\" heeft uitgevoerd, val dan een rebel aan die niet is aangevallen met 1 rode en 1 groene dobbelsteen.",
-          "{-} RAMPAGE: Als deze figuur \"Slash\" heeft uitgevoerd, gooi 1 rode dobbelsteen. De andere keizerlijke figuur binnen 2 velden met de meeste resterende Health lijdt {H} gelijk aan het totaal aantal {H} symbolen.",
+          "{-} SLASH: Als deze figuur CLAW heeft uitgevoerd, val dan een rebel aan die niet is aangevallen met 1 rode en 1 groene dobbelsteen.",
+          "{-} RAMPAGE: Als deze figuur SLASH heeft uitgevoerd, gooi 1 rode dobbelsteen. De andere keizerlijke figuur binnen 2 velden met de meeste resterende gezondheid lijdt {H} gelijk aan het totaal aantal {H} symbolen.",
           "{A} Verplaats 4 naar herpositie 2.",
           "{A} Verplaats 4 naar herpositie 2."
         ]
@@ -1077,7 +1077,7 @@
           "{A} Verplaats 2 naar herpositie 2.",
           "{A} Verplaats 6 naar herpositie 2.",
           "{-} Als deze figuur niet aanviel, krijgt hij 2 {g}.",
-          "{-} DEFENDER: Aan het einde van de activering van deze figuur, verplaats je 2 om aangrenzend aan zoveel mogelijk niet-Guardian keizerlijke figuren (minimaal 1) te komen. Dan krijgt elk aangrenzend niet-Guardian keizerlijk figuur 1 {g}."
+          "{-} DEFENDER: Aan het einde van de activering van deze figuur, verplaats je 2 om aangrenzend aan zoveel mogelijk niet-Guardian keizerlijke figuren (minimaal 1) te komen. Dan krijgt elke aangrenzende niet-Guardian keizerlijke figuur 1 {g}."
         ]
       }
     ]
@@ -1090,7 +1090,7 @@
         "instruction": [
           "{Q} Verplaats 5 om {R1} aan te vallen.",
           "{A} Verplaats 2 om aangrenzend aan zoveel mogelijk niet-Guardian keizerlijke figuren (minimaal 1) te komen.",
-          "{-} Als dit figuur grenst aan een niet-Guardian keizerlijk figuur, beëindig deze activering.",
+          "{-} Als dit figuur grenst aan een niet-Guardian keizerlijke figuur, beëindig deze activering.",
           "{A} Verplaats 2 naar {R1}.",
           "{A} Verplaats 8 naar {R1}."
         ]
@@ -1105,7 +1105,7 @@
         "instruction": [
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 3 om aangrenzend aan zoveel mogelijk niet-Guardian keizerlijke figuren (minimaal 1) te komen.",
-          "{-} Als dit figuur grenst aan een niet-Guardian keizerlijk figuur, beëindig deze activering.",
+          "{-} Als dit figuur grenst aan een niet-Guardian keizerlijke figuur, beëindig deze activering.",
           "{A} Verplaats 2 naar {R1}.",
           "{A} Verplaats 8 naar {R1}."
         ]
@@ -1120,8 +1120,8 @@
         "instruction": [
           "{Q} Verplaats 4 om {R1} aan te vallen binnen 2 velden van een andere rebel.",
           "{Q} Verplaats 2 om een andere rebel aan te vallen, zelfs als deze figuur al een {Q} instructie heeft uitgevoerd.",
-          "{A} Verplaats 2 naar de dichtstbijzijnde rebellen. Doelwit is de dichtstbijzijnde held die niet klaar is.",
-          "{A} Verplaats 10 naar de dichtstbijzijnde rebellen. Doelwit is de dichtstbijzijnde held die niet klaar is."
+          "{A} Verplaats 2 naar de dichtstbijzijnde rebellen. Doelwit is de dichtstbijzijnde held die niet gereed is.",
+          "{A} Verplaats 10 naar de dichtstbijzijnde rebellen. Doelwit is de dichtstbijzijnde held die niet gereed is."
         ]
       }
     ]
@@ -1135,7 +1135,7 @@
           "{-} DEFENSIBLE: Herstel 3 {H}.",
           "{Q}{A} Val 2 verschillende rebellen aan.",
           "{Q} Verplaats 4 om {R1} aan te vallen.",
-          "{A} Als deze figuur {H} heeft geleden, herstelt hij 3 {H}.",
+          "{A} Als deze figuur {H} heeft geleden, herstelt die 3 {H}.",
           "{A}{A} Verplaats 8 naar herpositie 3",
           "{A} Verplaats 2 naar herpositie 3."
         ]
@@ -1148,7 +1148,7 @@
     "content": [
       {
         "instruction": [
-          "{-} CHARGED SHOT: Krijg +1 {H} en +3 Nauwkeurigheid. Figuren blokkeren de zichtlijn van deze figuur niet.",
+          "{-} CHARGED SHOT: Krijg +1 {H} en +3 nauwkeurigheid. Figuren blokkeren de zichtlijn van deze figuur niet.",
           "{Q} Verplaats 2 om {R1} aan te vallen.",
           "{-} MULTI-FIRE: Verplaats 1 om een rebel aan te vallen die deze figuur tijdens deze activering niet heeft aangevallen. Pas -2 {H} toe op de resultaten van deze aanval.",
           "{A} Verplaats 2 naar herpositie 4.",
@@ -1164,7 +1164,7 @@
     "content": [
       {
         "instruction": [
-          "{-} CHARGED SHOT: Krijg +1 {H} en +3 Nauwkeurigheid. Figuren blokkeren de zichtlijn van deze figuur niet.",
+          "{-} CHARGED SHOT: Krijg +1 {H} en +3 nauwkeurigheid. Figuren blokkeren de zichtlijn van deze figuur niet.",
           "{Q} Verplaats 2 om {R1} aan te vallen.",
           "{-} MULTI-FIRE: Verplaats 1 om een rebel aan te vallen die deze figuur tijdens deze activering niet heeft aangevallen. Pas -2 {H} toe op de resultaten van deze aanval.",
           "{A} Verplaats 2 naar herpositie 4.",
@@ -1180,7 +1180,7 @@
     "content": [
       {
         "instruction": [
-          "{-} CHARGED SHOT: Krijg +1 {H} en +4 Nauwkeurigheid. Figuren blokkeren de zichtlijn van deze figuur niet.",
+          "{-} CHARGED SHOT: Krijg +1 {H} en +3 nauwkeurigheid. Figuren blokkeren de zichtlijn van deze figuur niet.",
           "{Q} Verplaats 2 om {R1} aan te vallen.",
           "{-} MULTI-FIRE: Verplaats 1 om een rebel aan te vallen die deze figuur tijdens deze activering niet heeft aangevallen. Pas -2 {H} toe op de resultaten van deze aanval.",
           "{A} Verplaats 2 naar herpositie 4.",
@@ -1334,7 +1334,7 @@
     "content": [
       {
         "instruction": [
-          "{A} SPOT WELD: Als de Junk Droid companion op de map staat, wordt hij <color=\"red\">gefocust</color>. Anders, plaats het in het veld van deze figuur.",
+          "{A} SPOT WELD: Als de Junk Droid metgezel op het speelbord staat, wordt die <color=\"red\">gefocust</color>. Anders, plaats de Junk Droid in het veld van deze figuur.",
           "{-} De Junk Droid verplaatst 4 om {R1} aan te vallen.",
           "{-} Als de Junk Droid niet heeft aangevallen, verplaatst hij 8 naar {R1}.",
           "{Q} Verplaats 2 om {R1} aan te vallen.",
@@ -1349,7 +1349,7 @@
     "content": [
       {
         "instruction": [
-          "{A} SPOT WELD: Als de Junk Droid companion op de map staat, wordt hij <color=\"red\">gefocust</color>. Anders, plaats het in het veld van deze figuur.",
+          "{A} SPOT WELD: Als de Junk Droid metgezel op het speelbord staat, wordt die <color=\"red\">gefocust</color>. Anders, plaats de Junk Droid in het veld van deze figuur.",
           "{-} De Junk Droid verplaatst 4 om {R1} aan te vallen.",
           "{-} Als de Junk Droid niet heeft aangevallen, verplaatst hij 8 naar {R1}.",
           "{Q} Verplaats 2 om {R1} aan te vallen.",
@@ -1364,7 +1364,7 @@
     "content": [
       {
         "instruction": [
-          "{-} SPOT WELD: Als de Junk Droid companion op de map staat, wordt hij <color=\"red\">gefocust</color>. Anders, plaats het in het veld van deze figuur.",
+          "{-} SPOT WELD: Als de Junk Droid metgezel op het speelbord staat, wordt die <color=\"red\">gefocust</color>. Anders, plaats de Junk Droid in het veld van deze figuur.",
           "{-} De Junk Droid verplaatst 4 om {R1} aan te vallen.",
           "{-} Als de Junk Droid niet heeft aangevallen, verplaatst hij 8 naar {R1}.",
           "{A} OVERCLOCK: De Junk Droid verplaatst 1 om {R1} aan te vallen.",
@@ -1383,7 +1383,7 @@
           "{Q} Verplaats 4 om aangrenzend aan zoveel mogelijk rebellen (minimaal 1) te komen. Val dan {R1} aan.",
           "{A} Verplaats 2 naar de dichtstbijzijnde rebel.",
           "{A} Verplaats 6 naar de dichtstbijzijnde rebel.",
-          "{-} HUNGER: Als dit figuur niet aanviel, lijdt het 2 {H} en wordt <color=\"rood\">gefocust</color>."
+          "{-} HUNGER: Als dit figuur niet aanviel, lijdt het 2 {H} en wordt die <color=\"red\">gefocust</color>."
         ]
       }
     ]
@@ -1397,7 +1397,7 @@
           "{Q} Verplaats 5 om aangrenzend aan zoveel mogelijk rebellen (minimaal 1) te komen. Val dan {R1} aan.",
           "{A} Verplaats 2 naar de dichtstbijzijnde rebel.",
           "{A} Verplaats 6 naar de dichtstbijzijnde rebel.",
-          "{-} HUNGER: Als dit figuur niet aanviel, lijdt het 2 {H} en wordt <color=\"rood\">gefocust</color>."
+          "{-} HUNGER: Als dit figuur niet aanviel, lijdt het 2 {H} en wordt die <color=\"red\">gefocust</color>."
         ]
       }
     ]
@@ -1408,7 +1408,7 @@
     "content": [
       {
         "instruction": [
-          "{-} RAIDER: Als je aanvalt, moet je elke dobbelsteen die geen {H} oplevert opnieuw gooien. De verdediger moet elke verdedigingsdobbelsteen met een {E} symbool of 3 {G} symbolen opnieuw gooien.",
+          "{-} RAIDER: Tijdens het aanvallen, gooi elke dobbelsteen die geen {H} symbool heeft opnieuw. De verdediger moet elke verdedigingsdobbelsteen met een {E} symbool of 3 {G} symbolen opnieuw gooien.",
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 3.",
           "{A} Verplaats 6 naar herpositie 3."
@@ -1422,7 +1422,7 @@
     "content": [
       {
         "instruction": [
-          "{-} RAIDER: Als je aanvalt, moet je elke dobbelsteen die geen {H} oplevert opnieuw gooien. De verdediger moet elke verdedigingsdobbelsteen met een {E} symbool of 3 {G} symbolen opnieuw gooien.",
+          "{-} RAIDER: Tijdens het aanvallen, gooi elke dobbelsteen die geen {H} symbool heeft opnieuw. De verdediger moet elke verdedigingsdobbelsteen met een {E} symbool of 3 {G} symbolen opnieuw gooien.",
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 3.",
           "{A} Verplaats 6 naar herpositie 3."
@@ -1436,8 +1436,8 @@
     "content": [
       {
         "instruction": [
-          "{-} RAIDER: Als je aanvalt, moet je elke dobbelsteen die geen {H} oplevert opnieuw gooien. De verdediger moet elke verdedigingsdobbelsteen met een {E} symbool of 3 {G} symbolen opnieuw gooien.",
-          "{A} PROWL: Als deze figuur niet <color=\"red\">Hidden</color> is, wordt hij <color=\"red\">Hidden</color>.",
+          "{-} RAIDER: Tijdens het aanvallen, gooi elke dobbelsteen die geen {H} symbool heeft opnieuw. De verdediger moet elke verdedigingsdobbelsteen met een {E} symbool of 3 {G} symbolen opnieuw gooien.",
+          "{A} PROWL: Als deze figuur niet <color=\"red\">verborgen</color> is, wordt die <color=\"red\">verborgen</color>.",
           "{Q} Verplaats 4 om {R1} aan te vallen.",
           "{A} Verplaats 2 naar herpositie 3.",
           "{A} Verplaats 6 naar herpositie 3."

@@ -2,7 +2,7 @@
   {
     "id": "Hoth1",
     "name": "Ramp",
-    "descriptionText": "<i>Er komt een bericht binnen in je shuttle. Je rent naar het communicatiepaneel, in de hoop dat het eindelijk de resultaten zijn van de geanalyseerde keizerlijke code. Tot je schrik is het echter een onderbroken bericht van een Hoth-vluchteling in Haven:\n“Geen waarschuwing... massaal... keizerlijke troepen... geen ontsnappen mogelijk... overlevenden... snel... help!”</i>",
+    "descriptionText": "<i>Een inkomend bericht klinkt door je shuttle. Je snelt naar de communicatiesystemen, hopend dat eindelijk de ontcijferde keizerlijke code is binnengekomen. Tot je afgrijzen blijkt het een haperende noodoproep te zijn van een vluchteling van Hoth in de nederzetting Haven:\n\"Geen waarschuwing... enorme strijdmacht... keizerlijke troepen... geen uitweg... overlevenden... snel... help!\"</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -15,7 +15,7 @@
   {
     "id": "Hoth2",
     "name": "Thuisfront",
-    "descriptionText": "<i>Zotho Benex uit zijn bezorgdheid over de verdedigingscapaciteiten van zijn nederzetting, maar tot nu toe heeft het Keizerrijk geen interesse getoond.\r\nHun operaties breiden zich echter uit en Benex vreest dat hun minimale verdedigingswerken weinig zullen betekenen tegen de macht van het Keizerrijk...</i>",
+    "descriptionText": "<i>Zotho Benex maakt zich ernstige zorgen over de verdediging van zijn nederzetting, maar tot nu toe heeft het Keizerrijk geen enkele belangstelling getoond.\nHun operaties breiden zich echter steeds verder uit en Benex vreest dat hun minimale verdedigingswerken weinig zullen voorstellen tegen de macht van het Keizerrijk...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -27,8 +27,8 @@
   },
   {
     "id": "Hoth3",
-    "name": "Een stap erachter",
-    "descriptionText": "<i>De keizerlijke generaal Sorin blijkt de leider te zijn van de recente operaties tegen de rebellen. Of het nu door geluk is of door slimme planning, hij is je steeds een stap voor geweest.\nNu heb je de locatie ontdekt van een van zijn uitvalbasissen, een buitenpost op Hoth. Het lijkt een geschikt doelwit om informatie te verzamelen...</i>",
+    "name": "Een stap achter",
+    "descriptionText": "<i>De keizerlijke generaal Sorin blijkt de leider te zijn van de recente operaties tegen de rebellen. Of het nu door geluk of door slimme planning was, telkens is hij je een stap voor geweest.\nNu heb je de locatie ontdekt van één van zijn uitvalsbases, een buitenpost op Hoth. Het lijkt de perfecte plek om waardevolle inlichtingen te bemachtigen...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -41,7 +41,7 @@
   {
     "id": "Hoth4",
     "name": "Onze laatste hoop",
-    "descriptionText": "<i>De belegering was een afleidingsmanoeuvre en je bent je bewust geworden van het wanhopige verraad van Benex. Nu vliegt Sorin naar een belangrijke basis en leidt hij wie weet hoeveel keizerlijke troepen naar dezelfde locatie.\r\nJe enige hoop is om hem onderweg te onderscheppen en alles te doen wat je kunt om zijn aankomst te voorkomen...</i>",
+    "descriptionText": "<i>Het beleg was een afleidingsmanoeuvre en je bent je bewust geworden van het wanhopige verraad van Benex. Sorin is nu onderweg naar een belangrijke basis en voert een onbekend aantal keizerlijke troepen naar diezelfde locatie.\nJe enige hoop is hem onderweg te onderscheppen en er alles aan te doen om te voorkomen dat hij de basis bereikt...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -54,7 +54,7 @@
   {
     "id": "Hoth5",
     "name": "Reddingsmissie",
-    "descriptionText": "<i>Na de rampzalige missie naar Echo Base is Benex, de leider van Haven, gevangengenomen door keizerlijke troepen.\nGezien zijn uitgebreide toegang tot gegevens van de Alliantie, zou zijn ondervraging gevaarlijke informatie aan het licht kunnen brengen. Hij moet onmiddellijk worden gered voordat waardevolle geheimen in handen van het Keizerrijk vallen...</i>",
+    "descriptionText": "<i>Na de rampzalige missie naar Echo Base is Benex, de leider van Haven, gevangengenomen door keizerlijke troepen.\nGezien zijn uitgebreide toegang tot gegevens van het Verbond, zou zijn ondervraging gevaarlijke informatie aan het licht kunnen brengen. Hij moet onmiddellijk worden gered voordat kostbare geheimen in handen van het Keizerrijk vallen...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -67,7 +67,7 @@
   {
     "id": "Hoth6",
     "name": "Terugkeer naar Echo Base",
-    "descriptionText": "<i>Benex en zijn volk zijn doodsbang voor vergeldingsacties van het Keizerrijk en vrezen dat de soldaten zullen terugkeren, tenzij de aandacht van het Keizerrijk elders op wordt gericht.\nBinnenkort zal er een konvooi met versterkingen arriveren, een potentieel doelwit dat zeker voor een aanzienlijke afleiding zou zorgen...</i>",
+    "descriptionText": "<i>Benex en zijn mensen zijn doodsbang voor keizerlijke vergeldingsacties en vrezen dat de soldaten zullen terugkeren, tenzij hun aandacht op iets anders wordt gericht.\nBinnenkort zal er een konvooi met versterkingen arriveren. Een aanval daarop zou een uitstekende afleidingsmanoeuvre kunnen opleveren...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -80,7 +80,7 @@
   {
     "id": "Hoth7",
     "name": "De slag om Hoth",
-    "descriptionText": "<i>Er komt slecht nieuws voor het Verzet: hun basis op het oppervlak van Hoth is ontdekt. Onder leiding van de gevreesde Darth Vader lanceert het Keizerrijk een grootschalige aanval op de rebellen op de ijsplaneet, klaar om hen voor eens en voor altijd te verpletteren.\nDe rebellen kunnen de aanval nauwelijks weerstaan en haasten zich om de ijskoude wereld te ontvluchten en opnieuw aan de greep van het Keizerrijk te ontsnappen. Terwijl transportvoertuigen en gevechtsvliegtuigen zich koortsachtig klaarmaken voor vertrek, riskeren enkele dappere rebellensoldaten hun leven tegen alle verwachtingen in om kostbare seconden te winnen...</i>",
+    "descriptionText": "<i>Slecht nieuws bereikt het Verzet. Hun basis op Hoth is ontdekt. Onder leiding van de gevreesde Darth Vader lanceert het Keizerrijk een grootschalige aanval op de rebellen op de ijsplaneet, vastbesloten hen eens en voor altijd te verpletteren.\nNauwelijks in staat de verwoestende aanval te weerstaan, probeert het Verzet wanhopig de ijzige wereld te evacueren en opnieuw aan de greep van het Keizerrijk te ontkomen. Terwijl transportschepen en starfighters zich in allerijl gereedmaken voor vertrek, riskeren enkele dappere rebellensoldaten hun leven tegen een hopeloze overmacht om kostbare seconden te winnen...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -93,7 +93,7 @@
   {
     "id": "Hoth8",
     "name": "De laatste linie",
-    "descriptionText": "<i>Nu de gecodeerde gegevens van het Keizerrijk volledig zijn geanalyseerd, komt een verschrikkelijk plan aan het licht: een grootscheeps offensief op het dorp staat op het punt te beginnen. Je haast je om het dorp te beschermen.\r\nDe nederzetting beschikt bij lange na niet over de verdedigingswerken die nodig zijn om zo'n aanval af te slaan, dus de naderende troepen moeten lang genoeg worden tegengehouden zodat iedereen kan worden geëvacueerd naar een bunker in de vallei...</i>",
+    "descriptionText": "<i>Nu de gecodeerde keizerlijke gegevens volledig zijn ontcijferd, komt een angstaanjagend plan aan het licht: een grootschalig beleg van het dorp is ophanden en wel zeer binnenkort. Je haast je om je bescherming aan te bieden.\nDe nederzetting beschikt bij lange na niet over voldoende verdedigingswerken om een dergelijke aanval te weerstaan. De oprukkende keizerlijke troepen moeten lang genoeg worden opgehouden om iedereen naar de bunker in de vallei beneden te kunnen evacueren...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -106,7 +106,7 @@
   {
     "id": "Hoth9",
     "name": "Witte ruis",
-    "descriptionText": "<i>Nu het Keizerrijk alles op alles zet om rebellenvluchtelingen op te sporen, is het slechts een kwestie van tijd voordat ze de nederzetting komen doorzoeken.\nMet behulp van een deel van de middelen die de ondergedoken rebellen hebben meegebracht, hebben Benex en zijn volk een netwerk van sensoren en verdedigingswapens rond de nederzetting opgezet. Als de keizerlijke troepen naderen, zijn ze in ieder geval voorbereid...</i>",
+    "descriptionText": "<i>Nu het Keizerrijk elke steen omkeert in zijn jacht op de gevluchte rebellen, is het slechts een kwestie van tijd voordat de nederzetting aan de beurt is.\nMet een deel van de voorraden die de ondergedoken rebellen hebben meegebracht, leggen Benex en zijn mensen een netwerk van sensoren en verdedigingswapens rond de nederzetting aan. Wanneer de keizerlijke troepen naderen, zijn ze in ieder geval voorbereid...</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -119,7 +119,7 @@
   {
     "id": "Hoth10",
     "name": "Constante waakzaamheid",
-    "descriptionText": "<i>Voordat hij zich bij het Verzet aansloot, voerde Loku Kanoloa verschillende missies uit als lid van de Mon Cala Special Forces.\nOnlangs kreeg hij te horen dat verschillende van zijn voormalige strijdmakkers gevangen waren genomen. Ze worden vastgehouden in een gevangeniscomplex en er rest hen nog maar weinig tijd voordat ze worden overgebracht.</i>",
+    "descriptionText": "<i>Voordat hij zich bij het Verzet aansloot, voerde Loku Kanoloa verschillende missies uit als lid van de speciale troepen van Mon Cala.\nOnlangs bereikte hem het bericht dat enkele van zijn voormalige strijdmakkers zijn gevangengenomen. Ze worden vastgehouden in een detentiegebied en zullen spoedig worden overgebracht. Er blijft nog maar weinig tijd over om hen te redden.</i>",
     "bonusText": "",
     "heroText": "Loku Kanoloa",
     "allyText": "",
@@ -136,7 +136,7 @@
   {
     "id": "Hoth11",
     "name": "Ken je vijand",
-    "descriptionText": "<i>Verena en haar tweelingbroer Ivan leefden hun hele jeugd in een voortdurende competitie met elkaar.\nToen ze volwassen werden, zorgde een ideologische breuk ervoor dat ze tegenover elkaar kwamen te staan in het conflict: zij bij het Verzet en hij bij het Keizerrijk. Nu ze onlangs heeft gehoord waar hij zich bevindt, besluit ze dat het tijd is voor een kleine familiereünie.</i>",
+    "descriptionText": "<i>Verena en haar tweelingbroer Ivan waren hun hele jeugd elkaars grootste rivalen.\nToen ze volwassen werden, dreef een verschil in overtuiging hen naar tegengestelde zijden van de oorlog. Haar naar het Verzet, hem naar het Keizerrijk. Nu ze heeft gehoord waar haar broer zich ophoudt, besluit Verena dat het tijd is voor een kleine familiereünie.</i>",
     "bonusText": "",
     "heroText": "Verena Talos",
     "allyText": "",
@@ -152,7 +152,7 @@
   {
     "id": "Hoth12",
     "name": "Preventieve maatregelen",
-    "descriptionText": "<i>MHD-19, ooit gedwongen tot slavernij, werd enkele jaren geleden bevrijd door een man genaamd Draylen, en sindsdien is de droid hem altijd trouw gebleven. Draylen is inmiddels een rebellenagent geworden en werd tijdens zijn laatste missie gevangengenomen. MHD-19 wordt nu opgeroepen om de gunst van jaren geleden te beantwoorden.</i>",
+    "descriptionText": "<i>MHD-19 leefde ooit in gedwongen arbeid, totdat hij enkele jaren geleden werd bevrijd door een man genaamd Draylen. Sindsdien is de droid hem onvoorwaardelijk trouw gebleven. Inmiddels is Draylen een agent van het Verzet geworden, maar tijdens zijn laatste missie is hij gevangengenomen. Nu wordt MHD-19 opgeroepen om de gunst van jaren geleden terug te betalen.</i>",
     "bonusText": "",
     "heroText": "MHD-19",
     "allyText": "",
@@ -169,7 +169,7 @@
   {
     "id": "Hoth13",
     "name": "Ontsnapping uit Cloud City",
-    "descriptionText": "<i>Na de rampzalige ontmoeting met Darth Vader en de stormtroopers op Bespin zitten verschillende burgers nog steeds vast in de mijnkolonie, zonder te kunnen evacueren.</i>",
+    "descriptionText": "<i>Na de rampzalige ontmoeting met Darth Vader en de stormtroopers op Bespin zijn meerdere burger nog steeds gestrand in de mijnkolonie, niet in staat te evacueren.</i>",
     "bonusText": "Zolang deze kaart in het spel is, claimt het Keizerrijk de beloningskaart \"Supply Disruption\".",
     "heroText": "",
     "allyText": "",
@@ -184,9 +184,9 @@
   },
   {
     "id": "Hoth14",
-    "name": "Het doorzoeken van de boerderij",
-    "descriptionText": "<i>Een groep waterboeren die sympathiek zijn aan het Verzet, hebben soldaten en helden van de Alliantie onderdak geboden. Nu heeft het Keizerrijk deze boerderij gevonden en lanceert het een genadeloze aanval. Deze belangrijke bondgenoten hebben hulp nodig om te overleven.</i>",
-    "bonusText": "Zolang deze kaart in het spel is, claimt het Keizerrijk een willekeurige Bane beloningskaart.",
+    "name": "Het uitkammen van de boerderij",
+    "descriptionText": "<i>Een groep waterboeren die sympathiek zijn aan het Verzet, hebben soldaten en helden van het Verbond onderdak geboden. Nu heeft het Keizerrijk deze boerderij gevonden en lanceert het een meedogenloze aanval. Willen deze trouwe bondgenoten het overleven, dan hebben ze dringend hulp nodig.</i>",
+    "bonusText": "Zolang deze kaart in het spel is, claimt het Keizerrijk een willekeurige nadeel beloningskaart.",
     "heroText": "",
     "allyText": "",
     "villainText": "",
@@ -199,8 +199,8 @@
   },
   {
     "id": "Hoth15",
-    "name": "Overleven van de best aangepasten",
-    "descriptionText": "<i>Scoutpatrouilles in de buurt hebben een zwak noodsignaal opgepikt van Hoth. Alles wijst erop dat iemand tijdens de evacuatie achtergelaten is en het heeft overleefd.\nHet opperbevel wil dat je je aansluit bij een klein reddingsteam, dat deze arme verdwaalde ziel wil redden.</i>",
+    "name": "Overleven van de sterksten",
+    "descriptionText": "<i>Verkenningspatrouilles in de omgeving hebben een zwak noodsignaal van Hoth opgevangen. Alles wijst erop dat iemand die tijdens de evacuatie is achtergebleven, het heeft overleefd.\nHet opperommando wil dat je je aansluit bij een klein reddingsteam, vastbesloten deze arme verdwaalde ziel te redden.</i>",
     "bonusText": "Zolang deze kaart in het spel is, claimt het Keizerrijk de beloningskaart \"Weary from Toil\".",
     "heroText": "",
     "allyText": "",
@@ -216,7 +216,7 @@
   {
     "id": "Hoth16",
     "name": "De moeilijke manier",
-    "descriptionText": "<i>Chewbacca heeft op Ord Mantell een paar tweederangs premiejagers ontdekt, de gebroeders Krandt, die mogelijk informatie hebben over kapitein Solo en hoe hij uit de klauwen van Jabba the Hutt kan worden bevrijd.</i>",
+    "descriptionText": "<i>Op Ord Mantell heeft Chewbacca het spoor gevonden van twee tweederangs premiejagers, de gebroeders Krandt. Misschien weten zij meer over de verblijfplaats van kapitein Solo en over een manier om hem uit de greep van Jabba de Hutt te bevrijden.</i>",
     "bonusText": "Zolang deze kaart in het spel is, claimt het Keizerrijk de beloningskaart \"Distraction\".",
     "heroText": "",
     "allyText": "",

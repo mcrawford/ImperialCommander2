@@ -2,7 +2,7 @@
   {
     "id": "Twin1",
     "name": "Vlucht door de ravijn",
-    "descriptionText": "<i>Het werk van het Keizerrijk op Tatooine heeft een negatieve wending genomen. Inlichtingen wijzen erop dat ze een basis hebben opgezet in de Jundland Wastes, waarbij ze de afschrikwekkende aanwezigheid van de Tusken Raiders als natuurlijke verdediging gebruiken.\nDeze basis moet worden geïnfiltreerd en de operationele gegevens moeten worden gestolen voordat het te laat is...</i>",
+    "descriptionText": "<i>De activiteiten van het Keizerrijk op Tatooine hebben een zorgwekkende wending genomen. Inlichtingen wijzen erop dat ze een basis hebben gevestigd in de Jundland Wastes, waarbij ze de angstaanjagende aanwezigheid van de Tusken Raiders als natuurlijke verdedigingslinie gebruiken.\nDeze basis moet worden geïnfiltreerd en de gegevens over haar operaties moeten worden gestolen voordat het te laat is…</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "",
@@ -18,7 +18,7 @@
   {
     "id": "Twin2",
     "name": "Opgejaagd",
-    "descriptionText": "<i>Als reactie op een groeiende keizerlijke dreiging op Tatooine heeft Han Solo onlangs een missie aangenomen om de Rim-planeet te onderzoeken. Maar nu het contact met Solo al wekenlang verbroken is, maakt het commando zich zorgen dat zijn verleden hem eindelijk heeft ingehaald...</i>",
+    "descriptionText": "<i>Als reactie op de groeiende keizerlijke dreiging op Tatooine heeft Han Solo onlangs een missie op zich genomen om de situatie op die Rim-planeet te onderzoeken. Maar nu het contact met Solo al wekenlang verbroken is, maakt het Opperbevel zich zorgen dat zijn verleden hem eindelijk heeft ingehaald…</i>",
     "bonusText": "",
     "heroText": "",
     "allyText": "Han Solo (Scoundrel)",
@@ -34,7 +34,7 @@
   {
     "id": "Twin3",
     "name": "Vijanden uit een vorig leven",
-    "descriptionText": "<i>Niemand in de Rebellion lijkt de oorsprong te kennen van Biv Bodhriks wraakzuchtige haat tegen stormtroopers, alleen dat hij de meest meedogenloze en efficiënte stormtrooper-moordenaar is die er bestaat. Dus toen agenten het contact met C-3PO verloren tijdens een verkenning van een mogelijke stormtrooper-buitenpost op Tatooine, stond Biv bovenaan de lijst om de missie te voltooien...</i>",
+    "descriptionText": "<i>Niemand binnen het Rebellenverbond lijkt de oorsprong te kennen van Biv Bodhriks wraakzuchtige haat tegen stormtroopers. Men weet alleen dat hij de meest meedogenloze en doeltreffendste stormtrooperdoder is die beschikbaar is. Toen agenten tijdens een verkenning van een mogelijke stormtrooperpost op Tatooine het contact met C-3PO verloren, stond Biv dan ook bovenaan de lijst om de missie te voltooien…</i>",
     "bonusText": "",
     "heroText": "Biv Bodhrik",
     "allyText": "",
@@ -50,7 +50,7 @@
   {
     "id": "Twin4",
     "name": "Schimmige transacties",
-    "descriptionText": "<i>De handel van Saska Teft in gadgets op de zwarte markt heeft misschien een duistere kant, maar biedt ook het bijkomende voordeel van vele contacten in de onderwereld. Als het gaat om het verhandelen van informatie, is ze net zo efficiënt als R2-D2 met een computerterminal. Het is dan ook logisch dat het Opperbevel hen beiden wil inzetten om geruchten over het Keizerrijk te onderzoeken op Tatooine, het thuisgebied van Saska...</i>",
+    "descriptionText": "<i>Saska Tefts handel in gadgets op de zwarte markt mag dan haar schimmige kanten hebben, maar ze heeft ook als bijkomend voordeel dat ze over talloze contacten in de onderwereld beschikt. Als het op het verzamelen van informatie aankomt, is zij net zo doeltreffend als R2-D2 achter een computerterminal. Het is dan ook niet meer dan logisch dat het oppercommando hen beiden naar Tatooine stuurt om de geruchten over keizerlijke activiteiten te onderzoeken, op Saska's thuisterrein…</i>",
     "bonusText": "",
     "heroText": "Saska Teft",
     "allyText": "",
@@ -66,7 +66,7 @@
   {
     "id": "Twin5",
     "name": "Vuur in de lucht",
-    "descriptionText": "<i>Een star destroyer die rond Tatooine cirkelt, is een voorteken van zware operaties tegen de rebellen. De recente komst van de </i>Slave I<i> heeft van deze star destroyer een redelijk dringend doelwit gemaakt...</i>",
+    "descriptionText": "<i>De aanwezigheid van een star destroyer in een baan om Tatooine is een onheilspellend teken van grootschalige operaties tegen het Rebellenverbond. De recente aankomst van de <i>Slave I</i> maakt een missie tegen dit schip bijna onvermijdelijk…</i>",
     "bonusText": "Nadat de helden een willekeurige andere zijmissie hebben voltooid, leg je deze kaart af en ontvangt het Keizerrijk de vermelde beloning. Als de helden deze missie verliezen, verhoog je het dreigingsniveau van de volgende missie met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 50 credits per held uit te geven om dit te voorkomen.",
     "heroText": "",
     "allyText": "",
@@ -82,7 +82,7 @@
   {
     "id": "Twin6",
     "name": "Geïnfiltreerd",
-    "descriptionText": "<i>Het Keizerrijk is al maanden op zoek naar de locatie van Luke Skywalker. Nu nadert een star destroyer zijn schuilplaats op Sullust, in de hoop de held van het Verzet te vangen.</i>",
+    "descriptionText": "<i>Het Keizerrijk jaagt al maanden op de verblijfplaats van Luke Skywalker. Nu nadert een star destroyer zijn schuilplaats op Sullust, in de hoop de held van het Verzet gevangen te nemen…</i>",
     "bonusText": "Nadat de helden een willekeurige andere zijmissie hebben voltooid, leg je deze kaart af en ontvangt het Keizerrijk de vermelde beloning. Als de helden deze missie verliezen, verhoog je het dreigingsniveau van de volgende missie met 1. Tijdens de Rebel Upgrade-fase kunnen de rebellenspelers ervoor kiezen om 50 credits per held uit te geven om dit te voorkomen.",
     "heroText": "",
     "allyText": "",
