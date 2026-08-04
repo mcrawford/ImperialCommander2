@@ -147,8 +147,8 @@ public class EnemyActivationPopup : MonoBehaviour
 				//check for instruction/repositioning override, which are appended to 'instructions' list
 				instructions = GetModifiedInstructions( cd.id, instructions );
 				instructions = GetModifiedRepositioning( cd.id, instructions );
+				instructions = AddGlobalBonusesToInstructions( instructions );
 				instructions = AddPoolEffectsToInstructions( instructions, poolEffects );
-				
 				savedInstruction = new InstructionOption() { instruction = instructions };
 				//rebel1 has been set, now it's safe to parse instructions that use it for targeting
 				ParseInstructions( instructions );
@@ -157,9 +157,13 @@ public class EnemyActivationPopup : MonoBehaviour
 			}
 			else if ( ovrd != null && ovrd.isCustomDeployment )
 			{
-				List<string> instructions = ovrd.changeInstructions.theText.Split( '\n' ).ToList();
-				instructions = AddPoolEffectsToInstructions( instructions, poolEffects );
-				ParseInstructions( instructions );
+				if ( ovrd.changeInstructions != null )
+				{
+					List<string> instructions = ovrd.changeInstructions.theText.Split( '\n' ).ToList();
+					instructions = AddGlobalBonusesToInstructions( instructions );
+					instructions = AddPoolEffectsToInstructions( instructions, poolEffects );
+					ParseInstructions( instructions );
+				}
 			}
 		}
 
@@ -266,84 +270,82 @@ public class EnemyActivationPopup : MonoBehaviour
 	{
 		int currentRound = DataStore.sagaSessionData.gameVars.round;
 		List<string> assignedEffects = new List<string>();
-		
+
 		if ( DataStore.oncePerRoundBonusPool.Count == 0 )
 			return assignedEffects;
-		
+
 		// Get list of available pool effects (not yet used this round)
 		var usedEffects = DataStore.sagaSessionData.gameVars.usedPoolEffectsThisRound.ContainsKey( currentRound )
 			? DataStore.sagaSessionData.gameVars.usedPoolEffectsThisRound[currentRound]
 			: new HashSet<string>();
-		
+
 		var availableEffects = DataStore.oncePerRoundBonusPool
 			.Where( effect => !usedEffects.Contains( effect ) )
 			.ToList();
-		
+
 		if ( availableEffects.Count == 0 )
 			return assignedEffects; // All pool effects have been used this round
-		
+
 		// Get count of non-exhausted groups (excluding the one currently activating)
 		var dgManager = FindObjectOfType<Saga.DeploymentManager>();
 		int nonExhaustedCount = 0;
-		
+
 		if ( dgManager != null )
 		{
 			var nonExhaustedGroups = dgManager.GetNonExhaustedGroups();
-			nonExhaustedCount = nonExhaustedGroups.Count;
+			// Exclude the current group that's activating (it's already marked as exhausted)
+			nonExhaustedCount = nonExhaustedGroups.Count( g => g.id != cd.id );
 		}
-		else
-		{
-			// Fallback: try classic mode manager
-			var classicManager = FindObjectOfType<DeploymentGroupManager>();
-			if ( classicManager != null )
-			{
-				var nonExhaustedGroups = classicManager.GetNonExhaustedGroups();
-				nonExhaustedCount = nonExhaustedGroups.Count;
-			}
-		}
-		
+
 		// Add 1 to include the current group that's activating
 		// (GetNonExhaustedGroups excludes the current group since it's already marked as exhausted)
 		int totalGroupsRemaining = nonExhaustedCount + 1;
-		
+
 		if ( totalGroupsRemaining > 0 && availableEffects.Count > 0 )
 		{
 			int effectsPerGroup = availableEffects.Count / totalGroupsRemaining;
 			int remainder = availableEffects.Count % totalGroupsRemaining;
-			
+
+			Utils.LogWarning( $"DeterminePoolEffect()::Group={cd.name}, AvailableEffects={availableEffects.Count}, NonExhaustedGroups={nonExhaustedCount}, TotalGroupsRemaining={totalGroupsRemaining}, EffectsPerGroup={effectsPerGroup}, Remainder={remainder}" );
+
 			// Shuffle available effects
 			var shuffledEffects = availableEffects.OrderBy( x => UnityEngine.Random.Range( 0, 1000 ) ).ToList();
-			
+
 			// Give this group the guaranteed base amount (may be 0)
 			for ( int i = 0; i < effectsPerGroup && i < shuffledEffects.Count; i++ )
 			{
 				string effect = shuffledEffects[i];
 				assignedEffects.Add( effect );
+				Utils.LogWarning( $"DeterminePoolEffect()::Assigned guaranteed effect '{effect}' to {cd.name}" );
 				// Mark as used for this round
 				DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, effect );
 			}
-			
+
 			// From the remainder, use probability to decide if this group gets one more
 			if ( remainder > 0 && shuffledEffects.Count > effectsPerGroup )
 			{
 				// Probability: remainder / totalGroupsRemaining
 				int probability = ( remainder * 100 ) / totalGroupsRemaining;
 				bool shouldGetExtra = GlowEngine.RandomBool( probability );
-				
+				Utils.LogWarning( $"DeterminePoolEffect()::Remainder check for {cd.name}: remainder={remainder}, probability={probability}%, shouldGetExtra={shouldGetExtra}" );
+
 				if ( shouldGetExtra )
 				{
 					// Pick a random effect from the remaining effects (after the base amount)
 					int remainingCount = shuffledEffects.Count - effectsPerGroup;
 					int[] remainderRnd = GlowEngine.GenerateRandomNumbers( remainingCount );
 					string extraEffect = shuffledEffects[effectsPerGroup + remainderRnd[0]];
-					
+
 					assignedEffects.Add( extraEffect );
+					Utils.LogWarning( $"DeterminePoolEffect()::Assigned extra effect '{extraEffect}' to {cd.name}" );
 					// Mark as used for this round
 					DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, extraEffect );
 				}
 			}
+
+			Utils.LogWarning( $"DeterminePoolEffect()::Total effects assigned to {cd.name}: {assignedEffects.Count}" );
 		}
-		
+
 		return assignedEffects;
 	}
 
@@ -709,6 +711,24 @@ public class EnemyActivationPopup : MonoBehaviour
 		}
 
 		return linesOut;
+	}
+
+	List<string> AddGlobalBonusesToInstructions( List<string> instructions )
+	{
+		if ( DataStore.sagaSessionData?.gameVars?.globalBonusEffects == null ||
+			 DataStore.sagaSessionData.gameVars.globalBonusEffects.Count == 0 )
+			return instructions;
+
+		List<string> globalBonusInstructions = new List<string>();
+		foreach ( var globalBonus in DataStore.sagaSessionData.gameVars.globalBonusEffects )
+		{
+			if ( !string.IsNullOrEmpty( globalBonus.name ) && !string.IsNullOrEmpty( globalBonus.bonusInstruction ) )
+			{
+				globalBonusInstructions.Add( $"{{#}} {globalBonus.name}: {globalBonus.bonusInstruction}" );
+			}
+		}
+
+		return globalBonusInstructions.Concat( instructions ).ToList();
 	}
 
 	List<string> AddPoolEffectsToInstructions( List<string> instructions, List<string> poolEffects )

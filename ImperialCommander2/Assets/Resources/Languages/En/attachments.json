@@ -1,11 +1,3 @@
 {
-  "attachments": [
-    {
-      "id": "unnatural_abilities",
-      "name": "UNNATURAL ABILITIES",
-      "modification": "+1 {F}\n+1 {G} if size 1",
-      "bonusInstruction": "At the end of this group's activation, one figure in this group gains 1 {h}.",
-      "excludedTraits": ["Creature"]
-    }
-  ]
+  "attachments": []
 }

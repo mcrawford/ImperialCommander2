@@ -83,4 +83,5 @@ namespace Saga
 	public enum MissionSource { None, Official, Custom, Embedded }//embedded=custom campaign
 	public enum GroupSelectionMode { Ignored, Villains }
 	public enum BiomeType { Desert, Forest, Halls, Ice, Imperial, Interior, Jabba, Plains, Snow, Streets, None, Menu }
+	public enum PowerTokenType { Damage, Block, Surge, Evade }
 }

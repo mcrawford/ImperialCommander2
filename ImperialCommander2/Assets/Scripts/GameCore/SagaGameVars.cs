@@ -42,6 +42,12 @@ namespace Saga
 		public Dictionary<string, string> activeAttachments = new Dictionary<string, string>(); // Maps groupID to attachmentID
 		public List<string> availableAttachments = new List<string>(); // Attachment IDs waiting for deployment
 		public List<Attachment> attachmentDefinitions = new List<Attachment>(); // Loaded attachment data
+		public List<GlobalBonusEffect> globalBonusEffects = new List<GlobalBonusEffect>(); // Global bonus effects for all groups
+
+		/// <summary>
+		/// Commence Landing: power tokens sitting on deployment-hand cards (keyed by card id).
+		/// </summary>
+		public Dictionary<string, List<PowerTokenType>> handPowerTokens = new Dictionary<string, List<PowerTokenType>>();
 
 		public SagaGameVars()
 		{

@@ -421,6 +421,8 @@ namespace Saga
 			&& cardDescriptor.characterType != CharacterType.Villain
 			&& returnToHand )
 			{
+				// Redeployed groups return to hand with no power tokens
+				PowerTokenManager.ClearTokens( cardDescriptor.id );
 				DataStore.deploymentHand.Add( cardDescriptor );
 			}
 			//remove it from deployed list

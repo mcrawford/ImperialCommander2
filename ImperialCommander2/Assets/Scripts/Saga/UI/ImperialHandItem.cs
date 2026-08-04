@@ -17,6 +17,10 @@ namespace Saga
 			if ( ovrd != null )
 				nameText.text = ovrd.nameOverride;
 
+			string tokenSummary = PowerTokenManager.FormatHandSummary( PowerTokenManager.GetTokens( card.id ) );
+			if ( !string.IsNullOrEmpty( tokenSummary ) )
+				nameText.text += $"\n{tokenSummary}";
+
 			mugOutline.color = Utils.String2UnityColor( card.deploymentOutlineColor );
 
 			mugshot.sprite = Resources.Load<Sprite>( card.mugShotPath );
