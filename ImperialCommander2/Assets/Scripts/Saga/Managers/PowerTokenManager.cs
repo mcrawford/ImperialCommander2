@@ -43,8 +43,8 @@ namespace Saga
 		}
 
 		/// <summary>
-		/// Commence Landing: at start of each round, distribute 1 Damage and 1 Block
-		/// among hand cards, spreading evenly and capping each card at 2× size.
+		/// Commence Landing + Implacable: at start of each round, distribute
+		/// 1 Damage, 1 Block, and 1 Evade among hand cards (evenly, capped at 2× size).
 		/// </summary>
 		public static void PlaceCommenceLandingTokens()
 		{
@@ -54,8 +54,11 @@ namespace Saga
 
 			PruneOrphanedEntries();
 
+			// Commence Landing
 			PlaceOneToken( PowerTokenType.Damage );
 			PlaceOneToken( PowerTokenType.Block );
+			// Implacable (hand placement only; share/exhaust ability omitted for IC2)
+			PlaceOneToken( PowerTokenType.Evade );
 		}
 
 		static void PlaceOneToken( PowerTokenType token )
@@ -108,25 +111,26 @@ namespace Saga
 
 			var parts = new List<string>();
 			if ( dmg > 0 )
-				parts.Add( $"Dmg×{dmg}" );
+				parts.Add( $"{{h}}×{dmg}" );
 			if ( blk > 0 )
-				parts.Add( $"Blk×{blk}" );
+				parts.Add( $"{{g}}×{blk}" );
 			if ( surge > 0 )
-				parts.Add( $"Srg×{surge}" );
+				parts.Add( $"{{b}}×{surge}" );
 			if ( evade > 0 )
-				parts.Add( $"Evd×{evade}" );
+				parts.Add( $"{{f}}×{evade}" );
 
 			return string.Join( " ", parts );
 		}
 
 		public static string FormatTokenName( PowerTokenType token )
 		{
+			// Glyph codes — TextBox / ReplaceGlyphs render these as Imperial Assault symbols
 			return token switch
 			{
-				PowerTokenType.Damage => "Damage",
-				PowerTokenType.Block => "Block",
-				PowerTokenType.Surge => "Surge",
-				PowerTokenType.Evade => "Evade",
+				PowerTokenType.Damage => "{h}",
+				PowerTokenType.Block => "{g}",
+				PowerTokenType.Surge => "{b}",
+				PowerTokenType.Evade => "{f}",
 				_ => token.ToString()
 			};
 		}
@@ -166,39 +170,60 @@ namespace Saga
 			}
 
 			var sb = new StringBuilder();
-			sb.Append( $"{card.name} deploy with power tokens — " );
+			sb.Append( "Power tokens — " );
 			var segments = new List<string>();
 			for ( int i = 0; i < size; i++ )
 			{
 				if ( perFigure[i].Count == 0 )
-					segments.Add( $"F{i + 1}: —" );
+					segments.Add( $"Figure {i + 1}: —" );
 				else
-					segments.Add( $"F{i + 1}: {string.Join( ", ", perFigure[i].Select( FormatTokenName ) )}" );
+					segments.Add( $"Figure {i + 1}: {string.Join( ", ", perFigure[i].Select( FormatTokenName ) )}" );
 			}
 			sb.Append( string.Join( "; ", segments ) );
 			return sb.ToString();
 		}
 
 		/// <summary>
-		/// Announce deploy tokens (if any) and clear them for the hand card id.
+		/// If difficulty swap changed the card id, move hand tokens onto the final deployed id.
 		/// </summary>
-		public static void AnnounceAndClearOnDeploy( DeploymentCard deployedCard, string handCardId )
+		public static void TransferTokens( string fromCardId, string toCardId )
 		{
-			if ( deployedCard == null || string.IsNullOrEmpty( handCardId ) )
+			if ( string.IsNullOrEmpty( fromCardId ) || string.IsNullOrEmpty( toCardId ) || fromCardId == toCardId )
 				return;
 
-			var tokens = GetTokens( handCardId );
+			var tokens = GetTokens( fromCardId );
+			ClearTokens( fromCardId );
+			if ( tokens.Count == 0 )
+				return;
+
+			var map = TokenMap;
+			if ( map == null )
+				return;
+
+			if ( !map.ContainsKey( toCardId ) )
+				map[toCardId] = new List<PowerTokenType>();
+			map[toCardId].AddRange( tokens );
+		}
+
+		/// <summary>
+		/// Returns a power-token assignment line for the deploy text box, then clears those tokens.
+		/// Empty string if none.
+		/// </summary>
+		public static string ConsumeDeployAppendix( DeploymentCard card )
+		{
+			if ( card == null || string.IsNullOrEmpty( card.id ) )
+				return "";
+
+			var tokens = GetTokens( card.id );
 			if ( tokens.Count == 0 )
 			{
-				ClearTokens( handCardId );
-				return;
+				ClearTokens( card.id );
+				return "";
 			}
 
-			string message = FormatDeployAssignment( deployedCard, tokens );
-			if ( !string.IsNullOrEmpty( message ) )
-				GlowEngine.FindUnityObject<QuickMessage>()?.Show( message );
-
-			ClearTokens( handCardId );
+			string appendix = FormatDeployAssignment( card, tokens );
+			ClearTokens( card.id );
+			return appendix;
 		}
 	}
 }

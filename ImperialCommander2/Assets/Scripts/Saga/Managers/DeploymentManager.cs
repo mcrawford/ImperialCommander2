@@ -174,8 +174,8 @@ namespace Saga
 			//otherwise it just got (up/down)graded to/from Elite or it's from the event action
 			DataStore.deploymentHand.Remove( cardDescriptor );
 
-			// Commence Landing: announce tokens that were on the hand card, then clear
-			PowerTokenManager.AnnounceAndClearOnDeploy( cardDescriptor, handCardId );
+			// Commence Landing: keep tokens for the map deploy text box; move if id changed
+			PowerTokenManager.TransferTokens( handCardId, cardDescriptor.id );
 
 			//ATTACHMENT SYSTEM: Check if any attachments are available and assign to this new deployment
 			if ( DataStore.sagaSessionData.gameVars.attachmentDefinitions != null &&
@@ -341,7 +341,7 @@ namespace Saga
 						FindObjectOfType<CameraController>().MoveToEntity( adp );
 						//string enemyName = ovrd.useGenericMugshot ? "Rebel" : ovrd.nameOverride;
 						string enemyName = ovrd.nameOverride;
-						FindObjectOfType<SagaEventManager>().ShowTextBox( $"{DataStore.uiLanguage.sagaMainApp.deployMessageUC}:\n\n<color=white>{enemyName}</color>", () =>
+						FindObjectOfType<SagaEventManager>().ShowTextBox( BuildDeployGroupMessage( enemyName, enemyToAdd ), () =>
 						{
 							// <color=orange>[{cardID}]</color>
 							FindObjectOfType<SagaEventManager>().toggleVisButton.SetActive( false );
@@ -352,6 +352,7 @@ namespace Saga
 					}
 					else
 					{
+						PowerTokenManager.ClearTokens( enemyToAdd.id );
 						GlowEngine.FindUnityObject<QuickMessage>().Show( DataStore.uiLanguage.sagaMainApp.noDPWarningUC );
 						callback?.Invoke();
 					}
@@ -362,7 +363,7 @@ namespace Saga
 					FindObjectOfType<SagaEventManager>().toggleVisButton.SetActive( true );
 					//string enemyName = ovrd.useGenericMugshot ? "Rebel" : ovrd.nameOverride;
 					string enemyName = ovrd.nameOverride;
-					FindObjectOfType<SagaEventManager>().ShowTextBox( $"{DataStore.uiLanguage.sagaMainApp.deployMessageUC}:\n\n<color=white>{enemyName}</color>", () =>
+					FindObjectOfType<SagaEventManager>().ShowTextBox( BuildDeployGroupMessage( enemyName, enemyToAdd ), () =>
 					{
 						// <color=orange>[{cardID}]</color>
 						FindObjectOfType<SagaEventManager>().toggleVisButton.SetActive( false );
@@ -386,7 +387,7 @@ namespace Saga
 					FindObjectOfType<MapEntityManager>().ToggleHighlightDeploymentPoint( adp, true );
 					FindObjectOfType<CameraController>().MoveToEntity( adp );
 					//string enemyName = ovrd.useGenericMugshot ? "Rebel" : enemyToAdd.name;
-					FindObjectOfType<SagaEventManager>().ShowTextBox( $"{DataStore.uiLanguage.sagaMainApp.deployMessageUC}:\n\n<color=white>{enemyToAdd.name}</color>", () =>
+					FindObjectOfType<SagaEventManager>().ShowTextBox( BuildDeployGroupMessage( enemyToAdd.name, enemyToAdd ), () =>
 					{
 						// <color=orange>[{cardID}]</color>
 						FindObjectOfType<SagaEventManager>().toggleVisButton.SetActive( false );
@@ -397,6 +398,7 @@ namespace Saga
 				}
 				else
 				{
+					PowerTokenManager.ClearTokens( enemyToAdd.id );
 					GlowEngine.FindUnityObject<QuickMessage>().Show( DataStore.uiLanguage.sagaMainApp.noDPWarningUC );
 					callback?.Invoke();
 				}
@@ -427,7 +429,7 @@ namespace Saga
 
 			//string enemyName = ovrd.useGenericMugshot ? "Rebel" : ovrd.nameOverride;
 			string enemyName = ovrd.nameOverride;
-			FindObjectOfType<SagaEventManager>().ShowTextBox( $"{DataStore.uiLanguage.sagaMainApp.deployMessageUC}:\n\n<color=white>{enemyName}</color>", () =>
+			FindObjectOfType<SagaEventManager>().ShowTextBox( BuildDeployGroupMessage( enemyName, enemyToAdd ), () =>
 			{
 				// <color=orange>[{cardID}]</color>
 				//hide all DPs used
@@ -439,6 +441,18 @@ namespace Saga
 				FindObjectOfType<SagaEventManager>().toggleVisButton.SetActive( false );
 				callback?.Invoke();
 			} );
+		}
+
+		/// <summary>
+		/// "Deploy the following Deployment Group" text box, with Commence Landing token assignment when present.
+		/// </summary>
+		string BuildDeployGroupMessage( string enemyName, DeploymentCard card )
+		{
+			string message = $"{DataStore.uiLanguage.sagaMainApp.deployMessageUC}:\n\n<color=white>{enemyName}</color>";
+			string tokenAppendix = PowerTokenManager.ConsumeDeployAppendix( card );
+			if ( !string.IsNullOrEmpty( tokenAppendix ) )
+				message += $"\n\n<color=orange>{tokenAppendix}</color>";
+			return message;
 		}
 
 		//IEnumerator NavToDeployment( DeploymentGroupOverride ovrd, Action callback = null )

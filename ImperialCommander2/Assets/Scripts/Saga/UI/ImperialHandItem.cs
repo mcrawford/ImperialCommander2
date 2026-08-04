@@ -19,7 +19,7 @@ namespace Saga
 
 			string tokenSummary = PowerTokenManager.FormatHandSummary( PowerTokenManager.GetTokens( card.id ) );
 			if ( !string.IsNullOrEmpty( tokenSummary ) )
-				nameText.text += $"\n{tokenSummary}";
+				nameText.text += $"\n{Utils.ReplaceGlyphs( tokenSummary )}";
 
 			mugOutline.color = Utils.String2UnityColor( card.deploymentOutlineColor );
 
