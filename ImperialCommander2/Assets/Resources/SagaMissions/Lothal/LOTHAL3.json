@@ -39,9 +39,7 @@
       "eventActionType": 17,
       "displayName": ""
     },
-    "missionSubType": [
-      7
-    ],
+    "missionSubType": [7],
     "bannedGroups": [
       "DG021",
       "DG022",
@@ -1135,7 +1133,7 @@
           "displayName": "Change Objective"
         },
         {
-          "theText": "{-} Walls touching the walls of adjacent tiles do not block line of sight, movement, adjacency, or counting spaces.\r\n{-} While on an exterior space:\r\n— Figures and abilities ignore all terrain.\r\n— At the start of each Rebel figure's activation, it gains 3 movement points.\r\n— Imperial figures can only voluntarily move North, Northwest, or Northeast.\r\n{-} When an Imperial figure enters a space containing a neutral mission token, it suffers 2 {H}.\r\n{-} At the start of each Status Phase, the southernmost section is removed and each figure on it is pushed to the northern section, suffering {H} and {B} as instructed. Then the next section is added. Reuse Endcaps ({0}18B, {6}12B) as necessary.\r\n{-} The mission will progress when the Rebels reach the shuttle. \r\n{-} The Rebels lose when all heroes are wounded.",
+          "theText": "{-} Walls touching the walls of adjacent tiles do not block line of sight, movement, adjacency, or counting spaces.\r\n{-} While on an exterior space:\r\n— Figures and abilities ignore all terrain.\r\n— At the start of each Rebel figure's activation, it gains 3 movement points.\r\n— Imperial figures can only voluntarily move North, Northwest, or Northeast.\r\n{-} When an Imperial figure enters a space containing a neutral mission token, it suffers 2 {H}.\r\n{-} At the start of each Status Phase, the southernmost section is removed and each figure on it is pushed to the northern section, suffering {H} and {B} as instructed. Then the next section is added. Reuse Endcaps ({0}18B, {6}12B) as necessary.\r\n{-} NO REST FOR THE WEARY: When a hero performs a Rest, one Imperial figure interrupts to perform a move. Choose the Imperial furthest from the northernmost section and move it toward that section (N / NW / NE only; avoid neutral tokens if possible). If every Imperial is already on the northernmost section, choose the one furthest from the nearest Rebel and move to block that Rebel's path.\r\n{-} The mission will progress when the Rebels reach the shuttle. \r\n{-} The Rebels lose when all heroes are wounded.",
           "GUID": "8c69b6b4-590a-4e4b-9252-5dbdddc817ac",
           "eventActionType": 1,
           "displayName": "Change Mission Info"
@@ -1293,9 +1291,7 @@
         },
         {
           "campaignItems": [],
-          "campaignRewards": [
-            "general14"
-          ],
+          "campaignRewards": ["general14"],
           "earnedVillains": [],
           "earnedAllies": [],
           "medpacsToModify": 0,
@@ -2013,6 +2009,12 @@
           "displayName": "Text Box"
         },
         {
+          "theText": "SHIELDS ONLINE\r\n\r\nPlace 1 energy shield in each of up to 2 different spaces. A figure can attack these energy shields (Health: Threat Level, Defense: 1 {G}).\r\n\r\n{-} Place them on the two terminal spaces. If a terminal space is occupied or awkward, place on the spaces that most block line of sight from the nearest Rebels to those terminals.\r\n\r\nThen discard Shields Online.",
+          "GUID": "6f9a563f-c902-4926-950e-b25239d3a721",
+          "eventActionType": 16,
+          "displayName": "Text Box"
+        },
+        {
           "theText": "Figures not on the shuttle: Move to the shuttle. Avoid neutral mission tokens, if possible.\r\n{-} Figures on the shuttle: Block access to the terminals.",
           "useSpecific": false,
           "repoGroups": [],
@@ -2028,7 +2030,7 @@
           "displayName": "Change Objective"
         },
         {
-          "theText": "{-} Walls touching the walls of adjacent tiles do not block line of sight, movement, adjacency, or counting spaces.\r\n{-} While on an exterior space:\r\n— Figures and abilities ignore all terrain.\r\n— At the start of each Rebel figure's activation, it gains 3 movement points.\r\n— Imperial figures can only voluntarily move North, Northwest, or Northeast.\r\n{-} When an Imperial figure enters a space containing a neutral mission token, it suffers 2 {H}.\r\n{-} Figures on the Shuttle cannot leave the Shuttle.\r\n{-} A Rebel figure can attack a terminal (Health: *2*, Defense: 1 {G}). Apply +1 {G} to the defense results if an Imperial figure is on or adjacent to the terminal.\r\n{-} The Rebels win when both terminals are destroyed.\r\n{-} The Rebels lose when all heroes are wounded.",
+          "theText": "{-} Walls touching the walls of adjacent tiles do not block line of sight, movement, adjacency, or counting spaces.\r\n{-} While on an exterior space:\r\n— Figures and abilities ignore all terrain.\r\n— At the start of each Rebel figure's activation, it gains 3 movement points.\r\n— Imperial figures can only voluntarily move North, Northwest, or Northeast.\r\n{-} When an Imperial figure enters a space containing a neutral mission token, it suffers 2 {H}.\r\n{-} Figures on the Shuttle cannot leave the Shuttle.\r\n{-} A Rebel figure can attack a terminal (Health: *2*, Defense: 1 {G}). Apply +1 {G} to the defense results if an Imperial figure is on or adjacent to the terminal.\r\n{-} NO REST FOR THE WEARY: When a hero performs a Rest, one Imperial figure interrupts to perform a move. Choose the Imperial furthest from the shuttle and move it toward the shuttle (avoid neutral tokens if possible). If every Imperial is already on the shuttle, choose the one furthest from blocking the terminals and move to block access.\r\n{-} The Rebels win when both terminals are destroyed.\r\n{-} The Rebels lose when all heroes are wounded.",
           "GUID": "df53c9c1-2184-4b95-ab60-d8fb8db2c580",
           "eventActionType": 1,
           "displayName": "Change Mission Info"

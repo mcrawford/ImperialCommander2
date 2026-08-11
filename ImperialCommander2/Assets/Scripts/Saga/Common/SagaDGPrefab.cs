@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -386,7 +387,11 @@ namespace Saga
 			{
 				string attachmentID = DataStore.sagaSessionData.gameVars.activeAttachments[cardDescriptor.id];
 				DataStore.sagaSessionData.gameVars.activeAttachments.Remove( cardDescriptor.id );
-				DataStore.sagaSessionData.gameVars.availableAttachments.Add( attachmentID );
+				var attachment = DataStore.sagaSessionData.gameVars.attachmentDefinitions
+					.FirstOrDefault( a => a.id == attachmentID );
+				bool discardAttachment = attachment != null && attachment.discardWhenGroupDefeated;
+				if ( !discardAttachment )
+					DataStore.sagaSessionData.gameVars.availableAttachments.Add( attachmentID );
 				
 				// Clear the modification and instruction override from the defeated group
 				var ovrd = DataStore.sagaSessionData.gameVars.GetDeploymentOverride( cardDescriptor.id );
@@ -397,7 +402,9 @@ namespace Saga
 					ovrd.changeInstructions = null;
 				}
 				
-				Debug.Log( $"Attachment '{attachmentID}' from {cardDescriptor.name} is now available for next deployment" );
+				Debug.Log( discardAttachment
+					? $"Attachment '{attachmentID}' from {cardDescriptor.name} was discarded"
+					: $"Attachment '{attachmentID}' from {cardDescriptor.name} is now available for next deployment" );
 			}
 
 			//add card back to deployment hand ONLY IF:

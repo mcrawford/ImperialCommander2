@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace Saga
 {
@@ -59,6 +60,188 @@ namespace Saga
 			PlaceOneToken( PowerTokenType.Block );
 			// Implacable (hand placement only; share/exhaust ability omitted for IC2)
 			PlaceOneToken( PowerTokenType.Evade );
+		}
+
+		// === Personal Flagship (always-on OO) ===
+
+		public const string PersonalFlagshipVillainId = "DG084"; // Maul
+		public const string PersonalFlagshipEffect =
+			"PERSONAL FLAGSHIP: A friendly figure within 3 of this Villain gains 1 {h} or 1 {g}.";
+
+		public static bool IsPersonalFlagshipEffect( string effect )
+		{
+			return !string.IsNullOrEmpty( effect ) &&
+				effect.StartsWith( "PERSONAL FLAGSHIP:", System.StringComparison.OrdinalIgnoreCase );
+		}
+
+		/// <summary>
+		/// Personal Flagship: after open groups are chosen, always include Maul in the hand.
+		/// </summary>
+		public static void EnsurePersonalFlagshipVillainInHand()
+		{
+			EnsureVillainInHand( PersonalFlagshipVillainId, "Personal Flagship" );
+		}
+
+		static void EnsureVillainInHand( string villainId, string reason )
+		{
+			var villain = DataStore.GetEnemy( villainId );
+			if ( villain == null )
+			{
+				Debug.LogWarning( $"EnsureVillainInHand()::{villainId} not found ({reason})" );
+				return;
+			}
+
+			if ( DataStore.deploymentHand.ContainsCard( villain ) )
+				return;
+
+			if ( DataStore.deployedEnemies.ContainsCard( villain ) )
+				return;
+
+			// Mission-reserved villains stay reserved (do not duplicate into open groups)
+			if ( DataStore.sagaSessionData.MissionReserved.ContainsCard( villain ) )
+				return;
+
+			DataStore.deploymentHand.Add( villain );
+			DataStore.manualDeploymentList.Remove( villain );
+			Debug.Log( $"{reason}: added {villain.name} ({villain.id}) to deployment hand" );
+		}
+
+		/// <summary>
+		/// Ensure the Personal Flagship once-per-round pool effect is available.
+		/// </summary>
+		public static void EnsurePersonalFlagshipPoolEffect()
+		{
+			EnsurePoolEffect( PersonalFlagshipEffect );
+		}
+
+		// === Limitless Arsenal (always-on OO) ===
+
+		public const string LimitlessArsenalPoolKey = "LIMITLESS ARSENAL";
+
+		public static bool IsLimitlessArsenalEffect( string effect )
+		{
+			return !string.IsNullOrEmpty( effect ) &&
+				effect.StartsWith( LimitlessArsenalPoolKey, System.StringComparison.OrdinalIgnoreCase );
+		}
+
+		/// <summary>
+		/// Ensure the Limitless Arsenal once-per-round pool marker is available.
+		/// Expanded to a concrete instruction when assigned.
+		/// </summary>
+		public static void EnsureLimitlessArsenalPoolEffect()
+		{
+			EnsurePoolEffect( LimitlessArsenalPoolKey );
+		}
+
+		static void EnsurePoolEffect( string effect )
+		{
+			if ( DataStore.oncePerRoundBonusPool == null )
+				DataStore.oncePerRoundBonusPool = new List<string>();
+
+			if ( DataStore.oncePerRoundBonusPool.Any( e =>
+				string.Equals( e, effect, System.StringComparison.OrdinalIgnoreCase ) ||
+				( IsLimitlessArsenalEffect( effect ) && IsLimitlessArsenalEffect( e ) ) ||
+				( IsPersonalFlagshipEffect( effect ) && IsPersonalFlagshipEffect( e ) ) ) )
+				return;
+
+			DataStore.oncePerRoundBonusPool.Add( effect );
+			Debug.Log( $"OO pool: added '{effect}'" );
+		}
+
+		/// <summary>
+		/// True if this activating group has a sensible Limitless Arsenal target in hand.
+		/// </summary>
+		public static bool CanApplyLimitlessArsenal( DeploymentCard activator )
+		{
+			return PickLimitlessArsenalSource( activator ) != null;
+		}
+
+		/// <summary>
+		/// Expand the pool marker into a concrete once-per-round instruction for this activator.
+		/// </summary>
+		public static string FormatLimitlessArsenalEffect( DeploymentCard activator )
+		{
+			var source = PickLimitlessArsenalSource( activator );
+			if ( source == null )
+				return null;
+
+			string dice = FormatAttackPool( source );
+			return $"{LimitlessArsenalPoolKey}: Use {source.name}'s attack pool ({dice}) for this figure's attacks this activation.";
+		}
+
+		/// <summary>
+		/// Hand card with {h}/{b}, attack-type compatible with activator, best by dice/red/cost.
+		/// </summary>
+		public static DeploymentCard PickLimitlessArsenalSource( DeploymentCard activator )
+		{
+			if ( activator == null || DataStore.deploymentHand == null )
+				return null;
+
+			if ( activator.attackType == AttackType.None ||
+				 activator.attacks == null || activator.attacks.Length == 0 )
+				return null;
+
+			var eligible = DataStore.deploymentHand
+				.Where( c => c != null && !string.IsNullOrEmpty( c.id ) )
+				.Where( c => c.attacks != null && c.attacks.Length > 0 && c.attackType != AttackType.None )
+				.Where( HasDamageOrSurgeToken )
+				.Where( c => IsLimitlessCompatible( activator, c ) )
+				// Limitless Arsenal is only useful when the replacement improves
+				// on the activator's native attack pool.
+				.Where( c => LimitlessScore( activator, c ) > LimitlessScore( activator, activator ) )
+				.ToList();
+
+			if ( eligible.Count == 0 )
+				return null;
+
+			return eligible
+				.OrderByDescending( c => LimitlessScore( activator, c ) )
+				.ThenByDescending( c => c.cost )
+				.ThenBy( c => c.id )
+				.First();
+		}
+
+		static bool HasDamageOrSurgeToken( DeploymentCard card )
+		{
+			var tokens = GetTokens( card.id );
+			return tokens.Any( t => t == PowerTokenType.Damage || t == PowerTokenType.Surge );
+		}
+
+		/// <summary>
+		/// Ranged activators need a ranged pool or at least one Blue (accuracy).
+		/// Melee activators accept any pool (scoring prefers melee).
+		/// </summary>
+		static bool IsLimitlessCompatible( DeploymentCard activator, DeploymentCard source )
+		{
+			if ( activator.attackType == AttackType.Ranged )
+			{
+				if ( source.attackType == AttackType.Ranged )
+					return true;
+				// Allow melee-typed cards only if they somehow include Blue accuracy
+				return source.attacks != null && source.attacks.Any( d => d == DiceColor.Blue );
+			}
+
+			return true;
+		}
+
+		static int LimitlessScore( DeploymentCard activator, DeploymentCard source )
+		{
+			int score = 0;
+			if ( source.attackType == activator.attackType )
+				score += 1000;
+			score += (source.attacks?.Length ?? 0) * 100;
+			score += (source.attacks?.Count( d => d == DiceColor.Red ) ?? 0) * 10;
+			if ( activator.attackType == AttackType.Ranged )
+				score += (source.attacks?.Count( d => d == DiceColor.Blue ) ?? 0) * 5;
+			score += source.cost;
+			return score;
+		}
+
+		static string FormatAttackPool( DeploymentCard card )
+		{
+			if ( card?.attacks == null || card.attacks.Length == 0 )
+				return "None";
+			return string.Join( " ", card.attacks.Select( d => d.ToString() ) );
 		}
 
 		static void PlaceOneToken( PowerTokenType token )

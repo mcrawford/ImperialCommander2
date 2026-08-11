@@ -1,3 +1,12 @@
 {
-  "attachments": []
+  "attachments": [
+    {
+      "id": "SELFLESS_DEVOTION",
+      "name": "SELFLESS DEVOTION",
+      "allowedMiniSizes": ["Small1x1"],
+      "discardWhenGroupDefeated": true,
+      "modification": "When targeted by an attack: This figure suffers 1 {H}; the attacker suffers 1 {H}.",
+      "bonusInstruction": "Whenever a figure in this group is targeted by an attack, it suffers 1 {H} and the attacker suffers 1 {H}."
+    }
+  ]
 }

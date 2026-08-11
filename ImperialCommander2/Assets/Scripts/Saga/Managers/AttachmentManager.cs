@@ -70,6 +70,13 @@ namespace Saga
 		public static bool MeetsRequirements( DeploymentCard card, Attachment attachment )
 		{
 			Utils.LogWarning( $"MeetsRequirements()::Checking {card.name} (ID: {card.id}) for attachment {attachment.name}" );
+
+			if ( attachment.allowedMiniSizes != null && attachment.allowedMiniSizes.Length > 0 &&
+				 !attachment.allowedMiniSizes.Any( size => string.Equals( size, card.miniSize.ToString(), System.StringComparison.OrdinalIgnoreCase ) ) )
+			{
+				Utils.LogWarning( $"  Group size {card.miniSize} is not eligible" );
+				return false;
+			}
 			
 			if ( attachment.excludedTraits == null || attachment.excludedTraits.Length == 0 )
 			{
@@ -93,6 +100,17 @@ namespace Saga
 			Utils.LogWarning( $"  Has excluded trait: {hasExcludedTrait}, Is eligible: {isEligible}" );
 			
 			return isEligible;
+		}
+
+		/// <summary>True when the attachment is scoped to the current mission (or is global).</summary>
+		public static bool AppliesToCurrentMission( Attachment attachment )
+		{
+			if ( attachment == null || attachment.missionIDs == null || attachment.missionIDs.Length == 0 )
+				return true;
+
+			string missionID = DataStore.mission?.missionProperties?.missionID;
+			return !string.IsNullOrEmpty( missionID ) && attachment.missionIDs.Any( id =>
+				string.Equals( id, missionID, System.StringComparison.OrdinalIgnoreCase ) );
 		}
 
 		/// <summary>
@@ -158,4 +176,3 @@ namespace Saga
 		public List<Attachment> attachments;
 	}
 }
-

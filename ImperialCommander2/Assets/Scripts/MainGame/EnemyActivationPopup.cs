@@ -281,6 +281,12 @@ public class EnemyActivationPopup : MonoBehaviour
 
 		var availableEffects = DataStore.oncePerRoundBonusPool
 			.Where( effect => !usedEffects.Contains( effect ) )
+			// Personal Flagship only applies when activating a Villain
+			.Where( effect => !PowerTokenManager.IsPersonalFlagshipEffect( effect )
+				|| cd.characterType == CharacterType.Villain )
+			// Limitless Arsenal only when a type-sensible hand pool exists
+			.Where( effect => !PowerTokenManager.IsLimitlessArsenalEffect( effect )
+				|| PowerTokenManager.CanApplyLimitlessArsenal( cd ) )
 			.ToList();
 
 		if ( availableEffects.Count == 0 )
@@ -314,11 +320,13 @@ public class EnemyActivationPopup : MonoBehaviour
 			// Give this group the guaranteed base amount (may be 0)
 			for ( int i = 0; i < effectsPerGroup && i < shuffledEffects.Count; i++ )
 			{
-				string effect = shuffledEffects[i];
+				string effect = ResolvePoolEffectText( shuffledEffects[i], cd );
+				if ( effect == null )
+					continue;
 				assignedEffects.Add( effect );
 				Utils.LogWarning( $"DeterminePoolEffect()::Assigned guaranteed effect '{effect}' to {cd.name}" );
-				// Mark as used for this round
-				DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, effect );
+				// Mark as used for this round (stable pool key, not expanded text)
+				DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, shuffledEffects[i] );
 			}
 
 			// From the remainder, use probability to decide if this group gets one more
@@ -334,12 +342,15 @@ public class EnemyActivationPopup : MonoBehaviour
 					// Pick a random effect from the remaining effects (after the base amount)
 					int remainingCount = shuffledEffects.Count - effectsPerGroup;
 					int[] remainderRnd = GlowEngine.GenerateRandomNumbers( remainingCount );
-					string extraEffect = shuffledEffects[effectsPerGroup + remainderRnd[0]];
+					string poolKey = shuffledEffects[effectsPerGroup + remainderRnd[0]];
+					string extraEffect = ResolvePoolEffectText( poolKey, cd );
 
-					assignedEffects.Add( extraEffect );
-					Utils.LogWarning( $"DeterminePoolEffect()::Assigned extra effect '{extraEffect}' to {cd.name}" );
-					// Mark as used for this round
-					DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, extraEffect );
+					if ( extraEffect != null )
+					{
+						assignedEffects.Add( extraEffect );
+						Utils.LogWarning( $"DeterminePoolEffect()::Assigned extra effect '{extraEffect}' to {cd.name}" );
+						DataStore.sagaSessionData.gameVars.MarkPoolEffectAsUsed( currentRound, poolKey );
+					}
 				}
 			}
 
@@ -347,6 +358,16 @@ public class EnemyActivationPopup : MonoBehaviour
 		}
 
 		return assignedEffects;
+	}
+
+	/// <summary>
+	/// Expand dynamic pool markers (e.g. Limitless Arsenal) into concrete instruction text.
+	/// </summary>
+	string ResolvePoolEffectText( string poolEffect, DeploymentCard cd )
+	{
+		if ( PowerTokenManager.IsLimitlessArsenalEffect( poolEffect ) )
+			return PowerTokenManager.FormatLimitlessArsenalEffect( cd );
+		return poolEffect;
 	}
 
 	void ParseInstructions( List<string> instruction )

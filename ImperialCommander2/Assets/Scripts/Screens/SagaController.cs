@@ -408,7 +408,9 @@ namespace Saga
 				//ATTACHMENT SYSTEM: Load and assign attachments
 				try
 				{
-					DataStore.sagaSessionData.gameVars.attachmentDefinitions = AttachmentManager.LoadAttachments();
+					DataStore.sagaSessionData.gameVars.attachmentDefinitions = AttachmentManager.LoadAttachments()
+						.Where( AttachmentManager.AppliesToCurrentMission )
+						.ToList();
 					Utils.LogWarning( $"LoadMission()::Loaded {DataStore.sagaSessionData.gameVars.attachmentDefinitions?.Count ?? 0} attachment definitions" );
 
 					//GLOBAL BONUS EFFECTS: Load global bonuses
@@ -439,9 +441,8 @@ namespace Saga
 
 								if ( eligibleGroups.Count > 0 )
 								{
-									// Randomly select an eligible group
-									int[] rnd = GlowEngine.GenerateRandomNumbers( eligibleGroups.Count );
-									var targetGroup = eligibleGroups[rnd[0]];
+									// Attach to the first eligible group in deployment order.
+									var targetGroup = eligibleGroups[0];
 
 									Utils.LogWarning( $"LoadMission()::Selected group {targetGroup.name} (ID: {targetGroup.id}) for attachment {attachment.name}" );
 
@@ -514,6 +515,11 @@ namespace Saga
 					Debug.Log( $"Added regular Imperial Officer ({imperialOfficer.id}) to deployment hand after setup" );
 				}
 			}
+
+			// Personal Flagship: always include Maul in the open-group hand
+			PowerTokenManager.EnsurePersonalFlagshipVillainInHand();
+			PowerTokenManager.EnsurePersonalFlagshipPoolEffect();
+			PowerTokenManager.EnsureLimitlessArsenalPoolEffect();
 
 			// Commence Landing: place starting power tokens on the hand for round 1
 			PowerTokenManager.PlaceCommenceLandingTokens();
