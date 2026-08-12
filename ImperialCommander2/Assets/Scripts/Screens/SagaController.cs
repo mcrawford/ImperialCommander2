@@ -520,6 +520,7 @@ namespace Saga
 			PowerTokenManager.EnsurePersonalFlagshipVillainInHand();
 			PowerTokenManager.EnsurePersonalFlagshipPoolEffect();
 			PowerTokenManager.EnsureLimitlessArsenalPoolEffect();
+			PowerTokenManager.EnsureTieFighterPatrolPoolEffect();
 
 			// Commence Landing: place starting power tokens on the hand for round 1
 			PowerTokenManager.PlaceCommenceLandingTokens();

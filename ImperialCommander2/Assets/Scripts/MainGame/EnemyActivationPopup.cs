@@ -367,7 +367,31 @@ public class EnemyActivationPopup : MonoBehaviour
 	{
 		if ( PowerTokenManager.IsLimitlessArsenalEffect( poolEffect ) )
 			return PowerTokenManager.FormatLimitlessArsenalEffect( cd );
+		if ( PowerTokenManager.IsTieFighterPatrolEffect( poolEffect ) )
+			return FormatTieFighterPatrolEffect();
 		return poolEffect;
+	}
+
+	string FormatTieFighterPatrolEffect()
+	{
+		var heroes = DataStore.deployedHeroes
+			.Where( hero => hero.characterType == CharacterType.Hero && !hero.isDummy &&
+				hero.heroState != null && hero.heroState.isHealthy )
+			.ToList();
+
+		if ( heroes.Count == 0 )
+		{
+			heroes = DataStore.deployedHeroes
+				.Where( hero => hero.characterType == CharacterType.Hero && !hero.isDummy )
+				.ToList();
+		}
+
+		if ( heroes.Count == 0 )
+			return null;
+
+		int[] randomHero = GlowEngine.GenerateRandomNumbers( heroes.Count );
+		var target = heroes[randomHero[0]];
+		return $"{PowerTokenManager.TieFighterPatrolPoolKey}: {target.name} tests Insight. If successful, they suffer 1 {{C}}; otherwise, they suffer 3 {{H}}.";
 	}
 
 	void ParseInstructions( List<string> instruction )

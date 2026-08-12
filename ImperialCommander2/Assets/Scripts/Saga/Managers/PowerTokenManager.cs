@@ -117,11 +117,18 @@ namespace Saga
 		// === Limitless Arsenal (always-on OO) ===
 
 		public const string LimitlessArsenalPoolKey = "LIMITLESS ARSENAL";
+		public const string TieFighterPatrolPoolKey = "TIE FIGHTER PATROL";
 
 		public static bool IsLimitlessArsenalEffect( string effect )
 		{
 			return !string.IsNullOrEmpty( effect ) &&
 				effect.StartsWith( LimitlessArsenalPoolKey, System.StringComparison.OrdinalIgnoreCase );
+		}
+
+		public static bool IsTieFighterPatrolEffect( string effect )
+		{
+			return !string.IsNullOrEmpty( effect ) &&
+				effect.StartsWith( TieFighterPatrolPoolKey, System.StringComparison.OrdinalIgnoreCase );
 		}
 
 		/// <summary>
@@ -133,6 +140,12 @@ namespace Saga
 			EnsurePoolEffect( LimitlessArsenalPoolKey );
 		}
 
+		/// <summary>Ensure the TIE Fighter Patrol once-per-round effect is available.</summary>
+		public static void EnsureTieFighterPatrolPoolEffect()
+		{
+			EnsurePoolEffect( TieFighterPatrolPoolKey );
+		}
+
 		static void EnsurePoolEffect( string effect )
 		{
 			if ( DataStore.oncePerRoundBonusPool == null )
@@ -141,6 +154,7 @@ namespace Saga
 			if ( DataStore.oncePerRoundBonusPool.Any( e =>
 				string.Equals( e, effect, System.StringComparison.OrdinalIgnoreCase ) ||
 				( IsLimitlessArsenalEffect( effect ) && IsLimitlessArsenalEffect( e ) ) ||
+				( IsTieFighterPatrolEffect( effect ) && IsTieFighterPatrolEffect( e ) ) ||
 				( IsPersonalFlagshipEffect( effect ) && IsPersonalFlagshipEffect( e ) ) ) )
 				return;
 
@@ -247,17 +261,20 @@ namespace Saga
 		static void PlaceOneToken( PowerTokenType token )
 		{
 			var map = TokenMap;
-			var candidates = DataStore.deploymentHand
+			var available = DataStore.deploymentHand
 				.Where( c => c != null && !string.IsNullOrEmpty( c.id ) )
 				.Where( c => GetTokens( c.id ).Count < TokenCapacity( c ) )
-				.OrderBy( c => GetTokens( c.id ).Count )
-				.ThenBy( c => DataStore.deploymentHand.IndexOf( c ) )
 				.ToList();
 
-			if ( candidates.Count == 0 )
+			if ( available.Count == 0 )
 				return;
 
-			var target = candidates[0];
+			// Start a random card only when there are no usable token-bearing cards.
+			// Otherwise continue building a card that already has power tokens.
+			var tokenBearing = available.Where( c => GetTokens( c.id ).Count > 0 ).ToList();
+			var candidates = tokenBearing.Count > 0 ? tokenBearing : available;
+			int[] randomTarget = GlowEngine.GenerateRandomNumbers( candidates.Count );
+			var target = candidates[randomTarget[0]];
 			if ( !map.ContainsKey( target.id ) )
 				map[target.id] = new List<PowerTokenType>();
 			map[target.id].Add( token );

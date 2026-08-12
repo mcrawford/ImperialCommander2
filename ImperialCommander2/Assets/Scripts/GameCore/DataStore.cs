@@ -1009,6 +1009,28 @@ public static class DataStore
 			t3modifier = 2;
 		}
 
+		// Overwhelming Oppression: deploy a powered-up hand card first. Use the
+		// normal fuzzy affordability rules, then choose randomly among the cards
+		// with the greatest number of stored power tokens.
+		var poweredCandidates = deploymentHand
+			.Where( x => !deployedEnemies.ContainsCard( x ) )
+			.Where( x =>
+				( x.tier == 1 && x.cost <= currentThreat ) ||
+				( x.tier == 2 && x.cost - t2modifier <= currentThreat ) ||
+				( x.tier == 3 && x.cost - t3modifier <= currentThreat + 3 ) )
+			.Where( x => PowerTokenManager.GetTokens( x.id ).Count > 0 )
+			.ToList();
+
+		if ( poweredCandidates.Count > 0 )
+		{
+			int maxTokens = poweredCandidates.Max( x => PowerTokenManager.GetTokens( x.id ).Count );
+			var bestPoweredCandidates = poweredCandidates
+				.Where( x => PowerTokenManager.GetTokens( x.id ).Count == maxTokens )
+				.ToList();
+			int[] poweredRandom = GlowEngine.GenerateRandomNumbers( bestPoweredCandidates.Count );
+			return bestPoweredCandidates[poweredRandom[0]];
+		}
+
 		//get tier 1 affordable groups
 		if ( deploymentHand.Any( x =>
 			x.tier == 1 &&
