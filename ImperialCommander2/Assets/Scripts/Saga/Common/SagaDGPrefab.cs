@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -381,12 +382,14 @@ namespace Saga
 		/// </summary>
 		private void ProcessCardDefeated()
 		{
-		//ATTACHMENT SYSTEM: Check if this defeated group has an attachment that needs to transfer (Campaign mode only)
-		if ( RunningCampaign.sagaCampaignGUID != Guid.Empty && DataStore.sagaSessionData.gameVars.activeAttachments.ContainsKey( cardDescriptor.id ) )
+		// ATTACHMENT SYSTEM: Check if this defeated group has an attachment that needs to transfer.
+		if ( DataStore.sagaSessionData.gameVars.activeAttachments.ContainsKey( cardDescriptor.id ) )
 			{
 				string attachmentID = DataStore.sagaSessionData.gameVars.activeAttachments[cardDescriptor.id];
 				DataStore.sagaSessionData.gameVars.activeAttachments.Remove( cardDescriptor.id );
-				DataStore.sagaSessionData.gameVars.availableAttachments.Add( attachmentID );
+				var attachment = DataStore.sagaSessionData.gameVars.attachmentDefinitions.FirstOrDefault( item => item.id == attachmentID );
+				if ( attachment == null || !attachment.discardOnDefeat )
+					DataStore.sagaSessionData.gameVars.availableAttachments.Add( attachmentID );
 				
 				// Clear the modification and instruction override from the defeated group
 				var ovrd = DataStore.sagaSessionData.gameVars.GetDeploymentOverride( cardDescriptor.id );
@@ -397,7 +400,9 @@ namespace Saga
 					ovrd.changeInstructions = null;
 				}
 				
-				Debug.Log( $"Attachment '{attachmentID}' from {cardDescriptor.name} is now available for next deployment" );
+				Debug.Log( attachment != null && attachment.discardOnDefeat
+					? $"Attachment '{attachmentID}' discarded when {cardDescriptor.name} was defeated"
+					: $"Attachment '{attachmentID}' from {cardDescriptor.name} is now available for next deployment" );
 			}
 
 			//add card back to deployment hand ONLY IF:

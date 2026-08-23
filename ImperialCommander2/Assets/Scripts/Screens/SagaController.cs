@@ -405,16 +405,11 @@ namespace Saga
 				//fame button
 				fameButton.interactable = DataStore.sagaSessionData.setupOptions.useAdaptiveDifficulty;
 
-				//ATTACHMENT SYSTEM: Load and assign attachments (Campaign mode only)
-				Utils.LogWarning( $"LoadMission()::ATTACHMENT DEBUG - RunningCampaign.sagaCampaignGUID: {RunningCampaign.sagaCampaignGUID}, IsEmpty: {RunningCampaign.sagaCampaignGUID == Guid.Empty}" );
+				// ATTACHMENT SYSTEM: Load and assign attachments for every Saga mission.
+				Utils.LogWarning( $"LoadMission()::Loading attachments. MissionStarting groups: {DataStore.sagaSessionData.MissionStarting?.Count ?? 0}" );
 				
-				if ( RunningCampaign.sagaCampaignGUID != Guid.Empty )
+				try
 				{
-					Utils.LogWarning( $"LoadMission()::Campaign mode detected - Loading attachments. MissionStarting groups: {DataStore.sagaSessionData.MissionStarting?.Count ?? 0}" );
-					
-					try
-					{
-						// Always load attachments in Campaign mode
 						DataStore.sagaSessionData.gameVars.attachmentDefinitions = AttachmentManager.LoadAttachments();
 						Utils.LogWarning( $"LoadMission()::Loaded {DataStore.sagaSessionData.gameVars.attachmentDefinitions?.Count ?? 0} attachment definitions" );
 						
@@ -491,15 +486,10 @@ namespace Saga
 								}
 							}
 						}
-					}
-					catch ( Exception e )
-					{
-						Utils.LogError( $"LoadMission()::ERROR in attachment assignment: {e.Message}\n{e.StackTrace}" );
-					}
 				}
-				else
+				catch ( Exception e )
 				{
-					Utils.LogWarning( $"LoadMission()::Saga mode (standalone mission) - Attachment system disabled" );
+					Utils.LogError( $"LoadMission()::ERROR in attachment assignment: {e.Message}\n{e.StackTrace}" );
 				}
 
 				return true;

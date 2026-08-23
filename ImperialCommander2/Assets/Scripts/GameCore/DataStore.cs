@@ -46,7 +46,7 @@ public static class DataStore
 	public static List<CardInstruction> importedActivationInstructions;
 	public static List<BonusEffect> bonusEffects;
 	public static List<BonusEffect> importedBonusEffects;
-	public static List<string> oncePerRoundBonusPool;
+	public static List<OncePerRoundBonusEffect> oncePerRoundBonusPool;
 	public static List<DeploymentSound> deploymentSounds;
 	public static Dictionary<string, List<MissionPreset>> missionPresets;
 	public static ThumbnailData thumbnailData;
@@ -125,7 +125,7 @@ public static class DataStore
 		importedActivationInstructions = new List<CardInstruction>();
 		bonusEffects = new List<BonusEffect>();
 		importedBonusEffects = new List<BonusEffect>();
-		oncePerRoundBonusPool = new List<string>();
+		oncePerRoundBonusPool = new List<OncePerRoundBonusEffect>();
 
 		//load deployment sound lookup
 		deploymentSounds = LoadDeploymentSounds();
@@ -327,19 +327,19 @@ public static class DataStore
 		}
 	}
 
-	static List<string> LoadOncePerRoundBonusPool()
+	static List<OncePerRoundBonusEffect> LoadOncePerRoundBonusPool()
 	{
 		try
 		{
 			string json = Resources.Load<TextAsset>( "Languages/" + languageCodeList[languageCode] + "/onceperroundbonuspool" ).text;
 			var data = JsonConvert.DeserializeObject<OncePerRoundBonusPool>( json );
-			return data?.effects ?? new List<string>();
+			return data?.effects ?? new List<OncePerRoundBonusEffect>();
 		}
 		catch
 		{
 			// File doesn't exist or is invalid, return empty list
 			Debug.Log( "LoadOncePerRoundBonusPool()::No once-per-round bonus pool file found, or error loading it" );
-			return new List<string>();
+			return new List<OncePerRoundBonusEffect>();
 		}
 	}
 

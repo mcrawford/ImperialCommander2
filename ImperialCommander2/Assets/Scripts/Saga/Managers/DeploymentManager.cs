@@ -171,8 +171,8 @@ namespace Saga
 			//otherwise it just got (up/down)graded to/from Elite or it's from the event action
 			DataStore.deploymentHand.Remove( cardDescriptor );
 
-			//ATTACHMENT SYSTEM: Check if any attachments are available and assign to this new deployment (Campaign mode only)
-			if ( RunningCampaign.sagaCampaignGUID != Guid.Empty && DataStore.sagaSessionData.gameVars.availableAttachments.Count > 0 )
+			// ATTACHMENT SYSTEM: Check if any attachments are available and assign to this new deployment.
+			if ( DataStore.sagaSessionData.gameVars.availableAttachments.Count > 0 )
 			{
 				// Check each available attachment
 				for ( int i = DataStore.sagaSessionData.gameVars.availableAttachments.Count - 1; i >= 0; i-- )

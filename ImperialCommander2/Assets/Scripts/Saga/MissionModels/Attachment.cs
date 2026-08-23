@@ -8,7 +8,10 @@ namespace Saga
 		public string name;
 		public string modification;
 		public string bonusInstruction;
+		public string[] requiredGroupIDs;
+		public GroupTraits[] requiredTraits;
 		public GroupTraits[] excludedTraits;
+		public bool discardOnDefeat;
 
 		public Attachment()
 		{
@@ -16,4 +19,3 @@ namespace Saga
 		}
 	}
 }
-

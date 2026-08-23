@@ -45,14 +45,12 @@ namespace Saga
 				foreach ( var att in attachments )
 				{
 					Utils.LogWarning( $"  - Attachment: {att.name} (ID: {att.id})" );
-					if ( att.excludedTraits != null && att.excludedTraits.Length > 0 )
-					{
-						Utils.LogWarning( $"    Excluded traits: {string.Join( ", ", att.excludedTraits )}" );
-					}
-					else
-					{
-						Utils.LogWarning( "    No excluded traits" );
-					}
+					Utils.LogWarning( att.requiredTraits != null && att.requiredTraits.Length > 0
+						? $"    Required traits (any): {string.Join( ", ", att.requiredTraits )}"
+						: "    No required traits" );
+					Utils.LogWarning( att.excludedTraits != null && att.excludedTraits.Length > 0
+						? $"    Excluded traits: {string.Join( ", ", att.excludedTraits )}"
+						: "    No excluded traits" );
 				}
 				
 				return attachments;
@@ -65,32 +63,23 @@ namespace Saga
 		}
 
 		/// <summary>
-		/// Check if a group meets attachment requirements (doesn't have excluded traits)
+		/// Check if a group matches required IDs, has any required trait, and no excluded trait.
 		/// </summary>
 		public static bool MeetsRequirements( DeploymentCard card, Attachment attachment )
 		{
 			Utils.LogWarning( $"MeetsRequirements()::Checking {card.name} (ID: {card.id}) for attachment {attachment.name}" );
 			
-			if ( attachment.excludedTraits == null || attachment.excludedTraits.Length == 0 )
-			{
-				Utils.LogWarning( $"  No excluded traits - group is eligible" );
-				return true;
-			}
+			bool hasRequiredGroupID = attachment.requiredGroupIDs == null || attachment.requiredGroupIDs.Length == 0
+				|| attachment.requiredGroupIDs.Contains( card.id );
 
-			if ( card.groupTraits == null || card.groupTraits.Length == 0 )
-			{
-				Utils.LogWarning( $"  Group has no traits - group is eligible" );
-				return true;
-			}
-
-			Utils.LogWarning( $"  Group traits: {string.Join( ", ", card.groupTraits )}" );
-			Utils.LogWarning( $"  Excluded traits: {string.Join( ", ", attachment.excludedTraits )}" );
-
-			// Group is eligible if it does NOT have any of the excluded traits
-			bool hasExcludedTrait = card.groupTraits.Any( t => attachment.excludedTraits.Contains( t ) );
-			bool isEligible = !hasExcludedTrait;
+			// A required-traits list is an OR condition: matching any listed trait is sufficient.
+			bool hasRequiredTrait = attachment.requiredTraits == null || attachment.requiredTraits.Length == 0
+				|| ( card.groupTraits != null && card.groupTraits.Any( t => attachment.requiredTraits.Contains( t ) ) );
+			bool hasExcludedTrait = attachment.excludedTraits != null && attachment.excludedTraits.Length > 0
+				&& card.groupTraits != null && card.groupTraits.Any( t => attachment.excludedTraits.Contains( t ) );
+			bool isEligible = hasRequiredGroupID && hasRequiredTrait && !hasExcludedTrait;
 			
-			Utils.LogWarning( $"  Has excluded trait: {hasExcludedTrait}, Is eligible: {isEligible}" );
+			Utils.LogWarning( $"  Has required group ID: {hasRequiredGroupID}, Has required trait: {hasRequiredTrait}, Has excluded trait: {hasExcludedTrait}, Is eligible: {isEligible}" );
 			
 			return isEligible;
 		}
@@ -112,4 +101,3 @@ namespace Saga
 		public List<Attachment> attachments;
 	}
 }
-
