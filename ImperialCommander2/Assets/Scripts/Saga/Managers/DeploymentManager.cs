@@ -192,17 +192,6 @@ namespace Saga
 							ovrd.showMod = true;
 						}
 						
-						// Apply bonus instruction if present
-						if ( !string.IsNullOrEmpty( attachment.bonusInstruction ) )
-						{
-							var instructionText = "{#} " + attachment.name + ": " + attachment.bonusInstruction;
-							ovrd.SetInstructionOverride( new ChangeInstructions()
-							{
-								instructionType = CustomInstructionType.Top,
-								theText = instructionText
-							} );
-						}
-						
 						// Update tracking
 						DataStore.sagaSessionData.gameVars.activeAttachments[cardDescriptor.id] = attachmentID;
 						DataStore.sagaSessionData.gameVars.availableAttachments.RemoveAt( i );

@@ -3,9 +3,35 @@
     {
       "id": "explosive-munitions",
       "name": "EXPLOSIVE MUNITIONS",
-      "text": "When the first figure in this group attacks, if possible, replace 1 die in the attack pool with 1 red die. If the target is within 3 spaces, replace a blue die first, then yellow, then green. Otherwise, replace a yellow die, then green; do not replace a blue die. That attack gains Blast 1 {H}.",
+      "text": "When the first figure in this group attacks, replace 1 die in the attack pool with 1 red die. If the target is within 3 spaces, replace a blue die first, then yellow, then green. Otherwise, replace a yellow die, then green. That attack gains Blast 1 {H}.",
       "eligibility": {
         "attackType": "Ranged"
+      }
+    },
+    {
+      "id": "heavy-firepower",
+      "name": "HEAVY FIREPOWER",
+      "text": "When this group attacks, remove 1 red die from the attack pool and add 3 {H} to the attack results.",
+      "eligibility": {
+        "attackPoolContains": [
+          "Red"
+        ]
+      }
+    },
+    {
+      "id": "mortar",
+      "name": "MORTAR",
+      "text": "The first figure in this group that can affect a Rebel figure performs: {A} Choose a space within 3 spaces that affects the most Rebel figures. Roll 1 red die. Each figure and object on or adjacent to that space suffers {H} equal to the {H} results."
+    },
+    {
+      "id": "rapid-dominance",
+      "name": "RAPID DOMINANCE",
+      "text": "2 {T}: The first figure in this group can perform three actions.",
+      "eligibility": {
+        "groupTraitsAny": [
+          "HeavyWeapon",
+          "Vehicle"
+        ]
       }
     }
   ]

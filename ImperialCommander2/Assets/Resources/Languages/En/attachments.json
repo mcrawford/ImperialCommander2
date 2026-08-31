@@ -5,14 +5,6 @@
       "name": "AUTOMATED REPAIRS",
       "bonusInstruction": "During an attack, the first wounded figure in this group that can spend 1 {B} spends it to recover 2 {H} before resolving other surge abilities. If no wounded figure does so, at the end of this activation the most-wounded figure recovers 1 {H}.",
       "requiredTraits": ["HeavyWeapon", "Droid", "Vehicle"]
-    },
-    {
-      "id": "imperial_operative",
-      "name": "IMPERIAL OPERATIVE",
-      "modification": "+1 Speed\n+3 Health",
-      "bonusInstruction": "At the start of this activation, this figure becomes <color=\"red\">Focused</color>.",
-      "requiredGroupIDs": ["DG004", "DG005", "DG006"],
-      "discardOnDefeat": true
     }
   ]
 }

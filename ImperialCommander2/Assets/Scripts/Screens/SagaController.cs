@@ -450,18 +450,6 @@ namespace Saga
 											Utils.LogWarning( $"LoadMission()::Applied modification '{attachment.modification}' to {targetGroup.name}" );
 										}
 										
-										// Apply bonus instruction if present
-										if ( !string.IsNullOrEmpty( attachment.bonusInstruction ) )
-										{
-											var instructionText = "{#} " + attachment.name + ": " + attachment.bonusInstruction;
-											ovrd.SetInstructionOverride( new ChangeInstructions()
-											{
-												instructionType = CustomInstructionType.Top,
-												theText = instructionText
-											} );
-											Utils.LogWarning( $"LoadMission()::Applied bonus instruction to {targetGroup.name}" );
-										}
-										
 										// Track the attachment
 										DataStore.sagaSessionData.gameVars.activeAttachments[targetGroup.id] = attachment.id;
 										

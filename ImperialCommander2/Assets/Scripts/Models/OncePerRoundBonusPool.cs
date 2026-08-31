@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 public class OncePerRoundBonusPool
 {
@@ -14,14 +15,30 @@ public class OncePerRoundBonusEffect
 
 	public bool IsEligible( DeploymentCard card )
 	{
-		if ( eligibility == null || !eligibility.attackType.HasValue )
+		if ( eligibility == null )
 			return true;
 
-		return card != null && card.attackType == eligibility.attackType.Value;
+		if ( card == null )
+			return false;
+
+		if ( eligibility.attackType.HasValue && card.attackType != eligibility.attackType.Value )
+			return false;
+
+		if ( eligibility.attackPoolContains != null && eligibility.attackPoolContains.Length > 0
+			&& ( card.attacks == null || !eligibility.attackPoolContains.All( die => card.attacks.Contains( die ) ) ) )
+			return false;
+
+		if ( eligibility.groupTraitsAny != null && eligibility.groupTraitsAny.Length > 0
+			&& ( card.groupTraits == null || !card.groupTraits.Any( trait => eligibility.groupTraitsAny.Contains( trait ) ) ) )
+			return false;
+
+		return true;
 	}
 }
 
 public class OncePerRoundBonusEffectEligibility
 {
 	public AttackType? attackType;
+	public DiceColor[] attackPoolContains;
+	public GroupTraits[] groupTraitsAny;
 }

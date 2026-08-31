@@ -679,6 +679,22 @@ public class EnemyActivationPopup : MonoBehaviour
 			Debug.Log( $"GetModifiedInstructions()::MODIFYING WITH {lines.Count} LINES::{dgOvrd.instructionType}" );
 		}
 
+		// Attachments are additive: do not occupy the mission's single instruction override.
+		// This lets mission-specific instructions (for example, attacking a door) continue to work.
+		if ( DataStore.sagaSessionData.gameVars.activeAttachments.TryGetValue( ID, out string attachmentID ) )
+		{
+			var attachment = DataStore.sagaSessionData.gameVars.attachmentDefinitions
+				.FirstOrDefault( x => x.id == attachmentID );
+			if ( attachment != null && !string.IsNullOrEmpty( attachment.bonusInstruction ) )
+			{
+				var attachmentLines = ( "{#} " + attachment.name + ": " + attachment.bonusInstruction )
+					.Split( new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries )
+					.ToList();
+				linesOut = attachmentLines.Concat( linesOut ).ToList();
+				Debug.Log( $"GetModifiedInstructions()::ADDING ATTACHMENT INSTRUCTION::{attachment.name}" );
+			}
+		}
+
 		return linesOut;
 	}
 
