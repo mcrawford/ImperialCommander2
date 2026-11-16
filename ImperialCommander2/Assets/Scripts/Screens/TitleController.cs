@@ -12,6 +12,7 @@ using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.Networking;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -25,7 +26,7 @@ public class TitleController : MonoBehaviour
 	public Sound soundController;
 	public NewGameScreen newGameScreen;
 	public TitleText titleText;
-	public GameObject donateButton, docsButton, versionButton, tutorialGoButton, sagaClassicLayoutContainer, campaignContainer, newGameButton, newCampaignButton, helpButton, settingsPanel;
+	public GameObject donateButton, docsButton, versionButton, tutorialGoButton, sagaClassicLayoutContainer, campaignContainer, newGameButton, newCampaignButton, helpButton, settingsPanel, sagaModeButton;
 	public VolumeProfile volume;
 	public Button continueButton, campaignContinueButton, campaignLoadButton;
 	public Transform busyIconTF;
@@ -50,7 +51,8 @@ public class TitleController : MonoBehaviour
 	private NetworkStatus networkStatus;
 	private GitHubResponse gitHubResponse = null;
 	private bool skipDropdown = true;
-	private bool isHelpOpen = false;
+	private ExpansionsPanel expansionsPanel;
+	private GameObject previousSelectedObject;
 
 	void Start()
 	{
@@ -213,7 +215,7 @@ public class TitleController : MonoBehaviour
 
 	public void ReturnTo()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		//EventSystem.current.SetSelectedGameObject( null );
 		FlipIn( animator );
 		titleText.Show();
 		titleText.FlipIn();
@@ -225,7 +227,7 @@ public class TitleController : MonoBehaviour
 
 	public void OnNewGame()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		//EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
 		soundController.PlaySound( 3 );
 
@@ -250,7 +252,7 @@ public class TitleController : MonoBehaviour
 
 	public void OnContinueSession()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		//EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
 
 		SagaSession session = LoadSagaSession( SessionMode.Saga );
@@ -296,10 +298,12 @@ public class TitleController : MonoBehaviour
 
 	public void OnExpansions()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		//EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
 		if ( animator.GetBool( expID ) == true )
+		{
 			animator.SetBool( expID, false );
+		}
 		else
 		{
 			animator.SetBool( expID, true );
@@ -309,7 +313,7 @@ public class TitleController : MonoBehaviour
 
 	public void OnOptions()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		//EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
 		GlowEngine.FindUnityObject<SettingsPanel>().Show(
 			( SettingsCommand s ) => OnExitAppButton(),
@@ -319,22 +323,26 @@ public class TitleController : MonoBehaviour
 
 	void OnSettingsClose()
 	{
-		if ( sagaToggle.isOn )
-			EventSystem.current.SetSelectedGameObject( newGameButton );
-		else if ( campaignToggle.isOn )
-			EventSystem.current.SetSelectedGameObject( newCampaignButton );
+		if ( EventSystem.current == null )
+			return;
+
+		if ( CanRestoreSelection( previousSelectedObject ) )
+			EventSystem.current.SetSelectedGameObject( previousSelectedObject );
+		else
+			FocusDefaultButtonForActiveMode();
 	}
 
 	public void OnCloseExpansions()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		FocusDefaultButtonForActiveMode();
+
 		soundController.PlaySound( FX.Click );
 		animator.SetBool( expID, false );
 	}
 
 	public void ToggleExpansion( Toggle t )
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		//EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
 		if ( t.isOn )
 			DataStore.AddExpansion( t.name );
@@ -344,6 +352,8 @@ public class TitleController : MonoBehaviour
 
 	public void OnFigurePackClick()
 	{
+		if ( InputManager.Instance.uiAnimationsPlaying )
+			return;
 		FigurePackPopup.Show();
 	}
 
@@ -402,6 +412,8 @@ public class TitleController : MonoBehaviour
 
 	public void OnTutorialGo()
 	{
+		if ( InputManager.Instance.uiAnimationsPlaying )
+			return;
 		tutorialPanel.Show( tutorialDropdown.value );
 	}
 
@@ -530,25 +542,100 @@ public class TitleController : MonoBehaviour
 			busyIconTF.localScale = GlowEngine.SineAnimation( .9f, 1.1f, 15 ).ToVector3();
 
 		//game controller input
-		if ( InputManager.Instance.settingsOpenCloseInput
-			&& !InputManager.Instance.settingsOpen
-			&& !InputManager.Instance.uiAnimationsPlaying
-			&& !isHelpOpen )
+		if ( InputManager.Instance.settingsOpenCloseInput )
 		{
 			OnOptions();
 		}
 
-		//if no UI element is currently selected, select the first button of the active panel so that player can navigate with controller/keyboard
-		//only do this if settings panel and help overlay are not active, otherwise it will override the settings panel's selected button
-		if ( !settingsPanel.activeInHierarchy &&
-			!isHelpOpen &&
-			EventSystem.current.currentSelectedGameObject == null )
+		InputFocusCheck();
+	}
+
+	//try to focus the expansions panel button
+	private bool TryFocusExpansionsPanelButton()
+	{
+		if ( !animator.GetBool( expID )
+			|| EventSystem.current == null )
+			return false;
+
+		if ( expansionsPanel == null )
+			expansionsPanel = FindObjectOfType<ExpansionsPanel>();
+
+		if ( expansionsPanel == null
+			|| !expansionsPanel.gameObject.activeInHierarchy )
+			return false;
+
+		Transform panelButton = expansionsPanel.transform.Find( "Button" );
+		if ( panelButton == null && expansionsPanel.transform.childCount > 0 )
+			panelButton = expansionsPanel.transform.GetChild( 0 );
+
+		if ( panelButton == null )
+			return false;
+
+		EventSystem.current.SetSelectedGameObject( panelButton.gameObject );
+		return true;
+	}
+
+	//check if we can restore the previous selected object, or if it is disabled or not interactable
+	private bool CanRestoreSelection( GameObject gameObject )
+	{
+		if ( gameObject == null
+			|| !gameObject.activeInHierarchy )
+			return false;
+
+		Selectable selectable = gameObject.GetComponent<Selectable>();
+		return selectable == null || selectable.IsInteractable();
+	}
+
+	//focus the default button for the active mode (saga or campaign)
+	private void FocusDefaultButtonForActiveMode()
+	{
+		if ( sagaToggle.isOn )
 		{
-			if ( sagaToggle.isOn )
-				EventSystem.current.SetSelectedGameObject( newGameButton );
-			else if ( campaignToggle.isOn )
-				EventSystem.current.SetSelectedGameObject( newCampaignButton );
+			EventSystem.current.SetSelectedGameObject( newGameButton );
+			previousSelectedObject = newGameButton;
 		}
+		else if ( campaignToggle.isOn )
+		{
+			EventSystem.current.SetSelectedGameObject( newCampaignButton );
+			previousSelectedObject = newCampaignButton;
+		}
+	}
+
+	//make sure that if the player is using a controller, a button is always highlighted, even if they click on the background with a mouse
+	private void InputFocusCheck()
+	{
+		//only process main screen if no panels are active
+		if ( InputManager.Instance.anyPanelsOpen )
+			return;
+
+		GameObject selected = EventSystem.current.currentSelectedGameObject;
+
+		if ( selected != null && selected.activeInHierarchy )
+		{
+			//check if we can navigate to the expansions panel
+			if ( InputManager.Instance.navLeft
+				&& selected == previousSelectedObject
+				&& (selected == newGameButton
+				|| selected == continueButton.gameObject
+				|| selected == sagaModeButton
+				|| selected == tutorialDropdown.gameObject) )
+			{
+				TryFocusExpansionsPanelButton();
+				selected = EventSystem.current.currentSelectedGameObject;
+			}
+
+			if ( selected != null )
+				previousSelectedObject = selected;
+			return;
+		}
+
+		if ( CanRestoreSelection( previousSelectedObject ) )
+		{
+			EventSystem.current.SetSelectedGameObject( previousSelectedObject );
+			return;
+		}
+
+		FocusDefaultButtonForActiveMode();
 	}
 
 	private IEnumerator CheckVersion()
@@ -605,7 +692,9 @@ public class TitleController : MonoBehaviour
 
 	public void OnNewCampaign()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		if ( InputManager.Instance.uiAnimationsPlaying )
+			return;
+		//EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
 		soundController.PlaySound( 2 );
 
@@ -620,7 +709,9 @@ public class TitleController : MonoBehaviour
 
 	public void OnLoadCampaign()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		if ( InputManager.Instance.uiAnimationsPlaying )
+			return;
+		//EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
 
 		animator.SetBool( m_OpenParameterId, false );
@@ -636,7 +727,7 @@ public class TitleController : MonoBehaviour
 
 	public void OnContinueCampaign()
 	{
-		EventSystem.current.SetSelectedGameObject( null );
+		//EventSystem.current.SetSelectedGameObject( null );
 		soundController.PlaySound( FX.Click );
 
 		SagaSession session = LoadSagaSession( SessionMode.Campaign );
@@ -715,6 +806,7 @@ public class TitleController : MonoBehaviour
 			continueButton.interactable = IsSagaSessionValid( SessionMode.Saga );
 			panelDescriptionText.text = DataStore.uiLanguage.uiCampaign.sagaDescriptionUC;
 			EventSystem.current.SetSelectedGameObject( newGameButton );
+			previousSelectedObject = newGameButton;
 		}
 		else if ( campaignToggle.isOn )
 		{
@@ -726,16 +818,15 @@ public class TitleController : MonoBehaviour
 			campaignContinueButton.interactable = IsSagaSessionValid( SessionMode.Campaign );
 			campaignPanelDescriptionText.text = DataStore.uiLanguage.uiCampaign.campaignDescriptionUC;
 			EventSystem.current.SetSelectedGameObject( newCampaignButton );
+			previousSelectedObject = newCampaignButton;
 		}
 	}
 
 	public void OnHelpClick()
 	{
-		isHelpOpen = true;
 		helpPanel.Show( () =>
 		{
 			EventSystem.current.SetSelectedGameObject( helpButton );
-			isHelpOpen = false;
 		} );
 	}
 
